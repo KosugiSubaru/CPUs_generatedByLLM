@@ -39,5 +39,3 @@ CPUs_generatedByLLM/
 > `imem/`・`dmem/`・`reconf.s`・`top_gen.v`・`tb_top_gen.v`・`sva_cpu.sv` は全サイクルで共通・固定のファイルです。
 
 ---
-
-```
