@@ -3,6 +3,8 @@
 このリポジトリは、書籍『生成AIでCPUを自動で自作』で紹介されているフレームワークにより生成された、CPUのVerilogファイルや回路図などを公開しています。
 LLMが生成した、20サイクル分のCPU生成ログを公開しています。
 
+書籍で紹介しているCPUの例は`cycle_11`です。
+
 ---
 
 ## リポジトリ構成
@@ -30,23 +32,12 @@ CPUs_generatedByLLM/
 ├── dmem/                       # 共通データメモリ（dmem.v, datamem.dat）
 ├── reconf.s                    # 共通テストプログラム（アセンブリ）
 ├── top_gen.v                   # 共通トップモジュール
-├── tb_top_gen.v                # 共通テストベンチ
+├── tb_top_gen.cpp              # 共通テストベンチ
 └── sva_cpu.sv                  # 共通SVA（SystemVerilogアサーション）
 ```
 
-> `imem/`・`dmem/`・`reconf.s`・`top_gen.v`・`tb_top_gen.v`・`sva_cpu.sv` は全サイクルで共通のファイルです。
+> `imem/`・`dmem/`・`reconf.s`・`top_gen.v`・`tb_top_gen.v`・`sva_cpu.sv` は全サイクルで共通・固定のファイルです。
 
 ---
 
-## シミュレーション
-
-各サイクルのシミュレーションは [Verilator](https://www.veripool.org/verilator/) を用いてSVAアサーションチェックとともに実施されました。結果は `reports/full_system_sim_*.log` に記録されています。
-
-正常終了した場合のログ例：
-
-```
-[SVA OK] Time=4755: ADDI R0 = 0x0000
-[SVA OK] Time=4765: JAL link R0=0x004a target=0x0046
-...
-Simulation completed at 5000 ns
 ```
