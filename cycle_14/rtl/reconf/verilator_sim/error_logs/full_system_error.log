@@ -1,0 +1,37 @@
+
+=== ログ 2026-02-24 16:59:19 ===
+%Warning-PINMISSING: reconf/cpu/rtl/cpu.v:83:15: Instance has missing pin: 'o_pc_sel'
+   83 |     ctrl_unit u_ctrl (
+      |               ^~~~~~
+                     reconf/ctrl_unit/rtl/ctrl_unit.v:10:23: ... Location of port declaration
+   10 |     output wire [1:0] o_pc_sel,        
+      |                       ^~~~~~~~
+                     ... For warning description see https://verilator.org/warn/PINMISSING?v=5.045
+                     ... Use "/* verilator lint_off PINMISSING */" and lint_on around source to disable this message.
+%Warning-PINMISSING: reconf/cpu/rtl/cpu.v:104:19: Instance has missing pin: 'o_next_pc'
+  104 |     next_pc_logic u_next_pc_eval (
+      |                   ^~~~~~~~~~~~~~
+                     reconf/next_pc_logic/rtl/next_pc_logic.v:7:24: ... Location of port declaration
+    7 |     output wire [15:0] o_next_pc,        
+      |                        ^~~~~~~~~
+%Error: Exiting due to 2 warning(s)
+
+==================================================
+
+=== ログ 2026-02-24 16:59:29 ===
+### エラーの要点
+このエラー（PINMISSING）は、サブモジュールの「定義」にある入出力ポートが、上位モジュール（cpu.v）でそのモジュールを「呼び出す（インスタンス化する）」際に、**記述から漏れている**ために発生しています。Verilatorなどのツールでは、すべてのポートを明示的に接続（または空接続を宣言）しないとエラーとして扱われます。
+
+### 具体的な修正アドバイス
+
+1.  **ctrl_unit (u_ctrl) の修正**
+    `ctrl_unit.v` の定義には `o_pc_sel` という出力ポートがありますが、`cpu.v` での呼び出し時にこのポートが記述されていません。
+    *   **対策:** `u_ctrl` のインスタンス化記述の中に `.o_pc_sel(...)` を追加してください。もし、この出力を `next_pc_logic` 側で代行しており `ctrl_unit` の結果を使わないのであれば、空の括弧 `.o_pc_sel()` と記述して、接続しないことを明示する必要があります。
+
+2.  **next_pc_logic (u_next_pc_eval) の修正**
+    `next_pc_logic.v` の定義には `o_next_pc` という出力ポートがありますが、これも `cpu.v` 側の記述に存在しません。
+    *   **対策:** `u_next_pc_eval` のインスタンス化記述の中に `.o_next_pc(...)` を追加してください。この信号は「次に実行すべきアドレス」そのものです。現在の構成では `pc_reg` 内部で計算を行っているため、このポートが不要であれば、同様に `.o_next_pc()` と空の接続を記述することでエラーを解消できます。
+
+### まとめ
+Verilogの厳密な設計ルールでは、定義したポートは呼び出し側ですべて列挙する必要があります。信号を実際に接続するかどうかにかかわらず、**モジュール定義にあるポート名をすべてインスタンス化のリストに書き加える**ことで、このエラーは解決します。
+==================================================

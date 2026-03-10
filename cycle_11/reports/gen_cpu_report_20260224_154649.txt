@@ -1,0 +1,78 @@
+
+============================================================
+CPU自動生成レポート
+============================================================
+生成日時: 2026-02-24 15:46:49
+
+生成成功モジュール (11個):
+
+  ✓ program_counter:
+    - program_counter.v
+    - program_counter_reg_16bit.v
+    - program_counter_adder_16bit.v
+    - program_counter_mux_4to1_16bit.v
+    - program_counter_dff.v
+    - program_counter_full_adder.v
+    - program_counter_half_adder.v
+    - program_counter_mux_4to1_1bit.v
+  ✓ instruction_decoder:
+    - instruction_decoder.v
+    - instruction_decoder_field_extractor.v
+    - instruction_decoder_op_onehot.v
+    - instruction_decoder_match_cell.v
+    - instruction_decoder_signal_mapper.v
+  ✓ register_file:
+    - register_file.v
+    - register_file_slot.v
+    - register_file_read_selector.v
+    - register_file_bit_cell.v
+    - register_file_mux_16to1_1bit.v
+  ✓ alu_core:
+    - alu_core.v
+    - alu_core_arithmetic_16bit.v
+    - alu_core_logic_16bit.v
+    - alu_core_shifter_16bit.v
+    - alu_core_mux_8to1_16bit.v
+    - alu_core_full_adder.v
+    - alu_core_half_adder.v
+    - alu_core_logic_slice.v
+    - alu_core_mux_8to1_1bit.v
+  ✓ flag_register:
+    - flag_register.v
+    - flag_register_bit.v
+    - flag_register_mux_2to1_1bit.v
+  ✓ imm_generator:
+    - imm_generator.v
+    - imm_generator_ext4a_16bit.v
+    - imm_generator_ext4b_16bit.v
+    - imm_generator_ext8_16bit.v
+    - imm_generator_ext12_16bit.v
+    - imm_generator_mux_4to1_16bit.v
+    - imm_generator_mux_4to1_1bit.v
+  ✓ pc_adder:
+    - pc_adder.v
+    - pc_adder_16bit.v
+    - pc_adder_full_adder.v
+    - pc_adder_half_adder.v
+  ✓ next_pc_selector:
+    - next_pc_selector.v
+    - next_pc_selector_br_eval.v
+    - next_pc_selector_mux_16bit.v
+    - next_pc_selector_mux_1bit.v
+  ✓ alu_src_selector:
+    - alu_src_selector.v
+    - alu_src_selector_mux_2to1_16bit.v
+    - alu_src_selector_mux_2to1_1bit.v
+  ✓ reg_write_data_selector:
+    - reg_write_data_selector.v
+    - reg_write_data_selector_mux_4to1_16bit.v
+    - reg_write_data_selector_mux_4to1_1bit.v
+  ✓ dmem_interface_logic:
+    - dmem_interface_logic.v
+    - dmem_interface_logic_adder_16bit.v
+    - dmem_interface_logic_full_adder.v
+    - dmem_interface_logic_half_adder.v
+
+すべてのモジュールが正常に生成されました。
+
+============================================================

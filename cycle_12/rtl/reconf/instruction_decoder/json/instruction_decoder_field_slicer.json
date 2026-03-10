@@ -1,0 +1,72 @@
+{
+  "creator": "Yosys 0.61+112 (git sha1 ac427a79b, clang++ 18.1.8 -fPIC -O3)",
+  "modules": {
+    "instruction_decoder_field_slicer": {
+      "attributes": {
+        "top": "00000000000000000000000000000001",
+        "src": "reconf/instruction_decoder/rtl/instruction_decoder_field_slicer.v:1.1-14.10"
+      },
+      "ports": {
+        "i_instr": {
+          "direction": "input",
+          "bits": [ 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17 ]
+        },
+        "o_nibble_0": {
+          "direction": "output",
+          "bits": [ 2, 3, 4, 5 ]
+        },
+        "o_nibble_1": {
+          "direction": "output",
+          "bits": [ 6, 7, 8, 9 ]
+        },
+        "o_nibble_2": {
+          "direction": "output",
+          "bits": [ 10, 11, 12, 13 ]
+        },
+        "o_nibble_3": {
+          "direction": "output",
+          "bits": [ 14, 15, 16, 17 ]
+        }
+      },
+      "cells": {
+      },
+      "netnames": {
+        "i_instr": {
+          "hide_name": 0,
+          "bits": [ 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17 ],
+          "attributes": {
+            "src": "reconf/instruction_decoder/rtl/instruction_decoder_field_slicer.v:2.24-2.31"
+          }
+        },
+        "o_nibble_0": {
+          "hide_name": 0,
+          "bits": [ 2, 3, 4, 5 ],
+          "attributes": {
+            "src": "reconf/instruction_decoder/rtl/instruction_decoder_field_slicer.v:3.24-3.34"
+          }
+        },
+        "o_nibble_1": {
+          "hide_name": 0,
+          "bits": [ 6, 7, 8, 9 ],
+          "attributes": {
+            "src": "reconf/instruction_decoder/rtl/instruction_decoder_field_slicer.v:4.24-4.34"
+          }
+        },
+        "o_nibble_2": {
+          "hide_name": 0,
+          "bits": [ 10, 11, 12, 13 ],
+          "attributes": {
+            "src": "reconf/instruction_decoder/rtl/instruction_decoder_field_slicer.v:5.24-5.34"
+          }
+        },
+        "o_nibble_3": {
+          "hide_name": 0,
+          "bits": [ 14, 15, 16, 17 ],
+          "attributes": {
+            "src": "reconf/instruction_decoder/rtl/instruction_decoder_field_slicer.v:6.24-6.34"
+          }
+        }
+      }
+    }
+  }
+}

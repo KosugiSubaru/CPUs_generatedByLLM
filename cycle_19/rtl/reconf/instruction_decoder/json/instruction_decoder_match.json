@@ -1,0 +1,218 @@
+{
+  "creator": "Yosys 0.61+112 (git sha1 ac427a79b, clang++ 18.1.8 -fPIC -O3)",
+  "modules": {
+    "instruction_decoder_match": {
+      "attributes": {
+        "top": "00000000000000000000000000000001",
+        "src": "reconf/instruction_decoder/rtl/instruction_decoder_match.v:1.1-10.10"
+      },
+      "ports": {
+        "i_opcode": {
+          "direction": "input",
+          "bits": [ 2, 3, 4, 5 ]
+        },
+        "i_target_opcode": {
+          "direction": "input",
+          "bits": [ 6, 7, 8, 9 ]
+        },
+        "o_match": {
+          "direction": "output",
+          "bits": [ 10 ]
+        }
+      },
+      "cells": {
+        "$auto$simplemap.cc:106:simplemap_bitop$113": {
+          "hide_name": 1,
+          "type": "$_XOR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/instruction_decoder/rtl/instruction_decoder_match.v:8.23-8.50"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 2 ],
+            "B": [ 6 ],
+            "Y": [ 11 ]
+          }
+        },
+        "$auto$simplemap.cc:106:simplemap_bitop$114": {
+          "hide_name": 1,
+          "type": "$_XOR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/instruction_decoder/rtl/instruction_decoder_match.v:8.23-8.50"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 3 ],
+            "B": [ 7 ],
+            "Y": [ 12 ]
+          }
+        },
+        "$auto$simplemap.cc:106:simplemap_bitop$115": {
+          "hide_name": 1,
+          "type": "$_XOR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/instruction_decoder/rtl/instruction_decoder_match.v:8.23-8.50"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 4 ],
+            "B": [ 8 ],
+            "Y": [ 13 ]
+          }
+        },
+        "$auto$simplemap.cc:106:simplemap_bitop$116": {
+          "hide_name": 1,
+          "type": "$_XOR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/instruction_decoder/rtl/instruction_decoder_match.v:8.23-8.50"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 5 ],
+            "B": [ 9 ],
+            "Y": [ 14 ]
+          }
+        },
+        "$auto$simplemap.cc:157:simplemap_reduce$120": {
+          "hide_name": 1,
+          "type": "$_OR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/instruction_decoder/rtl/instruction_decoder_match.v:8.23-8.50"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 11 ],
+            "B": [ 12 ],
+            "Y": [ 15 ]
+          }
+        },
+        "$auto$simplemap.cc:157:simplemap_reduce$121": {
+          "hide_name": 1,
+          "type": "$_OR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/instruction_decoder/rtl/instruction_decoder_match.v:8.23-8.50"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 13 ],
+            "B": [ 14 ],
+            "Y": [ 16 ]
+          }
+        },
+        "$auto$simplemap.cc:157:simplemap_reduce$123": {
+          "hide_name": 1,
+          "type": "$_OR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/instruction_decoder/rtl/instruction_decoder_match.v:8.23-8.50"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 15 ],
+            "B": [ 16 ],
+            "Y": [ 17 ]
+          }
+        },
+        "$auto$simplemap.cc:227:simplemap_lognot$125": {
+          "hide_name": 1,
+          "type": "$_NOT_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/instruction_decoder/rtl/instruction_decoder_match.v:8.23-8.50"
+          },
+          "port_directions": {
+            "A": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 17 ],
+            "Y": [ 10 ]
+          }
+        }
+      },
+      "netnames": {
+        "$auto$simplemap.cc:148:simplemap_reduce$119": {
+          "hide_name": 1,
+          "bits": [ 15, 16 ],
+          "attributes": {
+          }
+        },
+        "$auto$simplemap.cc:271:simplemap_eqne$111": {
+          "hide_name": 1,
+          "bits": [ 11, 12, 13, 14 ],
+          "attributes": {
+          }
+        },
+        "$auto$simplemap.cc:277:simplemap_eqne$117": {
+          "hide_name": 1,
+          "bits": [ 17 ],
+          "attributes": {
+          }
+        },
+        "i_opcode": {
+          "hide_name": 0,
+          "bits": [ 2, 3, 4, 5 ],
+          "attributes": {
+            "src": "reconf/instruction_decoder/rtl/instruction_decoder_match.v:2.23-2.31"
+          }
+        },
+        "i_target_opcode": {
+          "hide_name": 0,
+          "bits": [ 6, 7, 8, 9 ],
+          "attributes": {
+            "src": "reconf/instruction_decoder/rtl/instruction_decoder_match.v:3.23-3.38"
+          }
+        },
+        "o_match": {
+          "hide_name": 0,
+          "bits": [ 10 ],
+          "attributes": {
+            "src": "reconf/instruction_decoder/rtl/instruction_decoder_match.v:4.23-4.30"
+          }
+        }
+      }
+    }
+  }
+}

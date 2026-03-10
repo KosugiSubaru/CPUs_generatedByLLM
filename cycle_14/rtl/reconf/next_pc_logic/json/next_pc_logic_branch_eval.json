@@ -1,0 +1,222 @@
+{
+  "creator": "Yosys 0.61+112 (git sha1 ac427a79b, clang++ 18.1.8 -fPIC -O3)",
+  "modules": {
+    "next_pc_logic_branch_eval": {
+      "attributes": {
+        "top": "00000000000000000000000000000001",
+        "src": "reconf/next_pc_logic/rtl/next_pc_logic_branch_eval.v:1.1-29.10"
+      },
+      "ports": {
+        "i_active": {
+          "direction": "input",
+          "bits": [ 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17 ]
+        },
+        "i_flags": {
+          "direction": "input",
+          "bits": [ 18, 19, 20 ]
+        },
+        "o_pc_sel": {
+          "direction": "output",
+          "bits": [ 21, 17 ]
+        }
+      },
+      "cells": {
+        "$auto$simplemap.cc:106:simplemap_bitop$93": {
+          "hide_name": 1,
+          "type": "$_XOR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/next_pc_logic/rtl/next_pc_logic_branch_eval.v:20.43-20.56"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 19 ],
+            "B": [ 20 ],
+            "Y": [ 22 ]
+          }
+        },
+        "$auto$simplemap.cc:106:simplemap_bitop$94": {
+          "hide_name": 1,
+          "type": "$_AND_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/next_pc_logic/rtl/next_pc_logic_branch_eval.v:20.29-20.57"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 14 ],
+            "B": [ 22 ],
+            "Y": [ 23 ]
+          }
+        },
+        "$auto$simplemap.cc:106:simplemap_bitop$95": {
+          "hide_name": 1,
+          "type": "$_AND_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/next_pc_logic/rtl/next_pc_logic_branch_eval.v:20.62-20.79"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 15 ],
+            "B": [ 18 ],
+            "Y": [ 24 ]
+          }
+        },
+        "$auto$simplemap.cc:106:simplemap_bitop$96": {
+          "hide_name": 1,
+          "type": "$_OR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/next_pc_logic/rtl/next_pc_logic_branch_eval.v:20.28-20.80"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 23 ],
+            "B": [ 24 ],
+            "Y": [ 25 ]
+          }
+        },
+        "$auto$simplemap.cc:106:simplemap_bitop$97": {
+          "hide_name": 1,
+          "type": "$_OR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/next_pc_logic/rtl/next_pc_logic_branch_eval.v:24.26-24.54"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 25 ],
+            "B": [ 16 ],
+            "Y": [ 21 ]
+          }
+        }
+      },
+      "netnames": {
+        "$and$reconf/next_pc_logic/rtl/next_pc_logic_branch_eval.v:20$14_Y": {
+          "hide_name": 1,
+          "bits": [ 23 ],
+          "attributes": {
+            "src": "reconf/next_pc_logic/rtl/next_pc_logic_branch_eval.v:20.29-20.57"
+          }
+        },
+        "$and$reconf/next_pc_logic/rtl/next_pc_logic_branch_eval.v:20$15_Y": {
+          "hide_name": 1,
+          "bits": [ 24 ],
+          "attributes": {
+            "src": "reconf/next_pc_logic/rtl/next_pc_logic_branch_eval.v:20.62-20.79"
+          }
+        },
+        "$xor$reconf/next_pc_logic/rtl/next_pc_logic_branch_eval.v:20$13_Y": {
+          "hide_name": 1,
+          "bits": [ 22 ],
+          "attributes": {
+            "src": "reconf/next_pc_logic/rtl/next_pc_logic_branch_eval.v:20.43-20.56"
+          }
+        },
+        "i_active": {
+          "hide_name": 0,
+          "bits": [ 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17 ],
+          "attributes": {
+            "src": "reconf/next_pc_logic/rtl/next_pc_logic_branch_eval.v:2.24-2.32"
+          }
+        },
+        "i_flags": {
+          "hide_name": 0,
+          "bits": [ 18, 19, 20 ],
+          "attributes": {
+            "src": "reconf/next_pc_logic/rtl/next_pc_logic_branch_eval.v:3.24-3.31"
+          }
+        },
+        "o_pc_sel": {
+          "hide_name": 0,
+          "bits": [ 21, 17 ],
+          "attributes": {
+            "src": "reconf/next_pc_logic/rtl/next_pc_logic_branch_eval.v:4.24-4.32"
+          }
+        },
+        "w_condition_met": {
+          "hide_name": 0,
+          "bits": [ 25 ],
+          "attributes": {
+            "src": "reconf/next_pc_logic/rtl/next_pc_logic_branch_eval.v:20.10-20.25"
+          }
+        },
+        "w_f_n": {
+          "hide_name": 0,
+          "bits": [ 19 ],
+          "attributes": {
+            "src": "reconf/next_pc_logic/rtl/next_pc_logic_branch_eval.v:9.10-9.15"
+          }
+        },
+        "w_f_v": {
+          "hide_name": 0,
+          "bits": [ 20 ],
+          "attributes": {
+            "src": "reconf/next_pc_logic/rtl/next_pc_logic_branch_eval.v:10.10-10.15"
+          }
+        },
+        "w_f_z": {
+          "hide_name": 0,
+          "bits": [ 18 ],
+          "attributes": {
+            "src": "reconf/next_pc_logic/rtl/next_pc_logic_branch_eval.v:8.10-8.15"
+          }
+        },
+        "w_inst_blt": {
+          "hide_name": 0,
+          "bits": [ 14 ],
+          "attributes": {
+            "src": "reconf/next_pc_logic/rtl/next_pc_logic_branch_eval.v:13.10-13.20"
+          }
+        },
+        "w_inst_bz": {
+          "hide_name": 0,
+          "bits": [ 15 ],
+          "attributes": {
+            "src": "reconf/next_pc_logic/rtl/next_pc_logic_branch_eval.v:14.10-14.19"
+          }
+        },
+        "w_inst_jal": {
+          "hide_name": 0,
+          "bits": [ 16 ],
+          "attributes": {
+            "src": "reconf/next_pc_logic/rtl/next_pc_logic_branch_eval.v:15.10-15.20"
+          }
+        },
+        "w_inst_jalr": {
+          "hide_name": 0,
+          "bits": [ 17 ],
+          "attributes": {
+            "src": "reconf/next_pc_logic/rtl/next_pc_logic_branch_eval.v:16.10-16.21"
+          }
+        }
+      }
+    }
+  }
+}

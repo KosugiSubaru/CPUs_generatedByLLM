@@ -1,0 +1,467 @@
+{
+  "creator": "Yosys 0.61+112 (git sha1 ac427a79b, clang++ 18.1.8 -fPIC -O3)",
+  "modules": {
+    "immediate_generator_s_extender": {
+      "attributes": {
+        "top": "00000000000000000000000000000001",
+        "src": "reconf/immediate_generator/rtl/immediate_generator_s_extender.v:1.1-20.10"
+      },
+      "ports": {
+        "i_imm_bits": {
+          "direction": "input",
+          "bits": [ 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13 ]
+        },
+        "o_imm_ext": {
+          "direction": "output",
+          "bits": [ 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29 ]
+        }
+      },
+      "cells": {
+        "gen_s_ext[0].u_bit": {
+          "hide_name": 0,
+          "type": "immediate_generator_sign_ext_bit",
+          "parameters": {
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "reconf/immediate_generator/rtl/immediate_generator_s_extender.v:11.46-16.14"
+          },
+          "port_directions": {
+            "i_raw_bit": "input",
+            "i_sign_bit": "input",
+            "i_use_sign": "input",
+            "o_ext_bit": "output"
+          },
+          "connections": {
+            "i_raw_bit": [ 10 ],
+            "i_sign_bit": [ 13 ],
+            "i_use_sign": [ "0" ],
+            "o_ext_bit": [ 14 ]
+          }
+        },
+        "gen_s_ext[10].u_bit": {
+          "hide_name": 0,
+          "type": "immediate_generator_sign_ext_bit",
+          "parameters": {
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "reconf/immediate_generator/rtl/immediate_generator_s_extender.v:11.46-16.14"
+          },
+          "port_directions": {
+            "i_raw_bit": "input",
+            "i_sign_bit": "input",
+            "i_use_sign": "input",
+            "o_ext_bit": "output"
+          },
+          "connections": {
+            "i_raw_bit": [ "0" ],
+            "i_sign_bit": [ 13 ],
+            "i_use_sign": [ "1" ],
+            "o_ext_bit": [ 24 ]
+          }
+        },
+        "gen_s_ext[11].u_bit": {
+          "hide_name": 0,
+          "type": "immediate_generator_sign_ext_bit",
+          "parameters": {
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "reconf/immediate_generator/rtl/immediate_generator_s_extender.v:11.46-16.14"
+          },
+          "port_directions": {
+            "i_raw_bit": "input",
+            "i_sign_bit": "input",
+            "i_use_sign": "input",
+            "o_ext_bit": "output"
+          },
+          "connections": {
+            "i_raw_bit": [ "0" ],
+            "i_sign_bit": [ 13 ],
+            "i_use_sign": [ "1" ],
+            "o_ext_bit": [ 25 ]
+          }
+        },
+        "gen_s_ext[12].u_bit": {
+          "hide_name": 0,
+          "type": "immediate_generator_sign_ext_bit",
+          "parameters": {
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "reconf/immediate_generator/rtl/immediate_generator_s_extender.v:11.46-16.14"
+          },
+          "port_directions": {
+            "i_raw_bit": "input",
+            "i_sign_bit": "input",
+            "i_use_sign": "input",
+            "o_ext_bit": "output"
+          },
+          "connections": {
+            "i_raw_bit": [ "0" ],
+            "i_sign_bit": [ 13 ],
+            "i_use_sign": [ "1" ],
+            "o_ext_bit": [ 26 ]
+          }
+        },
+        "gen_s_ext[13].u_bit": {
+          "hide_name": 0,
+          "type": "immediate_generator_sign_ext_bit",
+          "parameters": {
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "reconf/immediate_generator/rtl/immediate_generator_s_extender.v:11.46-16.14"
+          },
+          "port_directions": {
+            "i_raw_bit": "input",
+            "i_sign_bit": "input",
+            "i_use_sign": "input",
+            "o_ext_bit": "output"
+          },
+          "connections": {
+            "i_raw_bit": [ "0" ],
+            "i_sign_bit": [ 13 ],
+            "i_use_sign": [ "1" ],
+            "o_ext_bit": [ 27 ]
+          }
+        },
+        "gen_s_ext[14].u_bit": {
+          "hide_name": 0,
+          "type": "immediate_generator_sign_ext_bit",
+          "parameters": {
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "reconf/immediate_generator/rtl/immediate_generator_s_extender.v:11.46-16.14"
+          },
+          "port_directions": {
+            "i_raw_bit": "input",
+            "i_sign_bit": "input",
+            "i_use_sign": "input",
+            "o_ext_bit": "output"
+          },
+          "connections": {
+            "i_raw_bit": [ "0" ],
+            "i_sign_bit": [ 13 ],
+            "i_use_sign": [ "1" ],
+            "o_ext_bit": [ 28 ]
+          }
+        },
+        "gen_s_ext[15].u_bit": {
+          "hide_name": 0,
+          "type": "immediate_generator_sign_ext_bit",
+          "parameters": {
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "reconf/immediate_generator/rtl/immediate_generator_s_extender.v:11.46-16.14"
+          },
+          "port_directions": {
+            "i_raw_bit": "input",
+            "i_sign_bit": "input",
+            "i_use_sign": "input",
+            "o_ext_bit": "output"
+          },
+          "connections": {
+            "i_raw_bit": [ "0" ],
+            "i_sign_bit": [ 13 ],
+            "i_use_sign": [ "1" ],
+            "o_ext_bit": [ 29 ]
+          }
+        },
+        "gen_s_ext[1].u_bit": {
+          "hide_name": 0,
+          "type": "immediate_generator_sign_ext_bit",
+          "parameters": {
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "reconf/immediate_generator/rtl/immediate_generator_s_extender.v:11.46-16.14"
+          },
+          "port_directions": {
+            "i_raw_bit": "input",
+            "i_sign_bit": "input",
+            "i_use_sign": "input",
+            "o_ext_bit": "output"
+          },
+          "connections": {
+            "i_raw_bit": [ 11 ],
+            "i_sign_bit": [ 13 ],
+            "i_use_sign": [ "0" ],
+            "o_ext_bit": [ 15 ]
+          }
+        },
+        "gen_s_ext[2].u_bit": {
+          "hide_name": 0,
+          "type": "immediate_generator_sign_ext_bit",
+          "parameters": {
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "reconf/immediate_generator/rtl/immediate_generator_s_extender.v:11.46-16.14"
+          },
+          "port_directions": {
+            "i_raw_bit": "input",
+            "i_sign_bit": "input",
+            "i_use_sign": "input",
+            "o_ext_bit": "output"
+          },
+          "connections": {
+            "i_raw_bit": [ 12 ],
+            "i_sign_bit": [ 13 ],
+            "i_use_sign": [ "0" ],
+            "o_ext_bit": [ 16 ]
+          }
+        },
+        "gen_s_ext[3].u_bit": {
+          "hide_name": 0,
+          "type": "immediate_generator_sign_ext_bit",
+          "parameters": {
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "reconf/immediate_generator/rtl/immediate_generator_s_extender.v:11.46-16.14"
+          },
+          "port_directions": {
+            "i_raw_bit": "input",
+            "i_sign_bit": "input",
+            "i_use_sign": "input",
+            "o_ext_bit": "output"
+          },
+          "connections": {
+            "i_raw_bit": [ 13 ],
+            "i_sign_bit": [ 13 ],
+            "i_use_sign": [ "0" ],
+            "o_ext_bit": [ 17 ]
+          }
+        },
+        "gen_s_ext[4].u_bit": {
+          "hide_name": 0,
+          "type": "immediate_generator_sign_ext_bit",
+          "parameters": {
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "reconf/immediate_generator/rtl/immediate_generator_s_extender.v:11.46-16.14"
+          },
+          "port_directions": {
+            "i_raw_bit": "input",
+            "i_sign_bit": "input",
+            "i_use_sign": "input",
+            "o_ext_bit": "output"
+          },
+          "connections": {
+            "i_raw_bit": [ "0" ],
+            "i_sign_bit": [ 13 ],
+            "i_use_sign": [ "1" ],
+            "o_ext_bit": [ 18 ]
+          }
+        },
+        "gen_s_ext[5].u_bit": {
+          "hide_name": 0,
+          "type": "immediate_generator_sign_ext_bit",
+          "parameters": {
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "reconf/immediate_generator/rtl/immediate_generator_s_extender.v:11.46-16.14"
+          },
+          "port_directions": {
+            "i_raw_bit": "input",
+            "i_sign_bit": "input",
+            "i_use_sign": "input",
+            "o_ext_bit": "output"
+          },
+          "connections": {
+            "i_raw_bit": [ "0" ],
+            "i_sign_bit": [ 13 ],
+            "i_use_sign": [ "1" ],
+            "o_ext_bit": [ 19 ]
+          }
+        },
+        "gen_s_ext[6].u_bit": {
+          "hide_name": 0,
+          "type": "immediate_generator_sign_ext_bit",
+          "parameters": {
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "reconf/immediate_generator/rtl/immediate_generator_s_extender.v:11.46-16.14"
+          },
+          "port_directions": {
+            "i_raw_bit": "input",
+            "i_sign_bit": "input",
+            "i_use_sign": "input",
+            "o_ext_bit": "output"
+          },
+          "connections": {
+            "i_raw_bit": [ "0" ],
+            "i_sign_bit": [ 13 ],
+            "i_use_sign": [ "1" ],
+            "o_ext_bit": [ 20 ]
+          }
+        },
+        "gen_s_ext[7].u_bit": {
+          "hide_name": 0,
+          "type": "immediate_generator_sign_ext_bit",
+          "parameters": {
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "reconf/immediate_generator/rtl/immediate_generator_s_extender.v:11.46-16.14"
+          },
+          "port_directions": {
+            "i_raw_bit": "input",
+            "i_sign_bit": "input",
+            "i_use_sign": "input",
+            "o_ext_bit": "output"
+          },
+          "connections": {
+            "i_raw_bit": [ "0" ],
+            "i_sign_bit": [ 13 ],
+            "i_use_sign": [ "1" ],
+            "o_ext_bit": [ 21 ]
+          }
+        },
+        "gen_s_ext[8].u_bit": {
+          "hide_name": 0,
+          "type": "immediate_generator_sign_ext_bit",
+          "parameters": {
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "reconf/immediate_generator/rtl/immediate_generator_s_extender.v:11.46-16.14"
+          },
+          "port_directions": {
+            "i_raw_bit": "input",
+            "i_sign_bit": "input",
+            "i_use_sign": "input",
+            "o_ext_bit": "output"
+          },
+          "connections": {
+            "i_raw_bit": [ "0" ],
+            "i_sign_bit": [ 13 ],
+            "i_use_sign": [ "1" ],
+            "o_ext_bit": [ 22 ]
+          }
+        },
+        "gen_s_ext[9].u_bit": {
+          "hide_name": 0,
+          "type": "immediate_generator_sign_ext_bit",
+          "parameters": {
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "reconf/immediate_generator/rtl/immediate_generator_s_extender.v:11.46-16.14"
+          },
+          "port_directions": {
+            "i_raw_bit": "input",
+            "i_sign_bit": "input",
+            "i_use_sign": "input",
+            "o_ext_bit": "output"
+          },
+          "connections": {
+            "i_raw_bit": [ "0" ],
+            "i_sign_bit": [ 13 ],
+            "i_use_sign": [ "1" ],
+            "o_ext_bit": [ 23 ]
+          }
+        }
+      },
+      "netnames": {
+        "i_imm_bits": {
+          "hide_name": 0,
+          "bits": [ 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13 ],
+          "attributes": {
+            "src": "reconf/immediate_generator/rtl/immediate_generator_s_extender.v:2.24-2.34"
+          }
+        },
+        "o_imm_ext": {
+          "hide_name": 0,
+          "bits": [ 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29 ],
+          "attributes": {
+            "src": "reconf/immediate_generator/rtl/immediate_generator_s_extender.v:3.24-3.33"
+          }
+        }
+      }
+    },
+    "immediate_generator_sign_ext_bit": {
+      "attributes": {
+        "src": "reconf/immediate_generator/rtl/immediate_generator_sign_ext_bit.v:1.1-11.10"
+      },
+      "ports": {
+        "i_raw_bit": {
+          "direction": "input",
+          "bits": [ 2 ]
+        },
+        "i_sign_bit": {
+          "direction": "input",
+          "bits": [ 3 ]
+        },
+        "i_use_sign": {
+          "direction": "input",
+          "bits": [ 4 ]
+        },
+        "o_ext_bit": {
+          "direction": "output",
+          "bits": [ 5 ]
+        }
+      },
+      "cells": {
+        "$auto$simplemap.cc:298:simplemap_mux$78": {
+          "hide_name": 1,
+          "type": "$_MUX_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/immediate_generator/rtl/immediate_generator_sign_ext_bit.v:9.24-9.61"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 2 ],
+            "B": [ 3 ],
+            "S": [ 4 ],
+            "Y": [ 5 ]
+          }
+        }
+      },
+      "netnames": {
+        "i_raw_bit": {
+          "hide_name": 0,
+          "bits": [ 2 ],
+          "attributes": {
+            "src": "reconf/immediate_generator/rtl/immediate_generator_sign_ext_bit.v:2.17-2.26"
+          }
+        },
+        "i_sign_bit": {
+          "hide_name": 0,
+          "bits": [ 3 ],
+          "attributes": {
+            "src": "reconf/immediate_generator/rtl/immediate_generator_sign_ext_bit.v:3.17-3.27"
+          }
+        },
+        "i_use_sign": {
+          "hide_name": 0,
+          "bits": [ 4 ],
+          "attributes": {
+            "src": "reconf/immediate_generator/rtl/immediate_generator_sign_ext_bit.v:4.17-4.27"
+          }
+        },
+        "o_ext_bit": {
+          "hide_name": 0,
+          "bits": [ 5 ],
+          "attributes": {
+            "src": "reconf/immediate_generator/rtl/immediate_generator_sign_ext_bit.v:5.17-5.26"
+          }
+        }
+      }
+    }
+  }
+}

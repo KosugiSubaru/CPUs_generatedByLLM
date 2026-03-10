@@ -1,0 +1,861 @@
+{
+  "creator": "Yosys 0.61+112 (git sha1 ac427a79b, clang++ 18.1.8 -fPIC -O3)",
+  "modules": {
+    "control_unit_op_matrix": {
+      "attributes": {
+        "top": "00000000000000000000000000000001",
+        "src": "reconf/control_unit/rtl/control_unit_op_matrix.v:1.1-59.10"
+      },
+      "ports": {
+        "i_inst_active": {
+          "direction": "input",
+          "bits": [ 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17 ]
+        },
+        "o_reg_write": {
+          "direction": "output",
+          "bits": [ 18 ]
+        },
+        "o_mem_write": {
+          "direction": "output",
+          "bits": [ 13 ]
+        },
+        "o_mem_to_reg": {
+          "direction": "output",
+          "bits": [ 12 ]
+        },
+        "o_alu_src": {
+          "direction": "output",
+          "bits": [ 19 ]
+        },
+        "o_reg_data_sel": {
+          "direction": "output",
+          "bits": [ 20 ]
+        },
+        "o_alu_op": {
+          "direction": "output",
+          "bits": [ 21, 22, 23, 24 ]
+        }
+      },
+      "cells": {
+        "$auto$simplemap.cc:106:simplemap_bitop$104": {
+          "hide_name": 1,
+          "type": "$_OR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/control_unit/rtl/control_unit_op_matrix.v:31.26-31.39"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 2 ],
+            "B": [ 3 ],
+            "Y": [ 25 ]
+          }
+        },
+        "$auto$simplemap.cc:106:simplemap_bitop$105": {
+          "hide_name": 1,
+          "type": "$_OR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/control_unit/rtl/control_unit_op_matrix.v:31.26-31.47"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 25 ],
+            "B": [ 4 ],
+            "Y": [ 26 ]
+          }
+        },
+        "$auto$simplemap.cc:106:simplemap_bitop$106": {
+          "hide_name": 1,
+          "type": "$_OR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/control_unit/rtl/control_unit_op_matrix.v:31.26-31.54"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 26 ],
+            "B": [ 5 ],
+            "Y": [ 27 ]
+          }
+        },
+        "$auto$simplemap.cc:106:simplemap_bitop$107": {
+          "hide_name": 1,
+          "type": "$_OR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/control_unit/rtl/control_unit_op_matrix.v:31.26-31.62"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 27 ],
+            "B": [ 6 ],
+            "Y": [ 28 ]
+          }
+        },
+        "$auto$simplemap.cc:106:simplemap_bitop$108": {
+          "hide_name": 1,
+          "type": "$_OR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/control_unit/rtl/control_unit_op_matrix.v:31.26-31.70"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 28 ],
+            "B": [ 7 ],
+            "Y": [ 29 ]
+          }
+        },
+        "$auto$simplemap.cc:106:simplemap_bitop$109": {
+          "hide_name": 1,
+          "type": "$_OR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/control_unit/rtl/control_unit_op_matrix.v:31.26-32.31"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 29 ],
+            "B": [ 8 ],
+            "Y": [ 30 ]
+          }
+        },
+        "$auto$simplemap.cc:106:simplemap_bitop$110": {
+          "hide_name": 1,
+          "type": "$_OR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/control_unit/rtl/control_unit_op_matrix.v:31.26-32.39"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 30 ],
+            "B": [ 9 ],
+            "Y": [ 31 ]
+          }
+        },
+        "$auto$simplemap.cc:106:simplemap_bitop$111": {
+          "hide_name": 1,
+          "type": "$_OR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/control_unit/rtl/control_unit_op_matrix.v:31.26-32.48"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 31 ],
+            "B": [ 10 ],
+            "Y": [ 32 ]
+          }
+        },
+        "$auto$simplemap.cc:106:simplemap_bitop$112": {
+          "hide_name": 1,
+          "type": "$_OR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/control_unit/rtl/control_unit_op_matrix.v:31.26-32.58"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 32 ],
+            "B": [ 11 ],
+            "Y": [ 33 ]
+          }
+        },
+        "$auto$simplemap.cc:106:simplemap_bitop$113": {
+          "hide_name": 1,
+          "type": "$_OR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/control_unit/rtl/control_unit_op_matrix.v:31.26-32.67"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 33 ],
+            "B": [ 12 ],
+            "Y": [ 34 ]
+          }
+        },
+        "$auto$simplemap.cc:106:simplemap_bitop$114": {
+          "hide_name": 1,
+          "type": "$_OR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/control_unit/rtl/control_unit_op_matrix.v:31.26-32.75"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 34 ],
+            "B": [ 16 ],
+            "Y": [ 35 ]
+          }
+        },
+        "$auto$simplemap.cc:106:simplemap_bitop$115": {
+          "hide_name": 1,
+          "type": "$_OR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/control_unit/rtl/control_unit_op_matrix.v:31.26-32.84"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 35 ],
+            "B": [ 17 ],
+            "Y": [ 18 ]
+          }
+        },
+        "$auto$simplemap.cc:106:simplemap_bitop$116": {
+          "hide_name": 1,
+          "type": "$_OR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/control_unit/rtl/control_unit_op_matrix.v:42.24-42.40"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 10 ],
+            "B": [ 11 ],
+            "Y": [ 36 ]
+          }
+        },
+        "$auto$simplemap.cc:106:simplemap_bitop$117": {
+          "hide_name": 1,
+          "type": "$_OR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/control_unit/rtl/control_unit_op_matrix.v:42.24-42.49"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 36 ],
+            "B": [ 12 ],
+            "Y": [ 37 ]
+          }
+        },
+        "$auto$simplemap.cc:106:simplemap_bitop$118": {
+          "hide_name": 1,
+          "type": "$_OR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/control_unit/rtl/control_unit_op_matrix.v:42.24-42.59"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 37 ],
+            "B": [ 13 ],
+            "Y": [ 19 ]
+          }
+        },
+        "$auto$simplemap.cc:106:simplemap_bitop$119": {
+          "hide_name": 1,
+          "type": "$_OR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/control_unit/rtl/control_unit_op_matrix.v:46.29-46.43"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 16 ],
+            "B": [ 17 ],
+            "Y": [ 20 ]
+          }
+        },
+        "$auto$simplemap.cc:106:simplemap_bitop$120": {
+          "hide_name": 1,
+          "type": "$_OR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/control_unit/rtl/control_unit_op_matrix.v:50.26-50.38"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 3 ],
+            "B": [ 5 ],
+            "Y": [ 38 ]
+          }
+        },
+        "$auto$simplemap.cc:106:simplemap_bitop$121": {
+          "hide_name": 1,
+          "type": "$_OR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/control_unit/rtl/control_unit_op_matrix.v:50.26-50.46"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 38 ],
+            "B": [ 7 ],
+            "Y": [ 39 ]
+          }
+        },
+        "$auto$simplemap.cc:106:simplemap_bitop$122": {
+          "hide_name": 1,
+          "type": "$_OR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/control_unit/rtl/control_unit_op_matrix.v:50.26-50.54"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 39 ],
+            "B": [ 9 ],
+            "Y": [ 40 ]
+          }
+        },
+        "$auto$simplemap.cc:106:simplemap_bitop$123": {
+          "hide_name": 1,
+          "type": "$_OR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/control_unit/rtl/control_unit_op_matrix.v:50.26-50.64"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 40 ],
+            "B": [ 11 ],
+            "Y": [ 21 ]
+          }
+        },
+        "$auto$simplemap.cc:106:simplemap_bitop$124": {
+          "hide_name": 1,
+          "type": "$_OR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/control_unit/rtl/control_unit_op_matrix.v:52.26-52.38"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 4 ],
+            "B": [ 5 ],
+            "Y": [ 41 ]
+          }
+        },
+        "$auto$simplemap.cc:106:simplemap_bitop$125": {
+          "hide_name": 1,
+          "type": "$_OR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/control_unit/rtl/control_unit_op_matrix.v:52.26-52.46"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 41 ],
+            "B": [ 8 ],
+            "Y": [ 42 ]
+          }
+        },
+        "$auto$simplemap.cc:106:simplemap_bitop$126": {
+          "hide_name": 1,
+          "type": "$_OR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/control_unit/rtl/control_unit_op_matrix.v:52.26-52.54"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 42 ],
+            "B": [ 9 ],
+            "Y": [ 22 ]
+          }
+        },
+        "$auto$simplemap.cc:106:simplemap_bitop$127": {
+          "hide_name": 1,
+          "type": "$_OR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/control_unit/rtl/control_unit_op_matrix.v:54.26-54.39"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 6 ],
+            "B": [ 7 ],
+            "Y": [ 43 ]
+          }
+        },
+        "$auto$simplemap.cc:106:simplemap_bitop$128": {
+          "hide_name": 1,
+          "type": "$_OR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/control_unit/rtl/control_unit_op_matrix.v:54.26-54.47"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 43 ],
+            "B": [ 8 ],
+            "Y": [ 44 ]
+          }
+        },
+        "$auto$simplemap.cc:106:simplemap_bitop$129": {
+          "hide_name": 1,
+          "type": "$_OR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/control_unit/rtl/control_unit_op_matrix.v:54.26-54.55"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 44 ],
+            "B": [ 9 ],
+            "Y": [ 23 ]
+          }
+        },
+        "$auto$simplemap.cc:106:simplemap_bitop$130": {
+          "hide_name": 1,
+          "type": "$_OR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/control_unit/rtl/control_unit_op_matrix.v:56.26-56.42"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 10 ],
+            "B": [ 11 ],
+            "Y": [ 24 ]
+          }
+        }
+      },
+      "netnames": {
+        "$or$reconf/control_unit/rtl/control_unit_op_matrix.v:31$10_Y": {
+          "hide_name": 1,
+          "bits": [ 34 ],
+          "attributes": {
+            "src": "reconf/control_unit/rtl/control_unit_op_matrix.v:31.26-32.67"
+          }
+        },
+        "$or$reconf/control_unit/rtl/control_unit_op_matrix.v:31$11_Y": {
+          "hide_name": 1,
+          "bits": [ 35 ],
+          "attributes": {
+            "src": "reconf/control_unit/rtl/control_unit_op_matrix.v:31.26-32.75"
+          }
+        },
+        "$or$reconf/control_unit/rtl/control_unit_op_matrix.v:31$1_Y": {
+          "hide_name": 1,
+          "bits": [ 25 ],
+          "attributes": {
+            "src": "reconf/control_unit/rtl/control_unit_op_matrix.v:31.26-31.39"
+          }
+        },
+        "$or$reconf/control_unit/rtl/control_unit_op_matrix.v:31$2_Y": {
+          "hide_name": 1,
+          "bits": [ 26 ],
+          "attributes": {
+            "src": "reconf/control_unit/rtl/control_unit_op_matrix.v:31.26-31.47"
+          }
+        },
+        "$or$reconf/control_unit/rtl/control_unit_op_matrix.v:31$3_Y": {
+          "hide_name": 1,
+          "bits": [ 27 ],
+          "attributes": {
+            "src": "reconf/control_unit/rtl/control_unit_op_matrix.v:31.26-31.54"
+          }
+        },
+        "$or$reconf/control_unit/rtl/control_unit_op_matrix.v:31$4_Y": {
+          "hide_name": 1,
+          "bits": [ 28 ],
+          "attributes": {
+            "src": "reconf/control_unit/rtl/control_unit_op_matrix.v:31.26-31.62"
+          }
+        },
+        "$or$reconf/control_unit/rtl/control_unit_op_matrix.v:31$5_Y": {
+          "hide_name": 1,
+          "bits": [ 29 ],
+          "attributes": {
+            "src": "reconf/control_unit/rtl/control_unit_op_matrix.v:31.26-31.70"
+          }
+        },
+        "$or$reconf/control_unit/rtl/control_unit_op_matrix.v:31$6_Y": {
+          "hide_name": 1,
+          "bits": [ 30 ],
+          "attributes": {
+            "src": "reconf/control_unit/rtl/control_unit_op_matrix.v:31.26-32.31"
+          }
+        },
+        "$or$reconf/control_unit/rtl/control_unit_op_matrix.v:31$7_Y": {
+          "hide_name": 1,
+          "bits": [ 31 ],
+          "attributes": {
+            "src": "reconf/control_unit/rtl/control_unit_op_matrix.v:31.26-32.39"
+          }
+        },
+        "$or$reconf/control_unit/rtl/control_unit_op_matrix.v:31$8_Y": {
+          "hide_name": 1,
+          "bits": [ 32 ],
+          "attributes": {
+            "src": "reconf/control_unit/rtl/control_unit_op_matrix.v:31.26-32.48"
+          }
+        },
+        "$or$reconf/control_unit/rtl/control_unit_op_matrix.v:31$9_Y": {
+          "hide_name": 1,
+          "bits": [ 33 ],
+          "attributes": {
+            "src": "reconf/control_unit/rtl/control_unit_op_matrix.v:31.26-32.58"
+          }
+        },
+        "$or$reconf/control_unit/rtl/control_unit_op_matrix.v:42$13_Y": {
+          "hide_name": 1,
+          "bits": [ 36 ],
+          "attributes": {
+            "src": "reconf/control_unit/rtl/control_unit_op_matrix.v:42.24-42.40"
+          }
+        },
+        "$or$reconf/control_unit/rtl/control_unit_op_matrix.v:42$14_Y": {
+          "hide_name": 1,
+          "bits": [ 37 ],
+          "attributes": {
+            "src": "reconf/control_unit/rtl/control_unit_op_matrix.v:42.24-42.49"
+          }
+        },
+        "$or$reconf/control_unit/rtl/control_unit_op_matrix.v:50$17_Y": {
+          "hide_name": 1,
+          "bits": [ 38 ],
+          "attributes": {
+            "src": "reconf/control_unit/rtl/control_unit_op_matrix.v:50.26-50.38"
+          }
+        },
+        "$or$reconf/control_unit/rtl/control_unit_op_matrix.v:50$18_Y": {
+          "hide_name": 1,
+          "bits": [ 39 ],
+          "attributes": {
+            "src": "reconf/control_unit/rtl/control_unit_op_matrix.v:50.26-50.46"
+          }
+        },
+        "$or$reconf/control_unit/rtl/control_unit_op_matrix.v:50$19_Y": {
+          "hide_name": 1,
+          "bits": [ 40 ],
+          "attributes": {
+            "src": "reconf/control_unit/rtl/control_unit_op_matrix.v:50.26-50.54"
+          }
+        },
+        "$or$reconf/control_unit/rtl/control_unit_op_matrix.v:52$21_Y": {
+          "hide_name": 1,
+          "bits": [ 41 ],
+          "attributes": {
+            "src": "reconf/control_unit/rtl/control_unit_op_matrix.v:52.26-52.38"
+          }
+        },
+        "$or$reconf/control_unit/rtl/control_unit_op_matrix.v:52$22_Y": {
+          "hide_name": 1,
+          "bits": [ 42 ],
+          "attributes": {
+            "src": "reconf/control_unit/rtl/control_unit_op_matrix.v:52.26-52.46"
+          }
+        },
+        "$or$reconf/control_unit/rtl/control_unit_op_matrix.v:54$24_Y": {
+          "hide_name": 1,
+          "bits": [ 43 ],
+          "attributes": {
+            "src": "reconf/control_unit/rtl/control_unit_op_matrix.v:54.26-54.39"
+          }
+        },
+        "$or$reconf/control_unit/rtl/control_unit_op_matrix.v:54$25_Y": {
+          "hide_name": 1,
+          "bits": [ 44 ],
+          "attributes": {
+            "src": "reconf/control_unit/rtl/control_unit_op_matrix.v:54.26-54.47"
+          }
+        },
+        "i_inst_active": {
+          "hide_name": 0,
+          "bits": [ 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17 ],
+          "attributes": {
+            "src": "reconf/control_unit/rtl/control_unit_op_matrix.v:2.24-2.37"
+          }
+        },
+        "o_alu_op": {
+          "hide_name": 0,
+          "bits": [ 21, 22, 23, 24 ],
+          "attributes": {
+            "src": "reconf/control_unit/rtl/control_unit_op_matrix.v:8.24-8.32"
+          }
+        },
+        "o_alu_src": {
+          "hide_name": 0,
+          "bits": [ 19 ],
+          "attributes": {
+            "src": "reconf/control_unit/rtl/control_unit_op_matrix.v:6.24-6.33"
+          }
+        },
+        "o_mem_to_reg": {
+          "hide_name": 0,
+          "bits": [ 12 ],
+          "attributes": {
+            "src": "reconf/control_unit/rtl/control_unit_op_matrix.v:5.24-5.36"
+          }
+        },
+        "o_mem_write": {
+          "hide_name": 0,
+          "bits": [ 13 ],
+          "attributes": {
+            "src": "reconf/control_unit/rtl/control_unit_op_matrix.v:4.24-4.35"
+          }
+        },
+        "o_reg_data_sel": {
+          "hide_name": 0,
+          "bits": [ 20 ],
+          "attributes": {
+            "src": "reconf/control_unit/rtl/control_unit_op_matrix.v:7.24-7.38"
+          }
+        },
+        "o_reg_write": {
+          "hide_name": 0,
+          "bits": [ 18 ],
+          "attributes": {
+            "src": "reconf/control_unit/rtl/control_unit_op_matrix.v:3.24-3.35"
+          }
+        },
+        "w_add": {
+          "hide_name": 0,
+          "bits": [ 2 ],
+          "attributes": {
+            "src": "reconf/control_unit/rtl/control_unit_op_matrix.v:12.10-12.15"
+          }
+        },
+        "w_addi": {
+          "hide_name": 0,
+          "bits": [ 10 ],
+          "attributes": {
+            "src": "reconf/control_unit/rtl/control_unit_op_matrix.v:20.10-20.16"
+          }
+        },
+        "w_and": {
+          "hide_name": 0,
+          "bits": [ 4 ],
+          "attributes": {
+            "src": "reconf/control_unit/rtl/control_unit_op_matrix.v:14.10-14.15"
+          }
+        },
+        "w_blt": {
+          "hide_name": 0,
+          "bits": [ 14 ],
+          "attributes": {
+            "src": "reconf/control_unit/rtl/control_unit_op_matrix.v:24.10-24.15",
+            "unused_bits": "0 "
+          }
+        },
+        "w_bz": {
+          "hide_name": 0,
+          "bits": [ 15 ],
+          "attributes": {
+            "src": "reconf/control_unit/rtl/control_unit_op_matrix.v:25.10-25.14",
+            "unused_bits": "0 "
+          }
+        },
+        "w_jal": {
+          "hide_name": 0,
+          "bits": [ 16 ],
+          "attributes": {
+            "src": "reconf/control_unit/rtl/control_unit_op_matrix.v:26.10-26.15"
+          }
+        },
+        "w_jalr": {
+          "hide_name": 0,
+          "bits": [ 17 ],
+          "attributes": {
+            "src": "reconf/control_unit/rtl/control_unit_op_matrix.v:27.10-27.16"
+          }
+        },
+        "w_load": {
+          "hide_name": 0,
+          "bits": [ 12 ],
+          "attributes": {
+            "src": "reconf/control_unit/rtl/control_unit_op_matrix.v:22.10-22.16"
+          }
+        },
+        "w_loadi": {
+          "hide_name": 0,
+          "bits": [ 11 ],
+          "attributes": {
+            "src": "reconf/control_unit/rtl/control_unit_op_matrix.v:21.10-21.17"
+          }
+        },
+        "w_not": {
+          "hide_name": 0,
+          "bits": [ 7 ],
+          "attributes": {
+            "src": "reconf/control_unit/rtl/control_unit_op_matrix.v:17.10-17.15"
+          }
+        },
+        "w_or": {
+          "hide_name": 0,
+          "bits": [ 5 ],
+          "attributes": {
+            "src": "reconf/control_unit/rtl/control_unit_op_matrix.v:15.10-15.14"
+          }
+        },
+        "w_sla": {
+          "hide_name": 0,
+          "bits": [ 9 ],
+          "attributes": {
+            "src": "reconf/control_unit/rtl/control_unit_op_matrix.v:19.10-19.15"
+          }
+        },
+        "w_sra": {
+          "hide_name": 0,
+          "bits": [ 8 ],
+          "attributes": {
+            "src": "reconf/control_unit/rtl/control_unit_op_matrix.v:18.10-18.15"
+          }
+        },
+        "w_store": {
+          "hide_name": 0,
+          "bits": [ 13 ],
+          "attributes": {
+            "src": "reconf/control_unit/rtl/control_unit_op_matrix.v:23.10-23.17"
+          }
+        },
+        "w_sub": {
+          "hide_name": 0,
+          "bits": [ 3 ],
+          "attributes": {
+            "src": "reconf/control_unit/rtl/control_unit_op_matrix.v:13.10-13.15"
+          }
+        },
+        "w_xor": {
+          "hide_name": 0,
+          "bits": [ 6 ],
+          "attributes": {
+            "src": "reconf/control_unit/rtl/control_unit_op_matrix.v:16.10-16.15"
+          }
+        }
+      }
+    }
+  }
+}

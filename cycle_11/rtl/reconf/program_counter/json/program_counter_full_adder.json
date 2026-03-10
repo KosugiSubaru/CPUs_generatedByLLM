@@ -1,0 +1,249 @@
+{
+  "creator": "Yosys 0.61+112 (git sha1 ac427a79b, clang++ 18.1.8 -fPIC -O3)",
+  "modules": {
+    "program_counter_full_adder": {
+      "attributes": {
+        "top": "00000000000000000000000000000001",
+        "src": "reconf/program_counter/rtl/program_counter_full_adder.v:1.1-29.10"
+      },
+      "ports": {
+        "i_a": {
+          "direction": "input",
+          "bits": [ 2 ]
+        },
+        "i_b": {
+          "direction": "input",
+          "bits": [ 3 ]
+        },
+        "i_cin": {
+          "direction": "input",
+          "bits": [ 4 ]
+        },
+        "o_sum": {
+          "direction": "output",
+          "bits": [ 5 ]
+        },
+        "o_cout": {
+          "direction": "output",
+          "bits": [ 6 ]
+        }
+      },
+      "cells": {
+        "$auto$simplemap.cc:106:simplemap_bitop$99": {
+          "hide_name": 1,
+          "type": "$_OR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/program_counter/rtl/program_counter_full_adder.v:27.21-27.44"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 7 ],
+            "B": [ 8 ],
+            "Y": [ 6 ]
+          }
+        },
+        "u_ha1": {
+          "hide_name": 0,
+          "type": "program_counter_half_adder",
+          "parameters": {
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "reconf/program_counter/rtl/program_counter_full_adder.v:13.32-18.6"
+          },
+          "port_directions": {
+            "i_a": "input",
+            "i_b": "input",
+            "o_cout": "output",
+            "o_sum": "output"
+          },
+          "connections": {
+            "i_a": [ 2 ],
+            "i_b": [ 3 ],
+            "o_cout": [ 7 ],
+            "o_sum": [ 9 ]
+          }
+        },
+        "u_ha2": {
+          "hide_name": 0,
+          "type": "program_counter_half_adder",
+          "parameters": {
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "reconf/program_counter/rtl/program_counter_full_adder.v:20.32-25.6"
+          },
+          "port_directions": {
+            "i_a": "input",
+            "i_b": "input",
+            "o_cout": "output",
+            "o_sum": "output"
+          },
+          "connections": {
+            "i_a": [ 9 ],
+            "i_b": [ 4 ],
+            "o_cout": [ 8 ],
+            "o_sum": [ 5 ]
+          }
+        }
+      },
+      "netnames": {
+        "i_a": {
+          "hide_name": 0,
+          "bits": [ 2 ],
+          "attributes": {
+            "src": "reconf/program_counter/rtl/program_counter_full_adder.v:2.17-2.20"
+          }
+        },
+        "i_b": {
+          "hide_name": 0,
+          "bits": [ 3 ],
+          "attributes": {
+            "src": "reconf/program_counter/rtl/program_counter_full_adder.v:3.17-3.20"
+          }
+        },
+        "i_cin": {
+          "hide_name": 0,
+          "bits": [ 4 ],
+          "attributes": {
+            "src": "reconf/program_counter/rtl/program_counter_full_adder.v:4.17-4.22"
+          }
+        },
+        "o_cout": {
+          "hide_name": 0,
+          "bits": [ 6 ],
+          "attributes": {
+            "src": "reconf/program_counter/rtl/program_counter_full_adder.v:6.17-6.23"
+          }
+        },
+        "o_sum": {
+          "hide_name": 0,
+          "bits": [ 5 ],
+          "attributes": {
+            "src": "reconf/program_counter/rtl/program_counter_full_adder.v:5.17-5.22"
+          }
+        },
+        "w_cout_ha1": {
+          "hide_name": 0,
+          "bits": [ 7 ],
+          "attributes": {
+            "src": "reconf/program_counter/rtl/program_counter_full_adder.v:10.10-10.20"
+          }
+        },
+        "w_cout_ha2": {
+          "hide_name": 0,
+          "bits": [ 8 ],
+          "attributes": {
+            "src": "reconf/program_counter/rtl/program_counter_full_adder.v:11.10-11.20"
+          }
+        },
+        "w_sum_ha1": {
+          "hide_name": 0,
+          "bits": [ 9 ],
+          "attributes": {
+            "src": "reconf/program_counter/rtl/program_counter_full_adder.v:9.10-9.19"
+          }
+        }
+      }
+    },
+    "program_counter_half_adder": {
+      "attributes": {
+        "src": "reconf/program_counter/rtl/program_counter_half_adder.v:1.1-11.10"
+      },
+      "ports": {
+        "i_a": {
+          "direction": "input",
+          "bits": [ 2 ]
+        },
+        "i_b": {
+          "direction": "input",
+          "bits": [ 3 ]
+        },
+        "o_sum": {
+          "direction": "output",
+          "bits": [ 4 ]
+        },
+        "o_cout": {
+          "direction": "output",
+          "bits": [ 5 ]
+        }
+      },
+      "cells": {
+        "$auto$simplemap.cc:106:simplemap_bitop$97": {
+          "hide_name": 1,
+          "type": "$_XOR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/program_counter/rtl/program_counter_half_adder.v:8.21-8.30"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 2 ],
+            "B": [ 3 ],
+            "Y": [ 4 ]
+          }
+        },
+        "$auto$simplemap.cc:106:simplemap_bitop$98": {
+          "hide_name": 1,
+          "type": "$_AND_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/program_counter/rtl/program_counter_half_adder.v:9.21-9.30"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 2 ],
+            "B": [ 3 ],
+            "Y": [ 5 ]
+          }
+        }
+      },
+      "netnames": {
+        "i_a": {
+          "hide_name": 0,
+          "bits": [ 2 ],
+          "attributes": {
+            "src": "reconf/program_counter/rtl/program_counter_half_adder.v:2.17-2.20"
+          }
+        },
+        "i_b": {
+          "hide_name": 0,
+          "bits": [ 3 ],
+          "attributes": {
+            "src": "reconf/program_counter/rtl/program_counter_half_adder.v:3.17-3.20"
+          }
+        },
+        "o_cout": {
+          "hide_name": 0,
+          "bits": [ 5 ],
+          "attributes": {
+            "src": "reconf/program_counter/rtl/program_counter_half_adder.v:5.17-5.23"
+          }
+        },
+        "o_sum": {
+          "hide_name": 0,
+          "bits": [ 4 ],
+          "attributes": {
+            "src": "reconf/program_counter/rtl/program_counter_half_adder.v:4.17-4.22"
+          }
+        }
+      }
+    }
+  }
+}

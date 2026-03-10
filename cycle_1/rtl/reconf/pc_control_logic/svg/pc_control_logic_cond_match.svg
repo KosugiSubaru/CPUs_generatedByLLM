@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:s="https://github.com/nturley/netlistsvg" width="229" height="161">
+  <style>svg {
+    stroke:#000;
+    fill:none;
+  }
+  text {
+    fill:#000;
+    stroke:none;
+    font-size:10px;
+    font-weight: bold;
+    font-family: "Courier New", monospace;
+  }
+  .nodelabel {
+    text-anchor: middle;
+  }
+  .inputPortLabel {
+    text-anchor: end;
+  }
+  .splitjoinBody {
+    fill:#000;
+  }</style>
+  <g s:type="reduce_xor" transform="translate(95,69)" s:width="33" s:height="25" id="cell_$auto$simplemap.cc:106:simplemap_bitop$81">
+    <s:alias val="$xor"/>
+    <s:alias val="$reduce_xor"/>
+    <s:alias val="$_XOR_"/>
+    <path d="M3,0 A30 25 0 0 1 3,25 A30 25 0 0 0 33,12.5 A30 25 0 0 0 3,0" class="cell_$auto$simplemap.cc:106:simplemap_bitop$81"/>
+    <path d="M0,0 A30 25 0 0 1 0,25" class="cell_$auto$simplemap.cc:106:simplemap_bitop$81"/>
+    <g s:x="3" s:y="5" s:pid="A"/>
+    <g s:x="3" s:y="20" s:pid="B"/>
+    <g s:x="33" s:y="12.5" s:pid="Y"/>
+  </g>
+  <g s:type="inputExt" transform="translate(12,22)" s:width="30" s:height="20" id="cell_i_flag_z">
+    <text x="15" y="-4" class="nodelabel cell_i_flag_z" s:attribute="ref">i_flag_z</text>
+    <s:alias val="$_inputExt_"/>
+    <path d="M0,0 L0,20 L15,20 L30,10 L15,0 Z" class="cell_i_flag_z"/>
+    <g s:x="28" s:y="10" s:pid="Y"/>
+  </g>
+  <g s:type="inputExt" transform="translate(12,64)" s:width="30" s:height="20" id="cell_i_flag_n">
+    <text x="15" y="-4" class="nodelabel cell_i_flag_n" s:attribute="ref">i_flag_n</text>
+    <s:alias val="$_inputExt_"/>
+    <path d="M0,0 L0,20 L15,20 L30,10 L15,0 Z" class="cell_i_flag_n"/>
+    <g s:x="28" s:y="10" s:pid="Y"/>
+  </g>
+  <g s:type="inputExt" transform="translate(12,129)" s:width="30" s:height="20" id="cell_i_flag_v">
+    <text x="15" y="-4" class="nodelabel cell_i_flag_v" s:attribute="ref">i_flag_v</text>
+    <s:alias val="$_inputExt_"/>
+    <path d="M0,0 L0,20 L15,20 L30,10 L15,0 Z" class="cell_i_flag_v"/>
+    <g s:x="28" s:y="10" s:pid="Y"/>
+  </g>
+  <g s:type="outputExt" transform="translate(95,22)" s:width="30" s:height="20" id="cell_o_cond_z">
+    <text x="15" y="-4" class="nodelabel cell_o_cond_z" s:attribute="ref">o_cond_z</text>
+    <s:alias val="$_outputExt_"/>
+    <path d="M30,0 L30,20 L15,20 L0,10 L15,0 Z" class="cell_o_cond_z"/>
+    <g s:x="0" s:y="10" s:pid="A"/>
+  </g>
+  <g s:type="outputExt" transform="translate(163,71.5)" s:width="30" s:height="20" id="cell_o_cond_lt">
+    <text x="15" y="-4" class="nodelabel cell_o_cond_lt" s:attribute="ref">o_cond_lt</text>
+    <s:alias val="$_outputExt_"/>
+    <path d="M30,0 L30,20 L15,20 L0,10 L15,0 Z" class="cell_o_cond_lt"/>
+    <g s:x="0" s:y="10" s:pid="A"/>
+  </g>
+  <line x1="40" x2="98" y1="74" y2="74" class="net_3"/>
+  <line x1="40" x2="70" y1="139" y2="139" class="net_4"/>
+  <line x1="70" x2="70" y1="139" y2="89" class="net_4"/>
+  <line x1="70" x2="98" y1="89" y2="89" class="net_4"/>
+  <line x1="40" x2="95" y1="32" y2="32" class="net_2"/>
+  <line x1="128" x2="163" y1="81.5" y2="81.5" class="net_5"/>
+</svg>

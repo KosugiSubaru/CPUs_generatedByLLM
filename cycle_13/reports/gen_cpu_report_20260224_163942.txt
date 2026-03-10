@@ -1,0 +1,61 @@
+
+============================================================
+CPU自動生成レポート
+============================================================
+生成日時: 2026-02-24 16:39:42
+
+生成成功モジュール (9個):
+
+  ✓ pc_reg:
+    - pc_reg_bit.v
+    - pc_reg_mux2_1bit.v
+    - pc_reg_mux4_1bit.v
+    - pc_reg_mux4_16bit.v
+    - pc_reg.v
+  ✓ control_unit:
+    - control_unit_op_match.v
+    - control_unit_decoder.v
+    - control_unit_gate_or.v
+    - control_unit.v
+  ✓ register_file:
+    - register_file_bit.v
+    - register_file_mux2_1bit.v
+    - register_file_word.v
+    - register_file_decoder.v
+    - register_file_mux16_1bit.v
+    - register_file_mux16_16bit.v
+    - register_file.v
+  ✓ alu:
+    - alu_full_adder.v
+    - alu_logic_bit.v
+    - alu_adder_16bit.v
+    - alu_logic_16bit.v
+    - alu_shifter_16bit.v
+    - alu_mux8_16bit.v
+    - alu.v
+  ✓ imm_gen:
+    - imm_gen_bit_ext.v
+    - imm_gen_sext4_i.v
+    - imm_gen_sext4_s.v
+    - imm_gen_sext8_u.v
+    - imm_gen_sext12_b.v
+    - imm_gen.v
+  ✓ flag_reg:
+    - flag_reg_bit.v
+    - flag_reg.v
+  ✓ pc_control:
+    - pc_control_adder_1bit.v
+    - pc_control_adder_16bit.v
+    - pc_control_condition.v
+    - pc_control.v
+  ✓ alu_mux:
+    - alu_mux_bit.v
+    - alu_mux.v
+  ✓ write_back_mux:
+    - write_back_mux_2to1_1bit.v
+    - write_back_mux_4to1_1bit.v
+    - write_back_mux.v
+
+すべてのモジュールが正常に生成されました。
+
+============================================================

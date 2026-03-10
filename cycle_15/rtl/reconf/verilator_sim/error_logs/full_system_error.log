@@ -1,0 +1,35 @@
+
+=== ログ 2026-02-24 17:22:18 ===
+%Warning-PINMISSING: reconf/next_pc_logic/rtl/next_pc_logic.v:27:31: Instance has missing pin: 'i_opcode'
+   27 |     next_pc_logic_branch_eval u_eval (
+      |                               ^~~~~~
+                     reconf/next_pc_logic/rtl/next_pc_logic_branch_eval.v:2:23: ... Location of port declaration
+    2 |     input  wire [3:0] i_opcode,  
+      |                       ^~~~~~~~
+                     ... For warning description see https://verilator.org/warn/PINMISSING?v=5.045
+                     ... Use "/* verilator lint_off PINMISSING */" and lint_on around source to disable this message.
+%Error: Exiting due to 1 warning(s)
+
+==================================================
+
+=== ログ 2026-02-24 17:22:31 ===
+### エラーの要点
+このエラーは、**モジュールの呼び出し（インスタンス化）において、定義されているはずのポートが接続されていないこと**を指摘しています。
+
+具体的には、`next_pc_logic_branch_eval` というモジュール側では `i_opcode` という入力ポートが定義されていますが、それを使用している `next_pc_logic.v` 内のインスタンス `u_eval` において、そのポートに対する配線（接続記述）が漏れているため、コンパイルが停止しています。
+
+### 修正方法の提案
+
+以下のステップで修正を行う必要があります。
+
+1.  **中間モジュールの入力ポート追加**
+    `next_pc_logic.v` 自体の入力ポートリストに、Opcodeを受け取るための新しい入力（例：`input wire [3:0] i_opcode`）を追加します。現在、このモジュールにはOpcodeが渡されていないため、下位モジュールへ引き渡すことができない状態です。
+
+2.  **インスタンス化部分の接続更新**
+    `next_pc_logic.v` の27行目付近にある `u_eval` のインスタンス化記述の中に、`.i_opcode(i_opcode)` という接続行を追加してください。これにより、上位から届いたOpcode信号が正しく分岐判定ユニットへ伝わるようになります。
+
+3.  **最上位モジュールでの信号供給**
+    さらに上の階層である `cpu.v` において、`next_pc_logic` を呼び出している箇所を探し、新しく追加したポートに対して現在の命令のOpcodeフィールド（`i_instr[3:0]`）を接続するように更新してください。
+
+このように、情報の「受け渡し経路」を最上位から目的のサブモジュールまで繋ぎ直すことで解決します。
+==================================================

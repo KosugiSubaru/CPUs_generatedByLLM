@@ -1,0 +1,360 @@
+{
+  "creator": "Yosys 0.61+112 (git sha1 ac427a79b, clang++ 18.1.8 -fPIC -O3)",
+  "modules": {
+    "imm_gen_bit_copy": {
+      "attributes": {
+        "src": "reconf/imm_gen/rtl/imm_gen_bit_copy.v:1.1-8.10"
+      },
+      "ports": {
+        "i_bit": {
+          "direction": "input",
+          "bits": [ 2 ]
+        },
+        "o_bit": {
+          "direction": "output",
+          "bits": [ 2 ]
+        }
+      },
+      "cells": {
+      },
+      "netnames": {
+        "i_bit": {
+          "hide_name": 0,
+          "bits": [ 2 ],
+          "attributes": {
+            "src": "reconf/imm_gen/rtl/imm_gen_bit_copy.v:2.17-2.22"
+          }
+        },
+        "o_bit": {
+          "hide_name": 0,
+          "bits": [ 2 ],
+          "attributes": {
+            "src": "reconf/imm_gen/rtl/imm_gen_bit_copy.v:3.17-3.22"
+          }
+        }
+      }
+    },
+    "imm_gen_ext_12to16": {
+      "attributes": {
+        "top": "00000000000000000000000000000001",
+        "src": "reconf/imm_gen/rtl/imm_gen_ext_12to16.v:1.1-29.10"
+      },
+      "ports": {
+        "i_in": {
+          "direction": "input",
+          "bits": [ 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13 ]
+        },
+        "o_out": {
+          "direction": "output",
+          "bits": [ 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29 ]
+        }
+      },
+      "cells": {
+        "gen_lower[0].u_copy_low": {
+          "hide_name": 0,
+          "type": "imm_gen_bit_copy",
+          "parameters": {
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "reconf/imm_gen/rtl/imm_gen_ext_12to16.v:12.30-15.14"
+          },
+          "port_directions": {
+            "i_bit": "input",
+            "o_bit": "output"
+          },
+          "connections": {
+            "i_bit": [ 2 ],
+            "o_bit": [ 14 ]
+          }
+        },
+        "gen_lower[10].u_copy_low": {
+          "hide_name": 0,
+          "type": "imm_gen_bit_copy",
+          "parameters": {
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "reconf/imm_gen/rtl/imm_gen_ext_12to16.v:12.30-15.14"
+          },
+          "port_directions": {
+            "i_bit": "input",
+            "o_bit": "output"
+          },
+          "connections": {
+            "i_bit": [ 12 ],
+            "o_bit": [ 24 ]
+          }
+        },
+        "gen_lower[11].u_copy_low": {
+          "hide_name": 0,
+          "type": "imm_gen_bit_copy",
+          "parameters": {
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "reconf/imm_gen/rtl/imm_gen_ext_12to16.v:12.30-15.14"
+          },
+          "port_directions": {
+            "i_bit": "input",
+            "o_bit": "output"
+          },
+          "connections": {
+            "i_bit": [ 13 ],
+            "o_bit": [ 25 ]
+          }
+        },
+        "gen_lower[1].u_copy_low": {
+          "hide_name": 0,
+          "type": "imm_gen_bit_copy",
+          "parameters": {
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "reconf/imm_gen/rtl/imm_gen_ext_12to16.v:12.30-15.14"
+          },
+          "port_directions": {
+            "i_bit": "input",
+            "o_bit": "output"
+          },
+          "connections": {
+            "i_bit": [ 3 ],
+            "o_bit": [ 15 ]
+          }
+        },
+        "gen_lower[2].u_copy_low": {
+          "hide_name": 0,
+          "type": "imm_gen_bit_copy",
+          "parameters": {
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "reconf/imm_gen/rtl/imm_gen_ext_12to16.v:12.30-15.14"
+          },
+          "port_directions": {
+            "i_bit": "input",
+            "o_bit": "output"
+          },
+          "connections": {
+            "i_bit": [ 4 ],
+            "o_bit": [ 16 ]
+          }
+        },
+        "gen_lower[3].u_copy_low": {
+          "hide_name": 0,
+          "type": "imm_gen_bit_copy",
+          "parameters": {
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "reconf/imm_gen/rtl/imm_gen_ext_12to16.v:12.30-15.14"
+          },
+          "port_directions": {
+            "i_bit": "input",
+            "o_bit": "output"
+          },
+          "connections": {
+            "i_bit": [ 5 ],
+            "o_bit": [ 17 ]
+          }
+        },
+        "gen_lower[4].u_copy_low": {
+          "hide_name": 0,
+          "type": "imm_gen_bit_copy",
+          "parameters": {
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "reconf/imm_gen/rtl/imm_gen_ext_12to16.v:12.30-15.14"
+          },
+          "port_directions": {
+            "i_bit": "input",
+            "o_bit": "output"
+          },
+          "connections": {
+            "i_bit": [ 6 ],
+            "o_bit": [ 18 ]
+          }
+        },
+        "gen_lower[5].u_copy_low": {
+          "hide_name": 0,
+          "type": "imm_gen_bit_copy",
+          "parameters": {
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "reconf/imm_gen/rtl/imm_gen_ext_12to16.v:12.30-15.14"
+          },
+          "port_directions": {
+            "i_bit": "input",
+            "o_bit": "output"
+          },
+          "connections": {
+            "i_bit": [ 7 ],
+            "o_bit": [ 19 ]
+          }
+        },
+        "gen_lower[6].u_copy_low": {
+          "hide_name": 0,
+          "type": "imm_gen_bit_copy",
+          "parameters": {
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "reconf/imm_gen/rtl/imm_gen_ext_12to16.v:12.30-15.14"
+          },
+          "port_directions": {
+            "i_bit": "input",
+            "o_bit": "output"
+          },
+          "connections": {
+            "i_bit": [ 8 ],
+            "o_bit": [ 20 ]
+          }
+        },
+        "gen_lower[7].u_copy_low": {
+          "hide_name": 0,
+          "type": "imm_gen_bit_copy",
+          "parameters": {
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "reconf/imm_gen/rtl/imm_gen_ext_12to16.v:12.30-15.14"
+          },
+          "port_directions": {
+            "i_bit": "input",
+            "o_bit": "output"
+          },
+          "connections": {
+            "i_bit": [ 9 ],
+            "o_bit": [ 21 ]
+          }
+        },
+        "gen_lower[8].u_copy_low": {
+          "hide_name": 0,
+          "type": "imm_gen_bit_copy",
+          "parameters": {
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "reconf/imm_gen/rtl/imm_gen_ext_12to16.v:12.30-15.14"
+          },
+          "port_directions": {
+            "i_bit": "input",
+            "o_bit": "output"
+          },
+          "connections": {
+            "i_bit": [ 10 ],
+            "o_bit": [ 22 ]
+          }
+        },
+        "gen_lower[9].u_copy_low": {
+          "hide_name": 0,
+          "type": "imm_gen_bit_copy",
+          "parameters": {
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "reconf/imm_gen/rtl/imm_gen_ext_12to16.v:12.30-15.14"
+          },
+          "port_directions": {
+            "i_bit": "input",
+            "o_bit": "output"
+          },
+          "connections": {
+            "i_bit": [ 11 ],
+            "o_bit": [ 23 ]
+          }
+        },
+        "gen_sign_ext[12].u_copy_sign": {
+          "hide_name": 0,
+          "type": "imm_gen_bit_copy",
+          "parameters": {
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "reconf/imm_gen/rtl/imm_gen_ext_12to16.v:22.30-25.14"
+          },
+          "port_directions": {
+            "i_bit": "input",
+            "o_bit": "output"
+          },
+          "connections": {
+            "i_bit": [ 13 ],
+            "o_bit": [ 26 ]
+          }
+        },
+        "gen_sign_ext[13].u_copy_sign": {
+          "hide_name": 0,
+          "type": "imm_gen_bit_copy",
+          "parameters": {
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "reconf/imm_gen/rtl/imm_gen_ext_12to16.v:22.30-25.14"
+          },
+          "port_directions": {
+            "i_bit": "input",
+            "o_bit": "output"
+          },
+          "connections": {
+            "i_bit": [ 13 ],
+            "o_bit": [ 27 ]
+          }
+        },
+        "gen_sign_ext[14].u_copy_sign": {
+          "hide_name": 0,
+          "type": "imm_gen_bit_copy",
+          "parameters": {
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "reconf/imm_gen/rtl/imm_gen_ext_12to16.v:22.30-25.14"
+          },
+          "port_directions": {
+            "i_bit": "input",
+            "o_bit": "output"
+          },
+          "connections": {
+            "i_bit": [ 13 ],
+            "o_bit": [ 28 ]
+          }
+        },
+        "gen_sign_ext[15].u_copy_sign": {
+          "hide_name": 0,
+          "type": "imm_gen_bit_copy",
+          "parameters": {
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "reconf/imm_gen/rtl/imm_gen_ext_12to16.v:22.30-25.14"
+          },
+          "port_directions": {
+            "i_bit": "input",
+            "o_bit": "output"
+          },
+          "connections": {
+            "i_bit": [ 13 ],
+            "o_bit": [ 29 ]
+          }
+        }
+      },
+      "netnames": {
+        "i_in": {
+          "hide_name": 0,
+          "bits": [ 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13 ],
+          "attributes": {
+            "src": "reconf/imm_gen/rtl/imm_gen_ext_12to16.v:2.24-2.28"
+          }
+        },
+        "o_out": {
+          "hide_name": 0,
+          "bits": [ 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29 ],
+          "attributes": {
+            "src": "reconf/imm_gen/rtl/imm_gen_ext_12to16.v:3.24-3.29"
+          }
+        }
+      }
+    }
+  }
+}

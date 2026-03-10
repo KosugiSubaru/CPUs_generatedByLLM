@@ -1,0 +1,19 @@
+
+=== ログ 2026-02-24 17:12:41 ===
+=== RTL Compile (All Files) ===
+
+reconf/imm_gen/rtl/imm_gen.v:47: error: expression not valid in assign l-value: ((i)==('sd0))?(w_mux_mid0):(w_mux_mid1)
+reconf/imm_gen/rtl/imm_gen.v:47: error: Output port expression must support a continuous assignment.
+reconf/imm_gen/rtl/imm_gen.v:47:      : Port 4 (o_data) of imm_gen_mux_2to1_16bit is connected to imm_gen.gen_mux_stage1[0].((i)==('sd0))?(w_mux_mid0):(w_mux_mid1)
+reconf/imm_gen/rtl/imm_gen.v:47: error: expression not valid in assign l-value: ((i)==('sd0))?(w_mux_mid0):(w_mux_mid1)
+reconf/imm_gen/rtl/imm_gen.v:47: error: Output port expression must support a continuous assignment.
+reconf/imm_gen/rtl/imm_gen.v:47:      : Port 4 (o_data) of imm_gen_mux_2to1_16bit is connected to imm_gen.gen_mux_stage1[1].((i)==('sd0))?(w_mux_mid0):(w_mux_mid1)
+2 error(s) during elaboration.
+
+==================================================
+
+=== ログ 2026-02-24 17:13:12 ===
+=== RTL Compile (All Files) ===
+
+
+==================================================

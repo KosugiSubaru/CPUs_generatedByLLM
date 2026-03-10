@@ -1,0 +1,66 @@
+
+============================================================
+CPU自動生成レポート
+============================================================
+生成日時: 2026-02-24 17:00:30
+
+生成成功モジュール (8個):
+
+  ✓ pc_reg:
+    - pc_reg.v
+    - pc_reg_adder_16bit.v
+    - pc_reg_mux4_16bit.v
+    - pc_reg_dff_16bit.v
+    - pc_reg_full_adder.v
+    - pc_reg_mux4_1bit.v
+    - pc_reg_dff_1bit.v
+  ✓ ctrl_unit:
+    - ctrl_unit.v
+    - ctrl_unit_decoder_16.v
+    - ctrl_unit_mixer.v
+    - ctrl_unit_pc_logic.v
+    - ctrl_unit_matcher_4.v
+  ✓ reg_file:
+    - reg_file.v
+    - reg_file_bank_16.v
+    - reg_file_read_port_16bit.v
+    - reg_file_decoder_4to16.v
+    - reg_file_cell_16bit.v
+    - reg_file_mux_16to1_1bit.v
+  ✓ imm_gen:
+    - imm_gen.v
+    - imm_gen_ext4_i.v
+    - imm_gen_ext4_s.v
+    - imm_gen_ext8.v
+    - imm_gen_ext12.v
+    - imm_gen_mux5_16bit.v
+    - imm_gen_mux5_1bit.v
+  ✓ alu_core:
+    - alu_core.v
+    - alu_core_arithmetic_16bit.v
+    - alu_core_logical_16bit.v
+    - alu_core_shifter_16bit.v
+    - alu_core_res_mux_16bit.v
+    - alu_core_full_adder.v
+    - alu_core_bit_logic.v
+    - alu_core_mux16_1bit.v
+  ✓ flag_reg:
+    - flag_reg.v
+    - flag_reg_dff.v
+  ✓ next_pc_logic:
+    - next_pc_logic.v
+    - next_pc_logic_adder_16bit.v
+    - next_pc_logic_mux3_16bit.v
+    - next_pc_logic_branch_eval.v
+    - next_pc_logic_full_adder.v
+    - next_pc_logic_mux3_1bit.v
+  ✓ mem_ctrl:
+    - mem_ctrl.v
+    - mem_ctrl_adder_16bit.v
+    - mem_ctrl_buffer_16bit.v
+    - mem_ctrl_full_adder.v
+    - mem_ctrl_buffer_1bit.v
+
+すべてのモジュールが正常に生成されました。
+
+============================================================

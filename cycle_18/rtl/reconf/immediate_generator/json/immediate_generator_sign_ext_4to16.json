@@ -1,0 +1,39 @@
+{
+  "creator": "Yosys 0.61+112 (git sha1 ac427a79b, clang++ 18.1.8 -fPIC -O3)",
+  "modules": {
+    "immediate_generator_sign_ext_4to16": {
+      "attributes": {
+        "top": "00000000000000000000000000000001",
+        "src": "reconf/immediate_generator/rtl/immediate_generator_sign_ext_4to16.v:1.1-20.10"
+      },
+      "ports": {
+        "i_imm_4": {
+          "direction": "input",
+          "bits": [ 2, 3, 4, 5 ]
+        },
+        "o_imm_16": {
+          "direction": "output",
+          "bits": [ 2, 3, 4, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5 ]
+        }
+      },
+      "cells": {
+      },
+      "netnames": {
+        "i_imm_4": {
+          "hide_name": 0,
+          "bits": [ 2, 3, 4, 5 ],
+          "attributes": {
+            "src": "reconf/immediate_generator/rtl/immediate_generator_sign_ext_4to16.v:2.24-2.31"
+          }
+        },
+        "o_imm_16": {
+          "hide_name": 0,
+          "bits": [ 2, 3, 4, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5 ],
+          "attributes": {
+            "src": "reconf/immediate_generator/rtl/immediate_generator_sign_ext_4to16.v:3.24-3.32"
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,214 @@
+{
+  "creator": "Yosys 0.61+112 (git sha1 ac427a79b, clang++ 18.1.8 -fPIC -O3)",
+  "modules": {
+    "pc_control_adder_1bit": {
+      "attributes": {
+        "top": "00000000000000000000000000000001",
+        "src": "reconf/pc_control/rtl/pc_control_adder_1bit.v:1.1-12.10"
+      },
+      "ports": {
+        "i_a": {
+          "direction": "input",
+          "bits": [ 2 ]
+        },
+        "i_b": {
+          "direction": "input",
+          "bits": [ 3 ]
+        },
+        "i_cin": {
+          "direction": "input",
+          "bits": [ 4 ]
+        },
+        "o_sum": {
+          "direction": "output",
+          "bits": [ 5 ]
+        },
+        "o_cout": {
+          "direction": "output",
+          "bits": [ 6 ]
+        }
+      },
+      "cells": {
+        "$auto$simplemap.cc:106:simplemap_bitop$89": {
+          "hide_name": 1,
+          "type": "$_XOR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/pc_control/rtl/pc_control_adder_1bit.v:9.21-9.30"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 2 ],
+            "B": [ 3 ],
+            "Y": [ 7 ]
+          }
+        },
+        "$auto$simplemap.cc:106:simplemap_bitop$90": {
+          "hide_name": 1,
+          "type": "$_XOR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/pc_control/rtl/pc_control_adder_1bit.v:9.21-9.38"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 7 ],
+            "B": [ 4 ],
+            "Y": [ 5 ]
+          }
+        },
+        "$auto$simplemap.cc:106:simplemap_bitop$91": {
+          "hide_name": 1,
+          "type": "$_AND_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/pc_control/rtl/pc_control_adder_1bit.v:10.22-10.31"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 2 ],
+            "B": [ 3 ],
+            "Y": [ 8 ]
+          }
+        },
+        "$auto$simplemap.cc:106:simplemap_bitop$92": {
+          "hide_name": 1,
+          "type": "$_XOR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/pc_control/rtl/pc_control_adder_1bit.v:10.45-10.54"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 2 ],
+            "B": [ 3 ],
+            "Y": [ 9 ]
+          }
+        },
+        "$auto$simplemap.cc:106:simplemap_bitop$93": {
+          "hide_name": 1,
+          "type": "$_AND_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/pc_control/rtl/pc_control_adder_1bit.v:10.36-10.55"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 4 ],
+            "B": [ 9 ],
+            "Y": [ 10 ]
+          }
+        },
+        "$auto$simplemap.cc:106:simplemap_bitop$94": {
+          "hide_name": 1,
+          "type": "$_OR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/pc_control/rtl/pc_control_adder_1bit.v:10.21-10.56"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 8 ],
+            "B": [ 10 ],
+            "Y": [ 6 ]
+          }
+        }
+      },
+      "netnames": {
+        "$and$reconf/pc_control/rtl/pc_control_adder_1bit.v:10$6_Y": {
+          "hide_name": 1,
+          "bits": [ 8 ],
+          "attributes": {
+            "src": "reconf/pc_control/rtl/pc_control_adder_1bit.v:10.22-10.31"
+          }
+        },
+        "$and$reconf/pc_control/rtl/pc_control_adder_1bit.v:10$8_Y": {
+          "hide_name": 1,
+          "bits": [ 10 ],
+          "attributes": {
+            "src": "reconf/pc_control/rtl/pc_control_adder_1bit.v:10.36-10.55"
+          }
+        },
+        "$xor$reconf/pc_control/rtl/pc_control_adder_1bit.v:10$7_Y": {
+          "hide_name": 1,
+          "bits": [ 9 ],
+          "attributes": {
+            "src": "reconf/pc_control/rtl/pc_control_adder_1bit.v:10.45-10.54"
+          }
+        },
+        "$xor$reconf/pc_control/rtl/pc_control_adder_1bit.v:9$4_Y": {
+          "hide_name": 1,
+          "bits": [ 7 ],
+          "attributes": {
+            "src": "reconf/pc_control/rtl/pc_control_adder_1bit.v:9.21-9.30"
+          }
+        },
+        "i_a": {
+          "hide_name": 0,
+          "bits": [ 2 ],
+          "attributes": {
+            "src": "reconf/pc_control/rtl/pc_control_adder_1bit.v:2.17-2.20"
+          }
+        },
+        "i_b": {
+          "hide_name": 0,
+          "bits": [ 3 ],
+          "attributes": {
+            "src": "reconf/pc_control/rtl/pc_control_adder_1bit.v:3.17-3.20"
+          }
+        },
+        "i_cin": {
+          "hide_name": 0,
+          "bits": [ 4 ],
+          "attributes": {
+            "src": "reconf/pc_control/rtl/pc_control_adder_1bit.v:4.17-4.22"
+          }
+        },
+        "o_cout": {
+          "hide_name": 0,
+          "bits": [ 6 ],
+          "attributes": {
+            "src": "reconf/pc_control/rtl/pc_control_adder_1bit.v:6.17-6.23"
+          }
+        },
+        "o_sum": {
+          "hide_name": 0,
+          "bits": [ 5 ],
+          "attributes": {
+            "src": "reconf/pc_control/rtl/pc_control_adder_1bit.v:5.17-5.22"
+          }
+        }
+      }
+    }
+  }
+}

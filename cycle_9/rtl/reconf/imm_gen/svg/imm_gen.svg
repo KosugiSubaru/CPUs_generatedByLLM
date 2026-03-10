@@ -1,0 +1,145 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:s="https://github.com/nturley/netlistsvg" width="640" height="326">
+  <style>svg {
+    stroke:#000;
+    fill:none;
+  }
+  text {
+    fill:#000;
+    stroke:none;
+    font-size:10px;
+    font-weight: bold;
+    font-family: "Courier New", monospace;
+  }
+  .nodelabel {
+    text-anchor: middle;
+  }
+  .inputPortLabel {
+    text-anchor: end;
+  }
+  .splitjoinBody {
+    fill:#000;
+  }</style>
+  <g s:type="generic" transform="translate(263,22)" s:width="30" s:height="40" id="cell_u_imm_gen_ext12">
+    <text x="15" y="-4" class="nodelabel cell_u_imm_gen_ext12" s:attribute="ref">imm_gen_ext12</text>
+    <rect width="30" height="20" s:generic="body" class="cell_u_imm_gen_ext12"/>
+    <g transform="translate(0,10)" s:x="0" s:y="10" s:pid="in0" id="port_u_imm_gen_ext12~i_imm">
+      <text x="-3" y="-4" class="inputPortLabel cell_u_imm_gen_ext12">i_imm</text>
+    </g>
+    <g transform="translate(30,10)" s:x="30" s:y="10" s:pid="out0" id="port_u_imm_gen_ext12~o_imm">
+      <text x="5" y="-4" style="fill:#000; stroke:none" class="cell_u_imm_gen_ext12">o_imm</text>
+    </g>
+  </g>
+  <g s:type="generic" transform="translate(257,158)" s:width="30" s:height="40" id="cell_u_imm_gen_ext4_i">
+    <text x="15" y="-4" class="nodelabel cell_u_imm_gen_ext4_i" s:attribute="ref">imm_gen_ext4</text>
+    <rect width="30" height="20" s:generic="body" class="cell_u_imm_gen_ext4_i"/>
+    <g transform="translate(0,10)" s:x="0" s:y="10" s:pid="in0" id="port_u_imm_gen_ext4_i~i_imm">
+      <text x="-3" y="-4" class="inputPortLabel cell_u_imm_gen_ext4_i">i_imm</text>
+    </g>
+    <g transform="translate(30,10)" s:x="30" s:y="10" s:pid="out0" id="port_u_imm_gen_ext4_i~o_imm">
+      <text x="5" y="-4" style="fill:#000; stroke:none" class="cell_u_imm_gen_ext4_i">o_imm</text>
+    </g>
+  </g>
+  <g s:type="generic" transform="translate(257,90)" s:width="30" s:height="40" id="cell_u_imm_gen_ext4_s">
+    <text x="15" y="-4" class="nodelabel cell_u_imm_gen_ext4_s" s:attribute="ref">imm_gen_ext4</text>
+    <rect width="30" height="20" s:generic="body" class="cell_u_imm_gen_ext4_s"/>
+    <g transform="translate(0,10)" s:x="0" s:y="10" s:pid="in0" id="port_u_imm_gen_ext4_s~i_imm">
+      <text x="-3" y="-4" class="inputPortLabel cell_u_imm_gen_ext4_s">i_imm</text>
+    </g>
+    <g transform="translate(30,10)" s:x="30" s:y="10" s:pid="out0" id="port_u_imm_gen_ext4_s~o_imm">
+      <text x="5" y="-4" style="fill:#000; stroke:none" class="cell_u_imm_gen_ext4_s">o_imm</text>
+    </g>
+  </g>
+  <g s:type="generic" transform="translate(269,226)" s:width="30" s:height="40" id="cell_u_imm_gen_ext8">
+    <text x="15" y="-4" class="nodelabel cell_u_imm_gen_ext8" s:attribute="ref">imm_gen_ext8</text>
+    <rect width="30" height="20" s:generic="body" class="cell_u_imm_gen_ext8"/>
+    <g transform="translate(0,10)" s:x="0" s:y="10" s:pid="in0" id="port_u_imm_gen_ext8~i_imm">
+      <text x="-3" y="-4" class="inputPortLabel cell_u_imm_gen_ext8">i_imm</text>
+    </g>
+    <g transform="translate(30,10)" s:x="30" s:y="10" s:pid="out0" id="port_u_imm_gen_ext8~o_imm">
+      <text x="5" y="-4" style="fill:#000; stroke:none" class="cell_u_imm_gen_ext8">o_imm</text>
+    </g>
+  </g>
+  <g s:type="generic" transform="translate(485,118)" s:width="30" s:height="40" id="cell_u_imm_gen_mux">
+    <text x="15" y="-4" class="nodelabel cell_u_imm_gen_mux" s:attribute="ref">imm_gen_mux</text>
+    <rect width="30" height="100" s:generic="body" class="cell_u_imm_gen_mux"/>
+    <g transform="translate(0,10)" s:x="0" s:y="10" s:pid="in0" id="port_u_imm_gen_mux~i_imm_ext12">
+      <text x="-3" y="-4" class="inputPortLabel cell_u_imm_gen_mux">i_imm_ext12</text>
+    </g>
+    <g transform="translate(0,30)" s:x="0" s:y="10" s:pid="in0" id="port_u_imm_gen_mux~i_imm_ext4_15_12">
+      <text x="-3" y="-4" class="inputPortLabel cell_u_imm_gen_mux">i_imm_ext4_15_12</text>
+    </g>
+    <g transform="translate(0,50)" s:x="0" s:y="10" s:pid="in0" id="port_u_imm_gen_mux~i_imm_ext4_7_4">
+      <text x="-3" y="-4" class="inputPortLabel cell_u_imm_gen_mux">i_imm_ext4_7_4</text>
+    </g>
+    <g transform="translate(0,70)" s:x="0" s:y="10" s:pid="in0" id="port_u_imm_gen_mux~i_imm_ext8">
+      <text x="-3" y="-4" class="inputPortLabel cell_u_imm_gen_mux">i_imm_ext8</text>
+    </g>
+    <g transform="translate(0,90)" s:x="0" s:y="10" s:pid="in0" id="port_u_imm_gen_mux~i_opcode">
+      <text x="-3" y="-4" class="inputPortLabel cell_u_imm_gen_mux">i_opcode</text>
+    </g>
+    <g transform="translate(30,10)" s:x="30" s:y="10" s:pid="out0" id="port_u_imm_gen_mux~o_imm">
+      <text x="5" y="-4" style="fill:#000; stroke:none" class="cell_u_imm_gen_mux">o_imm</text>
+    </g>
+  </g>
+  <g s:type="inputExt" transform="translate(257,294)" s:width="30" s:height="20" id="cell_i_opcode">
+    <text x="15" y="-4" class="nodelabel cell_i_opcode" s:attribute="ref">i_opcode</text>
+    <s:alias val="$_inputExt_"/>
+    <path d="M0,0 L0,20 L15,20 L30,10 L15,0 Z" class="cell_i_opcode"/>
+    <g s:x="28" s:y="10" s:pid="Y"/>
+  </g>
+  <g s:type="inputExt" transform="translate(131,90.5)" s:width="30" s:height="20" id="cell_i_rd_addr">
+    <text x="15" y="-4" class="nodelabel cell_i_rd_addr" s:attribute="ref">i_rd_addr</text>
+    <s:alias val="$_inputExt_"/>
+    <path d="M0,0 L0,20 L15,20 L30,10 L15,0 Z" class="cell_i_rd_addr"/>
+    <g s:x="28" s:y="10" s:pid="Y"/>
+  </g>
+  <g s:type="inputExt" transform="translate(131,158.5)" s:width="30" s:height="20" id="cell_i_rs2_addr">
+    <text x="15" y="-4" class="nodelabel cell_i_rs2_addr" s:attribute="ref">i_rs2_addr</text>
+    <s:alias val="$_inputExt_"/>
+    <path d="M0,0 L0,20 L15,20 L30,10 L15,0 Z" class="cell_i_rs2_addr"/>
+    <g s:x="28" s:y="10" s:pid="Y"/>
+  </g>
+  <g s:type="inputExt" transform="translate(12,22.5)" s:width="30" s:height="20" id="cell_i_imm_raw_15_4">
+    <text x="15" y="-4" class="nodelabel cell_i_imm_raw_15_4" s:attribute="ref">i_imm_raw_15_4</text>
+    <s:alias val="$_inputExt_"/>
+    <path d="M0,0 L0,20 L15,20 L30,10 L15,0 Z" class="cell_i_imm_raw_15_4"/>
+    <g s:x="28" s:y="10" s:pid="Y"/>
+  </g>
+  <g s:type="outputExt" transform="translate(598,118.5)" s:width="30" s:height="20" id="cell_o_imm">
+    <text x="15" y="-4" class="nodelabel cell_o_imm" s:attribute="ref">o_imm</text>
+    <s:alias val="$_outputExt_"/>
+    <path d="M30,0 L30,20 L15,20 L0,10 L15,0 Z" class="cell_o_imm"/>
+    <g s:x="0" s:y="10" s:pid="A"/>
+  </g>
+  <g s:type="split" transform="translate(156,226)" s:width="5" s:height="40" id="cell_$split$,14,15,16,17,18,19,20,21,22,23,24,25,">
+    <rect width="5" height="20" class="splitjoinBody" s:generic="body"/>
+    <s:alias val="$_split_"/>
+    <g s:x="0" s:y="20" s:pid="in"/>
+    <g transform="translate(4,10)" s:x="4" s:y="10" s:pid="out0">
+      <text x="5" y="-4">0:7</text>
+    </g>
+  </g>
+  <line x1="40" x2="263" y1="32.5" y2="32.5" class="net_14,15,16,17,18,19,20,21,22,23,24,25"/>
+  <line x1="40" x2="106" y1="32.5" y2="32.5" class="net_14,15,16,17,18,19,20,21,22,23,24,25"/>
+  <line x1="106" x2="106" y1="32.5" y2="259" class="net_14,15,16,17,18,19,20,21,22,23,24,25"/>
+  <line x1="106" x2="156.5" y1="259" y2="259" class="net_14,15,16,17,18,19,20,21,22,23,24,25"/>
+  <circle cx="106" cy="32.5" r="2" style="fill:#000" class="net_14,15,16,17,18,19,20,21,22,23,24,25"/>
+  <line x1="156.5" x2="156.5" y1="259" y2="247" class="net_14,15,16,17,18,19,20,21,22,23,24,25"/>
+  <line x1="159" x2="257" y1="168.5" y2="168.5" class="net_10,11,12,13"/>
+  <line x1="159" x2="257" y1="100.5" y2="100.5" class="net_6,7,8,9"/>
+  <line x1="161" x2="269" y1="236.5" y2="236.5" class="net_14,15,16,17,18,19,20,21"/>
+  <line x1="294" x2="373" y1="32.5" y2="32.5" class="net_42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57"/>
+  <line x1="373" x2="373" y1="32.5" y2="128.5" class="net_42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57"/>
+  <line x1="373" x2="485" y1="128.5" y2="128.5" class="net_42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57"/>
+  <line x1="288" x2="363" y1="100.5" y2="100.5" class="net_74,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89"/>
+  <line x1="363" x2="363" y1="100.5" y2="148.5" class="net_74,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89"/>
+  <line x1="363" x2="485" y1="148.5" y2="148.5" class="net_74,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89"/>
+  <line x1="288" x2="485" y1="168.5" y2="168.5" class="net_58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73"/>
+  <line x1="300" x2="363" y1="236.5" y2="236.5" class="net_90,91,92,93,94,95,96,97,98,99,100,101,102,103,104,105"/>
+  <line x1="363" x2="363" y1="236.5" y2="188.5" class="net_90,91,92,93,94,95,96,97,98,99,100,101,102,103,104,105"/>
+  <line x1="363" x2="485" y1="188.5" y2="188.5" class="net_90,91,92,93,94,95,96,97,98,99,100,101,102,103,104,105"/>
+  <line x1="285" x2="373" y1="304" y2="304" class="net_2,3,4,5"/>
+  <line x1="373" x2="373" y1="304" y2="208.5" class="net_2,3,4,5"/>
+  <line x1="373" x2="485" y1="208.5" y2="208.5" class="net_2,3,4,5"/>
+  <line x1="516" x2="598" y1="128.5" y2="128.5" class="net_26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41"/>
+</svg>

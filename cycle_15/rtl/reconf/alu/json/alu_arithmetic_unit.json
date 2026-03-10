@@ -1,0 +1,1088 @@
+{
+  "creator": "Yosys 0.61+112 (git sha1 ac427a79b, clang++ 18.1.8 -fPIC -O3)",
+  "modules": {
+    "alu_adder_16bit": {
+      "attributes": {
+        "src": "reconf/alu/rtl/alu_adder_16bit.v:1.1-30.10"
+      },
+      "ports": {
+        "i_a": {
+          "direction": "input",
+          "bits": [ 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17 ]
+        },
+        "i_b": {
+          "direction": "input",
+          "bits": [ 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33 ]
+        },
+        "i_cin": {
+          "direction": "input",
+          "bits": [ 34 ]
+        },
+        "o_sum": {
+          "direction": "output",
+          "bits": [ 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50 ]
+        },
+        "o_cout": {
+          "direction": "output",
+          "bits": [ 51 ]
+        }
+      },
+      "cells": {
+        "gen_full_adders[0].u_fa": {
+          "hide_name": 0,
+          "type": "alu_full_adder",
+          "parameters": {
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "reconf/alu/rtl/alu_adder_16bit.v:18.28-24.14"
+          },
+          "port_directions": {
+            "i_a": "input",
+            "i_b": "input",
+            "i_cin": "input",
+            "o_cout": "output",
+            "o_sum": "output"
+          },
+          "connections": {
+            "i_a": [ 2 ],
+            "i_b": [ 18 ],
+            "i_cin": [ 34 ],
+            "o_cout": [ 52 ],
+            "o_sum": [ 35 ]
+          }
+        },
+        "gen_full_adders[10].u_fa": {
+          "hide_name": 0,
+          "type": "alu_full_adder",
+          "parameters": {
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "reconf/alu/rtl/alu_adder_16bit.v:18.28-24.14"
+          },
+          "port_directions": {
+            "i_a": "input",
+            "i_b": "input",
+            "i_cin": "input",
+            "o_cout": "output",
+            "o_sum": "output"
+          },
+          "connections": {
+            "i_a": [ 12 ],
+            "i_b": [ 28 ],
+            "i_cin": [ 53 ],
+            "o_cout": [ 54 ],
+            "o_sum": [ 45 ]
+          }
+        },
+        "gen_full_adders[11].u_fa": {
+          "hide_name": 0,
+          "type": "alu_full_adder",
+          "parameters": {
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "reconf/alu/rtl/alu_adder_16bit.v:18.28-24.14"
+          },
+          "port_directions": {
+            "i_a": "input",
+            "i_b": "input",
+            "i_cin": "input",
+            "o_cout": "output",
+            "o_sum": "output"
+          },
+          "connections": {
+            "i_a": [ 13 ],
+            "i_b": [ 29 ],
+            "i_cin": [ 54 ],
+            "o_cout": [ 55 ],
+            "o_sum": [ 46 ]
+          }
+        },
+        "gen_full_adders[12].u_fa": {
+          "hide_name": 0,
+          "type": "alu_full_adder",
+          "parameters": {
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "reconf/alu/rtl/alu_adder_16bit.v:18.28-24.14"
+          },
+          "port_directions": {
+            "i_a": "input",
+            "i_b": "input",
+            "i_cin": "input",
+            "o_cout": "output",
+            "o_sum": "output"
+          },
+          "connections": {
+            "i_a": [ 14 ],
+            "i_b": [ 30 ],
+            "i_cin": [ 55 ],
+            "o_cout": [ 56 ],
+            "o_sum": [ 47 ]
+          }
+        },
+        "gen_full_adders[13].u_fa": {
+          "hide_name": 0,
+          "type": "alu_full_adder",
+          "parameters": {
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "reconf/alu/rtl/alu_adder_16bit.v:18.28-24.14"
+          },
+          "port_directions": {
+            "i_a": "input",
+            "i_b": "input",
+            "i_cin": "input",
+            "o_cout": "output",
+            "o_sum": "output"
+          },
+          "connections": {
+            "i_a": [ 15 ],
+            "i_b": [ 31 ],
+            "i_cin": [ 56 ],
+            "o_cout": [ 57 ],
+            "o_sum": [ 48 ]
+          }
+        },
+        "gen_full_adders[14].u_fa": {
+          "hide_name": 0,
+          "type": "alu_full_adder",
+          "parameters": {
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "reconf/alu/rtl/alu_adder_16bit.v:18.28-24.14"
+          },
+          "port_directions": {
+            "i_a": "input",
+            "i_b": "input",
+            "i_cin": "input",
+            "o_cout": "output",
+            "o_sum": "output"
+          },
+          "connections": {
+            "i_a": [ 16 ],
+            "i_b": [ 32 ],
+            "i_cin": [ 57 ],
+            "o_cout": [ 58 ],
+            "o_sum": [ 49 ]
+          }
+        },
+        "gen_full_adders[15].u_fa": {
+          "hide_name": 0,
+          "type": "alu_full_adder",
+          "parameters": {
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "reconf/alu/rtl/alu_adder_16bit.v:18.28-24.14"
+          },
+          "port_directions": {
+            "i_a": "input",
+            "i_b": "input",
+            "i_cin": "input",
+            "o_cout": "output",
+            "o_sum": "output"
+          },
+          "connections": {
+            "i_a": [ 17 ],
+            "i_b": [ 33 ],
+            "i_cin": [ 58 ],
+            "o_cout": [ 51 ],
+            "o_sum": [ 50 ]
+          }
+        },
+        "gen_full_adders[1].u_fa": {
+          "hide_name": 0,
+          "type": "alu_full_adder",
+          "parameters": {
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "reconf/alu/rtl/alu_adder_16bit.v:18.28-24.14"
+          },
+          "port_directions": {
+            "i_a": "input",
+            "i_b": "input",
+            "i_cin": "input",
+            "o_cout": "output",
+            "o_sum": "output"
+          },
+          "connections": {
+            "i_a": [ 3 ],
+            "i_b": [ 19 ],
+            "i_cin": [ 52 ],
+            "o_cout": [ 59 ],
+            "o_sum": [ 36 ]
+          }
+        },
+        "gen_full_adders[2].u_fa": {
+          "hide_name": 0,
+          "type": "alu_full_adder",
+          "parameters": {
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "reconf/alu/rtl/alu_adder_16bit.v:18.28-24.14"
+          },
+          "port_directions": {
+            "i_a": "input",
+            "i_b": "input",
+            "i_cin": "input",
+            "o_cout": "output",
+            "o_sum": "output"
+          },
+          "connections": {
+            "i_a": [ 4 ],
+            "i_b": [ 20 ],
+            "i_cin": [ 59 ],
+            "o_cout": [ 60 ],
+            "o_sum": [ 37 ]
+          }
+        },
+        "gen_full_adders[3].u_fa": {
+          "hide_name": 0,
+          "type": "alu_full_adder",
+          "parameters": {
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "reconf/alu/rtl/alu_adder_16bit.v:18.28-24.14"
+          },
+          "port_directions": {
+            "i_a": "input",
+            "i_b": "input",
+            "i_cin": "input",
+            "o_cout": "output",
+            "o_sum": "output"
+          },
+          "connections": {
+            "i_a": [ 5 ],
+            "i_b": [ 21 ],
+            "i_cin": [ 60 ],
+            "o_cout": [ 61 ],
+            "o_sum": [ 38 ]
+          }
+        },
+        "gen_full_adders[4].u_fa": {
+          "hide_name": 0,
+          "type": "alu_full_adder",
+          "parameters": {
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "reconf/alu/rtl/alu_adder_16bit.v:18.28-24.14"
+          },
+          "port_directions": {
+            "i_a": "input",
+            "i_b": "input",
+            "i_cin": "input",
+            "o_cout": "output",
+            "o_sum": "output"
+          },
+          "connections": {
+            "i_a": [ 6 ],
+            "i_b": [ 22 ],
+            "i_cin": [ 61 ],
+            "o_cout": [ 62 ],
+            "o_sum": [ 39 ]
+          }
+        },
+        "gen_full_adders[5].u_fa": {
+          "hide_name": 0,
+          "type": "alu_full_adder",
+          "parameters": {
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "reconf/alu/rtl/alu_adder_16bit.v:18.28-24.14"
+          },
+          "port_directions": {
+            "i_a": "input",
+            "i_b": "input",
+            "i_cin": "input",
+            "o_cout": "output",
+            "o_sum": "output"
+          },
+          "connections": {
+            "i_a": [ 7 ],
+            "i_b": [ 23 ],
+            "i_cin": [ 62 ],
+            "o_cout": [ 63 ],
+            "o_sum": [ 40 ]
+          }
+        },
+        "gen_full_adders[6].u_fa": {
+          "hide_name": 0,
+          "type": "alu_full_adder",
+          "parameters": {
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "reconf/alu/rtl/alu_adder_16bit.v:18.28-24.14"
+          },
+          "port_directions": {
+            "i_a": "input",
+            "i_b": "input",
+            "i_cin": "input",
+            "o_cout": "output",
+            "o_sum": "output"
+          },
+          "connections": {
+            "i_a": [ 8 ],
+            "i_b": [ 24 ],
+            "i_cin": [ 63 ],
+            "o_cout": [ 64 ],
+            "o_sum": [ 41 ]
+          }
+        },
+        "gen_full_adders[7].u_fa": {
+          "hide_name": 0,
+          "type": "alu_full_adder",
+          "parameters": {
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "reconf/alu/rtl/alu_adder_16bit.v:18.28-24.14"
+          },
+          "port_directions": {
+            "i_a": "input",
+            "i_b": "input",
+            "i_cin": "input",
+            "o_cout": "output",
+            "o_sum": "output"
+          },
+          "connections": {
+            "i_a": [ 9 ],
+            "i_b": [ 25 ],
+            "i_cin": [ 64 ],
+            "o_cout": [ 65 ],
+            "o_sum": [ 42 ]
+          }
+        },
+        "gen_full_adders[8].u_fa": {
+          "hide_name": 0,
+          "type": "alu_full_adder",
+          "parameters": {
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "reconf/alu/rtl/alu_adder_16bit.v:18.28-24.14"
+          },
+          "port_directions": {
+            "i_a": "input",
+            "i_b": "input",
+            "i_cin": "input",
+            "o_cout": "output",
+            "o_sum": "output"
+          },
+          "connections": {
+            "i_a": [ 10 ],
+            "i_b": [ 26 ],
+            "i_cin": [ 65 ],
+            "o_cout": [ 66 ],
+            "o_sum": [ 43 ]
+          }
+        },
+        "gen_full_adders[9].u_fa": {
+          "hide_name": 0,
+          "type": "alu_full_adder",
+          "parameters": {
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "reconf/alu/rtl/alu_adder_16bit.v:18.28-24.14"
+          },
+          "port_directions": {
+            "i_a": "input",
+            "i_b": "input",
+            "i_cin": "input",
+            "o_cout": "output",
+            "o_sum": "output"
+          },
+          "connections": {
+            "i_a": [ 11 ],
+            "i_b": [ 27 ],
+            "i_cin": [ 66 ],
+            "o_cout": [ 53 ],
+            "o_sum": [ 44 ]
+          }
+        }
+      },
+      "netnames": {
+        "i_a": {
+          "hide_name": 0,
+          "bits": [ 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17 ],
+          "attributes": {
+            "src": "reconf/alu/rtl/alu_adder_16bit.v:2.24-2.27"
+          }
+        },
+        "i_b": {
+          "hide_name": 0,
+          "bits": [ 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33 ],
+          "attributes": {
+            "src": "reconf/alu/rtl/alu_adder_16bit.v:3.24-3.27"
+          }
+        },
+        "i_cin": {
+          "hide_name": 0,
+          "bits": [ 34 ],
+          "attributes": {
+            "src": "reconf/alu/rtl/alu_adder_16bit.v:4.24-4.29"
+          }
+        },
+        "o_cout": {
+          "hide_name": 0,
+          "bits": [ 51 ],
+          "attributes": {
+            "src": "reconf/alu/rtl/alu_adder_16bit.v:6.24-6.30"
+          }
+        },
+        "o_sum": {
+          "hide_name": 0,
+          "bits": [ 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50 ],
+          "attributes": {
+            "src": "reconf/alu/rtl/alu_adder_16bit.v:5.24-5.29"
+          }
+        },
+        "w_carry": {
+          "hide_name": 0,
+          "bits": [ 34, 52, 59, 60, 61, 62, 63, 64, 65, 66, 53, 54, 55, 56, 57, 58, 51 ],
+          "attributes": {
+            "src": "reconf/alu/rtl/alu_adder_16bit.v:9.17-9.24"
+          }
+        }
+      }
+    },
+    "alu_arithmetic_unit": {
+      "attributes": {
+        "top": "00000000000000000000000000000001",
+        "src": "reconf/alu/rtl/alu_arithmetic_unit.v:1.1-40.10"
+      },
+      "ports": {
+        "i_a": {
+          "direction": "input",
+          "bits": [ 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17 ]
+        },
+        "i_b": {
+          "direction": "input",
+          "bits": [ 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33 ]
+        },
+        "o_res_add": {
+          "direction": "output",
+          "bits": [ 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49 ]
+        },
+        "o_res_sub": {
+          "direction": "output",
+          "bits": [ 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65 ]
+        }
+      },
+      "cells": {
+        "$auto$simplemap.cc:46:simplemap_not$227": {
+          "hide_name": 1,
+          "type": "$_NOT_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/alu/rtl/alu_arithmetic_unit.v:11.22-11.26"
+          },
+          "port_directions": {
+            "A": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 18 ],
+            "Y": [ 66 ]
+          }
+        },
+        "$auto$simplemap.cc:46:simplemap_not$228": {
+          "hide_name": 1,
+          "type": "$_NOT_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/alu/rtl/alu_arithmetic_unit.v:11.22-11.26"
+          },
+          "port_directions": {
+            "A": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 19 ],
+            "Y": [ 67 ]
+          }
+        },
+        "$auto$simplemap.cc:46:simplemap_not$229": {
+          "hide_name": 1,
+          "type": "$_NOT_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/alu/rtl/alu_arithmetic_unit.v:11.22-11.26"
+          },
+          "port_directions": {
+            "A": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 20 ],
+            "Y": [ 68 ]
+          }
+        },
+        "$auto$simplemap.cc:46:simplemap_not$230": {
+          "hide_name": 1,
+          "type": "$_NOT_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/alu/rtl/alu_arithmetic_unit.v:11.22-11.26"
+          },
+          "port_directions": {
+            "A": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 21 ],
+            "Y": [ 69 ]
+          }
+        },
+        "$auto$simplemap.cc:46:simplemap_not$231": {
+          "hide_name": 1,
+          "type": "$_NOT_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/alu/rtl/alu_arithmetic_unit.v:11.22-11.26"
+          },
+          "port_directions": {
+            "A": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 22 ],
+            "Y": [ 70 ]
+          }
+        },
+        "$auto$simplemap.cc:46:simplemap_not$232": {
+          "hide_name": 1,
+          "type": "$_NOT_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/alu/rtl/alu_arithmetic_unit.v:11.22-11.26"
+          },
+          "port_directions": {
+            "A": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 23 ],
+            "Y": [ 71 ]
+          }
+        },
+        "$auto$simplemap.cc:46:simplemap_not$233": {
+          "hide_name": 1,
+          "type": "$_NOT_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/alu/rtl/alu_arithmetic_unit.v:11.22-11.26"
+          },
+          "port_directions": {
+            "A": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 24 ],
+            "Y": [ 72 ]
+          }
+        },
+        "$auto$simplemap.cc:46:simplemap_not$234": {
+          "hide_name": 1,
+          "type": "$_NOT_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/alu/rtl/alu_arithmetic_unit.v:11.22-11.26"
+          },
+          "port_directions": {
+            "A": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 25 ],
+            "Y": [ 73 ]
+          }
+        },
+        "$auto$simplemap.cc:46:simplemap_not$235": {
+          "hide_name": 1,
+          "type": "$_NOT_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/alu/rtl/alu_arithmetic_unit.v:11.22-11.26"
+          },
+          "port_directions": {
+            "A": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 26 ],
+            "Y": [ 74 ]
+          }
+        },
+        "$auto$simplemap.cc:46:simplemap_not$236": {
+          "hide_name": 1,
+          "type": "$_NOT_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/alu/rtl/alu_arithmetic_unit.v:11.22-11.26"
+          },
+          "port_directions": {
+            "A": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 27 ],
+            "Y": [ 75 ]
+          }
+        },
+        "$auto$simplemap.cc:46:simplemap_not$237": {
+          "hide_name": 1,
+          "type": "$_NOT_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/alu/rtl/alu_arithmetic_unit.v:11.22-11.26"
+          },
+          "port_directions": {
+            "A": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 28 ],
+            "Y": [ 76 ]
+          }
+        },
+        "$auto$simplemap.cc:46:simplemap_not$238": {
+          "hide_name": 1,
+          "type": "$_NOT_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/alu/rtl/alu_arithmetic_unit.v:11.22-11.26"
+          },
+          "port_directions": {
+            "A": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 29 ],
+            "Y": [ 77 ]
+          }
+        },
+        "$auto$simplemap.cc:46:simplemap_not$239": {
+          "hide_name": 1,
+          "type": "$_NOT_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/alu/rtl/alu_arithmetic_unit.v:11.22-11.26"
+          },
+          "port_directions": {
+            "A": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 30 ],
+            "Y": [ 78 ]
+          }
+        },
+        "$auto$simplemap.cc:46:simplemap_not$240": {
+          "hide_name": 1,
+          "type": "$_NOT_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/alu/rtl/alu_arithmetic_unit.v:11.22-11.26"
+          },
+          "port_directions": {
+            "A": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 31 ],
+            "Y": [ 79 ]
+          }
+        },
+        "$auto$simplemap.cc:46:simplemap_not$241": {
+          "hide_name": 1,
+          "type": "$_NOT_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/alu/rtl/alu_arithmetic_unit.v:11.22-11.26"
+          },
+          "port_directions": {
+            "A": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 32 ],
+            "Y": [ 80 ]
+          }
+        },
+        "$auto$simplemap.cc:46:simplemap_not$242": {
+          "hide_name": 1,
+          "type": "$_NOT_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/alu/rtl/alu_arithmetic_unit.v:11.22-11.26"
+          },
+          "port_directions": {
+            "A": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 33 ],
+            "Y": [ 81 ]
+          }
+        },
+        "gen_arith_adders[0].gen_add.u_adder_add": {
+          "hide_name": 0,
+          "type": "alu_adder_16bit",
+          "parameters": {
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "reconf/alu/rtl/alu_arithmetic_unit.v:20.33-26.18"
+          },
+          "port_directions": {
+            "i_a": "input",
+            "i_b": "input",
+            "i_cin": "input",
+            "o_cout": "output",
+            "o_sum": "output"
+          },
+          "connections": {
+            "i_a": [ 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17 ],
+            "i_b": [ 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33 ],
+            "i_cin": [ "0" ],
+            "o_cout": [ ],
+            "o_sum": [ 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49 ]
+          }
+        },
+        "gen_arith_adders[1].gen_sub.u_adder_sub": {
+          "hide_name": 0,
+          "type": "alu_adder_16bit",
+          "parameters": {
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "reconf/alu/rtl/alu_arithmetic_unit.v:29.33-35.18"
+          },
+          "port_directions": {
+            "i_a": "input",
+            "i_b": "input",
+            "i_cin": "input",
+            "o_cout": "output",
+            "o_sum": "output"
+          },
+          "connections": {
+            "i_a": [ 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17 ],
+            "i_b": [ 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81 ],
+            "i_cin": [ "1" ],
+            "o_cout": [ ],
+            "o_sum": [ 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65 ]
+          }
+        }
+      },
+      "netnames": {
+        "i_a": {
+          "hide_name": 0,
+          "bits": [ 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17 ],
+          "attributes": {
+            "src": "reconf/alu/rtl/alu_arithmetic_unit.v:2.24-2.27"
+          }
+        },
+        "i_b": {
+          "hide_name": 0,
+          "bits": [ 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33 ],
+          "attributes": {
+            "src": "reconf/alu/rtl/alu_arithmetic_unit.v:3.24-3.27"
+          }
+        },
+        "o_res_add": {
+          "hide_name": 0,
+          "bits": [ 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49 ],
+          "attributes": {
+            "src": "reconf/alu/rtl/alu_arithmetic_unit.v:4.24-4.33"
+          }
+        },
+        "o_res_sub": {
+          "hide_name": 0,
+          "bits": [ 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65 ],
+          "attributes": {
+            "src": "reconf/alu/rtl/alu_arithmetic_unit.v:5.24-5.33"
+          }
+        },
+        "w_b_inv": {
+          "hide_name": 0,
+          "bits": [ 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81 ],
+          "attributes": {
+            "src": "reconf/alu/rtl/alu_arithmetic_unit.v:8.17-8.24"
+          }
+        }
+      }
+    },
+    "alu_full_adder": {
+      "attributes": {
+        "src": "reconf/alu/rtl/alu_full_adder.v:1.1-32.10"
+      },
+      "ports": {
+        "i_a": {
+          "direction": "input",
+          "bits": [ 2 ]
+        },
+        "i_b": {
+          "direction": "input",
+          "bits": [ 3 ]
+        },
+        "i_cin": {
+          "direction": "input",
+          "bits": [ 4 ]
+        },
+        "o_sum": {
+          "direction": "output",
+          "bits": [ 5 ]
+        },
+        "o_cout": {
+          "direction": "output",
+          "bits": [ 6 ]
+        }
+      },
+      "cells": {
+        "$auto$simplemap.cc:106:simplemap_bitop$226": {
+          "hide_name": 1,
+          "type": "$_OR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/alu/rtl/alu_full_adder.v:30.21-30.44"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 7 ],
+            "B": [ 8 ],
+            "Y": [ 6 ]
+          }
+        },
+        "u_ha1": {
+          "hide_name": 0,
+          "type": "alu_half_adder",
+          "parameters": {
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "reconf/alu/rtl/alu_full_adder.v:14.20-19.6"
+          },
+          "port_directions": {
+            "i_a": "input",
+            "i_b": "input",
+            "o_carry": "output",
+            "o_sum": "output"
+          },
+          "connections": {
+            "i_a": [ 2 ],
+            "i_b": [ 3 ],
+            "o_carry": [ 7 ],
+            "o_sum": [ 9 ]
+          }
+        },
+        "u_ha2": {
+          "hide_name": 0,
+          "type": "alu_half_adder",
+          "parameters": {
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "reconf/alu/rtl/alu_full_adder.v:22.20-27.6"
+          },
+          "port_directions": {
+            "i_a": "input",
+            "i_b": "input",
+            "o_carry": "output",
+            "o_sum": "output"
+          },
+          "connections": {
+            "i_a": [ 9 ],
+            "i_b": [ 4 ],
+            "o_carry": [ 8 ],
+            "o_sum": [ 5 ]
+          }
+        }
+      },
+      "netnames": {
+        "i_a": {
+          "hide_name": 0,
+          "bits": [ 2 ],
+          "attributes": {
+            "src": "reconf/alu/rtl/alu_full_adder.v:2.17-2.20"
+          }
+        },
+        "i_b": {
+          "hide_name": 0,
+          "bits": [ 3 ],
+          "attributes": {
+            "src": "reconf/alu/rtl/alu_full_adder.v:3.17-3.20"
+          }
+        },
+        "i_cin": {
+          "hide_name": 0,
+          "bits": [ 4 ],
+          "attributes": {
+            "src": "reconf/alu/rtl/alu_full_adder.v:4.17-4.22"
+          }
+        },
+        "o_cout": {
+          "hide_name": 0,
+          "bits": [ 6 ],
+          "attributes": {
+            "src": "reconf/alu/rtl/alu_full_adder.v:6.17-6.23"
+          }
+        },
+        "o_sum": {
+          "hide_name": 0,
+          "bits": [ 5 ],
+          "attributes": {
+            "src": "reconf/alu/rtl/alu_full_adder.v:5.17-5.22"
+          }
+        },
+        "w_ha1_cout": {
+          "hide_name": 0,
+          "bits": [ 7 ],
+          "attributes": {
+            "src": "reconf/alu/rtl/alu_full_adder.v:10.10-10.20"
+          }
+        },
+        "w_ha1_sum": {
+          "hide_name": 0,
+          "bits": [ 9 ],
+          "attributes": {
+            "src": "reconf/alu/rtl/alu_full_adder.v:9.10-9.19"
+          }
+        },
+        "w_ha2_cout": {
+          "hide_name": 0,
+          "bits": [ 8 ],
+          "attributes": {
+            "src": "reconf/alu/rtl/alu_full_adder.v:11.10-11.20"
+          }
+        }
+      }
+    },
+    "alu_half_adder": {
+      "attributes": {
+        "src": "reconf/alu/rtl/alu_half_adder.v:1.1-13.10"
+      },
+      "ports": {
+        "i_a": {
+          "direction": "input",
+          "bits": [ 2 ]
+        },
+        "i_b": {
+          "direction": "input",
+          "bits": [ 3 ]
+        },
+        "o_sum": {
+          "direction": "output",
+          "bits": [ 4 ]
+        },
+        "o_carry": {
+          "direction": "output",
+          "bits": [ 5 ]
+        }
+      },
+      "cells": {
+        "$auto$simplemap.cc:106:simplemap_bitop$224": {
+          "hide_name": 1,
+          "type": "$_XOR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/alu/rtl/alu_half_adder.v:10.22-10.31"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 2 ],
+            "B": [ 3 ],
+            "Y": [ 4 ]
+          }
+        },
+        "$auto$simplemap.cc:106:simplemap_bitop$225": {
+          "hide_name": 1,
+          "type": "$_AND_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/alu/rtl/alu_half_adder.v:11.22-11.31"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 2 ],
+            "B": [ 3 ],
+            "Y": [ 5 ]
+          }
+        }
+      },
+      "netnames": {
+        "i_a": {
+          "hide_name": 0,
+          "bits": [ 2 ],
+          "attributes": {
+            "src": "reconf/alu/rtl/alu_half_adder.v:2.17-2.20"
+          }
+        },
+        "i_b": {
+          "hide_name": 0,
+          "bits": [ 3 ],
+          "attributes": {
+            "src": "reconf/alu/rtl/alu_half_adder.v:3.17-3.20"
+          }
+        },
+        "o_carry": {
+          "hide_name": 0,
+          "bits": [ 5 ],
+          "attributes": {
+            "src": "reconf/alu/rtl/alu_half_adder.v:5.17-5.24"
+          }
+        },
+        "o_sum": {
+          "hide_name": 0,
+          "bits": [ 4 ],
+          "attributes": {
+            "src": "reconf/alu/rtl/alu_half_adder.v:4.17-4.22"
+          }
+        }
+      }
+    }
+  }
+}

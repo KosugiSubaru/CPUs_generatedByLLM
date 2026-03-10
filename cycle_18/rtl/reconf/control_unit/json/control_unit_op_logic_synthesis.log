@@ -1,0 +1,150 @@
+
+ /----------------------------------------------------------------------------\
+ |  yosys -- Yosys Open SYnthesis Suite                                       |
+ |  Copyright (C) 2012 - 2026  Claire Xenia Wolf <claire@yosyshq.com>         |
+ |  Distributed under an ISC-like license, type "license" to see terms        |
+ \----------------------------------------------------------------------------/
+ Yosys 0.61+112 (git sha1 ac427a79b, clang++ 18.1.8 -fPIC -O3)
+
+-- Executing script file `reconf/control_unit/json/control_unit_op_logic.ys' --
+
+1. Executing Verilog-2005 frontend: reconf/control_unit/rtl/control_unit_op_logic.v
+Parsing Verilog input from `reconf/control_unit/rtl/control_unit_op_logic.v' to AST representation.
+Generating RTLIL representation for module `\control_unit_op_logic'.
+Successfully finished Verilog frontend.
+
+2. Executing Verilog-2005 frontend: reconf/control_unit/rtl/control_unit_decoder_4to16.v
+Parsing Verilog input from `reconf/control_unit/rtl/control_unit_decoder_4to16.v' to AST representation.
+Generating RTLIL representation for module `\control_unit_decoder_4to16'.
+Successfully finished Verilog frontend.
+
+3. Executing Verilog-2005 frontend: reconf/control_unit/rtl/control_unit_decoder_2to4.v
+Parsing Verilog input from `reconf/control_unit/rtl/control_unit_decoder_2to4.v' to AST representation.
+Generating RTLIL representation for module `\control_unit_decoder_2to4'.
+Successfully finished Verilog frontend.
+
+4. Executing Verilog-2005 frontend: reconf/control_unit/rtl/control_unit.v
+Parsing Verilog input from `reconf/control_unit/rtl/control_unit.v' to AST representation.
+Generating RTLIL representation for module `\control_unit'.
+Successfully finished Verilog frontend.
+
+5. Executing HIERARCHY pass (managing design hierarchy).
+
+5.1. Analyzing design hierarchy..
+Top module:  \control_unit_op_logic
+
+5.2. Analyzing design hierarchy..
+Top module:  \control_unit_op_logic
+Removing unused module `\control_unit'.
+Removing unused module `\control_unit_decoder_2to4'.
+Removing unused module `\control_unit_decoder_4to16'.
+Removed 3 unused modules.
+
+6. Executing PROC pass (convert processes to netlists).
+
+6.1. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Cleaned up 0 empty switches.
+
+6.2. Executing PROC_RMDEAD pass (remove dead branches from decision trees).
+Removed a total of 0 dead cases.
+
+6.3. Executing PROC_PRUNE pass (remove redundant assignments in processes).
+Removed 0 redundant assignments.
+Promoted 0 assignments to connections.
+
+6.4. Executing PROC_INIT pass (extract init attributes).
+
+6.5. Executing PROC_ARST pass (detect async resets in processes).
+
+6.6. Executing PROC_ROM pass (convert switches to ROMs).
+Converted 0 switches.
+
+6.7. Executing PROC_MUX pass (convert decision trees to multiplexers).
+
+6.8. Executing PROC_DLATCH pass (convert process syncs to latches).
+
+6.9. Executing PROC_DFF pass (convert process syncs to FFs).
+
+6.10. Executing PROC_MEMWR pass (convert process memory writes to cells).
+
+6.11. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Cleaned up 0 empty switches.
+
+6.12. Executing OPT_EXPR pass (perform const folding).
+Optimizing module control_unit_op_logic.
+
+7. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \control_unit_op_logic..
+Removed 0 unused cells and 11 unused wires.
+<suppressed ~1 debug messages>
+
+8. Executing TECHMAP pass (map to technology primitives).
+
+8.1. Executing Verilog-2005 frontend: /opt/oss-cad-suite/lib/../share/yosys/techmap.v
+Parsing Verilog input from `/opt/oss-cad-suite/lib/../share/yosys/techmap.v' to AST representation.
+Generating RTLIL representation for module `\_90_simplemap_bool_ops'.
+Generating RTLIL representation for module `\_90_simplemap_reduce_ops'.
+Generating RTLIL representation for module `\_90_simplemap_logic_ops'.
+Generating RTLIL representation for module `\_90_simplemap_compare_ops'.
+Generating RTLIL representation for module `\_90_simplemap_various'.
+Generating RTLIL representation for module `\_90_simplemap_registers'.
+Generating RTLIL representation for module `\_90_shift_ops_shr_shl_sshl_sshr'.
+Generating RTLIL representation for module `\_90_shift_shiftx'.
+Generating RTLIL representation for module `\_90_fa'.
+Generating RTLIL representation for module `\_90_lcu_brent_kung'.
+Generating RTLIL representation for module `\_90_alu'.
+Generating RTLIL representation for module `\_90_macc'.
+Generating RTLIL representation for module `\_90_alumacc'.
+Generating RTLIL representation for module `$__div_mod_u'.
+Generating RTLIL representation for module `$__div_mod_trunc'.
+Generating RTLIL representation for module `\_90_div'.
+Generating RTLIL representation for module `\_90_mod'.
+Generating RTLIL representation for module `$__div_mod_floor'.
+Generating RTLIL representation for module `\_90_divfloor'.
+Generating RTLIL representation for module `\_90_modfloor'.
+Generating RTLIL representation for module `\_90_pow'.
+Generating RTLIL representation for module `\_90_pmux'.
+Generating RTLIL representation for module `\_90_demux'.
+Generating RTLIL representation for module `\_90_lut'.
+Generating RTLIL representation for module `$connect'.
+Generating RTLIL representation for module `$input_port'.
+Successfully finished Verilog frontend.
+
+8.2. Continuing TECHMAP pass.
+Using extmapper simplemap for cells of type $or.
+No more expansions possible.
+<suppressed ~110 debug messages>
+
+9. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \control_unit_op_logic..
+
+10. Executing HIERARCHY pass (managing design hierarchy).
+Attribute `top' found on module `control_unit_op_logic'. Setting top module to control_unit_op_logic.
+
+10.1. Analyzing design hierarchy..
+Top module:  \control_unit_op_logic
+
+10.2. Analyzing design hierarchy..
+Top module:  \control_unit_op_logic
+Removed 0 unused modules.
+
+11. Printing statistics.
+
+=== control_unit_op_logic ===
+
+        +----------Local Count, excluding submodules.
+        | 
+       33 wires
+       53 wire bits
+       11 public wires
+       31 public wire bits
+       11 ports
+       31 port bits
+       33 cells
+       33   $_OR_
+
+12. Executing JSON backend.
+
+End of script. Logfile hash: 886bd17666, CPU: user 0.01s system 0.01s, MEM: 14.53 MB peak
+Yosys 0.61+112 (git sha1 ac427a79b, clang++ 18.1.8 -fPIC -O3)
+Time spent: 76% 9x read_verilog (0 sec), 7% 2x opt_clean (0 sec), ...

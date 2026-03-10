@@ -1,0 +1,385 @@
+
+ /----------------------------------------------------------------------------\
+ |  yosys -- Yosys Open SYnthesis Suite                                       |
+ |  Copyright (C) 2012 - 2026  Claire Xenia Wolf <claire@yosyshq.com>         |
+ |  Distributed under an ISC-like license, type "license" to see terms        |
+ \----------------------------------------------------------------------------/
+ Yosys 0.61+112 (git sha1 ac427a79b, clang++ 18.1.8 -fPIC -O3)
+
+-- Executing script file `reconf/imm_gen/json/imm_gen.ys' --
+
+1. Executing Verilog-2005 frontend: reconf/imm_gen/rtl/imm_gen_formatter_4low.v
+Parsing Verilog input from `reconf/imm_gen/rtl/imm_gen_formatter_4low.v' to AST representation.
+Generating RTLIL representation for module `\imm_gen_formatter_4low'.
+Successfully finished Verilog frontend.
+
+2. Executing Verilog-2005 frontend: reconf/imm_gen/rtl/imm_gen_formatter_12bit.v
+Parsing Verilog input from `reconf/imm_gen/rtl/imm_gen_formatter_12bit.v' to AST representation.
+Generating RTLIL representation for module `\imm_gen_formatter_12bit'.
+Successfully finished Verilog frontend.
+
+3. Executing Verilog-2005 frontend: reconf/imm_gen/rtl/imm_gen.v
+Parsing Verilog input from `reconf/imm_gen/rtl/imm_gen.v' to AST representation.
+Generating RTLIL representation for module `\imm_gen'.
+Successfully finished Verilog frontend.
+
+4. Executing Verilog-2005 frontend: reconf/imm_gen/rtl/imm_gen_bit_repeater.v
+Parsing Verilog input from `reconf/imm_gen/rtl/imm_gen_bit_repeater.v' to AST representation.
+Generating RTLIL representation for module `\imm_gen_bit_repeater'.
+Successfully finished Verilog frontend.
+
+5. Executing Verilog-2005 frontend: reconf/imm_gen/rtl/imm_gen_mux_4to1_16bit.v
+Parsing Verilog input from `reconf/imm_gen/rtl/imm_gen_mux_4to1_16bit.v' to AST representation.
+Generating RTLIL representation for module `\imm_gen_mux_4to1_16bit'.
+Successfully finished Verilog frontend.
+
+6. Executing Verilog-2005 frontend: reconf/imm_gen/rtl/imm_gen_formatter_8bit.v
+Parsing Verilog input from `reconf/imm_gen/rtl/imm_gen_formatter_8bit.v' to AST representation.
+Generating RTLIL representation for module `\imm_gen_formatter_8bit'.
+Successfully finished Verilog frontend.
+
+7. Executing Verilog-2005 frontend: reconf/imm_gen/rtl/imm_gen_formatter_4high.v
+Parsing Verilog input from `reconf/imm_gen/rtl/imm_gen_formatter_4high.v' to AST representation.
+Generating RTLIL representation for module `\imm_gen_formatter_4high'.
+Successfully finished Verilog frontend.
+
+8. Executing HIERARCHY pass (managing design hierarchy).
+
+8.1. Analyzing design hierarchy..
+Top module:  \imm_gen
+Used module:     \imm_gen_mux_4to1_16bit
+Used module:     \imm_gen_formatter_12bit
+Used module:         \imm_gen_bit_repeater
+Used module:     \imm_gen_formatter_8bit
+Used module:     \imm_gen_formatter_4high
+Used module:     \imm_gen_formatter_4low
+Parameter \REPEATS = 12
+
+8.2. Executing AST frontend in derive mode using pre-parsed AST for module `\imm_gen_bit_repeater'.
+Parameter \REPEATS = 12
+Generating RTLIL representation for module `$paramod\imm_gen_bit_repeater\REPEATS=s32'00000000000000000000000000001100'.
+Parameter \REPEATS = 4
+
+8.3. Executing AST frontend in derive mode using pre-parsed AST for module `\imm_gen_bit_repeater'.
+Parameter \REPEATS = 4
+Generating RTLIL representation for module `$paramod\imm_gen_bit_repeater\REPEATS=s32'00000000000000000000000000000100'.
+Parameter \REPEATS = 12
+Found cached RTLIL representation for module `$paramod\imm_gen_bit_repeater\REPEATS=s32'00000000000000000000000000001100'.
+Parameter \REPEATS = 8
+
+8.4. Executing AST frontend in derive mode using pre-parsed AST for module `\imm_gen_bit_repeater'.
+Parameter \REPEATS = 8
+Generating RTLIL representation for module `$paramod\imm_gen_bit_repeater\REPEATS=s32'00000000000000000000000000001000'.
+
+8.5. Analyzing design hierarchy..
+Top module:  \imm_gen
+Used module:     \imm_gen_mux_4to1_16bit
+Used module:     \imm_gen_formatter_12bit
+Used module:         $paramod\imm_gen_bit_repeater\REPEATS=s32'00000000000000000000000000000100
+Used module:     \imm_gen_formatter_8bit
+Used module:         $paramod\imm_gen_bit_repeater\REPEATS=s32'00000000000000000000000000001000
+Used module:     \imm_gen_formatter_4high
+Used module:         $paramod\imm_gen_bit_repeater\REPEATS=s32'00000000000000000000000000001100
+Used module:     \imm_gen_formatter_4low
+
+8.6. Analyzing design hierarchy..
+Top module:  \imm_gen
+Used module:     \imm_gen_mux_4to1_16bit
+Used module:     \imm_gen_formatter_12bit
+Used module:         $paramod\imm_gen_bit_repeater\REPEATS=s32'00000000000000000000000000000100
+Used module:     \imm_gen_formatter_8bit
+Used module:         $paramod\imm_gen_bit_repeater\REPEATS=s32'00000000000000000000000000001000
+Used module:     \imm_gen_formatter_4high
+Used module:         $paramod\imm_gen_bit_repeater\REPEATS=s32'00000000000000000000000000001100
+Used module:     \imm_gen_formatter_4low
+Removing unused module `\imm_gen_bit_repeater'.
+Removed 1 unused modules.
+
+9. Executing PROC pass (convert processes to netlists).
+
+9.1. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Cleaned up 0 empty switches.
+
+9.2. Executing PROC_RMDEAD pass (remove dead branches from decision trees).
+Removed a total of 0 dead cases.
+
+9.3. Executing PROC_PRUNE pass (remove redundant assignments in processes).
+Removed 0 redundant assignments.
+Promoted 0 assignments to connections.
+
+9.4. Executing PROC_INIT pass (extract init attributes).
+
+9.5. Executing PROC_ARST pass (detect async resets in processes).
+
+9.6. Executing PROC_ROM pass (convert switches to ROMs).
+Converted 0 switches.
+
+9.7. Executing PROC_MUX pass (convert decision trees to multiplexers).
+
+9.8. Executing PROC_DLATCH pass (convert process syncs to latches).
+
+9.9. Executing PROC_DFF pass (convert process syncs to FFs).
+
+9.10. Executing PROC_MEMWR pass (convert process memory writes to cells).
+
+9.11. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Cleaned up 0 empty switches.
+
+9.12. Executing OPT_EXPR pass (perform const folding).
+Optimizing module $paramod\imm_gen_bit_repeater\REPEATS=s32'00000000000000000000000000000100.
+Optimizing module $paramod\imm_gen_bit_repeater\REPEATS=s32'00000000000000000000000000001100.
+Optimizing module imm_gen_formatter_4high.
+Optimizing module imm_gen_formatter_8bit.
+Optimizing module imm_gen_mux_4to1_16bit.
+<suppressed ~1 debug messages>
+Optimizing module $paramod\imm_gen_bit_repeater\REPEATS=s32'00000000000000000000000000001000.
+Optimizing module imm_gen.
+Optimizing module imm_gen_formatter_12bit.
+Optimizing module imm_gen_formatter_4low.
+
+10. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module $paramod\imm_gen_bit_repeater\REPEATS=s32'00000000000000000000000000000100..
+Finding unused cells or wires in module $paramod\imm_gen_bit_repeater\REPEATS=s32'00000000000000000000000000001100..
+Finding unused cells or wires in module \imm_gen_formatter_4high..
+Finding unused cells or wires in module \imm_gen_formatter_8bit..
+Finding unused cells or wires in module \imm_gen_mux_4to1_16bit..
+Finding unused cells or wires in module $paramod\imm_gen_bit_repeater\REPEATS=s32'00000000000000000000000000001000..
+Finding unused cells or wires in module \imm_gen..
+Finding unused cells or wires in module \imm_gen_formatter_12bit..
+Finding unused cells or wires in module \imm_gen_formatter_4low..
+Removed 0 unused cells and 1 unused wires.
+<suppressed ~1 debug messages>
+
+11. Executing TECHMAP pass (map to technology primitives).
+
+11.1. Executing Verilog-2005 frontend: /opt/oss-cad-suite/lib/../share/yosys/techmap.v
+Parsing Verilog input from `/opt/oss-cad-suite/lib/../share/yosys/techmap.v' to AST representation.
+Generating RTLIL representation for module `\_90_simplemap_bool_ops'.
+Generating RTLIL representation for module `\_90_simplemap_reduce_ops'.
+Generating RTLIL representation for module `\_90_simplemap_logic_ops'.
+Generating RTLIL representation for module `\_90_simplemap_compare_ops'.
+Generating RTLIL representation for module `\_90_simplemap_various'.
+Generating RTLIL representation for module `\_90_simplemap_registers'.
+Generating RTLIL representation for module `\_90_shift_ops_shr_shl_sshl_sshr'.
+Generating RTLIL representation for module `\_90_shift_shiftx'.
+Generating RTLIL representation for module `\_90_fa'.
+Generating RTLIL representation for module `\_90_lcu_brent_kung'.
+Generating RTLIL representation for module `\_90_alu'.
+Generating RTLIL representation for module `\_90_macc'.
+Generating RTLIL representation for module `\_90_alumacc'.
+Generating RTLIL representation for module `$__div_mod_u'.
+Generating RTLIL representation for module `$__div_mod_trunc'.
+Generating RTLIL representation for module `\_90_div'.
+Generating RTLIL representation for module `\_90_mod'.
+Generating RTLIL representation for module `$__div_mod_floor'.
+Generating RTLIL representation for module `\_90_divfloor'.
+Generating RTLIL representation for module `\_90_modfloor'.
+Generating RTLIL representation for module `\_90_pow'.
+Generating RTLIL representation for module `\_90_pmux'.
+Generating RTLIL representation for module `\_90_demux'.
+Generating RTLIL representation for module `\_90_lut'.
+Generating RTLIL representation for module `$connect'.
+Generating RTLIL representation for module `$input_port'.
+Successfully finished Verilog frontend.
+
+11.2. Continuing TECHMAP pass.
+Using extmapper simplemap for cells of type $logic_not.
+Using extmapper simplemap for cells of type $eq.
+Using extmapper simplemap for cells of type $mux.
+No more expansions possible.
+<suppressed ~83 debug messages>
+
+12. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module $paramod\imm_gen_bit_repeater\REPEATS=s32'00000000000000000000000000000100..
+Finding unused cells or wires in module $paramod\imm_gen_bit_repeater\REPEATS=s32'00000000000000000000000000001000..
+Finding unused cells or wires in module $paramod\imm_gen_bit_repeater\REPEATS=s32'00000000000000000000000000001100..
+Finding unused cells or wires in module \imm_gen..
+Finding unused cells or wires in module \imm_gen_formatter_12bit..
+Finding unused cells or wires in module \imm_gen_formatter_4high..
+Finding unused cells or wires in module \imm_gen_formatter_4low..
+Finding unused cells or wires in module \imm_gen_formatter_8bit..
+Finding unused cells or wires in module \imm_gen_mux_4to1_16bit..
+Removed 0 unused cells and 2 unused wires.
+<suppressed ~1 debug messages>
+
+13. Executing HIERARCHY pass (managing design hierarchy).
+Attribute `top' found on module `imm_gen'. Setting top module to imm_gen.
+
+13.1. Analyzing design hierarchy..
+Top module:  \imm_gen
+Used module:     \imm_gen_formatter_12bit
+Used module:         $paramod\imm_gen_bit_repeater\REPEATS=s32'00000000000000000000000000000100
+Used module:     \imm_gen_formatter_4high
+Used module:         $paramod\imm_gen_bit_repeater\REPEATS=s32'00000000000000000000000000001100
+Used module:     \imm_gen_formatter_4low
+Used module:     \imm_gen_formatter_8bit
+Used module:         $paramod\imm_gen_bit_repeater\REPEATS=s32'00000000000000000000000000001000
+Used module:     \imm_gen_mux_4to1_16bit
+
+13.2. Analyzing design hierarchy..
+Top module:  \imm_gen
+Used module:     \imm_gen_formatter_12bit
+Used module:         $paramod\imm_gen_bit_repeater\REPEATS=s32'00000000000000000000000000000100
+Used module:     \imm_gen_formatter_4high
+Used module:         $paramod\imm_gen_bit_repeater\REPEATS=s32'00000000000000000000000000001100
+Used module:     \imm_gen_formatter_4low
+Used module:     \imm_gen_formatter_8bit
+Used module:         $paramod\imm_gen_bit_repeater\REPEATS=s32'00000000000000000000000000001000
+Used module:     \imm_gen_mux_4to1_16bit
+Removed 0 unused modules.
+
+14. Printing statistics.
+
+=== $paramod\imm_gen_bit_repeater\REPEATS=s32'00000000000000000000000000000100 ===
+
+        +----------Local Count, excluding submodules.
+        | 
+        2 wires
+        5 wire bits
+        2 public wires
+        5 public wire bits
+        2 ports
+        5 port bits
+
+=== $paramod\imm_gen_bit_repeater\REPEATS=s32'00000000000000000000000000001000 ===
+
+        +----------Local Count, excluding submodules.
+        | 
+        2 wires
+        9 wire bits
+        2 public wires
+        9 public wire bits
+        2 ports
+        9 port bits
+
+=== $paramod\imm_gen_bit_repeater\REPEATS=s32'00000000000000000000000000001100 ===
+
+        +----------Local Count, excluding submodules.
+        | 
+        2 wires
+       13 wire bits
+        2 public wires
+       13 public wire bits
+        2 ports
+       13 port bits
+
+=== imm_gen ===
+
+        +----------Local Count, excluding submodules.
+        | 
+        7 wires
+       98 wire bits
+        7 public wires
+       98 public wire bits
+        3 ports
+       34 port bits
+        5 submodules
+        1   imm_gen_formatter_12bit
+        1   imm_gen_formatter_4high
+        1   imm_gen_formatter_4low
+        1   imm_gen_formatter_8bit
+        1   imm_gen_mux_4to1_16bit
+
+=== imm_gen_formatter_12bit ===
+
+        +----------Local Count, excluding submodules.
+        | 
+        3 wires
+       36 wire bits
+        3 public wires
+       36 public wire bits
+        2 ports
+       32 port bits
+        1 submodules
+        1   $paramod\imm_gen_bit_repeater\REPEATS=s32'00000000000000000000000000000100
+
+=== imm_gen_formatter_4high ===
+
+        +----------Local Count, excluding submodules.
+        | 
+        3 wires
+       44 wire bits
+        3 public wires
+       44 public wire bits
+        2 ports
+       32 port bits
+        1 submodules
+        1   $paramod\imm_gen_bit_repeater\REPEATS=s32'00000000000000000000000000001100
+
+=== imm_gen_formatter_4low ===
+
+        +----------Local Count, excluding submodules.
+        | 
+        3 wires
+       44 wire bits
+        3 public wires
+       44 public wire bits
+        2 ports
+       32 port bits
+        1 submodules
+        1   $paramod\imm_gen_bit_repeater\REPEATS=s32'00000000000000000000000000001100
+
+=== imm_gen_formatter_8bit ===
+
+        +----------Local Count, excluding submodules.
+        | 
+        3 wires
+       40 wire bits
+        3 public wires
+       40 public wire bits
+        2 ports
+       32 port bits
+        1 submodules
+        1   $paramod\imm_gen_bit_repeater\REPEATS=s32'00000000000000000000000000001000
+
+=== imm_gen_mux_4to1_16bit ===
+
+        +----------Local Count, excluding submodules.
+        | 
+       16 wires
+      124 wire bits
+        6 public wires
+       82 public wire bits
+        6 ports
+       82 port bits
+       58 cells
+       48   $_MUX_
+        3   $_NOT_
+        3   $_OR_
+        4   $_XOR_
+
+=== design hierarchy ===
+
+        +----------Count including submodules.
+        | 
+       58 imm_gen
+       58 imm_gen_mux_4to1_16bit
+
+        +----------Count including submodules.
+        | 
+       43 wires
+      426 wire bits
+       33 public wires
+      384 public wire bits
+       25 ports
+      284 port bits
+        - memories
+        - memory bits
+        - processes
+       58 cells
+       48   $_MUX_
+        3   $_NOT_
+        3   $_OR_
+        4   $_XOR_
+        5 submodules
+        1   imm_gen_formatter_12bit
+        1   imm_gen_formatter_4high
+        1   imm_gen_formatter_4low
+        1   imm_gen_formatter_8bit
+        1   imm_gen_mux_4to1_16bit
+
+15. Executing JSON backend.
+
+End of script. Logfile hash: 51fa984183, CPU: user 0.02s system 0.00s, MEM: 14.69 MB peak
+Yosys 0.61+112 (git sha1 ac427a79b, clang++ 18.1.8 -fPIC -O3)
+Time spent: 58% 15x read_verilog (0 sec), 9% 2x opt_clean (0 sec), ...

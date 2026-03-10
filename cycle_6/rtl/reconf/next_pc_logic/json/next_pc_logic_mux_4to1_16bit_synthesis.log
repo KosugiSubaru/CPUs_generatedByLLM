@@ -1,0 +1,164 @@
+
+ /----------------------------------------------------------------------------\
+ |  yosys -- Yosys Open SYnthesis Suite                                       |
+ |  Copyright (C) 2012 - 2026  Claire Xenia Wolf <claire@yosyshq.com>         |
+ |  Distributed under an ISC-like license, type "license" to see terms        |
+ \----------------------------------------------------------------------------/
+ Yosys 0.61+112 (git sha1 ac427a79b, clang++ 18.1.8 -fPIC -O3)
+
+-- Executing script file `reconf/next_pc_logic/json/next_pc_logic_mux_4to1_16bit.ys' --
+
+1. Executing Verilog-2005 frontend: reconf/next_pc_logic/rtl/next_pc_logic.v
+Parsing Verilog input from `reconf/next_pc_logic/rtl/next_pc_logic.v' to AST representation.
+Generating RTLIL representation for module `\next_pc_logic'.
+Successfully finished Verilog frontend.
+
+2. Executing Verilog-2005 frontend: reconf/next_pc_logic/rtl/next_pc_logic_adder_16bit.v
+Parsing Verilog input from `reconf/next_pc_logic/rtl/next_pc_logic_adder_16bit.v' to AST representation.
+Generating RTLIL representation for module `\next_pc_logic_adder_16bit'.
+Successfully finished Verilog frontend.
+
+3. Executing Verilog-2005 frontend: reconf/next_pc_logic/rtl/next_pc_logic_mux_4to1_16bit.v
+Parsing Verilog input from `reconf/next_pc_logic/rtl/next_pc_logic_mux_4to1_16bit.v' to AST representation.
+Generating RTLIL representation for module `\next_pc_logic_mux_4to1_16bit'.
+Successfully finished Verilog frontend.
+
+4. Executing Verilog-2005 frontend: reconf/next_pc_logic/rtl/next_pc_logic_branch_resolver.v
+Parsing Verilog input from `reconf/next_pc_logic/rtl/next_pc_logic_branch_resolver.v' to AST representation.
+Generating RTLIL representation for module `\next_pc_logic_branch_resolver'.
+Successfully finished Verilog frontend.
+
+5. Executing Verilog-2005 frontend: reconf/next_pc_logic/rtl/next_pc_logic_full_adder.v
+Parsing Verilog input from `reconf/next_pc_logic/rtl/next_pc_logic_full_adder.v' to AST representation.
+Generating RTLIL representation for module `\next_pc_logic_full_adder'.
+Successfully finished Verilog frontend.
+
+6. Executing HIERARCHY pass (managing design hierarchy).
+
+6.1. Analyzing design hierarchy..
+Top module:  \next_pc_logic_mux_4to1_16bit
+
+6.2. Analyzing design hierarchy..
+Top module:  \next_pc_logic_mux_4to1_16bit
+Removing unused module `\next_pc_logic_full_adder'.
+Removing unused module `\next_pc_logic_branch_resolver'.
+Removing unused module `\next_pc_logic_adder_16bit'.
+Removing unused module `\next_pc_logic'.
+Removed 4 unused modules.
+
+7. Executing PROC pass (convert processes to netlists).
+
+7.1. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Cleaned up 0 empty switches.
+
+7.2. Executing PROC_RMDEAD pass (remove dead branches from decision trees).
+Removed a total of 0 dead cases.
+
+7.3. Executing PROC_PRUNE pass (remove redundant assignments in processes).
+Removed 0 redundant assignments.
+Promoted 0 assignments to connections.
+
+7.4. Executing PROC_INIT pass (extract init attributes).
+
+7.5. Executing PROC_ARST pass (detect async resets in processes).
+
+7.6. Executing PROC_ROM pass (convert switches to ROMs).
+Converted 0 switches.
+
+7.7. Executing PROC_MUX pass (convert decision trees to multiplexers).
+
+7.8. Executing PROC_DLATCH pass (convert process syncs to latches).
+
+7.9. Executing PROC_DFF pass (convert process syncs to FFs).
+
+7.10. Executing PROC_MEMWR pass (convert process memory writes to cells).
+
+7.11. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Cleaned up 0 empty switches.
+
+7.12. Executing OPT_EXPR pass (perform const folding).
+Optimizing module next_pc_logic_mux_4to1_16bit.
+<suppressed ~16 debug messages>
+
+8. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \next_pc_logic_mux_4to1_16bit..
+Removed 0 unused cells and 16 unused wires.
+<suppressed ~1 debug messages>
+
+9. Executing TECHMAP pass (map to technology primitives).
+
+9.1. Executing Verilog-2005 frontend: /opt/oss-cad-suite/lib/../share/yosys/techmap.v
+Parsing Verilog input from `/opt/oss-cad-suite/lib/../share/yosys/techmap.v' to AST representation.
+Generating RTLIL representation for module `\_90_simplemap_bool_ops'.
+Generating RTLIL representation for module `\_90_simplemap_reduce_ops'.
+Generating RTLIL representation for module `\_90_simplemap_logic_ops'.
+Generating RTLIL representation for module `\_90_simplemap_compare_ops'.
+Generating RTLIL representation for module `\_90_simplemap_various'.
+Generating RTLIL representation for module `\_90_simplemap_registers'.
+Generating RTLIL representation for module `\_90_shift_ops_shr_shl_sshl_sshr'.
+Generating RTLIL representation for module `\_90_shift_shiftx'.
+Generating RTLIL representation for module `\_90_fa'.
+Generating RTLIL representation for module `\_90_lcu_brent_kung'.
+Generating RTLIL representation for module `\_90_alu'.
+Generating RTLIL representation for module `\_90_macc'.
+Generating RTLIL representation for module `\_90_alumacc'.
+Generating RTLIL representation for module `$__div_mod_u'.
+Generating RTLIL representation for module `$__div_mod_trunc'.
+Generating RTLIL representation for module `\_90_div'.
+Generating RTLIL representation for module `\_90_mod'.
+Generating RTLIL representation for module `$__div_mod_floor'.
+Generating RTLIL representation for module `\_90_divfloor'.
+Generating RTLIL representation for module `\_90_modfloor'.
+Generating RTLIL representation for module `\_90_pow'.
+Generating RTLIL representation for module `\_90_pmux'.
+Generating RTLIL representation for module `\_90_demux'.
+Generating RTLIL representation for module `\_90_lut'.
+Generating RTLIL representation for module `$connect'.
+Generating RTLIL representation for module `$input_port'.
+Successfully finished Verilog frontend.
+
+9.2. Continuing TECHMAP pass.
+Using extmapper simplemap for cells of type $logic_not.
+Using extmapper simplemap for cells of type $eq.
+Using extmapper simplemap for cells of type $mux.
+No more expansions possible.
+<suppressed ~173 debug messages>
+
+10. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \next_pc_logic_mux_4to1_16bit..
+Removed 0 unused cells and 32 unused wires.
+<suppressed ~1 debug messages>
+
+11. Executing HIERARCHY pass (managing design hierarchy).
+Attribute `top' found on module `next_pc_logic_mux_4to1_16bit'. Setting top module to next_pc_logic_mux_4to1_16bit.
+
+11.1. Analyzing design hierarchy..
+Top module:  \next_pc_logic_mux_4to1_16bit
+
+11.2. Analyzing design hierarchy..
+Top module:  \next_pc_logic_mux_4to1_16bit
+Removed 0 unused modules.
+
+12. Printing statistics.
+
+=== next_pc_logic_mux_4to1_16bit ===
+
+        +----------Local Count, excluding submodules.
+        | 
+      166 wires
+      274 wire bits
+        6 public wires
+       82 public wire bits
+        6 ports
+       82 port bits
+      208 cells
+       48   $_MUX_
+       48   $_NOT_
+       48   $_OR_
+       64   $_XOR_
+
+13. Executing JSON backend.
+
+End of script. Logfile hash: 4e8de1f61d, CPU: user 0.02s system 0.00s, MEM: 14.53 MB peak
+Yosys 0.61+112 (git sha1 ac427a79b, clang++ 18.1.8 -fPIC -O3)
+Time spent: 69% 11x read_verilog (0 sec), 9% 2x opt_clean (0 sec), ...

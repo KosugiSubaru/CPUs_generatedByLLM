@@ -1,0 +1,121 @@
+{
+  "creator": "Yosys 0.61+112 (git sha1 ac427a79b, clang++ 18.1.8 -fPIC -O3)",
+  "modules": {
+    "flag_reg_dff": {
+      "attributes": {
+        "top": "00000000000000000000000000000001",
+        "src": "reconf/flag_reg/rtl/flag_reg_dff.v:1.1-17.10"
+      },
+      "ports": {
+        "i_clk": {
+          "direction": "input",
+          "bits": [ 2 ]
+        },
+        "i_rst_n": {
+          "direction": "input",
+          "bits": [ 3 ]
+        },
+        "i_en": {
+          "direction": "input",
+          "bits": [ 4 ]
+        },
+        "i_d": {
+          "direction": "input",
+          "bits": [ 5 ]
+        },
+        "o_q": {
+          "direction": "output",
+          "bits": [ 6 ]
+        }
+      },
+      "cells": {
+        "$auto$ff.cc:337:slice$86": {
+          "hide_name": 1,
+          "type": "$_DFF_PN0_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/flag_reg/rtl/flag_reg_dff.v:9.5-15.8"
+          },
+          "port_directions": {
+            "C": "input",
+            "D": "input",
+            "Q": "output",
+            "R": "input"
+          },
+          "connections": {
+            "C": [ 2 ],
+            "D": [ 7 ],
+            "Q": [ 6 ],
+            "R": [ 3 ]
+          }
+        },
+        "$auto$simplemap.cc:298:simplemap_mux$85": {
+          "hide_name": 1,
+          "type": "$_MUX_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/flag_reg/rtl/flag_reg_dff.v:12.22-12.26|reconf/flag_reg/rtl/flag_reg_dff.v:12.18-14.12"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 6 ],
+            "B": [ 5 ],
+            "S": [ 4 ],
+            "Y": [ 7 ]
+          }
+        }
+      },
+      "netnames": {
+        "$0\\o_q[0:0]": {
+          "hide_name": 1,
+          "bits": [ 7 ],
+          "attributes": {
+            "src": "reconf/flag_reg/rtl/flag_reg_dff.v:9.5-15.8"
+          }
+        },
+        "i_clk": {
+          "hide_name": 0,
+          "bits": [ 2 ],
+          "attributes": {
+            "src": "reconf/flag_reg/rtl/flag_reg_dff.v:2.17-2.22"
+          }
+        },
+        "i_d": {
+          "hide_name": 0,
+          "bits": [ 5 ],
+          "attributes": {
+            "src": "reconf/flag_reg/rtl/flag_reg_dff.v:5.17-5.20"
+          }
+        },
+        "i_en": {
+          "hide_name": 0,
+          "bits": [ 4 ],
+          "attributes": {
+            "src": "reconf/flag_reg/rtl/flag_reg_dff.v:4.17-4.21"
+          }
+        },
+        "i_rst_n": {
+          "hide_name": 0,
+          "bits": [ 3 ],
+          "attributes": {
+            "src": "reconf/flag_reg/rtl/flag_reg_dff.v:3.17-3.24"
+          }
+        },
+        "o_q": {
+          "hide_name": 0,
+          "bits": [ 6 ],
+          "attributes": {
+            "src": "reconf/flag_reg/rtl/flag_reg_dff.v:6.17-6.20"
+          }
+        }
+      }
+    }
+  }
+}

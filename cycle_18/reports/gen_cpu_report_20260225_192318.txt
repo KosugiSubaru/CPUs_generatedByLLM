@@ -1,0 +1,58 @@
+
+============================================================
+CPU自動生成レポート
+============================================================
+生成日時: 2026-02-25 19:23:18
+
+生成成功モジュール (7個):
+
+  ✓ program_counter:
+    - program_counter_reg_1bit.v
+    - program_counter_full_adder.v
+    - program_counter_mux2_1bit.v
+    - program_counter_reg_16bit.v
+    - program_counter_adder_16bit.v
+    - program_counter_mux2_16bit.v
+    - program_counter.v
+  ✓ control_unit:
+    - control_unit_decoder_2to4.v
+    - control_unit_decoder_4to16.v
+    - control_unit_op_logic.v
+    - control_unit.v
+  ✓ register_file:
+    - register_file_cell_1bit.v
+    - register_file_mux16_1bit.v
+    - register_file_reg_16bit.v
+    - register_file_reg_zero_16bit.v
+    - register_file_mux16_16bit.v
+    - register_file_decoder_4to16.v
+    - register_file.v
+  ✓ immediate_generator:
+    - immediate_generator_mux2_1bit.v
+    - immediate_generator_sign_ext_4to16.v
+    - immediate_generator_sign_ext_8to16.v
+    - immediate_generator_sign_ext_12to16.v
+    - immediate_generator_mux4_16bit.v
+    - immediate_generator.v
+  ✓ alu_main:
+    - alu_main_full_adder.v
+    - alu_main_logic_slice.v
+    - alu_main_arithmetic_16bit.v
+    - alu_main_logical_16bit.v
+    - alu_main_shifter_16bit.v
+    - alu_main.v
+  ✓ flag_register:
+    - flag_register_bit.v
+    - flag_register_3bit.v
+    - flag_register.v
+  ✓ pc_selector:
+    - pc_selector_mux2_1bit.v
+    - pc_selector_full_adder.v
+    - pc_selector_mux2_16bit.v
+    - pc_selector_adder_16bit.v
+    - pc_selector_branch_check.v
+    - pc_selector.v
+
+すべてのモジュールが正常に生成されました。
+
+============================================================

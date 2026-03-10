@@ -1,0 +1,239 @@
+{
+  "creator": "Yosys 0.61+112 (git sha1 ac427a79b, clang++ 18.1.8 -fPIC -O3)",
+  "modules": {
+    "control_unit_branch_evaluator": {
+      "attributes": {
+        "top": "00000000000000000000000000000001",
+        "src": "reconf/control_unit/rtl/control_unit_branch_evaluator.v:1.1-36.10"
+      },
+      "ports": {
+        "i_onehot": {
+          "direction": "input",
+          "bits": [ 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17 ]
+        },
+        "i_flag_z": {
+          "direction": "input",
+          "bits": [ 18 ]
+        },
+        "i_flag_n": {
+          "direction": "input",
+          "bits": [ 19 ]
+        },
+        "i_flag_v": {
+          "direction": "input",
+          "bits": [ 20 ]
+        },
+        "o_pc_jump_taken": {
+          "direction": "output",
+          "bits": [ 21 ]
+        },
+        "o_pc_target_sel": {
+          "direction": "output",
+          "bits": [ 17 ]
+        }
+      },
+      "cells": {
+        "$auto$simplemap.cc:106:simplemap_bitop$121": {
+          "hide_name": 1,
+          "type": "$_XOR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/control_unit/rtl/control_unit_branch_evaluator.v:15.25-15.44"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 19 ],
+            "B": [ 20 ],
+            "Y": [ 22 ]
+          }
+        },
+        "$auto$simplemap.cc:106:simplemap_bitop$122": {
+          "hide_name": 1,
+          "type": "$_AND_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/control_unit/rtl/control_unit_branch_evaluator.v:25.27-25.52"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 14 ],
+            "B": [ 22 ],
+            "Y": [ 23 ]
+          }
+        },
+        "$auto$simplemap.cc:106:simplemap_bitop$123": {
+          "hide_name": 1,
+          "type": "$_AND_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/control_unit/rtl/control_unit_branch_evaluator.v:26.27-26.51"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 15 ],
+            "B": [ 18 ],
+            "Y": [ 24 ]
+          }
+        },
+        "$auto$simplemap.cc:106:simplemap_bitop$124": {
+          "hide_name": 1,
+          "type": "$_OR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/control_unit/rtl/control_unit_branch_evaluator.v:27.27-27.54"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 16 ],
+            "B": [ 17 ],
+            "Y": [ 25 ]
+          }
+        },
+        "$auto$simplemap.cc:106:simplemap_bitop$125": {
+          "hide_name": 1,
+          "type": "$_OR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/control_unit/rtl/control_unit_branch_evaluator.v:31.30-31.54"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 23 ],
+            "B": [ 24 ],
+            "Y": [ 26 ]
+          }
+        },
+        "$auto$simplemap.cc:106:simplemap_bitop$126": {
+          "hide_name": 1,
+          "type": "$_OR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/control_unit/rtl/control_unit_branch_evaluator.v:31.30-31.69"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 26 ],
+            "B": [ 25 ],
+            "Y": [ 21 ]
+          }
+        }
+      },
+      "netnames": {
+        "$or$reconf/control_unit/rtl/control_unit_branch_evaluator.v:31$5_Y": {
+          "hide_name": 1,
+          "bits": [ 26 ],
+          "attributes": {
+            "src": "reconf/control_unit/rtl/control_unit_branch_evaluator.v:31.30-31.54"
+          }
+        },
+        "i_flag_n": {
+          "hide_name": 0,
+          "bits": [ 19 ],
+          "attributes": {
+            "src": "reconf/control_unit/rtl/control_unit_branch_evaluator.v:4.24-4.32"
+          }
+        },
+        "i_flag_v": {
+          "hide_name": 0,
+          "bits": [ 20 ],
+          "attributes": {
+            "src": "reconf/control_unit/rtl/control_unit_branch_evaluator.v:5.24-5.32"
+          }
+        },
+        "i_flag_z": {
+          "hide_name": 0,
+          "bits": [ 18 ],
+          "attributes": {
+            "src": "reconf/control_unit/rtl/control_unit_branch_evaluator.v:3.24-3.32"
+          }
+        },
+        "i_onehot": {
+          "hide_name": 0,
+          "bits": [ 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17 ],
+          "attributes": {
+            "src": "reconf/control_unit/rtl/control_unit_branch_evaluator.v:2.24-2.32"
+          }
+        },
+        "o_pc_jump_taken": {
+          "hide_name": 0,
+          "bits": [ 21 ],
+          "attributes": {
+            "src": "reconf/control_unit/rtl/control_unit_branch_evaluator.v:6.24-6.39"
+          }
+        },
+        "o_pc_target_sel": {
+          "hide_name": 0,
+          "bits": [ 17 ],
+          "attributes": {
+            "src": "reconf/control_unit/rtl/control_unit_branch_evaluator.v:7.24-7.39"
+          }
+        },
+        "w_cond_blt": {
+          "hide_name": 0,
+          "bits": [ 22 ],
+          "attributes": {
+            "src": "reconf/control_unit/rtl/control_unit_branch_evaluator.v:11.10-11.20"
+          }
+        },
+        "w_cond_bz": {
+          "hide_name": 0,
+          "bits": [ 18 ],
+          "attributes": {
+            "src": "reconf/control_unit/rtl/control_unit_branch_evaluator.v:12.10-12.19"
+          }
+        },
+        "w_taken_blt": {
+          "hide_name": 0,
+          "bits": [ 23 ],
+          "attributes": {
+            "src": "reconf/control_unit/rtl/control_unit_branch_evaluator.v:21.10-21.21"
+          }
+        },
+        "w_taken_bz": {
+          "hide_name": 0,
+          "bits": [ 24 ],
+          "attributes": {
+            "src": "reconf/control_unit/rtl/control_unit_branch_evaluator.v:22.10-22.20"
+          }
+        },
+        "w_taken_jump": {
+          "hide_name": 0,
+          "bits": [ 25 ],
+          "attributes": {
+            "src": "reconf/control_unit/rtl/control_unit_branch_evaluator.v:23.10-23.22"
+          }
+        }
+      }
+    }
+  }
+}

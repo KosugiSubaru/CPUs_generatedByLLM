@@ -1,0 +1,72 @@
+{
+  "creator": "Yosys 0.61+112 (git sha1 ac427a79b, clang++ 18.1.8 -fPIC -O3)",
+  "modules": {
+    "register_file_reg_zero_16bit": {
+      "attributes": {
+        "top": "00000000000000000000000000000001",
+        "src": "reconf/register_file/rtl/register_file_reg_zero_16bit.v:1.1-12.10"
+      },
+      "ports": {
+        "i_clk": {
+          "direction": "input",
+          "bits": [ 2 ]
+        },
+        "i_rst_n": {
+          "direction": "input",
+          "bits": [ 3 ]
+        },
+        "i_we": {
+          "direction": "input",
+          "bits": [ 4 ]
+        },
+        "i_d": {
+          "direction": "input",
+          "bits": [ 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20 ]
+        },
+        "o_q": {
+          "direction": "output",
+          "bits": [ "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0" ]
+        }
+      },
+      "cells": {
+      },
+      "netnames": {
+        "i_clk": {
+          "hide_name": 0,
+          "bits": [ 2 ],
+          "attributes": {
+            "src": "reconf/register_file/rtl/register_file_reg_zero_16bit.v:2.24-2.29"
+          }
+        },
+        "i_d": {
+          "hide_name": 0,
+          "bits": [ 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20 ],
+          "attributes": {
+            "src": "reconf/register_file/rtl/register_file_reg_zero_16bit.v:5.24-5.27"
+          }
+        },
+        "i_rst_n": {
+          "hide_name": 0,
+          "bits": [ 3 ],
+          "attributes": {
+            "src": "reconf/register_file/rtl/register_file_reg_zero_16bit.v:3.24-3.31"
+          }
+        },
+        "i_we": {
+          "hide_name": 0,
+          "bits": [ 4 ],
+          "attributes": {
+            "src": "reconf/register_file/rtl/register_file_reg_zero_16bit.v:4.24-4.28"
+          }
+        },
+        "o_q": {
+          "hide_name": 0,
+          "bits": [ "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0" ],
+          "attributes": {
+            "src": "reconf/register_file/rtl/register_file_reg_zero_16bit.v:6.24-6.27"
+          }
+        }
+      }
+    }
+  }
+}

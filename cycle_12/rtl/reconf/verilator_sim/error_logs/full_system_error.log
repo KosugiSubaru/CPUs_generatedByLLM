@@ -1,0 +1,79 @@
+
+=== ログ 2026-02-24 16:06:44 ===
+make: Entering directory '/home/ko_kosugi/workspace/project_makeISA/ai_api/CPU/obj_dir'
+g++  -I.  -MMD -I/opt/oss-cad-suite/share/verilator/include -I/opt/oss-cad-suite/share/verilator/include/vltstd -DVERILATOR=1 -DVM_COVERAGE=0 -DVM_SC=0 -DVM_TIMING=0 -DVM_TRACE=1 -DVM_TRACE_FST=0 -DVM_TRACE_VCD=1 -DVM_TRACE_SAIF=0 -faligned-new -fcf-protection=none -Wno-bool-operation -Wno-int-in-bool-context -Wno-shadow -Wno-sign-compare -Wno-subobject-linkage -Wno-tautological-compare -Wno-uninitialized -Wno-unused-but-set-parameter -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable      -Os  -c -o tb_top_gen.o ../tb_top_gen.cpp
+g++ -Os  -I.  -MMD -I/opt/oss-cad-suite/share/verilator/include -I/opt/oss-cad-suite/share/verilator/include/vltstd -DVERILATOR=1 -DVM_COVERAGE=0 -DVM_SC=0 -DVM_TIMING=0 -DVM_TRACE=1 -DVM_TRACE_FST=0 -DVM_TRACE_VCD=1 -DVM_TRACE_SAIF=0 -faligned-new -fcf-protection=none -Wno-bool-operation -Wno-int-in-bool-context -Wno-shadow -Wno-sign-compare -Wno-subobject-linkage -Wno-tautological-compare -Wno-uninitialized -Wno-unused-but-set-parameter -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable      -c -o verilated.o /opt/oss-cad-suite/share/verilator/include/verilated.cpp
+g++ -Os  -I.  -MMD -I/opt/oss-cad-suite/share/verilator/include -I/opt/oss-cad-suite/share/verilator/include/vltstd -DVERILATOR=1 -DVM_COVERAGE=0 -DVM_SC=0 -DVM_TIMING=0 -DVM_TRACE=1 -DVM_TRACE_FST=0 -DVM_TRACE_VCD=1 -DVM_TRACE_SAIF=0 -faligned-new -fcf-protection=none -Wno-bool-operation -Wno-int-in-bool-context -Wno-shadow -Wno-sign-compare -Wno-subobject-linkage -Wno-tautological-compare -Wno-uninitialized -Wno-unused-but-set-parameter -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable      -c -o verilated_vcd_c.o /opt/oss-cad-suite/share/verilator/include/verilated_vcd_c.cpp
+g++ -Os  -I.  -MMD -I/opt/oss-cad-suite/share/verilator/include -I/opt/oss-cad-suite/share/verilator/include/vltstd -DVERILATOR=1 -DVM_COVERAGE=0 -DVM_SC=0 -DVM_TIMING=0 -DVM_TRACE=1 -DVM_TRACE_FST=0 -DVM_TRACE_VCD=1 -DVM_TRACE_SAIF=0 -faligned-new -fcf-protection=none -Wno-bool-operation -Wno-int-in-bool-context -Wno-shadow -Wno-sign-compare -Wno-subobject-linkage -Wno-tautological-compare -Wno-uninitialized -Wno-unused-but-set-parameter -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable      -c -o verilated_threads.o /opt/oss-cad-suite/share/verilator/include/verilated_threads.cpp
+python3 /opt/oss-cad-suite/share/verilator/bin/verilator_includer -DVL_INCLUDE_OPT=include Vtop.cpp Vtop___024root__0.cpp Vtop__Trace__0.cpp Vtop__ConstPool__0__Slow.cpp Vtop___024root__Slow.cpp Vtop___024root__0__Slow.cpp Vtop__Syms__Slow.cpp Vtop__Trace__0__Slow.cpp Vtop__TraceDecls__0__Slow.cpp > Vtop__ALL.cpp
+g++ -Os  -I.  -MMD -I/opt/oss-cad-suite/share/verilator/include -I/opt/oss-cad-suite/share/verilator/include/vltstd -DVERILATOR=1 -DVM_COVERAGE=0 -DVM_SC=0 -DVM_TIMING=0 -DVM_TRACE=1 -DVM_TRACE_FST=0 -DVM_TRACE_VCD=1 -DVM_TRACE_SAIF=0 -faligned-new -fcf-protection=none -Wno-bool-operation -Wno-int-in-bool-context -Wno-shadow -Wno-sign-compare -Wno-subobject-linkage -Wno-tautological-compare -Wno-uninitialized -Wno-unused-but-set-parameter -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable      -c -o Vtop__ALL.o Vtop__ALL.cpp
+g++    tb_top_gen.o verilated.o verilated_vcd_c.o verilated_threads.o Vtop__ALL.a    -pthread -lpthread -latomic   -o Vtop
+rm Vtop__ALL.verilator_deplist.tmp
+make: Leaving directory '/home/ko_kosugi/workspace/project_makeISA/ai_api/CPU/obj_dir'
+- V e r i l a t i o n   R e p o r t: Verilator 5.045 devel rev v5.044-88-g1b9f38f78
+- Verilator: Built from 2.727 MB sources in 48 modules, into 1.802 MB in 9 C++ files needing 0.000 MB
+- Verilator: Walltime 11.119 s (elab=0.014, cvt=0.132, bld=10.932); cpu 0.149 s on 1 threads; allocated 31.496 MB
+[SVA OK] Time=35: LOADI R3 = 0x0005
+[SVA OK] Time=45: LOADI R3 = 0x0005
+[SVA OK] Time=55: STORE MEM[0x0000] = 0x0005
+[SVA OK] Time=65: LOADI R3 = 0xfffd
+[SVA OK] Time=75: STORE MEM[0x0001] = 0xfffd
+[SVA OK] Time=85: LOADI R3 = 0x0008
+[SVA OK] Time=95: STORE MEM[0x0002] = 0x0008
+[SVA OK] Time=105: LOADI R3 = 0x0002
+[SVA OK] Time=115: STORE MEM[0x0003] = 0x0002
+[SVA OK] Time=125: LOADI R3 = 0xffff
+[SVA OK] Time=135: STORE MEM[0x0004] = 0xffff
+[SVA OK] Time=145: LOADI R1 = 0x0005
+[SVA OK] Time=155: LOADI R2 = 0x0000
+[SVA OK] Time=165: LOAD R4 = MEM[0x0000] = 0x0005
+[SVA OK] Time=175: LOAD R5 = MEM[0x0000] = 0x0005
+[SVA OK] Time=185: LOADI R6 = 0x0000
+[SVA OK] Time=195: LOAD R3 = MEM[0x0000] = 0x0005
+[SVA OK] Time=205: SUB R7 = 0x0000
+[SVA OK] Time=215: BLT cond=0 target=0x004a notaken_pc=0x0026
+[SVA OK] Time=225: ADDI R0 = 0x0000
+[SVA OK] Time=235: SUB R7 = 0x0000
+[SVA OK] Time=245: BLT cond=0 target=0x0050 notaken_pc=0x002c
+[SVA OK] Time=255: ADDI R0 = 0x0000
+[SVA OK] Time=265: JAL link R15=0x0030 target=0x0056
+[SVA OK] Time=275: ADDI R0 = 0x0000
+[SVA OK] Time=285: LOADI R7 = 0x000f
+[SVA OK] Time=295: AND R8 = 0x0005
+[SVA OK] Time=305: OR R9 = 0x000f
+[315] %Error: sva_cpu_gen.sv:225: Assertion failed in TOP.top.u_sva_cpu_gen: [TIME=315] XOR failed: R10 = 0x0000, expected 0x000a
+%Error: sva_cpu_gen.sv:225: Verilog $stop
+Aborting...
+
+==================================================
+
+=== ログ 2026-02-24 16:07:00 ===
+### エラーの要点
+このエラーは、**XOR命令の演算結果が期待値と一致していない**ことを示しています。
+具体的には、SVA（SystemVerilog Assertion）のチェックにおいて、期待値は `0x000a`（0x000f と 0x0005 のXOR結果）であったのに対し、CPUが実際に出力してレジスタ R10 に書き込んだ値が `0x0000` であったため、アサーション違反が発生しました。
+
+### 原因の解説
+`alu.v` における**演算結果の最終選択ロジック（o_result の選択条件）**に不備がある可能性が極めて高いです。
+
+現在の `alu.v` の実装では、以下の条件判断を行っています：
+1.  `i_alu_op[3:2] == 2'b01` の場合に `w_shift_result`（シフト演算器の結果）を選択する。
+
+しかし、ISA定義を確認すると、オペコードの上位2ビットが `01` になる命令には以下の4つが含まれています。
+*   `0100`: logical xor（論理演算）
+*   `0101`: logical not（論理演算）
+*   `0110`: shift right arithmetic（シフト演算）
+*   `0111`: shift left arithmetic（シフト演算）
+
+このため、本来 **`alu_logical_unit_16bit`** で計算されるべき **XOR (`0100`)** と **NOT (`0101`)** の結果が無視され、誤ってシフト演算器の出力（恐らく未定義または0）が選択されてしまっています。
+
+### 修正方法のアドバイス
+
+`alu.v` の `o_result` を選択する条件式を、より厳密に修正してください。
+
+1.  **シフト演算の条件を限定する**
+    上位2ビットだけで判断するのではなく、オペコードが正確に `0110` (SRA) または `0111` (SLA) である場合のみシフト演算器の結果を選択するように変更します。
+2.  **論理演算の優先順位を整理する**
+    XOR (`0100`) と NOT (`0101`) が `w_logic_result`（論理演算ユニット）のパスを通過して最終出力に到達するように、条件分岐の順序を修正します。
+
+具体的には、「オペコードが 0110 か 0111 ならシフト結果」、「それ以外の 0xxx なら論理演算結果」という形で、条件の重なりを解消するようにロジックを書き換える必要があります。
+==================================================

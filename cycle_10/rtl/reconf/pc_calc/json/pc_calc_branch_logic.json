@@ -1,0 +1,187 @@
+{
+  "creator": "Yosys 0.61+112 (git sha1 ac427a79b, clang++ 18.1.8 -fPIC -O3)",
+  "modules": {
+    "pc_calc_branch_logic": {
+      "attributes": {
+        "top": "00000000000000000000000000000001",
+        "src": "reconf/pc_calc/rtl/pc_calc_branch_logic.v:1.1-23.10"
+      },
+      "ports": {
+        "i_flag_z": {
+          "direction": "input",
+          "bits": [ 2 ]
+        },
+        "i_flag_n": {
+          "direction": "input",
+          "bits": [ 3 ]
+        },
+        "i_flag_v": {
+          "direction": "input",
+          "bits": [ 4 ]
+        },
+        "i_branch_bz": {
+          "direction": "input",
+          "bits": [ 5 ]
+        },
+        "i_branch_blt": {
+          "direction": "input",
+          "bits": [ 6 ]
+        },
+        "o_condition_met": {
+          "direction": "output",
+          "bits": [ 7 ]
+        }
+      },
+      "cells": {
+        "$auto$simplemap.cc:106:simplemap_bitop$104": {
+          "hide_name": 1,
+          "type": "$_XOR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/pc_calc/rtl/pc_calc_branch_logic.v:14.30-14.49"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 3 ],
+            "B": [ 4 ],
+            "Y": [ 8 ]
+          }
+        },
+        "$auto$simplemap.cc:106:simplemap_bitop$105": {
+          "hide_name": 1,
+          "type": "$_AND_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/pc_calc/rtl/pc_calc_branch_logic.v:20.31-20.61"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 6 ],
+            "B": [ 8 ],
+            "Y": [ 9 ]
+          }
+        },
+        "$auto$simplemap.cc:106:simplemap_bitop$106": {
+          "hide_name": 1,
+          "type": "$_AND_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/pc_calc/rtl/pc_calc_branch_logic.v:21.31-21.56"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 5 ],
+            "B": [ 2 ],
+            "Y": [ 10 ]
+          }
+        },
+        "$auto$simplemap.cc:106:simplemap_bitop$107": {
+          "hide_name": 1,
+          "type": "$_OR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/pc_calc/rtl/pc_calc_branch_logic.v:20.30-21.57"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 9 ],
+            "B": [ 10 ],
+            "Y": [ 7 ]
+          }
+        }
+      },
+      "netnames": {
+        "$and$reconf/pc_calc/rtl/pc_calc_branch_logic.v:20$4_Y": {
+          "hide_name": 1,
+          "bits": [ 9 ],
+          "attributes": {
+            "src": "reconf/pc_calc/rtl/pc_calc_branch_logic.v:20.31-20.61"
+          }
+        },
+        "$and$reconf/pc_calc/rtl/pc_calc_branch_logic.v:21$5_Y": {
+          "hide_name": 1,
+          "bits": [ 10 ],
+          "attributes": {
+            "src": "reconf/pc_calc/rtl/pc_calc_branch_logic.v:21.31-21.56"
+          }
+        },
+        "i_branch_blt": {
+          "hide_name": 0,
+          "bits": [ 6 ],
+          "attributes": {
+            "src": "reconf/pc_calc/rtl/pc_calc_branch_logic.v:6.17-6.29"
+          }
+        },
+        "i_branch_bz": {
+          "hide_name": 0,
+          "bits": [ 5 ],
+          "attributes": {
+            "src": "reconf/pc_calc/rtl/pc_calc_branch_logic.v:5.17-5.28"
+          }
+        },
+        "i_flag_n": {
+          "hide_name": 0,
+          "bits": [ 3 ],
+          "attributes": {
+            "src": "reconf/pc_calc/rtl/pc_calc_branch_logic.v:3.17-3.25"
+          }
+        },
+        "i_flag_v": {
+          "hide_name": 0,
+          "bits": [ 4 ],
+          "attributes": {
+            "src": "reconf/pc_calc/rtl/pc_calc_branch_logic.v:4.17-4.25"
+          }
+        },
+        "i_flag_z": {
+          "hide_name": 0,
+          "bits": [ 2 ],
+          "attributes": {
+            "src": "reconf/pc_calc/rtl/pc_calc_branch_logic.v:2.17-2.25"
+          }
+        },
+        "o_condition_met": {
+          "hide_name": 0,
+          "bits": [ 7 ],
+          "attributes": {
+            "src": "reconf/pc_calc/rtl/pc_calc_branch_logic.v:7.17-7.32"
+          }
+        },
+        "w_less_than_met": {
+          "hide_name": 0,
+          "bits": [ 8 ],
+          "attributes": {
+            "src": "reconf/pc_calc/rtl/pc_calc_branch_logic.v:10.10-10.25"
+          }
+        },
+        "w_zero_met": {
+          "hide_name": 0,
+          "bits": [ 2 ],
+          "attributes": {
+            "src": "reconf/pc_calc/rtl/pc_calc_branch_logic.v:11.10-11.20"
+          }
+        }
+      }
+    }
+  }
+}

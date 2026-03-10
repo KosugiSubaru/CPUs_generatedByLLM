@@ -1,0 +1,489 @@
+{
+  "creator": "Yosys 0.61+112 (git sha1 ac427a79b, clang++ 18.1.8 -fPIC -O3)",
+  "modules": {
+    "alu_src_mux": {
+      "attributes": {
+        "top": "00000000000000000000000000000001",
+        "src": "reconf/alu_src_mux/rtl/alu_src_mux.v:1.1-23.10"
+      },
+      "ports": {
+        "i_sel": {
+          "direction": "input",
+          "bits": [ 2 ]
+        },
+        "i_rs2": {
+          "direction": "input",
+          "bits": [ 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18 ]
+        },
+        "i_imm": {
+          "direction": "input",
+          "bits": [ 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34 ]
+        },
+        "o_data": {
+          "direction": "output",
+          "bits": [ 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50 ]
+        }
+      },
+      "cells": {
+        "g_mux_bits[0].u_alu_src_mux_1bit": {
+          "hide_name": 0,
+          "type": "alu_src_mux_1bit",
+          "parameters": {
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "reconf/alu_src_mux/rtl/alu_src_mux.v:14.30-19.14"
+          },
+          "port_directions": {
+            "i_imm": "input",
+            "i_rs2": "input",
+            "i_sel": "input",
+            "o_data": "output"
+          },
+          "connections": {
+            "i_imm": [ 19 ],
+            "i_rs2": [ 3 ],
+            "i_sel": [ 2 ],
+            "o_data": [ 35 ]
+          }
+        },
+        "g_mux_bits[10].u_alu_src_mux_1bit": {
+          "hide_name": 0,
+          "type": "alu_src_mux_1bit",
+          "parameters": {
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "reconf/alu_src_mux/rtl/alu_src_mux.v:14.30-19.14"
+          },
+          "port_directions": {
+            "i_imm": "input",
+            "i_rs2": "input",
+            "i_sel": "input",
+            "o_data": "output"
+          },
+          "connections": {
+            "i_imm": [ 29 ],
+            "i_rs2": [ 13 ],
+            "i_sel": [ 2 ],
+            "o_data": [ 45 ]
+          }
+        },
+        "g_mux_bits[11].u_alu_src_mux_1bit": {
+          "hide_name": 0,
+          "type": "alu_src_mux_1bit",
+          "parameters": {
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "reconf/alu_src_mux/rtl/alu_src_mux.v:14.30-19.14"
+          },
+          "port_directions": {
+            "i_imm": "input",
+            "i_rs2": "input",
+            "i_sel": "input",
+            "o_data": "output"
+          },
+          "connections": {
+            "i_imm": [ 30 ],
+            "i_rs2": [ 14 ],
+            "i_sel": [ 2 ],
+            "o_data": [ 46 ]
+          }
+        },
+        "g_mux_bits[12].u_alu_src_mux_1bit": {
+          "hide_name": 0,
+          "type": "alu_src_mux_1bit",
+          "parameters": {
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "reconf/alu_src_mux/rtl/alu_src_mux.v:14.30-19.14"
+          },
+          "port_directions": {
+            "i_imm": "input",
+            "i_rs2": "input",
+            "i_sel": "input",
+            "o_data": "output"
+          },
+          "connections": {
+            "i_imm": [ 31 ],
+            "i_rs2": [ 15 ],
+            "i_sel": [ 2 ],
+            "o_data": [ 47 ]
+          }
+        },
+        "g_mux_bits[13].u_alu_src_mux_1bit": {
+          "hide_name": 0,
+          "type": "alu_src_mux_1bit",
+          "parameters": {
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "reconf/alu_src_mux/rtl/alu_src_mux.v:14.30-19.14"
+          },
+          "port_directions": {
+            "i_imm": "input",
+            "i_rs2": "input",
+            "i_sel": "input",
+            "o_data": "output"
+          },
+          "connections": {
+            "i_imm": [ 32 ],
+            "i_rs2": [ 16 ],
+            "i_sel": [ 2 ],
+            "o_data": [ 48 ]
+          }
+        },
+        "g_mux_bits[14].u_alu_src_mux_1bit": {
+          "hide_name": 0,
+          "type": "alu_src_mux_1bit",
+          "parameters": {
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "reconf/alu_src_mux/rtl/alu_src_mux.v:14.30-19.14"
+          },
+          "port_directions": {
+            "i_imm": "input",
+            "i_rs2": "input",
+            "i_sel": "input",
+            "o_data": "output"
+          },
+          "connections": {
+            "i_imm": [ 33 ],
+            "i_rs2": [ 17 ],
+            "i_sel": [ 2 ],
+            "o_data": [ 49 ]
+          }
+        },
+        "g_mux_bits[15].u_alu_src_mux_1bit": {
+          "hide_name": 0,
+          "type": "alu_src_mux_1bit",
+          "parameters": {
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "reconf/alu_src_mux/rtl/alu_src_mux.v:14.30-19.14"
+          },
+          "port_directions": {
+            "i_imm": "input",
+            "i_rs2": "input",
+            "i_sel": "input",
+            "o_data": "output"
+          },
+          "connections": {
+            "i_imm": [ 34 ],
+            "i_rs2": [ 18 ],
+            "i_sel": [ 2 ],
+            "o_data": [ 50 ]
+          }
+        },
+        "g_mux_bits[1].u_alu_src_mux_1bit": {
+          "hide_name": 0,
+          "type": "alu_src_mux_1bit",
+          "parameters": {
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "reconf/alu_src_mux/rtl/alu_src_mux.v:14.30-19.14"
+          },
+          "port_directions": {
+            "i_imm": "input",
+            "i_rs2": "input",
+            "i_sel": "input",
+            "o_data": "output"
+          },
+          "connections": {
+            "i_imm": [ 20 ],
+            "i_rs2": [ 4 ],
+            "i_sel": [ 2 ],
+            "o_data": [ 36 ]
+          }
+        },
+        "g_mux_bits[2].u_alu_src_mux_1bit": {
+          "hide_name": 0,
+          "type": "alu_src_mux_1bit",
+          "parameters": {
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "reconf/alu_src_mux/rtl/alu_src_mux.v:14.30-19.14"
+          },
+          "port_directions": {
+            "i_imm": "input",
+            "i_rs2": "input",
+            "i_sel": "input",
+            "o_data": "output"
+          },
+          "connections": {
+            "i_imm": [ 21 ],
+            "i_rs2": [ 5 ],
+            "i_sel": [ 2 ],
+            "o_data": [ 37 ]
+          }
+        },
+        "g_mux_bits[3].u_alu_src_mux_1bit": {
+          "hide_name": 0,
+          "type": "alu_src_mux_1bit",
+          "parameters": {
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "reconf/alu_src_mux/rtl/alu_src_mux.v:14.30-19.14"
+          },
+          "port_directions": {
+            "i_imm": "input",
+            "i_rs2": "input",
+            "i_sel": "input",
+            "o_data": "output"
+          },
+          "connections": {
+            "i_imm": [ 22 ],
+            "i_rs2": [ 6 ],
+            "i_sel": [ 2 ],
+            "o_data": [ 38 ]
+          }
+        },
+        "g_mux_bits[4].u_alu_src_mux_1bit": {
+          "hide_name": 0,
+          "type": "alu_src_mux_1bit",
+          "parameters": {
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "reconf/alu_src_mux/rtl/alu_src_mux.v:14.30-19.14"
+          },
+          "port_directions": {
+            "i_imm": "input",
+            "i_rs2": "input",
+            "i_sel": "input",
+            "o_data": "output"
+          },
+          "connections": {
+            "i_imm": [ 23 ],
+            "i_rs2": [ 7 ],
+            "i_sel": [ 2 ],
+            "o_data": [ 39 ]
+          }
+        },
+        "g_mux_bits[5].u_alu_src_mux_1bit": {
+          "hide_name": 0,
+          "type": "alu_src_mux_1bit",
+          "parameters": {
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "reconf/alu_src_mux/rtl/alu_src_mux.v:14.30-19.14"
+          },
+          "port_directions": {
+            "i_imm": "input",
+            "i_rs2": "input",
+            "i_sel": "input",
+            "o_data": "output"
+          },
+          "connections": {
+            "i_imm": [ 24 ],
+            "i_rs2": [ 8 ],
+            "i_sel": [ 2 ],
+            "o_data": [ 40 ]
+          }
+        },
+        "g_mux_bits[6].u_alu_src_mux_1bit": {
+          "hide_name": 0,
+          "type": "alu_src_mux_1bit",
+          "parameters": {
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "reconf/alu_src_mux/rtl/alu_src_mux.v:14.30-19.14"
+          },
+          "port_directions": {
+            "i_imm": "input",
+            "i_rs2": "input",
+            "i_sel": "input",
+            "o_data": "output"
+          },
+          "connections": {
+            "i_imm": [ 25 ],
+            "i_rs2": [ 9 ],
+            "i_sel": [ 2 ],
+            "o_data": [ 41 ]
+          }
+        },
+        "g_mux_bits[7].u_alu_src_mux_1bit": {
+          "hide_name": 0,
+          "type": "alu_src_mux_1bit",
+          "parameters": {
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "reconf/alu_src_mux/rtl/alu_src_mux.v:14.30-19.14"
+          },
+          "port_directions": {
+            "i_imm": "input",
+            "i_rs2": "input",
+            "i_sel": "input",
+            "o_data": "output"
+          },
+          "connections": {
+            "i_imm": [ 26 ],
+            "i_rs2": [ 10 ],
+            "i_sel": [ 2 ],
+            "o_data": [ 42 ]
+          }
+        },
+        "g_mux_bits[8].u_alu_src_mux_1bit": {
+          "hide_name": 0,
+          "type": "alu_src_mux_1bit",
+          "parameters": {
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "reconf/alu_src_mux/rtl/alu_src_mux.v:14.30-19.14"
+          },
+          "port_directions": {
+            "i_imm": "input",
+            "i_rs2": "input",
+            "i_sel": "input",
+            "o_data": "output"
+          },
+          "connections": {
+            "i_imm": [ 27 ],
+            "i_rs2": [ 11 ],
+            "i_sel": [ 2 ],
+            "o_data": [ 43 ]
+          }
+        },
+        "g_mux_bits[9].u_alu_src_mux_1bit": {
+          "hide_name": 0,
+          "type": "alu_src_mux_1bit",
+          "parameters": {
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "reconf/alu_src_mux/rtl/alu_src_mux.v:14.30-19.14"
+          },
+          "port_directions": {
+            "i_imm": "input",
+            "i_rs2": "input",
+            "i_sel": "input",
+            "o_data": "output"
+          },
+          "connections": {
+            "i_imm": [ 28 ],
+            "i_rs2": [ 12 ],
+            "i_sel": [ 2 ],
+            "o_data": [ 44 ]
+          }
+        }
+      },
+      "netnames": {
+        "i_imm": {
+          "hide_name": 0,
+          "bits": [ 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34 ],
+          "attributes": {
+            "src": "reconf/alu_src_mux/rtl/alu_src_mux.v:4.24-4.29"
+          }
+        },
+        "i_rs2": {
+          "hide_name": 0,
+          "bits": [ 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18 ],
+          "attributes": {
+            "src": "reconf/alu_src_mux/rtl/alu_src_mux.v:3.24-3.29"
+          }
+        },
+        "i_sel": {
+          "hide_name": 0,
+          "bits": [ 2 ],
+          "attributes": {
+            "src": "reconf/alu_src_mux/rtl/alu_src_mux.v:2.24-2.29"
+          }
+        },
+        "o_data": {
+          "hide_name": 0,
+          "bits": [ 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50 ],
+          "attributes": {
+            "src": "reconf/alu_src_mux/rtl/alu_src_mux.v:5.24-5.30"
+          }
+        }
+      }
+    },
+    "alu_src_mux_1bit": {
+      "attributes": {
+        "src": "reconf/alu_src_mux/rtl/alu_src_mux_1bit.v:1.1-11.10"
+      },
+      "ports": {
+        "i_sel": {
+          "direction": "input",
+          "bits": [ 2 ]
+        },
+        "i_rs2": {
+          "direction": "input",
+          "bits": [ 3 ]
+        },
+        "i_imm": {
+          "direction": "input",
+          "bits": [ 4 ]
+        },
+        "o_data": {
+          "direction": "output",
+          "bits": [ 5 ]
+        }
+      },
+      "cells": {
+        "$auto$simplemap.cc:298:simplemap_mux$77": {
+          "hide_name": 1,
+          "type": "$_MUX_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/alu_src_mux/rtl/alu_src_mux_1bit.v:9.21-9.44"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 3 ],
+            "B": [ 4 ],
+            "S": [ 2 ],
+            "Y": [ 5 ]
+          }
+        }
+      },
+      "netnames": {
+        "i_imm": {
+          "hide_name": 0,
+          "bits": [ 4 ],
+          "attributes": {
+            "src": "reconf/alu_src_mux/rtl/alu_src_mux_1bit.v:4.17-4.22"
+          }
+        },
+        "i_rs2": {
+          "hide_name": 0,
+          "bits": [ 3 ],
+          "attributes": {
+            "src": "reconf/alu_src_mux/rtl/alu_src_mux_1bit.v:3.17-3.22"
+          }
+        },
+        "i_sel": {
+          "hide_name": 0,
+          "bits": [ 2 ],
+          "attributes": {
+            "src": "reconf/alu_src_mux/rtl/alu_src_mux_1bit.v:2.17-2.22"
+          }
+        },
+        "o_data": {
+          "hide_name": 0,
+          "bits": [ 5 ],
+          "attributes": {
+            "src": "reconf/alu_src_mux/rtl/alu_src_mux_1bit.v:5.17-5.23"
+          }
+        }
+      }
+    }
+  }
+}

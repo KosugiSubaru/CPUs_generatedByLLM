@@ -1,0 +1,39 @@
+{
+  "creator": "Yosys 0.61+112 (git sha1 ac427a79b, clang++ 18.1.8 -fPIC -O3)",
+  "modules": {
+    "inst_decoder_slice": {
+      "attributes": {
+        "top": "00000000000000000000000000000001",
+        "src": "reconf/inst_decoder/rtl/inst_decoder_slice.v:1.1-8.10"
+      },
+      "ports": {
+        "i_bits": {
+          "direction": "input",
+          "bits": [ 2, 3, 4, 5 ]
+        },
+        "o_bits": {
+          "direction": "output",
+          "bits": [ 2, 3, 4, 5 ]
+        }
+      },
+      "cells": {
+      },
+      "netnames": {
+        "i_bits": {
+          "hide_name": 0,
+          "bits": [ 2, 3, 4, 5 ],
+          "attributes": {
+            "src": "reconf/inst_decoder/rtl/inst_decoder_slice.v:2.23-2.29"
+          }
+        },
+        "o_bits": {
+          "hide_name": 0,
+          "bits": [ 2, 3, 4, 5 ],
+          "attributes": {
+            "src": "reconf/inst_decoder/rtl/inst_decoder_slice.v:3.23-3.29"
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,265 @@
+
+ /----------------------------------------------------------------------------\
+ |  yosys -- Yosys Open SYnthesis Suite                                       |
+ |  Copyright (C) 2012 - 2026  Claire Xenia Wolf <claire@yosyshq.com>         |
+ |  Distributed under an ISC-like license, type "license" to see terms        |
+ \----------------------------------------------------------------------------/
+ Yosys 0.61+112 (git sha1 ac427a79b, clang++ 18.1.8 -fPIC -O3)
+
+-- Executing script file `reconf/instruction_decoder/json/instruction_decoder.ys' --
+
+1. Executing Verilog-2005 frontend: reconf/instruction_decoder/rtl/instruction_decoder_control_logic.v
+Parsing Verilog input from `reconf/instruction_decoder/rtl/instruction_decoder_control_logic.v' to AST representation.
+Generating RTLIL representation for module `\instruction_decoder_control_logic'.
+Successfully finished Verilog frontend.
+
+2. Executing Verilog-2005 frontend: reconf/instruction_decoder/rtl/instruction_decoder.v
+Parsing Verilog input from `reconf/instruction_decoder/rtl/instruction_decoder.v' to AST representation.
+Generating RTLIL representation for module `\instruction_decoder'.
+Successfully finished Verilog frontend.
+
+3. Executing Verilog-2005 frontend: reconf/instruction_decoder/rtl/instruction_decoder_field_extractor.v
+Parsing Verilog input from `reconf/instruction_decoder/rtl/instruction_decoder_field_extractor.v' to AST representation.
+Generating RTLIL representation for module `\instruction_decoder_field_extractor'.
+Successfully finished Verilog frontend.
+
+4. Executing Verilog-2005 frontend: reconf/instruction_decoder/rtl/instruction_decoder_op_match.v
+Parsing Verilog input from `reconf/instruction_decoder/rtl/instruction_decoder_op_match.v' to AST representation.
+Generating RTLIL representation for module `\instruction_decoder_op_match'.
+Successfully finished Verilog frontend.
+
+5. Executing Verilog-2005 frontend: reconf/instruction_decoder/rtl/instruction_decoder_op_bus.v
+Parsing Verilog input from `reconf/instruction_decoder/rtl/instruction_decoder_op_bus.v' to AST representation.
+Generating RTLIL representation for module `\instruction_decoder_op_bus'.
+Successfully finished Verilog frontend.
+
+6. Executing HIERARCHY pass (managing design hierarchy).
+
+6.1. Analyzing design hierarchy..
+Top module:  \instruction_decoder
+Used module:     \instruction_decoder_control_logic
+Used module:     \instruction_decoder_op_bus
+Used module:         \instruction_decoder_op_match
+Used module:     \instruction_decoder_field_extractor
+
+6.2. Analyzing design hierarchy..
+Top module:  \instruction_decoder
+Used module:     \instruction_decoder_control_logic
+Used module:     \instruction_decoder_op_bus
+Used module:         \instruction_decoder_op_match
+Used module:     \instruction_decoder_field_extractor
+Removed 0 unused modules.
+
+7. Executing PROC pass (convert processes to netlists).
+
+7.1. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Cleaned up 0 empty switches.
+
+7.2. Executing PROC_RMDEAD pass (remove dead branches from decision trees).
+Removed a total of 0 dead cases.
+
+7.3. Executing PROC_PRUNE pass (remove redundant assignments in processes).
+Removed 0 redundant assignments.
+Promoted 0 assignments to connections.
+
+7.4. Executing PROC_INIT pass (extract init attributes).
+
+7.5. Executing PROC_ARST pass (detect async resets in processes).
+
+7.6. Executing PROC_ROM pass (convert switches to ROMs).
+Converted 0 switches.
+
+7.7. Executing PROC_MUX pass (convert decision trees to multiplexers).
+
+7.8. Executing PROC_DLATCH pass (convert process syncs to latches).
+
+7.9. Executing PROC_DFF pass (convert process syncs to FFs).
+
+7.10. Executing PROC_MEMWR pass (convert process memory writes to cells).
+
+7.11. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Cleaned up 0 empty switches.
+
+7.12. Executing OPT_EXPR pass (perform const folding).
+Optimizing module instruction_decoder_op_bus.
+Optimizing module instruction_decoder_op_match.
+Optimizing module instruction_decoder_field_extractor.
+Optimizing module instruction_decoder.
+Optimizing module instruction_decoder_control_logic.
+
+8. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \instruction_decoder_op_bus..
+Finding unused cells or wires in module \instruction_decoder_op_match..
+Finding unused cells or wires in module \instruction_decoder_field_extractor..
+Finding unused cells or wires in module \instruction_decoder..
+Finding unused cells or wires in module \instruction_decoder_control_logic..
+Removed 0 unused cells and 5 unused wires.
+<suppressed ~2 debug messages>
+
+9. Executing TECHMAP pass (map to technology primitives).
+
+9.1. Executing Verilog-2005 frontend: /opt/oss-cad-suite/lib/../share/yosys/techmap.v
+Parsing Verilog input from `/opt/oss-cad-suite/lib/../share/yosys/techmap.v' to AST representation.
+Generating RTLIL representation for module `\_90_simplemap_bool_ops'.
+Generating RTLIL representation for module `\_90_simplemap_reduce_ops'.
+Generating RTLIL representation for module `\_90_simplemap_logic_ops'.
+Generating RTLIL representation for module `\_90_simplemap_compare_ops'.
+Generating RTLIL representation for module `\_90_simplemap_various'.
+Generating RTLIL representation for module `\_90_simplemap_registers'.
+Generating RTLIL representation for module `\_90_shift_ops_shr_shl_sshl_sshr'.
+Generating RTLIL representation for module `\_90_shift_shiftx'.
+Generating RTLIL representation for module `\_90_fa'.
+Generating RTLIL representation for module `\_90_lcu_brent_kung'.
+Generating RTLIL representation for module `\_90_alu'.
+Generating RTLIL representation for module `\_90_macc'.
+Generating RTLIL representation for module `\_90_alumacc'.
+Generating RTLIL representation for module `$__div_mod_u'.
+Generating RTLIL representation for module `$__div_mod_trunc'.
+Generating RTLIL representation for module `\_90_div'.
+Generating RTLIL representation for module `\_90_mod'.
+Generating RTLIL representation for module `$__div_mod_floor'.
+Generating RTLIL representation for module `\_90_divfloor'.
+Generating RTLIL representation for module `\_90_modfloor'.
+Generating RTLIL representation for module `\_90_pow'.
+Generating RTLIL representation for module `\_90_pmux'.
+Generating RTLIL representation for module `\_90_demux'.
+Generating RTLIL representation for module `\_90_lut'.
+Generating RTLIL representation for module `$connect'.
+Generating RTLIL representation for module `$input_port'.
+Successfully finished Verilog frontend.
+
+9.2. Continuing TECHMAP pass.
+Using extmapper simplemap for cells of type $eq.
+Using extmapper simplemap for cells of type $or.
+No more expansions possible.
+<suppressed ~96 debug messages>
+
+10. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \instruction_decoder..
+Finding unused cells or wires in module \instruction_decoder_control_logic..
+Finding unused cells or wires in module \instruction_decoder_field_extractor..
+Finding unused cells or wires in module \instruction_decoder_op_bus..
+Finding unused cells or wires in module \instruction_decoder_op_match..
+Removed 0 unused cells and 1 unused wires.
+<suppressed ~1 debug messages>
+
+11. Executing HIERARCHY pass (managing design hierarchy).
+Attribute `top' found on module `instruction_decoder'. Setting top module to instruction_decoder.
+
+11.1. Analyzing design hierarchy..
+Top module:  \instruction_decoder
+Used module:     \instruction_decoder_control_logic
+Used module:     \instruction_decoder_field_extractor
+Used module:     \instruction_decoder_op_bus
+Used module:         \instruction_decoder_op_match
+
+11.2. Analyzing design hierarchy..
+Top module:  \instruction_decoder
+Used module:     \instruction_decoder_control_logic
+Used module:     \instruction_decoder_field_extractor
+Used module:     \instruction_decoder_op_bus
+Used module:         \instruction_decoder_op_match
+Removed 0 unused modules.
+
+12. Printing statistics.
+
+=== instruction_decoder ===
+
+        +----------Local Count, excluding submodules.
+        | 
+       17 wires
+       74 wire bits
+       17 public wires
+       74 public wire bits
+       14 ports
+       53 port bits
+        3 submodules
+        1   instruction_decoder_control_logic
+        1   instruction_decoder_field_extractor
+        1   instruction_decoder_op_bus
+
+=== instruction_decoder_control_logic ===
+
+        +----------Local Count, excluding submodules.
+        | 
+       40 wires
+       56 wire bits
+       26 public wires
+       42 public wire bits
+       10 ports
+       26 port bits
+       18 cells
+       18   $_OR_
+
+=== instruction_decoder_field_extractor ===
+
+        +----------Local Count, excluding submodules.
+        | 
+        6 wires
+       44 wire bits
+        6 public wires
+       44 public wire bits
+        6 ports
+       44 port bits
+
+=== instruction_decoder_op_bus ===
+
+        +----------Local Count, excluding submodules.
+        | 
+        2 wires
+       20 wire bits
+        2 public wires
+       20 public wire bits
+        2 ports
+       20 port bits
+       16 submodules
+       16   instruction_decoder_op_match
+
+=== instruction_decoder_op_match ===
+
+        +----------Local Count, excluding submodules.
+        | 
+        6 wires
+       16 wire bits
+        3 public wires
+        9 public wire bits
+        3 ports
+        9 port bits
+        8 cells
+        1   $_NOT_
+        3   $_OR_
+        4   $_XOR_
+
+=== design hierarchy ===
+
+        +----------Count including submodules.
+        | 
+      146 instruction_decoder
+       18 instruction_decoder_control_logic
+        8   instruction_decoder_op_match
+
+        +----------Count including submodules.
+        | 
+      161 wires
+      450 wire bits
+       99 public wires
+      324 public wire bits
+       80 ports
+      287 port bits
+        - memories
+        - memory bits
+        - processes
+      146 cells
+       16   $_NOT_
+       66   $_OR_
+       64   $_XOR_
+        3 submodules
+        1   instruction_decoder_control_logic
+        1   instruction_decoder_field_extractor
+        1   instruction_decoder_op_bus
+
+13. Executing JSON backend.
+
+End of script. Logfile hash: 60cbac1d0f, CPU: user 0.01s system 0.01s, MEM: 14.84 MB peak
+Yosys 0.61+112 (git sha1 ac427a79b, clang++ 18.1.8 -fPIC -O3)
+Time spent: 64% 11x read_verilog (0 sec), 8% 2x opt_clean (0 sec), ...

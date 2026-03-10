@@ -1,0 +1,80 @@
+{
+  "creator": "Yosys 0.61+112 (git sha1 ac427a79b, clang++ 18.1.8 -fPIC -O3)",
+  "modules": {
+    "pc_control_logic_mux_sel_gen": {
+      "attributes": {
+        "top": "00000000000000000000000000000001",
+        "src": "reconf/pc_control_logic/rtl/pc_control_logic_mux_sel_gen.v:1.1-16.10"
+      },
+      "ports": {
+        "i_branch_taken": {
+          "direction": "input",
+          "bits": [ 2 ]
+        },
+        "i_is_jal": {
+          "direction": "input",
+          "bits": [ 3 ]
+        },
+        "i_is_jalr": {
+          "direction": "input",
+          "bits": [ 4 ]
+        },
+        "o_pc_sel": {
+          "direction": "output",
+          "bits": [ 5, 4 ]
+        }
+      },
+      "cells": {
+        "$auto$simplemap.cc:106:simplemap_bitop$81": {
+          "hide_name": 1,
+          "type": "$_OR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/pc_control_logic/rtl/pc_control_logic_mux_sel_gen.v:13.26-13.51"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 2 ],
+            "B": [ 3 ],
+            "Y": [ 5 ]
+          }
+        }
+      },
+      "netnames": {
+        "i_branch_taken": {
+          "hide_name": 0,
+          "bits": [ 2 ],
+          "attributes": {
+            "src": "reconf/pc_control_logic/rtl/pc_control_logic_mux_sel_gen.v:2.23-2.37"
+          }
+        },
+        "i_is_jal": {
+          "hide_name": 0,
+          "bits": [ 3 ],
+          "attributes": {
+            "src": "reconf/pc_control_logic/rtl/pc_control_logic_mux_sel_gen.v:3.23-3.31"
+          }
+        },
+        "i_is_jalr": {
+          "hide_name": 0,
+          "bits": [ 4 ],
+          "attributes": {
+            "src": "reconf/pc_control_logic/rtl/pc_control_logic_mux_sel_gen.v:4.23-4.32"
+          }
+        },
+        "o_pc_sel": {
+          "hide_name": 0,
+          "bits": [ 5, 4 ],
+          "attributes": {
+            "src": "reconf/pc_control_logic/rtl/pc_control_logic_mux_sel_gen.v:5.23-5.31"
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,17 @@
+module register_file_bit_cell (
+    input  wire i_clk,
+    input  wire i_rst_n,
+    input  wire i_we,
+    input  wire i_d,
+    output reg  o_q
+);
+
+    always @(posedge i_clk) begin
+        if (i_rst_n == 1'b0) begin
+            o_q <= 1'b0;
+        end else if (i_we) begin
+            o_q <= i_d;
+        end
+    end
+
+endmodule

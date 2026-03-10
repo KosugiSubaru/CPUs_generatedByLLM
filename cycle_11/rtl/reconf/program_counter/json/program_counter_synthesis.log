@@ -1,0 +1,406 @@
+
+ /----------------------------------------------------------------------------\
+ |  yosys -- Yosys Open SYnthesis Suite                                       |
+ |  Copyright (C) 2012 - 2026  Claire Xenia Wolf <claire@yosyshq.com>         |
+ |  Distributed under an ISC-like license, type "license" to see terms        |
+ \----------------------------------------------------------------------------/
+ Yosys 0.61+112 (git sha1 ac427a79b, clang++ 18.1.8 -fPIC -O3)
+
+-- Executing script file `reconf/program_counter/json/program_counter.ys' --
+
+1. Executing Verilog-2005 frontend: reconf/program_counter/rtl/program_counter_half_adder.v
+Parsing Verilog input from `reconf/program_counter/rtl/program_counter_half_adder.v' to AST representation.
+Generating RTLIL representation for module `\program_counter_half_adder'.
+Successfully finished Verilog frontend.
+
+2. Executing Verilog-2005 frontend: reconf/program_counter/rtl/program_counter_full_adder.v
+Parsing Verilog input from `reconf/program_counter/rtl/program_counter_full_adder.v' to AST representation.
+Generating RTLIL representation for module `\program_counter_full_adder'.
+Successfully finished Verilog frontend.
+
+3. Executing Verilog-2005 frontend: reconf/program_counter/rtl/program_counter_mux_4to1_16bit.v
+Parsing Verilog input from `reconf/program_counter/rtl/program_counter_mux_4to1_16bit.v' to AST representation.
+Generating RTLIL representation for module `\program_counter_mux_4to1_16bit'.
+Successfully finished Verilog frontend.
+
+4. Executing Verilog-2005 frontend: reconf/program_counter/rtl/program_counter_mux_4to1_1bit.v
+Parsing Verilog input from `reconf/program_counter/rtl/program_counter_mux_4to1_1bit.v' to AST representation.
+Generating RTLIL representation for module `\program_counter_mux_4to1_1bit'.
+Successfully finished Verilog frontend.
+
+5. Executing Verilog-2005 frontend: reconf/program_counter/rtl/program_counter.v
+Parsing Verilog input from `reconf/program_counter/rtl/program_counter.v' to AST representation.
+Generating RTLIL representation for module `\program_counter'.
+Successfully finished Verilog frontend.
+
+6. Executing Verilog-2005 frontend: reconf/program_counter/rtl/program_counter_reg_16bit.v
+Parsing Verilog input from `reconf/program_counter/rtl/program_counter_reg_16bit.v' to AST representation.
+Generating RTLIL representation for module `\program_counter_reg_16bit'.
+Successfully finished Verilog frontend.
+
+7. Executing Verilog-2005 frontend: reconf/program_counter/rtl/program_counter_adder_16bit.v
+Parsing Verilog input from `reconf/program_counter/rtl/program_counter_adder_16bit.v' to AST representation.
+Generating RTLIL representation for module `\program_counter_adder_16bit'.
+Successfully finished Verilog frontend.
+
+8. Executing Verilog-2005 frontend: reconf/program_counter/rtl/program_counter_dff.v
+Parsing Verilog input from `reconf/program_counter/rtl/program_counter_dff.v' to AST representation.
+Generating RTLIL representation for module `\program_counter_dff'.
+Successfully finished Verilog frontend.
+
+9. Executing HIERARCHY pass (managing design hierarchy).
+
+9.1. Analyzing design hierarchy..
+Top module:  \program_counter
+Used module:     \program_counter_adder_16bit
+Used module:         \program_counter_full_adder
+Used module:             \program_counter_half_adder
+Used module:     \program_counter_mux_4to1_16bit
+Used module:         \program_counter_mux_4to1_1bit
+Used module:     \program_counter_reg_16bit
+Used module:         \program_counter_dff
+Reprocessing module program_counter because instantiated module program_counter_adder_16bit has become available.
+Generating RTLIL representation for module `\program_counter'.
+
+9.2. Analyzing design hierarchy..
+Top module:  \program_counter
+Used module:     \program_counter_adder_16bit
+Used module:         \program_counter_full_adder
+Used module:             \program_counter_half_adder
+Used module:     \program_counter_mux_4to1_16bit
+Used module:         \program_counter_mux_4to1_1bit
+Used module:     \program_counter_reg_16bit
+Used module:         \program_counter_dff
+
+9.3. Analyzing design hierarchy..
+Top module:  \program_counter
+Used module:     \program_counter_adder_16bit
+Used module:         \program_counter_full_adder
+Used module:             \program_counter_half_adder
+Used module:     \program_counter_mux_4to1_16bit
+Used module:         \program_counter_mux_4to1_1bit
+Used module:     \program_counter_reg_16bit
+Used module:         \program_counter_dff
+Removed 0 unused modules.
+
+10. Executing PROC pass (convert processes to netlists).
+
+10.1. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Cleaned up 0 empty switches.
+
+10.2. Executing PROC_RMDEAD pass (remove dead branches from decision trees).
+Marked 1 switch rules as full_case in process $proc$reconf/program_counter/rtl/program_counter_dff.v:8$20 in module program_counter_dff.
+Removed a total of 0 dead cases.
+
+10.3. Executing PROC_PRUNE pass (remove redundant assignments in processes).
+Removed 1 redundant assignment.
+Promoted 9 assignments to connections.
+
+10.4. Executing PROC_INIT pass (extract init attributes).
+
+10.5. Executing PROC_ARST pass (detect async resets in processes).
+
+10.6. Executing PROC_ROM pass (convert switches to ROMs).
+Converted 0 switches.
+<suppressed ~1 debug messages>
+
+10.7. Executing PROC_MUX pass (convert decision trees to multiplexers).
+Creating decoders for process `\program_counter.$proc$reconf/program_counter/rtl/program_counter.v:35$43'.
+Creating decoders for process `\program_counter.$proc$reconf/program_counter/rtl/program_counter.v:35$42'.
+Creating decoders for process `\program_counter.$proc$reconf/program_counter/rtl/program_counter.v:35$41'.
+Creating decoders for process `\program_counter.$proc$reconf/program_counter/rtl/program_counter.v:28$40'.
+Creating decoders for process `\program_counter.$proc$reconf/program_counter/rtl/program_counter.v:27$39'.
+Creating decoders for process `\program_counter.$proc$reconf/program_counter/rtl/program_counter.v:26$38'.
+Creating decoders for process `\program_counter.$proc$reconf/program_counter/rtl/program_counter.v:25$37'.
+Creating decoders for process `\program_counter.$proc$reconf/program_counter/rtl/program_counter.v:24$36'.
+Creating decoders for process `\program_counter.$proc$reconf/program_counter/rtl/program_counter.v:23$35'.
+Creating decoders for process `\program_counter_dff.$proc$reconf/program_counter/rtl/program_counter_dff.v:8$20'.
+     1/1: $0\o_q[0:0]
+
+10.8. Executing PROC_DLATCH pass (convert process syncs to latches).
+No latch inferred for signal `\program_counter.\w_add_out[2]' from process `\program_counter.$proc$reconf/program_counter/rtl/program_counter.v:35$43'.
+No latch inferred for signal `\program_counter.\w_add_out[1]' from process `\program_counter.$proc$reconf/program_counter/rtl/program_counter.v:35$42'.
+No latch inferred for signal `\program_counter.\w_add_out[0]' from process `\program_counter.$proc$reconf/program_counter/rtl/program_counter.v:35$41'.
+No latch inferred for signal `\program_counter.\w_add_in_b[2]' from process `\program_counter.$proc$reconf/program_counter/rtl/program_counter.v:28$40'.
+No latch inferred for signal `\program_counter.\w_add_in_a[2]' from process `\program_counter.$proc$reconf/program_counter/rtl/program_counter.v:27$39'.
+No latch inferred for signal `\program_counter.\w_add_in_b[1]' from process `\program_counter.$proc$reconf/program_counter/rtl/program_counter.v:26$38'.
+No latch inferred for signal `\program_counter.\w_add_in_a[1]' from process `\program_counter.$proc$reconf/program_counter/rtl/program_counter.v:25$37'.
+No latch inferred for signal `\program_counter.\w_add_in_b[0]' from process `\program_counter.$proc$reconf/program_counter/rtl/program_counter.v:24$36'.
+No latch inferred for signal `\program_counter.\w_add_in_a[0]' from process `\program_counter.$proc$reconf/program_counter/rtl/program_counter.v:23$35'.
+
+10.9. Executing PROC_DFF pass (convert process syncs to FFs).
+Creating register for signal `\program_counter_dff.\o_q' using process `\program_counter_dff.$proc$reconf/program_counter/rtl/program_counter_dff.v:8$20'.
+  created $dff cell `$procdff$47' with positive edge clock.
+
+10.10. Executing PROC_MEMWR pass (convert process memory writes to cells).
+
+10.11. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Removing empty process `program_counter.$proc$reconf/program_counter/rtl/program_counter.v:35$43'.
+Removing empty process `program_counter.$proc$reconf/program_counter/rtl/program_counter.v:35$42'.
+Removing empty process `program_counter.$proc$reconf/program_counter/rtl/program_counter.v:35$41'.
+Removing empty process `program_counter.$proc$reconf/program_counter/rtl/program_counter.v:28$40'.
+Removing empty process `program_counter.$proc$reconf/program_counter/rtl/program_counter.v:27$39'.
+Removing empty process `program_counter.$proc$reconf/program_counter/rtl/program_counter.v:26$38'.
+Removing empty process `program_counter.$proc$reconf/program_counter/rtl/program_counter.v:25$37'.
+Removing empty process `program_counter.$proc$reconf/program_counter/rtl/program_counter.v:24$36'.
+Removing empty process `program_counter.$proc$reconf/program_counter/rtl/program_counter.v:23$35'.
+Found and cleaned up 1 empty switch in `\program_counter_dff.$proc$reconf/program_counter/rtl/program_counter_dff.v:8$20'.
+Removing empty process `program_counter_dff.$proc$reconf/program_counter/rtl/program_counter_dff.v:8$20'.
+Cleaned up 1 empty switch.
+
+10.12. Executing OPT_EXPR pass (perform const folding).
+Optimizing module program_counter.
+Optimizing module program_counter_adder_16bit.
+Optimizing module program_counter_reg_16bit.
+Optimizing module program_counter_dff.
+<suppressed ~2 debug messages>
+Optimizing module program_counter_mux_4to1_1bit.
+<suppressed ~1 debug messages>
+Optimizing module program_counter_mux_4to1_16bit.
+Optimizing module program_counter_full_adder.
+Optimizing module program_counter_half_adder.
+
+11. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \program_counter..
+Finding unused cells or wires in module \program_counter_adder_16bit..
+Finding unused cells or wires in module \program_counter_reg_16bit..
+Finding unused cells or wires in module \program_counter_dff..
+Finding unused cells or wires in module \program_counter_mux_4to1_1bit..
+Finding unused cells or wires in module \program_counter_mux_4to1_16bit..
+Finding unused cells or wires in module \program_counter_full_adder..
+Finding unused cells or wires in module \program_counter_half_adder..
+Removed 1 unused cells and 29 unused wires.
+<suppressed ~6 debug messages>
+
+12. Executing TECHMAP pass (map to technology primitives).
+
+12.1. Executing Verilog-2005 frontend: /opt/oss-cad-suite/lib/../share/yosys/techmap.v
+Parsing Verilog input from `/opt/oss-cad-suite/lib/../share/yosys/techmap.v' to AST representation.
+Generating RTLIL representation for module `\_90_simplemap_bool_ops'.
+Generating RTLIL representation for module `\_90_simplemap_reduce_ops'.
+Generating RTLIL representation for module `\_90_simplemap_logic_ops'.
+Generating RTLIL representation for module `\_90_simplemap_compare_ops'.
+Generating RTLIL representation for module `\_90_simplemap_various'.
+Generating RTLIL representation for module `\_90_simplemap_registers'.
+Generating RTLIL representation for module `\_90_shift_ops_shr_shl_sshl_sshr'.
+Generating RTLIL representation for module `\_90_shift_shiftx'.
+Generating RTLIL representation for module `\_90_fa'.
+Generating RTLIL representation for module `\_90_lcu_brent_kung'.
+Generating RTLIL representation for module `\_90_alu'.
+Generating RTLIL representation for module `\_90_macc'.
+Generating RTLIL representation for module `\_90_alumacc'.
+Generating RTLIL representation for module `$__div_mod_u'.
+Generating RTLIL representation for module `$__div_mod_trunc'.
+Generating RTLIL representation for module `\_90_div'.
+Generating RTLIL representation for module `\_90_mod'.
+Generating RTLIL representation for module `$__div_mod_floor'.
+Generating RTLIL representation for module `\_90_divfloor'.
+Generating RTLIL representation for module `\_90_modfloor'.
+Generating RTLIL representation for module `\_90_pow'.
+Generating RTLIL representation for module `\_90_pmux'.
+Generating RTLIL representation for module `\_90_demux'.
+Generating RTLIL representation for module `\_90_lut'.
+Generating RTLIL representation for module `$connect'.
+Generating RTLIL representation for module `$input_port'.
+Successfully finished Verilog frontend.
+
+12.2. Continuing TECHMAP pass.
+Using extmapper simplemap for cells of type $logic_not.
+Using extmapper simplemap for cells of type $eq.
+Using extmapper simplemap for cells of type $mux.
+Using extmapper simplemap for cells of type $xor.
+Using extmapper simplemap for cells of type $and.
+Using extmapper simplemap for cells of type $or.
+Using extmapper simplemap for cells of type $dff.
+No more expansions possible.
+<suppressed ~88 debug messages>
+
+13. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \program_counter..
+Finding unused cells or wires in module \program_counter_adder_16bit..
+Finding unused cells or wires in module \program_counter_dff..
+Finding unused cells or wires in module \program_counter_full_adder..
+Finding unused cells or wires in module \program_counter_half_adder..
+Finding unused cells or wires in module \program_counter_mux_4to1_16bit..
+Finding unused cells or wires in module \program_counter_mux_4to1_1bit..
+Finding unused cells or wires in module \program_counter_reg_16bit..
+Removed 0 unused cells and 2 unused wires.
+<suppressed ~1 debug messages>
+
+14. Executing HIERARCHY pass (managing design hierarchy).
+Attribute `top' found on module `program_counter'. Setting top module to program_counter.
+
+14.1. Analyzing design hierarchy..
+Top module:  \program_counter
+Used module:     \program_counter_adder_16bit
+Used module:         \program_counter_full_adder
+Used module:             \program_counter_half_adder
+Used module:     \program_counter_mux_4to1_16bit
+Used module:         \program_counter_mux_4to1_1bit
+Used module:     \program_counter_reg_16bit
+Used module:         \program_counter_dff
+
+14.2. Analyzing design hierarchy..
+Top module:  \program_counter
+Used module:     \program_counter_adder_16bit
+Used module:         \program_counter_full_adder
+Used module:             \program_counter_half_adder
+Used module:     \program_counter_mux_4to1_16bit
+Used module:         \program_counter_mux_4to1_1bit
+Used module:     \program_counter_reg_16bit
+Used module:         \program_counter_dff
+Removed 0 unused modules.
+
+15. Printing statistics.
+
+=== program_counter ===
+
+        +----------Local Count, excluding submodules.
+        | 
+       17 wires
+      228 wire bits
+       17 public wires
+      228 public wire bits
+        7 ports
+       68 port bits
+        5 submodules
+        3   program_counter_adder_16bit
+        1   program_counter_mux_4to1_16bit
+        1   program_counter_reg_16bit
+
+=== program_counter_adder_16bit ===
+
+        +----------Local Count, excluding submodules.
+        | 
+        4 wires
+       65 wire bits
+        4 public wires
+       65 public wire bits
+        3 ports
+       48 port bits
+       16 submodules
+       16   program_counter_full_adder
+
+=== program_counter_dff ===
+
+        +----------Local Count, excluding submodules.
+        | 
+        5 wires
+        5 wire bits
+        4 public wires
+        4 public wire bits
+        4 ports
+        4 port bits
+        2 cells
+        1   $_DFF_P_
+        1   $_MUX_
+
+=== program_counter_full_adder ===
+
+        +----------Local Count, excluding submodules.
+        | 
+        8 wires
+        8 wire bits
+        8 public wires
+        8 public wire bits
+        5 ports
+        5 port bits
+        1 cells
+        1   $_OR_
+        2 submodules
+        2   program_counter_half_adder
+
+=== program_counter_half_adder ===
+
+        +----------Local Count, excluding submodules.
+        | 
+        4 wires
+        4 wire bits
+        4 public wires
+        4 public wire bits
+        4 ports
+        4 port bits
+        2 cells
+        1   $_AND_
+        1   $_XOR_
+
+=== program_counter_mux_4to1_16bit ===
+
+        +----------Local Count, excluding submodules.
+        | 
+        6 wires
+       82 wire bits
+        6 public wires
+       82 public wire bits
+        6 ports
+       82 port bits
+       16 submodules
+       16   program_counter_mux_4to1_1bit
+
+=== program_counter_mux_4to1_1bit ===
+
+        +----------Local Count, excluding submodules.
+        | 
+       16 wires
+       19 wire bits
+        6 public wires
+        7 public wire bits
+        6 ports
+        7 port bits
+       13 cells
+        3   $_MUX_
+        3   $_NOT_
+        3   $_OR_
+        4   $_XOR_
+
+=== program_counter_reg_16bit ===
+
+        +----------Local Count, excluding submodules.
+        | 
+        4 wires
+       34 wire bits
+        4 public wires
+       34 public wire bits
+        4 ports
+       34 port bits
+       16 submodules
+       16   program_counter_dff
+
+=== design hierarchy ===
+
+        +----------Count including submodules.
+        | 
+      480 program_counter
+        1   program_counter_full_adder
+        2     program_counter_half_adder
+       13   program_counter_mux_4to1_1bit
+        2   program_counter_dff
+
+        +----------Count including submodules.
+        | 
+     1143 wires
+     1691 wire bits
+      967 public wires
+     1483 public wire bits
+      810 ports
+     1128 port bits
+        - memories
+        - memory bits
+        - processes
+      480 cells
+       96   $_AND_
+       16   $_DFF_P_
+       64   $_MUX_
+       48   $_NOT_
+       96   $_OR_
+      160   $_XOR_
+        5 submodules
+        3   program_counter_adder_16bit
+        1   program_counter_mux_4to1_16bit
+        1   program_counter_reg_16bit
+
+16. Executing JSON backend.
+
+End of script. Logfile hash: 5cb29ede85, CPU: user 0.02s system 0.00s, MEM: 15.16 MB peak
+Yosys 0.61+112 (git sha1 ac427a79b, clang++ 18.1.8 -fPIC -O3)
+Time spent: 60% 17x read_verilog (0 sec), 9% 2x opt_clean (0 sec), ...

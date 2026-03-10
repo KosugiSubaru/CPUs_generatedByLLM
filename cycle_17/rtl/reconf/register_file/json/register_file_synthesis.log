@@ -1,0 +1,342 @@
+
+ /----------------------------------------------------------------------------\
+ |  yosys -- Yosys Open SYnthesis Suite                                       |
+ |  Copyright (C) 2012 - 2026  Claire Xenia Wolf <claire@yosyshq.com>         |
+ |  Distributed under an ISC-like license, type "license" to see terms        |
+ \----------------------------------------------------------------------------/
+ Yosys 0.61+112 (git sha1 ac427a79b, clang++ 18.1.8 -fPIC -O3)
+
+-- Executing script file `reconf/register_file/json/register_file.ys' --
+
+1. Executing Verilog-2005 frontend: reconf/register_file/rtl/register_file.v
+Parsing Verilog input from `reconf/register_file/rtl/register_file.v' to AST representation.
+Generating RTLIL representation for module `\register_file'.
+Successfully finished Verilog frontend.
+
+2. Executing Verilog-2005 frontend: reconf/register_file/rtl/register_file_mux16_1bit.v
+Parsing Verilog input from `reconf/register_file/rtl/register_file_mux16_1bit.v' to AST representation.
+Generating RTLIL representation for module `\register_file_mux16_1bit'.
+Successfully finished Verilog frontend.
+
+3. Executing Verilog-2005 frontend: reconf/register_file/rtl/register_file_dff_en.v
+Parsing Verilog input from `reconf/register_file/rtl/register_file_dff_en.v' to AST representation.
+Generating RTLIL representation for module `\register_file_dff_en'.
+Successfully finished Verilog frontend.
+
+4. Executing Verilog-2005 frontend: reconf/register_file/rtl/register_file_mux16_16bit.v
+Parsing Verilog input from `reconf/register_file/rtl/register_file_mux16_16bit.v' to AST representation.
+Generating RTLIL representation for module `\register_file_mux16_16bit'.
+Successfully finished Verilog frontend.
+
+5. Executing Verilog-2005 frontend: reconf/register_file/rtl/register_file_cell_16bit.v
+Parsing Verilog input from `reconf/register_file/rtl/register_file_cell_16bit.v' to AST representation.
+Generating RTLIL representation for module `\register_file_cell_16bit'.
+Successfully finished Verilog frontend.
+
+6. Executing HIERARCHY pass (managing design hierarchy).
+
+6.1. Analyzing design hierarchy..
+Top module:  \register_file
+Used module:     \register_file_cell_16bit
+Used module:         \register_file_dff_en
+Used module:     \register_file_mux16_16bit
+Used module:         \register_file_mux16_1bit
+Reprocessing module register_file because instantiated module register_file_cell_16bit has become available.
+Generating RTLIL representation for module `\register_file'.
+
+6.2. Analyzing design hierarchy..
+Top module:  \register_file
+Used module:     \register_file_cell_16bit
+Used module:         \register_file_dff_en
+Used module:     \register_file_mux16_16bit
+Used module:         \register_file_mux16_1bit
+
+6.3. Analyzing design hierarchy..
+Top module:  \register_file
+Used module:     \register_file_cell_16bit
+Used module:         \register_file_dff_en
+Used module:     \register_file_mux16_16bit
+Used module:         \register_file_mux16_1bit
+Removed 0 unused modules.
+
+7. Executing PROC pass (convert processes to netlists).
+
+7.1. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Cleaned up 0 empty switches.
+
+7.2. Executing PROC_RMDEAD pass (remove dead branches from decision trees).
+Marked 1 switch rules as full_case in process $proc$reconf/register_file/rtl/register_file_dff_en.v:10$33 in module register_file_dff_en.
+Removed a total of 0 dead cases.
+
+7.3. Executing PROC_PRUNE pass (remove redundant assignments in processes).
+Removed 0 redundant assignments.
+Promoted 16 assignments to connections.
+
+7.4. Executing PROC_INIT pass (extract init attributes).
+
+7.5. Executing PROC_ARST pass (detect async resets in processes).
+Found async reset \i_rst_n in `\register_file_dff_en.$proc$reconf/register_file/rtl/register_file_dff_en.v:10$33'.
+
+7.6. Executing PROC_ROM pass (convert switches to ROMs).
+Converted 0 switches.
+<suppressed ~1 debug messages>
+
+7.7. Executing PROC_MUX pass (convert decision trees to multiplexers).
+Creating decoders for process `\register_file.$proc$reconf/register_file/rtl/register_file.v:30$127'.
+Creating decoders for process `\register_file.$proc$reconf/register_file/rtl/register_file.v:30$126'.
+Creating decoders for process `\register_file.$proc$reconf/register_file/rtl/register_file.v:30$125'.
+Creating decoders for process `\register_file.$proc$reconf/register_file/rtl/register_file.v:30$124'.
+Creating decoders for process `\register_file.$proc$reconf/register_file/rtl/register_file.v:30$123'.
+Creating decoders for process `\register_file.$proc$reconf/register_file/rtl/register_file.v:30$122'.
+Creating decoders for process `\register_file.$proc$reconf/register_file/rtl/register_file.v:30$121'.
+Creating decoders for process `\register_file.$proc$reconf/register_file/rtl/register_file.v:30$120'.
+Creating decoders for process `\register_file.$proc$reconf/register_file/rtl/register_file.v:30$119'.
+Creating decoders for process `\register_file.$proc$reconf/register_file/rtl/register_file.v:30$118'.
+Creating decoders for process `\register_file.$proc$reconf/register_file/rtl/register_file.v:30$117'.
+Creating decoders for process `\register_file.$proc$reconf/register_file/rtl/register_file.v:30$116'.
+Creating decoders for process `\register_file.$proc$reconf/register_file/rtl/register_file.v:30$115'.
+Creating decoders for process `\register_file.$proc$reconf/register_file/rtl/register_file.v:30$114'.
+Creating decoders for process `\register_file.$proc$reconf/register_file/rtl/register_file.v:30$113'.
+Creating decoders for process `\register_file.$proc$reconf/register_file/rtl/register_file.v:20$112'.
+Creating decoders for process `\register_file_dff_en.$proc$reconf/register_file/rtl/register_file_dff_en.v:10$33'.
+     1/1: $0\o_q[0:0]
+
+7.8. Executing PROC_DLATCH pass (convert process syncs to latches).
+No latch inferred for signal `\register_file.\w_regs[15]' from process `\register_file.$proc$reconf/register_file/rtl/register_file.v:30$127'.
+No latch inferred for signal `\register_file.\w_regs[14]' from process `\register_file.$proc$reconf/register_file/rtl/register_file.v:30$126'.
+No latch inferred for signal `\register_file.\w_regs[13]' from process `\register_file.$proc$reconf/register_file/rtl/register_file.v:30$125'.
+No latch inferred for signal `\register_file.\w_regs[12]' from process `\register_file.$proc$reconf/register_file/rtl/register_file.v:30$124'.
+No latch inferred for signal `\register_file.\w_regs[11]' from process `\register_file.$proc$reconf/register_file/rtl/register_file.v:30$123'.
+No latch inferred for signal `\register_file.\w_regs[10]' from process `\register_file.$proc$reconf/register_file/rtl/register_file.v:30$122'.
+No latch inferred for signal `\register_file.\w_regs[9]' from process `\register_file.$proc$reconf/register_file/rtl/register_file.v:30$121'.
+No latch inferred for signal `\register_file.\w_regs[8]' from process `\register_file.$proc$reconf/register_file/rtl/register_file.v:30$120'.
+No latch inferred for signal `\register_file.\w_regs[7]' from process `\register_file.$proc$reconf/register_file/rtl/register_file.v:30$119'.
+No latch inferred for signal `\register_file.\w_regs[6]' from process `\register_file.$proc$reconf/register_file/rtl/register_file.v:30$118'.
+No latch inferred for signal `\register_file.\w_regs[5]' from process `\register_file.$proc$reconf/register_file/rtl/register_file.v:30$117'.
+No latch inferred for signal `\register_file.\w_regs[4]' from process `\register_file.$proc$reconf/register_file/rtl/register_file.v:30$116'.
+No latch inferred for signal `\register_file.\w_regs[3]' from process `\register_file.$proc$reconf/register_file/rtl/register_file.v:30$115'.
+No latch inferred for signal `\register_file.\w_regs[2]' from process `\register_file.$proc$reconf/register_file/rtl/register_file.v:30$114'.
+No latch inferred for signal `\register_file.\w_regs[1]' from process `\register_file.$proc$reconf/register_file/rtl/register_file.v:30$113'.
+No latch inferred for signal `\register_file.\w_regs[0]' from process `\register_file.$proc$reconf/register_file/rtl/register_file.v:20$112'.
+
+7.9. Executing PROC_DFF pass (convert process syncs to FFs).
+Creating register for signal `\register_file_dff_en.\o_q' using process `\register_file_dff_en.$proc$reconf/register_file/rtl/register_file_dff_en.v:10$33'.
+  created $adff cell `$procdff$134' with positive edge clock and positive level reset.
+
+7.10. Executing PROC_MEMWR pass (convert process memory writes to cells).
+
+7.11. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Removing empty process `register_file.$proc$reconf/register_file/rtl/register_file.v:30$127'.
+Removing empty process `register_file.$proc$reconf/register_file/rtl/register_file.v:30$126'.
+Removing empty process `register_file.$proc$reconf/register_file/rtl/register_file.v:30$125'.
+Removing empty process `register_file.$proc$reconf/register_file/rtl/register_file.v:30$124'.
+Removing empty process `register_file.$proc$reconf/register_file/rtl/register_file.v:30$123'.
+Removing empty process `register_file.$proc$reconf/register_file/rtl/register_file.v:30$122'.
+Removing empty process `register_file.$proc$reconf/register_file/rtl/register_file.v:30$121'.
+Removing empty process `register_file.$proc$reconf/register_file/rtl/register_file.v:30$120'.
+Removing empty process `register_file.$proc$reconf/register_file/rtl/register_file.v:30$119'.
+Removing empty process `register_file.$proc$reconf/register_file/rtl/register_file.v:30$118'.
+Removing empty process `register_file.$proc$reconf/register_file/rtl/register_file.v:30$117'.
+Removing empty process `register_file.$proc$reconf/register_file/rtl/register_file.v:30$116'.
+Removing empty process `register_file.$proc$reconf/register_file/rtl/register_file.v:30$115'.
+Removing empty process `register_file.$proc$reconf/register_file/rtl/register_file.v:30$114'.
+Removing empty process `register_file.$proc$reconf/register_file/rtl/register_file.v:30$113'.
+Removing empty process `register_file.$proc$reconf/register_file/rtl/register_file.v:20$112'.
+Found and cleaned up 1 empty switch in `\register_file_dff_en.$proc$reconf/register_file/rtl/register_file_dff_en.v:10$33'.
+Removing empty process `register_file_dff_en.$proc$reconf/register_file/rtl/register_file_dff_en.v:10$33'.
+Cleaned up 1 empty switch.
+
+7.12. Executing OPT_EXPR pass (perform const folding).
+Optimizing module register_file.
+Optimizing module register_file_mux16_16bit.
+Optimizing module register_file_dff_en.
+<suppressed ~2 debug messages>
+Optimizing module register_file_mux16_1bit.
+Optimizing module register_file_cell_16bit.
+
+8. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \register_file..
+Finding unused cells or wires in module \register_file_mux16_16bit..
+Finding unused cells or wires in module \register_file_dff_en..
+Finding unused cells or wires in module \register_file_mux16_1bit..
+Finding unused cells or wires in module \register_file_cell_16bit..
+Removed 2 unused cells and 84 unused wires.
+<suppressed ~5 debug messages>
+
+9. Executing TECHMAP pass (map to technology primitives).
+
+9.1. Executing Verilog-2005 frontend: /opt/oss-cad-suite/lib/../share/yosys/techmap.v
+Parsing Verilog input from `/opt/oss-cad-suite/lib/../share/yosys/techmap.v' to AST representation.
+Generating RTLIL representation for module `\_90_simplemap_bool_ops'.
+Generating RTLIL representation for module `\_90_simplemap_reduce_ops'.
+Generating RTLIL representation for module `\_90_simplemap_logic_ops'.
+Generating RTLIL representation for module `\_90_simplemap_compare_ops'.
+Generating RTLIL representation for module `\_90_simplemap_various'.
+Generating RTLIL representation for module `\_90_simplemap_registers'.
+Generating RTLIL representation for module `\_90_shift_ops_shr_shl_sshl_sshr'.
+Generating RTLIL representation for module `\_90_shift_shiftx'.
+Generating RTLIL representation for module `\_90_fa'.
+Generating RTLIL representation for module `\_90_lcu_brent_kung'.
+Generating RTLIL representation for module `\_90_alu'.
+Generating RTLIL representation for module `\_90_macc'.
+Generating RTLIL representation for module `\_90_alumacc'.
+Generating RTLIL representation for module `$__div_mod_u'.
+Generating RTLIL representation for module `$__div_mod_trunc'.
+Generating RTLIL representation for module `\_90_div'.
+Generating RTLIL representation for module `\_90_mod'.
+Generating RTLIL representation for module `$__div_mod_floor'.
+Generating RTLIL representation for module `\_90_divfloor'.
+Generating RTLIL representation for module `\_90_modfloor'.
+Generating RTLIL representation for module `\_90_pow'.
+Generating RTLIL representation for module `\_90_pmux'.
+Generating RTLIL representation for module `\_90_demux'.
+Generating RTLIL representation for module `\_90_lut'.
+Generating RTLIL representation for module `$connect'.
+Generating RTLIL representation for module `$input_port'.
+Successfully finished Verilog frontend.
+
+9.2. Continuing TECHMAP pass.
+Using template $paramod$constmap:446553370afc6c2aa6cc0b8f657b7f64b237ff7c$paramod$962bb79c2a50a422516483c1c9c06046761917ac\_90_shift_shiftx for cells of type $shiftx.
+Using extmapper simplemap for cells of type $mux.
+Using extmapper simplemap for cells of type $adff.
+Using extmapper simplemap for cells of type $eq.
+Using extmapper simplemap for cells of type $logic_and.
+No more expansions possible.
+<suppressed ~320 debug messages>
+
+10. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \register_file..
+Finding unused cells or wires in module \register_file_cell_16bit..
+Finding unused cells or wires in module \register_file_dff_en..
+Finding unused cells or wires in module \register_file_mux16_16bit..
+Finding unused cells or wires in module \register_file_mux16_1bit..
+Removed 49 unused cells and 21 unused wires.
+<suppressed ~51 debug messages>
+
+11. Executing HIERARCHY pass (managing design hierarchy).
+Attribute `top' found on module `register_file'. Setting top module to register_file.
+
+11.1. Analyzing design hierarchy..
+Top module:  \register_file
+Used module:     \register_file_cell_16bit
+Used module:         \register_file_dff_en
+Used module:     \register_file_mux16_16bit
+Used module:         \register_file_mux16_1bit
+
+11.2. Analyzing design hierarchy..
+Top module:  \register_file
+Used module:     \register_file_cell_16bit
+Used module:         \register_file_dff_en
+Used module:     \register_file_mux16_16bit
+Used module:         \register_file_mux16_1bit
+Removed 0 unused modules.
+
+12. Printing statistics.
+
+=== register_file ===
+
+        +----------Local Count, excluding submodules.
+        | 
+      100 wires
+      454 wire bits
+       40 public wires
+      334 public wire bits
+        9 ports
+       63 port bits
+      135 cells
+       15   $_AND_
+       15   $_NOT_
+       45   $_OR_
+       60   $_XOR_
+       17 submodules
+       15   register_file_cell_16bit
+        2   register_file_mux16_16bit
+
+=== register_file_cell_16bit ===
+
+        +----------Local Count, excluding submodules.
+        | 
+        5 wires
+       35 wire bits
+        5 public wires
+       35 public wire bits
+        5 ports
+       35 port bits
+       16 submodules
+       16   register_file_dff_en
+
+=== register_file_dff_en ===
+
+        +----------Local Count, excluding submodules.
+        | 
+        6 wires
+        6 wire bits
+        5 public wires
+        5 public wire bits
+        5 ports
+        5 port bits
+        2 cells
+        1   $_DFF_PN0_
+        1   $_MUX_
+
+=== register_file_mux16_16bit ===
+
+        +----------Local Count, excluding submodules.
+        | 
+       18 wires
+      276 wire bits
+       18 public wires
+      276 public wire bits
+       18 ports
+      276 port bits
+       16 submodules
+       16   register_file_mux16_1bit
+
+=== register_file_mux16_1bit ===
+
+        +----------Local Count, excluding submodules.
+        | 
+        6 wires
+       69 wire bits
+        3 public wires
+       21 public wire bits
+        3 ports
+       21 port bits
+       15 cells
+       15   $_MUX_
+
+=== design hierarchy ===
+
+        +----------Count including submodules.
+        | 
+     1095 register_file
+        2   register_file_dff_en
+       15   register_file_mux16_1bit
+
+        +----------Count including submodules.
+        | 
+     1843 wires
+     5179 wire bits
+     1447 public wires
+     3283 public wire bits
+     1416 ports
+     3012 port bits
+        - memories
+        - memory bits
+        - processes
+     1095 cells
+       15   $_AND_
+      240   $_DFF_PN0_
+      720   $_MUX_
+       15   $_NOT_
+       45   $_OR_
+       60   $_XOR_
+       17 submodules
+       15   register_file_cell_16bit
+        2   register_file_mux16_16bit
+
+13. Executing JSON backend.
+
+End of script. Logfile hash: d2d21773af, CPU: user 0.03s system 0.01s, MEM: 15.94 MB peak
+Yosys 0.61+112 (git sha1 ac427a79b, clang++ 18.1.8 -fPIC -O3)
+Time spent: 43% 11x read_verilog (0 sec), 10% 2x hierarchy (0 sec), ...

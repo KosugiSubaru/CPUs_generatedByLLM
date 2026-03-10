@@ -1,0 +1,58 @@
+
+============================================================
+CPU自動生成レポート
+============================================================
+生成日時: 2026-02-23 15:15:20
+
+生成成功モジュール (7個):
+
+  ✓ program_counter:
+    - program_counter.v
+    - program_counter_register_16bit.v
+    - program_counter_adder_16bit.v
+    - program_counter_mux_4to1_16bit.v
+    - program_counter_dff.v
+    - program_counter_full_adder.v
+  ✓ control_unit:
+    - control_unit.v
+    - control_unit_decoder_onehot.v
+    - control_unit_opcode_matcher.v
+    - control_unit_condition_checker.v
+    - control_unit_signal_map.v
+  ✓ register_file:
+    - register_file.v
+    - register_file_reg_16bit.v
+    - register_file_decoder_4to16.v
+    - register_file_mux_16to1_16bit.v
+    - register_file_dff_en.v
+  ✓ imm_gen:
+    - imm_gen.v
+    - imm_gen_formatter_4low.v
+    - imm_gen_formatter_4high.v
+    - imm_gen_formatter_8bit.v
+    - imm_gen_formatter_12bit.v
+    - imm_gen_mux_4to1_16bit.v
+    - imm_gen_bit_repeater.v
+  ✓ alu:
+    - alu.v
+    - alu_adder_subtractor_16bit.v
+    - alu_logic_unit_16bit.v
+    - alu_shifter_16bit.v
+    - alu_mux_result.v
+    - alu_flag_gen.v
+    - alu_full_adder.v
+    - alu_bit_logic.v
+  ✓ flag_reg:
+    - flag_reg.v
+    - flag_reg_3bit.v
+    - flag_reg_dff.v
+  ✓ next_pc_logic:
+    - next_pc_logic.v
+    - next_pc_logic_adder_16bit.v
+    - next_pc_logic_branch_resolver.v
+    - next_pc_logic_mux_4to1_16bit.v
+    - next_pc_logic_full_adder.v
+
+すべてのモジュールが正常に生成されました。
+
+============================================================

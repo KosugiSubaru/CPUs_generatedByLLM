@@ -1,0 +1,143 @@
+{
+  "creator": "Yosys 0.61+112 (git sha1 ac427a79b, clang++ 18.1.8 -fPIC -O3)",
+  "modules": {
+    "pc_control_logic_branch_resolver": {
+      "attributes": {
+        "top": "00000000000000000000000000000001",
+        "src": "reconf/pc_control_logic/rtl/pc_control_logic_branch_resolver.v:1.1-16.10"
+      },
+      "ports": {
+        "i_is_blt": {
+          "direction": "input",
+          "bits": [ 2 ]
+        },
+        "i_is_bz": {
+          "direction": "input",
+          "bits": [ 3 ]
+        },
+        "i_cond_lt": {
+          "direction": "input",
+          "bits": [ 4 ]
+        },
+        "i_cond_z": {
+          "direction": "input",
+          "bits": [ 5 ]
+        },
+        "o_branch_taken": {
+          "direction": "output",
+          "bits": [ 6 ]
+        }
+      },
+      "cells": {
+        "$auto$simplemap.cc:256:simplemap_logbin$81": {
+          "hide_name": 1,
+          "type": "$_AND_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/pc_control_logic/rtl/pc_control_logic_branch_resolver.v:14.30-14.51"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 2 ],
+            "B": [ 4 ],
+            "Y": [ 7 ]
+          }
+        },
+        "$auto$simplemap.cc:256:simplemap_logbin$82": {
+          "hide_name": 1,
+          "type": "$_AND_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/pc_control_logic/rtl/pc_control_logic_branch_resolver.v:14.57-14.76"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 3 ],
+            "B": [ 5 ],
+            "Y": [ 8 ]
+          }
+        },
+        "$auto$simplemap.cc:256:simplemap_logbin$83": {
+          "hide_name": 1,
+          "type": "$_OR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/pc_control_logic/rtl/pc_control_logic_branch_resolver.v:14.29-14.77"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 7 ],
+            "B": [ 8 ],
+            "Y": [ 6 ]
+          }
+        }
+      },
+      "netnames": {
+        "$logic_and$reconf/pc_control_logic/rtl/pc_control_logic_branch_resolver.v:14$3_Y": {
+          "hide_name": 1,
+          "bits": [ 7 ],
+          "attributes": {
+            "src": "reconf/pc_control_logic/rtl/pc_control_logic_branch_resolver.v:14.30-14.51"
+          }
+        },
+        "$logic_and$reconf/pc_control_logic/rtl/pc_control_logic_branch_resolver.v:14$4_Y": {
+          "hide_name": 1,
+          "bits": [ 8 ],
+          "attributes": {
+            "src": "reconf/pc_control_logic/rtl/pc_control_logic_branch_resolver.v:14.57-14.76"
+          }
+        },
+        "i_cond_lt": {
+          "hide_name": 0,
+          "bits": [ 4 ],
+          "attributes": {
+            "src": "reconf/pc_control_logic/rtl/pc_control_logic_branch_resolver.v:4.17-4.26"
+          }
+        },
+        "i_cond_z": {
+          "hide_name": 0,
+          "bits": [ 5 ],
+          "attributes": {
+            "src": "reconf/pc_control_logic/rtl/pc_control_logic_branch_resolver.v:5.17-5.25"
+          }
+        },
+        "i_is_blt": {
+          "hide_name": 0,
+          "bits": [ 2 ],
+          "attributes": {
+            "src": "reconf/pc_control_logic/rtl/pc_control_logic_branch_resolver.v:2.17-2.25"
+          }
+        },
+        "i_is_bz": {
+          "hide_name": 0,
+          "bits": [ 3 ],
+          "attributes": {
+            "src": "reconf/pc_control_logic/rtl/pc_control_logic_branch_resolver.v:3.17-3.24"
+          }
+        },
+        "o_branch_taken": {
+          "hide_name": 0,
+          "bits": [ 6 ],
+          "attributes": {
+            "src": "reconf/pc_control_logic/rtl/pc_control_logic_branch_resolver.v:6.17-6.31"
+          }
+        }
+      }
+    }
+  }
+}

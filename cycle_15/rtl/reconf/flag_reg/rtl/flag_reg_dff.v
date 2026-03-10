@@ -1,0 +1,18 @@
+module flag_reg_dff (
+    input  wire i_clk,
+    input  wire i_rst_n,
+    input  wire i_d,
+    output reg  o_q
+);
+
+    // クロック同期で1ビットの値を保持するD型フリップフロップの実装
+    // 非同期リセット（アクティブロー）により初期化を行う
+    always @(posedge i_clk or negedge i_rst_n) begin
+        if (!i_rst_n) begin
+            o_q <= 1'b0;
+        end else begin
+            o_q <= i_d;
+        end
+    end
+
+endmodule

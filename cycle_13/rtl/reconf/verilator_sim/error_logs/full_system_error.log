@@ -1,0 +1,53 @@
+
+=== ログ 2026-02-24 16:37:24 ===
+make: Entering directory '/home/ko_kosugi/workspace/project_makeISA/ai_api/CPU/obj_dir'
+g++  -I.  -MMD -I/opt/oss-cad-suite/share/verilator/include -I/opt/oss-cad-suite/share/verilator/include/vltstd -DVERILATOR=1 -DVM_COVERAGE=0 -DVM_SC=0 -DVM_TIMING=0 -DVM_TRACE=1 -DVM_TRACE_FST=0 -DVM_TRACE_VCD=1 -DVM_TRACE_SAIF=0 -faligned-new -fcf-protection=none -Wno-bool-operation -Wno-int-in-bool-context -Wno-shadow -Wno-sign-compare -Wno-subobject-linkage -Wno-tautological-compare -Wno-uninitialized -Wno-unused-but-set-parameter -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable      -Os  -c -o tb_top_gen.o ../tb_top_gen.cpp
+g++ -Os  -I.  -MMD -I/opt/oss-cad-suite/share/verilator/include -I/opt/oss-cad-suite/share/verilator/include/vltstd -DVERILATOR=1 -DVM_COVERAGE=0 -DVM_SC=0 -DVM_TIMING=0 -DVM_TRACE=1 -DVM_TRACE_FST=0 -DVM_TRACE_VCD=1 -DVM_TRACE_SAIF=0 -faligned-new -fcf-protection=none -Wno-bool-operation -Wno-int-in-bool-context -Wno-shadow -Wno-sign-compare -Wno-subobject-linkage -Wno-tautological-compare -Wno-uninitialized -Wno-unused-but-set-parameter -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable      -c -o verilated.o /opt/oss-cad-suite/share/verilator/include/verilated.cpp
+g++ -Os  -I.  -MMD -I/opt/oss-cad-suite/share/verilator/include -I/opt/oss-cad-suite/share/verilator/include/vltstd -DVERILATOR=1 -DVM_COVERAGE=0 -DVM_SC=0 -DVM_TIMING=0 -DVM_TRACE=1 -DVM_TRACE_FST=0 -DVM_TRACE_VCD=1 -DVM_TRACE_SAIF=0 -faligned-new -fcf-protection=none -Wno-bool-operation -Wno-int-in-bool-context -Wno-shadow -Wno-sign-compare -Wno-subobject-linkage -Wno-tautological-compare -Wno-uninitialized -Wno-unused-but-set-parameter -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable      -c -o verilated_vcd_c.o /opt/oss-cad-suite/share/verilator/include/verilated_vcd_c.cpp
+g++ -Os  -I.  -MMD -I/opt/oss-cad-suite/share/verilator/include -I/opt/oss-cad-suite/share/verilator/include/vltstd -DVERILATOR=1 -DVM_COVERAGE=0 -DVM_SC=0 -DVM_TIMING=0 -DVM_TRACE=1 -DVM_TRACE_FST=0 -DVM_TRACE_VCD=1 -DVM_TRACE_SAIF=0 -faligned-new -fcf-protection=none -Wno-bool-operation -Wno-int-in-bool-context -Wno-shadow -Wno-sign-compare -Wno-subobject-linkage -Wno-tautological-compare -Wno-uninitialized -Wno-unused-but-set-parameter -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable      -c -o verilated_threads.o /opt/oss-cad-suite/share/verilator/include/verilated_threads.cpp
+python3 /opt/oss-cad-suite/share/verilator/bin/verilator_includer -DVL_INCLUDE_OPT=include Vtop.cpp Vtop___024root__0.cpp Vtop_register_file_word__0.cpp Vtop_register_file_mux16_1bit__0.cpp Vtop__Trace__0.cpp Vtop___024root__Slow.cpp Vtop___024root__0__Slow.cpp Vtop_register_file_word__Slow.cpp Vtop_register_file_word__0__Slow.cpp Vtop_register_file_mux16_1bit__Slow.cpp Vtop_register_file_mux16_1bit__0__Slow.cpp Vtop__Syms__Slow.cpp Vtop__Trace__0__Slow.cpp Vtop__TraceDecls__0__Slow.cpp > Vtop__ALL.cpp
+g++ -Os  -I.  -MMD -I/opt/oss-cad-suite/share/verilator/include -I/opt/oss-cad-suite/share/verilator/include/vltstd -DVERILATOR=1 -DVM_COVERAGE=0 -DVM_SC=0 -DVM_TIMING=0 -DVM_TRACE=1 -DVM_TRACE_FST=0 -DVM_TRACE_VCD=1 -DVM_TRACE_SAIF=0 -faligned-new -fcf-protection=none -Wno-bool-operation -Wno-int-in-bool-context -Wno-shadow -Wno-sign-compare -Wno-subobject-linkage -Wno-tautological-compare -Wno-uninitialized -Wno-unused-but-set-parameter -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable      -c -o Vtop__ALL.o Vtop__ALL.cpp
+g++    tb_top_gen.o verilated.o verilated_vcd_c.o verilated_threads.o Vtop__ALL.a    -pthread -lpthread -latomic   -o Vtop
+rm Vtop__ALL.verilator_deplist.tmp
+make: Leaving directory '/home/ko_kosugi/workspace/project_makeISA/ai_api/CPU/obj_dir'
+- V e r i l a t i o n   R e p o r t: Verilator 5.045 devel rev v5.044-88-g1b9f38f78
+- Verilator: Built from 2.461 MB sources in 46 modules, into 3.890 MB in 14 C++ files needing 0.000 MB
+- Verilator: Walltime 14.938 s (elab=0.020, cvt=0.358, bld=14.488); cpu 0.390 s on 1 threads; allocated 51.547 MB
+[SVA OK] Time=35: LOADI R3 = 0x0005
+[SVA OK] Time=45: LOADI R3 = 0x0005
+[SVA OK] Time=55: STORE MEM[0x0000] = 0x0005
+[SVA OK] Time=65: LOADI R3 = 0xfffd
+[75] %Error: sva_cpu_gen.sv:288: Assertion failed in TOP.top.u_sva_cpu_gen: [TIME=75] STORE failed: addr=0xffff(exp=0x0001) wdata=0xfffd(exp=0xfffd)
+%Error: sva_cpu_gen.sv:288: Verilog $stop
+Aborting...
+
+==================================================
+
+=== ログ 2026-02-24 16:37:53 ===
+このエラーは、**STORE命令（メモリへの書き込み）において、アドレス計算が誤っていること**を示しています。
+
+### エラーの要点
+1.  **期待値と実測値の不一致**:
+    検証ツール（SVA）はアドレス `0x0001` への書き込みを期待していましたが、CPUは `0xffff` （符号付き整数で -1）というアドレスを出力しました。
+2.  **符号ビットによる誤動作**:
+    実測値が `0xffff` になっていることから、本来 `rs1 + imm`（加算）を行うべきところで、**`rs1 - imm`（減算）が行われている**、もしくは即値の符号拡張が意図しない挙動をしています。
+3.  **原因の特定**:
+    `alu.v` の実装において、加減算の切り替え（`i_is_sub`）を `i_opcode[0]` で判定しています。STORE命令のオペコードは `1011` であるため、末尾のビットが `1` となり、ALUが「減算モード」として動作してしまったことが直接の原因です。
+
+---
+
+### 修正方法のアドバイス
+
+**1. ALUの加減算制御論理の修正（alu.v）**
+ALU内部で「加算か減算か」を決める信号を、単にオペコードの最下位ビット（`i_opcode[0]`）だけで決めるのではなく、命令の種類を考慮するように修正してください。
+具体的には、オペコードがメモリアクセス系（`load` や `store`）の場合は、最下位ビットに関わらず強制的に「加算（Add）」モードで動作するように論理を変更する必要があります。
+
+**2. コントロールユニットの信号追加（control_unit.v）**
+より分かりやすい設計にするために、`control_unit` から ALU に対して「加算を強制するか（`o_force_add`）」、あるいは「明確なALU操作コード」を生成して渡すようにしてください。
+
+**3. 即値生成ユニットの確認（imm_gen_sext4_s.v）**
+STORE命令の即値は [15:12] ビットから抽出していますが、この 4ビットが期待通りに符号拡張されているかも再確認してください。しかし、今回の `0x0001` が `0xffff` になったケースは、上記 1. の「加算すべきところで減算している」問題である可能性が極めて高いです。
+
+**要約:**
+`store` (1011) や `load` (1010) のアドレス計算は常に **加算** であるべきですが、現在の回路は `1011` の末尾の `1` を見て **減算** を実行しています。この選択ロジックを修正してください。
+==================================================

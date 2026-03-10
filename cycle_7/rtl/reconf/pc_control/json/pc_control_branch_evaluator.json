@@ -1,0 +1,323 @@
+{
+  "creator": "Yosys 0.61+112 (git sha1 ac427a79b, clang++ 18.1.8 -fPIC -O3)",
+  "modules": {
+    "pc_control_branch_evaluator": {
+      "attributes": {
+        "top": "00000000000000000000000000000001",
+        "src": "reconf/pc_control/rtl/pc_control_branch_evaluator.v:1.1-32.10"
+      },
+      "ports": {
+        "i_is_blt": {
+          "direction": "input",
+          "bits": [ 2 ]
+        },
+        "i_is_bz": {
+          "direction": "input",
+          "bits": [ 3 ]
+        },
+        "i_flag_z": {
+          "direction": "input",
+          "bits": [ 4 ]
+        },
+        "i_flag_n": {
+          "direction": "input",
+          "bits": [ 5 ]
+        },
+        "i_flag_v": {
+          "direction": "input",
+          "bits": [ 6 ]
+        },
+        "o_branch_taken": {
+          "direction": "output",
+          "bits": [ 7 ]
+        }
+      },
+      "cells": {
+        "$auto$simplemap.cc:106:simplemap_bitop$85": {
+          "hide_name": 1,
+          "type": "$_OR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/pc_control/rtl/pc_control_branch_evaluator.v:30.48-30.66"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 2 ],
+            "B": [ 3 ],
+            "Y": [ 8 ]
+          }
+        },
+        "$auto$simplemap.cc:106:simplemap_bitop$86": {
+          "hide_name": 1,
+          "type": "$_AND_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/pc_control/rtl/pc_control_branch_evaluator.v:30.29-30.67"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 9 ],
+            "B": [ 8 ],
+            "Y": [ 7 ]
+          }
+        },
+        "u_mux_cond": {
+          "hide_name": 0,
+          "type": "pc_control_mux_2to1",
+          "parameters": {
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "reconf/pc_control/rtl/pc_control_branch_evaluator.v:22.25-27.6"
+          },
+          "port_directions": {
+            "i_in0": "input",
+            "i_in1": "input",
+            "i_sel": "input",
+            "o_out": "output"
+          },
+          "connections": {
+            "i_in0": [ 10 ],
+            "i_in1": [ 4 ],
+            "i_sel": [ 3 ],
+            "o_out": [ 9 ]
+          }
+        },
+        "u_xor": {
+          "hide_name": 0,
+          "type": "pc_control_gate_xor",
+          "parameters": {
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "reconf/pc_control/rtl/pc_control_branch_evaluator.v:14.25-18.6"
+          },
+          "port_directions": {
+            "i_n": "input",
+            "i_v": "input",
+            "o_less_than": "output"
+          },
+          "connections": {
+            "i_n": [ 5 ],
+            "i_v": [ 6 ],
+            "o_less_than": [ 10 ]
+          }
+        }
+      },
+      "netnames": {
+        "$or$reconf/pc_control/rtl/pc_control_branch_evaluator.v:30$5_Y": {
+          "hide_name": 1,
+          "bits": [ 8 ],
+          "attributes": {
+            "src": "reconf/pc_control/rtl/pc_control_branch_evaluator.v:30.48-30.66"
+          }
+        },
+        "i_flag_n": {
+          "hide_name": 0,
+          "bits": [ 5 ],
+          "attributes": {
+            "src": "reconf/pc_control/rtl/pc_control_branch_evaluator.v:5.17-5.25"
+          }
+        },
+        "i_flag_v": {
+          "hide_name": 0,
+          "bits": [ 6 ],
+          "attributes": {
+            "src": "reconf/pc_control/rtl/pc_control_branch_evaluator.v:6.17-6.25"
+          }
+        },
+        "i_flag_z": {
+          "hide_name": 0,
+          "bits": [ 4 ],
+          "attributes": {
+            "src": "reconf/pc_control/rtl/pc_control_branch_evaluator.v:4.17-4.25"
+          }
+        },
+        "i_is_blt": {
+          "hide_name": 0,
+          "bits": [ 2 ],
+          "attributes": {
+            "src": "reconf/pc_control/rtl/pc_control_branch_evaluator.v:2.17-2.25"
+          }
+        },
+        "i_is_bz": {
+          "hide_name": 0,
+          "bits": [ 3 ],
+          "attributes": {
+            "src": "reconf/pc_control/rtl/pc_control_branch_evaluator.v:3.17-3.24"
+          }
+        },
+        "o_branch_taken": {
+          "hide_name": 0,
+          "bits": [ 7 ],
+          "attributes": {
+            "src": "reconf/pc_control/rtl/pc_control_branch_evaluator.v:7.17-7.31"
+          }
+        },
+        "w_less_than": {
+          "hide_name": 0,
+          "bits": [ 10 ],
+          "attributes": {
+            "src": "reconf/pc_control/rtl/pc_control_branch_evaluator.v:10.10-10.21"
+          }
+        },
+        "w_selected_cond": {
+          "hide_name": 0,
+          "bits": [ 9 ],
+          "attributes": {
+            "src": "reconf/pc_control/rtl/pc_control_branch_evaluator.v:11.10-11.25"
+          }
+        }
+      }
+    },
+    "pc_control_gate_xor": {
+      "attributes": {
+        "src": "reconf/pc_control/rtl/pc_control_gate_xor.v:1.1-9.10"
+      },
+      "ports": {
+        "i_n": {
+          "direction": "input",
+          "bits": [ 2 ]
+        },
+        "i_v": {
+          "direction": "input",
+          "bits": [ 3 ]
+        },
+        "o_less_than": {
+          "direction": "output",
+          "bits": [ 4 ]
+        }
+      },
+      "cells": {
+        "$auto$simplemap.cc:106:simplemap_bitop$84": {
+          "hide_name": 1,
+          "type": "$_XOR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/pc_control/rtl/pc_control_gate_xor.v:7.26-7.35"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 2 ],
+            "B": [ 3 ],
+            "Y": [ 4 ]
+          }
+        }
+      },
+      "netnames": {
+        "i_n": {
+          "hide_name": 0,
+          "bits": [ 2 ],
+          "attributes": {
+            "src": "reconf/pc_control/rtl/pc_control_gate_xor.v:2.17-2.20"
+          }
+        },
+        "i_v": {
+          "hide_name": 0,
+          "bits": [ 3 ],
+          "attributes": {
+            "src": "reconf/pc_control/rtl/pc_control_gate_xor.v:3.17-3.20"
+          }
+        },
+        "o_less_than": {
+          "hide_name": 0,
+          "bits": [ 4 ],
+          "attributes": {
+            "src": "reconf/pc_control/rtl/pc_control_gate_xor.v:4.17-4.28"
+          }
+        }
+      }
+    },
+    "pc_control_mux_2to1": {
+      "attributes": {
+        "src": "reconf/pc_control/rtl/pc_control_mux_2to1.v:1.1-10.10"
+      },
+      "ports": {
+        "i_sel": {
+          "direction": "input",
+          "bits": [ 2 ]
+        },
+        "i_in0": {
+          "direction": "input",
+          "bits": [ 3 ]
+        },
+        "i_in1": {
+          "direction": "input",
+          "bits": [ 4 ]
+        },
+        "o_out": {
+          "direction": "output",
+          "bits": [ 5 ]
+        }
+      },
+      "cells": {
+        "$auto$simplemap.cc:298:simplemap_mux$83": {
+          "hide_name": 1,
+          "type": "$_MUX_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/pc_control/rtl/pc_control_mux_2to1.v:8.20-8.41"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 3 ],
+            "B": [ 4 ],
+            "S": [ 2 ],
+            "Y": [ 5 ]
+          }
+        }
+      },
+      "netnames": {
+        "i_in0": {
+          "hide_name": 0,
+          "bits": [ 3 ],
+          "attributes": {
+            "src": "reconf/pc_control/rtl/pc_control_mux_2to1.v:3.17-3.22"
+          }
+        },
+        "i_in1": {
+          "hide_name": 0,
+          "bits": [ 4 ],
+          "attributes": {
+            "src": "reconf/pc_control/rtl/pc_control_mux_2to1.v:4.17-4.22"
+          }
+        },
+        "i_sel": {
+          "hide_name": 0,
+          "bits": [ 2 ],
+          "attributes": {
+            "src": "reconf/pc_control/rtl/pc_control_mux_2to1.v:2.17-2.22"
+          }
+        },
+        "o_out": {
+          "hide_name": 0,
+          "bits": [ 5 ],
+          "attributes": {
+            "src": "reconf/pc_control/rtl/pc_control_mux_2to1.v:5.17-5.22"
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,62 @@
+
+============================================================
+CPU自動生成レポート
+============================================================
+生成日時: 2026-02-23 14:02:57
+
+生成成功モジュール (7個):
+
+  ✓ program_counter:
+    - program_counter_bit_register.v
+    - program_counter_mux_4to1_1bit.v
+    - program_counter_half_adder.v
+    - program_counter_full_adder.v
+    - program_counter_nbit_register.v
+    - program_counter_nbit_mux_4to1.v
+    - program_counter_adder_16bit.v
+    - program_counter.v
+  ✓ instruction_decoder:
+    - instruction_decoder_op_match.v
+    - instruction_decoder_op_bus.v
+    - instruction_decoder_field_extractor.v
+    - instruction_decoder_control_logic.v
+    - instruction_decoder.v
+  ✓ register_file:
+    - register_file_bit_cell.v
+    - register_file_mux_16to1_1bit.v
+    - register_file_word_unit.v
+    - register_file_mux_16bit_16to1.v
+    - register_file_write_decoder.v
+    - register_file.v
+  ✓ immediate_generator:
+    - immediate_generator_sign_ext_bit.v
+    - immediate_generator_mux_4to1_1bit.v
+    - immediate_generator_i_extender.v
+    - immediate_generator_s_extender.v
+    - immediate_generator_l_extender.v
+    - immediate_generator_b_extender.v
+    - immediate_generator_mux_4to1_16bit.v
+    - immediate_generator.v
+  ✓ alu_core:
+    - alu_core_half_adder.v
+    - alu_core_full_adder.v
+    - alu_core_logic_unit_1bit.v
+    - alu_core_mux_8to1_1bit.v
+    - alu_core_adder_sub_16bit.v
+    - alu_core_logic_unit_16bit.v
+    - alu_core_shifter_16bit.v
+    - alu_core_result_mux_16bit.v
+    - alu_core.v
+  ✓ flag_register:
+    - flag_register_bit.v
+    - flag_register_nbit.v
+    - flag_register.v
+  ✓ pc_control_logic:
+    - pc_control_logic_cond_match.v
+    - pc_control_logic_branch_resolver.v
+    - pc_control_logic_mux_sel_gen.v
+    - pc_control_logic.v
+
+すべてのモジュールが正常に生成されました。
+
+============================================================

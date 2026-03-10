@@ -1,0 +1,24 @@
+
+=== ログ 2026-02-23 14:27:08 ===
+=== RTL Compile (All Files) ===
+
+reconf/register_file/rtl/register_file_decoder_4to16.v:18: warning: Extra digits given for sized hex constant.
+reconf/register_file/rtl/register_file_decoder_4to16.v:18: warning: Numeric constant truncated to 4 bits.
+reconf/register_file/rtl/register_file_decoder_4to16.v:19: warning: Extra digits given for sized hex constant.
+reconf/register_file/rtl/register_file_decoder_4to16.v:19: warning: Numeric constant truncated to 4 bits.
+reconf/register_file/rtl/register_file_decoder_4to16.v:20: warning: Extra digits given for sized hex constant.
+reconf/register_file/rtl/register_file_decoder_4to16.v:20: warning: Numeric constant truncated to 4 bits.
+reconf/register_file/rtl/register_file_decoder_4to16.v:21: warning: Extra digits given for sized hex constant.
+reconf/register_file/rtl/register_file_decoder_4to16.v:21: warning: Numeric constant truncated to 4 bits.
+reconf/register_file/rtl/register_file_decoder_4to16.v:22: warning: Extra digits given for sized hex constant.
+reconf/register_file/rtl/register_file_decoder_4to16.v:22: warning: Numeric constant truncated to 4 bits.
+reconf/register_file/rtl/register_file_decoder_4to16.v:23: warning: Extra digits given for sized hex constant.
+reconf/register_file/rtl/register_file_decoder_4to16.v:23: warning: Numeric constant truncated to 4 bits.
+
+==================================================
+
+=== ログ 2026-02-23 14:27:28 ===
+=== RTL Compile (All Files) ===
+
+
+==================================================

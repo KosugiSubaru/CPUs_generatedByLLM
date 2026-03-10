@@ -1,0 +1,775 @@
+{
+  "creator": "Yosys 0.61+112 (git sha1 ac427a79b, clang++ 18.1.8 -fPIC -O3)",
+  "modules": {
+    "writeback_mux": {
+      "attributes": {
+        "top": "00000000000000000000000000000001",
+        "src": "reconf/writeback_mux/rtl/writeback_mux.v:1.1-31.10"
+      },
+      "ports": {
+        "i_mem_to_reg": {
+          "direction": "input",
+          "bits": [ 2 ]
+        },
+        "i_is_jump": {
+          "direction": "input",
+          "bits": [ 3 ]
+        },
+        "i_alu_res": {
+          "direction": "input",
+          "bits": [ 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19 ]
+        },
+        "i_mem_res": {
+          "direction": "input",
+          "bits": [ 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35 ]
+        },
+        "i_pc_plus_2": {
+          "direction": "input",
+          "bits": [ 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51 ]
+        },
+        "o_write_data": {
+          "direction": "output",
+          "bits": [ 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67 ]
+        }
+      },
+      "cells": {
+        "g_wb_mux_bits[0].u_writeback_mux_1bit": {
+          "hide_name": 0,
+          "type": "writeback_mux_1bit",
+          "parameters": {
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "reconf/writeback_mux/rtl/writeback_mux.v:21.32-27.14"
+          },
+          "port_directions": {
+            "i_alu": "input",
+            "i_mem": "input",
+            "i_pc2": "input",
+            "i_sel": "input",
+            "o_data": "output"
+          },
+          "connections": {
+            "i_alu": [ 4 ],
+            "i_mem": [ 20 ],
+            "i_pc2": [ 36 ],
+            "i_sel": [ 2, 3 ],
+            "o_data": [ 52 ]
+          }
+        },
+        "g_wb_mux_bits[10].u_writeback_mux_1bit": {
+          "hide_name": 0,
+          "type": "writeback_mux_1bit",
+          "parameters": {
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "reconf/writeback_mux/rtl/writeback_mux.v:21.32-27.14"
+          },
+          "port_directions": {
+            "i_alu": "input",
+            "i_mem": "input",
+            "i_pc2": "input",
+            "i_sel": "input",
+            "o_data": "output"
+          },
+          "connections": {
+            "i_alu": [ 14 ],
+            "i_mem": [ 30 ],
+            "i_pc2": [ 46 ],
+            "i_sel": [ 2, 3 ],
+            "o_data": [ 62 ]
+          }
+        },
+        "g_wb_mux_bits[11].u_writeback_mux_1bit": {
+          "hide_name": 0,
+          "type": "writeback_mux_1bit",
+          "parameters": {
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "reconf/writeback_mux/rtl/writeback_mux.v:21.32-27.14"
+          },
+          "port_directions": {
+            "i_alu": "input",
+            "i_mem": "input",
+            "i_pc2": "input",
+            "i_sel": "input",
+            "o_data": "output"
+          },
+          "connections": {
+            "i_alu": [ 15 ],
+            "i_mem": [ 31 ],
+            "i_pc2": [ 47 ],
+            "i_sel": [ 2, 3 ],
+            "o_data": [ 63 ]
+          }
+        },
+        "g_wb_mux_bits[12].u_writeback_mux_1bit": {
+          "hide_name": 0,
+          "type": "writeback_mux_1bit",
+          "parameters": {
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "reconf/writeback_mux/rtl/writeback_mux.v:21.32-27.14"
+          },
+          "port_directions": {
+            "i_alu": "input",
+            "i_mem": "input",
+            "i_pc2": "input",
+            "i_sel": "input",
+            "o_data": "output"
+          },
+          "connections": {
+            "i_alu": [ 16 ],
+            "i_mem": [ 32 ],
+            "i_pc2": [ 48 ],
+            "i_sel": [ 2, 3 ],
+            "o_data": [ 64 ]
+          }
+        },
+        "g_wb_mux_bits[13].u_writeback_mux_1bit": {
+          "hide_name": 0,
+          "type": "writeback_mux_1bit",
+          "parameters": {
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "reconf/writeback_mux/rtl/writeback_mux.v:21.32-27.14"
+          },
+          "port_directions": {
+            "i_alu": "input",
+            "i_mem": "input",
+            "i_pc2": "input",
+            "i_sel": "input",
+            "o_data": "output"
+          },
+          "connections": {
+            "i_alu": [ 17 ],
+            "i_mem": [ 33 ],
+            "i_pc2": [ 49 ],
+            "i_sel": [ 2, 3 ],
+            "o_data": [ 65 ]
+          }
+        },
+        "g_wb_mux_bits[14].u_writeback_mux_1bit": {
+          "hide_name": 0,
+          "type": "writeback_mux_1bit",
+          "parameters": {
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "reconf/writeback_mux/rtl/writeback_mux.v:21.32-27.14"
+          },
+          "port_directions": {
+            "i_alu": "input",
+            "i_mem": "input",
+            "i_pc2": "input",
+            "i_sel": "input",
+            "o_data": "output"
+          },
+          "connections": {
+            "i_alu": [ 18 ],
+            "i_mem": [ 34 ],
+            "i_pc2": [ 50 ],
+            "i_sel": [ 2, 3 ],
+            "o_data": [ 66 ]
+          }
+        },
+        "g_wb_mux_bits[15].u_writeback_mux_1bit": {
+          "hide_name": 0,
+          "type": "writeback_mux_1bit",
+          "parameters": {
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "reconf/writeback_mux/rtl/writeback_mux.v:21.32-27.14"
+          },
+          "port_directions": {
+            "i_alu": "input",
+            "i_mem": "input",
+            "i_pc2": "input",
+            "i_sel": "input",
+            "o_data": "output"
+          },
+          "connections": {
+            "i_alu": [ 19 ],
+            "i_mem": [ 35 ],
+            "i_pc2": [ 51 ],
+            "i_sel": [ 2, 3 ],
+            "o_data": [ 67 ]
+          }
+        },
+        "g_wb_mux_bits[1].u_writeback_mux_1bit": {
+          "hide_name": 0,
+          "type": "writeback_mux_1bit",
+          "parameters": {
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "reconf/writeback_mux/rtl/writeback_mux.v:21.32-27.14"
+          },
+          "port_directions": {
+            "i_alu": "input",
+            "i_mem": "input",
+            "i_pc2": "input",
+            "i_sel": "input",
+            "o_data": "output"
+          },
+          "connections": {
+            "i_alu": [ 5 ],
+            "i_mem": [ 21 ],
+            "i_pc2": [ 37 ],
+            "i_sel": [ 2, 3 ],
+            "o_data": [ 53 ]
+          }
+        },
+        "g_wb_mux_bits[2].u_writeback_mux_1bit": {
+          "hide_name": 0,
+          "type": "writeback_mux_1bit",
+          "parameters": {
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "reconf/writeback_mux/rtl/writeback_mux.v:21.32-27.14"
+          },
+          "port_directions": {
+            "i_alu": "input",
+            "i_mem": "input",
+            "i_pc2": "input",
+            "i_sel": "input",
+            "o_data": "output"
+          },
+          "connections": {
+            "i_alu": [ 6 ],
+            "i_mem": [ 22 ],
+            "i_pc2": [ 38 ],
+            "i_sel": [ 2, 3 ],
+            "o_data": [ 54 ]
+          }
+        },
+        "g_wb_mux_bits[3].u_writeback_mux_1bit": {
+          "hide_name": 0,
+          "type": "writeback_mux_1bit",
+          "parameters": {
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "reconf/writeback_mux/rtl/writeback_mux.v:21.32-27.14"
+          },
+          "port_directions": {
+            "i_alu": "input",
+            "i_mem": "input",
+            "i_pc2": "input",
+            "i_sel": "input",
+            "o_data": "output"
+          },
+          "connections": {
+            "i_alu": [ 7 ],
+            "i_mem": [ 23 ],
+            "i_pc2": [ 39 ],
+            "i_sel": [ 2, 3 ],
+            "o_data": [ 55 ]
+          }
+        },
+        "g_wb_mux_bits[4].u_writeback_mux_1bit": {
+          "hide_name": 0,
+          "type": "writeback_mux_1bit",
+          "parameters": {
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "reconf/writeback_mux/rtl/writeback_mux.v:21.32-27.14"
+          },
+          "port_directions": {
+            "i_alu": "input",
+            "i_mem": "input",
+            "i_pc2": "input",
+            "i_sel": "input",
+            "o_data": "output"
+          },
+          "connections": {
+            "i_alu": [ 8 ],
+            "i_mem": [ 24 ],
+            "i_pc2": [ 40 ],
+            "i_sel": [ 2, 3 ],
+            "o_data": [ 56 ]
+          }
+        },
+        "g_wb_mux_bits[5].u_writeback_mux_1bit": {
+          "hide_name": 0,
+          "type": "writeback_mux_1bit",
+          "parameters": {
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "reconf/writeback_mux/rtl/writeback_mux.v:21.32-27.14"
+          },
+          "port_directions": {
+            "i_alu": "input",
+            "i_mem": "input",
+            "i_pc2": "input",
+            "i_sel": "input",
+            "o_data": "output"
+          },
+          "connections": {
+            "i_alu": [ 9 ],
+            "i_mem": [ 25 ],
+            "i_pc2": [ 41 ],
+            "i_sel": [ 2, 3 ],
+            "o_data": [ 57 ]
+          }
+        },
+        "g_wb_mux_bits[6].u_writeback_mux_1bit": {
+          "hide_name": 0,
+          "type": "writeback_mux_1bit",
+          "parameters": {
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "reconf/writeback_mux/rtl/writeback_mux.v:21.32-27.14"
+          },
+          "port_directions": {
+            "i_alu": "input",
+            "i_mem": "input",
+            "i_pc2": "input",
+            "i_sel": "input",
+            "o_data": "output"
+          },
+          "connections": {
+            "i_alu": [ 10 ],
+            "i_mem": [ 26 ],
+            "i_pc2": [ 42 ],
+            "i_sel": [ 2, 3 ],
+            "o_data": [ 58 ]
+          }
+        },
+        "g_wb_mux_bits[7].u_writeback_mux_1bit": {
+          "hide_name": 0,
+          "type": "writeback_mux_1bit",
+          "parameters": {
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "reconf/writeback_mux/rtl/writeback_mux.v:21.32-27.14"
+          },
+          "port_directions": {
+            "i_alu": "input",
+            "i_mem": "input",
+            "i_pc2": "input",
+            "i_sel": "input",
+            "o_data": "output"
+          },
+          "connections": {
+            "i_alu": [ 11 ],
+            "i_mem": [ 27 ],
+            "i_pc2": [ 43 ],
+            "i_sel": [ 2, 3 ],
+            "o_data": [ 59 ]
+          }
+        },
+        "g_wb_mux_bits[8].u_writeback_mux_1bit": {
+          "hide_name": 0,
+          "type": "writeback_mux_1bit",
+          "parameters": {
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "reconf/writeback_mux/rtl/writeback_mux.v:21.32-27.14"
+          },
+          "port_directions": {
+            "i_alu": "input",
+            "i_mem": "input",
+            "i_pc2": "input",
+            "i_sel": "input",
+            "o_data": "output"
+          },
+          "connections": {
+            "i_alu": [ 12 ],
+            "i_mem": [ 28 ],
+            "i_pc2": [ 44 ],
+            "i_sel": [ 2, 3 ],
+            "o_data": [ 60 ]
+          }
+        },
+        "g_wb_mux_bits[9].u_writeback_mux_1bit": {
+          "hide_name": 0,
+          "type": "writeback_mux_1bit",
+          "parameters": {
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "reconf/writeback_mux/rtl/writeback_mux.v:21.32-27.14"
+          },
+          "port_directions": {
+            "i_alu": "input",
+            "i_mem": "input",
+            "i_pc2": "input",
+            "i_sel": "input",
+            "o_data": "output"
+          },
+          "connections": {
+            "i_alu": [ 13 ],
+            "i_mem": [ 29 ],
+            "i_pc2": [ 45 ],
+            "i_sel": [ 2, 3 ],
+            "o_data": [ 61 ]
+          }
+        }
+      },
+      "netnames": {
+        "i_alu_res": {
+          "hide_name": 0,
+          "bits": [ 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19 ],
+          "attributes": {
+            "src": "reconf/writeback_mux/rtl/writeback_mux.v:4.24-4.33"
+          }
+        },
+        "i_is_jump": {
+          "hide_name": 0,
+          "bits": [ 3 ],
+          "attributes": {
+            "src": "reconf/writeback_mux/rtl/writeback_mux.v:3.24-3.33"
+          }
+        },
+        "i_mem_res": {
+          "hide_name": 0,
+          "bits": [ 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35 ],
+          "attributes": {
+            "src": "reconf/writeback_mux/rtl/writeback_mux.v:5.24-5.33"
+          }
+        },
+        "i_mem_to_reg": {
+          "hide_name": 0,
+          "bits": [ 2 ],
+          "attributes": {
+            "src": "reconf/writeback_mux/rtl/writeback_mux.v:2.24-2.36"
+          }
+        },
+        "i_pc_plus_2": {
+          "hide_name": 0,
+          "bits": [ 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51 ],
+          "attributes": {
+            "src": "reconf/writeback_mux/rtl/writeback_mux.v:6.24-6.35"
+          }
+        },
+        "o_write_data": {
+          "hide_name": 0,
+          "bits": [ 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67 ],
+          "attributes": {
+            "src": "reconf/writeback_mux/rtl/writeback_mux.v:7.24-7.36"
+          }
+        },
+        "w_sel": {
+          "hide_name": 0,
+          "bits": [ 2, 3 ],
+          "attributes": {
+            "src": "reconf/writeback_mux/rtl/writeback_mux.v:11.16-11.21"
+          }
+        }
+      }
+    },
+    "writeback_mux_1bit": {
+      "attributes": {
+        "src": "reconf/writeback_mux/rtl/writeback_mux_1bit.v:1.1-14.10"
+      },
+      "ports": {
+        "i_sel": {
+          "direction": "input",
+          "bits": [ 2, 3 ]
+        },
+        "i_alu": {
+          "direction": "input",
+          "bits": [ 4 ]
+        },
+        "i_mem": {
+          "direction": "input",
+          "bits": [ 5 ]
+        },
+        "i_pc2": {
+          "direction": "input",
+          "bits": [ 6 ]
+        },
+        "o_data": {
+          "direction": "output",
+          "bits": [ 7 ]
+        }
+      },
+      "cells": {
+        "$auto$simplemap.cc:106:simplemap_bitop$82": {
+          "hide_name": 1,
+          "type": "$_XOR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/writeback_mux/rtl/writeback_mux_1bit.v:10.22-10.36"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 2 ],
+            "B": [ "1" ],
+            "Y": [ 8 ]
+          }
+        },
+        "$auto$simplemap.cc:106:simplemap_bitop$83": {
+          "hide_name": 1,
+          "type": "$_XOR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/writeback_mux/rtl/writeback_mux_1bit.v:10.22-10.36"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 3 ],
+            "B": [ "0" ],
+            "Y": [ 9 ]
+          }
+        },
+        "$auto$simplemap.cc:106:simplemap_bitop$92": {
+          "hide_name": 1,
+          "type": "$_XOR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/writeback_mux/rtl/writeback_mux_1bit.v:11.22-11.36"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 2 ],
+            "B": [ "0" ],
+            "Y": [ 10 ]
+          }
+        },
+        "$auto$simplemap.cc:106:simplemap_bitop$93": {
+          "hide_name": 1,
+          "type": "$_XOR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/writeback_mux/rtl/writeback_mux_1bit.v:11.22-11.36"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 3 ],
+            "B": [ "1" ],
+            "Y": [ 11 ]
+          }
+        },
+        "$auto$simplemap.cc:157:simplemap_reduce$87": {
+          "hide_name": 1,
+          "type": "$_OR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/writeback_mux/rtl/writeback_mux_1bit.v:10.22-10.36"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 8 ],
+            "B": [ 9 ],
+            "Y": [ 12 ]
+          }
+        },
+        "$auto$simplemap.cc:157:simplemap_reduce$97": {
+          "hide_name": 1,
+          "type": "$_OR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/writeback_mux/rtl/writeback_mux_1bit.v:11.22-11.36"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 10 ],
+            "B": [ 11 ],
+            "Y": [ 13 ]
+          }
+        },
+        "$auto$simplemap.cc:227:simplemap_lognot$89": {
+          "hide_name": 1,
+          "type": "$_NOT_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/writeback_mux/rtl/writeback_mux_1bit.v:10.22-10.36"
+          },
+          "port_directions": {
+            "A": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 12 ],
+            "Y": [ 14 ]
+          }
+        },
+        "$auto$simplemap.cc:227:simplemap_lognot$99": {
+          "hide_name": 1,
+          "type": "$_NOT_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/writeback_mux/rtl/writeback_mux_1bit.v:11.22-11.36"
+          },
+          "port_directions": {
+            "A": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 13 ],
+            "Y": [ 15 ]
+          }
+        },
+        "$auto$simplemap.cc:298:simplemap_mux$100": {
+          "hide_name": 1,
+          "type": "$_MUX_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/writeback_mux/rtl/writeback_mux_1bit.v:11.21-12.45"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 4 ],
+            "B": [ 6 ],
+            "S": [ 15 ],
+            "Y": [ 16 ]
+          }
+        },
+        "$auto$simplemap.cc:298:simplemap_mux$101": {
+          "hide_name": 1,
+          "type": "$_MUX_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/writeback_mux/rtl/writeback_mux_1bit.v:10.21-12.45"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 16 ],
+            "B": [ 5 ],
+            "S": [ 14 ],
+            "Y": [ 7 ]
+          }
+        }
+      },
+      "netnames": {
+        "$auto$simplemap.cc:271:simplemap_eqne$80": {
+          "hide_name": 1,
+          "bits": [ 8, 9 ],
+          "attributes": {
+          }
+        },
+        "$auto$simplemap.cc:271:simplemap_eqne$90": {
+          "hide_name": 1,
+          "bits": [ 10, 11 ],
+          "attributes": {
+          }
+        },
+        "$auto$simplemap.cc:277:simplemap_eqne$84": {
+          "hide_name": 1,
+          "bits": [ 12 ],
+          "attributes": {
+          }
+        },
+        "$auto$simplemap.cc:277:simplemap_eqne$94": {
+          "hide_name": 1,
+          "bits": [ 13 ],
+          "attributes": {
+          }
+        },
+        "$eq$reconf/writeback_mux/rtl/writeback_mux_1bit.v:10$1_Y": {
+          "hide_name": 1,
+          "bits": [ 14 ],
+          "attributes": {
+            "src": "reconf/writeback_mux/rtl/writeback_mux_1bit.v:10.22-10.36"
+          }
+        },
+        "$eq$reconf/writeback_mux/rtl/writeback_mux_1bit.v:11$2_Y": {
+          "hide_name": 1,
+          "bits": [ 15 ],
+          "attributes": {
+            "src": "reconf/writeback_mux/rtl/writeback_mux_1bit.v:11.22-11.36"
+          }
+        },
+        "$ternary$reconf/writeback_mux/rtl/writeback_mux_1bit.v:11$3_Y": {
+          "hide_name": 1,
+          "bits": [ 16 ],
+          "attributes": {
+            "src": "reconf/writeback_mux/rtl/writeback_mux_1bit.v:11.21-12.45"
+          }
+        },
+        "i_alu": {
+          "hide_name": 0,
+          "bits": [ 4 ],
+          "attributes": {
+            "src": "reconf/writeback_mux/rtl/writeback_mux_1bit.v:3.23-3.28"
+          }
+        },
+        "i_mem": {
+          "hide_name": 0,
+          "bits": [ 5 ],
+          "attributes": {
+            "src": "reconf/writeback_mux/rtl/writeback_mux_1bit.v:4.23-4.28"
+          }
+        },
+        "i_pc2": {
+          "hide_name": 0,
+          "bits": [ 6 ],
+          "attributes": {
+            "src": "reconf/writeback_mux/rtl/writeback_mux_1bit.v:5.23-5.28"
+          }
+        },
+        "i_sel": {
+          "hide_name": 0,
+          "bits": [ 2, 3 ],
+          "attributes": {
+            "src": "reconf/writeback_mux/rtl/writeback_mux_1bit.v:2.23-2.28"
+          }
+        },
+        "o_data": {
+          "hide_name": 0,
+          "bits": [ 7 ],
+          "attributes": {
+            "src": "reconf/writeback_mux/rtl/writeback_mux_1bit.v:6.23-6.29"
+          }
+        }
+      }
+    }
+  }
+}

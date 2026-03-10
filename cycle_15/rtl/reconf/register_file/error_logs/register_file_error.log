@@ -1,0 +1,19 @@
+
+=== ログ 2026-02-24 17:10:27 ===
+=== RTL Compile (All Files) ===
+
+reconf/register_file/rtl/register_file.v:41: error: expression not valid in assign l-value: ((p)==('sd0))?(o_rs1_data):(o_rs2_data)
+reconf/register_file/rtl/register_file.v:41: error: Output port expression must support a continuous assignment.
+reconf/register_file/rtl/register_file.v:41:      : Port 3 (o_data) of register_file_read_mux_16to1 is connected to register_file.gen_read_ports[0].((p)==('sd0))?(o_rs1_data):(o_rs2_data)
+reconf/register_file/rtl/register_file.v:41: error: expression not valid in assign l-value: ((p)==('sd0))?(o_rs1_data):(o_rs2_data)
+reconf/register_file/rtl/register_file.v:41: error: Output port expression must support a continuous assignment.
+reconf/register_file/rtl/register_file.v:41:      : Port 3 (o_data) of register_file_read_mux_16to1 is connected to register_file.gen_read_ports[1].((p)==('sd0))?(o_rs1_data):(o_rs2_data)
+2 error(s) during elaboration.
+
+==================================================
+
+=== ログ 2026-02-24 17:10:55 ===
+=== RTL Compile (All Files) ===
+
+
+==================================================

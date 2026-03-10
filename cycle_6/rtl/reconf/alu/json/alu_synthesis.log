@@ -1,0 +1,378 @@
+
+ /----------------------------------------------------------------------------\
+ |  yosys -- Yosys Open SYnthesis Suite                                       |
+ |  Copyright (C) 2012 - 2026  Claire Xenia Wolf <claire@yosyshq.com>         |
+ |  Distributed under an ISC-like license, type "license" to see terms        |
+ \----------------------------------------------------------------------------/
+ Yosys 0.61+112 (git sha1 ac427a79b, clang++ 18.1.8 -fPIC -O3)
+
+-- Executing script file `reconf/alu/json/alu.ys' --
+
+1. Executing Verilog-2005 frontend: reconf/alu/rtl/alu.v
+Parsing Verilog input from `reconf/alu/rtl/alu.v' to AST representation.
+Generating RTLIL representation for module `\alu'.
+Successfully finished Verilog frontend.
+
+2. Executing Verilog-2005 frontend: reconf/alu/rtl/alu_shifter_16bit.v
+Parsing Verilog input from `reconf/alu/rtl/alu_shifter_16bit.v' to AST representation.
+Generating RTLIL representation for module `\alu_shifter_16bit'.
+Successfully finished Verilog frontend.
+
+3. Executing Verilog-2005 frontend: reconf/alu/rtl/alu_full_adder.v
+Parsing Verilog input from `reconf/alu/rtl/alu_full_adder.v' to AST representation.
+Generating RTLIL representation for module `\alu_full_adder'.
+Successfully finished Verilog frontend.
+
+4. Executing Verilog-2005 frontend: reconf/alu/rtl/alu_flag_gen.v
+Parsing Verilog input from `reconf/alu/rtl/alu_flag_gen.v' to AST representation.
+Generating RTLIL representation for module `\alu_flag_gen'.
+Successfully finished Verilog frontend.
+
+5. Executing Verilog-2005 frontend: reconf/alu/rtl/alu_adder_subtractor_16bit.v
+Parsing Verilog input from `reconf/alu/rtl/alu_adder_subtractor_16bit.v' to AST representation.
+Generating RTLIL representation for module `\alu_adder_subtractor_16bit'.
+Successfully finished Verilog frontend.
+
+6. Executing Verilog-2005 frontend: reconf/alu/rtl/alu_mux_result.v
+Parsing Verilog input from `reconf/alu/rtl/alu_mux_result.v' to AST representation.
+Generating RTLIL representation for module `\alu_mux_result'.
+Successfully finished Verilog frontend.
+
+7. Executing Verilog-2005 frontend: reconf/alu/rtl/alu_logic_unit_16bit.v
+Parsing Verilog input from `reconf/alu/rtl/alu_logic_unit_16bit.v' to AST representation.
+Generating RTLIL representation for module `\alu_logic_unit_16bit'.
+Successfully finished Verilog frontend.
+
+8. Executing Verilog-2005 frontend: reconf/alu/rtl/alu_bit_logic.v
+Parsing Verilog input from `reconf/alu/rtl/alu_bit_logic.v' to AST representation.
+Generating RTLIL representation for module `\alu_bit_logic'.
+Successfully finished Verilog frontend.
+
+9. Executing HIERARCHY pass (managing design hierarchy).
+
+9.1. Analyzing design hierarchy..
+Top module:  \alu
+Used module:     \alu_flag_gen
+Used module:     \alu_mux_result
+Used module:     \alu_shifter_16bit
+Used module:     \alu_logic_unit_16bit
+Used module:         \alu_bit_logic
+Used module:     \alu_adder_subtractor_16bit
+Used module:         \alu_full_adder
+
+9.2. Analyzing design hierarchy..
+Top module:  \alu
+Used module:     \alu_flag_gen
+Used module:     \alu_mux_result
+Used module:     \alu_shifter_16bit
+Used module:     \alu_logic_unit_16bit
+Used module:         \alu_bit_logic
+Used module:     \alu_adder_subtractor_16bit
+Used module:         \alu_full_adder
+Removed 0 unused modules.
+
+10. Executing PROC pass (convert processes to netlists).
+
+10.1. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Cleaned up 0 empty switches.
+
+10.2. Executing PROC_RMDEAD pass (remove dead branches from decision trees).
+Removed a total of 0 dead cases.
+
+10.3. Executing PROC_PRUNE pass (remove redundant assignments in processes).
+Removed 0 redundant assignments.
+Promoted 0 assignments to connections.
+
+10.4. Executing PROC_INIT pass (extract init attributes).
+
+10.5. Executing PROC_ARST pass (detect async resets in processes).
+
+10.6. Executing PROC_ROM pass (convert switches to ROMs).
+Converted 0 switches.
+
+10.7. Executing PROC_MUX pass (convert decision trees to multiplexers).
+
+10.8. Executing PROC_DLATCH pass (convert process syncs to latches).
+
+10.9. Executing PROC_DFF pass (convert process syncs to FFs).
+
+10.10. Executing PROC_MEMWR pass (convert process memory writes to cells).
+
+10.11. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Cleaned up 0 empty switches.
+
+10.12. Executing OPT_EXPR pass (perform const folding).
+Optimizing module alu_bit_logic.
+Optimizing module alu_logic_unit_16bit.
+Optimizing module alu_mux_result.
+<suppressed ~1 debug messages>
+Optimizing module alu_adder_subtractor_16bit.
+<suppressed ~1 debug messages>
+Optimizing module alu_flag_gen.
+Optimizing module alu_full_adder.
+Optimizing module alu_shifter_16bit.
+<suppressed ~2 debug messages>
+Optimizing module alu.
+
+11. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \alu_bit_logic..
+Finding unused cells or wires in module \alu_logic_unit_16bit..
+Finding unused cells or wires in module \alu_mux_result..
+Finding unused cells or wires in module \alu_adder_subtractor_16bit..
+Finding unused cells or wires in module \alu_flag_gen..
+Finding unused cells or wires in module \alu_full_adder..
+Finding unused cells or wires in module \alu_shifter_16bit..
+Finding unused cells or wires in module \alu..
+Removed 2 unused cells and 12 unused wires.
+<suppressed ~8 debug messages>
+
+12. Executing TECHMAP pass (map to technology primitives).
+
+12.1. Executing Verilog-2005 frontend: /opt/oss-cad-suite/lib/../share/yosys/techmap.v
+Parsing Verilog input from `/opt/oss-cad-suite/lib/../share/yosys/techmap.v' to AST representation.
+Generating RTLIL representation for module `\_90_simplemap_bool_ops'.
+Generating RTLIL representation for module `\_90_simplemap_reduce_ops'.
+Generating RTLIL representation for module `\_90_simplemap_logic_ops'.
+Generating RTLIL representation for module `\_90_simplemap_compare_ops'.
+Generating RTLIL representation for module `\_90_simplemap_various'.
+Generating RTLIL representation for module `\_90_simplemap_registers'.
+Generating RTLIL representation for module `\_90_shift_ops_shr_shl_sshl_sshr'.
+Generating RTLIL representation for module `\_90_shift_shiftx'.
+Generating RTLIL representation for module `\_90_fa'.
+Generating RTLIL representation for module `\_90_lcu_brent_kung'.
+Generating RTLIL representation for module `\_90_alu'.
+Generating RTLIL representation for module `\_90_macc'.
+Generating RTLIL representation for module `\_90_alumacc'.
+Generating RTLIL representation for module `$__div_mod_u'.
+Generating RTLIL representation for module `$__div_mod_trunc'.
+Generating RTLIL representation for module `\_90_div'.
+Generating RTLIL representation for module `\_90_mod'.
+Generating RTLIL representation for module `$__div_mod_floor'.
+Generating RTLIL representation for module `\_90_divfloor'.
+Generating RTLIL representation for module `\_90_modfloor'.
+Generating RTLIL representation for module `\_90_pow'.
+Generating RTLIL representation for module `\_90_pmux'.
+Generating RTLIL representation for module `\_90_demux'.
+Generating RTLIL representation for module `\_90_lut'.
+Generating RTLIL representation for module `$connect'.
+Generating RTLIL representation for module `$input_port'.
+Successfully finished Verilog frontend.
+
+12.2. Continuing TECHMAP pass.
+Using template $paramod$constmap:00a5b8c078faac2d9dcf7d1311e85cfd31359fcf$paramod$8a12a9b73c8be786cf67ebac28abcbbf644a3888\_90_shift_ops_shr_shl_sshl_sshr for cells of type $sshr.
+Using template $paramod$constmap:00a5b8c078faac2d9dcf7d1311e85cfd31359fcf$paramod$b1f8e9a58fee383a65180922397f7058048191fe\_90_shift_ops_shr_shl_sshl_sshr for cells of type $shl.
+Using extmapper simplemap for cells of type $logic_not.
+Using extmapper simplemap for cells of type $eq.
+Using extmapper simplemap for cells of type $logic_or.
+Using extmapper simplemap for cells of type $xor.
+Using extmapper simplemap for cells of type $and.
+Using extmapper simplemap for cells of type $or.
+Using extmapper simplemap for cells of type $reduce_or.
+Using extmapper simplemap for cells of type $not.
+Using extmapper simplemap for cells of type $ne.
+Using extmapper simplemap for cells of type $logic_and.
+No more expansions possible.
+<suppressed ~588 debug messages>
+
+13. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \alu..
+Finding unused cells or wires in module \alu_adder_subtractor_16bit..
+Finding unused cells or wires in module \alu_bit_logic..
+Finding unused cells or wires in module \alu_flag_gen..
+Finding unused cells or wires in module \alu_full_adder..
+Finding unused cells or wires in module \alu_logic_unit_16bit..
+Finding unused cells or wires in module \alu_mux_result..
+Finding unused cells or wires in module \alu_shifter_16bit..
+Removed 0 unused cells and 30 unused wires.
+<suppressed ~5 debug messages>
+
+14. Executing HIERARCHY pass (managing design hierarchy).
+Attribute `top' found on module `alu'. Setting top module to alu.
+
+14.1. Analyzing design hierarchy..
+Top module:  \alu
+Used module:     \alu_adder_subtractor_16bit
+Used module:         \alu_full_adder
+Used module:     \alu_flag_gen
+Used module:     \alu_logic_unit_16bit
+Used module:         \alu_bit_logic
+Used module:     \alu_mux_result
+Used module:     \alu_shifter_16bit
+
+14.2. Analyzing design hierarchy..
+Top module:  \alu
+Used module:     \alu_adder_subtractor_16bit
+Used module:         \alu_full_adder
+Used module:     \alu_flag_gen
+Used module:     \alu_logic_unit_16bit
+Used module:         \alu_bit_logic
+Used module:     \alu_mux_result
+Used module:     \alu_shifter_16bit
+Removed 0 unused modules.
+
+15. Printing statistics.
+
+=== alu ===
+
+        +----------Local Count, excluding submodules.
+        | 
+       11 wires
+      104 wire bits
+       11 public wires
+      104 public wire bits
+        7 ports
+       55 port bits
+        5 submodules
+        1   alu_adder_subtractor_16bit
+        1   alu_flag_gen
+        1   alu_logic_unit_16bit
+        1   alu_mux_result
+        1   alu_shifter_16bit
+
+=== alu_adder_subtractor_16bit ===
+
+        +----------Local Count, excluding submodules.
+        | 
+       14 wires
+       90 wire bits
+        7 public wires
+       83 public wire bits
+        5 ports
+       50 port bits
+       24 cells
+        2   $_AND_
+        1   $_MUX_
+        1   $_NOT_
+       20   $_XOR_
+       16 submodules
+       16   alu_full_adder
+
+=== alu_bit_logic ===
+
+        +----------Local Count, excluding submodules.
+        | 
+       27 wires
+       37 wire bits
+        4 public wires
+        6 public wire bits
+        4 ports
+        6 port bits
+       32 cells
+        1   $_AND_
+        4   $_MUX_
+        5   $_NOT_
+        9   $_OR_
+       13   $_XOR_
+
+=== alu_flag_gen ===
+
+        +----------Local Count, excluding submodules.
+        | 
+        9 wires
+       35 wire bits
+        5 public wires
+       20 public wire bits
+        5 ports
+       20 port bits
+       16 cells
+        1   $_NOT_
+       15   $_OR_
+
+=== alu_full_adder ===
+
+        +----------Local Count, excluding submodules.
+        | 
+       10 wires
+       10 wire bits
+        5 public wires
+        5 public wire bits
+        5 ports
+        5 port bits
+        7 cells
+        3   $_AND_
+        2   $_OR_
+        2   $_XOR_
+
+=== alu_logic_unit_16bit ===
+
+        +----------Local Count, excluding submodules.
+        | 
+        4 wires
+       51 wire bits
+        4 public wires
+       51 public wire bits
+        4 ports
+       51 port bits
+       16 submodules
+       16   alu_bit_logic
+
+=== alu_mux_result ===
+
+        +----------Local Count, excluding submodules.
+        | 
+       64 wires
+      232 wire bits
+        6 public wires
+       84 public wire bits
+        6 ports
+       84 port bits
+      164 cells
+       64   $_MUX_
+       12   $_NOT_
+       44   $_OR_
+       44   $_XOR_
+
+=== alu_shifter_16bit ===
+
+        +----------Local Count, excluding submodules.
+        | 
+       14 wires
+      197 wire bits
+        7 public wires
+       85 public wire bits
+        4 ports
+       49 port bits
+      140 cells
+      140   $_MUX_
+
+=== design hierarchy ===
+
+        +----------Count including submodules.
+        | 
+      968 alu
+       24 alu_adder_subtractor_16bit
+        7   alu_full_adder
+       16 alu_flag_gen
+       32   alu_bit_logic
+      164 alu_mux_result
+      140 alu_shifter_16bit
+
+        +----------Count including submodules.
+        | 
+      708 wires
+     1461 wire bits
+      184 public wires
+      603 public wire bits
+      175 ports
+      485 port bits
+        - memories
+        - memory bits
+        - processes
+      968 cells
+       66   $_AND_
+      269   $_MUX_
+       94   $_NOT_
+      235   $_OR_
+      304   $_XOR_
+        5 submodules
+        1   alu_adder_subtractor_16bit
+        1   alu_flag_gen
+        1   alu_logic_unit_16bit
+        1   alu_mux_result
+        1   alu_shifter_16bit
+
+16. Executing JSON backend.
+
+End of script. Logfile hash: badff084a4, CPU: user 0.04s system 0.00s, MEM: 16.41 MB peak
+Yosys 0.61+112 (git sha1 ac427a79b, clang++ 18.1.8 -fPIC -O3)
+Time spent: 30% 17x read_verilog (0 sec), 17% 1x techmap (0 sec), ...

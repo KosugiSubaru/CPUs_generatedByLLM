@@ -1,0 +1,530 @@
+{
+  "creator": "Yosys 0.61+112 (git sha1 ac427a79b, clang++ 18.1.8 -fPIC -O3)",
+  "modules": {
+    "control_unit_decoder_2to4": {
+      "attributes": {
+        "src": "reconf/control_unit/rtl/control_unit_decoder_2to4.v:1.1-14.10"
+      },
+      "ports": {
+        "i_sel": {
+          "direction": "input",
+          "bits": [ 2, 3 ]
+        },
+        "i_en": {
+          "direction": "input",
+          "bits": [ 4 ]
+        },
+        "o_out": {
+          "direction": "output",
+          "bits": [ 5, 6, 7, 8 ]
+        }
+      },
+      "cells": {
+        "$auto$simplemap.cc:106:simplemap_bitop$121": {
+          "hide_name": 1,
+          "type": "$_AND_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/control_unit/rtl/control_unit_decoder_2to4.v:9.31-9.52"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 9 ],
+            "B": [ 10 ],
+            "Y": [ 11 ]
+          }
+        },
+        "$auto$simplemap.cc:106:simplemap_bitop$122": {
+          "hide_name": 1,
+          "type": "$_AND_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/control_unit/rtl/control_unit_decoder_2to4.v:9.23-9.53"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 4 ],
+            "B": [ 11 ],
+            "Y": [ 5 ]
+          }
+        },
+        "$auto$simplemap.cc:106:simplemap_bitop$124": {
+          "hide_name": 1,
+          "type": "$_AND_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/control_unit/rtl/control_unit_decoder_2to4.v:10.31-10.52"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 12 ],
+            "B": [ 2 ],
+            "Y": [ 13 ]
+          }
+        },
+        "$auto$simplemap.cc:106:simplemap_bitop$125": {
+          "hide_name": 1,
+          "type": "$_AND_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/control_unit/rtl/control_unit_decoder_2to4.v:10.23-10.53"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 4 ],
+            "B": [ 13 ],
+            "Y": [ 6 ]
+          }
+        },
+        "$auto$simplemap.cc:106:simplemap_bitop$127": {
+          "hide_name": 1,
+          "type": "$_AND_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/control_unit/rtl/control_unit_decoder_2to4.v:11.32-11.52"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 3 ],
+            "B": [ 14 ],
+            "Y": [ 15 ]
+          }
+        },
+        "$auto$simplemap.cc:106:simplemap_bitop$128": {
+          "hide_name": 1,
+          "type": "$_AND_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/control_unit/rtl/control_unit_decoder_2to4.v:11.23-11.53"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 4 ],
+            "B": [ 15 ],
+            "Y": [ 7 ]
+          }
+        },
+        "$auto$simplemap.cc:106:simplemap_bitop$129": {
+          "hide_name": 1,
+          "type": "$_AND_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/control_unit/rtl/control_unit_decoder_2to4.v:12.32-12.52"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 3 ],
+            "B": [ 2 ],
+            "Y": [ 16 ]
+          }
+        },
+        "$auto$simplemap.cc:106:simplemap_bitop$130": {
+          "hide_name": 1,
+          "type": "$_AND_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/control_unit/rtl/control_unit_decoder_2to4.v:12.23-12.53"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 4 ],
+            "B": [ 16 ],
+            "Y": [ 8 ]
+          }
+        },
+        "$auto$simplemap.cc:46:simplemap_not$119": {
+          "hide_name": 1,
+          "type": "$_NOT_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/control_unit/rtl/control_unit_decoder_2to4.v:9.31-9.40"
+          },
+          "port_directions": {
+            "A": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 3 ],
+            "Y": [ 9 ]
+          }
+        },
+        "$auto$simplemap.cc:46:simplemap_not$120": {
+          "hide_name": 1,
+          "type": "$_NOT_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/control_unit/rtl/control_unit_decoder_2to4.v:9.43-9.52"
+          },
+          "port_directions": {
+            "A": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 2 ],
+            "Y": [ 10 ]
+          }
+        },
+        "$auto$simplemap.cc:46:simplemap_not$123": {
+          "hide_name": 1,
+          "type": "$_NOT_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/control_unit/rtl/control_unit_decoder_2to4.v:10.31-10.40"
+          },
+          "port_directions": {
+            "A": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 3 ],
+            "Y": [ 12 ]
+          }
+        },
+        "$auto$simplemap.cc:46:simplemap_not$126": {
+          "hide_name": 1,
+          "type": "$_NOT_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/control_unit/rtl/control_unit_decoder_2to4.v:11.43-11.52"
+          },
+          "port_directions": {
+            "A": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 2 ],
+            "Y": [ 14 ]
+          }
+        }
+      },
+      "netnames": {
+        "$and$reconf/control_unit/rtl/control_unit_decoder_2to4.v:10$37_Y": {
+          "hide_name": 1,
+          "bits": [ 13 ],
+          "attributes": {
+            "src": "reconf/control_unit/rtl/control_unit_decoder_2to4.v:10.31-10.52"
+          }
+        },
+        "$and$reconf/control_unit/rtl/control_unit_decoder_2to4.v:11$40_Y": {
+          "hide_name": 1,
+          "bits": [ 15 ],
+          "attributes": {
+            "src": "reconf/control_unit/rtl/control_unit_decoder_2to4.v:11.32-11.52"
+          }
+        },
+        "$and$reconf/control_unit/rtl/control_unit_decoder_2to4.v:12$42_Y": {
+          "hide_name": 1,
+          "bits": [ 16 ],
+          "attributes": {
+            "src": "reconf/control_unit/rtl/control_unit_decoder_2to4.v:12.32-12.52"
+          }
+        },
+        "$and$reconf/control_unit/rtl/control_unit_decoder_2to4.v:9$34_Y": {
+          "hide_name": 1,
+          "bits": [ 11 ],
+          "attributes": {
+            "src": "reconf/control_unit/rtl/control_unit_decoder_2to4.v:9.31-9.52"
+          }
+        },
+        "$not$reconf/control_unit/rtl/control_unit_decoder_2to4.v:10$36_Y": {
+          "hide_name": 1,
+          "bits": [ 12 ],
+          "attributes": {
+            "src": "reconf/control_unit/rtl/control_unit_decoder_2to4.v:10.31-10.40"
+          }
+        },
+        "$not$reconf/control_unit/rtl/control_unit_decoder_2to4.v:11$39_Y": {
+          "hide_name": 1,
+          "bits": [ 14 ],
+          "attributes": {
+            "src": "reconf/control_unit/rtl/control_unit_decoder_2to4.v:11.43-11.52"
+          }
+        },
+        "$not$reconf/control_unit/rtl/control_unit_decoder_2to4.v:9$32_Y": {
+          "hide_name": 1,
+          "bits": [ 9 ],
+          "attributes": {
+            "src": "reconf/control_unit/rtl/control_unit_decoder_2to4.v:9.31-9.40"
+          }
+        },
+        "$not$reconf/control_unit/rtl/control_unit_decoder_2to4.v:9$33_Y": {
+          "hide_name": 1,
+          "bits": [ 10 ],
+          "attributes": {
+            "src": "reconf/control_unit/rtl/control_unit_decoder_2to4.v:9.43-9.52"
+          }
+        },
+        "i_en": {
+          "hide_name": 0,
+          "bits": [ 4 ],
+          "attributes": {
+            "src": "reconf/control_unit/rtl/control_unit_decoder_2to4.v:3.23-3.27"
+          }
+        },
+        "i_sel": {
+          "hide_name": 0,
+          "bits": [ 2, 3 ],
+          "attributes": {
+            "src": "reconf/control_unit/rtl/control_unit_decoder_2to4.v:2.23-2.28"
+          }
+        },
+        "o_out": {
+          "hide_name": 0,
+          "bits": [ 5, 6, 7, 8 ],
+          "attributes": {
+            "src": "reconf/control_unit/rtl/control_unit_decoder_2to4.v:4.23-4.28"
+          }
+        }
+      }
+    },
+    "control_unit_decoder_4to16": {
+      "attributes": {
+        "src": "reconf/control_unit/rtl/control_unit_decoder_4to16.v:1.1-29.10"
+      },
+      "ports": {
+        "i_opcode": {
+          "direction": "input",
+          "bits": [ 2, 3, 4, 5 ]
+        },
+        "i_en": {
+          "direction": "input",
+          "bits": [ 6 ]
+        },
+        "o_out": {
+          "direction": "output",
+          "bits": [ 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22 ]
+        }
+      },
+      "cells": {
+        "gen_decoders[0].u_dec_lower": {
+          "hide_name": 0,
+          "type": "control_unit_decoder_2to4",
+          "parameters": {
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "reconf/control_unit/rtl/control_unit_decoder_4to16.v:21.39-25.14"
+          },
+          "port_directions": {
+            "i_en": "input",
+            "i_sel": "input",
+            "o_out": "output"
+          },
+          "connections": {
+            "i_en": [ 23 ],
+            "i_sel": [ 2, 3 ],
+            "o_out": [ 7, 8, 9, 10 ]
+          }
+        },
+        "gen_decoders[1].u_dec_lower": {
+          "hide_name": 0,
+          "type": "control_unit_decoder_2to4",
+          "parameters": {
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "reconf/control_unit/rtl/control_unit_decoder_4to16.v:21.39-25.14"
+          },
+          "port_directions": {
+            "i_en": "input",
+            "i_sel": "input",
+            "o_out": "output"
+          },
+          "connections": {
+            "i_en": [ 24 ],
+            "i_sel": [ 2, 3 ],
+            "o_out": [ 11, 12, 13, 14 ]
+          }
+        },
+        "gen_decoders[2].u_dec_lower": {
+          "hide_name": 0,
+          "type": "control_unit_decoder_2to4",
+          "parameters": {
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "reconf/control_unit/rtl/control_unit_decoder_4to16.v:21.39-25.14"
+          },
+          "port_directions": {
+            "i_en": "input",
+            "i_sel": "input",
+            "o_out": "output"
+          },
+          "connections": {
+            "i_en": [ 25 ],
+            "i_sel": [ 2, 3 ],
+            "o_out": [ 15, 16, 17, 18 ]
+          }
+        },
+        "gen_decoders[3].u_dec_lower": {
+          "hide_name": 0,
+          "type": "control_unit_decoder_2to4",
+          "parameters": {
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "reconf/control_unit/rtl/control_unit_decoder_4to16.v:21.39-25.14"
+          },
+          "port_directions": {
+            "i_en": "input",
+            "i_sel": "input",
+            "o_out": "output"
+          },
+          "connections": {
+            "i_en": [ 26 ],
+            "i_sel": [ 2, 3 ],
+            "o_out": [ 19, 20, 21, 22 ]
+          }
+        },
+        "u_dec_upper": {
+          "hide_name": 0,
+          "type": "control_unit_decoder_2to4",
+          "parameters": {
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "reconf/control_unit/rtl/control_unit_decoder_4to16.v:11.31-15.6"
+          },
+          "port_directions": {
+            "i_en": "input",
+            "i_sel": "input",
+            "o_out": "output"
+          },
+          "connections": {
+            "i_en": [ 6 ],
+            "i_sel": [ 4, 5 ],
+            "o_out": [ 23, 24, 25, 26 ]
+          }
+        }
+      },
+      "netnames": {
+        "i_en": {
+          "hide_name": 0,
+          "bits": [ 6 ],
+          "attributes": {
+            "src": "reconf/control_unit/rtl/control_unit_decoder_4to16.v:3.24-3.28"
+          }
+        },
+        "i_opcode": {
+          "hide_name": 0,
+          "bits": [ 2, 3, 4, 5 ],
+          "attributes": {
+            "src": "reconf/control_unit/rtl/control_unit_decoder_4to16.v:2.24-2.32"
+          }
+        },
+        "o_out": {
+          "hide_name": 0,
+          "bits": [ 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22 ],
+          "attributes": {
+            "src": "reconf/control_unit/rtl/control_unit_decoder_4to16.v:4.24-4.29"
+          }
+        },
+        "w_enable_lines": {
+          "hide_name": 0,
+          "bits": [ 23, 24, 25, 26 ],
+          "attributes": {
+            "src": "reconf/control_unit/rtl/control_unit_decoder_4to16.v:7.16-7.30"
+          }
+        }
+      }
+    },
+    "control_unit_instruction_decoder": {
+      "attributes": {
+        "top": "00000000000000000000000000000001",
+        "src": "reconf/control_unit/rtl/control_unit_instruction_decoder.v:1.1-13.10"
+      },
+      "ports": {
+        "i_opcode": {
+          "direction": "input",
+          "bits": [ 2, 3, 4, 5 ]
+        },
+        "o_inst_onehot": {
+          "direction": "output",
+          "bits": [ 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21 ]
+        }
+      },
+      "cells": {
+        "u_decoder_logic": {
+          "hide_name": 0,
+          "type": "control_unit_decoder_4to16",
+          "parameters": {
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "reconf/control_unit/rtl/control_unit_instruction_decoder.v:7.32-11.6"
+          },
+          "port_directions": {
+            "i_en": "input",
+            "i_opcode": "input",
+            "o_out": "output"
+          },
+          "connections": {
+            "i_en": [ "1" ],
+            "i_opcode": [ 2, 3, 4, 5 ],
+            "o_out": [ 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21 ]
+          }
+        }
+      },
+      "netnames": {
+        "i_opcode": {
+          "hide_name": 0,
+          "bits": [ 2, 3, 4, 5 ],
+          "attributes": {
+            "src": "reconf/control_unit/rtl/control_unit_instruction_decoder.v:2.24-2.32"
+          }
+        },
+        "o_inst_onehot": {
+          "hide_name": 0,
+          "bits": [ 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21 ],
+          "attributes": {
+            "src": "reconf/control_unit/rtl/control_unit_instruction_decoder.v:3.24-3.37"
+          }
+        }
+      }
+    }
+  }
+}

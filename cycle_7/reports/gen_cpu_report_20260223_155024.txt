@@ -1,0 +1,59 @@
+
+============================================================
+CPU自動生成レポート
+============================================================
+生成日時: 2026-02-23 15:50:24
+
+生成成功モジュール (7個):
+
+  ✓ program_counter:
+    - program_counter_full_adder.v
+    - program_counter_mux_2to1_1bit.v
+    - program_counter_dff.v
+    - program_counter_adder_16bit.v
+    - program_counter_mux_2to1_16bit.v
+    - program_counter_reg_16bit.v
+    - program_counter.v
+  ✓ instruction_decoder:
+    - instruction_decoder_2to4.v
+    - instruction_decoder_op_selector.v
+    - instruction_decoder_control_logic.v
+    - instruction_decoder.v
+  ✓ register_file:
+    - register_file_dff_en.v
+    - register_file_mux_4to1_1bit.v
+    - register_file_decoder_2to4.v
+    - register_file_reg_16bit.v
+    - register_file_mux_16to1_1bit.v
+    - register_file_mux_16to1_16bit.v
+    - register_file_decoder_4to16.v
+    - register_file.v
+  ✓ imm_gen:
+    - imm_gen_bit_copy.v
+    - imm_gen_mux_4to1_1bit.v
+    - imm_gen_ext_4to16.v
+    - imm_gen_ext_8to16.v
+    - imm_gen_ext_12to16.v
+    - imm_gen_mux_4to1_16bit.v
+    - imm_gen.v
+  ✓ alu:
+    - alu_full_adder.v
+    - alu_mux_8to1_1bit.v
+    - alu_adder_subtractor_16bit.v
+    - alu_logic_unit_16bit.v
+    - alu_shifter_16bit.v
+    - alu_mux_8to1_16bit.v
+    - alu.v
+  ✓ flag_reg:
+    - flag_reg_dff.v
+    - flag_reg.v
+  ✓ pc_control:
+    - pc_control_gate_xor.v
+    - pc_control_mux_2to1.v
+    - pc_control_branch_evaluator.v
+    - pc_control_signal_combiner.v
+    - pc_control.v
+
+すべてのモジュールが正常に生成されました。
+
+============================================================

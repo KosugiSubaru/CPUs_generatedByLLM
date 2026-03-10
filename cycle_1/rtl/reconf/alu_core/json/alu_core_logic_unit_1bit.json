@@ -1,0 +1,157 @@
+{
+  "creator": "Yosys 0.61+112 (git sha1 ac427a79b, clang++ 18.1.8 -fPIC -O3)",
+  "modules": {
+    "alu_core_logic_unit_1bit": {
+      "attributes": {
+        "top": "00000000000000000000000000000001",
+        "src": "reconf/alu_core/rtl/alu_core_logic_unit_1bit.v:1.1-16.10"
+      },
+      "ports": {
+        "i_a": {
+          "direction": "input",
+          "bits": [ 2 ]
+        },
+        "i_b": {
+          "direction": "input",
+          "bits": [ 3 ]
+        },
+        "o_and": {
+          "direction": "output",
+          "bits": [ 4 ]
+        },
+        "o_or": {
+          "direction": "output",
+          "bits": [ 5 ]
+        },
+        "o_xor": {
+          "direction": "output",
+          "bits": [ 6 ]
+        },
+        "o_not": {
+          "direction": "output",
+          "bits": [ 7 ]
+        }
+      },
+      "cells": {
+        "$auto$simplemap.cc:106:simplemap_bitop$113": {
+          "hide_name": 1,
+          "type": "$_AND_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/alu_core/rtl/alu_core_logic_unit_1bit.v:11.20-11.29"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 2 ],
+            "B": [ 3 ],
+            "Y": [ 4 ]
+          }
+        },
+        "$auto$simplemap.cc:106:simplemap_bitop$114": {
+          "hide_name": 1,
+          "type": "$_OR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/alu_core/rtl/alu_core_logic_unit_1bit.v:12.20-12.29"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 2 ],
+            "B": [ 3 ],
+            "Y": [ 5 ]
+          }
+        },
+        "$auto$simplemap.cc:106:simplemap_bitop$115": {
+          "hide_name": 1,
+          "type": "$_XOR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/alu_core/rtl/alu_core_logic_unit_1bit.v:13.20-13.29"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 2 ],
+            "B": [ 3 ],
+            "Y": [ 6 ]
+          }
+        },
+        "$auto$simplemap.cc:46:simplemap_not$116": {
+          "hide_name": 1,
+          "type": "$_NOT_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/alu_core/rtl/alu_core_logic_unit_1bit.v:14.20-14.24"
+          },
+          "port_directions": {
+            "A": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 2 ],
+            "Y": [ 7 ]
+          }
+        }
+      },
+      "netnames": {
+        "i_a": {
+          "hide_name": 0,
+          "bits": [ 2 ],
+          "attributes": {
+            "src": "reconf/alu_core/rtl/alu_core_logic_unit_1bit.v:2.17-2.20"
+          }
+        },
+        "i_b": {
+          "hide_name": 0,
+          "bits": [ 3 ],
+          "attributes": {
+            "src": "reconf/alu_core/rtl/alu_core_logic_unit_1bit.v:3.17-3.20"
+          }
+        },
+        "o_and": {
+          "hide_name": 0,
+          "bits": [ 4 ],
+          "attributes": {
+            "src": "reconf/alu_core/rtl/alu_core_logic_unit_1bit.v:4.17-4.22"
+          }
+        },
+        "o_not": {
+          "hide_name": 0,
+          "bits": [ 7 ],
+          "attributes": {
+            "src": "reconf/alu_core/rtl/alu_core_logic_unit_1bit.v:7.17-7.22"
+          }
+        },
+        "o_or": {
+          "hide_name": 0,
+          "bits": [ 5 ],
+          "attributes": {
+            "src": "reconf/alu_core/rtl/alu_core_logic_unit_1bit.v:5.17-5.21"
+          }
+        },
+        "o_xor": {
+          "hide_name": 0,
+          "bits": [ 6 ],
+          "attributes": {
+            "src": "reconf/alu_core/rtl/alu_core_logic_unit_1bit.v:6.17-6.22"
+          }
+        }
+      }
+    }
+  }
+}

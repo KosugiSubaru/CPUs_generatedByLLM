@@ -1,0 +1,72 @@
+{
+  "creator": "Yosys 0.61+112 (git sha1 ac427a79b, clang++ 18.1.8 -fPIC -O3)",
+  "modules": {
+    "control_unit_writeback_selector": {
+      "attributes": {
+        "top": "00000000000000000000000000000001",
+        "src": "reconf/control_unit/rtl/control_unit_writeback_selector.v:1.1-25.10"
+      },
+      "ports": {
+        "i_onehot": {
+          "direction": "input",
+          "bits": [ 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17 ]
+        },
+        "o_wb_sel": {
+          "direction": "output",
+          "bits": [ 12, 18 ]
+        }
+      },
+      "cells": {
+        "$auto$simplemap.cc:106:simplemap_bitop$121": {
+          "hide_name": 1,
+          "type": "$_OR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/control_unit/rtl/control_unit_writeback_selector.v:16.28-16.55"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 16 ],
+            "B": [ 17 ],
+            "Y": [ 18 ]
+          }
+        }
+      },
+      "netnames": {
+        "i_onehot": {
+          "hide_name": 0,
+          "bits": [ 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17 ],
+          "attributes": {
+            "src": "reconf/control_unit/rtl/control_unit_writeback_selector.v:2.24-2.32"
+          }
+        },
+        "o_wb_sel": {
+          "hide_name": 0,
+          "bits": [ 12, 18 ],
+          "attributes": {
+            "src": "reconf/control_unit/rtl/control_unit_writeback_selector.v:3.24-3.32"
+          }
+        },
+        "w_sel_mem": {
+          "hide_name": 0,
+          "bits": [ 12 ],
+          "attributes": {
+            "src": "reconf/control_unit/rtl/control_unit_writeback_selector.v:9.10-9.19"
+          }
+        },
+        "w_sel_pc_link": {
+          "hide_name": 0,
+          "bits": [ 18 ],
+          "attributes": {
+            "src": "reconf/control_unit/rtl/control_unit_writeback_selector.v:10.10-10.23"
+          }
+        }
+      }
+    }
+  }
+}

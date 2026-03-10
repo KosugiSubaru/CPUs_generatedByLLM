@@ -1,0 +1,1813 @@
+
+ /----------------------------------------------------------------------------\
+ |  yosys -- Yosys Open SYnthesis Suite                                       |
+ |  Copyright (C) 2012 - 2026  Claire Xenia Wolf <claire@yosyshq.com>         |
+ |  Distributed under an ISC-like license, type "license" to see terms        |
+ \----------------------------------------------------------------------------/
+ Yosys 0.61+112 (git sha1 ac427a79b, clang++ 18.1.8 -fPIC -O3)
+
+-- Executing script file `reconf/cpu/json/cpu.ys' --
+
+1. Executing Verilog-2005 frontend: reconf/program_counter/rtl/program_counter_half_adder.v
+Parsing Verilog input from `reconf/program_counter/rtl/program_counter_half_adder.v' to AST representation.
+Generating RTLIL representation for module `\program_counter_half_adder'.
+Successfully finished Verilog frontend.
+
+2. Executing Verilog-2005 frontend: reconf/program_counter/rtl/program_counter_full_adder.v
+Parsing Verilog input from `reconf/program_counter/rtl/program_counter_full_adder.v' to AST representation.
+Generating RTLIL representation for module `\program_counter_full_adder'.
+Successfully finished Verilog frontend.
+
+3. Executing Verilog-2005 frontend: reconf/program_counter/rtl/program_counter_mux_4to1_16bit.v
+Parsing Verilog input from `reconf/program_counter/rtl/program_counter_mux_4to1_16bit.v' to AST representation.
+Generating RTLIL representation for module `\program_counter_mux_4to1_16bit'.
+Successfully finished Verilog frontend.
+
+4. Executing Verilog-2005 frontend: reconf/program_counter/rtl/program_counter_mux_4to1_1bit.v
+Parsing Verilog input from `reconf/program_counter/rtl/program_counter_mux_4to1_1bit.v' to AST representation.
+Generating RTLIL representation for module `\program_counter_mux_4to1_1bit'.
+Successfully finished Verilog frontend.
+
+5. Executing Verilog-2005 frontend: reconf/program_counter/rtl/program_counter_reg.v
+Parsing Verilog input from `reconf/program_counter/rtl/program_counter_reg.v' to AST representation.
+Generating RTLIL representation for module `\program_counter_reg'.
+Successfully finished Verilog frontend.
+
+6. Executing Verilog-2005 frontend: reconf/program_counter/rtl/program_counter_bit.v
+Parsing Verilog input from `reconf/program_counter/rtl/program_counter_bit.v' to AST representation.
+Generating RTLIL representation for module `\program_counter_bit'.
+Successfully finished Verilog frontend.
+
+7. Executing Verilog-2005 frontend: reconf/program_counter/rtl/program_counter.v
+Parsing Verilog input from `reconf/program_counter/rtl/program_counter.v' to AST representation.
+Generating RTLIL representation for module `\program_counter'.
+Successfully finished Verilog frontend.
+
+8. Executing Verilog-2005 frontend: reconf/program_counter/rtl/program_counter_adder_16bit.v
+Parsing Verilog input from `reconf/program_counter/rtl/program_counter_adder_16bit.v' to AST representation.
+Generating RTLIL representation for module `\program_counter_adder_16bit'.
+Successfully finished Verilog frontend.
+
+9. Executing Verilog-2005 frontend: reconf/program_counter/rtl/program_counter_control.v
+Parsing Verilog input from `reconf/program_counter/rtl/program_counter_control.v' to AST representation.
+Generating RTLIL representation for module `\program_counter_control'.
+Successfully finished Verilog frontend.
+
+10. Executing Verilog-2005 frontend: reconf/alu/rtl/alu.v
+Parsing Verilog input from `reconf/alu/rtl/alu.v' to AST representation.
+Generating RTLIL representation for module `\alu'.
+Successfully finished Verilog frontend.
+
+11. Executing Verilog-2005 frontend: reconf/alu/rtl/alu_shifter_16bit.v
+Parsing Verilog input from `reconf/alu/rtl/alu_shifter_16bit.v' to AST representation.
+Generating RTLIL representation for module `\alu_shifter_16bit'.
+Successfully finished Verilog frontend.
+
+12. Executing Verilog-2005 frontend: reconf/alu/rtl/alu_full_adder.v
+Parsing Verilog input from `reconf/alu/rtl/alu_full_adder.v' to AST representation.
+Generating RTLIL representation for module `\alu_full_adder'.
+Successfully finished Verilog frontend.
+
+13. Executing Verilog-2005 frontend: reconf/alu/rtl/alu_flag_logic.v
+Parsing Verilog input from `reconf/alu/rtl/alu_flag_logic.v' to AST representation.
+Generating RTLIL representation for module `\alu_flag_logic'.
+Successfully finished Verilog frontend.
+
+14. Executing Verilog-2005 frontend: reconf/alu/rtl/alu_adder_16bit.v
+Parsing Verilog input from `reconf/alu/rtl/alu_adder_16bit.v' to AST representation.
+Generating RTLIL representation for module `\alu_adder_16bit'.
+Successfully finished Verilog frontend.
+
+15. Executing Verilog-2005 frontend: reconf/alu/rtl/alu_logic_16bit.v
+Parsing Verilog input from `reconf/alu/rtl/alu_logic_16bit.v' to AST representation.
+Generating RTLIL representation for module `\alu_logic_16bit'.
+Successfully finished Verilog frontend.
+
+16. Executing Verilog-2005 frontend: reconf/alu/rtl/alu_mux_16to1_16bit.v
+Parsing Verilog input from `reconf/alu/rtl/alu_mux_16to1_16bit.v' to AST representation.
+Generating RTLIL representation for module `\alu_mux_16to1_16bit'.
+Successfully finished Verilog frontend.
+
+17. Executing Verilog-2005 frontend: reconf/alu/rtl/alu_half_adder.v
+Parsing Verilog input from `reconf/alu/rtl/alu_half_adder.v' to AST representation.
+Generating RTLIL representation for module `\alu_half_adder'.
+Successfully finished Verilog frontend.
+
+18. Executing Verilog-2005 frontend: reconf/alu/rtl/alu_mux_16to1_1bit.v
+Parsing Verilog input from `reconf/alu/rtl/alu_mux_16to1_1bit.v' to AST representation.
+Generating RTLIL representation for module `\alu_mux_16to1_1bit'.
+Successfully finished Verilog frontend.
+
+19. Executing Verilog-2005 frontend: reconf/imm_gen/rtl/imm_gen_ext_i8.v
+Parsing Verilog input from `reconf/imm_gen/rtl/imm_gen_ext_i8.v' to AST representation.
+Generating RTLIL representation for module `\imm_gen_ext_i8'.
+Successfully finished Verilog frontend.
+
+20. Executing Verilog-2005 frontend: reconf/imm_gen/rtl/imm_gen_ext_s4.v
+Parsing Verilog input from `reconf/imm_gen/rtl/imm_gen_ext_s4.v' to AST representation.
+Generating RTLIL representation for module `\imm_gen_ext_s4'.
+Successfully finished Verilog frontend.
+
+21. Executing Verilog-2005 frontend: reconf/imm_gen/rtl/imm_gen_ext_b12.v
+Parsing Verilog input from `reconf/imm_gen/rtl/imm_gen_ext_b12.v' to AST representation.
+Generating RTLIL representation for module `\imm_gen_ext_b12'.
+Successfully finished Verilog frontend.
+
+22. Executing Verilog-2005 frontend: reconf/imm_gen/rtl/imm_gen_mux_4to1_1bit.v
+Parsing Verilog input from `reconf/imm_gen/rtl/imm_gen_mux_4to1_1bit.v' to AST representation.
+Generating RTLIL representation for module `\imm_gen_mux_4to1_1bit'.
+Successfully finished Verilog frontend.
+
+23. Executing Verilog-2005 frontend: reconf/imm_gen/rtl/imm_gen_ext_i4.v
+Parsing Verilog input from `reconf/imm_gen/rtl/imm_gen_ext_i4.v' to AST representation.
+Generating RTLIL representation for module `\imm_gen_ext_i4'.
+Successfully finished Verilog frontend.
+
+24. Executing Verilog-2005 frontend: reconf/imm_gen/rtl/imm_gen.v
+Parsing Verilog input from `reconf/imm_gen/rtl/imm_gen.v' to AST representation.
+Generating RTLIL representation for module `\imm_gen'.
+Successfully finished Verilog frontend.
+
+25. Executing Verilog-2005 frontend: reconf/imm_gen/rtl/imm_gen_decoder.v
+Parsing Verilog input from `reconf/imm_gen/rtl/imm_gen_decoder.v' to AST representation.
+Generating RTLIL representation for module `\imm_gen_decoder'.
+Successfully finished Verilog frontend.
+
+26. Executing Verilog-2005 frontend: reconf/imm_gen/rtl/imm_gen_mux_4to1_16bit.v
+Parsing Verilog input from `reconf/imm_gen/rtl/imm_gen_mux_4to1_16bit.v' to AST representation.
+Generating RTLIL representation for module `\imm_gen_mux_4to1_16bit'.
+Successfully finished Verilog frontend.
+
+27. Executing Verilog-2005 frontend: reconf/next_pc_logic/rtl/next_pc_logic.v
+Parsing Verilog input from `reconf/next_pc_logic/rtl/next_pc_logic.v' to AST representation.
+Generating RTLIL representation for module `\next_pc_logic'.
+Successfully finished Verilog frontend.
+
+28. Executing Verilog-2005 frontend: reconf/next_pc_logic/rtl/next_pc_logic_adder_16bit.v
+Parsing Verilog input from `reconf/next_pc_logic/rtl/next_pc_logic_adder_16bit.v' to AST representation.
+Generating RTLIL representation for module `\next_pc_logic_adder_16bit'.
+Successfully finished Verilog frontend.
+
+29. Executing Verilog-2005 frontend: reconf/next_pc_logic/rtl/next_pc_logic_mux_4to1_16bit.v
+Parsing Verilog input from `reconf/next_pc_logic/rtl/next_pc_logic_mux_4to1_16bit.v' to AST representation.
+Generating RTLIL representation for module `\next_pc_logic_mux_4to1_16bit'.
+Successfully finished Verilog frontend.
+
+30. Executing Verilog-2005 frontend: reconf/next_pc_logic/rtl/next_pc_logic_ctrl.v
+Parsing Verilog input from `reconf/next_pc_logic/rtl/next_pc_logic_ctrl.v' to AST representation.
+Generating RTLIL representation for module `\next_pc_logic_ctrl'.
+Successfully finished Verilog frontend.
+
+31. Executing Verilog-2005 frontend: reconf/next_pc_logic/rtl/next_pc_logic_half_adder.v
+Parsing Verilog input from `reconf/next_pc_logic/rtl/next_pc_logic_half_adder.v' to AST representation.
+Generating RTLIL representation for module `\next_pc_logic_half_adder'.
+Successfully finished Verilog frontend.
+
+32. Executing Verilog-2005 frontend: reconf/next_pc_logic/rtl/next_pc_logic_full_adder.v
+Parsing Verilog input from `reconf/next_pc_logic/rtl/next_pc_logic_full_adder.v' to AST representation.
+Generating RTLIL representation for module `\next_pc_logic_full_adder'.
+Successfully finished Verilog frontend.
+
+33. Executing Verilog-2005 frontend: reconf/next_pc_logic/rtl/next_pc_logic_mux_4to1_1bit.v
+Parsing Verilog input from `reconf/next_pc_logic/rtl/next_pc_logic_mux_4to1_1bit.v' to AST representation.
+Generating RTLIL representation for module `\next_pc_logic_mux_4to1_1bit'.
+Successfully finished Verilog frontend.
+
+34. Executing Verilog-2005 frontend: reconf/control_unit/rtl/control_unit_op_matrix.v
+Parsing Verilog input from `reconf/control_unit/rtl/control_unit_op_matrix.v' to AST representation.
+Generating RTLIL representation for module `\control_unit_op_matrix'.
+Successfully finished Verilog frontend.
+
+35. Executing Verilog-2005 frontend: reconf/control_unit/rtl/control_unit.v
+Parsing Verilog input from `reconf/control_unit/rtl/control_unit.v' to AST representation.
+Generating RTLIL representation for module `\control_unit'.
+Successfully finished Verilog frontend.
+
+36. Executing Verilog-2005 frontend: reconf/control_unit/rtl/control_unit_decoder.v
+Parsing Verilog input from `reconf/control_unit/rtl/control_unit_decoder.v' to AST representation.
+Generating RTLIL representation for module `\control_unit_decoder'.
+Successfully finished Verilog frontend.
+
+37. Executing Verilog-2005 frontend: reconf/control_unit/rtl/control_unit_instruction_gate.v
+Parsing Verilog input from `reconf/control_unit/rtl/control_unit_instruction_gate.v' to AST representation.
+Generating RTLIL representation for module `\control_unit_instruction_gate'.
+Successfully finished Verilog frontend.
+
+38. Executing Verilog-2005 frontend: reconf/cpu/rtl/cpu.v
+Parsing Verilog input from `reconf/cpu/rtl/cpu.v' to AST representation.
+Generating RTLIL representation for module `\cpu'.
+Successfully finished Verilog frontend.
+
+39. Executing Verilog-2005 frontend: reconf/register_file/rtl/register_file.v
+Parsing Verilog input from `reconf/register_file/rtl/register_file.v' to AST representation.
+Generating RTLIL representation for module `\register_file'.
+Successfully finished Verilog frontend.
+
+40. Executing Verilog-2005 frontend: reconf/register_file/rtl/register_file_mux_16to1_1bit.v
+Parsing Verilog input from `reconf/register_file/rtl/register_file_mux_16to1_1bit.v' to AST representation.
+Generating RTLIL representation for module `\register_file_mux_16to1_1bit'.
+Successfully finished Verilog frontend.
+
+41. Executing Verilog-2005 frontend: reconf/register_file/rtl/register_file_mux_16to1_16bit.v
+Parsing Verilog input from `reconf/register_file/rtl/register_file_mux_16to1_16bit.v' to AST representation.
+Generating RTLIL representation for module `\register_file_mux_16to1_16bit'.
+Successfully finished Verilog frontend.
+
+42. Executing Verilog-2005 frontend: reconf/register_file/rtl/register_file_bit.v
+Parsing Verilog input from `reconf/register_file/rtl/register_file_bit.v' to AST representation.
+Generating RTLIL representation for module `\register_file_bit'.
+Successfully finished Verilog frontend.
+
+43. Executing Verilog-2005 frontend: reconf/register_file/rtl/register_file_decoder_4to16.v
+Parsing Verilog input from `reconf/register_file/rtl/register_file_decoder_4to16.v' to AST representation.
+Generating RTLIL representation for module `\register_file_decoder_4to16'.
+Successfully finished Verilog frontend.
+
+44. Executing Verilog-2005 frontend: reconf/register_file/rtl/register_file_reg_16bit.v
+Parsing Verilog input from `reconf/register_file/rtl/register_file_reg_16bit.v' to AST representation.
+Generating RTLIL representation for module `\register_file_reg_16bit'.
+Successfully finished Verilog frontend.
+
+45. Executing Verilog-2005 frontend: reconf/register_file/rtl/register_file_zero_reg_16bit.v
+Parsing Verilog input from `reconf/register_file/rtl/register_file_zero_reg_16bit.v' to AST representation.
+Generating RTLIL representation for module `\register_file_zero_reg_16bit'.
+Successfully finished Verilog frontend.
+
+46. Executing Verilog-2005 frontend: reconf/flag_reg/rtl/flag_reg_bit.v
+Parsing Verilog input from `reconf/flag_reg/rtl/flag_reg_bit.v' to AST representation.
+Generating RTLIL representation for module `\flag_reg_bit'.
+Successfully finished Verilog frontend.
+
+47. Executing Verilog-2005 frontend: reconf/flag_reg/rtl/flag_reg.v
+Parsing Verilog input from `reconf/flag_reg/rtl/flag_reg.v' to AST representation.
+Generating RTLIL representation for module `\flag_reg'.
+Successfully finished Verilog frontend.
+
+48. Executing Verilog-2005 frontend: reconf/flag_reg/rtl/flag_reg_ctrl.v
+Parsing Verilog input from `reconf/flag_reg/rtl/flag_reg_ctrl.v' to AST representation.
+Generating RTLIL representation for module `\flag_reg_ctrl'.
+Successfully finished Verilog frontend.
+
+49. Executing HIERARCHY pass (managing design hierarchy).
+
+49.1. Analyzing design hierarchy..
+Top module:  \cpu
+Used module:     \flag_reg
+Used module:         \flag_reg_bit
+Used module:         \flag_reg_ctrl
+Used module:     \alu
+Used module:         \alu_flag_logic
+Used module:         \alu_mux_16to1_16bit
+Used module:             \alu_mux_16to1_1bit
+Used module:         \alu_shifter_16bit
+Used module:         \alu_logic_16bit
+Used module:         \alu_adder_16bit
+Used module:             \alu_full_adder
+Used module:                 \alu_half_adder
+Used module:     \imm_gen
+Used module:         \imm_gen_mux_4to1_16bit
+Used module:             \imm_gen_mux_4to1_1bit
+Used module:         \imm_gen_ext_b12
+Used module:         \imm_gen_ext_i8
+Used module:         \imm_gen_ext_s4
+Used module:         \imm_gen_ext_i4
+Used module:         \imm_gen_decoder
+Used module:     \register_file
+Used module:         \register_file_reg_16bit
+Used module:             \register_file_bit
+Used module:         \register_file_mux_16to1_16bit
+Used module:             \register_file_mux_16to1_1bit
+Used module:         \register_file_zero_reg_16bit
+Used module:         \register_file_decoder_4to16
+Used module:     \control_unit
+Used module:         \control_unit_op_matrix
+Used module:         \control_unit_decoder
+Used module:             \control_unit_instruction_gate
+Used module:     \program_counter
+Used module:         \program_counter_mux_4to1_16bit
+Used module:             \program_counter_mux_4to1_1bit
+Used module:         \program_counter_control
+Used module:         \program_counter_adder_16bit
+Used module:             \program_counter_full_adder
+Used module:                 \program_counter_half_adder
+Used module:         \program_counter_reg
+Used module:             \program_counter_bit
+Parameter \TARGET_OPCODE = 4'1111
+
+49.2. Executing AST frontend in derive mode using pre-parsed AST for module `\control_unit_instruction_gate'.
+Parameter \TARGET_OPCODE = 4'1111
+Generating RTLIL representation for module `$paramod\control_unit_instruction_gate\TARGET_OPCODE=4'1111'.
+Parameter \TARGET_OPCODE = 4'1110
+
+49.3. Executing AST frontend in derive mode using pre-parsed AST for module `\control_unit_instruction_gate'.
+Parameter \TARGET_OPCODE = 4'1110
+Generating RTLIL representation for module `$paramod\control_unit_instruction_gate\TARGET_OPCODE=4'1110'.
+Parameter \TARGET_OPCODE = 4'1101
+
+49.4. Executing AST frontend in derive mode using pre-parsed AST for module `\control_unit_instruction_gate'.
+Parameter \TARGET_OPCODE = 4'1101
+Generating RTLIL representation for module `$paramod\control_unit_instruction_gate\TARGET_OPCODE=4'1101'.
+Parameter \TARGET_OPCODE = 4'1100
+
+49.5. Executing AST frontend in derive mode using pre-parsed AST for module `\control_unit_instruction_gate'.
+Parameter \TARGET_OPCODE = 4'1100
+Generating RTLIL representation for module `$paramod\control_unit_instruction_gate\TARGET_OPCODE=4'1100'.
+Parameter \TARGET_OPCODE = 4'1011
+
+49.6. Executing AST frontend in derive mode using pre-parsed AST for module `\control_unit_instruction_gate'.
+Parameter \TARGET_OPCODE = 4'1011
+Generating RTLIL representation for module `$paramod\control_unit_instruction_gate\TARGET_OPCODE=4'1011'.
+Parameter \TARGET_OPCODE = 4'1010
+
+49.7. Executing AST frontend in derive mode using pre-parsed AST for module `\control_unit_instruction_gate'.
+Parameter \TARGET_OPCODE = 4'1010
+Generating RTLIL representation for module `$paramod\control_unit_instruction_gate\TARGET_OPCODE=4'1010'.
+Parameter \TARGET_OPCODE = 4'1001
+
+49.8. Executing AST frontend in derive mode using pre-parsed AST for module `\control_unit_instruction_gate'.
+Parameter \TARGET_OPCODE = 4'1001
+Generating RTLIL representation for module `$paramod\control_unit_instruction_gate\TARGET_OPCODE=4'1001'.
+Parameter \TARGET_OPCODE = 4'1000
+
+49.9. Executing AST frontend in derive mode using pre-parsed AST for module `\control_unit_instruction_gate'.
+Parameter \TARGET_OPCODE = 4'1000
+Generating RTLIL representation for module `$paramod\control_unit_instruction_gate\TARGET_OPCODE=4'1000'.
+Parameter \TARGET_OPCODE = 4'0111
+
+49.10. Executing AST frontend in derive mode using pre-parsed AST for module `\control_unit_instruction_gate'.
+Parameter \TARGET_OPCODE = 4'0111
+Generating RTLIL representation for module `$paramod\control_unit_instruction_gate\TARGET_OPCODE=4'0111'.
+Parameter \TARGET_OPCODE = 4'0110
+
+49.11. Executing AST frontend in derive mode using pre-parsed AST for module `\control_unit_instruction_gate'.
+Parameter \TARGET_OPCODE = 4'0110
+Generating RTLIL representation for module `$paramod\control_unit_instruction_gate\TARGET_OPCODE=4'0110'.
+Parameter \TARGET_OPCODE = 4'0101
+
+49.12. Executing AST frontend in derive mode using pre-parsed AST for module `\control_unit_instruction_gate'.
+Parameter \TARGET_OPCODE = 4'0101
+Generating RTLIL representation for module `$paramod\control_unit_instruction_gate\TARGET_OPCODE=4'0101'.
+Parameter \TARGET_OPCODE = 4'0100
+
+49.13. Executing AST frontend in derive mode using pre-parsed AST for module `\control_unit_instruction_gate'.
+Parameter \TARGET_OPCODE = 4'0100
+Generating RTLIL representation for module `$paramod\control_unit_instruction_gate\TARGET_OPCODE=4'0100'.
+Parameter \TARGET_OPCODE = 4'0011
+
+49.14. Executing AST frontend in derive mode using pre-parsed AST for module `\control_unit_instruction_gate'.
+Parameter \TARGET_OPCODE = 4'0011
+Generating RTLIL representation for module `$paramod\control_unit_instruction_gate\TARGET_OPCODE=4'0011'.
+Parameter \TARGET_OPCODE = 4'0010
+
+49.15. Executing AST frontend in derive mode using pre-parsed AST for module `\control_unit_instruction_gate'.
+Parameter \TARGET_OPCODE = 4'0010
+Generating RTLIL representation for module `$paramod\control_unit_instruction_gate\TARGET_OPCODE=4'0010'.
+Parameter \TARGET_OPCODE = 4'0001
+
+49.16. Executing AST frontend in derive mode using pre-parsed AST for module `\control_unit_instruction_gate'.
+Parameter \TARGET_OPCODE = 4'0001
+Generating RTLIL representation for module `$paramod\control_unit_instruction_gate\TARGET_OPCODE=4'0001'.
+Parameter \TARGET_OPCODE = 4'0000
+
+49.17. Executing AST frontend in derive mode using pre-parsed AST for module `\control_unit_instruction_gate'.
+Parameter \TARGET_OPCODE = 4'0000
+Generating RTLIL representation for module `$paramod\control_unit_instruction_gate\TARGET_OPCODE=4'0000'.
+
+49.18. Analyzing design hierarchy..
+Top module:  \cpu
+Used module:     \flag_reg
+Used module:         \flag_reg_bit
+Used module:         \flag_reg_ctrl
+Used module:     \alu
+Used module:         \alu_flag_logic
+Used module:         \alu_mux_16to1_16bit
+Used module:             \alu_mux_16to1_1bit
+Used module:         \alu_shifter_16bit
+Used module:         \alu_logic_16bit
+Used module:         \alu_adder_16bit
+Used module:             \alu_full_adder
+Used module:                 \alu_half_adder
+Used module:     \imm_gen
+Used module:         \imm_gen_mux_4to1_16bit
+Used module:             \imm_gen_mux_4to1_1bit
+Used module:         \imm_gen_ext_b12
+Used module:         \imm_gen_ext_i8
+Used module:         \imm_gen_ext_s4
+Used module:         \imm_gen_ext_i4
+Used module:         \imm_gen_decoder
+Used module:     \register_file
+Used module:         \register_file_reg_16bit
+Used module:             \register_file_bit
+Used module:         \register_file_mux_16to1_16bit
+Used module:             \register_file_mux_16to1_1bit
+Used module:         \register_file_zero_reg_16bit
+Used module:         \register_file_decoder_4to16
+Used module:     \control_unit
+Used module:         \control_unit_op_matrix
+Used module:         \control_unit_decoder
+Used module:             $paramod\control_unit_instruction_gate\TARGET_OPCODE=4'1111
+Used module:             $paramod\control_unit_instruction_gate\TARGET_OPCODE=4'1110
+Used module:             $paramod\control_unit_instruction_gate\TARGET_OPCODE=4'1101
+Used module:             $paramod\control_unit_instruction_gate\TARGET_OPCODE=4'1100
+Used module:             $paramod\control_unit_instruction_gate\TARGET_OPCODE=4'1011
+Used module:             $paramod\control_unit_instruction_gate\TARGET_OPCODE=4'1010
+Used module:             $paramod\control_unit_instruction_gate\TARGET_OPCODE=4'1001
+Used module:             $paramod\control_unit_instruction_gate\TARGET_OPCODE=4'1000
+Used module:             $paramod\control_unit_instruction_gate\TARGET_OPCODE=4'0111
+Used module:             $paramod\control_unit_instruction_gate\TARGET_OPCODE=4'0110
+Used module:             $paramod\control_unit_instruction_gate\TARGET_OPCODE=4'0101
+Used module:             $paramod\control_unit_instruction_gate\TARGET_OPCODE=4'0100
+Used module:             $paramod\control_unit_instruction_gate\TARGET_OPCODE=4'0011
+Used module:             $paramod\control_unit_instruction_gate\TARGET_OPCODE=4'0010
+Used module:             $paramod\control_unit_instruction_gate\TARGET_OPCODE=4'0001
+Used module:             $paramod\control_unit_instruction_gate\TARGET_OPCODE=4'0000
+Used module:     \program_counter
+Used module:         \program_counter_mux_4to1_16bit
+Used module:             \program_counter_mux_4to1_1bit
+Used module:         \program_counter_control
+Used module:         \program_counter_adder_16bit
+Used module:             \program_counter_full_adder
+Used module:                 \program_counter_half_adder
+Used module:         \program_counter_reg
+Used module:             \program_counter_bit
+
+49.19. Analyzing design hierarchy..
+Top module:  \cpu
+Used module:     \flag_reg
+Used module:         \flag_reg_bit
+Used module:         \flag_reg_ctrl
+Used module:     \alu
+Used module:         \alu_flag_logic
+Used module:         \alu_mux_16to1_16bit
+Used module:             \alu_mux_16to1_1bit
+Used module:         \alu_shifter_16bit
+Used module:         \alu_logic_16bit
+Used module:         \alu_adder_16bit
+Used module:             \alu_full_adder
+Used module:                 \alu_half_adder
+Used module:     \imm_gen
+Used module:         \imm_gen_mux_4to1_16bit
+Used module:             \imm_gen_mux_4to1_1bit
+Used module:         \imm_gen_ext_b12
+Used module:         \imm_gen_ext_i8
+Used module:         \imm_gen_ext_s4
+Used module:         \imm_gen_ext_i4
+Used module:         \imm_gen_decoder
+Used module:     \register_file
+Used module:         \register_file_reg_16bit
+Used module:             \register_file_bit
+Used module:         \register_file_mux_16to1_16bit
+Used module:             \register_file_mux_16to1_1bit
+Used module:         \register_file_zero_reg_16bit
+Used module:         \register_file_decoder_4to16
+Used module:     \control_unit
+Used module:         \control_unit_op_matrix
+Used module:         \control_unit_decoder
+Used module:             $paramod\control_unit_instruction_gate\TARGET_OPCODE=4'1111
+Used module:             $paramod\control_unit_instruction_gate\TARGET_OPCODE=4'1110
+Used module:             $paramod\control_unit_instruction_gate\TARGET_OPCODE=4'1101
+Used module:             $paramod\control_unit_instruction_gate\TARGET_OPCODE=4'1100
+Used module:             $paramod\control_unit_instruction_gate\TARGET_OPCODE=4'1011
+Used module:             $paramod\control_unit_instruction_gate\TARGET_OPCODE=4'1010
+Used module:             $paramod\control_unit_instruction_gate\TARGET_OPCODE=4'1001
+Used module:             $paramod\control_unit_instruction_gate\TARGET_OPCODE=4'1000
+Used module:             $paramod\control_unit_instruction_gate\TARGET_OPCODE=4'0111
+Used module:             $paramod\control_unit_instruction_gate\TARGET_OPCODE=4'0110
+Used module:             $paramod\control_unit_instruction_gate\TARGET_OPCODE=4'0101
+Used module:             $paramod\control_unit_instruction_gate\TARGET_OPCODE=4'0100
+Used module:             $paramod\control_unit_instruction_gate\TARGET_OPCODE=4'0011
+Used module:             $paramod\control_unit_instruction_gate\TARGET_OPCODE=4'0010
+Used module:             $paramod\control_unit_instruction_gate\TARGET_OPCODE=4'0001
+Used module:             $paramod\control_unit_instruction_gate\TARGET_OPCODE=4'0000
+Used module:     \program_counter
+Used module:         \program_counter_mux_4to1_16bit
+Used module:             \program_counter_mux_4to1_1bit
+Used module:         \program_counter_control
+Used module:         \program_counter_adder_16bit
+Used module:             \program_counter_full_adder
+Used module:                 \program_counter_half_adder
+Used module:         \program_counter_reg
+Used module:             \program_counter_bit
+Removing unused module `\control_unit_instruction_gate'.
+Removing unused module `\next_pc_logic_mux_4to1_1bit'.
+Removing unused module `\next_pc_logic_full_adder'.
+Removing unused module `\next_pc_logic_half_adder'.
+Removing unused module `\next_pc_logic_ctrl'.
+Removing unused module `\next_pc_logic_mux_4to1_16bit'.
+Removing unused module `\next_pc_logic_adder_16bit'.
+Removing unused module `\next_pc_logic'.
+Removed 8 unused modules.
+
+50. Executing PROC pass (convert processes to netlists).
+
+50.1. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Cleaned up 0 empty switches.
+
+50.2. Executing PROC_RMDEAD pass (remove dead branches from decision trees).
+Marked 1 switch rules as full_case in process $proc$reconf/flag_reg/rtl/flag_reg_bit.v:13$236 in module flag_reg_bit.
+Marked 1 switch rules as full_case in process $proc$reconf/register_file/rtl/register_file_bit.v:13$218 in module register_file_bit.
+Marked 1 switch rules as full_case in process $proc$reconf/program_counter/rtl/program_counter_bit.v:10$10 in module program_counter_bit.
+Removed a total of 0 dead cases.
+
+50.3. Executing PROC_PRUNE pass (remove redundant assignments in processes).
+Removed 1 redundant assignment.
+Promoted 0 assignments to connections.
+
+50.4. Executing PROC_INIT pass (extract init attributes).
+
+50.5. Executing PROC_ARST pass (detect async resets in processes).
+Found async reset \i_rst_n in `\flag_reg_bit.$proc$reconf/flag_reg/rtl/flag_reg_bit.v:13$236'.
+Found async reset \i_rst_n in `\register_file_bit.$proc$reconf/register_file/rtl/register_file_bit.v:13$218'.
+Found async reset \i_rst_n in `\program_counter_bit.$proc$reconf/program_counter/rtl/program_counter_bit.v:10$10'.
+
+50.6. Executing PROC_ROM pass (convert switches to ROMs).
+Converted 0 switches.
+<suppressed ~2 debug messages>
+
+50.7. Executing PROC_MUX pass (convert decision trees to multiplexers).
+Creating decoders for process `\flag_reg_bit.$proc$reconf/flag_reg/rtl/flag_reg_bit.v:13$236'.
+     1/1: $0\r_data[0:0]
+Creating decoders for process `\register_file_bit.$proc$reconf/register_file/rtl/register_file_bit.v:13$218'.
+     1/1: $0\r_data[0:0]
+Creating decoders for process `\program_counter_bit.$proc$reconf/program_counter/rtl/program_counter_bit.v:10$10'.
+     1/1: $0\r_q[0:0]
+
+50.8. Executing PROC_DLATCH pass (convert process syncs to latches).
+
+50.9. Executing PROC_DFF pass (convert process syncs to FFs).
+Creating register for signal `\flag_reg_bit.\r_data' using process `\flag_reg_bit.$proc$reconf/flag_reg/rtl/flag_reg_bit.v:13$236'.
+  created $adff cell `$procdff$267' with positive edge clock and positive level reset.
+Creating register for signal `\register_file_bit.\r_data' using process `\register_file_bit.$proc$reconf/register_file/rtl/register_file_bit.v:13$218'.
+  created $adff cell `$procdff$272' with positive edge clock and positive level reset.
+Creating register for signal `\program_counter_bit.\r_q' using process `\program_counter_bit.$proc$reconf/program_counter/rtl/program_counter_bit.v:10$10'.
+  created $adff cell `$procdff$277' with positive edge clock and positive level reset.
+
+50.10. Executing PROC_MEMWR pass (convert process memory writes to cells).
+
+50.11. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Found and cleaned up 1 empty switch in `\flag_reg_bit.$proc$reconf/flag_reg/rtl/flag_reg_bit.v:13$236'.
+Removing empty process `flag_reg_bit.$proc$reconf/flag_reg/rtl/flag_reg_bit.v:13$236'.
+Found and cleaned up 1 empty switch in `\register_file_bit.$proc$reconf/register_file/rtl/register_file_bit.v:13$218'.
+Removing empty process `register_file_bit.$proc$reconf/register_file/rtl/register_file_bit.v:13$218'.
+Removing empty process `program_counter_bit.$proc$reconf/program_counter/rtl/program_counter_bit.v:10$10'.
+Cleaned up 2 empty switches.
+
+50.12. Executing OPT_EXPR pass (perform const folding).
+Optimizing module $paramod\control_unit_instruction_gate\TARGET_OPCODE=4'1000.
+Optimizing module $paramod\control_unit_instruction_gate\TARGET_OPCODE=4'1001.
+Optimizing module $paramod\control_unit_instruction_gate\TARGET_OPCODE=4'1010.
+Optimizing module $paramod\control_unit_instruction_gate\TARGET_OPCODE=4'1011.
+Optimizing module $paramod\control_unit_instruction_gate\TARGET_OPCODE=4'1100.
+Optimizing module $paramod\control_unit_instruction_gate\TARGET_OPCODE=4'1101.
+Optimizing module $paramod\control_unit_instruction_gate\TARGET_OPCODE=4'1110.
+Optimizing module $paramod\control_unit_instruction_gate\TARGET_OPCODE=4'1111.
+Optimizing module flag_reg_ctrl.
+<suppressed ~1 debug messages>
+Optimizing module flag_reg.
+Optimizing module flag_reg_bit.
+<suppressed ~2 debug messages>
+Optimizing module register_file_zero_reg_16bit.
+Optimizing module register_file_reg_16bit.
+Optimizing module register_file_decoder_4to16.
+<suppressed ~1 debug messages>
+Optimizing module register_file_bit.
+<suppressed ~2 debug messages>
+Optimizing module register_file_mux_16to1_16bit.
+Optimizing module register_file_mux_16to1_1bit.
+Optimizing module register_file.
+Optimizing module cpu.
+Optimizing module $paramod\control_unit_instruction_gate\TARGET_OPCODE=4'0000.
+<suppressed ~1 debug messages>
+Optimizing module control_unit_decoder.
+Optimizing module control_unit.
+Optimizing module control_unit_op_matrix.
+Optimizing module $paramod\control_unit_instruction_gate\TARGET_OPCODE=4'0001.
+Optimizing module $paramod\control_unit_instruction_gate\TARGET_OPCODE=4'0010.
+Optimizing module $paramod\control_unit_instruction_gate\TARGET_OPCODE=4'0011.
+Optimizing module $paramod\control_unit_instruction_gate\TARGET_OPCODE=4'0100.
+Optimizing module $paramod\control_unit_instruction_gate\TARGET_OPCODE=4'0101.
+Optimizing module $paramod\control_unit_instruction_gate\TARGET_OPCODE=4'0110.
+Optimizing module $paramod\control_unit_instruction_gate\TARGET_OPCODE=4'0111.
+Optimizing module imm_gen_mux_4to1_16bit.
+Optimizing module imm_gen_decoder.
+Optimizing module imm_gen.
+Optimizing module imm_gen_ext_i4.
+Optimizing module imm_gen_mux_4to1_1bit.
+<suppressed ~1 debug messages>
+Optimizing module imm_gen_ext_b12.
+Optimizing module imm_gen_ext_s4.
+Optimizing module imm_gen_ext_i8.
+Optimizing module alu_mux_16to1_1bit.
+Optimizing module alu_half_adder.
+Optimizing module alu_mux_16to1_16bit.
+Optimizing module alu_logic_16bit.
+Optimizing module alu_adder_16bit.
+Optimizing module alu_flag_logic.
+<suppressed ~13 debug messages>
+Optimizing module alu_full_adder.
+Optimizing module alu_shifter_16bit.
+Optimizing module alu.
+Optimizing module program_counter_control.
+Optimizing module program_counter_adder_16bit.
+Optimizing module program_counter.
+Optimizing module program_counter_bit.
+<suppressed ~2 debug messages>
+Optimizing module program_counter_reg.
+Optimizing module program_counter_mux_4to1_1bit.
+<suppressed ~1 debug messages>
+Optimizing module program_counter_mux_4to1_16bit.
+Optimizing module program_counter_full_adder.
+Optimizing module program_counter_half_adder.
+
+51. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module $paramod\control_unit_instruction_gate\TARGET_OPCODE=4'1000..
+Finding unused cells or wires in module $paramod\control_unit_instruction_gate\TARGET_OPCODE=4'1001..
+Finding unused cells or wires in module $paramod\control_unit_instruction_gate\TARGET_OPCODE=4'1010..
+Finding unused cells or wires in module $paramod\control_unit_instruction_gate\TARGET_OPCODE=4'1011..
+Finding unused cells or wires in module $paramod\control_unit_instruction_gate\TARGET_OPCODE=4'1100..
+Finding unused cells or wires in module $paramod\control_unit_instruction_gate\TARGET_OPCODE=4'1101..
+Finding unused cells or wires in module $paramod\control_unit_instruction_gate\TARGET_OPCODE=4'1110..
+Finding unused cells or wires in module $paramod\control_unit_instruction_gate\TARGET_OPCODE=4'1111..
+Finding unused cells or wires in module \flag_reg_ctrl..
+Finding unused cells or wires in module \flag_reg..
+Finding unused cells or wires in module \flag_reg_bit..
+Finding unused cells or wires in module \register_file_zero_reg_16bit..
+Finding unused cells or wires in module \register_file_reg_16bit..
+Finding unused cells or wires in module \register_file_decoder_4to16..
+Finding unused cells or wires in module \register_file_bit..
+Finding unused cells or wires in module \register_file_mux_16to1_16bit..
+Finding unused cells or wires in module \register_file_mux_16to1_1bit..
+Finding unused cells or wires in module \register_file..
+Finding unused cells or wires in module \cpu..
+Finding unused cells or wires in module $paramod\control_unit_instruction_gate\TARGET_OPCODE=4'0000..
+Finding unused cells or wires in module \control_unit_decoder..
+Finding unused cells or wires in module \control_unit..
+Finding unused cells or wires in module \control_unit_op_matrix..
+Finding unused cells or wires in module $paramod\control_unit_instruction_gate\TARGET_OPCODE=4'0001..
+Finding unused cells or wires in module $paramod\control_unit_instruction_gate\TARGET_OPCODE=4'0010..
+Finding unused cells or wires in module $paramod\control_unit_instruction_gate\TARGET_OPCODE=4'0011..
+Finding unused cells or wires in module $paramod\control_unit_instruction_gate\TARGET_OPCODE=4'0100..
+Finding unused cells or wires in module $paramod\control_unit_instruction_gate\TARGET_OPCODE=4'0101..
+Finding unused cells or wires in module $paramod\control_unit_instruction_gate\TARGET_OPCODE=4'0110..
+Finding unused cells or wires in module $paramod\control_unit_instruction_gate\TARGET_OPCODE=4'0111..
+Finding unused cells or wires in module \imm_gen_mux_4to1_16bit..
+Finding unused cells or wires in module \imm_gen_decoder..
+Finding unused cells or wires in module \imm_gen..
+Finding unused cells or wires in module \imm_gen_ext_i4..
+Finding unused cells or wires in module \imm_gen_mux_4to1_1bit..
+Finding unused cells or wires in module \imm_gen_ext_b12..
+Finding unused cells or wires in module \imm_gen_ext_s4..
+Finding unused cells or wires in module \imm_gen_ext_i8..
+Finding unused cells or wires in module \alu_mux_16to1_1bit..
+Finding unused cells or wires in module \alu_half_adder..
+Finding unused cells or wires in module \alu_mux_16to1_16bit..
+Finding unused cells or wires in module \alu_logic_16bit..
+Finding unused cells or wires in module \alu_adder_16bit..
+Finding unused cells or wires in module \alu_flag_logic..
+Finding unused cells or wires in module \alu_full_adder..
+Finding unused cells or wires in module \alu_shifter_16bit..
+Finding unused cells or wires in module \alu..
+Finding unused cells or wires in module \program_counter_control..
+Finding unused cells or wires in module \program_counter_adder_16bit..
+Finding unused cells or wires in module \program_counter..
+Finding unused cells or wires in module \program_counter_bit..
+Finding unused cells or wires in module \program_counter_reg..
+Finding unused cells or wires in module \program_counter_mux_4to1_1bit..
+Finding unused cells or wires in module \program_counter_mux_4to1_16bit..
+Finding unused cells or wires in module \program_counter_full_adder..
+Finding unused cells or wires in module \program_counter_half_adder..
+Removed 11 unused cells and 179 unused wires.
+<suppressed ~49 debug messages>
+
+52. Executing TECHMAP pass (map to technology primitives).
+
+52.1. Executing Verilog-2005 frontend: /opt/oss-cad-suite/lib/../share/yosys/techmap.v
+Parsing Verilog input from `/opt/oss-cad-suite/lib/../share/yosys/techmap.v' to AST representation.
+Generating RTLIL representation for module `\_90_simplemap_bool_ops'.
+Generating RTLIL representation for module `\_90_simplemap_reduce_ops'.
+Generating RTLIL representation for module `\_90_simplemap_logic_ops'.
+Generating RTLIL representation for module `\_90_simplemap_compare_ops'.
+Generating RTLIL representation for module `\_90_simplemap_various'.
+Generating RTLIL representation for module `\_90_simplemap_registers'.
+Generating RTLIL representation for module `\_90_shift_ops_shr_shl_sshl_sshr'.
+Generating RTLIL representation for module `\_90_shift_shiftx'.
+Generating RTLIL representation for module `\_90_fa'.
+Generating RTLIL representation for module `\_90_lcu_brent_kung'.
+Generating RTLIL representation for module `\_90_alu'.
+Generating RTLIL representation for module `\_90_macc'.
+Generating RTLIL representation for module `\_90_alumacc'.
+Generating RTLIL representation for module `$__div_mod_u'.
+Generating RTLIL representation for module `$__div_mod_trunc'.
+Generating RTLIL representation for module `\_90_div'.
+Generating RTLIL representation for module `\_90_mod'.
+Generating RTLIL representation for module `$__div_mod_floor'.
+Generating RTLIL representation for module `\_90_divfloor'.
+Generating RTLIL representation for module `\_90_modfloor'.
+Generating RTLIL representation for module `\_90_pow'.
+Generating RTLIL representation for module `\_90_pmux'.
+Generating RTLIL representation for module `\_90_demux'.
+Generating RTLIL representation for module `\_90_lut'.
+Generating RTLIL representation for module `$connect'.
+Generating RTLIL representation for module `$input_port'.
+Successfully finished Verilog frontend.
+
+52.2. Continuing TECHMAP pass.
+Using template $paramod$constmap:446553370afc6c2aa6cc0b8f657b7f64b237ff7c$paramod$962bb79c2a50a422516483c1c9c06046761917ac\_90_shift_shiftx for cells of type $shiftx.
+Using extmapper simplemap for cells of type $mux.
+Using extmapper simplemap for cells of type $logic_not.
+Using extmapper simplemap for cells of type $eq.
+Using extmapper simplemap for cells of type $adff.
+Using extmapper simplemap for cells of type $and.
+Using extmapper simplemap for cells of type $xor.
+Using extmapper simplemap for cells of type $or.
+Using extmapper simplemap for cells of type $not.
+Using template $paramod$constmap:00a5b8c078faac2d9dcf7d1311e85cfd31359fcf$paramod$8a12a9b73c8be786cf67ebac28abcbbf644a3888\_90_shift_ops_shr_shl_sshl_sshr for cells of type $sshr.
+Using template $paramod$constmap:00a5b8c078faac2d9dcf7d1311e85cfd31359fcf$paramod$b1f8e9a58fee383a65180922397f7058048191fe\_90_shift_ops_shr_shl_sshl_sshr for cells of type $shl.
+Using extmapper simplemap for cells of type $logic_and.
+Using extmapper simplemap for cells of type $logic_or.
+No more expansions possible.
+<suppressed ~972 debug messages>
+
+53. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module $paramod\control_unit_instruction_gate\TARGET_OPCODE=4'0000..
+Finding unused cells or wires in module $paramod\control_unit_instruction_gate\TARGET_OPCODE=4'0001..
+Finding unused cells or wires in module $paramod\control_unit_instruction_gate\TARGET_OPCODE=4'0010..
+Finding unused cells or wires in module $paramod\control_unit_instruction_gate\TARGET_OPCODE=4'0011..
+Finding unused cells or wires in module $paramod\control_unit_instruction_gate\TARGET_OPCODE=4'0100..
+Finding unused cells or wires in module $paramod\control_unit_instruction_gate\TARGET_OPCODE=4'0101..
+Finding unused cells or wires in module $paramod\control_unit_instruction_gate\TARGET_OPCODE=4'0110..
+Finding unused cells or wires in module $paramod\control_unit_instruction_gate\TARGET_OPCODE=4'0111..
+Finding unused cells or wires in module $paramod\control_unit_instruction_gate\TARGET_OPCODE=4'1000..
+Finding unused cells or wires in module $paramod\control_unit_instruction_gate\TARGET_OPCODE=4'1001..
+Finding unused cells or wires in module $paramod\control_unit_instruction_gate\TARGET_OPCODE=4'1010..
+Finding unused cells or wires in module $paramod\control_unit_instruction_gate\TARGET_OPCODE=4'1011..
+Finding unused cells or wires in module $paramod\control_unit_instruction_gate\TARGET_OPCODE=4'1100..
+Finding unused cells or wires in module $paramod\control_unit_instruction_gate\TARGET_OPCODE=4'1101..
+Finding unused cells or wires in module $paramod\control_unit_instruction_gate\TARGET_OPCODE=4'1110..
+Finding unused cells or wires in module $paramod\control_unit_instruction_gate\TARGET_OPCODE=4'1111..
+Finding unused cells or wires in module \alu..
+Finding unused cells or wires in module \alu_adder_16bit..
+Finding unused cells or wires in module \alu_flag_logic..
+Finding unused cells or wires in module \alu_full_adder..
+Finding unused cells or wires in module \alu_half_adder..
+Finding unused cells or wires in module \alu_logic_16bit..
+Finding unused cells or wires in module \alu_mux_16to1_16bit..
+Finding unused cells or wires in module \alu_mux_16to1_1bit..
+Finding unused cells or wires in module \alu_shifter_16bit..
+Finding unused cells or wires in module \control_unit..
+Finding unused cells or wires in module \control_unit_decoder..
+Finding unused cells or wires in module \control_unit_op_matrix..
+Finding unused cells or wires in module \cpu..
+Finding unused cells or wires in module \flag_reg..
+Finding unused cells or wires in module \flag_reg_bit..
+Finding unused cells or wires in module \flag_reg_ctrl..
+Finding unused cells or wires in module \imm_gen..
+Finding unused cells or wires in module \imm_gen_decoder..
+Finding unused cells or wires in module \imm_gen_ext_b12..
+Finding unused cells or wires in module \imm_gen_ext_i4..
+Finding unused cells or wires in module \imm_gen_ext_i8..
+Finding unused cells or wires in module \imm_gen_ext_s4..
+Finding unused cells or wires in module \imm_gen_mux_4to1_16bit..
+Finding unused cells or wires in module \imm_gen_mux_4to1_1bit..
+Finding unused cells or wires in module \program_counter..
+Finding unused cells or wires in module \program_counter_adder_16bit..
+Finding unused cells or wires in module \program_counter_bit..
+Finding unused cells or wires in module \program_counter_control..
+Finding unused cells or wires in module \program_counter_full_adder..
+Finding unused cells or wires in module \program_counter_half_adder..
+Finding unused cells or wires in module \program_counter_mux_4to1_16bit..
+Finding unused cells or wires in module \program_counter_mux_4to1_1bit..
+Finding unused cells or wires in module \program_counter_reg..
+Finding unused cells or wires in module \register_file..
+Finding unused cells or wires in module \register_file_bit..
+Finding unused cells or wires in module \register_file_decoder_4to16..
+Finding unused cells or wires in module \register_file_mux_16to1_16bit..
+Finding unused cells or wires in module \register_file_mux_16to1_1bit..
+Finding unused cells or wires in module \register_file_reg_16bit..
+Finding unused cells or wires in module \register_file_zero_reg_16bit..
+Removed 98 unused cells and 69 unused wires.
+<suppressed ~124 debug messages>
+
+54. Executing HIERARCHY pass (managing design hierarchy).
+Attribute `top' found on module `cpu'. Setting top module to cpu.
+
+54.1. Analyzing design hierarchy..
+Top module:  \cpu
+Used module:     \alu
+Used module:         \alu_adder_16bit
+Used module:             \alu_full_adder
+Used module:                 \alu_half_adder
+Used module:         \alu_flag_logic
+Used module:         \alu_logic_16bit
+Used module:         \alu_mux_16to1_16bit
+Used module:             \alu_mux_16to1_1bit
+Used module:         \alu_shifter_16bit
+Used module:     \control_unit
+Used module:         \control_unit_decoder
+Used module:             $paramod\control_unit_instruction_gate\TARGET_OPCODE=4'0000
+Used module:             $paramod\control_unit_instruction_gate\TARGET_OPCODE=4'1010
+Used module:             $paramod\control_unit_instruction_gate\TARGET_OPCODE=4'1011
+Used module:             $paramod\control_unit_instruction_gate\TARGET_OPCODE=4'1100
+Used module:             $paramod\control_unit_instruction_gate\TARGET_OPCODE=4'1101
+Used module:             $paramod\control_unit_instruction_gate\TARGET_OPCODE=4'1110
+Used module:             $paramod\control_unit_instruction_gate\TARGET_OPCODE=4'1111
+Used module:             $paramod\control_unit_instruction_gate\TARGET_OPCODE=4'0001
+Used module:             $paramod\control_unit_instruction_gate\TARGET_OPCODE=4'0010
+Used module:             $paramod\control_unit_instruction_gate\TARGET_OPCODE=4'0011
+Used module:             $paramod\control_unit_instruction_gate\TARGET_OPCODE=4'0100
+Used module:             $paramod\control_unit_instruction_gate\TARGET_OPCODE=4'0101
+Used module:             $paramod\control_unit_instruction_gate\TARGET_OPCODE=4'0110
+Used module:             $paramod\control_unit_instruction_gate\TARGET_OPCODE=4'0111
+Used module:             $paramod\control_unit_instruction_gate\TARGET_OPCODE=4'1000
+Used module:             $paramod\control_unit_instruction_gate\TARGET_OPCODE=4'1001
+Used module:         \control_unit_op_matrix
+Used module:     \flag_reg
+Used module:         \flag_reg_bit
+Used module:         \flag_reg_ctrl
+Used module:     \imm_gen
+Used module:         \imm_gen_decoder
+Used module:         \imm_gen_ext_b12
+Used module:         \imm_gen_ext_i4
+Used module:         \imm_gen_ext_i8
+Used module:         \imm_gen_ext_s4
+Used module:         \imm_gen_mux_4to1_16bit
+Used module:             \imm_gen_mux_4to1_1bit
+Used module:     \program_counter
+Used module:         \program_counter_adder_16bit
+Used module:             \program_counter_full_adder
+Used module:                 \program_counter_half_adder
+Used module:         \program_counter_control
+Used module:         \program_counter_mux_4to1_16bit
+Used module:             \program_counter_mux_4to1_1bit
+Used module:         \program_counter_reg
+Used module:             \program_counter_bit
+Used module:     \register_file
+Used module:         \register_file_reg_16bit
+Used module:             \register_file_bit
+Used module:         \register_file_decoder_4to16
+Used module:         \register_file_mux_16to1_16bit
+Used module:             \register_file_mux_16to1_1bit
+Used module:         \register_file_zero_reg_16bit
+
+54.2. Analyzing design hierarchy..
+Top module:  \cpu
+Used module:     \alu
+Used module:         \alu_adder_16bit
+Used module:             \alu_full_adder
+Used module:                 \alu_half_adder
+Used module:         \alu_flag_logic
+Used module:         \alu_logic_16bit
+Used module:         \alu_mux_16to1_16bit
+Used module:             \alu_mux_16to1_1bit
+Used module:         \alu_shifter_16bit
+Used module:     \control_unit
+Used module:         \control_unit_decoder
+Used module:             $paramod\control_unit_instruction_gate\TARGET_OPCODE=4'0000
+Used module:             $paramod\control_unit_instruction_gate\TARGET_OPCODE=4'1010
+Used module:             $paramod\control_unit_instruction_gate\TARGET_OPCODE=4'1011
+Used module:             $paramod\control_unit_instruction_gate\TARGET_OPCODE=4'1100
+Used module:             $paramod\control_unit_instruction_gate\TARGET_OPCODE=4'1101
+Used module:             $paramod\control_unit_instruction_gate\TARGET_OPCODE=4'1110
+Used module:             $paramod\control_unit_instruction_gate\TARGET_OPCODE=4'1111
+Used module:             $paramod\control_unit_instruction_gate\TARGET_OPCODE=4'0001
+Used module:             $paramod\control_unit_instruction_gate\TARGET_OPCODE=4'0010
+Used module:             $paramod\control_unit_instruction_gate\TARGET_OPCODE=4'0011
+Used module:             $paramod\control_unit_instruction_gate\TARGET_OPCODE=4'0100
+Used module:             $paramod\control_unit_instruction_gate\TARGET_OPCODE=4'0101
+Used module:             $paramod\control_unit_instruction_gate\TARGET_OPCODE=4'0110
+Used module:             $paramod\control_unit_instruction_gate\TARGET_OPCODE=4'0111
+Used module:             $paramod\control_unit_instruction_gate\TARGET_OPCODE=4'1000
+Used module:             $paramod\control_unit_instruction_gate\TARGET_OPCODE=4'1001
+Used module:         \control_unit_op_matrix
+Used module:     \flag_reg
+Used module:         \flag_reg_bit
+Used module:         \flag_reg_ctrl
+Used module:     \imm_gen
+Used module:         \imm_gen_decoder
+Used module:         \imm_gen_ext_b12
+Used module:         \imm_gen_ext_i4
+Used module:         \imm_gen_ext_i8
+Used module:         \imm_gen_ext_s4
+Used module:         \imm_gen_mux_4to1_16bit
+Used module:             \imm_gen_mux_4to1_1bit
+Used module:     \program_counter
+Used module:         \program_counter_adder_16bit
+Used module:             \program_counter_full_adder
+Used module:                 \program_counter_half_adder
+Used module:         \program_counter_control
+Used module:         \program_counter_mux_4to1_16bit
+Used module:             \program_counter_mux_4to1_1bit
+Used module:         \program_counter_reg
+Used module:             \program_counter_bit
+Used module:     \register_file
+Used module:         \register_file_reg_16bit
+Used module:             \register_file_bit
+Used module:         \register_file_decoder_4to16
+Used module:         \register_file_mux_16to1_16bit
+Used module:             \register_file_mux_16to1_1bit
+Used module:         \register_file_zero_reg_16bit
+Removed 0 unused modules.
+
+55. Printing statistics.
+
+=== $paramod\control_unit_instruction_gate\TARGET_OPCODE=4'0000 ===
+
+        +----------Local Count, excluding submodules.
+        | 
+        4 wires
+        8 wire bits
+        2 public wires
+        5 public wire bits
+        2 ports
+        5 port bits
+        4 cells
+        1   $_NOT_
+        3   $_OR_
+
+=== $paramod\control_unit_instruction_gate\TARGET_OPCODE=4'0001 ===
+
+        +----------Local Count, excluding submodules.
+        | 
+        5 wires
+       12 wire bits
+        2 public wires
+        5 public wire bits
+        2 ports
+        5 port bits
+        8 cells
+        1   $_NOT_
+        3   $_OR_
+        4   $_XOR_
+
+=== $paramod\control_unit_instruction_gate\TARGET_OPCODE=4'0010 ===
+
+        +----------Local Count, excluding submodules.
+        | 
+        5 wires
+       12 wire bits
+        2 public wires
+        5 public wire bits
+        2 ports
+        5 port bits
+        8 cells
+        1   $_NOT_
+        3   $_OR_
+        4   $_XOR_
+
+=== $paramod\control_unit_instruction_gate\TARGET_OPCODE=4'0011 ===
+
+        +----------Local Count, excluding submodules.
+        | 
+        5 wires
+       12 wire bits
+        2 public wires
+        5 public wire bits
+        2 ports
+        5 port bits
+        8 cells
+        1   $_NOT_
+        3   $_OR_
+        4   $_XOR_
+
+=== $paramod\control_unit_instruction_gate\TARGET_OPCODE=4'0100 ===
+
+        +----------Local Count, excluding submodules.
+        | 
+        5 wires
+       12 wire bits
+        2 public wires
+        5 public wire bits
+        2 ports
+        5 port bits
+        8 cells
+        1   $_NOT_
+        3   $_OR_
+        4   $_XOR_
+
+=== $paramod\control_unit_instruction_gate\TARGET_OPCODE=4'0101 ===
+
+        +----------Local Count, excluding submodules.
+        | 
+        5 wires
+       12 wire bits
+        2 public wires
+        5 public wire bits
+        2 ports
+        5 port bits
+        8 cells
+        1   $_NOT_
+        3   $_OR_
+        4   $_XOR_
+
+=== $paramod\control_unit_instruction_gate\TARGET_OPCODE=4'0110 ===
+
+        +----------Local Count, excluding submodules.
+        | 
+        5 wires
+       12 wire bits
+        2 public wires
+        5 public wire bits
+        2 ports
+        5 port bits
+        8 cells
+        1   $_NOT_
+        3   $_OR_
+        4   $_XOR_
+
+=== $paramod\control_unit_instruction_gate\TARGET_OPCODE=4'0111 ===
+
+        +----------Local Count, excluding submodules.
+        | 
+        5 wires
+       12 wire bits
+        2 public wires
+        5 public wire bits
+        2 ports
+        5 port bits
+        8 cells
+        1   $_NOT_
+        3   $_OR_
+        4   $_XOR_
+
+=== $paramod\control_unit_instruction_gate\TARGET_OPCODE=4'1000 ===
+
+        +----------Local Count, excluding submodules.
+        | 
+        5 wires
+       12 wire bits
+        2 public wires
+        5 public wire bits
+        2 ports
+        5 port bits
+        8 cells
+        1   $_NOT_
+        3   $_OR_
+        4   $_XOR_
+
+=== $paramod\control_unit_instruction_gate\TARGET_OPCODE=4'1001 ===
+
+        +----------Local Count, excluding submodules.
+        | 
+        5 wires
+       12 wire bits
+        2 public wires
+        5 public wire bits
+        2 ports
+        5 port bits
+        8 cells
+        1   $_NOT_
+        3   $_OR_
+        4   $_XOR_
+
+=== $paramod\control_unit_instruction_gate\TARGET_OPCODE=4'1010 ===
+
+        +----------Local Count, excluding submodules.
+        | 
+        5 wires
+       12 wire bits
+        2 public wires
+        5 public wire bits
+        2 ports
+        5 port bits
+        8 cells
+        1   $_NOT_
+        3   $_OR_
+        4   $_XOR_
+
+=== $paramod\control_unit_instruction_gate\TARGET_OPCODE=4'1011 ===
+
+        +----------Local Count, excluding submodules.
+        | 
+        5 wires
+       12 wire bits
+        2 public wires
+        5 public wire bits
+        2 ports
+        5 port bits
+        8 cells
+        1   $_NOT_
+        3   $_OR_
+        4   $_XOR_
+
+=== $paramod\control_unit_instruction_gate\TARGET_OPCODE=4'1100 ===
+
+        +----------Local Count, excluding submodules.
+        | 
+        5 wires
+       12 wire bits
+        2 public wires
+        5 public wire bits
+        2 ports
+        5 port bits
+        8 cells
+        1   $_NOT_
+        3   $_OR_
+        4   $_XOR_
+
+=== $paramod\control_unit_instruction_gate\TARGET_OPCODE=4'1101 ===
+
+        +----------Local Count, excluding submodules.
+        | 
+        5 wires
+       12 wire bits
+        2 public wires
+        5 public wire bits
+        2 ports
+        5 port bits
+        8 cells
+        1   $_NOT_
+        3   $_OR_
+        4   $_XOR_
+
+=== $paramod\control_unit_instruction_gate\TARGET_OPCODE=4'1110 ===
+
+        +----------Local Count, excluding submodules.
+        | 
+        5 wires
+       12 wire bits
+        2 public wires
+        5 public wire bits
+        2 ports
+        5 port bits
+        8 cells
+        1   $_NOT_
+        3   $_OR_
+        4   $_XOR_
+
+=== $paramod\control_unit_instruction_gate\TARGET_OPCODE=4'1111 ===
+
+        +----------Local Count, excluding submodules.
+        | 
+        5 wires
+       12 wire bits
+        2 public wires
+        5 public wire bits
+        2 ports
+        5 port bits
+        8 cells
+        1   $_NOT_
+        3   $_OR_
+        4   $_XOR_
+
+=== alu ===
+
+        +----------Local Count, excluding submodules.
+        | 
+       19 wires
+      431 wire bits
+       15 public wires
+      423 public wire bits
+        7 ports
+       55 port bits
+        8 cells
+        1   $_NOT_
+        3   $_OR_
+        4   $_XOR_
+        5 submodules
+        1   alu_adder_16bit
+        1   alu_flag_logic
+        1   alu_logic_16bit
+        1   alu_mux_16to1_16bit
+        1   alu_shifter_16bit
+
+=== alu_adder_16bit ===
+
+        +----------Local Count, excluding submodules.
+        | 
+        7 wires
+       82 wire bits
+        7 public wires
+       82 public wire bits
+        5 ports
+       50 port bits
+       16 cells
+       16   $_XOR_
+       16 submodules
+       16   alu_full_adder
+
+=== alu_flag_logic ===
+
+        +----------Local Count, excluding submodules.
+        | 
+       31 wires
+       94 wire bits
+        9 public wires
+       57 public wire bits
+        7 ports
+       55 port bits
+       41 cells
+        8   $_AND_
+        1   $_MUX_
+        8   $_NOT_
+       20   $_OR_
+        4   $_XOR_
+
+=== alu_full_adder ===
+
+        +----------Local Count, excluding submodules.
+        | 
+        8 wires
+        8 wire bits
+        8 public wires
+        8 public wire bits
+        5 ports
+        5 port bits
+        1 cells
+        1   $_OR_
+        2 submodules
+        2   alu_half_adder
+
+=== alu_half_adder ===
+
+        +----------Local Count, excluding submodules.
+        | 
+        4 wires
+        4 wire bits
+        4 public wires
+        4 public wire bits
+        4 ports
+        4 port bits
+        2 cells
+        1   $_AND_
+        1   $_XOR_
+
+=== alu_logic_16bit ===
+
+        +----------Local Count, excluding submodules.
+        | 
+        6 wires
+       96 wire bits
+        6 public wires
+       96 public wire bits
+        6 ports
+       96 port bits
+       64 cells
+       16   $_AND_
+       16   $_NOT_
+       16   $_OR_
+       16   $_XOR_
+
+=== alu_mux_16to1_16bit ===
+
+        +----------Local Count, excluding submodules.
+        | 
+       19 wires
+      532 wire bits
+       19 public wires
+      532 public wire bits
+        3 ports
+      276 port bits
+       16 submodules
+       16   alu_mux_16to1_1bit
+
+=== alu_mux_16to1_1bit ===
+
+        +----------Local Count, excluding submodules.
+        | 
+        6 wires
+       69 wire bits
+        3 public wires
+       21 public wire bits
+        3 ports
+       21 port bits
+       15 cells
+       15   $_MUX_
+
+=== alu_shifter_16bit ===
+
+        +----------Local Count, excluding submodules.
+        | 
+       11 wires
+      164 wire bits
+        4 public wires
+       52 public wire bits
+        4 ports
+       52 port bits
+      124 cells
+      124   $_MUX_
+
+=== control_unit ===
+
+        +----------Local Count, excluding submodules.
+        | 
+        8 wires
+       29 wire bits
+        8 public wires
+       29 public wire bits
+        7 ports
+       13 port bits
+        2 submodules
+        1   control_unit_decoder
+        1   control_unit_op_matrix
+
+=== control_unit_decoder ===
+
+        +----------Local Count, excluding submodules.
+        | 
+        2 wires
+       20 wire bits
+        2 public wires
+       20 public wire bits
+        2 ports
+       20 port bits
+       16 submodules
+        1   $paramod\control_unit_instruction_gate\TARGET_OPCODE=4'0000
+        1   $paramod\control_unit_instruction_gate\TARGET_OPCODE=4'0001
+        1   $paramod\control_unit_instruction_gate\TARGET_OPCODE=4'0010
+        1   $paramod\control_unit_instruction_gate\TARGET_OPCODE=4'0011
+        1   $paramod\control_unit_instruction_gate\TARGET_OPCODE=4'0100
+        1   $paramod\control_unit_instruction_gate\TARGET_OPCODE=4'0101
+        1   $paramod\control_unit_instruction_gate\TARGET_OPCODE=4'0110
+        1   $paramod\control_unit_instruction_gate\TARGET_OPCODE=4'0111
+        1   $paramod\control_unit_instruction_gate\TARGET_OPCODE=4'1000
+        1   $paramod\control_unit_instruction_gate\TARGET_OPCODE=4'1001
+        1   $paramod\control_unit_instruction_gate\TARGET_OPCODE=4'1010
+        1   $paramod\control_unit_instruction_gate\TARGET_OPCODE=4'1011
+        1   $paramod\control_unit_instruction_gate\TARGET_OPCODE=4'1100
+        1   $paramod\control_unit_instruction_gate\TARGET_OPCODE=4'1101
+        1   $paramod\control_unit_instruction_gate\TARGET_OPCODE=4'1110
+        1   $paramod\control_unit_instruction_gate\TARGET_OPCODE=4'1111
+
+=== control_unit_op_matrix ===
+
+        +----------Local Count, excluding submodules.
+        | 
+       43 wires
+       61 wire bits
+       23 public wires
+       41 public wire bits
+        7 ports
+       25 port bits
+       27 cells
+       27   $_OR_
+
+=== cpu ===
+
+        +----------Local Count, excluding submodules.
+        | 
+       45 wires
+      387 wire bits
+       45 public wires
+      387 public wire bits
+       24 ports
+      228 port bits
+       48 cells
+       48   $_MUX_
+        6 submodules
+        1   alu
+        1   control_unit
+        1   flag_reg
+        1   imm_gen
+        1   program_counter
+        1   register_file
+
+=== flag_reg ===
+
+        +----------Local Count, excluding submodules.
+        | 
+       12 wires
+       19 wire bits
+       12 public wires
+       19 public wire bits
+        9 ports
+       12 port bits
+        4 submodules
+        3   flag_reg_bit
+        1   flag_reg_ctrl
+
+=== flag_reg_bit ===
+
+        +----------Local Count, excluding submodules.
+        | 
+        7 wires
+        7 wire bits
+        6 public wires
+        6 public wire bits
+        5 ports
+        5 port bits
+        2 cells
+        1   $_DFF_PN0_
+        1   $_MUX_
+
+=== flag_reg_ctrl ===
+
+        +----------Local Count, excluding submodules.
+        | 
+       12 wires
+       23 wire bits
+        5 public wires
+        8 public wire bits
+        2 ports
+        5 port bits
+       19 cells
+        3   $_NOT_
+        8   $_OR_
+        8   $_XOR_
+
+=== imm_gen ===
+
+        +----------Local Count, excluding submodules.
+        | 
+        7 wires
+       98 wire bits
+        7 public wires
+       98 public wire bits
+        2 ports
+       32 port bits
+        6 submodules
+        1   imm_gen_decoder
+        1   imm_gen_ext_b12
+        1   imm_gen_ext_i4
+        1   imm_gen_ext_i8
+        1   imm_gen_ext_s4
+        1   imm_gen_mux_4to1_16bit
+
+=== imm_gen_decoder ===
+
+        +----------Local Count, excluding submodules.
+        | 
+       24 wires
+       48 wire bits
+        5 public wires
+        9 public wire bits
+        2 ports
+        6 port bits
+       44 cells
+        5   $_NOT_
+       19   $_OR_
+       20   $_XOR_
+
+=== imm_gen_ext_b12 ===
+
+        +----------Local Count, excluding submodules.
+        | 
+        2 wires
+       32 wire bits
+        2 public wires
+       32 public wire bits
+        2 ports
+       32 port bits
+
+=== imm_gen_ext_i4 ===
+
+        +----------Local Count, excluding submodules.
+        | 
+        2 wires
+       32 wire bits
+        2 public wires
+       32 public wire bits
+        2 ports
+       32 port bits
+
+=== imm_gen_ext_i8 ===
+
+        +----------Local Count, excluding submodules.
+        | 
+        2 wires
+       32 wire bits
+        2 public wires
+       32 public wire bits
+        2 ports
+       32 port bits
+
+=== imm_gen_ext_s4 ===
+
+        +----------Local Count, excluding submodules.
+        | 
+        2 wires
+       32 wire bits
+        2 public wires
+       32 public wire bits
+        2 ports
+       32 port bits
+
+=== imm_gen_mux_4to1_16bit ===
+
+        +----------Local Count, excluding submodules.
+        | 
+        6 wires
+       82 wire bits
+        6 public wires
+       82 public wire bits
+        6 ports
+       82 port bits
+       16 submodules
+       16   imm_gen_mux_4to1_1bit
+
+=== imm_gen_mux_4to1_1bit ===
+
+        +----------Local Count, excluding submodules.
+        | 
+       16 wires
+       19 wire bits
+        6 public wires
+        7 public wire bits
+        6 ports
+        7 port bits
+       13 cells
+        3   $_MUX_
+        3   $_NOT_
+        3   $_OR_
+        4   $_XOR_
+
+=== program_counter ===
+
+        +----------Local Count, excluding submodules.
+        | 
+       14 wires
+      123 wire bits
+       14 public wires
+      123 public wire bits
+       10 ports
+       73 port bits
+        6 submodules
+        3   program_counter_adder_16bit
+        1   program_counter_control
+        1   program_counter_mux_4to1_16bit
+        1   program_counter_reg
+
+=== program_counter_adder_16bit ===
+
+        +----------Local Count, excluding submodules.
+        | 
+        4 wires
+       64 wire bits
+        4 public wires
+       64 public wire bits
+        3 ports
+       48 port bits
+       16 submodules
+       16   program_counter_full_adder
+
+=== program_counter_bit ===
+
+        +----------Local Count, excluding submodules.
+        | 
+        5 wires
+        5 wire bits
+        5 public wires
+        5 public wire bits
+        4 ports
+        4 port bits
+        1 cells
+        1   $_DFF_PN0_
+
+=== program_counter_control ===
+
+        +----------Local Count, excluding submodules.
+        | 
+       27 wires
+       47 wire bits
+       12 public wires
+       16 public wire bits
+        5 ports
+        9 port bits
+       37 cells
+        2   $_AND_
+        4   $_NOT_
+       14   $_OR_
+       17   $_XOR_
+
+=== program_counter_full_adder ===
+
+        +----------Local Count, excluding submodules.
+        | 
+        8 wires
+        8 wire bits
+        8 public wires
+        8 public wire bits
+        5 ports
+        5 port bits
+        1 cells
+        1   $_OR_
+        2 submodules
+        2   program_counter_half_adder
+
+=== program_counter_half_adder ===
+
+        +----------Local Count, excluding submodules.
+        | 
+        4 wires
+        4 wire bits
+        4 public wires
+        4 public wire bits
+        4 ports
+        4 port bits
+        2 cells
+        1   $_AND_
+        1   $_XOR_
+
+=== program_counter_mux_4to1_16bit ===
+
+        +----------Local Count, excluding submodules.
+        | 
+        6 wires
+       82 wire bits
+        6 public wires
+       82 public wire bits
+        6 ports
+       82 port bits
+       16 submodules
+       16   program_counter_mux_4to1_1bit
+
+=== program_counter_mux_4to1_1bit ===
+
+        +----------Local Count, excluding submodules.
+        | 
+       16 wires
+       19 wire bits
+        6 public wires
+        7 public wire bits
+        6 ports
+        7 port bits
+       13 cells
+        3   $_MUX_
+        3   $_NOT_
+        3   $_OR_
+        4   $_XOR_
+
+=== program_counter_reg ===
+
+        +----------Local Count, excluding submodules.
+        | 
+        4 wires
+       34 wire bits
+        4 public wires
+       34 public wire bits
+        4 ports
+       34 port bits
+       16 submodules
+       16   program_counter_bit
+
+=== register_file ===
+
+        +----------Local Count, excluding submodules.
+        | 
+       26 wires
+      350 wire bits
+       11 public wires
+      335 public wire bits
+        9 ports
+       63 port bits
+       15 cells
+       15   $_AND_
+       19 submodules
+        1   register_file_decoder_4to16
+        2   register_file_mux_16to1_16bit
+       15   register_file_reg_16bit
+        1   register_file_zero_reg_16bit
+
+=== register_file_bit ===
+
+        +----------Local Count, excluding submodules.
+        | 
+        7 wires
+        7 wire bits
+        6 public wires
+        6 public wire bits
+        5 ports
+        5 port bits
+        2 cells
+        1   $_DFF_PN0_
+        1   $_MUX_
+
+=== register_file_decoder_4to16 ===
+
+        +----------Local Count, excluding submodules.
+        | 
+       49 wires
+      128 wire bits
+        2 public wires
+       20 public wire bits
+        2 ports
+       20 port bits
+      124 cells
+       16   $_NOT_
+       48   $_OR_
+       60   $_XOR_
+
+=== register_file_mux_16to1_16bit ===
+
+        +----------Local Count, excluding submodules.
+        | 
+       19 wires
+      532 wire bits
+       19 public wires
+      532 public wire bits
+        3 ports
+      276 port bits
+       16 submodules
+       16   register_file_mux_16to1_1bit
+
+=== register_file_mux_16to1_1bit ===
+
+        +----------Local Count, excluding submodules.
+        | 
+        6 wires
+       69 wire bits
+        3 public wires
+       21 public wire bits
+        3 ports
+       21 port bits
+       15 cells
+       15   $_MUX_
+
+=== register_file_reg_16bit ===
+
+        +----------Local Count, excluding submodules.
+        | 
+        5 wires
+       35 wire bits
+        5 public wires
+       35 public wire bits
+        5 ports
+       35 port bits
+       16 submodules
+       16   register_file_bit
+
+=== register_file_zero_reg_16bit ===
+
+        +----------Local Count, excluding submodules.
+        | 
+        1 wires
+       16 wire bits
+        1 public wires
+       16 public wire bits
+        1 ports
+       16 port bits
+
+=== design hierarchy ===
+
+        +----------Count including submodules.
+        | 
+     2649 cpu
+        8 alu
+       16   alu_adder_16bit
+        1     alu_full_adder
+        2       alu_half_adder
+       41   alu_flag_logic
+       64   alu_logic_16bit
+       15     alu_mux_16to1_1bit
+      124   alu_shifter_16bit
+        4     $paramod\control_unit_instruction_gate\TARGET_OPCODE=4'0000
+        8     $paramod\control_unit_instruction_gate\TARGET_OPCODE=4'0001
+        8     $paramod\control_unit_instruction_gate\TARGET_OPCODE=4'0010
+        8     $paramod\control_unit_instruction_gate\TARGET_OPCODE=4'0011
+        8     $paramod\control_unit_instruction_gate\TARGET_OPCODE=4'0100
+        8     $paramod\control_unit_instruction_gate\TARGET_OPCODE=4'0101
+        8     $paramod\control_unit_instruction_gate\TARGET_OPCODE=4'0110
+        8     $paramod\control_unit_instruction_gate\TARGET_OPCODE=4'0111
+        8     $paramod\control_unit_instruction_gate\TARGET_OPCODE=4'1000
+        8     $paramod\control_unit_instruction_gate\TARGET_OPCODE=4'1001
+        8     $paramod\control_unit_instruction_gate\TARGET_OPCODE=4'1010
+        8     $paramod\control_unit_instruction_gate\TARGET_OPCODE=4'1011
+        8     $paramod\control_unit_instruction_gate\TARGET_OPCODE=4'1100
+        8     $paramod\control_unit_instruction_gate\TARGET_OPCODE=4'1101
+        8     $paramod\control_unit_instruction_gate\TARGET_OPCODE=4'1110
+        8     $paramod\control_unit_instruction_gate\TARGET_OPCODE=4'1111
+       27   control_unit_op_matrix
+        2   flag_reg_bit
+       19   flag_reg_ctrl
+       44   imm_gen_decoder
+       13     imm_gen_mux_4to1_1bit
+        1     program_counter_full_adder
+        2       program_counter_half_adder
+       37   program_counter_control
+       13     program_counter_mux_4to1_1bit
+        1     program_counter_bit
+       15 register_file
+      124   register_file_decoder_4to16
+       15     register_file_mux_16to1_1bit
+        2     register_file_bit
+
+        +----------Count including submodules.
+        | 
+     4196 wires
+    11768 wire bits
+     3286 public wires
+     8344 public wire bits
+     2707 ports
+     6076 port bits
+        - memories
+        - memory bits
+        - processes
+     2649 cells
+      169   $_AND_
+      259   $_DFF_PN0_
+     1232   $_MUX_
+      165   $_NOT_
+      363   $_OR_
+      461   $_XOR_
+        6 submodules
+        1   alu
+        1   control_unit
+        1   flag_reg
+        1   imm_gen
+        1   program_counter
+        1   register_file
+
+56. Executing JSON backend.
+
+End of script. Logfile hash: 92da5836c6, CPU: user 0.08s system 0.02s, MEM: 18.75 MB peak
+Yosys 0.61+112 (git sha1 ac427a79b, clang++ 18.1.8 -fPIC -O3)
+Time spent: 47% 97x read_verilog (0 sec), 11% 7x opt_expr (0 sec), ...

@@ -1,0 +1,395 @@
+{
+  "creator": "Yosys 0.61+112 (git sha1 ac427a79b, clang++ 18.1.8 -fPIC -O3)",
+  "modules": {
+    "imm_gen_mux_4to1_1bit": {
+      "attributes": {
+        "top": "00000000000000000000000000000001",
+        "src": "reconf/imm_gen/rtl/imm_gen_mux_4to1_1bit.v:1.1-14.10"
+      },
+      "ports": {
+        "i_sel": {
+          "direction": "input",
+          "bits": [ 2, 3 ]
+        },
+        "i_in0": {
+          "direction": "input",
+          "bits": [ 4 ]
+        },
+        "i_in1": {
+          "direction": "input",
+          "bits": [ 5 ]
+        },
+        "i_in2": {
+          "direction": "input",
+          "bits": [ 6 ]
+        },
+        "i_in3": {
+          "direction": "input",
+          "bits": [ 7 ]
+        },
+        "o_out": {
+          "direction": "output",
+          "bits": [ 8 ]
+        }
+      },
+      "cells": {
+        "$auto$simplemap.cc:106:simplemap_bitop$87": {
+          "hide_name": 1,
+          "type": "$_XOR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/imm_gen/rtl/imm_gen_mux_4to1_1bit.v:11.21-11.35"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 2 ],
+            "B": [ "1" ],
+            "Y": [ 9 ]
+          }
+        },
+        "$auto$simplemap.cc:106:simplemap_bitop$88": {
+          "hide_name": 1,
+          "type": "$_XOR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/imm_gen/rtl/imm_gen_mux_4to1_1bit.v:11.21-11.35"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 3 ],
+            "B": [ "0" ],
+            "Y": [ 10 ]
+          }
+        },
+        "$auto$simplemap.cc:106:simplemap_bitop$97": {
+          "hide_name": 1,
+          "type": "$_XOR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/imm_gen/rtl/imm_gen_mux_4to1_1bit.v:12.21-12.35"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 2 ],
+            "B": [ "0" ],
+            "Y": [ 11 ]
+          }
+        },
+        "$auto$simplemap.cc:106:simplemap_bitop$98": {
+          "hide_name": 1,
+          "type": "$_XOR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/imm_gen/rtl/imm_gen_mux_4to1_1bit.v:12.21-12.35"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 3 ],
+            "B": [ "1" ],
+            "Y": [ 12 ]
+          }
+        },
+        "$auto$simplemap.cc:157:simplemap_reduce$102": {
+          "hide_name": 1,
+          "type": "$_OR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/imm_gen/rtl/imm_gen_mux_4to1_1bit.v:12.21-12.35"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 11 ],
+            "B": [ 12 ],
+            "Y": [ 13 ]
+          }
+        },
+        "$auto$simplemap.cc:157:simplemap_reduce$92": {
+          "hide_name": 1,
+          "type": "$_OR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/imm_gen/rtl/imm_gen_mux_4to1_1bit.v:11.21-11.35"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 9 ],
+            "B": [ 10 ],
+            "Y": [ 14 ]
+          }
+        },
+        "$auto$simplemap.cc:198:logic_reduce$83": {
+          "hide_name": 1,
+          "type": "$_OR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/imm_gen/rtl/imm_gen_mux_4to1_1bit.v:10.21-10.35"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 2 ],
+            "B": [ 3 ],
+            "Y": [ 15 ]
+          }
+        },
+        "$auto$simplemap.cc:227:simplemap_lognot$104": {
+          "hide_name": 1,
+          "type": "$_NOT_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/imm_gen/rtl/imm_gen_mux_4to1_1bit.v:12.21-12.35"
+          },
+          "port_directions": {
+            "A": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 13 ],
+            "Y": [ 16 ]
+          }
+        },
+        "$auto$simplemap.cc:227:simplemap_lognot$84": {
+          "hide_name": 1,
+          "type": "$_NOT_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/imm_gen/rtl/imm_gen_mux_4to1_1bit.v:10.21-10.35"
+          },
+          "port_directions": {
+            "A": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 15 ],
+            "Y": [ 17 ]
+          }
+        },
+        "$auto$simplemap.cc:227:simplemap_lognot$94": {
+          "hide_name": 1,
+          "type": "$_NOT_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/imm_gen/rtl/imm_gen_mux_4to1_1bit.v:11.21-11.35"
+          },
+          "port_directions": {
+            "A": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 14 ],
+            "Y": [ 18 ]
+          }
+        },
+        "$auto$simplemap.cc:298:simplemap_mux$105": {
+          "hide_name": 1,
+          "type": "$_MUX_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/imm_gen/rtl/imm_gen_mux_4to1_1bit.v:12.20-12.52"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 7 ],
+            "B": [ 6 ],
+            "S": [ 16 ],
+            "Y": [ 19 ]
+          }
+        },
+        "$auto$simplemap.cc:298:simplemap_mux$106": {
+          "hide_name": 1,
+          "type": "$_MUX_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/imm_gen/rtl/imm_gen_mux_4to1_1bit.v:11.20-12.52"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 19 ],
+            "B": [ 5 ],
+            "S": [ 18 ],
+            "Y": [ 20 ]
+          }
+        },
+        "$auto$simplemap.cc:298:simplemap_mux$107": {
+          "hide_name": 1,
+          "type": "$_MUX_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/imm_gen/rtl/imm_gen_mux_4to1_1bit.v:10.20-12.52"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 20 ],
+            "B": [ 4 ],
+            "S": [ 17 ],
+            "Y": [ 8 ]
+          }
+        }
+      },
+      "netnames": {
+        "$auto$simplemap.cc:189:logic_reduce$82": {
+          "hide_name": 1,
+          "bits": [ 15 ],
+          "attributes": {
+          }
+        },
+        "$auto$simplemap.cc:271:simplemap_eqne$85": {
+          "hide_name": 1,
+          "bits": [ 9, 10 ],
+          "attributes": {
+          }
+        },
+        "$auto$simplemap.cc:271:simplemap_eqne$95": {
+          "hide_name": 1,
+          "bits": [ 11, 12 ],
+          "attributes": {
+          }
+        },
+        "$auto$simplemap.cc:277:simplemap_eqne$89": {
+          "hide_name": 1,
+          "bits": [ 14 ],
+          "attributes": {
+          }
+        },
+        "$auto$simplemap.cc:277:simplemap_eqne$99": {
+          "hide_name": 1,
+          "bits": [ 13 ],
+          "attributes": {
+          }
+        },
+        "$eq$reconf/imm_gen/rtl/imm_gen_mux_4to1_1bit.v:10$1_Y": {
+          "hide_name": 1,
+          "bits": [ 17 ],
+          "attributes": {
+            "src": "reconf/imm_gen/rtl/imm_gen_mux_4to1_1bit.v:10.21-10.35"
+          }
+        },
+        "$eq$reconf/imm_gen/rtl/imm_gen_mux_4to1_1bit.v:11$2_Y": {
+          "hide_name": 1,
+          "bits": [ 18 ],
+          "attributes": {
+            "src": "reconf/imm_gen/rtl/imm_gen_mux_4to1_1bit.v:11.21-11.35"
+          }
+        },
+        "$eq$reconf/imm_gen/rtl/imm_gen_mux_4to1_1bit.v:12$3_Y": {
+          "hide_name": 1,
+          "bits": [ 16 ],
+          "attributes": {
+            "src": "reconf/imm_gen/rtl/imm_gen_mux_4to1_1bit.v:12.21-12.35"
+          }
+        },
+        "$ternary$reconf/imm_gen/rtl/imm_gen_mux_4to1_1bit.v:11$5_Y": {
+          "hide_name": 1,
+          "bits": [ 20 ],
+          "attributes": {
+            "src": "reconf/imm_gen/rtl/imm_gen_mux_4to1_1bit.v:11.20-12.52"
+          }
+        },
+        "$ternary$reconf/imm_gen/rtl/imm_gen_mux_4to1_1bit.v:12$4_Y": {
+          "hide_name": 1,
+          "bits": [ 19 ],
+          "attributes": {
+            "src": "reconf/imm_gen/rtl/imm_gen_mux_4to1_1bit.v:12.20-12.52"
+          }
+        },
+        "i_in0": {
+          "hide_name": 0,
+          "bits": [ 4 ],
+          "attributes": {
+            "src": "reconf/imm_gen/rtl/imm_gen_mux_4to1_1bit.v:3.23-3.28"
+          }
+        },
+        "i_in1": {
+          "hide_name": 0,
+          "bits": [ 5 ],
+          "attributes": {
+            "src": "reconf/imm_gen/rtl/imm_gen_mux_4to1_1bit.v:4.23-4.28"
+          }
+        },
+        "i_in2": {
+          "hide_name": 0,
+          "bits": [ 6 ],
+          "attributes": {
+            "src": "reconf/imm_gen/rtl/imm_gen_mux_4to1_1bit.v:5.23-5.28"
+          }
+        },
+        "i_in3": {
+          "hide_name": 0,
+          "bits": [ 7 ],
+          "attributes": {
+            "src": "reconf/imm_gen/rtl/imm_gen_mux_4to1_1bit.v:6.23-6.28"
+          }
+        },
+        "i_sel": {
+          "hide_name": 0,
+          "bits": [ 2, 3 ],
+          "attributes": {
+            "src": "reconf/imm_gen/rtl/imm_gen_mux_4to1_1bit.v:2.23-2.28"
+          }
+        },
+        "o_out": {
+          "hide_name": 0,
+          "bits": [ 8 ],
+          "attributes": {
+            "src": "reconf/imm_gen/rtl/imm_gen_mux_4to1_1bit.v:7.23-7.28"
+          }
+        }
+      }
+    }
+  }
+}

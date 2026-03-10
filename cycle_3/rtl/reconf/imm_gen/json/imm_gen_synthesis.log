@@ -1,0 +1,347 @@
+
+ /----------------------------------------------------------------------------\
+ |  yosys -- Yosys Open SYnthesis Suite                                       |
+ |  Copyright (C) 2012 - 2026  Claire Xenia Wolf <claire@yosyshq.com>         |
+ |  Distributed under an ISC-like license, type "license" to see terms        |
+ \----------------------------------------------------------------------------/
+ Yosys 0.61+112 (git sha1 ac427a79b, clang++ 18.1.8 -fPIC -O3)
+
+-- Executing script file `reconf/imm_gen/json/imm_gen.ys' --
+
+1. Executing Verilog-2005 frontend: reconf/imm_gen/rtl/imm_gen_ext_i8.v
+Parsing Verilog input from `reconf/imm_gen/rtl/imm_gen_ext_i8.v' to AST representation.
+Generating RTLIL representation for module `\imm_gen_ext_i8'.
+Successfully finished Verilog frontend.
+
+2. Executing Verilog-2005 frontend: reconf/imm_gen/rtl/imm_gen_ext_s4.v
+Parsing Verilog input from `reconf/imm_gen/rtl/imm_gen_ext_s4.v' to AST representation.
+Generating RTLIL representation for module `\imm_gen_ext_s4'.
+Successfully finished Verilog frontend.
+
+3. Executing Verilog-2005 frontend: reconf/imm_gen/rtl/imm_gen_ext_b12.v
+Parsing Verilog input from `reconf/imm_gen/rtl/imm_gen_ext_b12.v' to AST representation.
+Generating RTLIL representation for module `\imm_gen_ext_b12'.
+Successfully finished Verilog frontend.
+
+4. Executing Verilog-2005 frontend: reconf/imm_gen/rtl/imm_gen_mux_4to1_1bit.v
+Parsing Verilog input from `reconf/imm_gen/rtl/imm_gen_mux_4to1_1bit.v' to AST representation.
+Generating RTLIL representation for module `\imm_gen_mux_4to1_1bit'.
+Successfully finished Verilog frontend.
+
+5. Executing Verilog-2005 frontend: reconf/imm_gen/rtl/imm_gen_ext_i4.v
+Parsing Verilog input from `reconf/imm_gen/rtl/imm_gen_ext_i4.v' to AST representation.
+Generating RTLIL representation for module `\imm_gen_ext_i4'.
+Successfully finished Verilog frontend.
+
+6. Executing Verilog-2005 frontend: reconf/imm_gen/rtl/imm_gen.v
+Parsing Verilog input from `reconf/imm_gen/rtl/imm_gen.v' to AST representation.
+Generating RTLIL representation for module `\imm_gen'.
+Successfully finished Verilog frontend.
+
+7. Executing Verilog-2005 frontend: reconf/imm_gen/rtl/imm_gen_decoder.v
+Parsing Verilog input from `reconf/imm_gen/rtl/imm_gen_decoder.v' to AST representation.
+Generating RTLIL representation for module `\imm_gen_decoder'.
+Successfully finished Verilog frontend.
+
+8. Executing Verilog-2005 frontend: reconf/imm_gen/rtl/imm_gen_mux_4to1_16bit.v
+Parsing Verilog input from `reconf/imm_gen/rtl/imm_gen_mux_4to1_16bit.v' to AST representation.
+Generating RTLIL representation for module `\imm_gen_mux_4to1_16bit'.
+Successfully finished Verilog frontend.
+
+9. Executing HIERARCHY pass (managing design hierarchy).
+
+9.1. Analyzing design hierarchy..
+Top module:  \imm_gen
+Used module:     \imm_gen_mux_4to1_16bit
+Used module:         \imm_gen_mux_4to1_1bit
+Used module:     \imm_gen_ext_b12
+Used module:     \imm_gen_ext_i8
+Used module:     \imm_gen_ext_s4
+Used module:     \imm_gen_ext_i4
+Used module:     \imm_gen_decoder
+
+9.2. Analyzing design hierarchy..
+Top module:  \imm_gen
+Used module:     \imm_gen_mux_4to1_16bit
+Used module:         \imm_gen_mux_4to1_1bit
+Used module:     \imm_gen_ext_b12
+Used module:     \imm_gen_ext_i8
+Used module:     \imm_gen_ext_s4
+Used module:     \imm_gen_ext_i4
+Used module:     \imm_gen_decoder
+Removed 0 unused modules.
+
+10. Executing PROC pass (convert processes to netlists).
+
+10.1. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Cleaned up 0 empty switches.
+
+10.2. Executing PROC_RMDEAD pass (remove dead branches from decision trees).
+Removed a total of 0 dead cases.
+
+10.3. Executing PROC_PRUNE pass (remove redundant assignments in processes).
+Removed 0 redundant assignments.
+Promoted 0 assignments to connections.
+
+10.4. Executing PROC_INIT pass (extract init attributes).
+
+10.5. Executing PROC_ARST pass (detect async resets in processes).
+
+10.6. Executing PROC_ROM pass (convert switches to ROMs).
+Converted 0 switches.
+
+10.7. Executing PROC_MUX pass (convert decision trees to multiplexers).
+
+10.8. Executing PROC_DLATCH pass (convert process syncs to latches).
+
+10.9. Executing PROC_DFF pass (convert process syncs to FFs).
+
+10.10. Executing PROC_MEMWR pass (convert process memory writes to cells).
+
+10.11. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Cleaned up 0 empty switches.
+
+10.12. Executing OPT_EXPR pass (perform const folding).
+Optimizing module imm_gen_mux_4to1_16bit.
+Optimizing module imm_gen_decoder.
+Optimizing module imm_gen.
+Optimizing module imm_gen_ext_i4.
+Optimizing module imm_gen_mux_4to1_1bit.
+<suppressed ~1 debug messages>
+Optimizing module imm_gen_ext_b12.
+Optimizing module imm_gen_ext_s4.
+Optimizing module imm_gen_ext_i8.
+
+11. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \imm_gen_mux_4to1_16bit..
+Finding unused cells or wires in module \imm_gen_decoder..
+Finding unused cells or wires in module \imm_gen..
+Finding unused cells or wires in module \imm_gen_ext_i4..
+Finding unused cells or wires in module \imm_gen_mux_4to1_1bit..
+Finding unused cells or wires in module \imm_gen_ext_b12..
+Finding unused cells or wires in module \imm_gen_ext_s4..
+Finding unused cells or wires in module \imm_gen_ext_i8..
+Removed 5 unused cells and 12 unused wires.
+<suppressed ~8 debug messages>
+
+12. Executing TECHMAP pass (map to technology primitives).
+
+12.1. Executing Verilog-2005 frontend: /opt/oss-cad-suite/lib/../share/yosys/techmap.v
+Parsing Verilog input from `/opt/oss-cad-suite/lib/../share/yosys/techmap.v' to AST representation.
+Generating RTLIL representation for module `\_90_simplemap_bool_ops'.
+Generating RTLIL representation for module `\_90_simplemap_reduce_ops'.
+Generating RTLIL representation for module `\_90_simplemap_logic_ops'.
+Generating RTLIL representation for module `\_90_simplemap_compare_ops'.
+Generating RTLIL representation for module `\_90_simplemap_various'.
+Generating RTLIL representation for module `\_90_simplemap_registers'.
+Generating RTLIL representation for module `\_90_shift_ops_shr_shl_sshl_sshr'.
+Generating RTLIL representation for module `\_90_shift_shiftx'.
+Generating RTLIL representation for module `\_90_fa'.
+Generating RTLIL representation for module `\_90_lcu_brent_kung'.
+Generating RTLIL representation for module `\_90_alu'.
+Generating RTLIL representation for module `\_90_macc'.
+Generating RTLIL representation for module `\_90_alumacc'.
+Generating RTLIL representation for module `$__div_mod_u'.
+Generating RTLIL representation for module `$__div_mod_trunc'.
+Generating RTLIL representation for module `\_90_div'.
+Generating RTLIL representation for module `\_90_mod'.
+Generating RTLIL representation for module `$__div_mod_floor'.
+Generating RTLIL representation for module `\_90_divfloor'.
+Generating RTLIL representation for module `\_90_modfloor'.
+Generating RTLIL representation for module `\_90_pow'.
+Generating RTLIL representation for module `\_90_pmux'.
+Generating RTLIL representation for module `\_90_demux'.
+Generating RTLIL representation for module `\_90_lut'.
+Generating RTLIL representation for module `$connect'.
+Generating RTLIL representation for module `$input_port'.
+Successfully finished Verilog frontend.
+
+12.2. Continuing TECHMAP pass.
+Using extmapper simplemap for cells of type $logic_not.
+Using extmapper simplemap for cells of type $eq.
+Using extmapper simplemap for cells of type $mux.
+Using extmapper simplemap for cells of type $or.
+No more expansions possible.
+<suppressed ~92 debug messages>
+
+13. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \imm_gen..
+Finding unused cells or wires in module \imm_gen_decoder..
+Finding unused cells or wires in module \imm_gen_ext_b12..
+Finding unused cells or wires in module \imm_gen_ext_i4..
+Finding unused cells or wires in module \imm_gen_ext_i8..
+Finding unused cells or wires in module \imm_gen_ext_s4..
+Finding unused cells or wires in module \imm_gen_mux_4to1_16bit..
+Finding unused cells or wires in module \imm_gen_mux_4to1_1bit..
+Removed 0 unused cells and 7 unused wires.
+<suppressed ~2 debug messages>
+
+14. Executing HIERARCHY pass (managing design hierarchy).
+Attribute `top' found on module `imm_gen'. Setting top module to imm_gen.
+
+14.1. Analyzing design hierarchy..
+Top module:  \imm_gen
+Used module:     \imm_gen_decoder
+Used module:     \imm_gen_ext_b12
+Used module:     \imm_gen_ext_i4
+Used module:     \imm_gen_ext_i8
+Used module:     \imm_gen_ext_s4
+Used module:     \imm_gen_mux_4to1_16bit
+Used module:         \imm_gen_mux_4to1_1bit
+
+14.2. Analyzing design hierarchy..
+Top module:  \imm_gen
+Used module:     \imm_gen_decoder
+Used module:     \imm_gen_ext_b12
+Used module:     \imm_gen_ext_i4
+Used module:     \imm_gen_ext_i8
+Used module:     \imm_gen_ext_s4
+Used module:     \imm_gen_mux_4to1_16bit
+Used module:         \imm_gen_mux_4to1_1bit
+Removed 0 unused modules.
+
+15. Printing statistics.
+
+=== imm_gen ===
+
+        +----------Local Count, excluding submodules.
+        | 
+        7 wires
+       98 wire bits
+        7 public wires
+       98 public wire bits
+        2 ports
+       32 port bits
+        6 submodules
+        1   imm_gen_decoder
+        1   imm_gen_ext_b12
+        1   imm_gen_ext_i4
+        1   imm_gen_ext_i8
+        1   imm_gen_ext_s4
+        1   imm_gen_mux_4to1_16bit
+
+=== imm_gen_decoder ===
+
+        +----------Local Count, excluding submodules.
+        | 
+       24 wires
+       48 wire bits
+        5 public wires
+        9 public wire bits
+        2 ports
+        6 port bits
+       44 cells
+        5   $_NOT_
+       19   $_OR_
+       20   $_XOR_
+
+=== imm_gen_ext_b12 ===
+
+        +----------Local Count, excluding submodules.
+        | 
+        2 wires
+       32 wire bits
+        2 public wires
+       32 public wire bits
+        2 ports
+       32 port bits
+
+=== imm_gen_ext_i4 ===
+
+        +----------Local Count, excluding submodules.
+        | 
+        2 wires
+       32 wire bits
+        2 public wires
+       32 public wire bits
+        2 ports
+       32 port bits
+
+=== imm_gen_ext_i8 ===
+
+        +----------Local Count, excluding submodules.
+        | 
+        2 wires
+       32 wire bits
+        2 public wires
+       32 public wire bits
+        2 ports
+       32 port bits
+
+=== imm_gen_ext_s4 ===
+
+        +----------Local Count, excluding submodules.
+        | 
+        2 wires
+       32 wire bits
+        2 public wires
+       32 public wire bits
+        2 ports
+       32 port bits
+
+=== imm_gen_mux_4to1_16bit ===
+
+        +----------Local Count, excluding submodules.
+        | 
+        6 wires
+       82 wire bits
+        6 public wires
+       82 public wire bits
+        6 ports
+       82 port bits
+       16 submodules
+       16   imm_gen_mux_4to1_1bit
+
+=== imm_gen_mux_4to1_1bit ===
+
+        +----------Local Count, excluding submodules.
+        | 
+       16 wires
+       19 wire bits
+        6 public wires
+        7 public wire bits
+        6 ports
+        7 port bits
+       13 cells
+        3   $_MUX_
+        3   $_NOT_
+        3   $_OR_
+        4   $_XOR_
+
+=== design hierarchy ===
+
+        +----------Count including submodules.
+        | 
+      252 imm_gen
+       44 imm_gen_decoder
+       13   imm_gen_mux_4to1_1bit
+
+        +----------Count including submodules.
+        | 
+      301 wires
+      660 wire bits
+      122 public wires
+      429 public wire bits
+      114 ports
+      360 port bits
+        - memories
+        - memory bits
+        - processes
+      252 cells
+       48   $_MUX_
+       53   $_NOT_
+       67   $_OR_
+       84   $_XOR_
+        6 submodules
+        1   imm_gen_decoder
+        1   imm_gen_ext_b12
+        1   imm_gen_ext_i4
+        1   imm_gen_ext_i8
+        1   imm_gen_ext_s4
+        1   imm_gen_mux_4to1_16bit
+
+16. Executing JSON backend.
+
+End of script. Logfile hash: 77a45b38d9, CPU: user 0.01s system 0.01s, MEM: 14.84 MB peak
+Yosys 0.61+112 (git sha1 ac427a79b, clang++ 18.1.8 -fPIC -O3)
+Time spent: 65% 17x read_verilog (0 sec), 9% 2x opt_clean (0 sec), ...

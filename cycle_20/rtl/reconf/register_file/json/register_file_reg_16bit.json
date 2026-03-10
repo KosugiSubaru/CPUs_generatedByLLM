@@ -1,0 +1,751 @@
+{
+  "creator": "Yosys 0.61+112 (git sha1 ac427a79b, clang++ 18.1.8 -fPIC -O3)",
+  "modules": {
+    "register_file_reg_16bit": {
+      "attributes": {
+        "top": "00000000000000000000000000000001",
+        "src": "reconf/register_file/rtl/register_file_reg_16bit.v:1.1-17.10"
+      },
+      "ports": {
+        "i_clk": {
+          "direction": "input",
+          "bits": [ 2 ]
+        },
+        "i_rst_n": {
+          "direction": "input",
+          "bits": [ 3 ]
+        },
+        "i_wen": {
+          "direction": "input",
+          "bits": [ 4 ]
+        },
+        "i_data": {
+          "direction": "input",
+          "bits": [ 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20 ]
+        },
+        "o_data": {
+          "direction": "output",
+          "bits": [ 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36 ]
+        }
+      },
+      "cells": {
+        "$auto$ff.cc:337:slice$133": {
+          "hide_name": 1,
+          "type": "$_DFF_PN0_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/register_file/rtl/register_file_reg_16bit.v:9.5-15.8"
+          },
+          "port_directions": {
+            "C": "input",
+            "D": "input",
+            "Q": "output",
+            "R": "input"
+          },
+          "connections": {
+            "C": [ 2 ],
+            "D": [ 37 ],
+            "Q": [ 21 ],
+            "R": [ 3 ]
+          }
+        },
+        "$auto$ff.cc:337:slice$134": {
+          "hide_name": 1,
+          "type": "$_DFF_PN0_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/register_file/rtl/register_file_reg_16bit.v:9.5-15.8"
+          },
+          "port_directions": {
+            "C": "input",
+            "D": "input",
+            "Q": "output",
+            "R": "input"
+          },
+          "connections": {
+            "C": [ 2 ],
+            "D": [ 38 ],
+            "Q": [ 22 ],
+            "R": [ 3 ]
+          }
+        },
+        "$auto$ff.cc:337:slice$135": {
+          "hide_name": 1,
+          "type": "$_DFF_PN0_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/register_file/rtl/register_file_reg_16bit.v:9.5-15.8"
+          },
+          "port_directions": {
+            "C": "input",
+            "D": "input",
+            "Q": "output",
+            "R": "input"
+          },
+          "connections": {
+            "C": [ 2 ],
+            "D": [ 39 ],
+            "Q": [ 23 ],
+            "R": [ 3 ]
+          }
+        },
+        "$auto$ff.cc:337:slice$136": {
+          "hide_name": 1,
+          "type": "$_DFF_PN0_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/register_file/rtl/register_file_reg_16bit.v:9.5-15.8"
+          },
+          "port_directions": {
+            "C": "input",
+            "D": "input",
+            "Q": "output",
+            "R": "input"
+          },
+          "connections": {
+            "C": [ 2 ],
+            "D": [ 40 ],
+            "Q": [ 24 ],
+            "R": [ 3 ]
+          }
+        },
+        "$auto$ff.cc:337:slice$137": {
+          "hide_name": 1,
+          "type": "$_DFF_PN0_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/register_file/rtl/register_file_reg_16bit.v:9.5-15.8"
+          },
+          "port_directions": {
+            "C": "input",
+            "D": "input",
+            "Q": "output",
+            "R": "input"
+          },
+          "connections": {
+            "C": [ 2 ],
+            "D": [ 41 ],
+            "Q": [ 25 ],
+            "R": [ 3 ]
+          }
+        },
+        "$auto$ff.cc:337:slice$138": {
+          "hide_name": 1,
+          "type": "$_DFF_PN0_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/register_file/rtl/register_file_reg_16bit.v:9.5-15.8"
+          },
+          "port_directions": {
+            "C": "input",
+            "D": "input",
+            "Q": "output",
+            "R": "input"
+          },
+          "connections": {
+            "C": [ 2 ],
+            "D": [ 42 ],
+            "Q": [ 26 ],
+            "R": [ 3 ]
+          }
+        },
+        "$auto$ff.cc:337:slice$139": {
+          "hide_name": 1,
+          "type": "$_DFF_PN0_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/register_file/rtl/register_file_reg_16bit.v:9.5-15.8"
+          },
+          "port_directions": {
+            "C": "input",
+            "D": "input",
+            "Q": "output",
+            "R": "input"
+          },
+          "connections": {
+            "C": [ 2 ],
+            "D": [ 43 ],
+            "Q": [ 27 ],
+            "R": [ 3 ]
+          }
+        },
+        "$auto$ff.cc:337:slice$140": {
+          "hide_name": 1,
+          "type": "$_DFF_PN0_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/register_file/rtl/register_file_reg_16bit.v:9.5-15.8"
+          },
+          "port_directions": {
+            "C": "input",
+            "D": "input",
+            "Q": "output",
+            "R": "input"
+          },
+          "connections": {
+            "C": [ 2 ],
+            "D": [ 44 ],
+            "Q": [ 28 ],
+            "R": [ 3 ]
+          }
+        },
+        "$auto$ff.cc:337:slice$141": {
+          "hide_name": 1,
+          "type": "$_DFF_PN0_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/register_file/rtl/register_file_reg_16bit.v:9.5-15.8"
+          },
+          "port_directions": {
+            "C": "input",
+            "D": "input",
+            "Q": "output",
+            "R": "input"
+          },
+          "connections": {
+            "C": [ 2 ],
+            "D": [ 45 ],
+            "Q": [ 29 ],
+            "R": [ 3 ]
+          }
+        },
+        "$auto$ff.cc:337:slice$142": {
+          "hide_name": 1,
+          "type": "$_DFF_PN0_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/register_file/rtl/register_file_reg_16bit.v:9.5-15.8"
+          },
+          "port_directions": {
+            "C": "input",
+            "D": "input",
+            "Q": "output",
+            "R": "input"
+          },
+          "connections": {
+            "C": [ 2 ],
+            "D": [ 46 ],
+            "Q": [ 30 ],
+            "R": [ 3 ]
+          }
+        },
+        "$auto$ff.cc:337:slice$143": {
+          "hide_name": 1,
+          "type": "$_DFF_PN0_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/register_file/rtl/register_file_reg_16bit.v:9.5-15.8"
+          },
+          "port_directions": {
+            "C": "input",
+            "D": "input",
+            "Q": "output",
+            "R": "input"
+          },
+          "connections": {
+            "C": [ 2 ],
+            "D": [ 47 ],
+            "Q": [ 31 ],
+            "R": [ 3 ]
+          }
+        },
+        "$auto$ff.cc:337:slice$144": {
+          "hide_name": 1,
+          "type": "$_DFF_PN0_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/register_file/rtl/register_file_reg_16bit.v:9.5-15.8"
+          },
+          "port_directions": {
+            "C": "input",
+            "D": "input",
+            "Q": "output",
+            "R": "input"
+          },
+          "connections": {
+            "C": [ 2 ],
+            "D": [ 48 ],
+            "Q": [ 32 ],
+            "R": [ 3 ]
+          }
+        },
+        "$auto$ff.cc:337:slice$145": {
+          "hide_name": 1,
+          "type": "$_DFF_PN0_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/register_file/rtl/register_file_reg_16bit.v:9.5-15.8"
+          },
+          "port_directions": {
+            "C": "input",
+            "D": "input",
+            "Q": "output",
+            "R": "input"
+          },
+          "connections": {
+            "C": [ 2 ],
+            "D": [ 49 ],
+            "Q": [ 33 ],
+            "R": [ 3 ]
+          }
+        },
+        "$auto$ff.cc:337:slice$146": {
+          "hide_name": 1,
+          "type": "$_DFF_PN0_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/register_file/rtl/register_file_reg_16bit.v:9.5-15.8"
+          },
+          "port_directions": {
+            "C": "input",
+            "D": "input",
+            "Q": "output",
+            "R": "input"
+          },
+          "connections": {
+            "C": [ 2 ],
+            "D": [ 50 ],
+            "Q": [ 34 ],
+            "R": [ 3 ]
+          }
+        },
+        "$auto$ff.cc:337:slice$147": {
+          "hide_name": 1,
+          "type": "$_DFF_PN0_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/register_file/rtl/register_file_reg_16bit.v:9.5-15.8"
+          },
+          "port_directions": {
+            "C": "input",
+            "D": "input",
+            "Q": "output",
+            "R": "input"
+          },
+          "connections": {
+            "C": [ 2 ],
+            "D": [ 51 ],
+            "Q": [ 35 ],
+            "R": [ 3 ]
+          }
+        },
+        "$auto$ff.cc:337:slice$148": {
+          "hide_name": 1,
+          "type": "$_DFF_PN0_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/register_file/rtl/register_file_reg_16bit.v:9.5-15.8"
+          },
+          "port_directions": {
+            "C": "input",
+            "D": "input",
+            "Q": "output",
+            "R": "input"
+          },
+          "connections": {
+            "C": [ 2 ],
+            "D": [ 52 ],
+            "Q": [ 36 ],
+            "R": [ 3 ]
+          }
+        },
+        "$auto$simplemap.cc:298:simplemap_mux$117": {
+          "hide_name": 1,
+          "type": "$_MUX_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/register_file/rtl/register_file_reg_16bit.v:12.22-12.27|reconf/register_file/rtl/register_file_reg_16bit.v:12.18-14.12"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 21 ],
+            "B": [ 5 ],
+            "S": [ 4 ],
+            "Y": [ 37 ]
+          }
+        },
+        "$auto$simplemap.cc:298:simplemap_mux$118": {
+          "hide_name": 1,
+          "type": "$_MUX_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/register_file/rtl/register_file_reg_16bit.v:12.22-12.27|reconf/register_file/rtl/register_file_reg_16bit.v:12.18-14.12"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 22 ],
+            "B": [ 6 ],
+            "S": [ 4 ],
+            "Y": [ 38 ]
+          }
+        },
+        "$auto$simplemap.cc:298:simplemap_mux$119": {
+          "hide_name": 1,
+          "type": "$_MUX_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/register_file/rtl/register_file_reg_16bit.v:12.22-12.27|reconf/register_file/rtl/register_file_reg_16bit.v:12.18-14.12"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 23 ],
+            "B": [ 7 ],
+            "S": [ 4 ],
+            "Y": [ 39 ]
+          }
+        },
+        "$auto$simplemap.cc:298:simplemap_mux$120": {
+          "hide_name": 1,
+          "type": "$_MUX_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/register_file/rtl/register_file_reg_16bit.v:12.22-12.27|reconf/register_file/rtl/register_file_reg_16bit.v:12.18-14.12"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 24 ],
+            "B": [ 8 ],
+            "S": [ 4 ],
+            "Y": [ 40 ]
+          }
+        },
+        "$auto$simplemap.cc:298:simplemap_mux$121": {
+          "hide_name": 1,
+          "type": "$_MUX_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/register_file/rtl/register_file_reg_16bit.v:12.22-12.27|reconf/register_file/rtl/register_file_reg_16bit.v:12.18-14.12"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 25 ],
+            "B": [ 9 ],
+            "S": [ 4 ],
+            "Y": [ 41 ]
+          }
+        },
+        "$auto$simplemap.cc:298:simplemap_mux$122": {
+          "hide_name": 1,
+          "type": "$_MUX_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/register_file/rtl/register_file_reg_16bit.v:12.22-12.27|reconf/register_file/rtl/register_file_reg_16bit.v:12.18-14.12"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 26 ],
+            "B": [ 10 ],
+            "S": [ 4 ],
+            "Y": [ 42 ]
+          }
+        },
+        "$auto$simplemap.cc:298:simplemap_mux$123": {
+          "hide_name": 1,
+          "type": "$_MUX_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/register_file/rtl/register_file_reg_16bit.v:12.22-12.27|reconf/register_file/rtl/register_file_reg_16bit.v:12.18-14.12"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 27 ],
+            "B": [ 11 ],
+            "S": [ 4 ],
+            "Y": [ 43 ]
+          }
+        },
+        "$auto$simplemap.cc:298:simplemap_mux$124": {
+          "hide_name": 1,
+          "type": "$_MUX_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/register_file/rtl/register_file_reg_16bit.v:12.22-12.27|reconf/register_file/rtl/register_file_reg_16bit.v:12.18-14.12"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 28 ],
+            "B": [ 12 ],
+            "S": [ 4 ],
+            "Y": [ 44 ]
+          }
+        },
+        "$auto$simplemap.cc:298:simplemap_mux$125": {
+          "hide_name": 1,
+          "type": "$_MUX_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/register_file/rtl/register_file_reg_16bit.v:12.22-12.27|reconf/register_file/rtl/register_file_reg_16bit.v:12.18-14.12"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 29 ],
+            "B": [ 13 ],
+            "S": [ 4 ],
+            "Y": [ 45 ]
+          }
+        },
+        "$auto$simplemap.cc:298:simplemap_mux$126": {
+          "hide_name": 1,
+          "type": "$_MUX_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/register_file/rtl/register_file_reg_16bit.v:12.22-12.27|reconf/register_file/rtl/register_file_reg_16bit.v:12.18-14.12"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 30 ],
+            "B": [ 14 ],
+            "S": [ 4 ],
+            "Y": [ 46 ]
+          }
+        },
+        "$auto$simplemap.cc:298:simplemap_mux$127": {
+          "hide_name": 1,
+          "type": "$_MUX_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/register_file/rtl/register_file_reg_16bit.v:12.22-12.27|reconf/register_file/rtl/register_file_reg_16bit.v:12.18-14.12"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 31 ],
+            "B": [ 15 ],
+            "S": [ 4 ],
+            "Y": [ 47 ]
+          }
+        },
+        "$auto$simplemap.cc:298:simplemap_mux$128": {
+          "hide_name": 1,
+          "type": "$_MUX_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/register_file/rtl/register_file_reg_16bit.v:12.22-12.27|reconf/register_file/rtl/register_file_reg_16bit.v:12.18-14.12"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 32 ],
+            "B": [ 16 ],
+            "S": [ 4 ],
+            "Y": [ 48 ]
+          }
+        },
+        "$auto$simplemap.cc:298:simplemap_mux$129": {
+          "hide_name": 1,
+          "type": "$_MUX_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/register_file/rtl/register_file_reg_16bit.v:12.22-12.27|reconf/register_file/rtl/register_file_reg_16bit.v:12.18-14.12"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 33 ],
+            "B": [ 17 ],
+            "S": [ 4 ],
+            "Y": [ 49 ]
+          }
+        },
+        "$auto$simplemap.cc:298:simplemap_mux$130": {
+          "hide_name": 1,
+          "type": "$_MUX_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/register_file/rtl/register_file_reg_16bit.v:12.22-12.27|reconf/register_file/rtl/register_file_reg_16bit.v:12.18-14.12"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 34 ],
+            "B": [ 18 ],
+            "S": [ 4 ],
+            "Y": [ 50 ]
+          }
+        },
+        "$auto$simplemap.cc:298:simplemap_mux$131": {
+          "hide_name": 1,
+          "type": "$_MUX_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/register_file/rtl/register_file_reg_16bit.v:12.22-12.27|reconf/register_file/rtl/register_file_reg_16bit.v:12.18-14.12"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 35 ],
+            "B": [ 19 ],
+            "S": [ 4 ],
+            "Y": [ 51 ]
+          }
+        },
+        "$auto$simplemap.cc:298:simplemap_mux$132": {
+          "hide_name": 1,
+          "type": "$_MUX_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/register_file/rtl/register_file_reg_16bit.v:12.22-12.27|reconf/register_file/rtl/register_file_reg_16bit.v:12.18-14.12"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 36 ],
+            "B": [ 20 ],
+            "S": [ 4 ],
+            "Y": [ 52 ]
+          }
+        }
+      },
+      "netnames": {
+        "$0\\o_data[15:0]": {
+          "hide_name": 1,
+          "bits": [ 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52 ],
+          "attributes": {
+            "src": "reconf/register_file/rtl/register_file_reg_16bit.v:9.5-15.8"
+          }
+        },
+        "i_clk": {
+          "hide_name": 0,
+          "bits": [ 2 ],
+          "attributes": {
+            "src": "reconf/register_file/rtl/register_file_reg_16bit.v:2.24-2.29"
+          }
+        },
+        "i_data": {
+          "hide_name": 0,
+          "bits": [ 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20 ],
+          "attributes": {
+            "src": "reconf/register_file/rtl/register_file_reg_16bit.v:5.24-5.30"
+          }
+        },
+        "i_rst_n": {
+          "hide_name": 0,
+          "bits": [ 3 ],
+          "attributes": {
+            "src": "reconf/register_file/rtl/register_file_reg_16bit.v:3.24-3.31"
+          }
+        },
+        "i_wen": {
+          "hide_name": 0,
+          "bits": [ 4 ],
+          "attributes": {
+            "src": "reconf/register_file/rtl/register_file_reg_16bit.v:4.24-4.29"
+          }
+        },
+        "o_data": {
+          "hide_name": 0,
+          "bits": [ 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36 ],
+          "attributes": {
+            "src": "reconf/register_file/rtl/register_file_reg_16bit.v:6.24-6.30"
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,77 @@
+
+=== ログ 2026-02-23 16:18:44 ===
+=== RTL Compile (All Files) ===
+
+reconf/next_pc_logic/rtl/next_pc_logic_fa.v:10: error: Unable to bind wire/reg/memory `b' in `next_pc_logic.u_adder_pc_inc.gen_fa[0].u_next_pc_logic_fa'
+reconf/next_pc_logic/rtl/next_pc_logic_fa.v:10: error: Unable to elaborate r-value: (((i_a)&(i_b))|((b)&(i_cin)))|((i_cin)&(i_a))
+reconf/next_pc_logic/rtl/next_pc_logic_fa.v:10: error: Unable to bind wire/reg/memory `b' in `next_pc_logic.u_adder_pc_inc.gen_fa[1].u_next_pc_logic_fa'
+reconf/next_pc_logic/rtl/next_pc_logic_fa.v:10: error: Unable to elaborate r-value: (((i_a)&(i_b))|((b)&(i_cin)))|((i_cin)&(i_a))
+reconf/next_pc_logic/rtl/next_pc_logic_fa.v:10: error: Unable to bind wire/reg/memory `b' in `next_pc_logic.u_adder_pc_inc.gen_fa[2].u_next_pc_logic_fa'
+reconf/next_pc_logic/rtl/next_pc_logic_fa.v:10: error: Unable to elaborate r-value: (((i_a)&(i_b))|((b)&(i_cin)))|((i_cin)&(i_a))
+reconf/next_pc_logic/rtl/next_pc_logic_fa.v:10: error: Unable to bind wire/reg/memory `b' in `next_pc_logic.u_adder_pc_inc.gen_fa[3].u_next_pc_logic_fa'
+reconf/next_pc_logic/rtl/next_pc_logic_fa.v:10: error: Unable to elaborate r-value: (((i_a)&(i_b))|((b)&(i_cin)))|((i_cin)&(i_a))
+reconf/next_pc_logic/rtl/next_pc_logic_fa.v:10: error: Unable to bind wire/reg/memory `b' in `next_pc_logic.u_adder_pc_inc.gen_fa[4].u_next_pc_logic_fa'
+reconf/next_pc_logic/rtl/next_pc_logic_fa.v:10: error: Unable to elaborate r-value: (((i_a)&(i_b))|((b)&(i_cin)))|((i_cin)&(i_a))
+reconf/next_pc_logic/rtl/next_pc_logic_fa.v:10: error: Unable to bind wire/reg/memory `b' in `next_pc_logic.u_adder_pc_inc.gen_fa[5].u_next_pc_logic_fa'
+reconf/next_pc_logic/rtl/next_pc_logic_fa.v:10: error: Unable to elaborate r-value: (((i_a)&(i_b))|((b)&(i_cin)))|((i_cin)&(i_a))
+reconf/next_pc_logic/rtl/next_pc_logic_fa.v:10: error: Unable to bind wire/reg/memory `b' in `next_pc_logic.u_adder_pc_inc.gen_fa[6].u_next_pc_logic_fa'
+reconf/next_pc_logic/rtl/next_pc_logic_fa.v:10: error: Unable to elaborate r-value: (((i_a)&(i_b))|((b)&(i_cin)))|((i_cin)&(i_a))
+reconf/next_pc_logic/rtl/next_pc_logic_fa.v:10: error: Unable to bind wire/reg/memory `b' in `next_pc_logic.u_adder_pc_inc.gen_fa[7].u_next_pc_logic_fa'
+reconf/next_pc_logic/rtl/next_pc_logic_fa.v:10: error: Unable to elaborate r-value: (((i_a)&(i_b))|((b)&(i_cin)))|((i_cin)&(i_a))
+reconf/next_pc_logic/rtl/next_pc_logic_fa.v:10: error: Unable to bind wire/reg/memory `b' in `next_pc_logic.u_adder_pc_inc.gen_fa[8].u_next_pc_logic_fa'
+reconf/next_pc_logic/rtl/next_pc_logic_fa.v:10: error: Unable to elaborate r-value: (((i_a)&(i_b))|((b)&(i_cin)))|((i_cin)&(i_a))
+reconf/next_pc_logic/rtl/next_pc_logic_fa.v:10: error: Unable to bind wire/reg/memory `b' in `next_pc_logic.u_adder_pc_inc.gen_fa[9].u_next_pc_logic_fa'
+reconf/next_pc_logic/rtl/next_pc_logic_fa.v:10: error: Unable to elaborate r-value: (((i_a)&(i_b))|((b)&(i_cin)))|((i_cin)&(i_a))
+reconf/next_pc_logic/rtl/next_pc_logic_fa.v:10: error: Unable to bind wire/reg/memory `b' in `next_pc_logic.u_adder_pc_inc.gen_fa[10].u_next_pc_logic_fa'
+reconf/next_pc_logic/rtl/next_pc_logic_fa.v:10: error: Unable to elaborate r-value: (((i_a)&(i_b))|((b)&(i_cin)))|((i_cin)&(i_a))
+reconf/next_pc_logic/rtl/next_pc_logic_fa.v:10: error: Unable to bind wire/reg/memory `b' in `next_pc_logic.u_adder_pc_inc.gen_fa[11].u_next_pc_logic_fa'
+reconf/next_pc_logic/rtl/next_pc_logic_fa.v:10: error: Unable to elaborate r-value: (((i_a)&(i_b))|((b)&(i_cin)))|((i_cin)&(i_a))
+reconf/next_pc_logic/rtl/next_pc_logic_fa.v:10: error: Unable to bind wire/reg/memory `b' in `next_pc_logic.u_adder_pc_inc.gen_fa[12].u_next_pc_logic_fa'
+reconf/next_pc_logic/rtl/next_pc_logic_fa.v:10: error: Unable to elaborate r-value: (((i_a)&(i_b))|((b)&(i_cin)))|((i_cin)&(i_a))
+reconf/next_pc_logic/rtl/next_pc_logic_fa.v:10: error: Unable to bind wire/reg/memory `b' in `next_pc_logic.u_adder_pc_inc.gen_fa[13].u_next_pc_logic_fa'
+reconf/next_pc_logic/rtl/next_pc_logic_fa.v:10: error: Unable to elaborate r-value: (((i_a)&(i_b))|((b)&(i_cin)))|((i_cin)&(i_a))
+reconf/next_pc_logic/rtl/next_pc_logic_fa.v:10: error: Unable to bind wire/reg/memory `b' in `next_pc_logic.u_adder_pc_inc.gen_fa[14].u_next_pc_logic_fa'
+reconf/next_pc_logic/rtl/next_pc_logic_fa.v:10: error: Unable to elaborate r-value: (((i_a)&(i_b))|((b)&(i_cin)))|((i_cin)&(i_a))
+reconf/next_pc_logic/rtl/next_pc_logic_fa.v:10: error: Unable to bind wire/reg/memory `b' in `next_pc_logic.u_adder_pc_inc.gen_fa[15].u_next_pc_logic_fa'
+reconf/next_pc_logic/rtl/next_pc_logic_fa.v:10: error: Unable to elaborate r-value: (((i_a)&(i_b))|((b)&(i_cin)))|((i_cin)&(i_a))
+reconf/next_pc_logic/rtl/next_pc_logic_fa.v:10: error: Unable to bind wire/reg/memory `b' in `next_pc_logic.u_adder_target_addr.gen_fa[0].u_next_pc_logic_fa'
+reconf/next_pc_logic/rtl/next_pc_logic_fa.v:10: error: Unable to elaborate r-value: (((i_a)&(i_b))|((b)&(i_cin)))|((i_cin)&(i_a))
+reconf/next_pc_logic/rtl/next_pc_logic_fa.v:10: error: Unable to bind wire/reg/memory `b' in `next_pc_logic.u_adder_target_addr.gen_fa[1].u_next_pc_logic_fa'
+reconf/next_pc_logic/rtl/next_pc_logic_fa.v:10: error: Unable to elaborate r-value: (((i_a)&(i_b))|((b)&(i_cin)))|((i_cin)&(i_a))
+reconf/next_pc_logic/rtl/next_pc_logic_fa.v:10: error: Unable to bind wire/reg/memory `b' in `next_pc_logic.u_adder_target_addr.gen_fa[2].u_next_pc_logic_fa'
+reconf/next_pc_logic/rtl/next_pc_logic_fa.v:10: error: Unable to elaborate r-value: (((i_a)&(i_b))|((b)&(i_cin)))|((i_cin)&(i_a))
+reconf/next_pc_logic/rtl/next_pc_logic_fa.v:10: error: Unable to bind wire/reg/memory `b' in `next_pc_logic.u_adder_target_addr.gen_fa[3].u_next_pc_logic_fa'
+reconf/next_pc_logic/rtl/next_pc_logic_fa.v:10: error: Unable to elaborate r-value: (((i_a)&(i_b))|((b)&(i_cin)))|((i_cin)&(i_a))
+reconf/next_pc_logic/rtl/next_pc_logic_fa.v:10: error: Unable to bind wire/reg/memory `b' in `next_pc_logic.u_adder_target_addr.gen_fa[4].u_next_pc_logic_fa'
+reconf/next_pc_logic/rtl/next_pc_logic_fa.v:10: error: Unable to elaborate r-value: (((i_a)&(i_b))|((b)&(i_cin)))|((i_cin)&(i_a))
+reconf/next_pc_logic/rtl/next_pc_logic_fa.v:10: error: Unable to bind wire/reg/memory `b' in `next_pc_logic.u_adder_target_addr.gen_fa[5].u_next_pc_logic_fa'
+reconf/next_pc_logic/rtl/next_pc_logic_fa.v:10: error: Unable to elaborate r-value: (((i_a)&(i_b))|((b)&(i_cin)))|((i_cin)&(i_a))
+reconf/next_pc_logic/rtl/next_pc_logic_fa.v:10: error: Unable to bind wire/reg/memory `b' in `next_pc_logic.u_adder_target_addr.gen_fa[6].u_next_pc_logic_fa'
+reconf/next_pc_logic/rtl/next_pc_logic_fa.v:10: error: Unable to elaborate r-value: (((i_a)&(i_b))|((b)&(i_cin)))|((i_cin)&(i_a))
+reconf/next_pc_logic/rtl/next_pc_logic_fa.v:10: error: Unable to bind wire/reg/memory `b' in `next_pc_logic.u_adder_target_addr.gen_fa[7].u_next_pc_logic_fa'
+reconf/next_pc_logic/rtl/next_pc_logic_fa.v:10: error: Unable to elaborate r-value: (((i_a)&(i_b))|((b)&(i_cin)))|((i_cin)&(i_a))
+reconf/next_pc_logic/rtl/next_pc_logic_fa.v:10: error: Unable to bind wire/reg/memory `b' in `next_pc_logic.u_adder_target_addr.gen_fa[8].u_next_pc_logic_fa'
+reconf/next_pc_logic/rtl/next_pc_logic_fa.v:10: error: Unable to elaborate r-value: (((i_a)&(i_b))|((b)&(i_cin)))|((i_cin)&(i_a))
+reconf/next_pc_logic/rtl/next_pc_logic_fa.v:10: error: Unable to bind wire/reg/memory `b' in `next_pc_logic.u_adder_target_addr.gen_fa[9].u_next_pc_logic_fa'
+reconf/next_pc_logic/rtl/next_pc_logic_fa.v:10: error: Unable to elaborate r-value: (((i_a)&(i_b))|((b)&(i_cin)))|((i_cin)&(i_a))
+reconf/next_pc_logic/rtl/next_pc_logic_fa.v:10: error: Unable to bind wire/reg/memory `b' in `next_pc_logic.u_adder_target_addr.gen_fa[10].u_next_pc_logic_fa'
+reconf/next_pc_logic/rtl/next_pc_logic_fa.v:10: error: Unable to elaborate r-value: (((i_a)&(i_b))|((b)&(i_cin)))|((i_cin)&(i_a))
+reconf/next_pc_logic/rtl/next_pc_logic_fa.v:10: error: Unable to bind wire/reg/memory `b' in `next_pc_logic.u_adder_target_addr.gen_fa[11].u_next_pc_logic_fa'
+reconf/next_pc_logic/rtl/next_pc_logic_fa.v:10: error: Unable to elaborate r-value: (((i_a)&(i_b))|((b)&(i_cin)))|((i_cin)&(i_a))
+reconf/next_pc_logic/rtl/next_pc_logic_fa.v:10: error: Unable to bind wire/reg/memory `b' in `next_pc_logic.u_adder_target_addr.gen_fa[12].u_next_pc_logic_fa'
+reconf/next_pc_logic/rtl/next_pc_logic_fa.v:10: error: Unable to elaborate r-value: (((i_a)&(i_b))|((b)&(i_cin)))|((i_cin)&(i_a))
+reconf/next_pc_logic/rtl/next_pc_logic_fa.v:10: error: Unable to bind wire/reg/memory `b' in `next_pc_logic.u_adder_target_addr.gen_fa[13].u_next_pc_logic_fa'
+reconf/next_pc_logic/rtl/next_pc_logic_fa.v:10: error: Unable to elaborate r-value: (((i_a)&(i_b))|((b)&(i_cin)))|((i_cin)&(i_a))
+reconf/next_pc_logic/rtl/next_pc_logic_fa.v:10: error: Unable to bind wire/reg/memory `b' in `next_pc_logic.u_adder_target_addr.gen_fa[14].u_next_pc_logic_fa'
+reconf/next_pc_logic/rtl/next_pc_logic_fa.v:10: error: Unable to elaborate r-value: (((i_a)&(i_b))|((b)&(i_cin)))|((i_cin)&(i_a))
+reconf/next_pc_logic/rtl/next_pc_logic_fa.v:10: error: Unable to bind wire/reg/memory `b' in `next_pc_logic.u_adder_target_addr.gen_fa[15].u_next_pc_logic_fa'
+reconf/next_pc_logic/rtl/next_pc_logic_fa.v:10: error: Unable to elaborate r-value: (((i_a)&(i_b))|((b)&(i_cin)))|((i_cin)&(i_a))
+64 error(s) during elaboration.
+
+==================================================
+
+=== ログ 2026-02-23 16:19:02 ===
+=== RTL Compile (All Files) ===
+
+
+==================================================

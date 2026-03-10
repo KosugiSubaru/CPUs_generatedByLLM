@@ -1,0 +1,66 @@
+
+============================================================
+CPU自動生成レポート
+============================================================
+生成日時: 2026-02-23 14:34:03
+
+生成成功モジュール (7個):
+
+  ✓ program_counter:
+    - program_counter.v
+    - program_counter_control.v
+    - program_counter_reg.v
+    - program_counter_bit.v
+    - program_counter_adder_16bit.v
+    - program_counter_full_adder.v
+    - program_counter_half_adder.v
+    - program_counter_mux_4to1_16bit.v
+    - program_counter_mux_4to1_1bit.v
+  ✓ control_unit:
+    - control_unit.v
+    - control_unit_decoder.v
+    - control_unit_instruction_gate.v
+    - control_unit_op_matrix.v
+  ✓ register_file:
+    - register_file.v
+    - register_file_decoder_4to16.v
+    - register_file_reg_16bit.v
+    - register_file_zero_reg_16bit.v
+    - register_file_bit.v
+    - register_file_mux_16to1_16bit.v
+    - register_file_mux_16to1_1bit.v
+  ✓ imm_gen:
+    - imm_gen.v
+    - imm_gen_decoder.v
+    - imm_gen_ext_i4.v
+    - imm_gen_ext_s4.v
+    - imm_gen_ext_i8.v
+    - imm_gen_ext_b12.v
+    - imm_gen_mux_4to1_16bit.v
+    - imm_gen_mux_4to1_1bit.v
+  ✓ alu:
+    - alu.v
+    - alu_adder_16bit.v
+    - alu_full_adder.v
+    - alu_half_adder.v
+    - alu_logic_16bit.v
+    - alu_shifter_16bit.v
+    - alu_mux_16to1_16bit.v
+    - alu_mux_16to1_1bit.v
+    - alu_flag_logic.v
+  ✓ flag_reg:
+    - flag_reg.v
+    - flag_reg_ctrl.v
+    - flag_reg_bit.v
+  ✓ next_pc_logic:
+    - next_pc_logic.v
+    - next_pc_logic_ctrl.v
+    - next_pc_logic_adder_16bit.v
+    - next_pc_logic_full_adder.v
+    - next_pc_logic_half_adder.v
+    - next_pc_logic_mux_4to1_16bit.v
+    - next_pc_logic_mux_4to1_1bit.v
+
+すべてのモジュールが正常に生成されました。
+
+============================================================

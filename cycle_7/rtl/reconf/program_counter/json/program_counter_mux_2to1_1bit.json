@@ -1,0 +1,82 @@
+{
+  "creator": "Yosys 0.61+112 (git sha1 ac427a79b, clang++ 18.1.8 -fPIC -O3)",
+  "modules": {
+    "program_counter_mux_2to1_1bit": {
+      "attributes": {
+        "top": "00000000000000000000000000000001",
+        "src": "reconf/program_counter/rtl/program_counter_mux_2to1_1bit.v:1.1-10.10"
+      },
+      "ports": {
+        "i_sel": {
+          "direction": "input",
+          "bits": [ 2 ]
+        },
+        "i_in0": {
+          "direction": "input",
+          "bits": [ 3 ]
+        },
+        "i_in1": {
+          "direction": "input",
+          "bits": [ 4 ]
+        },
+        "o_out": {
+          "direction": "output",
+          "bits": [ 5 ]
+        }
+      },
+      "cells": {
+        "$auto$simplemap.cc:298:simplemap_mux$85": {
+          "hide_name": 1,
+          "type": "$_MUX_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/program_counter/rtl/program_counter_mux_2to1_1bit.v:8.20-8.41"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 3 ],
+            "B": [ 4 ],
+            "S": [ 2 ],
+            "Y": [ 5 ]
+          }
+        }
+      },
+      "netnames": {
+        "i_in0": {
+          "hide_name": 0,
+          "bits": [ 3 ],
+          "attributes": {
+            "src": "reconf/program_counter/rtl/program_counter_mux_2to1_1bit.v:3.17-3.22"
+          }
+        },
+        "i_in1": {
+          "hide_name": 0,
+          "bits": [ 4 ],
+          "attributes": {
+            "src": "reconf/program_counter/rtl/program_counter_mux_2to1_1bit.v:4.17-4.22"
+          }
+        },
+        "i_sel": {
+          "hide_name": 0,
+          "bits": [ 2 ],
+          "attributes": {
+            "src": "reconf/program_counter/rtl/program_counter_mux_2to1_1bit.v:2.17-2.22"
+          }
+        },
+        "o_out": {
+          "hide_name": 0,
+          "bits": [ 5 ],
+          "attributes": {
+            "src": "reconf/program_counter/rtl/program_counter_mux_2to1_1bit.v:5.17-5.22"
+          }
+        }
+      }
+    }
+  }
+}

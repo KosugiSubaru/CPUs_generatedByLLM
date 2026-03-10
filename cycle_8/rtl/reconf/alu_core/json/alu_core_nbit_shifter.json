@@ -1,0 +1,3064 @@
+{
+  "creator": "Yosys 0.61+112 (git sha1 ac427a79b, clang++ 18.1.8 -fPIC -O3)",
+  "modules": {
+    "alu_core_nbit_shifter": {
+      "attributes": {
+        "top": "00000000000000000000000000000001",
+        "src": "reconf/alu_core/rtl/alu_core_nbit_shifter.v:1.1-29.10"
+      },
+      "ports": {
+        "i_data": {
+          "direction": "input",
+          "bits": [ 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17 ]
+        },
+        "i_amt": {
+          "direction": "input",
+          "bits": [ 18, 19, 20, 21 ]
+        },
+        "i_left": {
+          "direction": "input",
+          "bits": [ 22 ]
+        },
+        "o_data": {
+          "direction": "output",
+          "bits": [ 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38 ]
+        }
+      },
+      "cells": {
+        "$auto$simplemap.cc:298:simplemap_mux$543": {
+          "hide_name": 1,
+          "type": "$_MUX_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/alu_core/rtl/alu_core_nbit_shifter.v:25.32-25.70"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 39 ],
+            "B": [ 40 ],
+            "S": [ 22 ],
+            "Y": [ 23 ]
+          }
+        },
+        "$auto$simplemap.cc:298:simplemap_mux$544": {
+          "hide_name": 1,
+          "type": "$_MUX_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/alu_core/rtl/alu_core_nbit_shifter.v:25.32-25.70"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 41 ],
+            "B": [ 42 ],
+            "S": [ 22 ],
+            "Y": [ 24 ]
+          }
+        },
+        "$auto$simplemap.cc:298:simplemap_mux$545": {
+          "hide_name": 1,
+          "type": "$_MUX_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/alu_core/rtl/alu_core_nbit_shifter.v:25.32-25.70"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 43 ],
+            "B": [ 44 ],
+            "S": [ 22 ],
+            "Y": [ 25 ]
+          }
+        },
+        "$auto$simplemap.cc:298:simplemap_mux$546": {
+          "hide_name": 1,
+          "type": "$_MUX_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/alu_core/rtl/alu_core_nbit_shifter.v:25.32-25.70"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 45 ],
+            "B": [ 46 ],
+            "S": [ 22 ],
+            "Y": [ 26 ]
+          }
+        },
+        "$auto$simplemap.cc:298:simplemap_mux$547": {
+          "hide_name": 1,
+          "type": "$_MUX_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/alu_core/rtl/alu_core_nbit_shifter.v:25.32-25.70"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 47 ],
+            "B": [ 48 ],
+            "S": [ 22 ],
+            "Y": [ 27 ]
+          }
+        },
+        "$auto$simplemap.cc:298:simplemap_mux$548": {
+          "hide_name": 1,
+          "type": "$_MUX_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/alu_core/rtl/alu_core_nbit_shifter.v:25.32-25.70"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 49 ],
+            "B": [ 50 ],
+            "S": [ 22 ],
+            "Y": [ 28 ]
+          }
+        },
+        "$auto$simplemap.cc:298:simplemap_mux$549": {
+          "hide_name": 1,
+          "type": "$_MUX_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/alu_core/rtl/alu_core_nbit_shifter.v:25.32-25.70"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 51 ],
+            "B": [ 52 ],
+            "S": [ 22 ],
+            "Y": [ 29 ]
+          }
+        },
+        "$auto$simplemap.cc:298:simplemap_mux$550": {
+          "hide_name": 1,
+          "type": "$_MUX_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/alu_core/rtl/alu_core_nbit_shifter.v:25.32-25.70"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 53 ],
+            "B": [ 54 ],
+            "S": [ 22 ],
+            "Y": [ 30 ]
+          }
+        },
+        "$auto$simplemap.cc:298:simplemap_mux$551": {
+          "hide_name": 1,
+          "type": "$_MUX_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/alu_core/rtl/alu_core_nbit_shifter.v:25.32-25.70"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 55 ],
+            "B": [ 56 ],
+            "S": [ 22 ],
+            "Y": [ 31 ]
+          }
+        },
+        "$auto$simplemap.cc:298:simplemap_mux$552": {
+          "hide_name": 1,
+          "type": "$_MUX_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/alu_core/rtl/alu_core_nbit_shifter.v:25.32-25.70"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 57 ],
+            "B": [ 58 ],
+            "S": [ 22 ],
+            "Y": [ 32 ]
+          }
+        },
+        "$auto$simplemap.cc:298:simplemap_mux$553": {
+          "hide_name": 1,
+          "type": "$_MUX_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/alu_core/rtl/alu_core_nbit_shifter.v:25.32-25.70"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 59 ],
+            "B": [ 60 ],
+            "S": [ 22 ],
+            "Y": [ 33 ]
+          }
+        },
+        "$auto$simplemap.cc:298:simplemap_mux$554": {
+          "hide_name": 1,
+          "type": "$_MUX_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/alu_core/rtl/alu_core_nbit_shifter.v:25.32-25.70"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 61 ],
+            "B": [ 62 ],
+            "S": [ 22 ],
+            "Y": [ 34 ]
+          }
+        },
+        "$auto$simplemap.cc:298:simplemap_mux$555": {
+          "hide_name": 1,
+          "type": "$_MUX_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/alu_core/rtl/alu_core_nbit_shifter.v:25.32-25.70"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 63 ],
+            "B": [ 64 ],
+            "S": [ 22 ],
+            "Y": [ 35 ]
+          }
+        },
+        "$auto$simplemap.cc:298:simplemap_mux$556": {
+          "hide_name": 1,
+          "type": "$_MUX_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/alu_core/rtl/alu_core_nbit_shifter.v:25.32-25.70"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 65 ],
+            "B": [ 66 ],
+            "S": [ 22 ],
+            "Y": [ 36 ]
+          }
+        },
+        "$auto$simplemap.cc:298:simplemap_mux$557": {
+          "hide_name": 1,
+          "type": "$_MUX_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/alu_core/rtl/alu_core_nbit_shifter.v:25.32-25.70"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 67 ],
+            "B": [ 68 ],
+            "S": [ 22 ],
+            "Y": [ 37 ]
+          }
+        },
+        "$auto$simplemap.cc:298:simplemap_mux$558": {
+          "hide_name": 1,
+          "type": "$_MUX_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/alu_core/rtl/alu_core_nbit_shifter.v:25.32-25.70"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 17 ],
+            "B": [ 69 ],
+            "S": [ 22 ],
+            "Y": [ 38 ]
+          }
+        },
+        "$techmap$shl$reconf/alu_core/rtl/alu_core_nbit_shifter.v:17$2.$auto$simplemap.cc:298:simplemap_mux$429": {
+          "hide_name": 1,
+          "type": "$_MUX_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/alu_core/rtl/alu_core_nbit_shifter.v:17.24-17.39|/opt/oss-cad-suite/lib/../share/yosys/techmap.v:111.4-118.7|/opt/oss-cad-suite/lib/../share/yosys/techmap.v:111.8-111.12"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 70 ],
+            "B": [ "0" ],
+            "S": [ 21 ],
+            "Y": [ 40 ]
+          }
+        },
+        "$techmap$shl$reconf/alu_core/rtl/alu_core_nbit_shifter.v:17$2.$auto$simplemap.cc:298:simplemap_mux$430": {
+          "hide_name": 1,
+          "type": "$_MUX_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/alu_core/rtl/alu_core_nbit_shifter.v:17.24-17.39|/opt/oss-cad-suite/lib/../share/yosys/techmap.v:111.4-118.7|/opt/oss-cad-suite/lib/../share/yosys/techmap.v:111.8-111.12"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 71 ],
+            "B": [ "0" ],
+            "S": [ 21 ],
+            "Y": [ 42 ]
+          }
+        },
+        "$techmap$shl$reconf/alu_core/rtl/alu_core_nbit_shifter.v:17$2.$auto$simplemap.cc:298:simplemap_mux$431": {
+          "hide_name": 1,
+          "type": "$_MUX_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/alu_core/rtl/alu_core_nbit_shifter.v:17.24-17.39|/opt/oss-cad-suite/lib/../share/yosys/techmap.v:111.4-118.7|/opt/oss-cad-suite/lib/../share/yosys/techmap.v:111.8-111.12"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 72 ],
+            "B": [ "0" ],
+            "S": [ 21 ],
+            "Y": [ 44 ]
+          }
+        },
+        "$techmap$shl$reconf/alu_core/rtl/alu_core_nbit_shifter.v:17$2.$auto$simplemap.cc:298:simplemap_mux$432": {
+          "hide_name": 1,
+          "type": "$_MUX_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/alu_core/rtl/alu_core_nbit_shifter.v:17.24-17.39|/opt/oss-cad-suite/lib/../share/yosys/techmap.v:111.4-118.7|/opt/oss-cad-suite/lib/../share/yosys/techmap.v:111.8-111.12"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 73 ],
+            "B": [ "0" ],
+            "S": [ 21 ],
+            "Y": [ 46 ]
+          }
+        },
+        "$techmap$shl$reconf/alu_core/rtl/alu_core_nbit_shifter.v:17$2.$auto$simplemap.cc:298:simplemap_mux$433": {
+          "hide_name": 1,
+          "type": "$_MUX_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/alu_core/rtl/alu_core_nbit_shifter.v:17.24-17.39|/opt/oss-cad-suite/lib/../share/yosys/techmap.v:111.4-118.7|/opt/oss-cad-suite/lib/../share/yosys/techmap.v:111.8-111.12"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 74 ],
+            "B": [ "0" ],
+            "S": [ 21 ],
+            "Y": [ 48 ]
+          }
+        },
+        "$techmap$shl$reconf/alu_core/rtl/alu_core_nbit_shifter.v:17$2.$auto$simplemap.cc:298:simplemap_mux$434": {
+          "hide_name": 1,
+          "type": "$_MUX_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/alu_core/rtl/alu_core_nbit_shifter.v:17.24-17.39|/opt/oss-cad-suite/lib/../share/yosys/techmap.v:111.4-118.7|/opt/oss-cad-suite/lib/../share/yosys/techmap.v:111.8-111.12"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 75 ],
+            "B": [ "0" ],
+            "S": [ 21 ],
+            "Y": [ 50 ]
+          }
+        },
+        "$techmap$shl$reconf/alu_core/rtl/alu_core_nbit_shifter.v:17$2.$auto$simplemap.cc:298:simplemap_mux$435": {
+          "hide_name": 1,
+          "type": "$_MUX_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/alu_core/rtl/alu_core_nbit_shifter.v:17.24-17.39|/opt/oss-cad-suite/lib/../share/yosys/techmap.v:111.4-118.7|/opt/oss-cad-suite/lib/../share/yosys/techmap.v:111.8-111.12"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 76 ],
+            "B": [ "0" ],
+            "S": [ 21 ],
+            "Y": [ 52 ]
+          }
+        },
+        "$techmap$shl$reconf/alu_core/rtl/alu_core_nbit_shifter.v:17$2.$auto$simplemap.cc:298:simplemap_mux$436": {
+          "hide_name": 1,
+          "type": "$_MUX_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/alu_core/rtl/alu_core_nbit_shifter.v:17.24-17.39|/opt/oss-cad-suite/lib/../share/yosys/techmap.v:111.4-118.7|/opt/oss-cad-suite/lib/../share/yosys/techmap.v:111.8-111.12"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 77 ],
+            "B": [ "0" ],
+            "S": [ 21 ],
+            "Y": [ 54 ]
+          }
+        },
+        "$techmap$shl$reconf/alu_core/rtl/alu_core_nbit_shifter.v:17$2.$auto$simplemap.cc:298:simplemap_mux$437": {
+          "hide_name": 1,
+          "type": "$_MUX_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/alu_core/rtl/alu_core_nbit_shifter.v:17.24-17.39|/opt/oss-cad-suite/lib/../share/yosys/techmap.v:111.4-118.7|/opt/oss-cad-suite/lib/../share/yosys/techmap.v:111.8-111.12"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 78 ],
+            "B": [ 70 ],
+            "S": [ 21 ],
+            "Y": [ 56 ]
+          }
+        },
+        "$techmap$shl$reconf/alu_core/rtl/alu_core_nbit_shifter.v:17$2.$auto$simplemap.cc:298:simplemap_mux$438": {
+          "hide_name": 1,
+          "type": "$_MUX_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/alu_core/rtl/alu_core_nbit_shifter.v:17.24-17.39|/opt/oss-cad-suite/lib/../share/yosys/techmap.v:111.4-118.7|/opt/oss-cad-suite/lib/../share/yosys/techmap.v:111.8-111.12"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 79 ],
+            "B": [ 71 ],
+            "S": [ 21 ],
+            "Y": [ 58 ]
+          }
+        },
+        "$techmap$shl$reconf/alu_core/rtl/alu_core_nbit_shifter.v:17$2.$auto$simplemap.cc:298:simplemap_mux$439": {
+          "hide_name": 1,
+          "type": "$_MUX_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/alu_core/rtl/alu_core_nbit_shifter.v:17.24-17.39|/opt/oss-cad-suite/lib/../share/yosys/techmap.v:111.4-118.7|/opt/oss-cad-suite/lib/../share/yosys/techmap.v:111.8-111.12"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 80 ],
+            "B": [ 72 ],
+            "S": [ 21 ],
+            "Y": [ 60 ]
+          }
+        },
+        "$techmap$shl$reconf/alu_core/rtl/alu_core_nbit_shifter.v:17$2.$auto$simplemap.cc:298:simplemap_mux$440": {
+          "hide_name": 1,
+          "type": "$_MUX_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/alu_core/rtl/alu_core_nbit_shifter.v:17.24-17.39|/opt/oss-cad-suite/lib/../share/yosys/techmap.v:111.4-118.7|/opt/oss-cad-suite/lib/../share/yosys/techmap.v:111.8-111.12"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 81 ],
+            "B": [ 73 ],
+            "S": [ 21 ],
+            "Y": [ 62 ]
+          }
+        },
+        "$techmap$shl$reconf/alu_core/rtl/alu_core_nbit_shifter.v:17$2.$auto$simplemap.cc:298:simplemap_mux$441": {
+          "hide_name": 1,
+          "type": "$_MUX_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/alu_core/rtl/alu_core_nbit_shifter.v:17.24-17.39|/opt/oss-cad-suite/lib/../share/yosys/techmap.v:111.4-118.7|/opt/oss-cad-suite/lib/../share/yosys/techmap.v:111.8-111.12"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 82 ],
+            "B": [ 74 ],
+            "S": [ 21 ],
+            "Y": [ 64 ]
+          }
+        },
+        "$techmap$shl$reconf/alu_core/rtl/alu_core_nbit_shifter.v:17$2.$auto$simplemap.cc:298:simplemap_mux$442": {
+          "hide_name": 1,
+          "type": "$_MUX_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/alu_core/rtl/alu_core_nbit_shifter.v:17.24-17.39|/opt/oss-cad-suite/lib/../share/yosys/techmap.v:111.4-118.7|/opt/oss-cad-suite/lib/../share/yosys/techmap.v:111.8-111.12"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 83 ],
+            "B": [ 75 ],
+            "S": [ 21 ],
+            "Y": [ 66 ]
+          }
+        },
+        "$techmap$shl$reconf/alu_core/rtl/alu_core_nbit_shifter.v:17$2.$auto$simplemap.cc:298:simplemap_mux$443": {
+          "hide_name": 1,
+          "type": "$_MUX_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/alu_core/rtl/alu_core_nbit_shifter.v:17.24-17.39|/opt/oss-cad-suite/lib/../share/yosys/techmap.v:111.4-118.7|/opt/oss-cad-suite/lib/../share/yosys/techmap.v:111.8-111.12"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 84 ],
+            "B": [ 76 ],
+            "S": [ 21 ],
+            "Y": [ 68 ]
+          }
+        },
+        "$techmap$shl$reconf/alu_core/rtl/alu_core_nbit_shifter.v:17$2.$auto$simplemap.cc:298:simplemap_mux$444": {
+          "hide_name": 1,
+          "type": "$_MUX_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/alu_core/rtl/alu_core_nbit_shifter.v:17.24-17.39|/opt/oss-cad-suite/lib/../share/yosys/techmap.v:111.4-118.7|/opt/oss-cad-suite/lib/../share/yosys/techmap.v:111.8-111.12"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 85 ],
+            "B": [ 77 ],
+            "S": [ 21 ],
+            "Y": [ 69 ]
+          }
+        },
+        "$techmap$shl$reconf/alu_core/rtl/alu_core_nbit_shifter.v:17$2.$auto$simplemap.cc:298:simplemap_mux$461": {
+          "hide_name": 1,
+          "type": "$_MUX_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/alu_core/rtl/alu_core_nbit_shifter.v:17.24-17.39|/opt/oss-cad-suite/lib/../share/yosys/techmap.v:111.4-118.7|/opt/oss-cad-suite/lib/../share/yosys/techmap.v:111.8-111.12"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 86 ],
+            "B": [ "0" ],
+            "S": [ 20 ],
+            "Y": [ 70 ]
+          }
+        },
+        "$techmap$shl$reconf/alu_core/rtl/alu_core_nbit_shifter.v:17$2.$auto$simplemap.cc:298:simplemap_mux$462": {
+          "hide_name": 1,
+          "type": "$_MUX_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/alu_core/rtl/alu_core_nbit_shifter.v:17.24-17.39|/opt/oss-cad-suite/lib/../share/yosys/techmap.v:111.4-118.7|/opt/oss-cad-suite/lib/../share/yosys/techmap.v:111.8-111.12"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 87 ],
+            "B": [ "0" ],
+            "S": [ 20 ],
+            "Y": [ 71 ]
+          }
+        },
+        "$techmap$shl$reconf/alu_core/rtl/alu_core_nbit_shifter.v:17$2.$auto$simplemap.cc:298:simplemap_mux$463": {
+          "hide_name": 1,
+          "type": "$_MUX_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/alu_core/rtl/alu_core_nbit_shifter.v:17.24-17.39|/opt/oss-cad-suite/lib/../share/yosys/techmap.v:111.4-118.7|/opt/oss-cad-suite/lib/../share/yosys/techmap.v:111.8-111.12"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 88 ],
+            "B": [ "0" ],
+            "S": [ 20 ],
+            "Y": [ 72 ]
+          }
+        },
+        "$techmap$shl$reconf/alu_core/rtl/alu_core_nbit_shifter.v:17$2.$auto$simplemap.cc:298:simplemap_mux$464": {
+          "hide_name": 1,
+          "type": "$_MUX_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/alu_core/rtl/alu_core_nbit_shifter.v:17.24-17.39|/opt/oss-cad-suite/lib/../share/yosys/techmap.v:111.4-118.7|/opt/oss-cad-suite/lib/../share/yosys/techmap.v:111.8-111.12"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 89 ],
+            "B": [ "0" ],
+            "S": [ 20 ],
+            "Y": [ 73 ]
+          }
+        },
+        "$techmap$shl$reconf/alu_core/rtl/alu_core_nbit_shifter.v:17$2.$auto$simplemap.cc:298:simplemap_mux$465": {
+          "hide_name": 1,
+          "type": "$_MUX_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/alu_core/rtl/alu_core_nbit_shifter.v:17.24-17.39|/opt/oss-cad-suite/lib/../share/yosys/techmap.v:111.4-118.7|/opt/oss-cad-suite/lib/../share/yosys/techmap.v:111.8-111.12"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 90 ],
+            "B": [ 86 ],
+            "S": [ 20 ],
+            "Y": [ 74 ]
+          }
+        },
+        "$techmap$shl$reconf/alu_core/rtl/alu_core_nbit_shifter.v:17$2.$auto$simplemap.cc:298:simplemap_mux$466": {
+          "hide_name": 1,
+          "type": "$_MUX_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/alu_core/rtl/alu_core_nbit_shifter.v:17.24-17.39|/opt/oss-cad-suite/lib/../share/yosys/techmap.v:111.4-118.7|/opt/oss-cad-suite/lib/../share/yosys/techmap.v:111.8-111.12"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 91 ],
+            "B": [ 87 ],
+            "S": [ 20 ],
+            "Y": [ 75 ]
+          }
+        },
+        "$techmap$shl$reconf/alu_core/rtl/alu_core_nbit_shifter.v:17$2.$auto$simplemap.cc:298:simplemap_mux$467": {
+          "hide_name": 1,
+          "type": "$_MUX_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/alu_core/rtl/alu_core_nbit_shifter.v:17.24-17.39|/opt/oss-cad-suite/lib/../share/yosys/techmap.v:111.4-118.7|/opt/oss-cad-suite/lib/../share/yosys/techmap.v:111.8-111.12"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 92 ],
+            "B": [ 88 ],
+            "S": [ 20 ],
+            "Y": [ 76 ]
+          }
+        },
+        "$techmap$shl$reconf/alu_core/rtl/alu_core_nbit_shifter.v:17$2.$auto$simplemap.cc:298:simplemap_mux$468": {
+          "hide_name": 1,
+          "type": "$_MUX_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/alu_core/rtl/alu_core_nbit_shifter.v:17.24-17.39|/opt/oss-cad-suite/lib/../share/yosys/techmap.v:111.4-118.7|/opt/oss-cad-suite/lib/../share/yosys/techmap.v:111.8-111.12"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 93 ],
+            "B": [ 89 ],
+            "S": [ 20 ],
+            "Y": [ 77 ]
+          }
+        },
+        "$techmap$shl$reconf/alu_core/rtl/alu_core_nbit_shifter.v:17$2.$auto$simplemap.cc:298:simplemap_mux$469": {
+          "hide_name": 1,
+          "type": "$_MUX_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/alu_core/rtl/alu_core_nbit_shifter.v:17.24-17.39|/opt/oss-cad-suite/lib/../share/yosys/techmap.v:111.4-118.7|/opt/oss-cad-suite/lib/../share/yosys/techmap.v:111.8-111.12"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 94 ],
+            "B": [ 90 ],
+            "S": [ 20 ],
+            "Y": [ 78 ]
+          }
+        },
+        "$techmap$shl$reconf/alu_core/rtl/alu_core_nbit_shifter.v:17$2.$auto$simplemap.cc:298:simplemap_mux$470": {
+          "hide_name": 1,
+          "type": "$_MUX_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/alu_core/rtl/alu_core_nbit_shifter.v:17.24-17.39|/opt/oss-cad-suite/lib/../share/yosys/techmap.v:111.4-118.7|/opt/oss-cad-suite/lib/../share/yosys/techmap.v:111.8-111.12"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 95 ],
+            "B": [ 91 ],
+            "S": [ 20 ],
+            "Y": [ 79 ]
+          }
+        },
+        "$techmap$shl$reconf/alu_core/rtl/alu_core_nbit_shifter.v:17$2.$auto$simplemap.cc:298:simplemap_mux$471": {
+          "hide_name": 1,
+          "type": "$_MUX_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/alu_core/rtl/alu_core_nbit_shifter.v:17.24-17.39|/opt/oss-cad-suite/lib/../share/yosys/techmap.v:111.4-118.7|/opt/oss-cad-suite/lib/../share/yosys/techmap.v:111.8-111.12"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 96 ],
+            "B": [ 92 ],
+            "S": [ 20 ],
+            "Y": [ 80 ]
+          }
+        },
+        "$techmap$shl$reconf/alu_core/rtl/alu_core_nbit_shifter.v:17$2.$auto$simplemap.cc:298:simplemap_mux$472": {
+          "hide_name": 1,
+          "type": "$_MUX_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/alu_core/rtl/alu_core_nbit_shifter.v:17.24-17.39|/opt/oss-cad-suite/lib/../share/yosys/techmap.v:111.4-118.7|/opt/oss-cad-suite/lib/../share/yosys/techmap.v:111.8-111.12"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 97 ],
+            "B": [ 93 ],
+            "S": [ 20 ],
+            "Y": [ 81 ]
+          }
+        },
+        "$techmap$shl$reconf/alu_core/rtl/alu_core_nbit_shifter.v:17$2.$auto$simplemap.cc:298:simplemap_mux$473": {
+          "hide_name": 1,
+          "type": "$_MUX_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/alu_core/rtl/alu_core_nbit_shifter.v:17.24-17.39|/opt/oss-cad-suite/lib/../share/yosys/techmap.v:111.4-118.7|/opt/oss-cad-suite/lib/../share/yosys/techmap.v:111.8-111.12"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 98 ],
+            "B": [ 94 ],
+            "S": [ 20 ],
+            "Y": [ 82 ]
+          }
+        },
+        "$techmap$shl$reconf/alu_core/rtl/alu_core_nbit_shifter.v:17$2.$auto$simplemap.cc:298:simplemap_mux$474": {
+          "hide_name": 1,
+          "type": "$_MUX_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/alu_core/rtl/alu_core_nbit_shifter.v:17.24-17.39|/opt/oss-cad-suite/lib/../share/yosys/techmap.v:111.4-118.7|/opt/oss-cad-suite/lib/../share/yosys/techmap.v:111.8-111.12"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 99 ],
+            "B": [ 95 ],
+            "S": [ 20 ],
+            "Y": [ 83 ]
+          }
+        },
+        "$techmap$shl$reconf/alu_core/rtl/alu_core_nbit_shifter.v:17$2.$auto$simplemap.cc:298:simplemap_mux$475": {
+          "hide_name": 1,
+          "type": "$_MUX_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/alu_core/rtl/alu_core_nbit_shifter.v:17.24-17.39|/opt/oss-cad-suite/lib/../share/yosys/techmap.v:111.4-118.7|/opt/oss-cad-suite/lib/../share/yosys/techmap.v:111.8-111.12"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 100 ],
+            "B": [ 96 ],
+            "S": [ 20 ],
+            "Y": [ 84 ]
+          }
+        },
+        "$techmap$shl$reconf/alu_core/rtl/alu_core_nbit_shifter.v:17$2.$auto$simplemap.cc:298:simplemap_mux$476": {
+          "hide_name": 1,
+          "type": "$_MUX_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/alu_core/rtl/alu_core_nbit_shifter.v:17.24-17.39|/opt/oss-cad-suite/lib/../share/yosys/techmap.v:111.4-118.7|/opt/oss-cad-suite/lib/../share/yosys/techmap.v:111.8-111.12"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 101 ],
+            "B": [ 97 ],
+            "S": [ 20 ],
+            "Y": [ 85 ]
+          }
+        },
+        "$techmap$shl$reconf/alu_core/rtl/alu_core_nbit_shifter.v:17$2.$auto$simplemap.cc:298:simplemap_mux$493": {
+          "hide_name": 1,
+          "type": "$_MUX_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/alu_core/rtl/alu_core_nbit_shifter.v:17.24-17.39|/opt/oss-cad-suite/lib/../share/yosys/techmap.v:111.4-118.7|/opt/oss-cad-suite/lib/../share/yosys/techmap.v:111.8-111.12"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 102 ],
+            "B": [ "0" ],
+            "S": [ 19 ],
+            "Y": [ 86 ]
+          }
+        },
+        "$techmap$shl$reconf/alu_core/rtl/alu_core_nbit_shifter.v:17$2.$auto$simplemap.cc:298:simplemap_mux$494": {
+          "hide_name": 1,
+          "type": "$_MUX_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/alu_core/rtl/alu_core_nbit_shifter.v:17.24-17.39|/opt/oss-cad-suite/lib/../share/yosys/techmap.v:111.4-118.7|/opt/oss-cad-suite/lib/../share/yosys/techmap.v:111.8-111.12"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 103 ],
+            "B": [ "0" ],
+            "S": [ 19 ],
+            "Y": [ 87 ]
+          }
+        },
+        "$techmap$shl$reconf/alu_core/rtl/alu_core_nbit_shifter.v:17$2.$auto$simplemap.cc:298:simplemap_mux$495": {
+          "hide_name": 1,
+          "type": "$_MUX_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/alu_core/rtl/alu_core_nbit_shifter.v:17.24-17.39|/opt/oss-cad-suite/lib/../share/yosys/techmap.v:111.4-118.7|/opt/oss-cad-suite/lib/../share/yosys/techmap.v:111.8-111.12"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 104 ],
+            "B": [ 102 ],
+            "S": [ 19 ],
+            "Y": [ 88 ]
+          }
+        },
+        "$techmap$shl$reconf/alu_core/rtl/alu_core_nbit_shifter.v:17$2.$auto$simplemap.cc:298:simplemap_mux$496": {
+          "hide_name": 1,
+          "type": "$_MUX_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/alu_core/rtl/alu_core_nbit_shifter.v:17.24-17.39|/opt/oss-cad-suite/lib/../share/yosys/techmap.v:111.4-118.7|/opt/oss-cad-suite/lib/../share/yosys/techmap.v:111.8-111.12"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 105 ],
+            "B": [ 103 ],
+            "S": [ 19 ],
+            "Y": [ 89 ]
+          }
+        },
+        "$techmap$shl$reconf/alu_core/rtl/alu_core_nbit_shifter.v:17$2.$auto$simplemap.cc:298:simplemap_mux$497": {
+          "hide_name": 1,
+          "type": "$_MUX_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/alu_core/rtl/alu_core_nbit_shifter.v:17.24-17.39|/opt/oss-cad-suite/lib/../share/yosys/techmap.v:111.4-118.7|/opt/oss-cad-suite/lib/../share/yosys/techmap.v:111.8-111.12"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 106 ],
+            "B": [ 104 ],
+            "S": [ 19 ],
+            "Y": [ 90 ]
+          }
+        },
+        "$techmap$shl$reconf/alu_core/rtl/alu_core_nbit_shifter.v:17$2.$auto$simplemap.cc:298:simplemap_mux$498": {
+          "hide_name": 1,
+          "type": "$_MUX_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/alu_core/rtl/alu_core_nbit_shifter.v:17.24-17.39|/opt/oss-cad-suite/lib/../share/yosys/techmap.v:111.4-118.7|/opt/oss-cad-suite/lib/../share/yosys/techmap.v:111.8-111.12"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 107 ],
+            "B": [ 105 ],
+            "S": [ 19 ],
+            "Y": [ 91 ]
+          }
+        },
+        "$techmap$shl$reconf/alu_core/rtl/alu_core_nbit_shifter.v:17$2.$auto$simplemap.cc:298:simplemap_mux$499": {
+          "hide_name": 1,
+          "type": "$_MUX_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/alu_core/rtl/alu_core_nbit_shifter.v:17.24-17.39|/opt/oss-cad-suite/lib/../share/yosys/techmap.v:111.4-118.7|/opt/oss-cad-suite/lib/../share/yosys/techmap.v:111.8-111.12"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 108 ],
+            "B": [ 106 ],
+            "S": [ 19 ],
+            "Y": [ 92 ]
+          }
+        },
+        "$techmap$shl$reconf/alu_core/rtl/alu_core_nbit_shifter.v:17$2.$auto$simplemap.cc:298:simplemap_mux$500": {
+          "hide_name": 1,
+          "type": "$_MUX_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/alu_core/rtl/alu_core_nbit_shifter.v:17.24-17.39|/opt/oss-cad-suite/lib/../share/yosys/techmap.v:111.4-118.7|/opt/oss-cad-suite/lib/../share/yosys/techmap.v:111.8-111.12"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 109 ],
+            "B": [ 107 ],
+            "S": [ 19 ],
+            "Y": [ 93 ]
+          }
+        },
+        "$techmap$shl$reconf/alu_core/rtl/alu_core_nbit_shifter.v:17$2.$auto$simplemap.cc:298:simplemap_mux$501": {
+          "hide_name": 1,
+          "type": "$_MUX_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/alu_core/rtl/alu_core_nbit_shifter.v:17.24-17.39|/opt/oss-cad-suite/lib/../share/yosys/techmap.v:111.4-118.7|/opt/oss-cad-suite/lib/../share/yosys/techmap.v:111.8-111.12"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 110 ],
+            "B": [ 108 ],
+            "S": [ 19 ],
+            "Y": [ 94 ]
+          }
+        },
+        "$techmap$shl$reconf/alu_core/rtl/alu_core_nbit_shifter.v:17$2.$auto$simplemap.cc:298:simplemap_mux$502": {
+          "hide_name": 1,
+          "type": "$_MUX_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/alu_core/rtl/alu_core_nbit_shifter.v:17.24-17.39|/opt/oss-cad-suite/lib/../share/yosys/techmap.v:111.4-118.7|/opt/oss-cad-suite/lib/../share/yosys/techmap.v:111.8-111.12"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 111 ],
+            "B": [ 109 ],
+            "S": [ 19 ],
+            "Y": [ 95 ]
+          }
+        },
+        "$techmap$shl$reconf/alu_core/rtl/alu_core_nbit_shifter.v:17$2.$auto$simplemap.cc:298:simplemap_mux$503": {
+          "hide_name": 1,
+          "type": "$_MUX_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/alu_core/rtl/alu_core_nbit_shifter.v:17.24-17.39|/opt/oss-cad-suite/lib/../share/yosys/techmap.v:111.4-118.7|/opt/oss-cad-suite/lib/../share/yosys/techmap.v:111.8-111.12"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 112 ],
+            "B": [ 110 ],
+            "S": [ 19 ],
+            "Y": [ 96 ]
+          }
+        },
+        "$techmap$shl$reconf/alu_core/rtl/alu_core_nbit_shifter.v:17$2.$auto$simplemap.cc:298:simplemap_mux$504": {
+          "hide_name": 1,
+          "type": "$_MUX_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/alu_core/rtl/alu_core_nbit_shifter.v:17.24-17.39|/opt/oss-cad-suite/lib/../share/yosys/techmap.v:111.4-118.7|/opt/oss-cad-suite/lib/../share/yosys/techmap.v:111.8-111.12"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 113 ],
+            "B": [ 111 ],
+            "S": [ 19 ],
+            "Y": [ 97 ]
+          }
+        },
+        "$techmap$shl$reconf/alu_core/rtl/alu_core_nbit_shifter.v:17$2.$auto$simplemap.cc:298:simplemap_mux$505": {
+          "hide_name": 1,
+          "type": "$_MUX_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/alu_core/rtl/alu_core_nbit_shifter.v:17.24-17.39|/opt/oss-cad-suite/lib/../share/yosys/techmap.v:111.4-118.7|/opt/oss-cad-suite/lib/../share/yosys/techmap.v:111.8-111.12"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 114 ],
+            "B": [ 112 ],
+            "S": [ 19 ],
+            "Y": [ 98 ]
+          }
+        },
+        "$techmap$shl$reconf/alu_core/rtl/alu_core_nbit_shifter.v:17$2.$auto$simplemap.cc:298:simplemap_mux$506": {
+          "hide_name": 1,
+          "type": "$_MUX_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/alu_core/rtl/alu_core_nbit_shifter.v:17.24-17.39|/opt/oss-cad-suite/lib/../share/yosys/techmap.v:111.4-118.7|/opt/oss-cad-suite/lib/../share/yosys/techmap.v:111.8-111.12"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 115 ],
+            "B": [ 113 ],
+            "S": [ 19 ],
+            "Y": [ 99 ]
+          }
+        },
+        "$techmap$shl$reconf/alu_core/rtl/alu_core_nbit_shifter.v:17$2.$auto$simplemap.cc:298:simplemap_mux$507": {
+          "hide_name": 1,
+          "type": "$_MUX_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/alu_core/rtl/alu_core_nbit_shifter.v:17.24-17.39|/opt/oss-cad-suite/lib/../share/yosys/techmap.v:111.4-118.7|/opt/oss-cad-suite/lib/../share/yosys/techmap.v:111.8-111.12"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 116 ],
+            "B": [ 114 ],
+            "S": [ 19 ],
+            "Y": [ 100 ]
+          }
+        },
+        "$techmap$shl$reconf/alu_core/rtl/alu_core_nbit_shifter.v:17$2.$auto$simplemap.cc:298:simplemap_mux$508": {
+          "hide_name": 1,
+          "type": "$_MUX_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/alu_core/rtl/alu_core_nbit_shifter.v:17.24-17.39|/opt/oss-cad-suite/lib/../share/yosys/techmap.v:111.4-118.7|/opt/oss-cad-suite/lib/../share/yosys/techmap.v:111.8-111.12"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 117 ],
+            "B": [ 115 ],
+            "S": [ 19 ],
+            "Y": [ 101 ]
+          }
+        },
+        "$techmap$shl$reconf/alu_core/rtl/alu_core_nbit_shifter.v:17$2.$auto$simplemap.cc:298:simplemap_mux$525": {
+          "hide_name": 1,
+          "type": "$_MUX_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/alu_core/rtl/alu_core_nbit_shifter.v:17.24-17.39|/opt/oss-cad-suite/lib/../share/yosys/techmap.v:111.4-118.7|/opt/oss-cad-suite/lib/../share/yosys/techmap.v:111.8-111.12"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 2 ],
+            "B": [ "0" ],
+            "S": [ 18 ],
+            "Y": [ 102 ]
+          }
+        },
+        "$techmap$shl$reconf/alu_core/rtl/alu_core_nbit_shifter.v:17$2.$auto$simplemap.cc:298:simplemap_mux$526": {
+          "hide_name": 1,
+          "type": "$_MUX_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/alu_core/rtl/alu_core_nbit_shifter.v:17.24-17.39|/opt/oss-cad-suite/lib/../share/yosys/techmap.v:111.4-118.7|/opt/oss-cad-suite/lib/../share/yosys/techmap.v:111.8-111.12"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 3 ],
+            "B": [ 2 ],
+            "S": [ 18 ],
+            "Y": [ 103 ]
+          }
+        },
+        "$techmap$shl$reconf/alu_core/rtl/alu_core_nbit_shifter.v:17$2.$auto$simplemap.cc:298:simplemap_mux$527": {
+          "hide_name": 1,
+          "type": "$_MUX_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/alu_core/rtl/alu_core_nbit_shifter.v:17.24-17.39|/opt/oss-cad-suite/lib/../share/yosys/techmap.v:111.4-118.7|/opt/oss-cad-suite/lib/../share/yosys/techmap.v:111.8-111.12"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 4 ],
+            "B": [ 3 ],
+            "S": [ 18 ],
+            "Y": [ 104 ]
+          }
+        },
+        "$techmap$shl$reconf/alu_core/rtl/alu_core_nbit_shifter.v:17$2.$auto$simplemap.cc:298:simplemap_mux$528": {
+          "hide_name": 1,
+          "type": "$_MUX_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/alu_core/rtl/alu_core_nbit_shifter.v:17.24-17.39|/opt/oss-cad-suite/lib/../share/yosys/techmap.v:111.4-118.7|/opt/oss-cad-suite/lib/../share/yosys/techmap.v:111.8-111.12"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 5 ],
+            "B": [ 4 ],
+            "S": [ 18 ],
+            "Y": [ 105 ]
+          }
+        },
+        "$techmap$shl$reconf/alu_core/rtl/alu_core_nbit_shifter.v:17$2.$auto$simplemap.cc:298:simplemap_mux$529": {
+          "hide_name": 1,
+          "type": "$_MUX_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/alu_core/rtl/alu_core_nbit_shifter.v:17.24-17.39|/opt/oss-cad-suite/lib/../share/yosys/techmap.v:111.4-118.7|/opt/oss-cad-suite/lib/../share/yosys/techmap.v:111.8-111.12"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 6 ],
+            "B": [ 5 ],
+            "S": [ 18 ],
+            "Y": [ 106 ]
+          }
+        },
+        "$techmap$shl$reconf/alu_core/rtl/alu_core_nbit_shifter.v:17$2.$auto$simplemap.cc:298:simplemap_mux$530": {
+          "hide_name": 1,
+          "type": "$_MUX_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/alu_core/rtl/alu_core_nbit_shifter.v:17.24-17.39|/opt/oss-cad-suite/lib/../share/yosys/techmap.v:111.4-118.7|/opt/oss-cad-suite/lib/../share/yosys/techmap.v:111.8-111.12"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 7 ],
+            "B": [ 6 ],
+            "S": [ 18 ],
+            "Y": [ 107 ]
+          }
+        },
+        "$techmap$shl$reconf/alu_core/rtl/alu_core_nbit_shifter.v:17$2.$auto$simplemap.cc:298:simplemap_mux$531": {
+          "hide_name": 1,
+          "type": "$_MUX_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/alu_core/rtl/alu_core_nbit_shifter.v:17.24-17.39|/opt/oss-cad-suite/lib/../share/yosys/techmap.v:111.4-118.7|/opt/oss-cad-suite/lib/../share/yosys/techmap.v:111.8-111.12"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 8 ],
+            "B": [ 7 ],
+            "S": [ 18 ],
+            "Y": [ 108 ]
+          }
+        },
+        "$techmap$shl$reconf/alu_core/rtl/alu_core_nbit_shifter.v:17$2.$auto$simplemap.cc:298:simplemap_mux$532": {
+          "hide_name": 1,
+          "type": "$_MUX_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/alu_core/rtl/alu_core_nbit_shifter.v:17.24-17.39|/opt/oss-cad-suite/lib/../share/yosys/techmap.v:111.4-118.7|/opt/oss-cad-suite/lib/../share/yosys/techmap.v:111.8-111.12"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 9 ],
+            "B": [ 8 ],
+            "S": [ 18 ],
+            "Y": [ 109 ]
+          }
+        },
+        "$techmap$shl$reconf/alu_core/rtl/alu_core_nbit_shifter.v:17$2.$auto$simplemap.cc:298:simplemap_mux$533": {
+          "hide_name": 1,
+          "type": "$_MUX_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/alu_core/rtl/alu_core_nbit_shifter.v:17.24-17.39|/opt/oss-cad-suite/lib/../share/yosys/techmap.v:111.4-118.7|/opt/oss-cad-suite/lib/../share/yosys/techmap.v:111.8-111.12"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 10 ],
+            "B": [ 9 ],
+            "S": [ 18 ],
+            "Y": [ 110 ]
+          }
+        },
+        "$techmap$shl$reconf/alu_core/rtl/alu_core_nbit_shifter.v:17$2.$auto$simplemap.cc:298:simplemap_mux$534": {
+          "hide_name": 1,
+          "type": "$_MUX_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/alu_core/rtl/alu_core_nbit_shifter.v:17.24-17.39|/opt/oss-cad-suite/lib/../share/yosys/techmap.v:111.4-118.7|/opt/oss-cad-suite/lib/../share/yosys/techmap.v:111.8-111.12"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 11 ],
+            "B": [ 10 ],
+            "S": [ 18 ],
+            "Y": [ 111 ]
+          }
+        },
+        "$techmap$shl$reconf/alu_core/rtl/alu_core_nbit_shifter.v:17$2.$auto$simplemap.cc:298:simplemap_mux$535": {
+          "hide_name": 1,
+          "type": "$_MUX_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/alu_core/rtl/alu_core_nbit_shifter.v:17.24-17.39|/opt/oss-cad-suite/lib/../share/yosys/techmap.v:111.4-118.7|/opt/oss-cad-suite/lib/../share/yosys/techmap.v:111.8-111.12"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 12 ],
+            "B": [ 11 ],
+            "S": [ 18 ],
+            "Y": [ 112 ]
+          }
+        },
+        "$techmap$shl$reconf/alu_core/rtl/alu_core_nbit_shifter.v:17$2.$auto$simplemap.cc:298:simplemap_mux$536": {
+          "hide_name": 1,
+          "type": "$_MUX_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/alu_core/rtl/alu_core_nbit_shifter.v:17.24-17.39|/opt/oss-cad-suite/lib/../share/yosys/techmap.v:111.4-118.7|/opt/oss-cad-suite/lib/../share/yosys/techmap.v:111.8-111.12"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 13 ],
+            "B": [ 12 ],
+            "S": [ 18 ],
+            "Y": [ 113 ]
+          }
+        },
+        "$techmap$shl$reconf/alu_core/rtl/alu_core_nbit_shifter.v:17$2.$auto$simplemap.cc:298:simplemap_mux$537": {
+          "hide_name": 1,
+          "type": "$_MUX_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/alu_core/rtl/alu_core_nbit_shifter.v:17.24-17.39|/opt/oss-cad-suite/lib/../share/yosys/techmap.v:111.4-118.7|/opt/oss-cad-suite/lib/../share/yosys/techmap.v:111.8-111.12"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 14 ],
+            "B": [ 13 ],
+            "S": [ 18 ],
+            "Y": [ 114 ]
+          }
+        },
+        "$techmap$shl$reconf/alu_core/rtl/alu_core_nbit_shifter.v:17$2.$auto$simplemap.cc:298:simplemap_mux$538": {
+          "hide_name": 1,
+          "type": "$_MUX_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/alu_core/rtl/alu_core_nbit_shifter.v:17.24-17.39|/opt/oss-cad-suite/lib/../share/yosys/techmap.v:111.4-118.7|/opt/oss-cad-suite/lib/../share/yosys/techmap.v:111.8-111.12"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 15 ],
+            "B": [ 14 ],
+            "S": [ 18 ],
+            "Y": [ 115 ]
+          }
+        },
+        "$techmap$shl$reconf/alu_core/rtl/alu_core_nbit_shifter.v:17$2.$auto$simplemap.cc:298:simplemap_mux$539": {
+          "hide_name": 1,
+          "type": "$_MUX_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/alu_core/rtl/alu_core_nbit_shifter.v:17.24-17.39|/opt/oss-cad-suite/lib/../share/yosys/techmap.v:111.4-118.7|/opt/oss-cad-suite/lib/../share/yosys/techmap.v:111.8-111.12"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 16 ],
+            "B": [ 15 ],
+            "S": [ 18 ],
+            "Y": [ 116 ]
+          }
+        },
+        "$techmap$shl$reconf/alu_core/rtl/alu_core_nbit_shifter.v:17$2.$auto$simplemap.cc:298:simplemap_mux$540": {
+          "hide_name": 1,
+          "type": "$_MUX_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/alu_core/rtl/alu_core_nbit_shifter.v:17.24-17.39|/opt/oss-cad-suite/lib/../share/yosys/techmap.v:111.4-118.7|/opt/oss-cad-suite/lib/../share/yosys/techmap.v:111.8-111.12"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 17 ],
+            "B": [ 16 ],
+            "S": [ 18 ],
+            "Y": [ 117 ]
+          }
+        },
+        "$techmap$sshr$reconf/alu_core/rtl/alu_core_nbit_shifter.v:13$1.$auto$simplemap.cc:298:simplemap_mux$226": {
+          "hide_name": 1,
+          "type": "$_MUX_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/alu_core/rtl/alu_core_nbit_shifter.v:13.24-13.49|/opt/oss-cad-suite/lib/../share/yosys/techmap.v:111.4-118.7|/opt/oss-cad-suite/lib/../share/yosys/techmap.v:111.8-111.12"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 118 ],
+            "B": [ 119 ],
+            "S": [ 21 ],
+            "Y": [ 39 ]
+          }
+        },
+        "$techmap$sshr$reconf/alu_core/rtl/alu_core_nbit_shifter.v:13$1.$auto$simplemap.cc:298:simplemap_mux$227": {
+          "hide_name": 1,
+          "type": "$_MUX_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/alu_core/rtl/alu_core_nbit_shifter.v:13.24-13.49|/opt/oss-cad-suite/lib/../share/yosys/techmap.v:111.4-118.7|/opt/oss-cad-suite/lib/../share/yosys/techmap.v:111.8-111.12"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 120 ],
+            "B": [ 121 ],
+            "S": [ 21 ],
+            "Y": [ 41 ]
+          }
+        },
+        "$techmap$sshr$reconf/alu_core/rtl/alu_core_nbit_shifter.v:13$1.$auto$simplemap.cc:298:simplemap_mux$228": {
+          "hide_name": 1,
+          "type": "$_MUX_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/alu_core/rtl/alu_core_nbit_shifter.v:13.24-13.49|/opt/oss-cad-suite/lib/../share/yosys/techmap.v:111.4-118.7|/opt/oss-cad-suite/lib/../share/yosys/techmap.v:111.8-111.12"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 122 ],
+            "B": [ 123 ],
+            "S": [ 21 ],
+            "Y": [ 43 ]
+          }
+        },
+        "$techmap$sshr$reconf/alu_core/rtl/alu_core_nbit_shifter.v:13$1.$auto$simplemap.cc:298:simplemap_mux$229": {
+          "hide_name": 1,
+          "type": "$_MUX_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/alu_core/rtl/alu_core_nbit_shifter.v:13.24-13.49|/opt/oss-cad-suite/lib/../share/yosys/techmap.v:111.4-118.7|/opt/oss-cad-suite/lib/../share/yosys/techmap.v:111.8-111.12"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 124 ],
+            "B": [ 125 ],
+            "S": [ 21 ],
+            "Y": [ 45 ]
+          }
+        },
+        "$techmap$sshr$reconf/alu_core/rtl/alu_core_nbit_shifter.v:13$1.$auto$simplemap.cc:298:simplemap_mux$230": {
+          "hide_name": 1,
+          "type": "$_MUX_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/alu_core/rtl/alu_core_nbit_shifter.v:13.24-13.49|/opt/oss-cad-suite/lib/../share/yosys/techmap.v:111.4-118.7|/opt/oss-cad-suite/lib/../share/yosys/techmap.v:111.8-111.12"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 126 ],
+            "B": [ 127 ],
+            "S": [ 21 ],
+            "Y": [ 47 ]
+          }
+        },
+        "$techmap$sshr$reconf/alu_core/rtl/alu_core_nbit_shifter.v:13$1.$auto$simplemap.cc:298:simplemap_mux$231": {
+          "hide_name": 1,
+          "type": "$_MUX_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/alu_core/rtl/alu_core_nbit_shifter.v:13.24-13.49|/opt/oss-cad-suite/lib/../share/yosys/techmap.v:111.4-118.7|/opt/oss-cad-suite/lib/../share/yosys/techmap.v:111.8-111.12"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 128 ],
+            "B": [ 129 ],
+            "S": [ 21 ],
+            "Y": [ 49 ]
+          }
+        },
+        "$techmap$sshr$reconf/alu_core/rtl/alu_core_nbit_shifter.v:13$1.$auto$simplemap.cc:298:simplemap_mux$232": {
+          "hide_name": 1,
+          "type": "$_MUX_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/alu_core/rtl/alu_core_nbit_shifter.v:13.24-13.49|/opt/oss-cad-suite/lib/../share/yosys/techmap.v:111.4-118.7|/opt/oss-cad-suite/lib/../share/yosys/techmap.v:111.8-111.12"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 130 ],
+            "B": [ 131 ],
+            "S": [ 21 ],
+            "Y": [ 51 ]
+          }
+        },
+        "$techmap$sshr$reconf/alu_core/rtl/alu_core_nbit_shifter.v:13$1.$auto$simplemap.cc:298:simplemap_mux$233": {
+          "hide_name": 1,
+          "type": "$_MUX_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/alu_core/rtl/alu_core_nbit_shifter.v:13.24-13.49|/opt/oss-cad-suite/lib/../share/yosys/techmap.v:111.4-118.7|/opt/oss-cad-suite/lib/../share/yosys/techmap.v:111.8-111.12"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 132 ],
+            "B": [ 17 ],
+            "S": [ 21 ],
+            "Y": [ 53 ]
+          }
+        },
+        "$techmap$sshr$reconf/alu_core/rtl/alu_core_nbit_shifter.v:13$1.$auto$simplemap.cc:298:simplemap_mux$234": {
+          "hide_name": 1,
+          "type": "$_MUX_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/alu_core/rtl/alu_core_nbit_shifter.v:13.24-13.49|/opt/oss-cad-suite/lib/../share/yosys/techmap.v:111.4-118.7|/opt/oss-cad-suite/lib/../share/yosys/techmap.v:111.8-111.12"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 119 ],
+            "B": [ 17 ],
+            "S": [ 21 ],
+            "Y": [ 55 ]
+          }
+        },
+        "$techmap$sshr$reconf/alu_core/rtl/alu_core_nbit_shifter.v:13$1.$auto$simplemap.cc:298:simplemap_mux$235": {
+          "hide_name": 1,
+          "type": "$_MUX_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/alu_core/rtl/alu_core_nbit_shifter.v:13.24-13.49|/opt/oss-cad-suite/lib/../share/yosys/techmap.v:111.4-118.7|/opt/oss-cad-suite/lib/../share/yosys/techmap.v:111.8-111.12"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 121 ],
+            "B": [ 17 ],
+            "S": [ 21 ],
+            "Y": [ 57 ]
+          }
+        },
+        "$techmap$sshr$reconf/alu_core/rtl/alu_core_nbit_shifter.v:13$1.$auto$simplemap.cc:298:simplemap_mux$236": {
+          "hide_name": 1,
+          "type": "$_MUX_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/alu_core/rtl/alu_core_nbit_shifter.v:13.24-13.49|/opt/oss-cad-suite/lib/../share/yosys/techmap.v:111.4-118.7|/opt/oss-cad-suite/lib/../share/yosys/techmap.v:111.8-111.12"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 123 ],
+            "B": [ 17 ],
+            "S": [ 21 ],
+            "Y": [ 59 ]
+          }
+        },
+        "$techmap$sshr$reconf/alu_core/rtl/alu_core_nbit_shifter.v:13$1.$auto$simplemap.cc:298:simplemap_mux$237": {
+          "hide_name": 1,
+          "type": "$_MUX_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/alu_core/rtl/alu_core_nbit_shifter.v:13.24-13.49|/opt/oss-cad-suite/lib/../share/yosys/techmap.v:111.4-118.7|/opt/oss-cad-suite/lib/../share/yosys/techmap.v:111.8-111.12"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 125 ],
+            "B": [ 17 ],
+            "S": [ 21 ],
+            "Y": [ 61 ]
+          }
+        },
+        "$techmap$sshr$reconf/alu_core/rtl/alu_core_nbit_shifter.v:13$1.$auto$simplemap.cc:298:simplemap_mux$238": {
+          "hide_name": 1,
+          "type": "$_MUX_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/alu_core/rtl/alu_core_nbit_shifter.v:13.24-13.49|/opt/oss-cad-suite/lib/../share/yosys/techmap.v:111.4-118.7|/opt/oss-cad-suite/lib/../share/yosys/techmap.v:111.8-111.12"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 127 ],
+            "B": [ 17 ],
+            "S": [ 21 ],
+            "Y": [ 63 ]
+          }
+        },
+        "$techmap$sshr$reconf/alu_core/rtl/alu_core_nbit_shifter.v:13$1.$auto$simplemap.cc:298:simplemap_mux$239": {
+          "hide_name": 1,
+          "type": "$_MUX_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/alu_core/rtl/alu_core_nbit_shifter.v:13.24-13.49|/opt/oss-cad-suite/lib/../share/yosys/techmap.v:111.4-118.7|/opt/oss-cad-suite/lib/../share/yosys/techmap.v:111.8-111.12"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 129 ],
+            "B": [ 17 ],
+            "S": [ 21 ],
+            "Y": [ 65 ]
+          }
+        },
+        "$techmap$sshr$reconf/alu_core/rtl/alu_core_nbit_shifter.v:13$1.$auto$simplemap.cc:298:simplemap_mux$240": {
+          "hide_name": 1,
+          "type": "$_MUX_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/alu_core/rtl/alu_core_nbit_shifter.v:13.24-13.49|/opt/oss-cad-suite/lib/../share/yosys/techmap.v:111.4-118.7|/opt/oss-cad-suite/lib/../share/yosys/techmap.v:111.8-111.12"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 131 ],
+            "B": [ 17 ],
+            "S": [ 21 ],
+            "Y": [ 67 ]
+          }
+        },
+        "$techmap$sshr$reconf/alu_core/rtl/alu_core_nbit_shifter.v:13$1.$auto$simplemap.cc:298:simplemap_mux$274": {
+          "hide_name": 1,
+          "type": "$_MUX_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/alu_core/rtl/alu_core_nbit_shifter.v:13.24-13.49|/opt/oss-cad-suite/lib/../share/yosys/techmap.v:111.4-118.7|/opt/oss-cad-suite/lib/../share/yosys/techmap.v:111.8-111.12"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 133 ],
+            "B": [ 134 ],
+            "S": [ 20 ],
+            "Y": [ 118 ]
+          }
+        },
+        "$techmap$sshr$reconf/alu_core/rtl/alu_core_nbit_shifter.v:13$1.$auto$simplemap.cc:298:simplemap_mux$275": {
+          "hide_name": 1,
+          "type": "$_MUX_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/alu_core/rtl/alu_core_nbit_shifter.v:13.24-13.49|/opt/oss-cad-suite/lib/../share/yosys/techmap.v:111.4-118.7|/opt/oss-cad-suite/lib/../share/yosys/techmap.v:111.8-111.12"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 135 ],
+            "B": [ 136 ],
+            "S": [ 20 ],
+            "Y": [ 120 ]
+          }
+        },
+        "$techmap$sshr$reconf/alu_core/rtl/alu_core_nbit_shifter.v:13$1.$auto$simplemap.cc:298:simplemap_mux$276": {
+          "hide_name": 1,
+          "type": "$_MUX_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/alu_core/rtl/alu_core_nbit_shifter.v:13.24-13.49|/opt/oss-cad-suite/lib/../share/yosys/techmap.v:111.4-118.7|/opt/oss-cad-suite/lib/../share/yosys/techmap.v:111.8-111.12"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 137 ],
+            "B": [ 138 ],
+            "S": [ 20 ],
+            "Y": [ 122 ]
+          }
+        },
+        "$techmap$sshr$reconf/alu_core/rtl/alu_core_nbit_shifter.v:13$1.$auto$simplemap.cc:298:simplemap_mux$277": {
+          "hide_name": 1,
+          "type": "$_MUX_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/alu_core/rtl/alu_core_nbit_shifter.v:13.24-13.49|/opt/oss-cad-suite/lib/../share/yosys/techmap.v:111.4-118.7|/opt/oss-cad-suite/lib/../share/yosys/techmap.v:111.8-111.12"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 139 ],
+            "B": [ 140 ],
+            "S": [ 20 ],
+            "Y": [ 124 ]
+          }
+        },
+        "$techmap$sshr$reconf/alu_core/rtl/alu_core_nbit_shifter.v:13$1.$auto$simplemap.cc:298:simplemap_mux$278": {
+          "hide_name": 1,
+          "type": "$_MUX_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/alu_core/rtl/alu_core_nbit_shifter.v:13.24-13.49|/opt/oss-cad-suite/lib/../share/yosys/techmap.v:111.4-118.7|/opt/oss-cad-suite/lib/../share/yosys/techmap.v:111.8-111.12"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 134 ],
+            "B": [ 141 ],
+            "S": [ 20 ],
+            "Y": [ 126 ]
+          }
+        },
+        "$techmap$sshr$reconf/alu_core/rtl/alu_core_nbit_shifter.v:13$1.$auto$simplemap.cc:298:simplemap_mux$279": {
+          "hide_name": 1,
+          "type": "$_MUX_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/alu_core/rtl/alu_core_nbit_shifter.v:13.24-13.49|/opt/oss-cad-suite/lib/../share/yosys/techmap.v:111.4-118.7|/opt/oss-cad-suite/lib/../share/yosys/techmap.v:111.8-111.12"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 136 ],
+            "B": [ 142 ],
+            "S": [ 20 ],
+            "Y": [ 128 ]
+          }
+        },
+        "$techmap$sshr$reconf/alu_core/rtl/alu_core_nbit_shifter.v:13$1.$auto$simplemap.cc:298:simplemap_mux$280": {
+          "hide_name": 1,
+          "type": "$_MUX_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/alu_core/rtl/alu_core_nbit_shifter.v:13.24-13.49|/opt/oss-cad-suite/lib/../share/yosys/techmap.v:111.4-118.7|/opt/oss-cad-suite/lib/../share/yosys/techmap.v:111.8-111.12"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 138 ],
+            "B": [ 143 ],
+            "S": [ 20 ],
+            "Y": [ 130 ]
+          }
+        },
+        "$techmap$sshr$reconf/alu_core/rtl/alu_core_nbit_shifter.v:13$1.$auto$simplemap.cc:298:simplemap_mux$281": {
+          "hide_name": 1,
+          "type": "$_MUX_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/alu_core/rtl/alu_core_nbit_shifter.v:13.24-13.49|/opt/oss-cad-suite/lib/../share/yosys/techmap.v:111.4-118.7|/opt/oss-cad-suite/lib/../share/yosys/techmap.v:111.8-111.12"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 140 ],
+            "B": [ 144 ],
+            "S": [ 20 ],
+            "Y": [ 132 ]
+          }
+        },
+        "$techmap$sshr$reconf/alu_core/rtl/alu_core_nbit_shifter.v:13$1.$auto$simplemap.cc:298:simplemap_mux$282": {
+          "hide_name": 1,
+          "type": "$_MUX_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/alu_core/rtl/alu_core_nbit_shifter.v:13.24-13.49|/opt/oss-cad-suite/lib/../share/yosys/techmap.v:111.4-118.7|/opt/oss-cad-suite/lib/../share/yosys/techmap.v:111.8-111.12"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 141 ],
+            "B": [ 145 ],
+            "S": [ 20 ],
+            "Y": [ 119 ]
+          }
+        },
+        "$techmap$sshr$reconf/alu_core/rtl/alu_core_nbit_shifter.v:13$1.$auto$simplemap.cc:298:simplemap_mux$283": {
+          "hide_name": 1,
+          "type": "$_MUX_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/alu_core/rtl/alu_core_nbit_shifter.v:13.24-13.49|/opt/oss-cad-suite/lib/../share/yosys/techmap.v:111.4-118.7|/opt/oss-cad-suite/lib/../share/yosys/techmap.v:111.8-111.12"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 142 ],
+            "B": [ 146 ],
+            "S": [ 20 ],
+            "Y": [ 121 ]
+          }
+        },
+        "$techmap$sshr$reconf/alu_core/rtl/alu_core_nbit_shifter.v:13$1.$auto$simplemap.cc:298:simplemap_mux$284": {
+          "hide_name": 1,
+          "type": "$_MUX_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/alu_core/rtl/alu_core_nbit_shifter.v:13.24-13.49|/opt/oss-cad-suite/lib/../share/yosys/techmap.v:111.4-118.7|/opt/oss-cad-suite/lib/../share/yosys/techmap.v:111.8-111.12"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 143 ],
+            "B": [ 147 ],
+            "S": [ 20 ],
+            "Y": [ 123 ]
+          }
+        },
+        "$techmap$sshr$reconf/alu_core/rtl/alu_core_nbit_shifter.v:13$1.$auto$simplemap.cc:298:simplemap_mux$285": {
+          "hide_name": 1,
+          "type": "$_MUX_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/alu_core/rtl/alu_core_nbit_shifter.v:13.24-13.49|/opt/oss-cad-suite/lib/../share/yosys/techmap.v:111.4-118.7|/opt/oss-cad-suite/lib/../share/yosys/techmap.v:111.8-111.12"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 144 ],
+            "B": [ 17 ],
+            "S": [ 20 ],
+            "Y": [ 125 ]
+          }
+        },
+        "$techmap$sshr$reconf/alu_core/rtl/alu_core_nbit_shifter.v:13$1.$auto$simplemap.cc:298:simplemap_mux$286": {
+          "hide_name": 1,
+          "type": "$_MUX_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/alu_core/rtl/alu_core_nbit_shifter.v:13.24-13.49|/opt/oss-cad-suite/lib/../share/yosys/techmap.v:111.4-118.7|/opt/oss-cad-suite/lib/../share/yosys/techmap.v:111.8-111.12"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 145 ],
+            "B": [ 17 ],
+            "S": [ 20 ],
+            "Y": [ 127 ]
+          }
+        },
+        "$techmap$sshr$reconf/alu_core/rtl/alu_core_nbit_shifter.v:13$1.$auto$simplemap.cc:298:simplemap_mux$287": {
+          "hide_name": 1,
+          "type": "$_MUX_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/alu_core/rtl/alu_core_nbit_shifter.v:13.24-13.49|/opt/oss-cad-suite/lib/../share/yosys/techmap.v:111.4-118.7|/opt/oss-cad-suite/lib/../share/yosys/techmap.v:111.8-111.12"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 146 ],
+            "B": [ 17 ],
+            "S": [ 20 ],
+            "Y": [ 129 ]
+          }
+        },
+        "$techmap$sshr$reconf/alu_core/rtl/alu_core_nbit_shifter.v:13$1.$auto$simplemap.cc:298:simplemap_mux$288": {
+          "hide_name": 1,
+          "type": "$_MUX_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/alu_core/rtl/alu_core_nbit_shifter.v:13.24-13.49|/opt/oss-cad-suite/lib/../share/yosys/techmap.v:111.4-118.7|/opt/oss-cad-suite/lib/../share/yosys/techmap.v:111.8-111.12"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 147 ],
+            "B": [ 17 ],
+            "S": [ 20 ],
+            "Y": [ 131 ]
+          }
+        },
+        "$techmap$sshr$reconf/alu_core/rtl/alu_core_nbit_shifter.v:13$1.$auto$simplemap.cc:298:simplemap_mux$322": {
+          "hide_name": 1,
+          "type": "$_MUX_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/alu_core/rtl/alu_core_nbit_shifter.v:13.24-13.49|/opt/oss-cad-suite/lib/../share/yosys/techmap.v:111.4-118.7|/opt/oss-cad-suite/lib/../share/yosys/techmap.v:111.8-111.12"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 148 ],
+            "B": [ 149 ],
+            "S": [ 19 ],
+            "Y": [ 133 ]
+          }
+        },
+        "$techmap$sshr$reconf/alu_core/rtl/alu_core_nbit_shifter.v:13$1.$auto$simplemap.cc:298:simplemap_mux$323": {
+          "hide_name": 1,
+          "type": "$_MUX_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/alu_core/rtl/alu_core_nbit_shifter.v:13.24-13.49|/opt/oss-cad-suite/lib/../share/yosys/techmap.v:111.4-118.7|/opt/oss-cad-suite/lib/../share/yosys/techmap.v:111.8-111.12"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 150 ],
+            "B": [ 151 ],
+            "S": [ 19 ],
+            "Y": [ 135 ]
+          }
+        },
+        "$techmap$sshr$reconf/alu_core/rtl/alu_core_nbit_shifter.v:13$1.$auto$simplemap.cc:298:simplemap_mux$324": {
+          "hide_name": 1,
+          "type": "$_MUX_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/alu_core/rtl/alu_core_nbit_shifter.v:13.24-13.49|/opt/oss-cad-suite/lib/../share/yosys/techmap.v:111.4-118.7|/opt/oss-cad-suite/lib/../share/yosys/techmap.v:111.8-111.12"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 149 ],
+            "B": [ 152 ],
+            "S": [ 19 ],
+            "Y": [ 137 ]
+          }
+        },
+        "$techmap$sshr$reconf/alu_core/rtl/alu_core_nbit_shifter.v:13$1.$auto$simplemap.cc:298:simplemap_mux$325": {
+          "hide_name": 1,
+          "type": "$_MUX_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/alu_core/rtl/alu_core_nbit_shifter.v:13.24-13.49|/opt/oss-cad-suite/lib/../share/yosys/techmap.v:111.4-118.7|/opt/oss-cad-suite/lib/../share/yosys/techmap.v:111.8-111.12"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 151 ],
+            "B": [ 153 ],
+            "S": [ 19 ],
+            "Y": [ 139 ]
+          }
+        },
+        "$techmap$sshr$reconf/alu_core/rtl/alu_core_nbit_shifter.v:13$1.$auto$simplemap.cc:298:simplemap_mux$326": {
+          "hide_name": 1,
+          "type": "$_MUX_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/alu_core/rtl/alu_core_nbit_shifter.v:13.24-13.49|/opt/oss-cad-suite/lib/../share/yosys/techmap.v:111.4-118.7|/opt/oss-cad-suite/lib/../share/yosys/techmap.v:111.8-111.12"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 152 ],
+            "B": [ 154 ],
+            "S": [ 19 ],
+            "Y": [ 134 ]
+          }
+        },
+        "$techmap$sshr$reconf/alu_core/rtl/alu_core_nbit_shifter.v:13$1.$auto$simplemap.cc:298:simplemap_mux$327": {
+          "hide_name": 1,
+          "type": "$_MUX_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/alu_core/rtl/alu_core_nbit_shifter.v:13.24-13.49|/opt/oss-cad-suite/lib/../share/yosys/techmap.v:111.4-118.7|/opt/oss-cad-suite/lib/../share/yosys/techmap.v:111.8-111.12"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 153 ],
+            "B": [ 155 ],
+            "S": [ 19 ],
+            "Y": [ 136 ]
+          }
+        },
+        "$techmap$sshr$reconf/alu_core/rtl/alu_core_nbit_shifter.v:13$1.$auto$simplemap.cc:298:simplemap_mux$328": {
+          "hide_name": 1,
+          "type": "$_MUX_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/alu_core/rtl/alu_core_nbit_shifter.v:13.24-13.49|/opt/oss-cad-suite/lib/../share/yosys/techmap.v:111.4-118.7|/opt/oss-cad-suite/lib/../share/yosys/techmap.v:111.8-111.12"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 154 ],
+            "B": [ 156 ],
+            "S": [ 19 ],
+            "Y": [ 138 ]
+          }
+        },
+        "$techmap$sshr$reconf/alu_core/rtl/alu_core_nbit_shifter.v:13$1.$auto$simplemap.cc:298:simplemap_mux$329": {
+          "hide_name": 1,
+          "type": "$_MUX_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/alu_core/rtl/alu_core_nbit_shifter.v:13.24-13.49|/opt/oss-cad-suite/lib/../share/yosys/techmap.v:111.4-118.7|/opt/oss-cad-suite/lib/../share/yosys/techmap.v:111.8-111.12"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 155 ],
+            "B": [ 157 ],
+            "S": [ 19 ],
+            "Y": [ 140 ]
+          }
+        },
+        "$techmap$sshr$reconf/alu_core/rtl/alu_core_nbit_shifter.v:13$1.$auto$simplemap.cc:298:simplemap_mux$330": {
+          "hide_name": 1,
+          "type": "$_MUX_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/alu_core/rtl/alu_core_nbit_shifter.v:13.24-13.49|/opt/oss-cad-suite/lib/../share/yosys/techmap.v:111.4-118.7|/opt/oss-cad-suite/lib/../share/yosys/techmap.v:111.8-111.12"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 156 ],
+            "B": [ 158 ],
+            "S": [ 19 ],
+            "Y": [ 141 ]
+          }
+        },
+        "$techmap$sshr$reconf/alu_core/rtl/alu_core_nbit_shifter.v:13$1.$auto$simplemap.cc:298:simplemap_mux$331": {
+          "hide_name": 1,
+          "type": "$_MUX_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/alu_core/rtl/alu_core_nbit_shifter.v:13.24-13.49|/opt/oss-cad-suite/lib/../share/yosys/techmap.v:111.4-118.7|/opt/oss-cad-suite/lib/../share/yosys/techmap.v:111.8-111.12"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 157 ],
+            "B": [ 159 ],
+            "S": [ 19 ],
+            "Y": [ 142 ]
+          }
+        },
+        "$techmap$sshr$reconf/alu_core/rtl/alu_core_nbit_shifter.v:13$1.$auto$simplemap.cc:298:simplemap_mux$332": {
+          "hide_name": 1,
+          "type": "$_MUX_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/alu_core/rtl/alu_core_nbit_shifter.v:13.24-13.49|/opt/oss-cad-suite/lib/../share/yosys/techmap.v:111.4-118.7|/opt/oss-cad-suite/lib/../share/yosys/techmap.v:111.8-111.12"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 158 ],
+            "B": [ 160 ],
+            "S": [ 19 ],
+            "Y": [ 143 ]
+          }
+        },
+        "$techmap$sshr$reconf/alu_core/rtl/alu_core_nbit_shifter.v:13$1.$auto$simplemap.cc:298:simplemap_mux$333": {
+          "hide_name": 1,
+          "type": "$_MUX_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/alu_core/rtl/alu_core_nbit_shifter.v:13.24-13.49|/opt/oss-cad-suite/lib/../share/yosys/techmap.v:111.4-118.7|/opt/oss-cad-suite/lib/../share/yosys/techmap.v:111.8-111.12"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 159 ],
+            "B": [ 161 ],
+            "S": [ 19 ],
+            "Y": [ 144 ]
+          }
+        },
+        "$techmap$sshr$reconf/alu_core/rtl/alu_core_nbit_shifter.v:13$1.$auto$simplemap.cc:298:simplemap_mux$334": {
+          "hide_name": 1,
+          "type": "$_MUX_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/alu_core/rtl/alu_core_nbit_shifter.v:13.24-13.49|/opt/oss-cad-suite/lib/../share/yosys/techmap.v:111.4-118.7|/opt/oss-cad-suite/lib/../share/yosys/techmap.v:111.8-111.12"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 160 ],
+            "B": [ 162 ],
+            "S": [ 19 ],
+            "Y": [ 145 ]
+          }
+        },
+        "$techmap$sshr$reconf/alu_core/rtl/alu_core_nbit_shifter.v:13$1.$auto$simplemap.cc:298:simplemap_mux$335": {
+          "hide_name": 1,
+          "type": "$_MUX_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/alu_core/rtl/alu_core_nbit_shifter.v:13.24-13.49|/opt/oss-cad-suite/lib/../share/yosys/techmap.v:111.4-118.7|/opt/oss-cad-suite/lib/../share/yosys/techmap.v:111.8-111.12"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 161 ],
+            "B": [ 17 ],
+            "S": [ 19 ],
+            "Y": [ 146 ]
+          }
+        },
+        "$techmap$sshr$reconf/alu_core/rtl/alu_core_nbit_shifter.v:13$1.$auto$simplemap.cc:298:simplemap_mux$336": {
+          "hide_name": 1,
+          "type": "$_MUX_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/alu_core/rtl/alu_core_nbit_shifter.v:13.24-13.49|/opt/oss-cad-suite/lib/../share/yosys/techmap.v:111.4-118.7|/opt/oss-cad-suite/lib/../share/yosys/techmap.v:111.8-111.12"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 162 ],
+            "B": [ 17 ],
+            "S": [ 19 ],
+            "Y": [ 147 ]
+          }
+        },
+        "$techmap$sshr$reconf/alu_core/rtl/alu_core_nbit_shifter.v:13$1.$auto$simplemap.cc:298:simplemap_mux$370": {
+          "hide_name": 1,
+          "type": "$_MUX_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/alu_core/rtl/alu_core_nbit_shifter.v:13.24-13.49|/opt/oss-cad-suite/lib/../share/yosys/techmap.v:111.4-118.7|/opt/oss-cad-suite/lib/../share/yosys/techmap.v:111.8-111.12"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 2 ],
+            "B": [ 3 ],
+            "S": [ 18 ],
+            "Y": [ 148 ]
+          }
+        },
+        "$techmap$sshr$reconf/alu_core/rtl/alu_core_nbit_shifter.v:13$1.$auto$simplemap.cc:298:simplemap_mux$371": {
+          "hide_name": 1,
+          "type": "$_MUX_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/alu_core/rtl/alu_core_nbit_shifter.v:13.24-13.49|/opt/oss-cad-suite/lib/../share/yosys/techmap.v:111.4-118.7|/opt/oss-cad-suite/lib/../share/yosys/techmap.v:111.8-111.12"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 3 ],
+            "B": [ 4 ],
+            "S": [ 18 ],
+            "Y": [ 150 ]
+          }
+        },
+        "$techmap$sshr$reconf/alu_core/rtl/alu_core_nbit_shifter.v:13$1.$auto$simplemap.cc:298:simplemap_mux$372": {
+          "hide_name": 1,
+          "type": "$_MUX_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/alu_core/rtl/alu_core_nbit_shifter.v:13.24-13.49|/opt/oss-cad-suite/lib/../share/yosys/techmap.v:111.4-118.7|/opt/oss-cad-suite/lib/../share/yosys/techmap.v:111.8-111.12"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 4 ],
+            "B": [ 5 ],
+            "S": [ 18 ],
+            "Y": [ 149 ]
+          }
+        },
+        "$techmap$sshr$reconf/alu_core/rtl/alu_core_nbit_shifter.v:13$1.$auto$simplemap.cc:298:simplemap_mux$373": {
+          "hide_name": 1,
+          "type": "$_MUX_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/alu_core/rtl/alu_core_nbit_shifter.v:13.24-13.49|/opt/oss-cad-suite/lib/../share/yosys/techmap.v:111.4-118.7|/opt/oss-cad-suite/lib/../share/yosys/techmap.v:111.8-111.12"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 5 ],
+            "B": [ 6 ],
+            "S": [ 18 ],
+            "Y": [ 151 ]
+          }
+        },
+        "$techmap$sshr$reconf/alu_core/rtl/alu_core_nbit_shifter.v:13$1.$auto$simplemap.cc:298:simplemap_mux$374": {
+          "hide_name": 1,
+          "type": "$_MUX_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/alu_core/rtl/alu_core_nbit_shifter.v:13.24-13.49|/opt/oss-cad-suite/lib/../share/yosys/techmap.v:111.4-118.7|/opt/oss-cad-suite/lib/../share/yosys/techmap.v:111.8-111.12"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 6 ],
+            "B": [ 7 ],
+            "S": [ 18 ],
+            "Y": [ 152 ]
+          }
+        },
+        "$techmap$sshr$reconf/alu_core/rtl/alu_core_nbit_shifter.v:13$1.$auto$simplemap.cc:298:simplemap_mux$375": {
+          "hide_name": 1,
+          "type": "$_MUX_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/alu_core/rtl/alu_core_nbit_shifter.v:13.24-13.49|/opt/oss-cad-suite/lib/../share/yosys/techmap.v:111.4-118.7|/opt/oss-cad-suite/lib/../share/yosys/techmap.v:111.8-111.12"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 7 ],
+            "B": [ 8 ],
+            "S": [ 18 ],
+            "Y": [ 153 ]
+          }
+        },
+        "$techmap$sshr$reconf/alu_core/rtl/alu_core_nbit_shifter.v:13$1.$auto$simplemap.cc:298:simplemap_mux$376": {
+          "hide_name": 1,
+          "type": "$_MUX_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/alu_core/rtl/alu_core_nbit_shifter.v:13.24-13.49|/opt/oss-cad-suite/lib/../share/yosys/techmap.v:111.4-118.7|/opt/oss-cad-suite/lib/../share/yosys/techmap.v:111.8-111.12"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 8 ],
+            "B": [ 9 ],
+            "S": [ 18 ],
+            "Y": [ 154 ]
+          }
+        },
+        "$techmap$sshr$reconf/alu_core/rtl/alu_core_nbit_shifter.v:13$1.$auto$simplemap.cc:298:simplemap_mux$377": {
+          "hide_name": 1,
+          "type": "$_MUX_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/alu_core/rtl/alu_core_nbit_shifter.v:13.24-13.49|/opt/oss-cad-suite/lib/../share/yosys/techmap.v:111.4-118.7|/opt/oss-cad-suite/lib/../share/yosys/techmap.v:111.8-111.12"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 9 ],
+            "B": [ 10 ],
+            "S": [ 18 ],
+            "Y": [ 155 ]
+          }
+        },
+        "$techmap$sshr$reconf/alu_core/rtl/alu_core_nbit_shifter.v:13$1.$auto$simplemap.cc:298:simplemap_mux$378": {
+          "hide_name": 1,
+          "type": "$_MUX_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/alu_core/rtl/alu_core_nbit_shifter.v:13.24-13.49|/opt/oss-cad-suite/lib/../share/yosys/techmap.v:111.4-118.7|/opt/oss-cad-suite/lib/../share/yosys/techmap.v:111.8-111.12"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 10 ],
+            "B": [ 11 ],
+            "S": [ 18 ],
+            "Y": [ 156 ]
+          }
+        },
+        "$techmap$sshr$reconf/alu_core/rtl/alu_core_nbit_shifter.v:13$1.$auto$simplemap.cc:298:simplemap_mux$379": {
+          "hide_name": 1,
+          "type": "$_MUX_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/alu_core/rtl/alu_core_nbit_shifter.v:13.24-13.49|/opt/oss-cad-suite/lib/../share/yosys/techmap.v:111.4-118.7|/opt/oss-cad-suite/lib/../share/yosys/techmap.v:111.8-111.12"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 11 ],
+            "B": [ 12 ],
+            "S": [ 18 ],
+            "Y": [ 157 ]
+          }
+        },
+        "$techmap$sshr$reconf/alu_core/rtl/alu_core_nbit_shifter.v:13$1.$auto$simplemap.cc:298:simplemap_mux$380": {
+          "hide_name": 1,
+          "type": "$_MUX_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/alu_core/rtl/alu_core_nbit_shifter.v:13.24-13.49|/opt/oss-cad-suite/lib/../share/yosys/techmap.v:111.4-118.7|/opt/oss-cad-suite/lib/../share/yosys/techmap.v:111.8-111.12"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 12 ],
+            "B": [ 13 ],
+            "S": [ 18 ],
+            "Y": [ 158 ]
+          }
+        },
+        "$techmap$sshr$reconf/alu_core/rtl/alu_core_nbit_shifter.v:13$1.$auto$simplemap.cc:298:simplemap_mux$381": {
+          "hide_name": 1,
+          "type": "$_MUX_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/alu_core/rtl/alu_core_nbit_shifter.v:13.24-13.49|/opt/oss-cad-suite/lib/../share/yosys/techmap.v:111.4-118.7|/opt/oss-cad-suite/lib/../share/yosys/techmap.v:111.8-111.12"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 13 ],
+            "B": [ 14 ],
+            "S": [ 18 ],
+            "Y": [ 159 ]
+          }
+        },
+        "$techmap$sshr$reconf/alu_core/rtl/alu_core_nbit_shifter.v:13$1.$auto$simplemap.cc:298:simplemap_mux$382": {
+          "hide_name": 1,
+          "type": "$_MUX_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/alu_core/rtl/alu_core_nbit_shifter.v:13.24-13.49|/opt/oss-cad-suite/lib/../share/yosys/techmap.v:111.4-118.7|/opt/oss-cad-suite/lib/../share/yosys/techmap.v:111.8-111.12"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 14 ],
+            "B": [ 15 ],
+            "S": [ 18 ],
+            "Y": [ 160 ]
+          }
+        },
+        "$techmap$sshr$reconf/alu_core/rtl/alu_core_nbit_shifter.v:13$1.$auto$simplemap.cc:298:simplemap_mux$383": {
+          "hide_name": 1,
+          "type": "$_MUX_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/alu_core/rtl/alu_core_nbit_shifter.v:13.24-13.49|/opt/oss-cad-suite/lib/../share/yosys/techmap.v:111.4-118.7|/opt/oss-cad-suite/lib/../share/yosys/techmap.v:111.8-111.12"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 15 ],
+            "B": [ 16 ],
+            "S": [ 18 ],
+            "Y": [ 161 ]
+          }
+        },
+        "$techmap$sshr$reconf/alu_core/rtl/alu_core_nbit_shifter.v:13$1.$auto$simplemap.cc:298:simplemap_mux$384": {
+          "hide_name": 1,
+          "type": "$_MUX_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/alu_core/rtl/alu_core_nbit_shifter.v:13.24-13.49|/opt/oss-cad-suite/lib/../share/yosys/techmap.v:111.4-118.7|/opt/oss-cad-suite/lib/../share/yosys/techmap.v:111.8-111.12"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 16 ],
+            "B": [ 17 ],
+            "S": [ 18 ],
+            "Y": [ 162 ]
+          }
+        }
+      },
+      "netnames": {
+        "$techmap$shl$reconf/alu_core/rtl/alu_core_nbit_shifter.v:17$2.$1\\buffer[15:0]": {
+          "hide_name": 1,
+          "bits": [ 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117 ],
+          "attributes": {
+            "src": "reconf/alu_core/rtl/alu_core_nbit_shifter.v:17.24-17.39|/opt/oss-cad-suite/lib/../share/yosys/techmap.v:106.2-119.5"
+          }
+        },
+        "$techmap$shl$reconf/alu_core/rtl/alu_core_nbit_shifter.v:17$2.$3\\buffer[15:0]": {
+          "hide_name": 1,
+          "bits": [ 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101 ],
+          "attributes": {
+            "src": "reconf/alu_core/rtl/alu_core_nbit_shifter.v:17.24-17.39|/opt/oss-cad-suite/lib/../share/yosys/techmap.v:106.2-119.5"
+          }
+        },
+        "$techmap$shl$reconf/alu_core/rtl/alu_core_nbit_shifter.v:17$2.$5\\buffer[15:0]": {
+          "hide_name": 1,
+          "bits": [ 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85 ],
+          "attributes": {
+            "src": "reconf/alu_core/rtl/alu_core_nbit_shifter.v:17.24-17.39|/opt/oss-cad-suite/lib/../share/yosys/techmap.v:106.2-119.5"
+          }
+        },
+        "$techmap$sshr$reconf/alu_core/rtl/alu_core_nbit_shifter.v:13$1.$11\\buffer[15:0]": {
+          "hide_name": 1,
+          "bits": [ 119, 121, 123, 125, 127, 129, 131, 17, 17, 17, 17, 17, 17, 17, 17, 17 ],
+          "attributes": {
+            "src": "reconf/alu_core/rtl/alu_core_nbit_shifter.v:13.24-13.49|/opt/oss-cad-suite/lib/../share/yosys/techmap.v:106.2-119.5"
+          }
+        },
+        "$techmap$sshr$reconf/alu_core/rtl/alu_core_nbit_shifter.v:13$1.$1\\buffer[15:0]": {
+          "hide_name": 1,
+          "bits": [ 148, 150, 149, 151, 152, 153, 154, 155, 156, 157, 158, 159, 160, 161, 162, 17 ],
+          "attributes": {
+            "src": "reconf/alu_core/rtl/alu_core_nbit_shifter.v:13.24-13.49|/opt/oss-cad-suite/lib/../share/yosys/techmap.v:106.2-119.5"
+          }
+        },
+        "$techmap$sshr$reconf/alu_core/rtl/alu_core_nbit_shifter.v:13$1.$4\\buffer[15:0]": {
+          "hide_name": 1,
+          "bits": [ 133, 135, 137, 139, 134, 136, 138, 140, 141, 142, 143, 144, 145, 146, 147, 17 ],
+          "attributes": {
+            "src": "reconf/alu_core/rtl/alu_core_nbit_shifter.v:13.24-13.49|/opt/oss-cad-suite/lib/../share/yosys/techmap.v:106.2-119.5"
+          }
+        },
+        "$techmap$sshr$reconf/alu_core/rtl/alu_core_nbit_shifter.v:13$1.$7\\buffer[15:0]": {
+          "hide_name": 1,
+          "bits": [ 118, 120, 122, 124, 126, 128, 130, 132, 119, 121, 123, 125, 127, 129, 131, 17 ],
+          "attributes": {
+            "src": "reconf/alu_core/rtl/alu_core_nbit_shifter.v:13.24-13.49|/opt/oss-cad-suite/lib/../share/yosys/techmap.v:106.2-119.5"
+          }
+        },
+        "i_amt": {
+          "hide_name": 0,
+          "bits": [ 18, 19, 20, 21 ],
+          "attributes": {
+            "src": "reconf/alu_core/rtl/alu_core_nbit_shifter.v:3.24-3.29"
+          }
+        },
+        "i_data": {
+          "hide_name": 0,
+          "bits": [ 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17 ],
+          "attributes": {
+            "src": "reconf/alu_core/rtl/alu_core_nbit_shifter.v:2.24-2.30"
+          }
+        },
+        "i_left": {
+          "hide_name": 0,
+          "bits": [ 22 ],
+          "attributes": {
+            "src": "reconf/alu_core/rtl/alu_core_nbit_shifter.v:4.24-4.30"
+          }
+        },
+        "o_data": {
+          "hide_name": 0,
+          "bits": [ 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38 ],
+          "attributes": {
+            "src": "reconf/alu_core/rtl/alu_core_nbit_shifter.v:5.24-5.30"
+          }
+        },
+        "w_sla_out": {
+          "hide_name": 0,
+          "bits": [ 40, 42, 44, 46, 48, 50, 52, 54, 56, 58, 60, 62, 64, 66, 68, 69 ],
+          "attributes": {
+            "src": "reconf/alu_core/rtl/alu_core_nbit_shifter.v:9.17-9.26"
+          }
+        },
+        "w_sra_out": {
+          "hide_name": 0,
+          "bits": [ 39, 41, 43, 45, 47, 49, 51, 53, 55, 57, 59, 61, 63, 65, 67, 17 ],
+          "attributes": {
+            "src": "reconf/alu_core/rtl/alu_core_nbit_shifter.v:8.17-8.26"
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,82 @@
+{
+  "creator": "Yosys 0.61+112 (git sha1 ac427a79b, clang++ 18.1.8 -fPIC -O3)",
+  "modules": {
+    "data_path_mux_1bit_2to1": {
+      "attributes": {
+        "top": "00000000000000000000000000000001",
+        "src": "reconf/data_path_mux/rtl/data_path_mux_1bit_2to1.v:1.1-13.10"
+      },
+      "ports": {
+        "i_sel": {
+          "direction": "input",
+          "bits": [ 2 ]
+        },
+        "i_data0": {
+          "direction": "input",
+          "bits": [ 3 ]
+        },
+        "i_data1": {
+          "direction": "input",
+          "bits": [ 4 ]
+        },
+        "o_q": {
+          "direction": "output",
+          "bits": [ 5 ]
+        }
+      },
+      "cells": {
+        "$auto$simplemap.cc:298:simplemap_mux$84": {
+          "hide_name": 1,
+          "type": "$_MUX_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/data_path_mux/rtl/data_path_mux_1bit_2to1.v:11.18-11.53"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 3 ],
+            "B": [ 4 ],
+            "S": [ 2 ],
+            "Y": [ 5 ]
+          }
+        }
+      },
+      "netnames": {
+        "i_data0": {
+          "hide_name": 0,
+          "bits": [ 3 ],
+          "attributes": {
+            "src": "reconf/data_path_mux/rtl/data_path_mux_1bit_2to1.v:3.17-3.24"
+          }
+        },
+        "i_data1": {
+          "hide_name": 0,
+          "bits": [ 4 ],
+          "attributes": {
+            "src": "reconf/data_path_mux/rtl/data_path_mux_1bit_2to1.v:4.17-4.24"
+          }
+        },
+        "i_sel": {
+          "hide_name": 0,
+          "bits": [ 2 ],
+          "attributes": {
+            "src": "reconf/data_path_mux/rtl/data_path_mux_1bit_2to1.v:2.17-2.22"
+          }
+        },
+        "o_q": {
+          "hide_name": 0,
+          "bits": [ 5 ],
+          "attributes": {
+            "src": "reconf/data_path_mux/rtl/data_path_mux_1bit_2to1.v:5.17-5.20"
+          }
+        }
+      }
+    }
+  }
+}

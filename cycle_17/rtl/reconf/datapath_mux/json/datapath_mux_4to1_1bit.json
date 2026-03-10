@@ -1,0 +1,239 @@
+{
+  "creator": "Yosys 0.61+112 (git sha1 ac427a79b, clang++ 18.1.8 -fPIC -O3)",
+  "modules": {
+    "datapath_mux_2to1_1bit": {
+      "attributes": {
+        "src": "reconf/datapath_mux/rtl/datapath_mux_2to1_1bit.v:1.1-11.10"
+      },
+      "ports": {
+        "i_sel": {
+          "direction": "input",
+          "bits": [ 2 ]
+        },
+        "i_d0": {
+          "direction": "input",
+          "bits": [ 3 ]
+        },
+        "i_d1": {
+          "direction": "input",
+          "bits": [ 4 ]
+        },
+        "o_y": {
+          "direction": "output",
+          "bits": [ 5 ]
+        }
+      },
+      "cells": {
+        "$auto$simplemap.cc:298:simplemap_mux$77": {
+          "hide_name": 1,
+          "type": "$_MUX_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/datapath_mux/rtl/datapath_mux_2to1_1bit.v:9.18-9.37"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 3 ],
+            "B": [ 4 ],
+            "S": [ 2 ],
+            "Y": [ 5 ]
+          }
+        }
+      },
+      "netnames": {
+        "i_d0": {
+          "hide_name": 0,
+          "bits": [ 3 ],
+          "attributes": {
+            "src": "reconf/datapath_mux/rtl/datapath_mux_2to1_1bit.v:3.17-3.21"
+          }
+        },
+        "i_d1": {
+          "hide_name": 0,
+          "bits": [ 4 ],
+          "attributes": {
+            "src": "reconf/datapath_mux/rtl/datapath_mux_2to1_1bit.v:4.17-4.21"
+          }
+        },
+        "i_sel": {
+          "hide_name": 0,
+          "bits": [ 2 ],
+          "attributes": {
+            "src": "reconf/datapath_mux/rtl/datapath_mux_2to1_1bit.v:2.17-2.22"
+          }
+        },
+        "o_y": {
+          "hide_name": 0,
+          "bits": [ 5 ],
+          "attributes": {
+            "src": "reconf/datapath_mux/rtl/datapath_mux_2to1_1bit.v:5.17-5.20"
+          }
+        }
+      }
+    },
+    "datapath_mux_4to1_1bit": {
+      "attributes": {
+        "top": "00000000000000000000000000000001",
+        "src": "reconf/datapath_mux/rtl/datapath_mux_4to1_1bit.v:1.1-36.10"
+      },
+      "ports": {
+        "i_sel": {
+          "direction": "input",
+          "bits": [ 2, 3 ]
+        },
+        "i_d0": {
+          "direction": "input",
+          "bits": [ 4 ]
+        },
+        "i_d1": {
+          "direction": "input",
+          "bits": [ 5 ]
+        },
+        "i_d2": {
+          "direction": "input",
+          "bits": [ 6 ]
+        },
+        "i_d3": {
+          "direction": "input",
+          "bits": [ 7 ]
+        },
+        "o_y": {
+          "direction": "output",
+          "bits": [ 8 ]
+        }
+      },
+      "cells": {
+        "u_mux_final": {
+          "hide_name": 0,
+          "type": "datapath_mux_2to1_1bit",
+          "parameters": {
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "reconf/datapath_mux/rtl/datapath_mux_4to1_1bit.v:29.28-34.6"
+          },
+          "port_directions": {
+            "i_d0": "input",
+            "i_d1": "input",
+            "i_sel": "input",
+            "o_y": "output"
+          },
+          "connections": {
+            "i_d0": [ 9 ],
+            "i_d1": [ 10 ],
+            "i_sel": [ 3 ],
+            "o_y": [ 8 ]
+          }
+        },
+        "u_mux_high": {
+          "hide_name": 0,
+          "type": "datapath_mux_2to1_1bit",
+          "parameters": {
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "reconf/datapath_mux/rtl/datapath_mux_4to1_1bit.v:21.28-26.6"
+          },
+          "port_directions": {
+            "i_d0": "input",
+            "i_d1": "input",
+            "i_sel": "input",
+            "o_y": "output"
+          },
+          "connections": {
+            "i_d0": [ 6 ],
+            "i_d1": [ 7 ],
+            "i_sel": [ 2 ],
+            "o_y": [ 10 ]
+          }
+        },
+        "u_mux_low": {
+          "hide_name": 0,
+          "type": "datapath_mux_2to1_1bit",
+          "parameters": {
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "reconf/datapath_mux/rtl/datapath_mux_4to1_1bit.v:14.28-19.6"
+          },
+          "port_directions": {
+            "i_d0": "input",
+            "i_d1": "input",
+            "i_sel": "input",
+            "o_y": "output"
+          },
+          "connections": {
+            "i_d0": [ 4 ],
+            "i_d1": [ 5 ],
+            "i_sel": [ 2 ],
+            "o_y": [ 9 ]
+          }
+        }
+      },
+      "netnames": {
+        "i_d0": {
+          "hide_name": 0,
+          "bits": [ 4 ],
+          "attributes": {
+            "src": "reconf/datapath_mux/rtl/datapath_mux_4to1_1bit.v:3.23-3.27"
+          }
+        },
+        "i_d1": {
+          "hide_name": 0,
+          "bits": [ 5 ],
+          "attributes": {
+            "src": "reconf/datapath_mux/rtl/datapath_mux_4to1_1bit.v:4.23-4.27"
+          }
+        },
+        "i_d2": {
+          "hide_name": 0,
+          "bits": [ 6 ],
+          "attributes": {
+            "src": "reconf/datapath_mux/rtl/datapath_mux_4to1_1bit.v:5.23-5.27"
+          }
+        },
+        "i_d3": {
+          "hide_name": 0,
+          "bits": [ 7 ],
+          "attributes": {
+            "src": "reconf/datapath_mux/rtl/datapath_mux_4to1_1bit.v:6.23-6.27"
+          }
+        },
+        "i_sel": {
+          "hide_name": 0,
+          "bits": [ 2, 3 ],
+          "attributes": {
+            "src": "reconf/datapath_mux/rtl/datapath_mux_4to1_1bit.v:2.23-2.28"
+          }
+        },
+        "o_y": {
+          "hide_name": 0,
+          "bits": [ 8 ],
+          "attributes": {
+            "src": "reconf/datapath_mux/rtl/datapath_mux_4to1_1bit.v:7.23-7.26"
+          }
+        },
+        "w_high": {
+          "hide_name": 0,
+          "bits": [ 10 ],
+          "attributes": {
+            "src": "reconf/datapath_mux/rtl/datapath_mux_4to1_1bit.v:11.10-11.16"
+          }
+        },
+        "w_low": {
+          "hide_name": 0,
+          "bits": [ 9 ],
+          "attributes": {
+            "src": "reconf/datapath_mux/rtl/datapath_mux_4to1_1bit.v:10.10-10.15"
+          }
+        }
+      }
+    }
+  }
+}

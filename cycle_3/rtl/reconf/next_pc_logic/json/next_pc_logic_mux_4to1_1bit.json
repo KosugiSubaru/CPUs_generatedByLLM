@@ -1,0 +1,395 @@
+{
+  "creator": "Yosys 0.61+112 (git sha1 ac427a79b, clang++ 18.1.8 -fPIC -O3)",
+  "modules": {
+    "next_pc_logic_mux_4to1_1bit": {
+      "attributes": {
+        "top": "00000000000000000000000000000001",
+        "src": "reconf/next_pc_logic/rtl/next_pc_logic_mux_4to1_1bit.v:1.1-17.10"
+      },
+      "ports": {
+        "i_d0": {
+          "direction": "input",
+          "bits": [ 2 ]
+        },
+        "i_d1": {
+          "direction": "input",
+          "bits": [ 3 ]
+        },
+        "i_d2": {
+          "direction": "input",
+          "bits": [ 4 ]
+        },
+        "i_d3": {
+          "direction": "input",
+          "bits": [ 5 ]
+        },
+        "i_sel": {
+          "direction": "input",
+          "bits": [ 6, 7 ]
+        },
+        "o_q": {
+          "direction": "output",
+          "bits": [ 8 ]
+        }
+      },
+      "cells": {
+        "$auto$simplemap.cc:106:simplemap_bitop$100": {
+          "hide_name": 1,
+          "type": "$_XOR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/next_pc_logic/rtl/next_pc_logic_mux_4to1_1bit.v:14.19-14.33"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 7 ],
+            "B": [ "0" ],
+            "Y": [ 9 ]
+          }
+        },
+        "$auto$simplemap.cc:106:simplemap_bitop$109": {
+          "hide_name": 1,
+          "type": "$_XOR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/next_pc_logic/rtl/next_pc_logic_mux_4to1_1bit.v:15.19-15.33"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 6 ],
+            "B": [ "0" ],
+            "Y": [ 10 ]
+          }
+        },
+        "$auto$simplemap.cc:106:simplemap_bitop$110": {
+          "hide_name": 1,
+          "type": "$_XOR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/next_pc_logic/rtl/next_pc_logic_mux_4to1_1bit.v:15.19-15.33"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 7 ],
+            "B": [ "1" ],
+            "Y": [ 11 ]
+          }
+        },
+        "$auto$simplemap.cc:106:simplemap_bitop$99": {
+          "hide_name": 1,
+          "type": "$_XOR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/next_pc_logic/rtl/next_pc_logic_mux_4to1_1bit.v:14.19-14.33"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 6 ],
+            "B": [ "1" ],
+            "Y": [ 12 ]
+          }
+        },
+        "$auto$simplemap.cc:157:simplemap_reduce$104": {
+          "hide_name": 1,
+          "type": "$_OR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/next_pc_logic/rtl/next_pc_logic_mux_4to1_1bit.v:14.19-14.33"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 12 ],
+            "B": [ 9 ],
+            "Y": [ 13 ]
+          }
+        },
+        "$auto$simplemap.cc:157:simplemap_reduce$114": {
+          "hide_name": 1,
+          "type": "$_OR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/next_pc_logic/rtl/next_pc_logic_mux_4to1_1bit.v:15.19-15.33"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 10 ],
+            "B": [ 11 ],
+            "Y": [ 14 ]
+          }
+        },
+        "$auto$simplemap.cc:198:logic_reduce$95": {
+          "hide_name": 1,
+          "type": "$_OR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/next_pc_logic/rtl/next_pc_logic_mux_4to1_1bit.v:13.19-13.33"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 6 ],
+            "B": [ 7 ],
+            "Y": [ 15 ]
+          }
+        },
+        "$auto$simplemap.cc:227:simplemap_lognot$106": {
+          "hide_name": 1,
+          "type": "$_NOT_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/next_pc_logic/rtl/next_pc_logic_mux_4to1_1bit.v:14.19-14.33"
+          },
+          "port_directions": {
+            "A": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 13 ],
+            "Y": [ 16 ]
+          }
+        },
+        "$auto$simplemap.cc:227:simplemap_lognot$116": {
+          "hide_name": 1,
+          "type": "$_NOT_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/next_pc_logic/rtl/next_pc_logic_mux_4to1_1bit.v:15.19-15.33"
+          },
+          "port_directions": {
+            "A": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 14 ],
+            "Y": [ 17 ]
+          }
+        },
+        "$auto$simplemap.cc:227:simplemap_lognot$96": {
+          "hide_name": 1,
+          "type": "$_NOT_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/next_pc_logic/rtl/next_pc_logic_mux_4to1_1bit.v:13.19-13.33"
+          },
+          "port_directions": {
+            "A": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 15 ],
+            "Y": [ 18 ]
+          }
+        },
+        "$auto$simplemap.cc:298:simplemap_mux$117": {
+          "hide_name": 1,
+          "type": "$_MUX_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/next_pc_logic/rtl/next_pc_logic_mux_4to1_1bit.v:15.18-15.48"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 5 ],
+            "B": [ 4 ],
+            "S": [ 17 ],
+            "Y": [ 19 ]
+          }
+        },
+        "$auto$simplemap.cc:298:simplemap_mux$118": {
+          "hide_name": 1,
+          "type": "$_MUX_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/next_pc_logic/rtl/next_pc_logic_mux_4to1_1bit.v:14.18-15.48"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 19 ],
+            "B": [ 3 ],
+            "S": [ 16 ],
+            "Y": [ 20 ]
+          }
+        },
+        "$auto$simplemap.cc:298:simplemap_mux$119": {
+          "hide_name": 1,
+          "type": "$_MUX_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/next_pc_logic/rtl/next_pc_logic_mux_4to1_1bit.v:13.18-15.48"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 20 ],
+            "B": [ 2 ],
+            "S": [ 18 ],
+            "Y": [ 8 ]
+          }
+        }
+      },
+      "netnames": {
+        "$auto$simplemap.cc:189:logic_reduce$94": {
+          "hide_name": 1,
+          "bits": [ 15 ],
+          "attributes": {
+          }
+        },
+        "$auto$simplemap.cc:271:simplemap_eqne$107": {
+          "hide_name": 1,
+          "bits": [ 10, 11 ],
+          "attributes": {
+          }
+        },
+        "$auto$simplemap.cc:271:simplemap_eqne$97": {
+          "hide_name": 1,
+          "bits": [ 12, 9 ],
+          "attributes": {
+          }
+        },
+        "$auto$simplemap.cc:277:simplemap_eqne$101": {
+          "hide_name": 1,
+          "bits": [ 13 ],
+          "attributes": {
+          }
+        },
+        "$auto$simplemap.cc:277:simplemap_eqne$111": {
+          "hide_name": 1,
+          "bits": [ 14 ],
+          "attributes": {
+          }
+        },
+        "$eq$reconf/next_pc_logic/rtl/next_pc_logic_mux_4to1_1bit.v:13$13_Y": {
+          "hide_name": 1,
+          "bits": [ 18 ],
+          "attributes": {
+            "src": "reconf/next_pc_logic/rtl/next_pc_logic_mux_4to1_1bit.v:13.19-13.33"
+          }
+        },
+        "$eq$reconf/next_pc_logic/rtl/next_pc_logic_mux_4to1_1bit.v:14$14_Y": {
+          "hide_name": 1,
+          "bits": [ 16 ],
+          "attributes": {
+            "src": "reconf/next_pc_logic/rtl/next_pc_logic_mux_4to1_1bit.v:14.19-14.33"
+          }
+        },
+        "$eq$reconf/next_pc_logic/rtl/next_pc_logic_mux_4to1_1bit.v:15$15_Y": {
+          "hide_name": 1,
+          "bits": [ 17 ],
+          "attributes": {
+            "src": "reconf/next_pc_logic/rtl/next_pc_logic_mux_4to1_1bit.v:15.19-15.33"
+          }
+        },
+        "$ternary$reconf/next_pc_logic/rtl/next_pc_logic_mux_4to1_1bit.v:14$17_Y": {
+          "hide_name": 1,
+          "bits": [ 20 ],
+          "attributes": {
+            "src": "reconf/next_pc_logic/rtl/next_pc_logic_mux_4to1_1bit.v:14.18-15.48"
+          }
+        },
+        "$ternary$reconf/next_pc_logic/rtl/next_pc_logic_mux_4to1_1bit.v:15$16_Y": {
+          "hide_name": 1,
+          "bits": [ 19 ],
+          "attributes": {
+            "src": "reconf/next_pc_logic/rtl/next_pc_logic_mux_4to1_1bit.v:15.18-15.48"
+          }
+        },
+        "i_d0": {
+          "hide_name": 0,
+          "bits": [ 2 ],
+          "attributes": {
+            "src": "reconf/next_pc_logic/rtl/next_pc_logic_mux_4to1_1bit.v:2.23-2.27"
+          }
+        },
+        "i_d1": {
+          "hide_name": 0,
+          "bits": [ 3 ],
+          "attributes": {
+            "src": "reconf/next_pc_logic/rtl/next_pc_logic_mux_4to1_1bit.v:3.23-3.27"
+          }
+        },
+        "i_d2": {
+          "hide_name": 0,
+          "bits": [ 4 ],
+          "attributes": {
+            "src": "reconf/next_pc_logic/rtl/next_pc_logic_mux_4to1_1bit.v:4.23-4.27"
+          }
+        },
+        "i_d3": {
+          "hide_name": 0,
+          "bits": [ 5 ],
+          "attributes": {
+            "src": "reconf/next_pc_logic/rtl/next_pc_logic_mux_4to1_1bit.v:5.23-5.27"
+          }
+        },
+        "i_sel": {
+          "hide_name": 0,
+          "bits": [ 6, 7 ],
+          "attributes": {
+            "src": "reconf/next_pc_logic/rtl/next_pc_logic_mux_4to1_1bit.v:6.23-6.28"
+          }
+        },
+        "o_q": {
+          "hide_name": 0,
+          "bits": [ 8 ],
+          "attributes": {
+            "src": "reconf/next_pc_logic/rtl/next_pc_logic_mux_4to1_1bit.v:7.23-7.26"
+          }
+        }
+      }
+    }
+  }
+}

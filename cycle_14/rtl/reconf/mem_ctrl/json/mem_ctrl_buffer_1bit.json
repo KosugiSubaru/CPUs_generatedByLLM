@@ -1,0 +1,39 @@
+{
+  "creator": "Yosys 0.61+112 (git sha1 ac427a79b, clang++ 18.1.8 -fPIC -O3)",
+  "modules": {
+    "mem_ctrl_buffer_1bit": {
+      "attributes": {
+        "top": "00000000000000000000000000000001",
+        "src": "reconf/mem_ctrl/rtl/mem_ctrl_buffer_1bit.v:1.1-10.10"
+      },
+      "ports": {
+        "i_in": {
+          "direction": "input",
+          "bits": [ 2 ]
+        },
+        "o_out": {
+          "direction": "output",
+          "bits": [ 2 ]
+        }
+      },
+      "cells": {
+      },
+      "netnames": {
+        "i_in": {
+          "hide_name": 0,
+          "bits": [ 2 ],
+          "attributes": {
+            "src": "reconf/mem_ctrl/rtl/mem_ctrl_buffer_1bit.v:2.17-2.21"
+          }
+        },
+        "o_out": {
+          "hide_name": 0,
+          "bits": [ 2 ],
+          "attributes": {
+            "src": "reconf/mem_ctrl/rtl/mem_ctrl_buffer_1bit.v:3.17-3.22"
+          }
+        }
+      }
+    }
+  }
+}

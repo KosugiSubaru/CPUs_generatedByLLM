@@ -1,0 +1,249 @@
+
+ /----------------------------------------------------------------------------\
+ |  yosys -- Yosys Open SYnthesis Suite                                       |
+ |  Copyright (C) 2012 - 2026  Claire Xenia Wolf <claire@yosyshq.com>         |
+ |  Distributed under an ISC-like license, type "license" to see terms        |
+ \----------------------------------------------------------------------------/
+ Yosys 0.61+112 (git sha1 ac427a79b, clang++ 18.1.8 -fPIC -O3)
+
+-- Executing script file `reconf/program_counter/json/program_counter_adder_16bit.ys' --
+
+1. Executing Verilog-2005 frontend: reconf/program_counter/rtl/program_counter_half_adder.v
+Parsing Verilog input from `reconf/program_counter/rtl/program_counter_half_adder.v' to AST representation.
+Generating RTLIL representation for module `\program_counter_half_adder'.
+Successfully finished Verilog frontend.
+
+2. Executing Verilog-2005 frontend: reconf/program_counter/rtl/program_counter_full_adder.v
+Parsing Verilog input from `reconf/program_counter/rtl/program_counter_full_adder.v' to AST representation.
+Generating RTLIL representation for module `\program_counter_full_adder'.
+Successfully finished Verilog frontend.
+
+3. Executing Verilog-2005 frontend: reconf/program_counter/rtl/program_counter_mux_4to1_16bit.v
+Parsing Verilog input from `reconf/program_counter/rtl/program_counter_mux_4to1_16bit.v' to AST representation.
+Generating RTLIL representation for module `\program_counter_mux_4to1_16bit'.
+Successfully finished Verilog frontend.
+
+4. Executing Verilog-2005 frontend: reconf/program_counter/rtl/program_counter_mux_4to1_1bit.v
+Parsing Verilog input from `reconf/program_counter/rtl/program_counter_mux_4to1_1bit.v' to AST representation.
+Generating RTLIL representation for module `\program_counter_mux_4to1_1bit'.
+Successfully finished Verilog frontend.
+
+5. Executing Verilog-2005 frontend: reconf/program_counter/rtl/program_counter_reg.v
+Parsing Verilog input from `reconf/program_counter/rtl/program_counter_reg.v' to AST representation.
+Generating RTLIL representation for module `\program_counter_reg'.
+Successfully finished Verilog frontend.
+
+6. Executing Verilog-2005 frontend: reconf/program_counter/rtl/program_counter_bit.v
+Parsing Verilog input from `reconf/program_counter/rtl/program_counter_bit.v' to AST representation.
+Generating RTLIL representation for module `\program_counter_bit'.
+Successfully finished Verilog frontend.
+
+7. Executing Verilog-2005 frontend: reconf/program_counter/rtl/program_counter.v
+Parsing Verilog input from `reconf/program_counter/rtl/program_counter.v' to AST representation.
+Generating RTLIL representation for module `\program_counter'.
+Successfully finished Verilog frontend.
+
+8. Executing Verilog-2005 frontend: reconf/program_counter/rtl/program_counter_adder_16bit.v
+Parsing Verilog input from `reconf/program_counter/rtl/program_counter_adder_16bit.v' to AST representation.
+Generating RTLIL representation for module `\program_counter_adder_16bit'.
+Successfully finished Verilog frontend.
+
+9. Executing Verilog-2005 frontend: reconf/program_counter/rtl/program_counter_control.v
+Parsing Verilog input from `reconf/program_counter/rtl/program_counter_control.v' to AST representation.
+Generating RTLIL representation for module `\program_counter_control'.
+Successfully finished Verilog frontend.
+
+10. Executing HIERARCHY pass (managing design hierarchy).
+
+10.1. Analyzing design hierarchy..
+Top module:  \program_counter_adder_16bit
+Used module:     \program_counter_full_adder
+Used module:         \program_counter_half_adder
+
+10.2. Analyzing design hierarchy..
+Top module:  \program_counter_adder_16bit
+Used module:     \program_counter_full_adder
+Used module:         \program_counter_half_adder
+Removing unused module `\program_counter_control'.
+Removing unused module `\program_counter'.
+Removing unused module `\program_counter_bit'.
+Removing unused module `\program_counter_reg'.
+Removing unused module `\program_counter_mux_4to1_1bit'.
+Removing unused module `\program_counter_mux_4to1_16bit'.
+Removed 6 unused modules.
+
+11. Executing PROC pass (convert processes to netlists).
+
+11.1. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Cleaned up 0 empty switches.
+
+11.2. Executing PROC_RMDEAD pass (remove dead branches from decision trees).
+Removed a total of 0 dead cases.
+
+11.3. Executing PROC_PRUNE pass (remove redundant assignments in processes).
+Removed 0 redundant assignments.
+Promoted 0 assignments to connections.
+
+11.4. Executing PROC_INIT pass (extract init attributes).
+
+11.5. Executing PROC_ARST pass (detect async resets in processes).
+
+11.6. Executing PROC_ROM pass (convert switches to ROMs).
+Converted 0 switches.
+
+11.7. Executing PROC_MUX pass (convert decision trees to multiplexers).
+
+11.8. Executing PROC_DLATCH pass (convert process syncs to latches).
+
+11.9. Executing PROC_DFF pass (convert process syncs to FFs).
+
+11.10. Executing PROC_MEMWR pass (convert process memory writes to cells).
+
+11.11. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Cleaned up 0 empty switches.
+
+11.12. Executing OPT_EXPR pass (perform const folding).
+Optimizing module program_counter_adder_16bit.
+Optimizing module program_counter_full_adder.
+Optimizing module program_counter_half_adder.
+
+12. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \program_counter_adder_16bit..
+Finding unused cells or wires in module \program_counter_full_adder..
+Finding unused cells or wires in module \program_counter_half_adder..
+Removed 0 unused cells and 3 unused wires.
+<suppressed ~2 debug messages>
+
+13. Executing TECHMAP pass (map to technology primitives).
+
+13.1. Executing Verilog-2005 frontend: /opt/oss-cad-suite/lib/../share/yosys/techmap.v
+Parsing Verilog input from `/opt/oss-cad-suite/lib/../share/yosys/techmap.v' to AST representation.
+Generating RTLIL representation for module `\_90_simplemap_bool_ops'.
+Generating RTLIL representation for module `\_90_simplemap_reduce_ops'.
+Generating RTLIL representation for module `\_90_simplemap_logic_ops'.
+Generating RTLIL representation for module `\_90_simplemap_compare_ops'.
+Generating RTLIL representation for module `\_90_simplemap_various'.
+Generating RTLIL representation for module `\_90_simplemap_registers'.
+Generating RTLIL representation for module `\_90_shift_ops_shr_shl_sshl_sshr'.
+Generating RTLIL representation for module `\_90_shift_shiftx'.
+Generating RTLIL representation for module `\_90_fa'.
+Generating RTLIL representation for module `\_90_lcu_brent_kung'.
+Generating RTLIL representation for module `\_90_alu'.
+Generating RTLIL representation for module `\_90_macc'.
+Generating RTLIL representation for module `\_90_alumacc'.
+Generating RTLIL representation for module `$__div_mod_u'.
+Generating RTLIL representation for module `$__div_mod_trunc'.
+Generating RTLIL representation for module `\_90_div'.
+Generating RTLIL representation for module `\_90_mod'.
+Generating RTLIL representation for module `$__div_mod_floor'.
+Generating RTLIL representation for module `\_90_divfloor'.
+Generating RTLIL representation for module `\_90_modfloor'.
+Generating RTLIL representation for module `\_90_pow'.
+Generating RTLIL representation for module `\_90_pmux'.
+Generating RTLIL representation for module `\_90_demux'.
+Generating RTLIL representation for module `\_90_lut'.
+Generating RTLIL representation for module `$connect'.
+Generating RTLIL representation for module `$input_port'.
+Successfully finished Verilog frontend.
+
+13.2. Continuing TECHMAP pass.
+Using extmapper simplemap for cells of type $xor.
+Using extmapper simplemap for cells of type $and.
+Using extmapper simplemap for cells of type $or.
+No more expansions possible.
+<suppressed ~80 debug messages>
+
+14. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \program_counter_adder_16bit..
+Finding unused cells or wires in module \program_counter_full_adder..
+Finding unused cells or wires in module \program_counter_half_adder..
+
+15. Executing HIERARCHY pass (managing design hierarchy).
+Attribute `top' found on module `program_counter_adder_16bit'. Setting top module to program_counter_adder_16bit.
+
+15.1. Analyzing design hierarchy..
+Top module:  \program_counter_adder_16bit
+Used module:     \program_counter_full_adder
+Used module:         \program_counter_half_adder
+
+15.2. Analyzing design hierarchy..
+Top module:  \program_counter_adder_16bit
+Used module:     \program_counter_full_adder
+Used module:         \program_counter_half_adder
+Removed 0 unused modules.
+
+16. Printing statistics.
+
+=== program_counter_adder_16bit ===
+
+        +----------Local Count, excluding submodules.
+        | 
+        4 wires
+       64 wire bits
+        4 public wires
+       64 public wire bits
+        3 ports
+       48 port bits
+       16 submodules
+       16   program_counter_full_adder
+
+=== program_counter_full_adder ===
+
+        +----------Local Count, excluding submodules.
+        | 
+        8 wires
+        8 wire bits
+        8 public wires
+        8 public wire bits
+        5 ports
+        5 port bits
+        1 cells
+        1   $_OR_
+        2 submodules
+        2   program_counter_half_adder
+
+=== program_counter_half_adder ===
+
+        +----------Local Count, excluding submodules.
+        | 
+        4 wires
+        4 wire bits
+        4 public wires
+        4 public wire bits
+        4 ports
+        4 port bits
+        2 cells
+        1   $_AND_
+        1   $_XOR_
+
+=== design hierarchy ===
+
+        +----------Count including submodules.
+        | 
+       80 program_counter_adder_16bit
+        1 program_counter_full_adder
+        2   program_counter_half_adder
+
+        +----------Count including submodules.
+        | 
+      260 wires
+      320 wire bits
+      260 public wires
+      320 public wire bits
+      211 ports
+      256 port bits
+        - memories
+        - memory bits
+        - processes
+       80 cells
+       32   $_AND_
+       16   $_OR_
+       32   $_XOR_
+       16 submodules
+       16   program_counter_full_adder
+
+17. Executing JSON backend.
+
+End of script. Logfile hash: 3714a5b7bb, CPU: user 0.02s system 0.00s, MEM: 14.69 MB peak
+Yosys 0.61+112 (git sha1 ac427a79b, clang++ 18.1.8 -fPIC -O3)
+Time spent: 77% 19x read_verilog (0 sec), 5% 2x opt_clean (0 sec), ...

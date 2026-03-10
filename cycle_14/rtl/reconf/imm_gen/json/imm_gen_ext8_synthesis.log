@@ -1,0 +1,163 @@
+
+ /----------------------------------------------------------------------------\
+ |  yosys -- Yosys Open SYnthesis Suite                                       |
+ |  Copyright (C) 2012 - 2026  Claire Xenia Wolf <claire@yosyshq.com>         |
+ |  Distributed under an ISC-like license, type "license" to see terms        |
+ \----------------------------------------------------------------------------/
+ Yosys 0.61+112 (git sha1 ac427a79b, clang++ 18.1.8 -fPIC -O3)
+
+-- Executing script file `reconf/imm_gen/json/imm_gen_ext8.ys' --
+
+1. Executing Verilog-2005 frontend: reconf/imm_gen/rtl/imm_gen_ext8.v
+Parsing Verilog input from `reconf/imm_gen/rtl/imm_gen_ext8.v' to AST representation.
+Generating RTLIL representation for module `\imm_gen_ext8'.
+Successfully finished Verilog frontend.
+
+2. Executing Verilog-2005 frontend: reconf/imm_gen/rtl/imm_gen.v
+Parsing Verilog input from `reconf/imm_gen/rtl/imm_gen.v' to AST representation.
+Generating RTLIL representation for module `\imm_gen'.
+Successfully finished Verilog frontend.
+
+3. Executing Verilog-2005 frontend: reconf/imm_gen/rtl/imm_gen_ext12.v
+Parsing Verilog input from `reconf/imm_gen/rtl/imm_gen_ext12.v' to AST representation.
+Generating RTLIL representation for module `\imm_gen_ext12'.
+Successfully finished Verilog frontend.
+
+4. Executing Verilog-2005 frontend: reconf/imm_gen/rtl/imm_gen_ext4_s.v
+Parsing Verilog input from `reconf/imm_gen/rtl/imm_gen_ext4_s.v' to AST representation.
+Generating RTLIL representation for module `\imm_gen_ext4_s'.
+Successfully finished Verilog frontend.
+
+5. Executing Verilog-2005 frontend: reconf/imm_gen/rtl/imm_gen_mux5_1bit.v
+Parsing Verilog input from `reconf/imm_gen/rtl/imm_gen_mux5_1bit.v' to AST representation.
+Generating RTLIL representation for module `\imm_gen_mux5_1bit'.
+Successfully finished Verilog frontend.
+
+6. Executing Verilog-2005 frontend: reconf/imm_gen/rtl/imm_gen_mux5_16bit.v
+Parsing Verilog input from `reconf/imm_gen/rtl/imm_gen_mux5_16bit.v' to AST representation.
+Generating RTLIL representation for module `\imm_gen_mux5_16bit'.
+Successfully finished Verilog frontend.
+
+7. Executing Verilog-2005 frontend: reconf/imm_gen/rtl/imm_gen_ext4_i.v
+Parsing Verilog input from `reconf/imm_gen/rtl/imm_gen_ext4_i.v' to AST representation.
+Generating RTLIL representation for module `\imm_gen_ext4_i'.
+Successfully finished Verilog frontend.
+
+8. Executing HIERARCHY pass (managing design hierarchy).
+
+8.1. Analyzing design hierarchy..
+Top module:  \imm_gen_ext8
+
+8.2. Analyzing design hierarchy..
+Top module:  \imm_gen_ext8
+Removing unused module `\imm_gen_ext4_i'.
+Removing unused module `\imm_gen_mux5_16bit'.
+Removing unused module `\imm_gen_mux5_1bit'.
+Removing unused module `\imm_gen_ext4_s'.
+Removing unused module `\imm_gen_ext12'.
+Removing unused module `\imm_gen'.
+Removed 6 unused modules.
+
+9. Executing PROC pass (convert processes to netlists).
+
+9.1. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Cleaned up 0 empty switches.
+
+9.2. Executing PROC_RMDEAD pass (remove dead branches from decision trees).
+Removed a total of 0 dead cases.
+
+9.3. Executing PROC_PRUNE pass (remove redundant assignments in processes).
+Removed 0 redundant assignments.
+Promoted 0 assignments to connections.
+
+9.4. Executing PROC_INIT pass (extract init attributes).
+
+9.5. Executing PROC_ARST pass (detect async resets in processes).
+
+9.6. Executing PROC_ROM pass (convert switches to ROMs).
+Converted 0 switches.
+
+9.7. Executing PROC_MUX pass (convert decision trees to multiplexers).
+
+9.8. Executing PROC_DLATCH pass (convert process syncs to latches).
+
+9.9. Executing PROC_DFF pass (convert process syncs to FFs).
+
+9.10. Executing PROC_MEMWR pass (convert process memory writes to cells).
+
+9.11. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Cleaned up 0 empty switches.
+
+9.12. Executing OPT_EXPR pass (perform const folding).
+Optimizing module imm_gen_ext8.
+
+10. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \imm_gen_ext8..
+
+11. Executing TECHMAP pass (map to technology primitives).
+
+11.1. Executing Verilog-2005 frontend: /opt/oss-cad-suite/lib/../share/yosys/techmap.v
+Parsing Verilog input from `/opt/oss-cad-suite/lib/../share/yosys/techmap.v' to AST representation.
+Generating RTLIL representation for module `\_90_simplemap_bool_ops'.
+Generating RTLIL representation for module `\_90_simplemap_reduce_ops'.
+Generating RTLIL representation for module `\_90_simplemap_logic_ops'.
+Generating RTLIL representation for module `\_90_simplemap_compare_ops'.
+Generating RTLIL representation for module `\_90_simplemap_various'.
+Generating RTLIL representation for module `\_90_simplemap_registers'.
+Generating RTLIL representation for module `\_90_shift_ops_shr_shl_sshl_sshr'.
+Generating RTLIL representation for module `\_90_shift_shiftx'.
+Generating RTLIL representation for module `\_90_fa'.
+Generating RTLIL representation for module `\_90_lcu_brent_kung'.
+Generating RTLIL representation for module `\_90_alu'.
+Generating RTLIL representation for module `\_90_macc'.
+Generating RTLIL representation for module `\_90_alumacc'.
+Generating RTLIL representation for module `$__div_mod_u'.
+Generating RTLIL representation for module `$__div_mod_trunc'.
+Generating RTLIL representation for module `\_90_div'.
+Generating RTLIL representation for module `\_90_mod'.
+Generating RTLIL representation for module `$__div_mod_floor'.
+Generating RTLIL representation for module `\_90_divfloor'.
+Generating RTLIL representation for module `\_90_modfloor'.
+Generating RTLIL representation for module `\_90_pow'.
+Generating RTLIL representation for module `\_90_pmux'.
+Generating RTLIL representation for module `\_90_demux'.
+Generating RTLIL representation for module `\_90_lut'.
+Generating RTLIL representation for module `$connect'.
+Generating RTLIL representation for module `$input_port'.
+Successfully finished Verilog frontend.
+
+11.2. Continuing TECHMAP pass.
+No more expansions possible.
+<suppressed ~77 debug messages>
+
+12. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \imm_gen_ext8..
+
+13. Executing HIERARCHY pass (managing design hierarchy).
+Attribute `top' found on module `imm_gen_ext8'. Setting top module to imm_gen_ext8.
+
+13.1. Analyzing design hierarchy..
+Top module:  \imm_gen_ext8
+
+13.2. Analyzing design hierarchy..
+Top module:  \imm_gen_ext8
+Removed 0 unused modules.
+
+14. Printing statistics.
+
+=== imm_gen_ext8 ===
+
+        +----------Local Count, excluding submodules.
+        | 
+        2 wires
+       32 wire bits
+        2 public wires
+       32 public wire bits
+        2 ports
+       32 port bits
+
+15. Executing JSON backend.
+
+End of script. Logfile hash: ff53d384e5, CPU: user 0.01s system 0.01s, MEM: 14.22 MB peak
+Yosys 0.61+112 (git sha1 ac427a79b, clang++ 18.1.8 -fPIC -O3)
+Time spent: 83% 15x read_verilog (0 sec), 4% 1x techmap (0 sec), ...

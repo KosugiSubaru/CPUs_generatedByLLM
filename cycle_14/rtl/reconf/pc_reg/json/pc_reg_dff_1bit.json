@@ -1,0 +1,82 @@
+{
+  "creator": "Yosys 0.61+112 (git sha1 ac427a79b, clang++ 18.1.8 -fPIC -O3)",
+  "modules": {
+    "pc_reg_dff_1bit": {
+      "attributes": {
+        "top": "00000000000000000000000000000001",
+        "src": "reconf/pc_reg/rtl/pc_reg_dff_1bit.v:1.1-16.10"
+      },
+      "ports": {
+        "i_clk": {
+          "direction": "input",
+          "bits": [ 2 ]
+        },
+        "i_rst_n": {
+          "direction": "input",
+          "bits": [ 3 ]
+        },
+        "i_d": {
+          "direction": "input",
+          "bits": [ 4 ]
+        },
+        "o_q": {
+          "direction": "output",
+          "bits": [ 5 ]
+        }
+      },
+      "cells": {
+        "$auto$ff.cc:337:slice$95": {
+          "hide_name": 1,
+          "type": "$_DFF_PN0_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/pc_reg/rtl/pc_reg_dff_1bit.v:8.5-14.8"
+          },
+          "port_directions": {
+            "C": "input",
+            "D": "input",
+            "Q": "output",
+            "R": "input"
+          },
+          "connections": {
+            "C": [ 2 ],
+            "D": [ 4 ],
+            "Q": [ 5 ],
+            "R": [ 3 ]
+          }
+        }
+      },
+      "netnames": {
+        "i_clk": {
+          "hide_name": 0,
+          "bits": [ 2 ],
+          "attributes": {
+            "src": "reconf/pc_reg/rtl/pc_reg_dff_1bit.v:2.17-2.22"
+          }
+        },
+        "i_d": {
+          "hide_name": 0,
+          "bits": [ 4 ],
+          "attributes": {
+            "src": "reconf/pc_reg/rtl/pc_reg_dff_1bit.v:4.17-4.20"
+          }
+        },
+        "i_rst_n": {
+          "hide_name": 0,
+          "bits": [ 3 ],
+          "attributes": {
+            "src": "reconf/pc_reg/rtl/pc_reg_dff_1bit.v:3.17-3.24"
+          }
+        },
+        "o_q": {
+          "hide_name": 0,
+          "bits": [ 5 ],
+          "attributes": {
+            "src": "reconf/pc_reg/rtl/pc_reg_dff_1bit.v:5.17-5.20"
+          }
+        }
+      }
+    }
+  }
+}

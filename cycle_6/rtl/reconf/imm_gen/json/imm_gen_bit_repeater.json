@@ -1,0 +1,44 @@
+{
+  "creator": "Yosys 0.61+112 (git sha1 ac427a79b, clang++ 18.1.8 -fPIC -O3)",
+  "modules": {
+    "imm_gen_bit_repeater": {
+      "attributes": {
+        "dynports": "00000000000000000000000000000001",
+        "top": "00000000000000000000000000000001",
+        "src": "reconf/imm_gen/rtl/imm_gen_bit_repeater.v:1.1-16.10"
+      },
+      "parameter_default_values": {
+        "REPEATS": "00000000000000000000000000000001"
+      },
+      "ports": {
+        "i_bit": {
+          "direction": "input",
+          "bits": [ 2 ]
+        },
+        "o_bus": {
+          "direction": "output",
+          "bits": [ 2 ]
+        }
+      },
+      "cells": {
+      },
+      "netnames": {
+        "i_bit": {
+          "hide_name": 0,
+          "bits": [ 2 ],
+          "attributes": {
+            "src": "reconf/imm_gen/rtl/imm_gen_bit_repeater.v:4.31-4.36"
+          }
+        },
+        "o_bus": {
+          "hide_name": 0,
+          "bits": [ 2 ],
+          "attributes": {
+            "single_bit_vector": "00000000000000000000000000000001",
+            "src": "reconf/imm_gen/rtl/imm_gen_bit_repeater.v:5.31-5.36"
+          }
+        }
+      }
+    }
+  }
+}

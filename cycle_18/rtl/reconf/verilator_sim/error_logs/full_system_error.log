@@ -1,0 +1,205 @@
+
+=== ログ 2026-02-25 19:16:36 ===
+make: Entering directory '/home/ko_kosugi/workspace/project_makeISA/ai_api/CPU/obj_dir'
+g++  -I.  -MMD -I/opt/oss-cad-suite/share/verilator/include -I/opt/oss-cad-suite/share/verilator/include/vltstd -DVERILATOR=1 -DVM_COVERAGE=0 -DVM_SC=0 -DVM_TIMING=0 -DVM_TRACE=1 -DVM_TRACE_FST=0 -DVM_TRACE_VCD=1 -DVM_TRACE_SAIF=0 -faligned-new -fcf-protection=none -Wno-bool-operation -Wno-int-in-bool-context -Wno-shadow -Wno-sign-compare -Wno-subobject-linkage -Wno-tautological-compare -Wno-uninitialized -Wno-unused-but-set-parameter -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable      -Os  -c -o tb_top_gen.o ../tb_top_gen.cpp
+g++ -Os  -I.  -MMD -I/opt/oss-cad-suite/share/verilator/include -I/opt/oss-cad-suite/share/verilator/include/vltstd -DVERILATOR=1 -DVM_COVERAGE=0 -DVM_SC=0 -DVM_TIMING=0 -DVM_TRACE=1 -DVM_TRACE_FST=0 -DVM_TRACE_VCD=1 -DVM_TRACE_SAIF=0 -faligned-new -fcf-protection=none -Wno-bool-operation -Wno-int-in-bool-context -Wno-shadow -Wno-sign-compare -Wno-subobject-linkage -Wno-tautological-compare -Wno-uninitialized -Wno-unused-but-set-parameter -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable      -c -o verilated.o /opt/oss-cad-suite/share/verilator/include/verilated.cpp
+g++ -Os  -I.  -MMD -I/opt/oss-cad-suite/share/verilator/include -I/opt/oss-cad-suite/share/verilator/include/vltstd -DVERILATOR=1 -DVM_COVERAGE=0 -DVM_SC=0 -DVM_TIMING=0 -DVM_TRACE=1 -DVM_TRACE_FST=0 -DVM_TRACE_VCD=1 -DVM_TRACE_SAIF=0 -faligned-new -fcf-protection=none -Wno-bool-operation -Wno-int-in-bool-context -Wno-shadow -Wno-sign-compare -Wno-subobject-linkage -Wno-tautological-compare -Wno-uninitialized -Wno-unused-but-set-parameter -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable      -c -o verilated_vcd_c.o /opt/oss-cad-suite/share/verilator/include/verilated_vcd_c.cpp
+g++ -Os  -I.  -MMD -I/opt/oss-cad-suite/share/verilator/include -I/opt/oss-cad-suite/share/verilator/include/vltstd -DVERILATOR=1 -DVM_COVERAGE=0 -DVM_SC=0 -DVM_TIMING=0 -DVM_TRACE=1 -DVM_TRACE_FST=0 -DVM_TRACE_VCD=1 -DVM_TRACE_SAIF=0 -faligned-new -fcf-protection=none -Wno-bool-operation -Wno-int-in-bool-context -Wno-shadow -Wno-sign-compare -Wno-subobject-linkage -Wno-tautological-compare -Wno-uninitialized -Wno-unused-but-set-parameter -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable      -c -o verilated_threads.o /opt/oss-cad-suite/share/verilator/include/verilated_threads.cpp
+python3 /opt/oss-cad-suite/share/verilator/bin/verilator_includer -DVL_INCLUDE_OPT=include Vtop.cpp Vtop___024root__0.cpp Vtop_register_file_reg_16bit__0.cpp Vtop__Trace__0.cpp Vtop___024root__Slow.cpp Vtop___024root__0__Slow.cpp Vtop_register_file_reg_16bit__Slow.cpp Vtop_register_file_reg_16bit__0__Slow.cpp Vtop__Syms__Slow.cpp Vtop__Trace__0__Slow.cpp Vtop__TraceDecls__0__Slow.cpp > Vtop__ALL.cpp
+g++ -Os  -I.  -MMD -I/opt/oss-cad-suite/share/verilator/include -I/opt/oss-cad-suite/share/verilator/include/vltstd -DVERILATOR=1 -DVM_COVERAGE=0 -DVM_SC=0 -DVM_TIMING=0 -DVM_TRACE=1 -DVM_TRACE_FST=0 -DVM_TRACE_VCD=1 -DVM_TRACE_SAIF=0 -faligned-new -fcf-protection=none -Wno-bool-operation -Wno-int-in-bool-context -Wno-shadow -Wno-sign-compare -Wno-subobject-linkage -Wno-tautological-compare -Wno-uninitialized -Wno-unused-but-set-parameter -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable      -c -o Vtop__ALL.o Vtop__ALL.cpp
+g++    tb_top_gen.o verilated.o verilated_vcd_c.o verilated_threads.o Vtop__ALL.a    -pthread -lpthread -latomic   -o Vtop
+rm Vtop__ALL.verilator_deplist.tmp
+make: Leaving directory '/home/ko_kosugi/workspace/project_makeISA/ai_api/CPU/obj_dir'
+- V e r i l a t i o n   R e p o r t: Verilator 5.045 devel rev v5.044-88-g1b9f38f78
+- Verilator: Built from 2.524 MB sources in 45 modules, into 2.134 MB in 11 C++ files needing 0.000 MB
+- Verilator: Walltime 9.876 s (elab=0.022, cvt=0.182, bld=9.631); cpu 0.213 s on 1 threads; allocated 36.414 MB
+[35] %Error: sva_cpu_gen.sv:260: Assertion failed in TOP.top.u_sva_cpu_gen: [TIME=35] LOADI failed: R3 = 0x0305, expected 0x0005
+%Error: sva_cpu_gen.sv:260: Verilog $stop
+Aborting...
+
+==================================================
+
+=== ログ 2026-02-25 19:16:51 ===
+### エラーの要点
+`LOADI`（即値ロード）命令の実行時に、レジスタ（R3）に本来の即値 `0x05` だけでなく、命令内の「宛先レジスタ番号（rd）」である `3` が混入し、結果として `0x0305` が書き込まれています。
+
+これは、**即値生成器（immediate_generator）が誤った形式を選択していること**が原因です。`LOADI` 命令では命令の `[11:4]` ビット（8ビット）を抽出して符号拡張すべきですが、現在は `[15:4]` ビット（12ビット）を抽出する形式（分岐命令用）が選ばれてしまっています。そのため、ビット `[15:12]` に含まれる `rd` の値（今回は `3`）が即値の一部として取り込まれています。
+
+### 修正方法のアドバイス
+
+1.  **選択信号のロジックの見直し**:
+    `cpu.v` から `immediate_generator` に渡している選択信号（`i_imm_sel`）の生成ロジックを確認してください。現在、Opcodeの `[3:2]` ビットをそのまま渡していますが、この2ビットの値と、`immediate_generator` 内部で `u_mux`（4入力MUX）が期待している入力番号が一致していません。
+
+2.  **具体例に基づく修正**:
+    *   `LOADI` の Opcode は `1001` です。その `[3:2]` ビットは `10`（10進数で 2）となります。
+    *   一方で、`immediate_generator.v` の実装では、`i_d2`（入力 2）に12ビット拡張（`w_imm_type2`）が接続されています。
+    *   `LOADI` が 8ビット拡張（`w_imm_type1` / 入力 1）を使用するように、`cpu.v` 側で Opcode に応じて正しい選択番号を生成するデコード処理を追加するか、`immediate_generator` 内の MUX への配線順序を Opcode のビット定義に合わせて入れ替えてください。
+
+3.  **推奨されるデコード**:
+    Opcode から直接ビットを切り出すのではなく、`control_unit` で各命令タイプ（I-type, Load/Store-type, Branch-type, Jump-type）を判定した信号を作成し、それを用いて即値の形式を選択するように接続すると、視覚的にも ISA 定義と一致し、ミスを防げます。
+==================================================
+
+=== ログ 2026-02-25 19:19:17 ===
+%Warning-PINMISSING: reconf/cpu/rtl/cpu.v:101:18: Instance has missing pin: 'o_imm_sel'
+  101 |     control_unit u_control (
+      |                  ^~~~~~~~~
+                     reconf/control_unit/rtl/control_unit.v:8:23: ... Location of port declaration
+    8 |     output wire [1:0] o_imm_sel,
+      |                       ^~~~~~~~~
+                     ... For warning description see https://verilator.org/warn/PINMISSING?v=5.045
+                     ... Use "/* verilator lint_off PINMISSING */" and lint_on around source to disable this message.
+%Error: Exiting due to 1 warning(s)
+
+==================================================
+
+=== ログ 2026-02-25 19:19:36 ===
+### エラーの要点
+このエラーは、`cpu.v` の中で `control_unit`（インスタンス名 `u_control`）を呼び出している箇所に、定義されているはずのポート **`o_imm_sel` が接続されていない**ために発生しています。
+
+直前の修正で `control_unit` モジュール側に即値選択用の新しい出力ポート `o_imm_sel` を追加しましたが、呼び出し側である `cpu.v` の記述がそれに対応する形に更新されていない（ピンが足りない）状態です。Verilatorはデフォルトで「未接続のピン（PINMISSING）」を致命的なエラーとして扱います。
+
+### 修正方法のアドバイス
+
+1.  **ポート接続の追加**:
+    `cpu.v` の `u_control` インスタンス化部分に、`.o_imm_sel(w_imm_sel)` という記述を書き加えてください。これにより、デコードされた即値選択信号が内部ワイヤに正しく伝わります。
+
+2.  **内部ワイヤとの整合性**:
+    `cpu.v` 内で、即値生成器（`u_imm_gen`）に接続しているワイヤ（例：`w_imm_sel`）が、`u_control` から出力される信号を正しく受け取れるよう、接続先を整理してください。
+
+3.  **既存のデコード処理の削除**:
+    もし `cpu.v` 内に Opcode から直接 `w_imm_sel` を生成している記述（`assign w_imm_sel = ...`）が残っている場合は、二重定義や衝突を避けるためにそれを削除し、`control_unit` から出力される信号をそのまま使うようにしてください。これにより、制御ロジックが `control_unit` に集約され、設計がよりクリーンになります。
+==================================================
+
+=== ログ 2026-02-25 19:20:38 ===
+make: Entering directory '/home/ko_kosugi/workspace/project_makeISA/ai_api/CPU/obj_dir'
+g++  -I.  -MMD -I/opt/oss-cad-suite/share/verilator/include -I/opt/oss-cad-suite/share/verilator/include/vltstd -DVERILATOR=1 -DVM_COVERAGE=0 -DVM_SC=0 -DVM_TIMING=0 -DVM_TRACE=1 -DVM_TRACE_FST=0 -DVM_TRACE_VCD=1 -DVM_TRACE_SAIF=0 -faligned-new -fcf-protection=none -Wno-bool-operation -Wno-int-in-bool-context -Wno-shadow -Wno-sign-compare -Wno-subobject-linkage -Wno-tautological-compare -Wno-uninitialized -Wno-unused-but-set-parameter -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable      -Os  -c -o tb_top_gen.o ../tb_top_gen.cpp
+g++ -Os  -I.  -MMD -I/opt/oss-cad-suite/share/verilator/include -I/opt/oss-cad-suite/share/verilator/include/vltstd -DVERILATOR=1 -DVM_COVERAGE=0 -DVM_SC=0 -DVM_TIMING=0 -DVM_TRACE=1 -DVM_TRACE_FST=0 -DVM_TRACE_VCD=1 -DVM_TRACE_SAIF=0 -faligned-new -fcf-protection=none -Wno-bool-operation -Wno-int-in-bool-context -Wno-shadow -Wno-sign-compare -Wno-subobject-linkage -Wno-tautological-compare -Wno-uninitialized -Wno-unused-but-set-parameter -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable      -c -o verilated.o /opt/oss-cad-suite/share/verilator/include/verilated.cpp
+g++ -Os  -I.  -MMD -I/opt/oss-cad-suite/share/verilator/include -I/opt/oss-cad-suite/share/verilator/include/vltstd -DVERILATOR=1 -DVM_COVERAGE=0 -DVM_SC=0 -DVM_TIMING=0 -DVM_TRACE=1 -DVM_TRACE_FST=0 -DVM_TRACE_VCD=1 -DVM_TRACE_SAIF=0 -faligned-new -fcf-protection=none -Wno-bool-operation -Wno-int-in-bool-context -Wno-shadow -Wno-sign-compare -Wno-subobject-linkage -Wno-tautological-compare -Wno-uninitialized -Wno-unused-but-set-parameter -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable      -c -o verilated_vcd_c.o /opt/oss-cad-suite/share/verilator/include/verilated_vcd_c.cpp
+g++ -Os  -I.  -MMD -I/opt/oss-cad-suite/share/verilator/include -I/opt/oss-cad-suite/share/verilator/include/vltstd -DVERILATOR=1 -DVM_COVERAGE=0 -DVM_SC=0 -DVM_TIMING=0 -DVM_TRACE=1 -DVM_TRACE_FST=0 -DVM_TRACE_VCD=1 -DVM_TRACE_SAIF=0 -faligned-new -fcf-protection=none -Wno-bool-operation -Wno-int-in-bool-context -Wno-shadow -Wno-sign-compare -Wno-subobject-linkage -Wno-tautological-compare -Wno-uninitialized -Wno-unused-but-set-parameter -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable      -c -o verilated_threads.o /opt/oss-cad-suite/share/verilator/include/verilated_threads.cpp
+python3 /opt/oss-cad-suite/share/verilator/bin/verilator_includer -DVL_INCLUDE_OPT=include Vtop.cpp Vtop___024root__0.cpp Vtop_register_file_reg_16bit__0.cpp Vtop__Trace__0.cpp Vtop___024root__Slow.cpp Vtop___024root__0__Slow.cpp Vtop_register_file_reg_16bit__Slow.cpp Vtop_register_file_reg_16bit__0__Slow.cpp Vtop__Syms__Slow.cpp Vtop__Trace__0__Slow.cpp Vtop__TraceDecls__0__Slow.cpp > Vtop__ALL.cpp
+g++ -Os  -I.  -MMD -I/opt/oss-cad-suite/share/verilator/include -I/opt/oss-cad-suite/share/verilator/include/vltstd -DVERILATOR=1 -DVM_COVERAGE=0 -DVM_SC=0 -DVM_TIMING=0 -DVM_TRACE=1 -DVM_TRACE_FST=0 -DVM_TRACE_VCD=1 -DVM_TRACE_SAIF=0 -faligned-new -fcf-protection=none -Wno-bool-operation -Wno-int-in-bool-context -Wno-shadow -Wno-sign-compare -Wno-subobject-linkage -Wno-tautological-compare -Wno-uninitialized -Wno-unused-but-set-parameter -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable      -c -o Vtop__ALL.o Vtop__ALL.cpp
+g++    tb_top_gen.o verilated.o verilated_vcd_c.o verilated_threads.o Vtop__ALL.a    -pthread -lpthread -latomic   -o Vtop
+rm Vtop__ALL.verilator_deplist.tmp
+make: Leaving directory '/home/ko_kosugi/workspace/project_makeISA/ai_api/CPU/obj_dir'
+- V e r i l a t i o n   R e p o r t: Verilator 5.045 devel rev v5.044-88-g1b9f38f78
+- Verilator: Built from 2.532 MB sources in 45 modules, into 2.139 MB in 11 C++ files needing 0.000 MB
+- Verilator: Walltime 9.720 s (elab=0.014, cvt=0.166, bld=9.507); cpu 0.213 s on 1 threads; allocated 36.449 MB
+[SVA OK] Time=35: LOADI R3 = 0x0005
+[SVA OK] Time=45: LOADI R3 = 0x0005
+[SVA OK] Time=55: STORE MEM[0x0000] = 0x0005
+[SVA OK] Time=65: LOADI R3 = 0xfffd
+[SVA OK] Time=75: STORE MEM[0x0001] = 0xfffd
+[SVA OK] Time=85: LOADI R3 = 0x0008
+[SVA OK] Time=95: STORE MEM[0x0002] = 0x0008
+[SVA OK] Time=105: LOADI R3 = 0x0002
+[SVA OK] Time=115: STORE MEM[0x0003] = 0x0002
+[SVA OK] Time=125: LOADI R3 = 0xffff
+[SVA OK] Time=135: STORE MEM[0x0004] = 0xffff
+[SVA OK] Time=145: LOADI R1 = 0x0005
+[SVA OK] Time=155: LOADI R2 = 0x0000
+[SVA OK] Time=165: LOAD R4 = MEM[0x0000] = 0x0005
+[SVA OK] Time=175: LOAD R5 = MEM[0x0000] = 0x0005
+[SVA OK] Time=185: LOADI R6 = 0x0000
+[SVA OK] Time=195: LOAD R3 = MEM[0x0000] = 0x0005
+[SVA OK] Time=205: SUB R7 = 0x0000
+[SVA OK] Time=215: BLT cond=0 target=0x004a notaken_pc=0x0026
+[SVA OK] Time=225: ADDI R0 = 0x0000
+[SVA OK] Time=235: SUB R7 = 0x0000
+[SVA OK] Time=245: BLT cond=0 target=0x0050 notaken_pc=0x002c
+[SVA OK] Time=255: ADDI R0 = 0x0000
+[SVA OK] Time=265: JAL link R15=0x0030 target=0x0056
+[SVA OK] Time=275: ADDI R0 = 0x0000
+[SVA OK] Time=285: LOADI R7 = 0x000f
+[295] %Error: sva_cpu_gen.sv:211: Assertion failed in TOP.top.u_sva_cpu_gen: [TIME=295] AND failed: R8 = 0x000a, expected 0x0005
+%Error: sva_cpu_gen.sv:211: Verilog $stop
+Aborting...
+
+==================================================
+
+=== ログ 2026-02-25 19:21:10 ===
+### エラーの要点
+`AND`（論理積）命令の実行結果が `0x000a` となり、期待値の `0x0005` と一致していません。これは、**ALUが「AND演算」ではなく「XOR演算」を実行してしまっていること**が原因です。
+
+ログを確認すると、直前で `R7` に `0x000f` (1111) がロードされており、期待値が `0x0005` (0101) であることから、もう一方の入力は `0x0005` であると推測されます。
+`0x000f` と `0x0005` に対して：
+- `AND` 演算を行うと `0x0005` になります（期待値）。
+- `XOR` 演算を行うと `0x000a` (1010) になります（今回発生したエラー値）。
+
+### 修正方法のアドバイス
+
+1.  **セレクタ信号のマッピング確認**:
+    `alu_main.v` から `alu_main_logical_16bit`（およびその下の `logic_slice`）に渡している選択信号 `i_sel` の値を確認してください。現在、Opcodeの下位2ビット（`i_alu_op[1:0]`）がそのまま渡されています。
+
+2.  **Opcodeと論理回路の不一致の修正**:
+    ISA定義では `AND` の Opcode は `0010` であり、下位2ビットは `2'b10` です。しかし、`alu_main_logic_slice.v` のコード内では、`2'b10` のときに `w_xor`（XORゲート）を選択するロジックになっています。
+    一方で、`XOR` の Opcode は `0100` であり下位2ビットは `2'b00` ですが、回路側では `2'b00` が `w_and`（ANDゲート）に割り当てられています。
+
+3.  **具体的な修正方針**:
+    `alu_main_logic_slice.v` 内の条件演算子（三項演算子）による選択ロジックを書き換え、ISA定義のOpcodeビットパターン（`AND=2'b10`, `XOR=2'b00` など）と、選択される論理ゲートが正しく1対1で対応するように修正してください。
+==================================================
+
+=== ログ 2026-02-25 19:22:03 ===
+make: Entering directory '/home/ko_kosugi/workspace/project_makeISA/ai_api/CPU/obj_dir'
+g++  -I.  -MMD -I/opt/oss-cad-suite/share/verilator/include -I/opt/oss-cad-suite/share/verilator/include/vltstd -DVERILATOR=1 -DVM_COVERAGE=0 -DVM_SC=0 -DVM_TIMING=0 -DVM_TRACE=1 -DVM_TRACE_FST=0 -DVM_TRACE_VCD=1 -DVM_TRACE_SAIF=0 -faligned-new -fcf-protection=none -Wno-bool-operation -Wno-int-in-bool-context -Wno-shadow -Wno-sign-compare -Wno-subobject-linkage -Wno-tautological-compare -Wno-uninitialized -Wno-unused-but-set-parameter -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable      -Os  -c -o tb_top_gen.o ../tb_top_gen.cpp
+g++ -Os  -I.  -MMD -I/opt/oss-cad-suite/share/verilator/include -I/opt/oss-cad-suite/share/verilator/include/vltstd -DVERILATOR=1 -DVM_COVERAGE=0 -DVM_SC=0 -DVM_TIMING=0 -DVM_TRACE=1 -DVM_TRACE_FST=0 -DVM_TRACE_VCD=1 -DVM_TRACE_SAIF=0 -faligned-new -fcf-protection=none -Wno-bool-operation -Wno-int-in-bool-context -Wno-shadow -Wno-sign-compare -Wno-subobject-linkage -Wno-tautological-compare -Wno-uninitialized -Wno-unused-but-set-parameter -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable      -c -o verilated.o /opt/oss-cad-suite/share/verilator/include/verilated.cpp
+g++ -Os  -I.  -MMD -I/opt/oss-cad-suite/share/verilator/include -I/opt/oss-cad-suite/share/verilator/include/vltstd -DVERILATOR=1 -DVM_COVERAGE=0 -DVM_SC=0 -DVM_TIMING=0 -DVM_TRACE=1 -DVM_TRACE_FST=0 -DVM_TRACE_VCD=1 -DVM_TRACE_SAIF=0 -faligned-new -fcf-protection=none -Wno-bool-operation -Wno-int-in-bool-context -Wno-shadow -Wno-sign-compare -Wno-subobject-linkage -Wno-tautological-compare -Wno-uninitialized -Wno-unused-but-set-parameter -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable      -c -o verilated_vcd_c.o /opt/oss-cad-suite/share/verilator/include/verilated_vcd_c.cpp
+g++ -Os  -I.  -MMD -I/opt/oss-cad-suite/share/verilator/include -I/opt/oss-cad-suite/share/verilator/include/vltstd -DVERILATOR=1 -DVM_COVERAGE=0 -DVM_SC=0 -DVM_TIMING=0 -DVM_TRACE=1 -DVM_TRACE_FST=0 -DVM_TRACE_VCD=1 -DVM_TRACE_SAIF=0 -faligned-new -fcf-protection=none -Wno-bool-operation -Wno-int-in-bool-context -Wno-shadow -Wno-sign-compare -Wno-subobject-linkage -Wno-tautological-compare -Wno-uninitialized -Wno-unused-but-set-parameter -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable      -c -o verilated_threads.o /opt/oss-cad-suite/share/verilator/include/verilated_threads.cpp
+python3 /opt/oss-cad-suite/share/verilator/bin/verilator_includer -DVL_INCLUDE_OPT=include Vtop.cpp Vtop___024root__0.cpp Vtop_register_file_reg_16bit__0.cpp Vtop__Trace__0.cpp Vtop___024root__Slow.cpp Vtop___024root__0__Slow.cpp Vtop_register_file_reg_16bit__Slow.cpp Vtop_register_file_reg_16bit__0__Slow.cpp Vtop__Syms__Slow.cpp Vtop__Trace__0__Slow.cpp Vtop__TraceDecls__0__Slow.cpp > Vtop__ALL.cpp
+g++ -Os  -I.  -MMD -I/opt/oss-cad-suite/share/verilator/include -I/opt/oss-cad-suite/share/verilator/include/vltstd -DVERILATOR=1 -DVM_COVERAGE=0 -DVM_SC=0 -DVM_TIMING=0 -DVM_TRACE=1 -DVM_TRACE_FST=0 -DVM_TRACE_VCD=1 -DVM_TRACE_SAIF=0 -faligned-new -fcf-protection=none -Wno-bool-operation -Wno-int-in-bool-context -Wno-shadow -Wno-sign-compare -Wno-subobject-linkage -Wno-tautological-compare -Wno-uninitialized -Wno-unused-but-set-parameter -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable      -c -o Vtop__ALL.o Vtop__ALL.cpp
+g++    tb_top_gen.o verilated.o verilated_vcd_c.o verilated_threads.o Vtop__ALL.a    -pthread -lpthread -latomic   -o Vtop
+rm Vtop__ALL.verilator_deplist.tmp
+make: Leaving directory '/home/ko_kosugi/workspace/project_makeISA/ai_api/CPU/obj_dir'
+- V e r i l a t i o n   R e p o r t: Verilator 5.045 devel rev v5.044-88-g1b9f38f78
+- Verilator: Built from 2.532 MB sources in 45 modules, into 2.139 MB in 11 C++ files needing 0.000 MB
+- Verilator: Walltime 10.200 s (elab=0.020, cvt=0.182, bld=9.953); cpu 0.218 s on 1 threads; allocated 36.445 MB
+[SVA OK] Time=35: LOADI R3 = 0x0005
+[SVA OK] Time=45: LOADI R3 = 0x0005
+[SVA OK] Time=55: STORE MEM[0x0000] = 0x0005
+[SVA OK] Time=65: LOADI R3 = 0xfffd
+[SVA OK] Time=75: STORE MEM[0x0001] = 0xfffd
+[SVA OK] Time=85: LOADI R3 = 0x0008
+[SVA OK] Time=95: STORE MEM[0x0002] = 0x0008
+[SVA OK] Time=105: LOADI R3 = 0x0002
+[SVA OK] Time=115: STORE MEM[0x0003] = 0x0002
+[SVA OK] Time=125: LOADI R3 = 0xffff
+[SVA OK] Time=135: STORE MEM[0x0004] = 0xffff
+[SVA OK] Time=145: LOADI R1 = 0x0005
+[SVA OK] Time=155: LOADI R2 = 0x0000
+[SVA OK] Time=165: LOAD R4 = MEM[0x0000] = 0x0005
+[SVA OK] Time=175: LOAD R5 = MEM[0x0000] = 0x0005
+[SVA OK] Time=185: LOADI R6 = 0x0000
+[SVA OK] Time=195: LOAD R3 = MEM[0x0000] = 0x0005
+[SVA OK] Time=205: SUB R7 = 0x0000
+[SVA OK] Time=215: BLT cond=0 target=0x004a notaken_pc=0x0026
+[SVA OK] Time=225: ADDI R0 = 0x0000
+[SVA OK] Time=235: SUB R7 = 0x0000
+[SVA OK] Time=245: BLT cond=0 target=0x0050 notaken_pc=0x002c
+[SVA OK] Time=255: ADDI R0 = 0x0000
+[SVA OK] Time=265: JAL link R15=0x0030 target=0x0056
+[SVA OK] Time=275: ADDI R0 = 0x0000
+[SVA OK] Time=285: LOADI R7 = 0x000f
+[SVA OK] Time=295: AND R8 = 0x0005
+[SVA OK] Time=305: OR R9 = 0x000f
+[315] %Error: sva_cpu_gen.sv:225: Assertion failed in TOP.top.u_sva_cpu_gen: [TIME=315] XOR failed: R10 = 0x0000, expected 0x000a
+%Error: sva_cpu_gen.sv:225: Verilog $stop
+Aborting...
+
+==================================================
+
+=== ログ 2026-02-25 19:22:19 ===
+### エラーの要点
+`XOR`（排他的論理和）命令の結果が `0x0000` となり、期待値の `0x000a` と一致していません。この原因は、**ALU内部で論理演算ユニットを選択する条件式が誤っており、XOR命令とNOT命令を正しく識別できていないこと**にあります。
+
+現在、`alu_main.v` 内の `w_sel_logic`（論理演算を選択する信号）が「Opcodeの上位2ビットが `00` であること」を条件にしています。しかし、ISA定義では `XOR` (0100) と `NOT` (0101) のOpcodeは上位2ビットが `01` です。そのため、これらの命令が実行される際、ALUの結果選択MUXで論理演算ユニットが選ばれず、デフォルト値である `0` が出力されてしまっています。
+
+### 修正方法のアドバイス
+
+1.  **論理演算ユニット選択信号の修正**:
+    `alu_main.v` における `w_sel_logic` の生成論理を、Opcode `0100` (XOR) と `0101` (NOT) もカバーするように更新してください。具体的には、上位2ビットが `00` の場合だけでなく、`01` の場合も特定の範囲内であれば論理演算として扱う必要があります。
+
+2.  **他の演算との競合回避**:
+    Opcodeの上位ビットが `01` である命令には、`SRA` (0110) や `SLA` (0111) も含まれます。修正の際は、これらシフト演算（`w_sel_shift` で処理されるべきもの）と論理演算が衝突しないよう、下位ビットまで考慮して正しくデコードされるようにしてください。
+
+3.  **推奨されるデコード方法**:
+    ビット単位の条件式（`[3:2] == ...`）を複雑にするよりも、`alu_op` の4ビット全体を見て、論理演算に該当する4つのOpcode（0010, 0011, 0100, 0101）を明示的にOR条件で並べる形式に書き換えると、視覚的に分かりやすく、ミスも防げます。
+==================================================

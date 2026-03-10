@@ -1,0 +1,360 @@
+{
+  "creator": "Yosys 0.61+112 (git sha1 ac427a79b, clang++ 18.1.8 -fPIC -O3)",
+  "modules": {
+    "mem_ctrl_buffer_16bit": {
+      "attributes": {
+        "top": "00000000000000000000000000000001",
+        "src": "reconf/mem_ctrl/rtl/mem_ctrl_buffer_16bit.v:1.1-18.10"
+      },
+      "ports": {
+        "i_in": {
+          "direction": "input",
+          "bits": [ 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17 ]
+        },
+        "o_out": {
+          "direction": "output",
+          "bits": [ 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33 ]
+        }
+      },
+      "cells": {
+        "bit_slice_buffer[0].u_buf_bit": {
+          "hide_name": 0,
+          "type": "mem_ctrl_buffer_1bit",
+          "parameters": {
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "reconf/mem_ctrl/rtl/mem_ctrl_buffer_16bit.v:11.34-14.14"
+          },
+          "port_directions": {
+            "i_in": "input",
+            "o_out": "output"
+          },
+          "connections": {
+            "i_in": [ 2 ],
+            "o_out": [ 18 ]
+          }
+        },
+        "bit_slice_buffer[10].u_buf_bit": {
+          "hide_name": 0,
+          "type": "mem_ctrl_buffer_1bit",
+          "parameters": {
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "reconf/mem_ctrl/rtl/mem_ctrl_buffer_16bit.v:11.34-14.14"
+          },
+          "port_directions": {
+            "i_in": "input",
+            "o_out": "output"
+          },
+          "connections": {
+            "i_in": [ 12 ],
+            "o_out": [ 28 ]
+          }
+        },
+        "bit_slice_buffer[11].u_buf_bit": {
+          "hide_name": 0,
+          "type": "mem_ctrl_buffer_1bit",
+          "parameters": {
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "reconf/mem_ctrl/rtl/mem_ctrl_buffer_16bit.v:11.34-14.14"
+          },
+          "port_directions": {
+            "i_in": "input",
+            "o_out": "output"
+          },
+          "connections": {
+            "i_in": [ 13 ],
+            "o_out": [ 29 ]
+          }
+        },
+        "bit_slice_buffer[12].u_buf_bit": {
+          "hide_name": 0,
+          "type": "mem_ctrl_buffer_1bit",
+          "parameters": {
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "reconf/mem_ctrl/rtl/mem_ctrl_buffer_16bit.v:11.34-14.14"
+          },
+          "port_directions": {
+            "i_in": "input",
+            "o_out": "output"
+          },
+          "connections": {
+            "i_in": [ 14 ],
+            "o_out": [ 30 ]
+          }
+        },
+        "bit_slice_buffer[13].u_buf_bit": {
+          "hide_name": 0,
+          "type": "mem_ctrl_buffer_1bit",
+          "parameters": {
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "reconf/mem_ctrl/rtl/mem_ctrl_buffer_16bit.v:11.34-14.14"
+          },
+          "port_directions": {
+            "i_in": "input",
+            "o_out": "output"
+          },
+          "connections": {
+            "i_in": [ 15 ],
+            "o_out": [ 31 ]
+          }
+        },
+        "bit_slice_buffer[14].u_buf_bit": {
+          "hide_name": 0,
+          "type": "mem_ctrl_buffer_1bit",
+          "parameters": {
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "reconf/mem_ctrl/rtl/mem_ctrl_buffer_16bit.v:11.34-14.14"
+          },
+          "port_directions": {
+            "i_in": "input",
+            "o_out": "output"
+          },
+          "connections": {
+            "i_in": [ 16 ],
+            "o_out": [ 32 ]
+          }
+        },
+        "bit_slice_buffer[15].u_buf_bit": {
+          "hide_name": 0,
+          "type": "mem_ctrl_buffer_1bit",
+          "parameters": {
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "reconf/mem_ctrl/rtl/mem_ctrl_buffer_16bit.v:11.34-14.14"
+          },
+          "port_directions": {
+            "i_in": "input",
+            "o_out": "output"
+          },
+          "connections": {
+            "i_in": [ 17 ],
+            "o_out": [ 33 ]
+          }
+        },
+        "bit_slice_buffer[1].u_buf_bit": {
+          "hide_name": 0,
+          "type": "mem_ctrl_buffer_1bit",
+          "parameters": {
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "reconf/mem_ctrl/rtl/mem_ctrl_buffer_16bit.v:11.34-14.14"
+          },
+          "port_directions": {
+            "i_in": "input",
+            "o_out": "output"
+          },
+          "connections": {
+            "i_in": [ 3 ],
+            "o_out": [ 19 ]
+          }
+        },
+        "bit_slice_buffer[2].u_buf_bit": {
+          "hide_name": 0,
+          "type": "mem_ctrl_buffer_1bit",
+          "parameters": {
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "reconf/mem_ctrl/rtl/mem_ctrl_buffer_16bit.v:11.34-14.14"
+          },
+          "port_directions": {
+            "i_in": "input",
+            "o_out": "output"
+          },
+          "connections": {
+            "i_in": [ 4 ],
+            "o_out": [ 20 ]
+          }
+        },
+        "bit_slice_buffer[3].u_buf_bit": {
+          "hide_name": 0,
+          "type": "mem_ctrl_buffer_1bit",
+          "parameters": {
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "reconf/mem_ctrl/rtl/mem_ctrl_buffer_16bit.v:11.34-14.14"
+          },
+          "port_directions": {
+            "i_in": "input",
+            "o_out": "output"
+          },
+          "connections": {
+            "i_in": [ 5 ],
+            "o_out": [ 21 ]
+          }
+        },
+        "bit_slice_buffer[4].u_buf_bit": {
+          "hide_name": 0,
+          "type": "mem_ctrl_buffer_1bit",
+          "parameters": {
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "reconf/mem_ctrl/rtl/mem_ctrl_buffer_16bit.v:11.34-14.14"
+          },
+          "port_directions": {
+            "i_in": "input",
+            "o_out": "output"
+          },
+          "connections": {
+            "i_in": [ 6 ],
+            "o_out": [ 22 ]
+          }
+        },
+        "bit_slice_buffer[5].u_buf_bit": {
+          "hide_name": 0,
+          "type": "mem_ctrl_buffer_1bit",
+          "parameters": {
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "reconf/mem_ctrl/rtl/mem_ctrl_buffer_16bit.v:11.34-14.14"
+          },
+          "port_directions": {
+            "i_in": "input",
+            "o_out": "output"
+          },
+          "connections": {
+            "i_in": [ 7 ],
+            "o_out": [ 23 ]
+          }
+        },
+        "bit_slice_buffer[6].u_buf_bit": {
+          "hide_name": 0,
+          "type": "mem_ctrl_buffer_1bit",
+          "parameters": {
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "reconf/mem_ctrl/rtl/mem_ctrl_buffer_16bit.v:11.34-14.14"
+          },
+          "port_directions": {
+            "i_in": "input",
+            "o_out": "output"
+          },
+          "connections": {
+            "i_in": [ 8 ],
+            "o_out": [ 24 ]
+          }
+        },
+        "bit_slice_buffer[7].u_buf_bit": {
+          "hide_name": 0,
+          "type": "mem_ctrl_buffer_1bit",
+          "parameters": {
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "reconf/mem_ctrl/rtl/mem_ctrl_buffer_16bit.v:11.34-14.14"
+          },
+          "port_directions": {
+            "i_in": "input",
+            "o_out": "output"
+          },
+          "connections": {
+            "i_in": [ 9 ],
+            "o_out": [ 25 ]
+          }
+        },
+        "bit_slice_buffer[8].u_buf_bit": {
+          "hide_name": 0,
+          "type": "mem_ctrl_buffer_1bit",
+          "parameters": {
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "reconf/mem_ctrl/rtl/mem_ctrl_buffer_16bit.v:11.34-14.14"
+          },
+          "port_directions": {
+            "i_in": "input",
+            "o_out": "output"
+          },
+          "connections": {
+            "i_in": [ 10 ],
+            "o_out": [ 26 ]
+          }
+        },
+        "bit_slice_buffer[9].u_buf_bit": {
+          "hide_name": 0,
+          "type": "mem_ctrl_buffer_1bit",
+          "parameters": {
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "reconf/mem_ctrl/rtl/mem_ctrl_buffer_16bit.v:11.34-14.14"
+          },
+          "port_directions": {
+            "i_in": "input",
+            "o_out": "output"
+          },
+          "connections": {
+            "i_in": [ 11 ],
+            "o_out": [ 27 ]
+          }
+        }
+      },
+      "netnames": {
+        "i_in": {
+          "hide_name": 0,
+          "bits": [ 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17 ],
+          "attributes": {
+            "src": "reconf/mem_ctrl/rtl/mem_ctrl_buffer_16bit.v:2.24-2.28"
+          }
+        },
+        "o_out": {
+          "hide_name": 0,
+          "bits": [ 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33 ],
+          "attributes": {
+            "src": "reconf/mem_ctrl/rtl/mem_ctrl_buffer_16bit.v:3.24-3.29"
+          }
+        }
+      }
+    },
+    "mem_ctrl_buffer_1bit": {
+      "attributes": {
+        "src": "reconf/mem_ctrl/rtl/mem_ctrl_buffer_1bit.v:1.1-10.10"
+      },
+      "ports": {
+        "i_in": {
+          "direction": "input",
+          "bits": [ 2 ]
+        },
+        "o_out": {
+          "direction": "output",
+          "bits": [ 2 ]
+        }
+      },
+      "cells": {
+      },
+      "netnames": {
+        "i_in": {
+          "hide_name": 0,
+          "bits": [ 2 ],
+          "attributes": {
+            "src": "reconf/mem_ctrl/rtl/mem_ctrl_buffer_1bit.v:2.17-2.21"
+          }
+        },
+        "o_out": {
+          "hide_name": 0,
+          "bits": [ 2 ],
+          "attributes": {
+            "src": "reconf/mem_ctrl/rtl/mem_ctrl_buffer_1bit.v:3.17-3.22"
+          }
+        }
+      }
+    }
+  }
+}

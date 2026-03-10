@@ -1,0 +1,187 @@
+{
+  "creator": "Yosys 0.61+112 (git sha1 ac427a79b, clang++ 18.1.8 -fPIC -O3)",
+  "modules": {
+    "pc_control_condition": {
+      "attributes": {
+        "top": "00000000000000000000000000000001",
+        "src": "reconf/pc_control/rtl/pc_control_condition.v:1.1-22.10"
+      },
+      "ports": {
+        "i_is_blt": {
+          "direction": "input",
+          "bits": [ 2 ]
+        },
+        "i_is_bz": {
+          "direction": "input",
+          "bits": [ 3 ]
+        },
+        "i_flag_z": {
+          "direction": "input",
+          "bits": [ 4 ]
+        },
+        "i_flag_n": {
+          "direction": "input",
+          "bits": [ 5 ]
+        },
+        "i_flag_v": {
+          "direction": "input",
+          "bits": [ 6 ]
+        },
+        "o_is_taken": {
+          "direction": "output",
+          "bits": [ 7 ]
+        }
+      },
+      "cells": {
+        "$auto$simplemap.cc:106:simplemap_bitop$89": {
+          "hide_name": 1,
+          "type": "$_XOR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/pc_control/rtl/pc_control_condition.v:14.26-14.45"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 5 ],
+            "B": [ 6 ],
+            "Y": [ 8 ]
+          }
+        },
+        "$auto$simplemap.cc:106:simplemap_bitop$90": {
+          "hide_name": 1,
+          "type": "$_AND_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/pc_control/rtl/pc_control_condition.v:20.26-20.48"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 2 ],
+            "B": [ 8 ],
+            "Y": [ 9 ]
+          }
+        },
+        "$auto$simplemap.cc:106:simplemap_bitop$91": {
+          "hide_name": 1,
+          "type": "$_AND_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/pc_control/rtl/pc_control_condition.v:20.53-20.73"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 3 ],
+            "B": [ 4 ],
+            "Y": [ 10 ]
+          }
+        },
+        "$auto$simplemap.cc:106:simplemap_bitop$92": {
+          "hide_name": 1,
+          "type": "$_OR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/pc_control/rtl/pc_control_condition.v:20.25-20.74"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 9 ],
+            "B": [ 10 ],
+            "Y": [ 7 ]
+          }
+        }
+      },
+      "netnames": {
+        "$and$reconf/pc_control/rtl/pc_control_condition.v:20$11_Y": {
+          "hide_name": 1,
+          "bits": [ 9 ],
+          "attributes": {
+            "src": "reconf/pc_control/rtl/pc_control_condition.v:20.26-20.48"
+          }
+        },
+        "$and$reconf/pc_control/rtl/pc_control_condition.v:20$12_Y": {
+          "hide_name": 1,
+          "bits": [ 10 ],
+          "attributes": {
+            "src": "reconf/pc_control/rtl/pc_control_condition.v:20.53-20.73"
+          }
+        },
+        "i_flag_n": {
+          "hide_name": 0,
+          "bits": [ 5 ],
+          "attributes": {
+            "src": "reconf/pc_control/rtl/pc_control_condition.v:5.17-5.25"
+          }
+        },
+        "i_flag_v": {
+          "hide_name": 0,
+          "bits": [ 6 ],
+          "attributes": {
+            "src": "reconf/pc_control/rtl/pc_control_condition.v:6.17-6.25"
+          }
+        },
+        "i_flag_z": {
+          "hide_name": 0,
+          "bits": [ 4 ],
+          "attributes": {
+            "src": "reconf/pc_control/rtl/pc_control_condition.v:4.17-4.25"
+          }
+        },
+        "i_is_blt": {
+          "hide_name": 0,
+          "bits": [ 2 ],
+          "attributes": {
+            "src": "reconf/pc_control/rtl/pc_control_condition.v:2.17-2.25"
+          }
+        },
+        "i_is_bz": {
+          "hide_name": 0,
+          "bits": [ 3 ],
+          "attributes": {
+            "src": "reconf/pc_control/rtl/pc_control_condition.v:3.17-3.24"
+          }
+        },
+        "o_is_taken": {
+          "hide_name": 0,
+          "bits": [ 7 ],
+          "attributes": {
+            "src": "reconf/pc_control/rtl/pc_control_condition.v:7.17-7.27"
+          }
+        },
+        "w_blt_match": {
+          "hide_name": 0,
+          "bits": [ 8 ],
+          "attributes": {
+            "src": "reconf/pc_control/rtl/pc_control_condition.v:10.10-10.21"
+          }
+        },
+        "w_bz_match": {
+          "hide_name": 0,
+          "bits": [ 4 ],
+          "attributes": {
+            "src": "reconf/pc_control/rtl/pc_control_condition.v:11.10-11.20"
+          }
+        }
+      }
+    }
+  }
+}

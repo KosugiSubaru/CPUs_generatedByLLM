@@ -1,0 +1,571 @@
+{
+  "creator": "Yosys 0.61+112 (git sha1 ac427a79b, clang++ 18.1.8 -fPIC -O3)",
+  "modules": {
+    "control_unit_decoder": {
+      "attributes": {
+        "top": "00000000000000000000000000000001",
+        "src": "reconf/control_unit/rtl/control_unit_decoder.v:1.1-20.10"
+      },
+      "ports": {
+        "i_opcode": {
+          "direction": "input",
+          "bits": [ 2, 3, 4, 5 ]
+        },
+        "o_instr_signals": {
+          "direction": "output",
+          "bits": [ 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21 ]
+        }
+      },
+      "cells": {
+        "gen_decoder[0].u_match": {
+          "hide_name": 0,
+          "type": "control_unit_op_match",
+          "parameters": {
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "reconf/control_unit/rtl/control_unit_decoder.v:12.35-16.14"
+          },
+          "port_directions": {
+            "i_opcode": "input",
+            "i_target": "input",
+            "o_match": "output"
+          },
+          "connections": {
+            "i_opcode": [ 2, 3, 4, 5 ],
+            "i_target": [ "0", "0", "0", "0" ],
+            "o_match": [ 6 ]
+          }
+        },
+        "gen_decoder[10].u_match": {
+          "hide_name": 0,
+          "type": "control_unit_op_match",
+          "parameters": {
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "reconf/control_unit/rtl/control_unit_decoder.v:12.35-16.14"
+          },
+          "port_directions": {
+            "i_opcode": "input",
+            "i_target": "input",
+            "o_match": "output"
+          },
+          "connections": {
+            "i_opcode": [ 2, 3, 4, 5 ],
+            "i_target": [ "0", "1", "0", "1" ],
+            "o_match": [ 16 ]
+          }
+        },
+        "gen_decoder[11].u_match": {
+          "hide_name": 0,
+          "type": "control_unit_op_match",
+          "parameters": {
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "reconf/control_unit/rtl/control_unit_decoder.v:12.35-16.14"
+          },
+          "port_directions": {
+            "i_opcode": "input",
+            "i_target": "input",
+            "o_match": "output"
+          },
+          "connections": {
+            "i_opcode": [ 2, 3, 4, 5 ],
+            "i_target": [ "1", "1", "0", "1" ],
+            "o_match": [ 17 ]
+          }
+        },
+        "gen_decoder[12].u_match": {
+          "hide_name": 0,
+          "type": "control_unit_op_match",
+          "parameters": {
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "reconf/control_unit/rtl/control_unit_decoder.v:12.35-16.14"
+          },
+          "port_directions": {
+            "i_opcode": "input",
+            "i_target": "input",
+            "o_match": "output"
+          },
+          "connections": {
+            "i_opcode": [ 2, 3, 4, 5 ],
+            "i_target": [ "0", "0", "1", "1" ],
+            "o_match": [ 18 ]
+          }
+        },
+        "gen_decoder[13].u_match": {
+          "hide_name": 0,
+          "type": "control_unit_op_match",
+          "parameters": {
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "reconf/control_unit/rtl/control_unit_decoder.v:12.35-16.14"
+          },
+          "port_directions": {
+            "i_opcode": "input",
+            "i_target": "input",
+            "o_match": "output"
+          },
+          "connections": {
+            "i_opcode": [ 2, 3, 4, 5 ],
+            "i_target": [ "1", "0", "1", "1" ],
+            "o_match": [ 19 ]
+          }
+        },
+        "gen_decoder[14].u_match": {
+          "hide_name": 0,
+          "type": "control_unit_op_match",
+          "parameters": {
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "reconf/control_unit/rtl/control_unit_decoder.v:12.35-16.14"
+          },
+          "port_directions": {
+            "i_opcode": "input",
+            "i_target": "input",
+            "o_match": "output"
+          },
+          "connections": {
+            "i_opcode": [ 2, 3, 4, 5 ],
+            "i_target": [ "0", "1", "1", "1" ],
+            "o_match": [ 20 ]
+          }
+        },
+        "gen_decoder[15].u_match": {
+          "hide_name": 0,
+          "type": "control_unit_op_match",
+          "parameters": {
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "reconf/control_unit/rtl/control_unit_decoder.v:12.35-16.14"
+          },
+          "port_directions": {
+            "i_opcode": "input",
+            "i_target": "input",
+            "o_match": "output"
+          },
+          "connections": {
+            "i_opcode": [ 2, 3, 4, 5 ],
+            "i_target": [ "1", "1", "1", "1" ],
+            "o_match": [ 21 ]
+          }
+        },
+        "gen_decoder[1].u_match": {
+          "hide_name": 0,
+          "type": "control_unit_op_match",
+          "parameters": {
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "reconf/control_unit/rtl/control_unit_decoder.v:12.35-16.14"
+          },
+          "port_directions": {
+            "i_opcode": "input",
+            "i_target": "input",
+            "o_match": "output"
+          },
+          "connections": {
+            "i_opcode": [ 2, 3, 4, 5 ],
+            "i_target": [ "1", "0", "0", "0" ],
+            "o_match": [ 7 ]
+          }
+        },
+        "gen_decoder[2].u_match": {
+          "hide_name": 0,
+          "type": "control_unit_op_match",
+          "parameters": {
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "reconf/control_unit/rtl/control_unit_decoder.v:12.35-16.14"
+          },
+          "port_directions": {
+            "i_opcode": "input",
+            "i_target": "input",
+            "o_match": "output"
+          },
+          "connections": {
+            "i_opcode": [ 2, 3, 4, 5 ],
+            "i_target": [ "0", "1", "0", "0" ],
+            "o_match": [ 8 ]
+          }
+        },
+        "gen_decoder[3].u_match": {
+          "hide_name": 0,
+          "type": "control_unit_op_match",
+          "parameters": {
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "reconf/control_unit/rtl/control_unit_decoder.v:12.35-16.14"
+          },
+          "port_directions": {
+            "i_opcode": "input",
+            "i_target": "input",
+            "o_match": "output"
+          },
+          "connections": {
+            "i_opcode": [ 2, 3, 4, 5 ],
+            "i_target": [ "1", "1", "0", "0" ],
+            "o_match": [ 9 ]
+          }
+        },
+        "gen_decoder[4].u_match": {
+          "hide_name": 0,
+          "type": "control_unit_op_match",
+          "parameters": {
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "reconf/control_unit/rtl/control_unit_decoder.v:12.35-16.14"
+          },
+          "port_directions": {
+            "i_opcode": "input",
+            "i_target": "input",
+            "o_match": "output"
+          },
+          "connections": {
+            "i_opcode": [ 2, 3, 4, 5 ],
+            "i_target": [ "0", "0", "1", "0" ],
+            "o_match": [ 10 ]
+          }
+        },
+        "gen_decoder[5].u_match": {
+          "hide_name": 0,
+          "type": "control_unit_op_match",
+          "parameters": {
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "reconf/control_unit/rtl/control_unit_decoder.v:12.35-16.14"
+          },
+          "port_directions": {
+            "i_opcode": "input",
+            "i_target": "input",
+            "o_match": "output"
+          },
+          "connections": {
+            "i_opcode": [ 2, 3, 4, 5 ],
+            "i_target": [ "1", "0", "1", "0" ],
+            "o_match": [ 11 ]
+          }
+        },
+        "gen_decoder[6].u_match": {
+          "hide_name": 0,
+          "type": "control_unit_op_match",
+          "parameters": {
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "reconf/control_unit/rtl/control_unit_decoder.v:12.35-16.14"
+          },
+          "port_directions": {
+            "i_opcode": "input",
+            "i_target": "input",
+            "o_match": "output"
+          },
+          "connections": {
+            "i_opcode": [ 2, 3, 4, 5 ],
+            "i_target": [ "0", "1", "1", "0" ],
+            "o_match": [ 12 ]
+          }
+        },
+        "gen_decoder[7].u_match": {
+          "hide_name": 0,
+          "type": "control_unit_op_match",
+          "parameters": {
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "reconf/control_unit/rtl/control_unit_decoder.v:12.35-16.14"
+          },
+          "port_directions": {
+            "i_opcode": "input",
+            "i_target": "input",
+            "o_match": "output"
+          },
+          "connections": {
+            "i_opcode": [ 2, 3, 4, 5 ],
+            "i_target": [ "1", "1", "1", "0" ],
+            "o_match": [ 13 ]
+          }
+        },
+        "gen_decoder[8].u_match": {
+          "hide_name": 0,
+          "type": "control_unit_op_match",
+          "parameters": {
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "reconf/control_unit/rtl/control_unit_decoder.v:12.35-16.14"
+          },
+          "port_directions": {
+            "i_opcode": "input",
+            "i_target": "input",
+            "o_match": "output"
+          },
+          "connections": {
+            "i_opcode": [ 2, 3, 4, 5 ],
+            "i_target": [ "0", "0", "0", "1" ],
+            "o_match": [ 14 ]
+          }
+        },
+        "gen_decoder[9].u_match": {
+          "hide_name": 0,
+          "type": "control_unit_op_match",
+          "parameters": {
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "reconf/control_unit/rtl/control_unit_decoder.v:12.35-16.14"
+          },
+          "port_directions": {
+            "i_opcode": "input",
+            "i_target": "input",
+            "o_match": "output"
+          },
+          "connections": {
+            "i_opcode": [ 2, 3, 4, 5 ],
+            "i_target": [ "1", "0", "0", "1" ],
+            "o_match": [ 15 ]
+          }
+        }
+      },
+      "netnames": {
+        "i_opcode": {
+          "hide_name": 0,
+          "bits": [ 2, 3, 4, 5 ],
+          "attributes": {
+            "src": "reconf/control_unit/rtl/control_unit_decoder.v:2.24-2.32"
+          }
+        },
+        "o_instr_signals": {
+          "hide_name": 0,
+          "bits": [ 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21 ],
+          "attributes": {
+            "src": "reconf/control_unit/rtl/control_unit_decoder.v:3.24-3.39"
+          }
+        }
+      }
+    },
+    "control_unit_op_match": {
+      "attributes": {
+        "src": "reconf/control_unit/rtl/control_unit_op_match.v:1.1-9.10"
+      },
+      "ports": {
+        "i_opcode": {
+          "direction": "input",
+          "bits": [ 2, 3, 4, 5 ]
+        },
+        "i_target": {
+          "direction": "input",
+          "bits": [ 6, 7, 8, 9 ]
+        },
+        "o_match": {
+          "direction": "output",
+          "bits": [ 10 ]
+        }
+      },
+      "cells": {
+        "$auto$simplemap.cc:106:simplemap_bitop$86": {
+          "hide_name": 1,
+          "type": "$_XOR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/control_unit/rtl/control_unit_op_match.v:7.23-7.43"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 2 ],
+            "B": [ 6 ],
+            "Y": [ 11 ]
+          }
+        },
+        "$auto$simplemap.cc:106:simplemap_bitop$87": {
+          "hide_name": 1,
+          "type": "$_XOR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/control_unit/rtl/control_unit_op_match.v:7.23-7.43"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 3 ],
+            "B": [ 7 ],
+            "Y": [ 12 ]
+          }
+        },
+        "$auto$simplemap.cc:106:simplemap_bitop$88": {
+          "hide_name": 1,
+          "type": "$_XOR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/control_unit/rtl/control_unit_op_match.v:7.23-7.43"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 4 ],
+            "B": [ 8 ],
+            "Y": [ 13 ]
+          }
+        },
+        "$auto$simplemap.cc:106:simplemap_bitop$89": {
+          "hide_name": 1,
+          "type": "$_XOR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/control_unit/rtl/control_unit_op_match.v:7.23-7.43"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 5 ],
+            "B": [ 9 ],
+            "Y": [ 14 ]
+          }
+        },
+        "$auto$simplemap.cc:157:simplemap_reduce$93": {
+          "hide_name": 1,
+          "type": "$_OR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/control_unit/rtl/control_unit_op_match.v:7.23-7.43"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 11 ],
+            "B": [ 12 ],
+            "Y": [ 15 ]
+          }
+        },
+        "$auto$simplemap.cc:157:simplemap_reduce$94": {
+          "hide_name": 1,
+          "type": "$_OR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/control_unit/rtl/control_unit_op_match.v:7.23-7.43"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 13 ],
+            "B": [ 14 ],
+            "Y": [ 16 ]
+          }
+        },
+        "$auto$simplemap.cc:157:simplemap_reduce$96": {
+          "hide_name": 1,
+          "type": "$_OR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/control_unit/rtl/control_unit_op_match.v:7.23-7.43"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 15 ],
+            "B": [ 16 ],
+            "Y": [ 17 ]
+          }
+        },
+        "$auto$simplemap.cc:227:simplemap_lognot$98": {
+          "hide_name": 1,
+          "type": "$_NOT_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/control_unit/rtl/control_unit_op_match.v:7.23-7.43"
+          },
+          "port_directions": {
+            "A": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 17 ],
+            "Y": [ 10 ]
+          }
+        }
+      },
+      "netnames": {
+        "$auto$simplemap.cc:148:simplemap_reduce$92": {
+          "hide_name": 1,
+          "bits": [ 15, 16 ],
+          "attributes": {
+          }
+        },
+        "$auto$simplemap.cc:271:simplemap_eqne$84": {
+          "hide_name": 1,
+          "bits": [ 11, 12, 13, 14 ],
+          "attributes": {
+          }
+        },
+        "$auto$simplemap.cc:277:simplemap_eqne$90": {
+          "hide_name": 1,
+          "bits": [ 17 ],
+          "attributes": {
+          }
+        },
+        "i_opcode": {
+          "hide_name": 0,
+          "bits": [ 2, 3, 4, 5 ],
+          "attributes": {
+            "src": "reconf/control_unit/rtl/control_unit_op_match.v:2.23-2.31"
+          }
+        },
+        "i_target": {
+          "hide_name": 0,
+          "bits": [ 6, 7, 8, 9 ],
+          "attributes": {
+            "src": "reconf/control_unit/rtl/control_unit_op_match.v:3.23-3.31"
+          }
+        },
+        "o_match": {
+          "hide_name": 0,
+          "bits": [ 10 ],
+          "attributes": {
+            "src": "reconf/control_unit/rtl/control_unit_op_match.v:4.23-4.30"
+          }
+        }
+      }
+    }
+  }
+}

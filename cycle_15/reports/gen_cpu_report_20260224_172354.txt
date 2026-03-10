@@ -1,0 +1,73 @@
+
+============================================================
+CPU自動生成レポート
+============================================================
+生成日時: 2026-02-24 17:23:54
+
+生成成功モジュール (8個):
+
+  ✓ program_counter:
+    - program_counter.v
+    - program_counter_reg_16bit.v
+    - program_counter_dff.v
+    - program_counter_adder_16bit.v
+    - program_counter_full_adder.v
+    - program_counter_half_adder.v
+    - program_counter_mux_4to1_16bit.v
+    - program_counter_mux_2to1_16bit.v
+  ✓ control_unit:
+    - control_unit.v
+    - control_unit_instruction_decoder.v
+    - control_unit_decoder_4to16.v
+    - control_unit_decoder_2to4.v
+    - control_unit_signal_logic.v
+  ✓ register_file:
+    - register_file.v
+    - register_file_storage_array.v
+    - register_file_write_decoder.v
+    - register_file_read_mux_16to1.v
+    - register_file_cell_16bit.v
+    - register_file_zero_cell_16bit.v
+    - register_file_mux_2to1_16bit.v
+    - register_file_dff_en.v
+  ✓ imm_gen:
+    - imm_gen.v
+    - imm_gen_extractor_4bit_low.v
+    - imm_gen_extractor_4bit_high.v
+    - imm_gen_extractor_8bit.v
+    - imm_gen_extractor_12bit.v
+    - imm_gen_mux_2to1_16bit.v
+  ✓ alu:
+    - alu.v
+    - alu_arithmetic_unit.v
+    - alu_logic_unit.v
+    - alu_shift_unit.v
+    - alu_flag_logic.v
+    - alu_mux_8to1_16bit.v
+    - alu_adder_16bit.v
+    - alu_mux_2to1_16bit.v
+    - alu_full_adder.v
+    - alu_half_adder.v
+  ✓ flag_reg:
+    - flag_reg.v
+    - flag_reg_unit.v
+    - flag_reg_dff.v
+    - flag_reg_mux2.v
+  ✓ next_pc_logic:
+    - next_pc_logic.v
+    - next_pc_logic_calc_unit.v
+    - next_pc_logic_branch_eval.v
+    - next_pc_logic_mux_4to1_16bit.v
+    - next_pc_logic_adder_16bit.v
+    - next_pc_logic_mux_2to1_16bit.v
+    - next_pc_logic_full_adder.v
+    - next_pc_logic_half_adder.v
+  ✓ writeback_mux:
+    - writeback_mux.v
+    - writeback_mux_16bit_4to1.v
+    - writeback_mux_1bit_4to1.v
+    - writeback_mux_1bit_2to1.v
+
+すべてのモジュールが正常に生成されました。
+
+============================================================

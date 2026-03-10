@@ -1,0 +1,72 @@
+{
+  "creator": "Yosys 0.61+112 (git sha1 ac427a79b, clang++ 18.1.8 -fPIC -O3)",
+  "modules": {
+    "immediate_generator_formats": {
+      "attributes": {
+        "top": "00000000000000000000000000000001",
+        "src": "reconf/immediate_generator/rtl/immediate_generator_formats.v:1.1-24.10"
+      },
+      "ports": {
+        "i_instr": {
+          "direction": "input",
+          "bits": [ 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17 ]
+        },
+        "o_imm_a": {
+          "direction": "output",
+          "bits": [ 6, 7, 8, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9 ]
+        },
+        "o_imm_b": {
+          "direction": "output",
+          "bits": [ 6, 7, 8, 9, 10, 11, 12, 13, 13, 13, 13, 13, 13, 13, 13, 13 ]
+        },
+        "o_imm_c": {
+          "direction": "output",
+          "bits": [ 14, 15, 16, 17, 17, 17, 17, 17, 17, 17, 17, 17, 17, 17, 17, 17 ]
+        },
+        "o_imm_d": {
+          "direction": "output",
+          "bits": [ 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 17, 17, 17, 17 ]
+        }
+      },
+      "cells": {
+      },
+      "netnames": {
+        "i_instr": {
+          "hide_name": 0,
+          "bits": [ 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17 ],
+          "attributes": {
+            "src": "reconf/immediate_generator/rtl/immediate_generator_formats.v:2.24-2.31"
+          }
+        },
+        "o_imm_a": {
+          "hide_name": 0,
+          "bits": [ 6, 7, 8, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9 ],
+          "attributes": {
+            "src": "reconf/immediate_generator/rtl/immediate_generator_formats.v:3.24-3.31"
+          }
+        },
+        "o_imm_b": {
+          "hide_name": 0,
+          "bits": [ 6, 7, 8, 9, 10, 11, 12, 13, 13, 13, 13, 13, 13, 13, 13, 13 ],
+          "attributes": {
+            "src": "reconf/immediate_generator/rtl/immediate_generator_formats.v:4.24-4.31"
+          }
+        },
+        "o_imm_c": {
+          "hide_name": 0,
+          "bits": [ 14, 15, 16, 17, 17, 17, 17, 17, 17, 17, 17, 17, 17, 17, 17, 17 ],
+          "attributes": {
+            "src": "reconf/immediate_generator/rtl/immediate_generator_formats.v:5.24-5.31"
+          }
+        },
+        "o_imm_d": {
+          "hide_name": 0,
+          "bits": [ 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 17, 17, 17, 17 ],
+          "attributes": {
+            "src": "reconf/immediate_generator/rtl/immediate_generator_formats.v:6.24-6.31"
+          }
+        }
+      }
+    }
+  }
+}

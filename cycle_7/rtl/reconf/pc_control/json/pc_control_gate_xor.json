@@ -1,0 +1,69 @@
+{
+  "creator": "Yosys 0.61+112 (git sha1 ac427a79b, clang++ 18.1.8 -fPIC -O3)",
+  "modules": {
+    "pc_control_gate_xor": {
+      "attributes": {
+        "top": "00000000000000000000000000000001",
+        "src": "reconf/pc_control/rtl/pc_control_gate_xor.v:1.1-9.10"
+      },
+      "ports": {
+        "i_n": {
+          "direction": "input",
+          "bits": [ 2 ]
+        },
+        "i_v": {
+          "direction": "input",
+          "bits": [ 3 ]
+        },
+        "o_less_than": {
+          "direction": "output",
+          "bits": [ 4 ]
+        }
+      },
+      "cells": {
+        "$auto$simplemap.cc:106:simplemap_bitop$83": {
+          "hide_name": 1,
+          "type": "$_XOR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/pc_control/rtl/pc_control_gate_xor.v:7.26-7.35"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 2 ],
+            "B": [ 3 ],
+            "Y": [ 4 ]
+          }
+        }
+      },
+      "netnames": {
+        "i_n": {
+          "hide_name": 0,
+          "bits": [ 2 ],
+          "attributes": {
+            "src": "reconf/pc_control/rtl/pc_control_gate_xor.v:2.17-2.20"
+          }
+        },
+        "i_v": {
+          "hide_name": 0,
+          "bits": [ 3 ],
+          "attributes": {
+            "src": "reconf/pc_control/rtl/pc_control_gate_xor.v:3.17-3.20"
+          }
+        },
+        "o_less_than": {
+          "hide_name": 0,
+          "bits": [ 4 ],
+          "attributes": {
+            "src": "reconf/pc_control/rtl/pc_control_gate_xor.v:4.17-4.28"
+          }
+        }
+      }
+    }
+  }
+}

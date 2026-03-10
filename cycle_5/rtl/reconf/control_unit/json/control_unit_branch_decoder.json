@@ -1,0 +1,230 @@
+{
+  "creator": "Yosys 0.61+112 (git sha1 ac427a79b, clang++ 18.1.8 -fPIC -O3)",
+  "modules": {
+    "control_unit_branch_decoder": {
+      "attributes": {
+        "top": "00000000000000000000000000000001",
+        "src": "reconf/control_unit/rtl/control_unit_branch_decoder.v:1.1-31.10"
+      },
+      "ports": {
+        "i_inst_onehot": {
+          "direction": "input",
+          "bits": [ 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17 ]
+        },
+        "i_flag_z": {
+          "direction": "input",
+          "bits": [ 18 ]
+        },
+        "i_flag_n": {
+          "direction": "input",
+          "bits": [ 19 ]
+        },
+        "i_flag_v": {
+          "direction": "input",
+          "bits": [ 20 ]
+        },
+        "o_pc_sel": {
+          "direction": "output",
+          "bits": [ 21, 17 ]
+        }
+      },
+      "cells": {
+        "$auto$simplemap.cc:106:simplemap_bitop$117": {
+          "hide_name": 1,
+          "type": "$_XOR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/control_unit/rtl/control_unit_branch_decoder.v:18.23-18.42"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 19 ],
+            "B": [ 20 ],
+            "Y": [ 22 ]
+          }
+        },
+        "$auto$simplemap.cc:106:simplemap_bitop$118": {
+          "hide_name": 1,
+          "type": "$_AND_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/control_unit/rtl/control_unit_branch_decoder.v:22.28-22.51"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 14 ],
+            "B": [ 22 ],
+            "Y": [ 23 ]
+          }
+        },
+        "$auto$simplemap.cc:106:simplemap_bitop$119": {
+          "hide_name": 1,
+          "type": "$_AND_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/control_unit/rtl/control_unit_branch_decoder.v:22.56-22.77"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 15 ],
+            "B": [ 18 ],
+            "Y": [ 24 ]
+          }
+        },
+        "$auto$simplemap.cc:106:simplemap_bitop$120": {
+          "hide_name": 1,
+          "type": "$_OR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/control_unit/rtl/control_unit_branch_decoder.v:22.27-22.78"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 23 ],
+            "B": [ 24 ],
+            "Y": [ 25 ]
+          }
+        },
+        "$auto$simplemap.cc:106:simplemap_bitop$121": {
+          "hide_name": 1,
+          "type": "$_OR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/control_unit/rtl/control_unit_branch_decoder.v:28.26-28.53"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 25 ],
+            "B": [ 16 ],
+            "Y": [ 21 ]
+          }
+        }
+      },
+      "netnames": {
+        "$and$reconf/control_unit/rtl/control_unit_branch_decoder.v:22$21_Y": {
+          "hide_name": 1,
+          "bits": [ 23 ],
+          "attributes": {
+            "src": "reconf/control_unit/rtl/control_unit_branch_decoder.v:22.28-22.51"
+          }
+        },
+        "$and$reconf/control_unit/rtl/control_unit_branch_decoder.v:22$22_Y": {
+          "hide_name": 1,
+          "bits": [ 24 ],
+          "attributes": {
+            "src": "reconf/control_unit/rtl/control_unit_branch_decoder.v:22.56-22.77"
+          }
+        },
+        "i_flag_n": {
+          "hide_name": 0,
+          "bits": [ 19 ],
+          "attributes": {
+            "src": "reconf/control_unit/rtl/control_unit_branch_decoder.v:4.24-4.32"
+          }
+        },
+        "i_flag_v": {
+          "hide_name": 0,
+          "bits": [ 20 ],
+          "attributes": {
+            "src": "reconf/control_unit/rtl/control_unit_branch_decoder.v:5.24-5.32"
+          }
+        },
+        "i_flag_z": {
+          "hide_name": 0,
+          "bits": [ 18 ],
+          "attributes": {
+            "src": "reconf/control_unit/rtl/control_unit_branch_decoder.v:3.24-3.32"
+          }
+        },
+        "i_inst_onehot": {
+          "hide_name": 0,
+          "bits": [ 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17 ],
+          "attributes": {
+            "src": "reconf/control_unit/rtl/control_unit_branch_decoder.v:2.24-2.37"
+          }
+        },
+        "o_pc_sel": {
+          "hide_name": 0,
+          "bits": [ 21, 17 ],
+          "attributes": {
+            "src": "reconf/control_unit/rtl/control_unit_branch_decoder.v:6.24-6.32"
+          }
+        },
+        "w_branch_taken": {
+          "hide_name": 0,
+          "bits": [ 25 ],
+          "attributes": {
+            "src": "reconf/control_unit/rtl/control_unit_branch_decoder.v:22.10-22.24"
+          }
+        },
+        "w_cond_blt": {
+          "hide_name": 0,
+          "bits": [ 22 ],
+          "attributes": {
+            "src": "reconf/control_unit/rtl/control_unit_branch_decoder.v:18.10-18.20"
+          }
+        },
+        "w_cond_bz": {
+          "hide_name": 0,
+          "bits": [ 18 ],
+          "attributes": {
+            "src": "reconf/control_unit/rtl/control_unit_branch_decoder.v:19.10-19.19"
+          }
+        },
+        "w_inst_blt": {
+          "hide_name": 0,
+          "bits": [ 14 ],
+          "attributes": {
+            "src": "reconf/control_unit/rtl/control_unit_branch_decoder.v:10.10-10.20"
+          }
+        },
+        "w_inst_bz": {
+          "hide_name": 0,
+          "bits": [ 15 ],
+          "attributes": {
+            "src": "reconf/control_unit/rtl/control_unit_branch_decoder.v:11.10-11.19"
+          }
+        },
+        "w_inst_jal": {
+          "hide_name": 0,
+          "bits": [ 16 ],
+          "attributes": {
+            "src": "reconf/control_unit/rtl/control_unit_branch_decoder.v:12.10-12.20"
+          }
+        },
+        "w_inst_jalr": {
+          "hide_name": 0,
+          "bits": [ 17 ],
+          "attributes": {
+            "src": "reconf/control_unit/rtl/control_unit_branch_decoder.v:13.10-13.21"
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,56 @@
+
+============================================================
+CPU自動生成レポート
+============================================================
+生成日時: 2026-02-23 16:19:29
+
+生成成功モジュール (8個):
+
+  ✓ pc_reg:
+    - pc_reg_dff.v
+    - pc_reg_4bit.v
+    - pc_reg.v
+  ✓ inst_decoder:
+    - inst_decoder_slice.v
+    - inst_decoder.v
+  ✓ control_unit:
+    - control_unit_match.v
+    - control_unit_decoder.v
+    - control_unit_logic.v
+    - control_unit_pc_logic.v
+    - control_unit.v
+  ✓ register_file:
+    - register_file_cell.v
+    - register_file_zero.v
+    - register_file_mux4.v
+    - register_file_decoder.v
+    - register_file_array.v
+    - register_file_mux16.v
+    - register_file.v
+  ✓ alu_16bit:
+    - alu_16bit_fa.v
+    - alu_16bit_adder_4bit.v
+    - alu_16bit_adder_unit.v
+    - alu_16bit_logic_unit.v
+    - alu_16bit_shift_unit.v
+    - alu_16bit_mux8.v
+    - alu_16bit.v
+  ✓ flag_reg:
+    - flag_reg_bit.v
+    - flag_reg.v
+  ✓ imm_gen:
+    - imm_gen_ext4.v
+    - imm_gen_ext8.v
+    - imm_gen_ext12.v
+    - imm_gen_mux.v
+    - imm_gen.v
+  ✓ next_pc_logic:
+    - next_pc_logic_fa.v
+    - next_pc_logic_mux_bit.v
+    - next_pc_logic_adder.v
+    - next_pc_logic_mux_16bit.v
+    - next_pc_logic.v
+
+すべてのモジュールが正常に生成されました。
+
+============================================================

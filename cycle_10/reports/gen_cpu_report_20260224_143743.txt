@@ -1,0 +1,63 @@
+
+============================================================
+CPU自動生成レポート
+============================================================
+生成日時: 2026-02-24 14:37:43
+
+生成成功モジュール (8個):
+
+  ✓ program_counter:
+    - program_counter.v
+    - program_counter_reg_16bit.v
+    - program_counter_adder_16bit.v
+    - program_counter_dff.v
+    - program_counter_full_adder.v
+  ✓ control_unit:
+    - control_unit.v
+    - control_unit_decoder_4to16.v
+    - control_unit_gate_matrix.v
+    - control_unit_decoder_2to4.v
+  ✓ register_file:
+    - register_file.v
+    - register_file_decoder_4to16.v
+    - register_file_array.v
+    - register_file_mux_16to1.v
+    - register_file_reg_16bit.v
+    - register_file_mux_4to1.v
+    - register_file_dff_en.v
+  ✓ imm_gen:
+    - imm_gen.v
+    - imm_gen_ext4_i.v
+    - imm_gen_ext4_s.v
+    - imm_gen_ext8.v
+    - imm_gen_ext12.v
+    - imm_gen_mux_4to1.v
+    - imm_gen_sign_ext.v
+  ✓ alu:
+    - alu.v
+    - alu_adder_16bit.v
+    - alu_logical_16bit.v
+    - alu_shifter_16bit.v
+    - alu_flag_logic.v
+    - alu_mux_8to1.v
+    - alu_full_adder.v
+    - alu_logical_bit.v
+    - alu_mux_4to1.v
+  ✓ flag_reg:
+    - flag_reg.v
+    - flag_reg_bit_array.v
+    - flag_reg_dff_en.v
+  ✓ pc_calc:
+    - pc_calc.v
+    - pc_calc_branch_logic.v
+    - pc_calc_adder_16bit.v
+    - pc_calc_mux_2to1_16bit.v
+    - pc_calc_full_adder.v
+  ✓ wb_mux:
+    - wb_mux.v
+    - wb_mux_4to1_16bit.v
+    - wb_mux_bit_slice.v
+
+すべてのモジュールが正常に生成されました。
+
+============================================================

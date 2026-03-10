@@ -1,0 +1,898 @@
+{
+  "creator": "Yosys 0.61+112 (git sha1 ac427a79b, clang++ 18.1.8 -fPIC -O3)",
+  "modules": {
+    "alu_core_mux16_1bit": {
+      "attributes": {
+        "src": "reconf/alu_core/rtl/alu_core_mux16_1bit.v:1.1-11.10"
+      },
+      "ports": {
+        "i_sel": {
+          "direction": "input",
+          "bits": [ 2, 3, 4, 5 ]
+        },
+        "i_in": {
+          "direction": "input",
+          "bits": [ 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21 ]
+        },
+        "o_out": {
+          "direction": "output",
+          "bits": [ 22 ]
+        }
+      },
+      "cells": {
+        "$auto$simplemap.cc:298:simplemap_mux$177": {
+          "hide_name": 1,
+          "type": "$_MUX_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/alu_core/rtl/alu_core_mux16_1bit.v:9.24-9.31|/opt/oss-cad-suite/lib/../share/yosys/techmap.v:178.4-183.7|/opt/oss-cad-suite/lib/../share/yosys/techmap.v:178.8-178.12"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 23 ],
+            "B": [ 24 ],
+            "S": [ 5 ],
+            "Y": [ 22 ]
+          }
+        },
+        "$auto$simplemap.cc:298:simplemap_mux$193": {
+          "hide_name": 1,
+          "type": "$_MUX_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/alu_core/rtl/alu_core_mux16_1bit.v:9.24-9.31|/opt/oss-cad-suite/lib/../share/yosys/techmap.v:178.4-183.7|/opt/oss-cad-suite/lib/../share/yosys/techmap.v:178.8-178.12"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 25 ],
+            "B": [ 26 ],
+            "S": [ 4 ],
+            "Y": [ 23 ]
+          }
+        },
+        "$auto$simplemap.cc:298:simplemap_mux$201": {
+          "hide_name": 1,
+          "type": "$_MUX_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/alu_core/rtl/alu_core_mux16_1bit.v:9.24-9.31|/opt/oss-cad-suite/lib/../share/yosys/techmap.v:178.4-183.7|/opt/oss-cad-suite/lib/../share/yosys/techmap.v:178.8-178.12"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 27 ],
+            "B": [ 28 ],
+            "S": [ 4 ],
+            "Y": [ 24 ]
+          }
+        },
+        "$auto$simplemap.cc:298:simplemap_mux$209": {
+          "hide_name": 1,
+          "type": "$_MUX_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/alu_core/rtl/alu_core_mux16_1bit.v:9.24-9.31|/opt/oss-cad-suite/lib/../share/yosys/techmap.v:178.4-183.7|/opt/oss-cad-suite/lib/../share/yosys/techmap.v:178.8-178.12"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 29 ],
+            "B": [ 30 ],
+            "S": [ 3 ],
+            "Y": [ 25 ]
+          }
+        },
+        "$auto$simplemap.cc:298:simplemap_mux$213": {
+          "hide_name": 1,
+          "type": "$_MUX_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/alu_core/rtl/alu_core_mux16_1bit.v:9.24-9.31|/opt/oss-cad-suite/lib/../share/yosys/techmap.v:178.4-183.7|/opt/oss-cad-suite/lib/../share/yosys/techmap.v:178.8-178.12"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 31 ],
+            "B": [ 32 ],
+            "S": [ 3 ],
+            "Y": [ 26 ]
+          }
+        },
+        "$auto$simplemap.cc:298:simplemap_mux$217": {
+          "hide_name": 1,
+          "type": "$_MUX_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/alu_core/rtl/alu_core_mux16_1bit.v:9.24-9.31|/opt/oss-cad-suite/lib/../share/yosys/techmap.v:178.4-183.7|/opt/oss-cad-suite/lib/../share/yosys/techmap.v:178.8-178.12"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 33 ],
+            "B": [ 34 ],
+            "S": [ 3 ],
+            "Y": [ 27 ]
+          }
+        },
+        "$auto$simplemap.cc:298:simplemap_mux$221": {
+          "hide_name": 1,
+          "type": "$_MUX_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/alu_core/rtl/alu_core_mux16_1bit.v:9.24-9.31|/opt/oss-cad-suite/lib/../share/yosys/techmap.v:178.4-183.7|/opt/oss-cad-suite/lib/../share/yosys/techmap.v:178.8-178.12"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 35 ],
+            "B": [ 36 ],
+            "S": [ 3 ],
+            "Y": [ 28 ]
+          }
+        },
+        "$auto$simplemap.cc:298:simplemap_mux$225": {
+          "hide_name": 1,
+          "type": "$_MUX_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/alu_core/rtl/alu_core_mux16_1bit.v:9.24-9.31|/opt/oss-cad-suite/lib/../share/yosys/techmap.v:178.4-183.7|/opt/oss-cad-suite/lib/../share/yosys/techmap.v:178.8-178.12"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 6 ],
+            "B": [ 7 ],
+            "S": [ 2 ],
+            "Y": [ 29 ]
+          }
+        },
+        "$auto$simplemap.cc:298:simplemap_mux$227": {
+          "hide_name": 1,
+          "type": "$_MUX_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/alu_core/rtl/alu_core_mux16_1bit.v:9.24-9.31|/opt/oss-cad-suite/lib/../share/yosys/techmap.v:178.4-183.7|/opt/oss-cad-suite/lib/../share/yosys/techmap.v:178.8-178.12"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 8 ],
+            "B": [ 9 ],
+            "S": [ 2 ],
+            "Y": [ 30 ]
+          }
+        },
+        "$auto$simplemap.cc:298:simplemap_mux$229": {
+          "hide_name": 1,
+          "type": "$_MUX_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/alu_core/rtl/alu_core_mux16_1bit.v:9.24-9.31|/opt/oss-cad-suite/lib/../share/yosys/techmap.v:178.4-183.7|/opt/oss-cad-suite/lib/../share/yosys/techmap.v:178.8-178.12"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 10 ],
+            "B": [ 11 ],
+            "S": [ 2 ],
+            "Y": [ 31 ]
+          }
+        },
+        "$auto$simplemap.cc:298:simplemap_mux$231": {
+          "hide_name": 1,
+          "type": "$_MUX_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/alu_core/rtl/alu_core_mux16_1bit.v:9.24-9.31|/opt/oss-cad-suite/lib/../share/yosys/techmap.v:178.4-183.7|/opt/oss-cad-suite/lib/../share/yosys/techmap.v:178.8-178.12"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 12 ],
+            "B": [ 13 ],
+            "S": [ 2 ],
+            "Y": [ 32 ]
+          }
+        },
+        "$auto$simplemap.cc:298:simplemap_mux$233": {
+          "hide_name": 1,
+          "type": "$_MUX_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/alu_core/rtl/alu_core_mux16_1bit.v:9.24-9.31|/opt/oss-cad-suite/lib/../share/yosys/techmap.v:178.4-183.7|/opt/oss-cad-suite/lib/../share/yosys/techmap.v:178.8-178.12"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 14 ],
+            "B": [ 15 ],
+            "S": [ 2 ],
+            "Y": [ 33 ]
+          }
+        },
+        "$auto$simplemap.cc:298:simplemap_mux$235": {
+          "hide_name": 1,
+          "type": "$_MUX_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/alu_core/rtl/alu_core_mux16_1bit.v:9.24-9.31|/opt/oss-cad-suite/lib/../share/yosys/techmap.v:178.4-183.7|/opt/oss-cad-suite/lib/../share/yosys/techmap.v:178.8-178.12"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 16 ],
+            "B": [ 17 ],
+            "S": [ 2 ],
+            "Y": [ 34 ]
+          }
+        },
+        "$auto$simplemap.cc:298:simplemap_mux$237": {
+          "hide_name": 1,
+          "type": "$_MUX_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/alu_core/rtl/alu_core_mux16_1bit.v:9.24-9.31|/opt/oss-cad-suite/lib/../share/yosys/techmap.v:178.4-183.7|/opt/oss-cad-suite/lib/../share/yosys/techmap.v:178.8-178.12"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 18 ],
+            "B": [ 19 ],
+            "S": [ 2 ],
+            "Y": [ 35 ]
+          }
+        },
+        "$auto$simplemap.cc:298:simplemap_mux$239": {
+          "hide_name": 1,
+          "type": "$_MUX_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/alu_core/rtl/alu_core_mux16_1bit.v:9.24-9.31|/opt/oss-cad-suite/lib/../share/yosys/techmap.v:178.4-183.7|/opt/oss-cad-suite/lib/../share/yosys/techmap.v:178.8-178.12"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 20 ],
+            "B": [ 21 ],
+            "S": [ 2 ],
+            "Y": [ 36 ]
+          }
+        }
+      },
+      "netnames": {
+        "$techmap$shiftx$reconf/alu_core/rtl/alu_core_mux16_1bit.v:9$1.$2\\buffer[15:0]": {
+          "hide_name": 1,
+          "bits": [ 29, 37, 30, 38, 31, 39, 32, 40, 33, 41, 34, 42, 35, 43, 36, 44 ],
+          "attributes": {
+            "src": "reconf/alu_core/rtl/alu_core_mux16_1bit.v:9.24-9.31|/opt/oss-cad-suite/lib/../share/yosys/techmap.v:157.2-184.5",
+            "unused_bits": "1 3 5 7 9 11 13 15"
+          }
+        },
+        "$techmap$shiftx$reconf/alu_core/rtl/alu_core_mux16_1bit.v:9$1.$4\\buffer[15:0]": {
+          "hide_name": 1,
+          "bits": [ 25, 45, 46, 47, 26, 48, 49, 50, 27, 51, 52, 53, 28, 54, 55, 56 ],
+          "attributes": {
+            "src": "reconf/alu_core/rtl/alu_core_mux16_1bit.v:9.24-9.31|/opt/oss-cad-suite/lib/../share/yosys/techmap.v:157.2-184.5",
+            "unused_bits": "1 2 3 5 6 7 9 10 11 13 14 15"
+          }
+        },
+        "$techmap$shiftx$reconf/alu_core/rtl/alu_core_mux16_1bit.v:9$1.$6\\buffer[15:0]": {
+          "hide_name": 1,
+          "bits": [ 23, 57, 58, 59, 60, 61, 62, 63, 24, 64, 65, 66, 67, 68, 69, 70 ],
+          "attributes": {
+            "src": "reconf/alu_core/rtl/alu_core_mux16_1bit.v:9.24-9.31|/opt/oss-cad-suite/lib/../share/yosys/techmap.v:157.2-184.5",
+            "unused_bits": "1 2 3 4 5 6 7 9 10 11 12 13 14 15"
+          }
+        },
+        "i_in": {
+          "hide_name": 0,
+          "bits": [ 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21 ],
+          "attributes": {
+            "src": "reconf/alu_core/rtl/alu_core_mux16_1bit.v:3.24-3.28"
+          }
+        },
+        "i_sel": {
+          "hide_name": 0,
+          "bits": [ 2, 3, 4, 5 ],
+          "attributes": {
+            "src": "reconf/alu_core/rtl/alu_core_mux16_1bit.v:2.24-2.29"
+          }
+        },
+        "o_out": {
+          "hide_name": 0,
+          "bits": [ 22 ],
+          "attributes": {
+            "src": "reconf/alu_core/rtl/alu_core_mux16_1bit.v:4.24-4.29"
+          }
+        }
+      }
+    },
+    "alu_core_res_mux_16bit": {
+      "attributes": {
+        "top": "00000000000000000000000000000001",
+        "src": "reconf/alu_core/rtl/alu_core_res_mux_16bit.v:1.1-43.10"
+      },
+      "ports": {
+        "i_sel": {
+          "direction": "input",
+          "bits": [ 2, 3, 4, 5 ]
+        },
+        "i_res_arith": {
+          "direction": "input",
+          "bits": [ 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21 ]
+        },
+        "i_res_logic": {
+          "direction": "input",
+          "bits": [ 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37 ]
+        },
+        "i_res_shift": {
+          "direction": "input",
+          "bits": [ 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53 ]
+        },
+        "i_res_imm": {
+          "direction": "input",
+          "bits": [ 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69 ]
+        },
+        "o_res": {
+          "direction": "output",
+          "bits": [ 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85 ]
+        }
+      },
+      "cells": {
+        "gen_bit_slices[0].u_mux_bit": {
+          "hide_name": 0,
+          "type": "alu_core_mux16_1bit",
+          "parameters": {
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "reconf/alu_core/rtl/alu_core_res_mux_16bit.v:35.33-39.14"
+          },
+          "port_directions": {
+            "i_in": "input",
+            "i_sel": "input",
+            "o_out": "output"
+          },
+          "connections": {
+            "i_in": [ 6, 6, 22, 22, 22, 22, 38, 38, 6, 54, 6, 6, "0", "0", "0", 6 ],
+            "i_sel": [ 2, 3, 4, 5 ],
+            "o_out": [ 70 ]
+          }
+        },
+        "gen_bit_slices[10].u_mux_bit": {
+          "hide_name": 0,
+          "type": "alu_core_mux16_1bit",
+          "parameters": {
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "reconf/alu_core/rtl/alu_core_res_mux_16bit.v:35.33-39.14"
+          },
+          "port_directions": {
+            "i_in": "input",
+            "i_sel": "input",
+            "o_out": "output"
+          },
+          "connections": {
+            "i_in": [ 16, 16, 32, 32, 32, 32, 48, 48, 16, 64, 16, 16, "0", "0", "0", 16 ],
+            "i_sel": [ 2, 3, 4, 5 ],
+            "o_out": [ 80 ]
+          }
+        },
+        "gen_bit_slices[11].u_mux_bit": {
+          "hide_name": 0,
+          "type": "alu_core_mux16_1bit",
+          "parameters": {
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "reconf/alu_core/rtl/alu_core_res_mux_16bit.v:35.33-39.14"
+          },
+          "port_directions": {
+            "i_in": "input",
+            "i_sel": "input",
+            "o_out": "output"
+          },
+          "connections": {
+            "i_in": [ 17, 17, 33, 33, 33, 33, 49, 49, 17, 65, 17, 17, "0", "0", "0", 17 ],
+            "i_sel": [ 2, 3, 4, 5 ],
+            "o_out": [ 81 ]
+          }
+        },
+        "gen_bit_slices[12].u_mux_bit": {
+          "hide_name": 0,
+          "type": "alu_core_mux16_1bit",
+          "parameters": {
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "reconf/alu_core/rtl/alu_core_res_mux_16bit.v:35.33-39.14"
+          },
+          "port_directions": {
+            "i_in": "input",
+            "i_sel": "input",
+            "o_out": "output"
+          },
+          "connections": {
+            "i_in": [ 18, 18, 34, 34, 34, 34, 50, 50, 18, 66, 18, 18, "0", "0", "0", 18 ],
+            "i_sel": [ 2, 3, 4, 5 ],
+            "o_out": [ 82 ]
+          }
+        },
+        "gen_bit_slices[13].u_mux_bit": {
+          "hide_name": 0,
+          "type": "alu_core_mux16_1bit",
+          "parameters": {
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "reconf/alu_core/rtl/alu_core_res_mux_16bit.v:35.33-39.14"
+          },
+          "port_directions": {
+            "i_in": "input",
+            "i_sel": "input",
+            "o_out": "output"
+          },
+          "connections": {
+            "i_in": [ 19, 19, 35, 35, 35, 35, 51, 51, 19, 67, 19, 19, "0", "0", "0", 19 ],
+            "i_sel": [ 2, 3, 4, 5 ],
+            "o_out": [ 83 ]
+          }
+        },
+        "gen_bit_slices[14].u_mux_bit": {
+          "hide_name": 0,
+          "type": "alu_core_mux16_1bit",
+          "parameters": {
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "reconf/alu_core/rtl/alu_core_res_mux_16bit.v:35.33-39.14"
+          },
+          "port_directions": {
+            "i_in": "input",
+            "i_sel": "input",
+            "o_out": "output"
+          },
+          "connections": {
+            "i_in": [ 20, 20, 36, 36, 36, 36, 52, 52, 20, 68, 20, 20, "0", "0", "0", 20 ],
+            "i_sel": [ 2, 3, 4, 5 ],
+            "o_out": [ 84 ]
+          }
+        },
+        "gen_bit_slices[15].u_mux_bit": {
+          "hide_name": 0,
+          "type": "alu_core_mux16_1bit",
+          "parameters": {
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "reconf/alu_core/rtl/alu_core_res_mux_16bit.v:35.33-39.14"
+          },
+          "port_directions": {
+            "i_in": "input",
+            "i_sel": "input",
+            "o_out": "output"
+          },
+          "connections": {
+            "i_in": [ 21, 21, 37, 37, 37, 37, 53, 53, 21, 69, 21, 21, "0", "0", "0", 21 ],
+            "i_sel": [ 2, 3, 4, 5 ],
+            "o_out": [ 85 ]
+          }
+        },
+        "gen_bit_slices[1].u_mux_bit": {
+          "hide_name": 0,
+          "type": "alu_core_mux16_1bit",
+          "parameters": {
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "reconf/alu_core/rtl/alu_core_res_mux_16bit.v:35.33-39.14"
+          },
+          "port_directions": {
+            "i_in": "input",
+            "i_sel": "input",
+            "o_out": "output"
+          },
+          "connections": {
+            "i_in": [ 7, 7, 23, 23, 23, 23, 39, 39, 7, 55, 7, 7, "0", "0", "0", 7 ],
+            "i_sel": [ 2, 3, 4, 5 ],
+            "o_out": [ 71 ]
+          }
+        },
+        "gen_bit_slices[2].u_mux_bit": {
+          "hide_name": 0,
+          "type": "alu_core_mux16_1bit",
+          "parameters": {
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "reconf/alu_core/rtl/alu_core_res_mux_16bit.v:35.33-39.14"
+          },
+          "port_directions": {
+            "i_in": "input",
+            "i_sel": "input",
+            "o_out": "output"
+          },
+          "connections": {
+            "i_in": [ 8, 8, 24, 24, 24, 24, 40, 40, 8, 56, 8, 8, "0", "0", "0", 8 ],
+            "i_sel": [ 2, 3, 4, 5 ],
+            "o_out": [ 72 ]
+          }
+        },
+        "gen_bit_slices[3].u_mux_bit": {
+          "hide_name": 0,
+          "type": "alu_core_mux16_1bit",
+          "parameters": {
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "reconf/alu_core/rtl/alu_core_res_mux_16bit.v:35.33-39.14"
+          },
+          "port_directions": {
+            "i_in": "input",
+            "i_sel": "input",
+            "o_out": "output"
+          },
+          "connections": {
+            "i_in": [ 9, 9, 25, 25, 25, 25, 41, 41, 9, 57, 9, 9, "0", "0", "0", 9 ],
+            "i_sel": [ 2, 3, 4, 5 ],
+            "o_out": [ 73 ]
+          }
+        },
+        "gen_bit_slices[4].u_mux_bit": {
+          "hide_name": 0,
+          "type": "alu_core_mux16_1bit",
+          "parameters": {
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "reconf/alu_core/rtl/alu_core_res_mux_16bit.v:35.33-39.14"
+          },
+          "port_directions": {
+            "i_in": "input",
+            "i_sel": "input",
+            "o_out": "output"
+          },
+          "connections": {
+            "i_in": [ 10, 10, 26, 26, 26, 26, 42, 42, 10, 58, 10, 10, "0", "0", "0", 10 ],
+            "i_sel": [ 2, 3, 4, 5 ],
+            "o_out": [ 74 ]
+          }
+        },
+        "gen_bit_slices[5].u_mux_bit": {
+          "hide_name": 0,
+          "type": "alu_core_mux16_1bit",
+          "parameters": {
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "reconf/alu_core/rtl/alu_core_res_mux_16bit.v:35.33-39.14"
+          },
+          "port_directions": {
+            "i_in": "input",
+            "i_sel": "input",
+            "o_out": "output"
+          },
+          "connections": {
+            "i_in": [ 11, 11, 27, 27, 27, 27, 43, 43, 11, 59, 11, 11, "0", "0", "0", 11 ],
+            "i_sel": [ 2, 3, 4, 5 ],
+            "o_out": [ 75 ]
+          }
+        },
+        "gen_bit_slices[6].u_mux_bit": {
+          "hide_name": 0,
+          "type": "alu_core_mux16_1bit",
+          "parameters": {
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "reconf/alu_core/rtl/alu_core_res_mux_16bit.v:35.33-39.14"
+          },
+          "port_directions": {
+            "i_in": "input",
+            "i_sel": "input",
+            "o_out": "output"
+          },
+          "connections": {
+            "i_in": [ 12, 12, 28, 28, 28, 28, 44, 44, 12, 60, 12, 12, "0", "0", "0", 12 ],
+            "i_sel": [ 2, 3, 4, 5 ],
+            "o_out": [ 76 ]
+          }
+        },
+        "gen_bit_slices[7].u_mux_bit": {
+          "hide_name": 0,
+          "type": "alu_core_mux16_1bit",
+          "parameters": {
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "reconf/alu_core/rtl/alu_core_res_mux_16bit.v:35.33-39.14"
+          },
+          "port_directions": {
+            "i_in": "input",
+            "i_sel": "input",
+            "o_out": "output"
+          },
+          "connections": {
+            "i_in": [ 13, 13, 29, 29, 29, 29, 45, 45, 13, 61, 13, 13, "0", "0", "0", 13 ],
+            "i_sel": [ 2, 3, 4, 5 ],
+            "o_out": [ 77 ]
+          }
+        },
+        "gen_bit_slices[8].u_mux_bit": {
+          "hide_name": 0,
+          "type": "alu_core_mux16_1bit",
+          "parameters": {
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "reconf/alu_core/rtl/alu_core_res_mux_16bit.v:35.33-39.14"
+          },
+          "port_directions": {
+            "i_in": "input",
+            "i_sel": "input",
+            "o_out": "output"
+          },
+          "connections": {
+            "i_in": [ 14, 14, 30, 30, 30, 30, 46, 46, 14, 62, 14, 14, "0", "0", "0", 14 ],
+            "i_sel": [ 2, 3, 4, 5 ],
+            "o_out": [ 78 ]
+          }
+        },
+        "gen_bit_slices[9].u_mux_bit": {
+          "hide_name": 0,
+          "type": "alu_core_mux16_1bit",
+          "parameters": {
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "reconf/alu_core/rtl/alu_core_res_mux_16bit.v:35.33-39.14"
+          },
+          "port_directions": {
+            "i_in": "input",
+            "i_sel": "input",
+            "o_out": "output"
+          },
+          "connections": {
+            "i_in": [ 15, 15, 31, 31, 31, 31, 47, 47, 15, 63, 15, 15, "0", "0", "0", 15 ],
+            "i_sel": [ 2, 3, 4, 5 ],
+            "o_out": [ 79 ]
+          }
+        }
+      },
+      "netnames": {
+        "gen_bit_slices[0].w_mux_in": {
+          "hide_name": 0,
+          "bits": [ 6, 6, 22, 22, 22, 22, 38, 38, 6, 54, 6, 6, "0", "0", "0", 6 ],
+          "attributes": {
+            "src": "reconf/alu_core/rtl/alu_core_res_mux_16bit.v:14.25-14.33"
+          }
+        },
+        "gen_bit_slices[10].w_mux_in": {
+          "hide_name": 0,
+          "bits": [ 16, 16, 32, 32, 32, 32, 48, 48, 16, 64, 16, 16, "0", "0", "0", 16 ],
+          "attributes": {
+            "src": "reconf/alu_core/rtl/alu_core_res_mux_16bit.v:14.25-14.33"
+          }
+        },
+        "gen_bit_slices[11].w_mux_in": {
+          "hide_name": 0,
+          "bits": [ 17, 17, 33, 33, 33, 33, 49, 49, 17, 65, 17, 17, "0", "0", "0", 17 ],
+          "attributes": {
+            "src": "reconf/alu_core/rtl/alu_core_res_mux_16bit.v:14.25-14.33"
+          }
+        },
+        "gen_bit_slices[12].w_mux_in": {
+          "hide_name": 0,
+          "bits": [ 18, 18, 34, 34, 34, 34, 50, 50, 18, 66, 18, 18, "0", "0", "0", 18 ],
+          "attributes": {
+            "src": "reconf/alu_core/rtl/alu_core_res_mux_16bit.v:14.25-14.33"
+          }
+        },
+        "gen_bit_slices[13].w_mux_in": {
+          "hide_name": 0,
+          "bits": [ 19, 19, 35, 35, 35, 35, 51, 51, 19, 67, 19, 19, "0", "0", "0", 19 ],
+          "attributes": {
+            "src": "reconf/alu_core/rtl/alu_core_res_mux_16bit.v:14.25-14.33"
+          }
+        },
+        "gen_bit_slices[14].w_mux_in": {
+          "hide_name": 0,
+          "bits": [ 20, 20, 36, 36, 36, 36, 52, 52, 20, 68, 20, 20, "0", "0", "0", 20 ],
+          "attributes": {
+            "src": "reconf/alu_core/rtl/alu_core_res_mux_16bit.v:14.25-14.33"
+          }
+        },
+        "gen_bit_slices[15].w_mux_in": {
+          "hide_name": 0,
+          "bits": [ 21, 21, 37, 37, 37, 37, 53, 53, 21, 69, 21, 21, "0", "0", "0", 21 ],
+          "attributes": {
+            "src": "reconf/alu_core/rtl/alu_core_res_mux_16bit.v:14.25-14.33"
+          }
+        },
+        "gen_bit_slices[1].w_mux_in": {
+          "hide_name": 0,
+          "bits": [ 7, 7, 23, 23, 23, 23, 39, 39, 7, 55, 7, 7, "0", "0", "0", 7 ],
+          "attributes": {
+            "src": "reconf/alu_core/rtl/alu_core_res_mux_16bit.v:14.25-14.33"
+          }
+        },
+        "gen_bit_slices[2].w_mux_in": {
+          "hide_name": 0,
+          "bits": [ 8, 8, 24, 24, 24, 24, 40, 40, 8, 56, 8, 8, "0", "0", "0", 8 ],
+          "attributes": {
+            "src": "reconf/alu_core/rtl/alu_core_res_mux_16bit.v:14.25-14.33"
+          }
+        },
+        "gen_bit_slices[3].w_mux_in": {
+          "hide_name": 0,
+          "bits": [ 9, 9, 25, 25, 25, 25, 41, 41, 9, 57, 9, 9, "0", "0", "0", 9 ],
+          "attributes": {
+            "src": "reconf/alu_core/rtl/alu_core_res_mux_16bit.v:14.25-14.33"
+          }
+        },
+        "gen_bit_slices[4].w_mux_in": {
+          "hide_name": 0,
+          "bits": [ 10, 10, 26, 26, 26, 26, 42, 42, 10, 58, 10, 10, "0", "0", "0", 10 ],
+          "attributes": {
+            "src": "reconf/alu_core/rtl/alu_core_res_mux_16bit.v:14.25-14.33"
+          }
+        },
+        "gen_bit_slices[5].w_mux_in": {
+          "hide_name": 0,
+          "bits": [ 11, 11, 27, 27, 27, 27, 43, 43, 11, 59, 11, 11, "0", "0", "0", 11 ],
+          "attributes": {
+            "src": "reconf/alu_core/rtl/alu_core_res_mux_16bit.v:14.25-14.33"
+          }
+        },
+        "gen_bit_slices[6].w_mux_in": {
+          "hide_name": 0,
+          "bits": [ 12, 12, 28, 28, 28, 28, 44, 44, 12, 60, 12, 12, "0", "0", "0", 12 ],
+          "attributes": {
+            "src": "reconf/alu_core/rtl/alu_core_res_mux_16bit.v:14.25-14.33"
+          }
+        },
+        "gen_bit_slices[7].w_mux_in": {
+          "hide_name": 0,
+          "bits": [ 13, 13, 29, 29, 29, 29, 45, 45, 13, 61, 13, 13, "0", "0", "0", 13 ],
+          "attributes": {
+            "src": "reconf/alu_core/rtl/alu_core_res_mux_16bit.v:14.25-14.33"
+          }
+        },
+        "gen_bit_slices[8].w_mux_in": {
+          "hide_name": 0,
+          "bits": [ 14, 14, 30, 30, 30, 30, 46, 46, 14, 62, 14, 14, "0", "0", "0", 14 ],
+          "attributes": {
+            "src": "reconf/alu_core/rtl/alu_core_res_mux_16bit.v:14.25-14.33"
+          }
+        },
+        "gen_bit_slices[9].w_mux_in": {
+          "hide_name": 0,
+          "bits": [ 15, 15, 31, 31, 31, 31, 47, 47, 15, 63, 15, 15, "0", "0", "0", 15 ],
+          "attributes": {
+            "src": "reconf/alu_core/rtl/alu_core_res_mux_16bit.v:14.25-14.33"
+          }
+        },
+        "i_res_arith": {
+          "hide_name": 0,
+          "bits": [ 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21 ],
+          "attributes": {
+            "src": "reconf/alu_core/rtl/alu_core_res_mux_16bit.v:3.24-3.35"
+          }
+        },
+        "i_res_imm": {
+          "hide_name": 0,
+          "bits": [ 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69 ],
+          "attributes": {
+            "src": "reconf/alu_core/rtl/alu_core_res_mux_16bit.v:6.24-6.33"
+          }
+        },
+        "i_res_logic": {
+          "hide_name": 0,
+          "bits": [ 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37 ],
+          "attributes": {
+            "src": "reconf/alu_core/rtl/alu_core_res_mux_16bit.v:4.24-4.35"
+          }
+        },
+        "i_res_shift": {
+          "hide_name": 0,
+          "bits": [ 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53 ],
+          "attributes": {
+            "src": "reconf/alu_core/rtl/alu_core_res_mux_16bit.v:5.24-5.35"
+          }
+        },
+        "i_sel": {
+          "hide_name": 0,
+          "bits": [ 2, 3, 4, 5 ],
+          "attributes": {
+            "src": "reconf/alu_core/rtl/alu_core_res_mux_16bit.v:2.24-2.29"
+          }
+        },
+        "o_res": {
+          "hide_name": 0,
+          "bits": [ 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85 ],
+          "attributes": {
+            "src": "reconf/alu_core/rtl/alu_core_res_mux_16bit.v:7.24-7.29"
+          }
+        }
+      }
+    }
+  }
+}

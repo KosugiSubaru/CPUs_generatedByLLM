@@ -1,0 +1,82 @@
+{
+  "creator": "Yosys 0.61+112 (git sha1 ac427a79b, clang++ 18.1.8 -fPIC -O3)",
+  "modules": {
+    "imm_gen_bit_ext": {
+      "attributes": {
+        "top": "00000000000000000000000000000001",
+        "src": "reconf/imm_gen/rtl/imm_gen_bit_ext.v:1.1-12.10"
+      },
+      "ports": {
+        "i_inst_bit": {
+          "direction": "input",
+          "bits": [ 2 ]
+        },
+        "i_sign_bit": {
+          "direction": "input",
+          "bits": [ 3 ]
+        },
+        "i_is_ext_zone": {
+          "direction": "input",
+          "bits": [ 4 ]
+        },
+        "o_bit": {
+          "direction": "output",
+          "bits": [ 5 ]
+        }
+      },
+      "cells": {
+        "$auto$simplemap.cc:298:simplemap_mux$93": {
+          "hide_name": 1,
+          "type": "$_MUX_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/imm_gen/rtl/imm_gen_bit_ext.v:10.20-10.59"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 2 ],
+            "B": [ 3 ],
+            "S": [ 4 ],
+            "Y": [ 5 ]
+          }
+        }
+      },
+      "netnames": {
+        "i_inst_bit": {
+          "hide_name": 0,
+          "bits": [ 2 ],
+          "attributes": {
+            "src": "reconf/imm_gen/rtl/imm_gen_bit_ext.v:2.17-2.27"
+          }
+        },
+        "i_is_ext_zone": {
+          "hide_name": 0,
+          "bits": [ 4 ],
+          "attributes": {
+            "src": "reconf/imm_gen/rtl/imm_gen_bit_ext.v:4.17-4.30"
+          }
+        },
+        "i_sign_bit": {
+          "hide_name": 0,
+          "bits": [ 3 ],
+          "attributes": {
+            "src": "reconf/imm_gen/rtl/imm_gen_bit_ext.v:3.17-3.27"
+          }
+        },
+        "o_bit": {
+          "hide_name": 0,
+          "bits": [ 5 ],
+          "attributes": {
+            "src": "reconf/imm_gen/rtl/imm_gen_bit_ext.v:5.17-5.22"
+          }
+        }
+      }
+    }
+  }
+}

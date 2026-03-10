@@ -1,0 +1,40 @@
+
+=== ログ 2026-02-23 14:19:38 ===
+=== CPU Full Compile ===
+
+reconf/cpu/rtl/cpu.v:38: warning: Port 10 (o_imm_type) of module control_unit expects 3 bit(s), given 2.
+reconf/cpu/rtl/cpu.v:38:        : Padding 1 high bits of the port.
+
+==================================================
+
+=== ログ 2026-02-23 14:20:10 ===
+=== CPU Full Compile ===
+
+reconf/cpu/rtl/cpu.v:77: warning: Port 2 (i_imm_type) of module imm_gen expects 2 bit(s), given 3.
+reconf/cpu/rtl/cpu.v:77:        : Pruning 1 high bits of the expression.
+
+==================================================
+
+=== ログ 2026-02-23 14:20:29 ===
+=== CPU Full Compile ===
+
+reconf/cpu/rtl/cpu.v:77: warning: Port 2 (i_imm_type) of module imm_gen expects 2 bit(s), given 3.
+reconf/cpu/rtl/cpu.v:77:        : Pruning 1 high bits of the expression.
+
+==================================================
+
+=== ログ 2026-02-23 14:20:40 ===
+=== CPU Full Compile ===
+
+reconf/cpu/rtl/cpu.v:77: warning: Port 2 (i_imm_type) of module imm_gen expects 2 bit(s), given 3.
+reconf/cpu/rtl/cpu.v:77:        : Pruning 1 high bits of the expression.
+
+==================================================
+
+=== ログ 2026-02-23 14:21:04 ===
+=== CPU Full Compile ===
+
+reconf/cpu/rtl/cpu.v:77: warning: Port 2 (i_imm_type) of module imm_gen expects 2 bit(s), given 3.
+reconf/cpu/rtl/cpu.v:77:        : Pruning 1 high bits of the expression.
+
+==================================================

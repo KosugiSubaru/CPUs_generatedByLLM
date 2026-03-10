@@ -1,0 +1,123 @@
+
+=== ログ 2026-02-23 16:04:40 ===
+%Warning-SELRANGE: reconf/imm_generator/rtl/imm_generator_ext_12to16.v:10:45: Selection index out of range: 12:12 outside 11:0
+                                                                            : ... note: In instance 'top.u_cpu.u_imm_gen.u_ext12'
+   10 |             wire w_bit_in = (i < 12) ? i_imm[i] : i_imm[11];
+      |                                             ^
+                   ... For warning description see https://verilator.org/warn/SELRANGE?v=5.045
+                   ... Use "/* verilator lint_off SELRANGE */" and lint_on around source to disable this message.
+%Warning-SELRANGE: reconf/imm_generator/rtl/imm_generator_ext_12to16.v:10:45: Selection index out of range: 13:13 outside 11:0
+                                                                            : ... note: In instance 'top.u_cpu.u_imm_gen.u_ext12'
+   10 |             wire w_bit_in = (i < 12) ? i_imm[i] : i_imm[11];
+      |                                             ^
+%Warning-SELRANGE: reconf/imm_generator/rtl/imm_generator_ext_12to16.v:10:45: Selection index out of range: 14:14 outside 11:0
+                                                                            : ... note: In instance 'top.u_cpu.u_imm_gen.u_ext12'
+   10 |             wire w_bit_in = (i < 12) ? i_imm[i] : i_imm[11];
+      |                                             ^
+%Warning-SELRANGE: reconf/imm_generator/rtl/imm_generator_ext_12to16.v:10:45: Selection index out of range: 15:15 outside 11:0
+                                                                            : ... note: In instance 'top.u_cpu.u_imm_gen.u_ext12'
+   10 |             wire w_bit_in = (i < 12) ? i_imm[i] : i_imm[11];
+      |                                             ^
+%Warning-SELRANGE: reconf/imm_generator/rtl/imm_generator_ext_8to16.v:10:44: Selection index out of range: 8:8 outside 7:0
+                                                                           : ... note: In instance 'top.u_cpu.u_imm_gen.u_ext8'
+   10 |             wire w_bit_in = (i < 8) ? i_imm[i] : i_imm[7];
+      |                                            ^
+%Warning-SELRANGE: reconf/imm_generator/rtl/imm_generator_ext_8to16.v:10:44: Selection index out of range: 9:9 outside 7:0
+                                                                           : ... note: In instance 'top.u_cpu.u_imm_gen.u_ext8'
+   10 |             wire w_bit_in = (i < 8) ? i_imm[i] : i_imm[7];
+      |                                            ^
+%Warning-SELRANGE: reconf/imm_generator/rtl/imm_generator_ext_8to16.v:10:44: Selection index out of range: 10:10 outside 7:0
+                                                                           : ... note: In instance 'top.u_cpu.u_imm_gen.u_ext8'
+   10 |             wire w_bit_in = (i < 8) ? i_imm[i] : i_imm[7];
+      |                                            ^
+%Warning-SELRANGE: reconf/imm_generator/rtl/imm_generator_ext_8to16.v:10:44: Selection index out of range: 11:11 outside 7:0
+                                                                           : ... note: In instance 'top.u_cpu.u_imm_gen.u_ext8'
+   10 |             wire w_bit_in = (i < 8) ? i_imm[i] : i_imm[7];
+      |                                            ^
+%Warning-SELRANGE: reconf/imm_generator/rtl/imm_generator_ext_8to16.v:10:44: Selection index out of range: 12:12 outside 7:0
+                                                                           : ... note: In instance 'top.u_cpu.u_imm_gen.u_ext8'
+   10 |             wire w_bit_in = (i < 8) ? i_imm[i] : i_imm[7];
+      |                                            ^
+%Warning-SELRANGE: reconf/imm_generator/rtl/imm_generator_ext_8to16.v:10:44: Selection index out of range: 13:13 outside 7:0
+                                                                           : ... note: In instance 'top.u_cpu.u_imm_gen.u_ext8'
+   10 |             wire w_bit_in = (i < 8) ? i_imm[i] : i_imm[7];
+      |                                            ^
+%Warning-SELRANGE: reconf/imm_generator/rtl/imm_generator_ext_8to16.v:10:44: Selection index out of range: 14:14 outside 7:0
+                                                                           : ... note: In instance 'top.u_cpu.u_imm_gen.u_ext8'
+   10 |             wire w_bit_in = (i < 8) ? i_imm[i] : i_imm[7];
+      |                                            ^
+%Warning-SELRANGE: reconf/imm_generator/rtl/imm_generator_ext_8to16.v:10:44: Selection index out of range: 15:15 outside 7:0
+                                                                           : ... note: In instance 'top.u_cpu.u_imm_gen.u_ext8'
+   10 |             wire w_bit_in = (i < 8) ? i_imm[i] : i_imm[7];
+      |                                            ^
+%Warning-SELRANGE: reconf/imm_generator/rtl/imm_generator_ext_4to16.v:10:44: Selection index out of range: 4:4 outside 3:0
+                                                                           : ... note: In instance 'top.u_cpu.u_imm_gen.u_ext4b'
+   10 |             wire w_bit_in = (i < 4) ? i_imm[i] : i_imm[3];
+      |                                            ^
+%Warning-SELRANGE: reconf/imm_generator/rtl/imm_generator_ext_4to16.v:10:44: Selection index out of range: 5:5 outside 3:0
+                                                                           : ... note: In instance 'top.u_cpu.u_imm_gen.u_ext4b'
+   10 |             wire w_bit_in = (i < 4) ? i_imm[i] : i_imm[3];
+      |                                            ^
+%Warning-SELRANGE: reconf/imm_generator/rtl/imm_generator_ext_4to16.v:10:44: Selection index out of range: 6:6 outside 3:0
+                                                                           : ... note: In instance 'top.u_cpu.u_imm_gen.u_ext4b'
+   10 |             wire w_bit_in = (i < 4) ? i_imm[i] : i_imm[3];
+      |                                            ^
+%Warning-SELRANGE: reconf/imm_generator/rtl/imm_generator_ext_4to16.v:10:44: Selection index out of range: 7:7 outside 3:0
+                                                                           : ... note: In instance 'top.u_cpu.u_imm_gen.u_ext4b'
+   10 |             wire w_bit_in = (i < 4) ? i_imm[i] : i_imm[3];
+      |                                            ^
+%Warning-SELRANGE: reconf/imm_generator/rtl/imm_generator_ext_4to16.v:10:44: Selection index out of range: 8:8 outside 3:0
+                                                                           : ... note: In instance 'top.u_cpu.u_imm_gen.u_ext4b'
+   10 |             wire w_bit_in = (i < 4) ? i_imm[i] : i_imm[3];
+      |                                            ^
+%Warning-SELRANGE: reconf/imm_generator/rtl/imm_generator_ext_4to16.v:10:44: Selection index out of range: 9:9 outside 3:0
+                                                                           : ... note: In instance 'top.u_cpu.u_imm_gen.u_ext4b'
+   10 |             wire w_bit_in = (i < 4) ? i_imm[i] : i_imm[3];
+      |                                            ^
+%Warning-SELRANGE: reconf/imm_generator/rtl/imm_generator_ext_4to16.v:10:44: Selection index out of range: 10:10 outside 3:0
+                                                                           : ... note: In instance 'top.u_cpu.u_imm_gen.u_ext4b'
+   10 |             wire w_bit_in = (i < 4) ? i_imm[i] : i_imm[3];
+      |                                            ^
+%Warning-SELRANGE: reconf/imm_generator/rtl/imm_generator_ext_4to16.v:10:44: Selection index out of range: 11:11 outside 3:0
+                                                                           : ... note: In instance 'top.u_cpu.u_imm_gen.u_ext4b'
+   10 |             wire w_bit_in = (i < 4) ? i_imm[i] : i_imm[3];
+      |                                            ^
+%Warning-SELRANGE: reconf/imm_generator/rtl/imm_generator_ext_4to16.v:10:44: Selection index out of range: 12:12 outside 3:0
+                                                                           : ... note: In instance 'top.u_cpu.u_imm_gen.u_ext4b'
+   10 |             wire w_bit_in = (i < 4) ? i_imm[i] : i_imm[3];
+      |                                            ^
+%Warning-SELRANGE: reconf/imm_generator/rtl/imm_generator_ext_4to16.v:10:44: Selection index out of range: 13:13 outside 3:0
+                                                                           : ... note: In instance 'top.u_cpu.u_imm_gen.u_ext4b'
+   10 |             wire w_bit_in = (i < 4) ? i_imm[i] : i_imm[3];
+      |                                            ^
+%Warning-SELRANGE: reconf/imm_generator/rtl/imm_generator_ext_4to16.v:10:44: Selection index out of range: 14:14 outside 3:0
+                                                                           : ... note: In instance 'top.u_cpu.u_imm_gen.u_ext4b'
+   10 |             wire w_bit_in = (i < 4) ? i_imm[i] : i_imm[3];
+      |                                            ^
+%Warning-SELRANGE: reconf/imm_generator/rtl/imm_generator_ext_4to16.v:10:44: Selection index out of range: 15:15 outside 3:0
+                                                                           : ... note: In instance 'top.u_cpu.u_imm_gen.u_ext4b'
+   10 |             wire w_bit_in = (i < 4) ? i_imm[i] : i_imm[3];
+      |                                            ^
+%Error: Exiting due to 24 warning(s)
+
+==================================================
+
+=== ログ 2026-02-23 16:04:49 ===
+### エラーの原因
+このエラー（`SELRANGE`）は、**宣言されたビット幅を超えたインデックスへのアクセス**をコンパイラが検知したために発生しています。
+
+具体的には、`generate` ループ内で `i` が 0 から 15 まで変化する際、例えば入力が 4ビット（`i_imm[3:0]`）であるモジュールにおいて、`i` が 4 以上のときでも三項演算子の「真の条件」側にある `i_imm[i]` という記述が評価されてしまう（静的な解析が行われる）ことが原因です。Verilogの仕様上、たとえ条件式 `(i < 4)` によって実行時に無視されるパスであっても、コンパイル時にインデックスの範囲外アクセスとして警告またはエラーになります。
+
+### 修正方法の提案
+
+以下のいずれかの方法で修正が可能です。
+
+1.  **ビット幅を揃えた一時的なワイヤの使用**
+    入力された `i_imm` を、あらかじめ上位ビットを0などで埋めた16ビット幅の内部ワイヤ（例：`w_full_imm`）に代入します。その上で、ループ内では `i_imm[i]` の代わりに、この16ビット幅のワイヤ `w_full_imm[i]` を参照するように変更します。これにより、インデックス `i` が常に範囲内となるためエラーが解消されます。
+
+2.  **generate文内の条件分岐（if-else）による分離**
+    三項演算子を使うのではなく、`generate` ループの中に `if (i < WIDTH)` と `else` を用いた条件分岐を記述します。`if` ブロック内には `i_imm[i]` を使う処理を書き、`else` ブロック内には符号ビット（`i_imm[MSB]`）を使う処理を分けて記述します。この方法であれば、コンパイラは各ビット位置に対して有効な範囲のアクセスのみを処理するため、エラーを回避できます。
+
+**推奨:** 
+回路図としての視覚的な分かりやすさを維持しつつ、最も確実にエラーを防げるのは **1番（ビット幅を揃えたワイヤの使用）** です。入力信号を一度16ビットに「安全に拡張（ゼロ埋め）」してから、必要なビットを選び出すという構造にするのが最もシンプルです。
+==================================================

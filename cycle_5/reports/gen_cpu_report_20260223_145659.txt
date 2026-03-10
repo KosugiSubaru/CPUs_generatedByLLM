@@ -1,0 +1,52 @@
+
+============================================================
+CPU自動生成レポート
+============================================================
+生成日時: 2026-02-23 14:56:59
+
+生成成功モジュール (6個):
+
+  ✓ program_counter:
+    - program_counter.v
+    - program_counter_register_nbit.v
+    - program_counter_register_1bit.v
+    - program_counter_adder_nbit.v
+    - program_counter_adder_1bit.v
+    - program_counter_mux_next.v
+  ✓ control_unit:
+    - control_unit.v
+    - control_unit_instruction_decoder.v
+    - control_unit_decoder_2to4.v
+    - control_unit_alu_decoder.v
+    - control_unit_data_decoder.v
+    - control_unit_branch_decoder.v
+  ✓ register_file:
+    - register_file.v
+    - register_file_write_decoder.v
+    - register_file_storage.v
+    - register_file_cell_16bit.v
+    - register_file_cell_1bit.v
+    - register_file_mux_16to1.v
+    - register_file_mux_4to1.v
+  ✓ alu:
+    - alu.v
+    - alu_arithmetic.v
+    - alu_logical.v
+    - alu_shifter.v
+    - alu_adder_nbit.v
+    - alu_adder_1bit.v
+    - alu_mux_result.v
+    - alu_flag_z_calc.v
+  ✓ flag_register:
+    - flag_register.v
+    - flag_register_bit.v
+  ✓ imm_gen:
+    - imm_gen.v
+    - imm_gen_ext_4to16.v
+    - imm_gen_ext_8to16.v
+    - imm_gen_ext_12to16.v
+    - imm_gen_mux.v
+
+すべてのモジュールが正常に生成されました。
+
+============================================================

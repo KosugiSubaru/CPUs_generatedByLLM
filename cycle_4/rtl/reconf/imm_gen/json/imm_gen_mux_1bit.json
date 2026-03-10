@@ -1,0 +1,638 @@
+{
+  "creator": "Yosys 0.61+112 (git sha1 ac427a79b, clang++ 18.1.8 -fPIC -O3)",
+  "modules": {
+    "imm_gen_mux_1bit": {
+      "attributes": {
+        "top": "00000000000000000000000000000001",
+        "src": "reconf/imm_gen/rtl/imm_gen_mux_1bit.v:1.1-20.10"
+      },
+      "ports": {
+        "i_sel": {
+          "direction": "input",
+          "bits": [ 2, 3 ]
+        },
+        "i_d0": {
+          "direction": "input",
+          "bits": [ 4 ]
+        },
+        "i_d1": {
+          "direction": "input",
+          "bits": [ 5 ]
+        },
+        "i_d2": {
+          "direction": "input",
+          "bits": [ 6 ]
+        },
+        "i_d3": {
+          "direction": "input",
+          "bits": [ 7 ]
+        },
+        "o_q": {
+          "direction": "output",
+          "bits": [ 8 ]
+        }
+      },
+      "cells": {
+        "$auto$simplemap.cc:106:simplemap_bitop$101": {
+          "hide_name": 1,
+          "type": "$_XOR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/imm_gen/rtl/imm_gen_mux_1bit.v:13.33-13.33|reconf/imm_gen/rtl/imm_gen_mux_1bit.v:11.9-17.16"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 2 ],
+            "B": [ "0" ],
+            "Y": [ 9 ]
+          }
+        },
+        "$auto$simplemap.cc:106:simplemap_bitop$102": {
+          "hide_name": 1,
+          "type": "$_XOR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/imm_gen/rtl/imm_gen_mux_1bit.v:13.33-13.33|reconf/imm_gen/rtl/imm_gen_mux_1bit.v:11.9-17.16"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 3 ],
+            "B": [ "1" ],
+            "Y": [ 10 ]
+          }
+        },
+        "$auto$simplemap.cc:106:simplemap_bitop$111": {
+          "hide_name": 1,
+          "type": "$_XOR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/imm_gen/rtl/imm_gen_mux_1bit.v:12.33-12.33|reconf/imm_gen/rtl/imm_gen_mux_1bit.v:11.9-17.16"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 2 ],
+            "B": [ "1" ],
+            "Y": [ 11 ]
+          }
+        },
+        "$auto$simplemap.cc:106:simplemap_bitop$112": {
+          "hide_name": 1,
+          "type": "$_XOR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/imm_gen/rtl/imm_gen_mux_1bit.v:12.33-12.33|reconf/imm_gen/rtl/imm_gen_mux_1bit.v:11.9-17.16"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 3 ],
+            "B": [ "0" ],
+            "Y": [ 12 ]
+          }
+        },
+        "$auto$simplemap.cc:106:simplemap_bitop$127": {
+          "hide_name": 1,
+          "type": "$_AND_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/imm_gen/rtl/imm_gen_mux_1bit.v:14.33-14.33|reconf/imm_gen/rtl/imm_gen_mux_1bit.v:11.9-17.16|/opt/oss-cad-suite/lib/../share/yosys/techmap.v:593.44-593.84"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 4 ],
+            "B": [ 13 ],
+            "Y": [ 14 ]
+          }
+        },
+        "$auto$simplemap.cc:106:simplemap_bitop$128": {
+          "hide_name": 1,
+          "type": "$_AND_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/imm_gen/rtl/imm_gen_mux_1bit.v:14.33-14.33|reconf/imm_gen/rtl/imm_gen_mux_1bit.v:11.9-17.16|/opt/oss-cad-suite/lib/../share/yosys/techmap.v:593.44-593.84"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 5 ],
+            "B": [ 15 ],
+            "Y": [ 16 ]
+          }
+        },
+        "$auto$simplemap.cc:106:simplemap_bitop$129": {
+          "hide_name": 1,
+          "type": "$_AND_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/imm_gen/rtl/imm_gen_mux_1bit.v:14.33-14.33|reconf/imm_gen/rtl/imm_gen_mux_1bit.v:11.9-17.16|/opt/oss-cad-suite/lib/../share/yosys/techmap.v:593.44-593.84"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 6 ],
+            "B": [ 17 ],
+            "Y": [ 18 ]
+          }
+        },
+        "$auto$simplemap.cc:106:simplemap_bitop$130": {
+          "hide_name": 1,
+          "type": "$_AND_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/imm_gen/rtl/imm_gen_mux_1bit.v:14.33-14.33|reconf/imm_gen/rtl/imm_gen_mux_1bit.v:11.9-17.16|/opt/oss-cad-suite/lib/../share/yosys/techmap.v:593.44-593.84"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 7 ],
+            "B": [ 19 ],
+            "Y": [ 20 ]
+          }
+        },
+        "$auto$simplemap.cc:106:simplemap_bitop$84": {
+          "hide_name": 1,
+          "type": "$_XOR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/imm_gen/rtl/imm_gen_mux_1bit.v:14.33-14.33|reconf/imm_gen/rtl/imm_gen_mux_1bit.v:11.9-17.16"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 2 ],
+            "B": [ "1" ],
+            "Y": [ 21 ]
+          }
+        },
+        "$auto$simplemap.cc:106:simplemap_bitop$85": {
+          "hide_name": 1,
+          "type": "$_XOR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/imm_gen/rtl/imm_gen_mux_1bit.v:14.33-14.33|reconf/imm_gen/rtl/imm_gen_mux_1bit.v:11.9-17.16"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 3 ],
+            "B": [ "1" ],
+            "Y": [ 22 ]
+          }
+        },
+        "$auto$simplemap.cc:157:simplemap_reduce$106": {
+          "hide_name": 1,
+          "type": "$_OR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/imm_gen/rtl/imm_gen_mux_1bit.v:13.33-13.33|reconf/imm_gen/rtl/imm_gen_mux_1bit.v:11.9-17.16"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 9 ],
+            "B": [ 10 ],
+            "Y": [ 23 ]
+          }
+        },
+        "$auto$simplemap.cc:157:simplemap_reduce$116": {
+          "hide_name": 1,
+          "type": "$_OR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/imm_gen/rtl/imm_gen_mux_1bit.v:12.33-12.33|reconf/imm_gen/rtl/imm_gen_mux_1bit.v:11.9-17.16"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 11 ],
+            "B": [ 12 ],
+            "Y": [ 24 ]
+          }
+        },
+        "$auto$simplemap.cc:157:simplemap_reduce$123": {
+          "hide_name": 1,
+          "type": "$_OR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/imm_gen/rtl/imm_gen_mux_1bit.v:14.33-14.33|reconf/imm_gen/rtl/imm_gen_mux_1bit.v:11.9-17.16|/opt/oss-cad-suite/lib/../share/yosys/techmap.v:601.20-601.31"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 20 ],
+            "B": [ 18 ],
+            "Y": [ 25 ]
+          }
+        },
+        "$auto$simplemap.cc:157:simplemap_reduce$124": {
+          "hide_name": 1,
+          "type": "$_OR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/imm_gen/rtl/imm_gen_mux_1bit.v:14.33-14.33|reconf/imm_gen/rtl/imm_gen_mux_1bit.v:11.9-17.16|/opt/oss-cad-suite/lib/../share/yosys/techmap.v:601.20-601.31"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 16 ],
+            "B": [ 14 ],
+            "Y": [ 26 ]
+          }
+        },
+        "$auto$simplemap.cc:157:simplemap_reduce$126": {
+          "hide_name": 1,
+          "type": "$_OR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/imm_gen/rtl/imm_gen_mux_1bit.v:14.33-14.33|reconf/imm_gen/rtl/imm_gen_mux_1bit.v:11.9-17.16|/opt/oss-cad-suite/lib/../share/yosys/techmap.v:601.20-601.31"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 25 ],
+            "B": [ 26 ],
+            "Y": [ 27 ]
+          }
+        },
+        "$auto$simplemap.cc:157:simplemap_reduce$133": {
+          "hide_name": 1,
+          "type": "$_OR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/imm_gen/rtl/imm_gen_mux_1bit.v:14.33-14.33|reconf/imm_gen/rtl/imm_gen_mux_1bit.v:11.9-17.16|/opt/oss-cad-suite/lib/../share/yosys/techmap.v:605.13-605.15"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 19 ],
+            "B": [ 17 ],
+            "Y": [ 28 ]
+          }
+        },
+        "$auto$simplemap.cc:157:simplemap_reduce$134": {
+          "hide_name": 1,
+          "type": "$_OR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/imm_gen/rtl/imm_gen_mux_1bit.v:14.33-14.33|reconf/imm_gen/rtl/imm_gen_mux_1bit.v:11.9-17.16|/opt/oss-cad-suite/lib/../share/yosys/techmap.v:605.13-605.15"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 15 ],
+            "B": [ 13 ],
+            "Y": [ 29 ]
+          }
+        },
+        "$auto$simplemap.cc:157:simplemap_reduce$136": {
+          "hide_name": 1,
+          "type": "$_OR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/imm_gen/rtl/imm_gen_mux_1bit.v:14.33-14.33|reconf/imm_gen/rtl/imm_gen_mux_1bit.v:11.9-17.16|/opt/oss-cad-suite/lib/../share/yosys/techmap.v:605.13-605.15"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 28 ],
+            "B": [ 29 ],
+            "Y": [ 30 ]
+          }
+        },
+        "$auto$simplemap.cc:157:simplemap_reduce$89": {
+          "hide_name": 1,
+          "type": "$_OR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/imm_gen/rtl/imm_gen_mux_1bit.v:14.33-14.33|reconf/imm_gen/rtl/imm_gen_mux_1bit.v:11.9-17.16"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 21 ],
+            "B": [ 22 ],
+            "Y": [ 31 ]
+          }
+        },
+        "$auto$simplemap.cc:198:logic_reduce$120": {
+          "hide_name": 1,
+          "type": "$_OR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/imm_gen/rtl/imm_gen_mux_1bit.v:11.21-11.21|reconf/imm_gen/rtl/imm_gen_mux_1bit.v:11.9-17.16"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 2 ],
+            "B": [ 3 ],
+            "Y": [ 32 ]
+          }
+        },
+        "$auto$simplemap.cc:227:simplemap_lognot$108": {
+          "hide_name": 1,
+          "type": "$_NOT_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/imm_gen/rtl/imm_gen_mux_1bit.v:13.33-13.33|reconf/imm_gen/rtl/imm_gen_mux_1bit.v:11.9-17.16"
+          },
+          "port_directions": {
+            "A": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 23 ],
+            "Y": [ 17 ]
+          }
+        },
+        "$auto$simplemap.cc:227:simplemap_lognot$118": {
+          "hide_name": 1,
+          "type": "$_NOT_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/imm_gen/rtl/imm_gen_mux_1bit.v:12.33-12.33|reconf/imm_gen/rtl/imm_gen_mux_1bit.v:11.9-17.16"
+          },
+          "port_directions": {
+            "A": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 24 ],
+            "Y": [ 15 ]
+          }
+        },
+        "$auto$simplemap.cc:227:simplemap_lognot$121": {
+          "hide_name": 1,
+          "type": "$_NOT_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/imm_gen/rtl/imm_gen_mux_1bit.v:11.21-11.21|reconf/imm_gen/rtl/imm_gen_mux_1bit.v:11.9-17.16"
+          },
+          "port_directions": {
+            "A": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 32 ],
+            "Y": [ 13 ]
+          }
+        },
+        "$auto$simplemap.cc:227:simplemap_lognot$91": {
+          "hide_name": 1,
+          "type": "$_NOT_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/imm_gen/rtl/imm_gen_mux_1bit.v:14.33-14.33|reconf/imm_gen/rtl/imm_gen_mux_1bit.v:11.9-17.16"
+          },
+          "port_directions": {
+            "A": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 31 ],
+            "Y": [ 19 ]
+          }
+        },
+        "$auto$simplemap.cc:298:simplemap_mux$131": {
+          "hide_name": 1,
+          "type": "$_MUX_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/imm_gen/rtl/imm_gen_mux_1bit.v:14.33-14.33|reconf/imm_gen/rtl/imm_gen_mux_1bit.v:11.9-17.16|/opt/oss-cad-suite/lib/../share/yosys/techmap.v:605.13-605.25"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ "x" ],
+            "B": [ 27 ],
+            "S": [ 30 ],
+            "Y": [ 8 ]
+          }
+        }
+      },
+      "netnames": {
+        "$auto$simplemap.cc:148:simplemap_reduce$122": {
+          "hide_name": 1,
+          "bits": [ 25, 26 ],
+          "attributes": {
+          }
+        },
+        "$auto$simplemap.cc:148:simplemap_reduce$132": {
+          "hide_name": 1,
+          "bits": [ 28, 29 ],
+          "attributes": {
+          }
+        },
+        "$auto$simplemap.cc:189:logic_reduce$119": {
+          "hide_name": 1,
+          "bits": [ 32 ],
+          "attributes": {
+          }
+        },
+        "$auto$simplemap.cc:271:simplemap_eqne$109": {
+          "hide_name": 1,
+          "bits": [ 11, 12 ],
+          "attributes": {
+          }
+        },
+        "$auto$simplemap.cc:271:simplemap_eqne$82": {
+          "hide_name": 1,
+          "bits": [ 21, 22 ],
+          "attributes": {
+          }
+        },
+        "$auto$simplemap.cc:271:simplemap_eqne$99": {
+          "hide_name": 1,
+          "bits": [ 9, 10 ],
+          "attributes": {
+          }
+        },
+        "$auto$simplemap.cc:277:simplemap_eqne$103": {
+          "hide_name": 1,
+          "bits": [ 23 ],
+          "attributes": {
+          }
+        },
+        "$auto$simplemap.cc:277:simplemap_eqne$113": {
+          "hide_name": 1,
+          "bits": [ 24 ],
+          "attributes": {
+          }
+        },
+        "$auto$simplemap.cc:277:simplemap_eqne$86": {
+          "hide_name": 1,
+          "bits": [ 31 ],
+          "attributes": {
+          }
+        },
+        "$procmux$2.B_AND_S": {
+          "hide_name": 1,
+          "bits": [ 20, 18, 16, 14 ],
+          "attributes": {
+            "force_downto": "00000000000000000000000000000001",
+            "src": "reconf/imm_gen/rtl/imm_gen_mux_1bit.v:14.33-14.33|reconf/imm_gen/rtl/imm_gen_mux_1bit.v:11.9-17.16|/opt/oss-cad-suite/lib/../share/yosys/techmap.v:591.28-591.35"
+          }
+        },
+        "$procmux$2.S": {
+          "hide_name": 1,
+          "bits": [ 19, 17, 15, 13 ],
+          "attributes": {
+            "force_downto": "00000000000000000000000000000001",
+            "src": "reconf/imm_gen/rtl/imm_gen_mux_1bit.v:14.33-14.33|reconf/imm_gen/rtl/imm_gen_mux_1bit.v:11.9-17.16|/opt/oss-cad-suite/lib/../share/yosys/techmap.v:581.22-581.23"
+          }
+        },
+        "$procmux$2.Y_B": {
+          "hide_name": 1,
+          "bits": [ 27 ],
+          "attributes": {
+            "force_downto": "00000000000000000000000000000001",
+            "single_bit_vector": "00000000000000000000000000000001",
+            "src": "reconf/imm_gen/rtl/imm_gen_mux_1bit.v:14.33-14.33|reconf/imm_gen/rtl/imm_gen_mux_1bit.v:11.9-17.16|/opt/oss-cad-suite/lib/../share/yosys/techmap.v:586.19-586.22"
+          }
+        },
+        "$techmap$procmux$2.$reduce_or$/opt/oss-cad-suite/lib/../share/yosys/techmap.v:605$92_Y": {
+          "hide_name": 1,
+          "bits": [ 30 ],
+          "attributes": {
+            "src": "reconf/imm_gen/rtl/imm_gen_mux_1bit.v:14.33-14.33|reconf/imm_gen/rtl/imm_gen_mux_1bit.v:11.9-17.16|/opt/oss-cad-suite/lib/../share/yosys/techmap.v:605.13-605.15"
+          }
+        },
+        "i_d0": {
+          "hide_name": 0,
+          "bits": [ 4 ],
+          "attributes": {
+            "src": "reconf/imm_gen/rtl/imm_gen_mux_1bit.v:3.23-3.27"
+          }
+        },
+        "i_d1": {
+          "hide_name": 0,
+          "bits": [ 5 ],
+          "attributes": {
+            "src": "reconf/imm_gen/rtl/imm_gen_mux_1bit.v:4.23-4.27"
+          }
+        },
+        "i_d2": {
+          "hide_name": 0,
+          "bits": [ 6 ],
+          "attributes": {
+            "src": "reconf/imm_gen/rtl/imm_gen_mux_1bit.v:5.23-5.27"
+          }
+        },
+        "i_d3": {
+          "hide_name": 0,
+          "bits": [ 7 ],
+          "attributes": {
+            "src": "reconf/imm_gen/rtl/imm_gen_mux_1bit.v:6.23-6.27"
+          }
+        },
+        "i_sel": {
+          "hide_name": 0,
+          "bits": [ 2, 3 ],
+          "attributes": {
+            "src": "reconf/imm_gen/rtl/imm_gen_mux_1bit.v:2.23-2.28"
+          }
+        },
+        "o_q": {
+          "hide_name": 0,
+          "bits": [ 8 ],
+          "attributes": {
+            "src": "reconf/imm_gen/rtl/imm_gen_mux_1bit.v:7.23-7.26"
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,477 @@
+{
+  "creator": "Yosys 0.61+112 (git sha1 ac427a79b, clang++ 18.1.8 -fPIC -O3)",
+  "modules": {
+    "register_file_mux16_1bit": {
+      "attributes": {
+        "top": "00000000000000000000000000000001",
+        "src": "reconf/register_file/rtl/register_file_mux16_1bit.v:1.1-54.10"
+      },
+      "ports": {
+        "i_sel": {
+          "direction": "input",
+          "bits": [ 2, 3, 4, 5 ]
+        },
+        "i_data": {
+          "direction": "input",
+          "bits": [ 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21 ]
+        },
+        "o_data": {
+          "direction": "output",
+          "bits": [ 22 ]
+        }
+      },
+      "cells": {
+        "gen_l1[0].u_mux_l1": {
+          "hide_name": 0,
+          "type": "register_file_mux2_1bit",
+          "parameters": {
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "reconf/register_file/rtl/register_file_mux16_1bit.v:17.37-22.14"
+          },
+          "port_directions": {
+            "i_d0": "input",
+            "i_d1": "input",
+            "i_sel": "input",
+            "o_data": "output"
+          },
+          "connections": {
+            "i_d0": [ 6 ],
+            "i_d1": [ 7 ],
+            "i_sel": [ 2 ],
+            "o_data": [ 23 ]
+          }
+        },
+        "gen_l1[1].u_mux_l1": {
+          "hide_name": 0,
+          "type": "register_file_mux2_1bit",
+          "parameters": {
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "reconf/register_file/rtl/register_file_mux16_1bit.v:17.37-22.14"
+          },
+          "port_directions": {
+            "i_d0": "input",
+            "i_d1": "input",
+            "i_sel": "input",
+            "o_data": "output"
+          },
+          "connections": {
+            "i_d0": [ 8 ],
+            "i_d1": [ 9 ],
+            "i_sel": [ 2 ],
+            "o_data": [ 24 ]
+          }
+        },
+        "gen_l1[2].u_mux_l1": {
+          "hide_name": 0,
+          "type": "register_file_mux2_1bit",
+          "parameters": {
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "reconf/register_file/rtl/register_file_mux16_1bit.v:17.37-22.14"
+          },
+          "port_directions": {
+            "i_d0": "input",
+            "i_d1": "input",
+            "i_sel": "input",
+            "o_data": "output"
+          },
+          "connections": {
+            "i_d0": [ 10 ],
+            "i_d1": [ 11 ],
+            "i_sel": [ 2 ],
+            "o_data": [ 25 ]
+          }
+        },
+        "gen_l1[3].u_mux_l1": {
+          "hide_name": 0,
+          "type": "register_file_mux2_1bit",
+          "parameters": {
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "reconf/register_file/rtl/register_file_mux16_1bit.v:17.37-22.14"
+          },
+          "port_directions": {
+            "i_d0": "input",
+            "i_d1": "input",
+            "i_sel": "input",
+            "o_data": "output"
+          },
+          "connections": {
+            "i_d0": [ 12 ],
+            "i_d1": [ 13 ],
+            "i_sel": [ 2 ],
+            "o_data": [ 26 ]
+          }
+        },
+        "gen_l1[4].u_mux_l1": {
+          "hide_name": 0,
+          "type": "register_file_mux2_1bit",
+          "parameters": {
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "reconf/register_file/rtl/register_file_mux16_1bit.v:17.37-22.14"
+          },
+          "port_directions": {
+            "i_d0": "input",
+            "i_d1": "input",
+            "i_sel": "input",
+            "o_data": "output"
+          },
+          "connections": {
+            "i_d0": [ 14 ],
+            "i_d1": [ 15 ],
+            "i_sel": [ 2 ],
+            "o_data": [ 27 ]
+          }
+        },
+        "gen_l1[5].u_mux_l1": {
+          "hide_name": 0,
+          "type": "register_file_mux2_1bit",
+          "parameters": {
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "reconf/register_file/rtl/register_file_mux16_1bit.v:17.37-22.14"
+          },
+          "port_directions": {
+            "i_d0": "input",
+            "i_d1": "input",
+            "i_sel": "input",
+            "o_data": "output"
+          },
+          "connections": {
+            "i_d0": [ 16 ],
+            "i_d1": [ 17 ],
+            "i_sel": [ 2 ],
+            "o_data": [ 28 ]
+          }
+        },
+        "gen_l1[6].u_mux_l1": {
+          "hide_name": 0,
+          "type": "register_file_mux2_1bit",
+          "parameters": {
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "reconf/register_file/rtl/register_file_mux16_1bit.v:17.37-22.14"
+          },
+          "port_directions": {
+            "i_d0": "input",
+            "i_d1": "input",
+            "i_sel": "input",
+            "o_data": "output"
+          },
+          "connections": {
+            "i_d0": [ 18 ],
+            "i_d1": [ 19 ],
+            "i_sel": [ 2 ],
+            "o_data": [ 29 ]
+          }
+        },
+        "gen_l1[7].u_mux_l1": {
+          "hide_name": 0,
+          "type": "register_file_mux2_1bit",
+          "parameters": {
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "reconf/register_file/rtl/register_file_mux16_1bit.v:17.37-22.14"
+          },
+          "port_directions": {
+            "i_d0": "input",
+            "i_d1": "input",
+            "i_sel": "input",
+            "o_data": "output"
+          },
+          "connections": {
+            "i_d0": [ 20 ],
+            "i_d1": [ 21 ],
+            "i_sel": [ 2 ],
+            "o_data": [ 30 ]
+          }
+        },
+        "gen_l2[0].u_mux_l2": {
+          "hide_name": 0,
+          "type": "register_file_mux2_1bit",
+          "parameters": {
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "reconf/register_file/rtl/register_file_mux16_1bit.v:27.37-32.14"
+          },
+          "port_directions": {
+            "i_d0": "input",
+            "i_d1": "input",
+            "i_sel": "input",
+            "o_data": "output"
+          },
+          "connections": {
+            "i_d0": [ 23 ],
+            "i_d1": [ 24 ],
+            "i_sel": [ 3 ],
+            "o_data": [ 31 ]
+          }
+        },
+        "gen_l2[1].u_mux_l2": {
+          "hide_name": 0,
+          "type": "register_file_mux2_1bit",
+          "parameters": {
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "reconf/register_file/rtl/register_file_mux16_1bit.v:27.37-32.14"
+          },
+          "port_directions": {
+            "i_d0": "input",
+            "i_d1": "input",
+            "i_sel": "input",
+            "o_data": "output"
+          },
+          "connections": {
+            "i_d0": [ 25 ],
+            "i_d1": [ 26 ],
+            "i_sel": [ 3 ],
+            "o_data": [ 32 ]
+          }
+        },
+        "gen_l2[2].u_mux_l2": {
+          "hide_name": 0,
+          "type": "register_file_mux2_1bit",
+          "parameters": {
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "reconf/register_file/rtl/register_file_mux16_1bit.v:27.37-32.14"
+          },
+          "port_directions": {
+            "i_d0": "input",
+            "i_d1": "input",
+            "i_sel": "input",
+            "o_data": "output"
+          },
+          "connections": {
+            "i_d0": [ 27 ],
+            "i_d1": [ 28 ],
+            "i_sel": [ 3 ],
+            "o_data": [ 33 ]
+          }
+        },
+        "gen_l2[3].u_mux_l2": {
+          "hide_name": 0,
+          "type": "register_file_mux2_1bit",
+          "parameters": {
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "reconf/register_file/rtl/register_file_mux16_1bit.v:27.37-32.14"
+          },
+          "port_directions": {
+            "i_d0": "input",
+            "i_d1": "input",
+            "i_sel": "input",
+            "o_data": "output"
+          },
+          "connections": {
+            "i_d0": [ 29 ],
+            "i_d1": [ 30 ],
+            "i_sel": [ 3 ],
+            "o_data": [ 34 ]
+          }
+        },
+        "gen_l3[0].u_mux_l3": {
+          "hide_name": 0,
+          "type": "register_file_mux2_1bit",
+          "parameters": {
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "reconf/register_file/rtl/register_file_mux16_1bit.v:37.37-42.14"
+          },
+          "port_directions": {
+            "i_d0": "input",
+            "i_d1": "input",
+            "i_sel": "input",
+            "o_data": "output"
+          },
+          "connections": {
+            "i_d0": [ 31 ],
+            "i_d1": [ 32 ],
+            "i_sel": [ 4 ],
+            "o_data": [ 35 ]
+          }
+        },
+        "gen_l3[1].u_mux_l3": {
+          "hide_name": 0,
+          "type": "register_file_mux2_1bit",
+          "parameters": {
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "reconf/register_file/rtl/register_file_mux16_1bit.v:37.37-42.14"
+          },
+          "port_directions": {
+            "i_d0": "input",
+            "i_d1": "input",
+            "i_sel": "input",
+            "o_data": "output"
+          },
+          "connections": {
+            "i_d0": [ 33 ],
+            "i_d1": [ 34 ],
+            "i_sel": [ 4 ],
+            "o_data": [ 36 ]
+          }
+        },
+        "u_mux_l4": {
+          "hide_name": 0,
+          "type": "register_file_mux2_1bit",
+          "parameters": {
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "reconf/register_file/rtl/register_file_mux16_1bit.v:47.29-52.6"
+          },
+          "port_directions": {
+            "i_d0": "input",
+            "i_d1": "input",
+            "i_sel": "input",
+            "o_data": "output"
+          },
+          "connections": {
+            "i_d0": [ 35 ],
+            "i_d1": [ 36 ],
+            "i_sel": [ 5 ],
+            "o_data": [ 22 ]
+          }
+        }
+      },
+      "netnames": {
+        "i_data": {
+          "hide_name": 0,
+          "bits": [ 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21 ],
+          "attributes": {
+            "src": "reconf/register_file/rtl/register_file_mux16_1bit.v:3.24-3.30"
+          }
+        },
+        "i_sel": {
+          "hide_name": 0,
+          "bits": [ 2, 3, 4, 5 ],
+          "attributes": {
+            "src": "reconf/register_file/rtl/register_file_mux16_1bit.v:2.24-2.29"
+          }
+        },
+        "o_data": {
+          "hide_name": 0,
+          "bits": [ 22 ],
+          "attributes": {
+            "src": "reconf/register_file/rtl/register_file_mux16_1bit.v:4.24-4.30"
+          }
+        },
+        "w_l1": {
+          "hide_name": 0,
+          "bits": [ 23, 24, 25, 26, 27, 28, 29, 30 ],
+          "attributes": {
+            "src": "reconf/register_file/rtl/register_file_mux16_1bit.v:7.16-7.20"
+          }
+        },
+        "w_l2": {
+          "hide_name": 0,
+          "bits": [ 31, 32, 33, 34 ],
+          "attributes": {
+            "src": "reconf/register_file/rtl/register_file_mux16_1bit.v:8.16-8.20"
+          }
+        },
+        "w_l3": {
+          "hide_name": 0,
+          "bits": [ 35, 36 ],
+          "attributes": {
+            "src": "reconf/register_file/rtl/register_file_mux16_1bit.v:9.16-9.20"
+          }
+        }
+      }
+    },
+    "register_file_mux2_1bit": {
+      "attributes": {
+        "src": "reconf/register_file/rtl/register_file_mux2_1bit.v:1.1-10.10"
+      },
+      "ports": {
+        "i_sel": {
+          "direction": "input",
+          "bits": [ 2 ]
+        },
+        "i_d0": {
+          "direction": "input",
+          "bits": [ 3 ]
+        },
+        "i_d1": {
+          "direction": "input",
+          "bits": [ 4 ]
+        },
+        "o_data": {
+          "direction": "output",
+          "bits": [ 5 ]
+        }
+      },
+      "cells": {
+        "$auto$simplemap.cc:298:simplemap_mux$109": {
+          "hide_name": 1,
+          "type": "$_MUX_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/register_file/rtl/register_file_mux2_1bit.v:8.21-8.40"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 3 ],
+            "B": [ 4 ],
+            "S": [ 2 ],
+            "Y": [ 5 ]
+          }
+        }
+      },
+      "netnames": {
+        "i_d0": {
+          "hide_name": 0,
+          "bits": [ 3 ],
+          "attributes": {
+            "src": "reconf/register_file/rtl/register_file_mux2_1bit.v:3.17-3.21"
+          }
+        },
+        "i_d1": {
+          "hide_name": 0,
+          "bits": [ 4 ],
+          "attributes": {
+            "src": "reconf/register_file/rtl/register_file_mux2_1bit.v:4.17-4.21"
+          }
+        },
+        "i_sel": {
+          "hide_name": 0,
+          "bits": [ 2 ],
+          "attributes": {
+            "src": "reconf/register_file/rtl/register_file_mux2_1bit.v:2.17-2.22"
+          }
+        },
+        "o_data": {
+          "hide_name": 0,
+          "bits": [ 5 ],
+          "attributes": {
+            "src": "reconf/register_file/rtl/register_file_mux2_1bit.v:5.17-5.23"
+          }
+        }
+      }
+    }
+  }
+}

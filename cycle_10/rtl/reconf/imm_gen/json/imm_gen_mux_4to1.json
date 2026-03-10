@@ -1,0 +1,1340 @@
+{
+  "creator": "Yosys 0.61+112 (git sha1 ac427a79b, clang++ 18.1.8 -fPIC -O3)",
+  "modules": {
+    "imm_gen_mux_4to1": {
+      "attributes": {
+        "top": "00000000000000000000000000000001",
+        "src": "reconf/imm_gen/rtl/imm_gen_mux_4to1.v:1.1-16.10"
+      },
+      "ports": {
+        "i_data_i": {
+          "direction": "input",
+          "bits": [ 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17 ]
+        },
+        "i_data_s": {
+          "direction": "input",
+          "bits": [ 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33 ]
+        },
+        "i_data_l": {
+          "direction": "input",
+          "bits": [ 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49 ]
+        },
+        "i_data_b": {
+          "direction": "input",
+          "bits": [ 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65 ]
+        },
+        "i_sel": {
+          "direction": "input",
+          "bits": [ 66, 67 ]
+        },
+        "o_imm": {
+          "direction": "output",
+          "bits": [ 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83 ]
+        }
+      },
+      "cells": {
+        "$auto$simplemap.cc:106:simplemap_bitop$100": {
+          "hide_name": 1,
+          "type": "$_XOR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/imm_gen/rtl/imm_gen_mux_4to1.v:12.21-12.35"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 67 ],
+            "B": [ "0" ],
+            "Y": [ 84 ]
+          }
+        },
+        "$auto$simplemap.cc:106:simplemap_bitop$109": {
+          "hide_name": 1,
+          "type": "$_XOR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/imm_gen/rtl/imm_gen_mux_4to1.v:13.21-13.35"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 66 ],
+            "B": [ "0" ],
+            "Y": [ 85 ]
+          }
+        },
+        "$auto$simplemap.cc:106:simplemap_bitop$110": {
+          "hide_name": 1,
+          "type": "$_XOR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/imm_gen/rtl/imm_gen_mux_4to1.v:13.21-13.35"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 67 ],
+            "B": [ "1" ],
+            "Y": [ 86 ]
+          }
+        },
+        "$auto$simplemap.cc:106:simplemap_bitop$99": {
+          "hide_name": 1,
+          "type": "$_XOR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/imm_gen/rtl/imm_gen_mux_4to1.v:12.21-12.35"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 66 ],
+            "B": [ "1" ],
+            "Y": [ 87 ]
+          }
+        },
+        "$auto$simplemap.cc:157:simplemap_reduce$104": {
+          "hide_name": 1,
+          "type": "$_OR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/imm_gen/rtl/imm_gen_mux_4to1.v:12.21-12.35"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 87 ],
+            "B": [ 84 ],
+            "Y": [ 88 ]
+          }
+        },
+        "$auto$simplemap.cc:157:simplemap_reduce$114": {
+          "hide_name": 1,
+          "type": "$_OR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/imm_gen/rtl/imm_gen_mux_4to1.v:13.21-13.35"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 85 ],
+            "B": [ 86 ],
+            "Y": [ 89 ]
+          }
+        },
+        "$auto$simplemap.cc:198:logic_reduce$95": {
+          "hide_name": 1,
+          "type": "$_OR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/imm_gen/rtl/imm_gen_mux_4to1.v:11.21-11.35"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 66 ],
+            "B": [ 67 ],
+            "Y": [ 90 ]
+          }
+        },
+        "$auto$simplemap.cc:227:simplemap_lognot$106": {
+          "hide_name": 1,
+          "type": "$_NOT_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/imm_gen/rtl/imm_gen_mux_4to1.v:12.21-12.35"
+          },
+          "port_directions": {
+            "A": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 88 ],
+            "Y": [ 91 ]
+          }
+        },
+        "$auto$simplemap.cc:227:simplemap_lognot$116": {
+          "hide_name": 1,
+          "type": "$_NOT_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/imm_gen/rtl/imm_gen_mux_4to1.v:13.21-13.35"
+          },
+          "port_directions": {
+            "A": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 89 ],
+            "Y": [ 92 ]
+          }
+        },
+        "$auto$simplemap.cc:227:simplemap_lognot$96": {
+          "hide_name": 1,
+          "type": "$_NOT_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/imm_gen/rtl/imm_gen_mux_4to1.v:11.21-11.35"
+          },
+          "port_directions": {
+            "A": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 90 ],
+            "Y": [ 93 ]
+          }
+        },
+        "$auto$simplemap.cc:298:simplemap_mux$117": {
+          "hide_name": 1,
+          "type": "$_MUX_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/imm_gen/rtl/imm_gen_mux_4to1.v:13.20-14.47"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 50 ],
+            "B": [ 34 ],
+            "S": [ 92 ],
+            "Y": [ 94 ]
+          }
+        },
+        "$auto$simplemap.cc:298:simplemap_mux$118": {
+          "hide_name": 1,
+          "type": "$_MUX_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/imm_gen/rtl/imm_gen_mux_4to1.v:13.20-14.47"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 51 ],
+            "B": [ 35 ],
+            "S": [ 92 ],
+            "Y": [ 95 ]
+          }
+        },
+        "$auto$simplemap.cc:298:simplemap_mux$119": {
+          "hide_name": 1,
+          "type": "$_MUX_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/imm_gen/rtl/imm_gen_mux_4to1.v:13.20-14.47"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 52 ],
+            "B": [ 36 ],
+            "S": [ 92 ],
+            "Y": [ 96 ]
+          }
+        },
+        "$auto$simplemap.cc:298:simplemap_mux$120": {
+          "hide_name": 1,
+          "type": "$_MUX_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/imm_gen/rtl/imm_gen_mux_4to1.v:13.20-14.47"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 53 ],
+            "B": [ 37 ],
+            "S": [ 92 ],
+            "Y": [ 97 ]
+          }
+        },
+        "$auto$simplemap.cc:298:simplemap_mux$121": {
+          "hide_name": 1,
+          "type": "$_MUX_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/imm_gen/rtl/imm_gen_mux_4to1.v:13.20-14.47"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 54 ],
+            "B": [ 38 ],
+            "S": [ 92 ],
+            "Y": [ 98 ]
+          }
+        },
+        "$auto$simplemap.cc:298:simplemap_mux$122": {
+          "hide_name": 1,
+          "type": "$_MUX_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/imm_gen/rtl/imm_gen_mux_4to1.v:13.20-14.47"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 55 ],
+            "B": [ 39 ],
+            "S": [ 92 ],
+            "Y": [ 99 ]
+          }
+        },
+        "$auto$simplemap.cc:298:simplemap_mux$123": {
+          "hide_name": 1,
+          "type": "$_MUX_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/imm_gen/rtl/imm_gen_mux_4to1.v:13.20-14.47"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 56 ],
+            "B": [ 40 ],
+            "S": [ 92 ],
+            "Y": [ 100 ]
+          }
+        },
+        "$auto$simplemap.cc:298:simplemap_mux$124": {
+          "hide_name": 1,
+          "type": "$_MUX_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/imm_gen/rtl/imm_gen_mux_4to1.v:13.20-14.47"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 57 ],
+            "B": [ 41 ],
+            "S": [ 92 ],
+            "Y": [ 101 ]
+          }
+        },
+        "$auto$simplemap.cc:298:simplemap_mux$125": {
+          "hide_name": 1,
+          "type": "$_MUX_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/imm_gen/rtl/imm_gen_mux_4to1.v:13.20-14.47"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 58 ],
+            "B": [ 42 ],
+            "S": [ 92 ],
+            "Y": [ 102 ]
+          }
+        },
+        "$auto$simplemap.cc:298:simplemap_mux$126": {
+          "hide_name": 1,
+          "type": "$_MUX_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/imm_gen/rtl/imm_gen_mux_4to1.v:13.20-14.47"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 59 ],
+            "B": [ 43 ],
+            "S": [ 92 ],
+            "Y": [ 103 ]
+          }
+        },
+        "$auto$simplemap.cc:298:simplemap_mux$127": {
+          "hide_name": 1,
+          "type": "$_MUX_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/imm_gen/rtl/imm_gen_mux_4to1.v:13.20-14.47"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 60 ],
+            "B": [ 44 ],
+            "S": [ 92 ],
+            "Y": [ 104 ]
+          }
+        },
+        "$auto$simplemap.cc:298:simplemap_mux$128": {
+          "hide_name": 1,
+          "type": "$_MUX_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/imm_gen/rtl/imm_gen_mux_4to1.v:13.20-14.47"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 61 ],
+            "B": [ 45 ],
+            "S": [ 92 ],
+            "Y": [ 105 ]
+          }
+        },
+        "$auto$simplemap.cc:298:simplemap_mux$129": {
+          "hide_name": 1,
+          "type": "$_MUX_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/imm_gen/rtl/imm_gen_mux_4to1.v:13.20-14.47"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 62 ],
+            "B": [ 46 ],
+            "S": [ 92 ],
+            "Y": [ 106 ]
+          }
+        },
+        "$auto$simplemap.cc:298:simplemap_mux$130": {
+          "hide_name": 1,
+          "type": "$_MUX_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/imm_gen/rtl/imm_gen_mux_4to1.v:13.20-14.47"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 63 ],
+            "B": [ 47 ],
+            "S": [ 92 ],
+            "Y": [ 107 ]
+          }
+        },
+        "$auto$simplemap.cc:298:simplemap_mux$131": {
+          "hide_name": 1,
+          "type": "$_MUX_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/imm_gen/rtl/imm_gen_mux_4to1.v:13.20-14.47"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 64 ],
+            "B": [ 48 ],
+            "S": [ 92 ],
+            "Y": [ 108 ]
+          }
+        },
+        "$auto$simplemap.cc:298:simplemap_mux$132": {
+          "hide_name": 1,
+          "type": "$_MUX_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/imm_gen/rtl/imm_gen_mux_4to1.v:13.20-14.47"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 65 ],
+            "B": [ 49 ],
+            "S": [ 92 ],
+            "Y": [ 109 ]
+          }
+        },
+        "$auto$simplemap.cc:298:simplemap_mux$133": {
+          "hide_name": 1,
+          "type": "$_MUX_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/imm_gen/rtl/imm_gen_mux_4to1.v:12.20-14.47"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 94 ],
+            "B": [ 18 ],
+            "S": [ 91 ],
+            "Y": [ 110 ]
+          }
+        },
+        "$auto$simplemap.cc:298:simplemap_mux$134": {
+          "hide_name": 1,
+          "type": "$_MUX_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/imm_gen/rtl/imm_gen_mux_4to1.v:12.20-14.47"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 95 ],
+            "B": [ 19 ],
+            "S": [ 91 ],
+            "Y": [ 111 ]
+          }
+        },
+        "$auto$simplemap.cc:298:simplemap_mux$135": {
+          "hide_name": 1,
+          "type": "$_MUX_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/imm_gen/rtl/imm_gen_mux_4to1.v:12.20-14.47"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 96 ],
+            "B": [ 20 ],
+            "S": [ 91 ],
+            "Y": [ 112 ]
+          }
+        },
+        "$auto$simplemap.cc:298:simplemap_mux$136": {
+          "hide_name": 1,
+          "type": "$_MUX_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/imm_gen/rtl/imm_gen_mux_4to1.v:12.20-14.47"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 97 ],
+            "B": [ 21 ],
+            "S": [ 91 ],
+            "Y": [ 113 ]
+          }
+        },
+        "$auto$simplemap.cc:298:simplemap_mux$137": {
+          "hide_name": 1,
+          "type": "$_MUX_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/imm_gen/rtl/imm_gen_mux_4to1.v:12.20-14.47"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 98 ],
+            "B": [ 22 ],
+            "S": [ 91 ],
+            "Y": [ 114 ]
+          }
+        },
+        "$auto$simplemap.cc:298:simplemap_mux$138": {
+          "hide_name": 1,
+          "type": "$_MUX_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/imm_gen/rtl/imm_gen_mux_4to1.v:12.20-14.47"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 99 ],
+            "B": [ 23 ],
+            "S": [ 91 ],
+            "Y": [ 115 ]
+          }
+        },
+        "$auto$simplemap.cc:298:simplemap_mux$139": {
+          "hide_name": 1,
+          "type": "$_MUX_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/imm_gen/rtl/imm_gen_mux_4to1.v:12.20-14.47"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 100 ],
+            "B": [ 24 ],
+            "S": [ 91 ],
+            "Y": [ 116 ]
+          }
+        },
+        "$auto$simplemap.cc:298:simplemap_mux$140": {
+          "hide_name": 1,
+          "type": "$_MUX_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/imm_gen/rtl/imm_gen_mux_4to1.v:12.20-14.47"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 101 ],
+            "B": [ 25 ],
+            "S": [ 91 ],
+            "Y": [ 117 ]
+          }
+        },
+        "$auto$simplemap.cc:298:simplemap_mux$141": {
+          "hide_name": 1,
+          "type": "$_MUX_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/imm_gen/rtl/imm_gen_mux_4to1.v:12.20-14.47"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 102 ],
+            "B": [ 26 ],
+            "S": [ 91 ],
+            "Y": [ 118 ]
+          }
+        },
+        "$auto$simplemap.cc:298:simplemap_mux$142": {
+          "hide_name": 1,
+          "type": "$_MUX_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/imm_gen/rtl/imm_gen_mux_4to1.v:12.20-14.47"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 103 ],
+            "B": [ 27 ],
+            "S": [ 91 ],
+            "Y": [ 119 ]
+          }
+        },
+        "$auto$simplemap.cc:298:simplemap_mux$143": {
+          "hide_name": 1,
+          "type": "$_MUX_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/imm_gen/rtl/imm_gen_mux_4to1.v:12.20-14.47"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 104 ],
+            "B": [ 28 ],
+            "S": [ 91 ],
+            "Y": [ 120 ]
+          }
+        },
+        "$auto$simplemap.cc:298:simplemap_mux$144": {
+          "hide_name": 1,
+          "type": "$_MUX_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/imm_gen/rtl/imm_gen_mux_4to1.v:12.20-14.47"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 105 ],
+            "B": [ 29 ],
+            "S": [ 91 ],
+            "Y": [ 121 ]
+          }
+        },
+        "$auto$simplemap.cc:298:simplemap_mux$145": {
+          "hide_name": 1,
+          "type": "$_MUX_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/imm_gen/rtl/imm_gen_mux_4to1.v:12.20-14.47"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 106 ],
+            "B": [ 30 ],
+            "S": [ 91 ],
+            "Y": [ 122 ]
+          }
+        },
+        "$auto$simplemap.cc:298:simplemap_mux$146": {
+          "hide_name": 1,
+          "type": "$_MUX_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/imm_gen/rtl/imm_gen_mux_4to1.v:12.20-14.47"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 107 ],
+            "B": [ 31 ],
+            "S": [ 91 ],
+            "Y": [ 123 ]
+          }
+        },
+        "$auto$simplemap.cc:298:simplemap_mux$147": {
+          "hide_name": 1,
+          "type": "$_MUX_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/imm_gen/rtl/imm_gen_mux_4to1.v:12.20-14.47"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 108 ],
+            "B": [ 32 ],
+            "S": [ 91 ],
+            "Y": [ 124 ]
+          }
+        },
+        "$auto$simplemap.cc:298:simplemap_mux$148": {
+          "hide_name": 1,
+          "type": "$_MUX_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/imm_gen/rtl/imm_gen_mux_4to1.v:12.20-14.47"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 109 ],
+            "B": [ 33 ],
+            "S": [ 91 ],
+            "Y": [ 125 ]
+          }
+        },
+        "$auto$simplemap.cc:298:simplemap_mux$149": {
+          "hide_name": 1,
+          "type": "$_MUX_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/imm_gen/rtl/imm_gen_mux_4to1.v:11.20-14.47"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 110 ],
+            "B": [ 2 ],
+            "S": [ 93 ],
+            "Y": [ 68 ]
+          }
+        },
+        "$auto$simplemap.cc:298:simplemap_mux$150": {
+          "hide_name": 1,
+          "type": "$_MUX_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/imm_gen/rtl/imm_gen_mux_4to1.v:11.20-14.47"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 111 ],
+            "B": [ 3 ],
+            "S": [ 93 ],
+            "Y": [ 69 ]
+          }
+        },
+        "$auto$simplemap.cc:298:simplemap_mux$151": {
+          "hide_name": 1,
+          "type": "$_MUX_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/imm_gen/rtl/imm_gen_mux_4to1.v:11.20-14.47"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 112 ],
+            "B": [ 4 ],
+            "S": [ 93 ],
+            "Y": [ 70 ]
+          }
+        },
+        "$auto$simplemap.cc:298:simplemap_mux$152": {
+          "hide_name": 1,
+          "type": "$_MUX_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/imm_gen/rtl/imm_gen_mux_4to1.v:11.20-14.47"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 113 ],
+            "B": [ 5 ],
+            "S": [ 93 ],
+            "Y": [ 71 ]
+          }
+        },
+        "$auto$simplemap.cc:298:simplemap_mux$153": {
+          "hide_name": 1,
+          "type": "$_MUX_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/imm_gen/rtl/imm_gen_mux_4to1.v:11.20-14.47"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 114 ],
+            "B": [ 6 ],
+            "S": [ 93 ],
+            "Y": [ 72 ]
+          }
+        },
+        "$auto$simplemap.cc:298:simplemap_mux$154": {
+          "hide_name": 1,
+          "type": "$_MUX_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/imm_gen/rtl/imm_gen_mux_4to1.v:11.20-14.47"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 115 ],
+            "B": [ 7 ],
+            "S": [ 93 ],
+            "Y": [ 73 ]
+          }
+        },
+        "$auto$simplemap.cc:298:simplemap_mux$155": {
+          "hide_name": 1,
+          "type": "$_MUX_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/imm_gen/rtl/imm_gen_mux_4to1.v:11.20-14.47"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 116 ],
+            "B": [ 8 ],
+            "S": [ 93 ],
+            "Y": [ 74 ]
+          }
+        },
+        "$auto$simplemap.cc:298:simplemap_mux$156": {
+          "hide_name": 1,
+          "type": "$_MUX_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/imm_gen/rtl/imm_gen_mux_4to1.v:11.20-14.47"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 117 ],
+            "B": [ 9 ],
+            "S": [ 93 ],
+            "Y": [ 75 ]
+          }
+        },
+        "$auto$simplemap.cc:298:simplemap_mux$157": {
+          "hide_name": 1,
+          "type": "$_MUX_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/imm_gen/rtl/imm_gen_mux_4to1.v:11.20-14.47"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 118 ],
+            "B": [ 10 ],
+            "S": [ 93 ],
+            "Y": [ 76 ]
+          }
+        },
+        "$auto$simplemap.cc:298:simplemap_mux$158": {
+          "hide_name": 1,
+          "type": "$_MUX_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/imm_gen/rtl/imm_gen_mux_4to1.v:11.20-14.47"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 119 ],
+            "B": [ 11 ],
+            "S": [ 93 ],
+            "Y": [ 77 ]
+          }
+        },
+        "$auto$simplemap.cc:298:simplemap_mux$159": {
+          "hide_name": 1,
+          "type": "$_MUX_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/imm_gen/rtl/imm_gen_mux_4to1.v:11.20-14.47"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 120 ],
+            "B": [ 12 ],
+            "S": [ 93 ],
+            "Y": [ 78 ]
+          }
+        },
+        "$auto$simplemap.cc:298:simplemap_mux$160": {
+          "hide_name": 1,
+          "type": "$_MUX_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/imm_gen/rtl/imm_gen_mux_4to1.v:11.20-14.47"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 121 ],
+            "B": [ 13 ],
+            "S": [ 93 ],
+            "Y": [ 79 ]
+          }
+        },
+        "$auto$simplemap.cc:298:simplemap_mux$161": {
+          "hide_name": 1,
+          "type": "$_MUX_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/imm_gen/rtl/imm_gen_mux_4to1.v:11.20-14.47"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 122 ],
+            "B": [ 14 ],
+            "S": [ 93 ],
+            "Y": [ 80 ]
+          }
+        },
+        "$auto$simplemap.cc:298:simplemap_mux$162": {
+          "hide_name": 1,
+          "type": "$_MUX_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/imm_gen/rtl/imm_gen_mux_4to1.v:11.20-14.47"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 123 ],
+            "B": [ 15 ],
+            "S": [ 93 ],
+            "Y": [ 81 ]
+          }
+        },
+        "$auto$simplemap.cc:298:simplemap_mux$163": {
+          "hide_name": 1,
+          "type": "$_MUX_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/imm_gen/rtl/imm_gen_mux_4to1.v:11.20-14.47"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 124 ],
+            "B": [ 16 ],
+            "S": [ 93 ],
+            "Y": [ 82 ]
+          }
+        },
+        "$auto$simplemap.cc:298:simplemap_mux$164": {
+          "hide_name": 1,
+          "type": "$_MUX_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/imm_gen/rtl/imm_gen_mux_4to1.v:11.20-14.47"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 125 ],
+            "B": [ 17 ],
+            "S": [ 93 ],
+            "Y": [ 83 ]
+          }
+        }
+      },
+      "netnames": {
+        "$auto$simplemap.cc:189:logic_reduce$94": {
+          "hide_name": 1,
+          "bits": [ 90 ],
+          "attributes": {
+          }
+        },
+        "$auto$simplemap.cc:271:simplemap_eqne$107": {
+          "hide_name": 1,
+          "bits": [ 85, 86 ],
+          "attributes": {
+          }
+        },
+        "$auto$simplemap.cc:271:simplemap_eqne$97": {
+          "hide_name": 1,
+          "bits": [ 87, 84 ],
+          "attributes": {
+          }
+        },
+        "$auto$simplemap.cc:277:simplemap_eqne$101": {
+          "hide_name": 1,
+          "bits": [ 88 ],
+          "attributes": {
+          }
+        },
+        "$auto$simplemap.cc:277:simplemap_eqne$111": {
+          "hide_name": 1,
+          "bits": [ 89 ],
+          "attributes": {
+          }
+        },
+        "$eq$reconf/imm_gen/rtl/imm_gen_mux_4to1.v:11$13_Y": {
+          "hide_name": 1,
+          "bits": [ 93 ],
+          "attributes": {
+            "src": "reconf/imm_gen/rtl/imm_gen_mux_4to1.v:11.21-11.35"
+          }
+        },
+        "$eq$reconf/imm_gen/rtl/imm_gen_mux_4to1.v:12$14_Y": {
+          "hide_name": 1,
+          "bits": [ 91 ],
+          "attributes": {
+            "src": "reconf/imm_gen/rtl/imm_gen_mux_4to1.v:12.21-12.35"
+          }
+        },
+        "$eq$reconf/imm_gen/rtl/imm_gen_mux_4to1.v:13$15_Y": {
+          "hide_name": 1,
+          "bits": [ 92 ],
+          "attributes": {
+            "src": "reconf/imm_gen/rtl/imm_gen_mux_4to1.v:13.21-13.35"
+          }
+        },
+        "$ternary$reconf/imm_gen/rtl/imm_gen_mux_4to1.v:12$17_Y": {
+          "hide_name": 1,
+          "bits": [ 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120, 121, 122, 123, 124, 125 ],
+          "attributes": {
+            "src": "reconf/imm_gen/rtl/imm_gen_mux_4to1.v:12.20-14.47"
+          }
+        },
+        "$ternary$reconf/imm_gen/rtl/imm_gen_mux_4to1.v:13$16_Y": {
+          "hide_name": 1,
+          "bits": [ 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109 ],
+          "attributes": {
+            "src": "reconf/imm_gen/rtl/imm_gen_mux_4to1.v:13.20-14.47"
+          }
+        },
+        "i_data_b": {
+          "hide_name": 0,
+          "bits": [ 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65 ],
+          "attributes": {
+            "src": "reconf/imm_gen/rtl/imm_gen_mux_4to1.v:5.24-5.32"
+          }
+        },
+        "i_data_i": {
+          "hide_name": 0,
+          "bits": [ 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17 ],
+          "attributes": {
+            "src": "reconf/imm_gen/rtl/imm_gen_mux_4to1.v:2.24-2.32"
+          }
+        },
+        "i_data_l": {
+          "hide_name": 0,
+          "bits": [ 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49 ],
+          "attributes": {
+            "src": "reconf/imm_gen/rtl/imm_gen_mux_4to1.v:4.24-4.32"
+          }
+        },
+        "i_data_s": {
+          "hide_name": 0,
+          "bits": [ 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33 ],
+          "attributes": {
+            "src": "reconf/imm_gen/rtl/imm_gen_mux_4to1.v:3.24-3.32"
+          }
+        },
+        "i_sel": {
+          "hide_name": 0,
+          "bits": [ 66, 67 ],
+          "attributes": {
+            "src": "reconf/imm_gen/rtl/imm_gen_mux_4to1.v:6.24-6.29"
+          }
+        },
+        "o_imm": {
+          "hide_name": 0,
+          "bits": [ 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83 ],
+          "attributes": {
+            "src": "reconf/imm_gen/rtl/imm_gen_mux_4to1.v:7.24-7.29"
+          }
+        }
+      }
+    }
+  }
+}

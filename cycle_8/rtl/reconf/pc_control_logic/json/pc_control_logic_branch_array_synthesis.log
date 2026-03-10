@@ -1,0 +1,208 @@
+
+ /----------------------------------------------------------------------------\
+ |  yosys -- Yosys Open SYnthesis Suite                                       |
+ |  Copyright (C) 2012 - 2026  Claire Xenia Wolf <claire@yosyshq.com>         |
+ |  Distributed under an ISC-like license, type "license" to see terms        |
+ \----------------------------------------------------------------------------/
+ Yosys 0.61+112 (git sha1 ac427a79b, clang++ 18.1.8 -fPIC -O3)
+
+-- Executing script file `reconf/pc_control_logic/json/pc_control_logic_branch_array.ys' --
+
+1. Executing Verilog-2005 frontend: reconf/pc_control_logic/rtl/pc_control_logic_source_dec.v
+Parsing Verilog input from `reconf/pc_control_logic/rtl/pc_control_logic_source_dec.v' to AST representation.
+Generating RTLIL representation for module `\pc_control_logic_source_dec'.
+Successfully finished Verilog frontend.
+
+2. Executing Verilog-2005 frontend: reconf/pc_control_logic/rtl/pc_control_logic_condition_checker.v
+Parsing Verilog input from `reconf/pc_control_logic/rtl/pc_control_logic_condition_checker.v' to AST representation.
+Generating RTLIL representation for module `\pc_control_logic_condition_checker'.
+Successfully finished Verilog frontend.
+
+3. Executing Verilog-2005 frontend: reconf/pc_control_logic/rtl/pc_control_logic_branch_array.v
+Parsing Verilog input from `reconf/pc_control_logic/rtl/pc_control_logic_branch_array.v' to AST representation.
+Generating RTLIL representation for module `\pc_control_logic_branch_array'.
+Successfully finished Verilog frontend.
+
+4. Executing Verilog-2005 frontend: reconf/pc_control_logic/rtl/pc_control_logic.v
+Parsing Verilog input from `reconf/pc_control_logic/rtl/pc_control_logic.v' to AST representation.
+Generating RTLIL representation for module `\pc_control_logic'.
+Successfully finished Verilog frontend.
+
+5. Executing HIERARCHY pass (managing design hierarchy).
+
+5.1. Analyzing design hierarchy..
+Top module:  \pc_control_logic_branch_array
+Used module:     \pc_control_logic_condition_checker
+
+5.2. Analyzing design hierarchy..
+Top module:  \pc_control_logic_branch_array
+Used module:     \pc_control_logic_condition_checker
+Removing unused module `\pc_control_logic'.
+Removing unused module `\pc_control_logic_source_dec'.
+Removed 2 unused modules.
+
+6. Executing PROC pass (convert processes to netlists).
+
+6.1. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Cleaned up 0 empty switches.
+
+6.2. Executing PROC_RMDEAD pass (remove dead branches from decision trees).
+Removed a total of 0 dead cases.
+
+6.3. Executing PROC_PRUNE pass (remove redundant assignments in processes).
+Removed 0 redundant assignments.
+Promoted 0 assignments to connections.
+
+6.4. Executing PROC_INIT pass (extract init attributes).
+
+6.5. Executing PROC_ARST pass (detect async resets in processes).
+
+6.6. Executing PROC_ROM pass (convert switches to ROMs).
+Converted 0 switches.
+
+6.7. Executing PROC_MUX pass (convert decision trees to multiplexers).
+
+6.8. Executing PROC_DLATCH pass (convert process syncs to latches).
+
+6.9. Executing PROC_DFF pass (convert process syncs to FFs).
+
+6.10. Executing PROC_MEMWR pass (convert process memory writes to cells).
+
+6.11. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Cleaned up 0 empty switches.
+
+6.12. Executing OPT_EXPR pass (perform const folding).
+Optimizing module pc_control_logic_condition_checker.
+Optimizing module pc_control_logic_branch_array.
+
+7. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \pc_control_logic_condition_checker..
+Finding unused cells or wires in module \pc_control_logic_branch_array..
+Removed 0 unused cells and 4 unused wires.
+<suppressed ~2 debug messages>
+
+8. Executing TECHMAP pass (map to technology primitives).
+
+8.1. Executing Verilog-2005 frontend: /opt/oss-cad-suite/lib/../share/yosys/techmap.v
+Parsing Verilog input from `/opt/oss-cad-suite/lib/../share/yosys/techmap.v' to AST representation.
+Generating RTLIL representation for module `\_90_simplemap_bool_ops'.
+Generating RTLIL representation for module `\_90_simplemap_reduce_ops'.
+Generating RTLIL representation for module `\_90_simplemap_logic_ops'.
+Generating RTLIL representation for module `\_90_simplemap_compare_ops'.
+Generating RTLIL representation for module `\_90_simplemap_various'.
+Generating RTLIL representation for module `\_90_simplemap_registers'.
+Generating RTLIL representation for module `\_90_shift_ops_shr_shl_sshl_sshr'.
+Generating RTLIL representation for module `\_90_shift_shiftx'.
+Generating RTLIL representation for module `\_90_fa'.
+Generating RTLIL representation for module `\_90_lcu_brent_kung'.
+Generating RTLIL representation for module `\_90_alu'.
+Generating RTLIL representation for module `\_90_macc'.
+Generating RTLIL representation for module `\_90_alumacc'.
+Generating RTLIL representation for module `$__div_mod_u'.
+Generating RTLIL representation for module `$__div_mod_trunc'.
+Generating RTLIL representation for module `\_90_div'.
+Generating RTLIL representation for module `\_90_mod'.
+Generating RTLIL representation for module `$__div_mod_floor'.
+Generating RTLIL representation for module `\_90_divfloor'.
+Generating RTLIL representation for module `\_90_modfloor'.
+Generating RTLIL representation for module `\_90_pow'.
+Generating RTLIL representation for module `\_90_pmux'.
+Generating RTLIL representation for module `\_90_demux'.
+Generating RTLIL representation for module `\_90_lut'.
+Generating RTLIL representation for module `$connect'.
+Generating RTLIL representation for module `$input_port'.
+Successfully finished Verilog frontend.
+
+8.2. Continuing TECHMAP pass.
+Using extmapper simplemap for cells of type $eq.
+Using extmapper simplemap for cells of type $xor.
+Using extmapper simplemap for cells of type $mux.
+Using extmapper simplemap for cells of type $and.
+Using extmapper simplemap for cells of type $reduce_or.
+No more expansions possible.
+<suppressed ~85 debug messages>
+
+9. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \pc_control_logic_branch_array..
+Finding unused cells or wires in module \pc_control_logic_condition_checker..
+Removed 0 unused cells and 4 unused wires.
+<suppressed ~2 debug messages>
+
+10. Executing HIERARCHY pass (managing design hierarchy).
+Attribute `top' found on module `pc_control_logic_branch_array'. Setting top module to pc_control_logic_branch_array.
+
+10.1. Analyzing design hierarchy..
+Top module:  \pc_control_logic_branch_array
+Used module:     \pc_control_logic_condition_checker
+
+10.2. Analyzing design hierarchy..
+Top module:  \pc_control_logic_branch_array
+Used module:     \pc_control_logic_condition_checker
+Removed 0 unused modules.
+
+11. Printing statistics.
+
+=== pc_control_logic_branch_array ===
+
+        +----------Local Count, excluding submodules.
+        | 
+        8 wires
+       18 wire bits
+        8 public wires
+       18 public wire bits
+        5 ports
+        8 port bits
+        1 cells
+        1   $_OR_
+        2 submodules
+        2   pc_control_logic_condition_checker
+
+=== pc_control_logic_condition_checker ===
+
+        +----------Local Count, excluding submodules.
+        | 
+       21 wires
+       39 wire bits
+        8 public wires
+       14 public wire bits
+        6 ports
+       12 port bits
+       28 cells
+        1   $_AND_
+        2   $_MUX_
+        3   $_NOT_
+        9   $_OR_
+       13   $_XOR_
+
+=== design hierarchy ===
+
+        +----------Count including submodules.
+        | 
+       57 pc_control_logic_branch_array
+       28 pc_control_logic_condition_checker
+
+        +----------Count including submodules.
+        | 
+       50 wires
+       96 wire bits
+       24 public wires
+       46 public wire bits
+       17 ports
+       32 port bits
+        - memories
+        - memory bits
+        - processes
+       57 cells
+        2   $_AND_
+        4   $_MUX_
+        6   $_NOT_
+       19   $_OR_
+       26   $_XOR_
+        2 submodules
+        2   pc_control_logic_condition_checker
+
+12. Executing JSON backend.
+
+End of script. Logfile hash: 8fb4687eff, CPU: user 0.01s system 0.01s, MEM: 14.53 MB peak
+Yosys 0.61+112 (git sha1 ac427a79b, clang++ 18.1.8 -fPIC -O3)
+Time spent: 71% 9x read_verilog (0 sec), 10% 2x opt_clean (0 sec), ...

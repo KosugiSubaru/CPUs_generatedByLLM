@@ -1,0 +1,650 @@
+{
+  "creator": "Yosys 0.61+112 (git sha1 ac427a79b, clang++ 18.1.8 -fPIC -O3)",
+  "modules": {
+    "pc_unit_adder_16bit": {
+      "attributes": {
+        "top": "00000000000000000000000000000001",
+        "src": "reconf/pc_unit/rtl/pc_unit_adder_16bit.v:1.1-25.10"
+      },
+      "ports": {
+        "i_a": {
+          "direction": "input",
+          "bits": [ 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17 ]
+        },
+        "i_b": {
+          "direction": "input",
+          "bits": [ 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33 ]
+        },
+        "o_sum": {
+          "direction": "output",
+          "bits": [ 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49 ]
+        }
+      },
+      "cells": {
+        "adder_bit[0].u_pc_full_adder": {
+          "hide_name": 0,
+          "type": "pc_unit_full_adder",
+          "parameters": {
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "reconf/pc_unit/rtl/pc_unit_adder_16bit.v:15.32-21.14"
+          },
+          "port_directions": {
+            "i_a": "input",
+            "i_b": "input",
+            "i_cin": "input",
+            "o_cout": "output",
+            "o_sum": "output"
+          },
+          "connections": {
+            "i_a": [ 2 ],
+            "i_b": [ 18 ],
+            "i_cin": [ "0" ],
+            "o_cout": [ 50 ],
+            "o_sum": [ 34 ]
+          }
+        },
+        "adder_bit[10].u_pc_full_adder": {
+          "hide_name": 0,
+          "type": "pc_unit_full_adder",
+          "parameters": {
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "reconf/pc_unit/rtl/pc_unit_adder_16bit.v:15.32-21.14"
+          },
+          "port_directions": {
+            "i_a": "input",
+            "i_b": "input",
+            "i_cin": "input",
+            "o_cout": "output",
+            "o_sum": "output"
+          },
+          "connections": {
+            "i_a": [ 12 ],
+            "i_b": [ 28 ],
+            "i_cin": [ 51 ],
+            "o_cout": [ 52 ],
+            "o_sum": [ 44 ]
+          }
+        },
+        "adder_bit[11].u_pc_full_adder": {
+          "hide_name": 0,
+          "type": "pc_unit_full_adder",
+          "parameters": {
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "reconf/pc_unit/rtl/pc_unit_adder_16bit.v:15.32-21.14"
+          },
+          "port_directions": {
+            "i_a": "input",
+            "i_b": "input",
+            "i_cin": "input",
+            "o_cout": "output",
+            "o_sum": "output"
+          },
+          "connections": {
+            "i_a": [ 13 ],
+            "i_b": [ 29 ],
+            "i_cin": [ 52 ],
+            "o_cout": [ 53 ],
+            "o_sum": [ 45 ]
+          }
+        },
+        "adder_bit[12].u_pc_full_adder": {
+          "hide_name": 0,
+          "type": "pc_unit_full_adder",
+          "parameters": {
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "reconf/pc_unit/rtl/pc_unit_adder_16bit.v:15.32-21.14"
+          },
+          "port_directions": {
+            "i_a": "input",
+            "i_b": "input",
+            "i_cin": "input",
+            "o_cout": "output",
+            "o_sum": "output"
+          },
+          "connections": {
+            "i_a": [ 14 ],
+            "i_b": [ 30 ],
+            "i_cin": [ 53 ],
+            "o_cout": [ 54 ],
+            "o_sum": [ 46 ]
+          }
+        },
+        "adder_bit[13].u_pc_full_adder": {
+          "hide_name": 0,
+          "type": "pc_unit_full_adder",
+          "parameters": {
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "reconf/pc_unit/rtl/pc_unit_adder_16bit.v:15.32-21.14"
+          },
+          "port_directions": {
+            "i_a": "input",
+            "i_b": "input",
+            "i_cin": "input",
+            "o_cout": "output",
+            "o_sum": "output"
+          },
+          "connections": {
+            "i_a": [ 15 ],
+            "i_b": [ 31 ],
+            "i_cin": [ 54 ],
+            "o_cout": [ 55 ],
+            "o_sum": [ 47 ]
+          }
+        },
+        "adder_bit[14].u_pc_full_adder": {
+          "hide_name": 0,
+          "type": "pc_unit_full_adder",
+          "parameters": {
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "reconf/pc_unit/rtl/pc_unit_adder_16bit.v:15.32-21.14"
+          },
+          "port_directions": {
+            "i_a": "input",
+            "i_b": "input",
+            "i_cin": "input",
+            "o_cout": "output",
+            "o_sum": "output"
+          },
+          "connections": {
+            "i_a": [ 16 ],
+            "i_b": [ 32 ],
+            "i_cin": [ 55 ],
+            "o_cout": [ 56 ],
+            "o_sum": [ 48 ]
+          }
+        },
+        "adder_bit[15].u_pc_full_adder": {
+          "hide_name": 0,
+          "type": "pc_unit_full_adder",
+          "parameters": {
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "reconf/pc_unit/rtl/pc_unit_adder_16bit.v:15.32-21.14"
+          },
+          "port_directions": {
+            "i_a": "input",
+            "i_b": "input",
+            "i_cin": "input",
+            "o_cout": "output",
+            "o_sum": "output"
+          },
+          "connections": {
+            "i_a": [ 17 ],
+            "i_b": [ 33 ],
+            "i_cin": [ 56 ],
+            "o_cout": [ 57 ],
+            "o_sum": [ 49 ]
+          }
+        },
+        "adder_bit[1].u_pc_full_adder": {
+          "hide_name": 0,
+          "type": "pc_unit_full_adder",
+          "parameters": {
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "reconf/pc_unit/rtl/pc_unit_adder_16bit.v:15.32-21.14"
+          },
+          "port_directions": {
+            "i_a": "input",
+            "i_b": "input",
+            "i_cin": "input",
+            "o_cout": "output",
+            "o_sum": "output"
+          },
+          "connections": {
+            "i_a": [ 3 ],
+            "i_b": [ 19 ],
+            "i_cin": [ 50 ],
+            "o_cout": [ 58 ],
+            "o_sum": [ 35 ]
+          }
+        },
+        "adder_bit[2].u_pc_full_adder": {
+          "hide_name": 0,
+          "type": "pc_unit_full_adder",
+          "parameters": {
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "reconf/pc_unit/rtl/pc_unit_adder_16bit.v:15.32-21.14"
+          },
+          "port_directions": {
+            "i_a": "input",
+            "i_b": "input",
+            "i_cin": "input",
+            "o_cout": "output",
+            "o_sum": "output"
+          },
+          "connections": {
+            "i_a": [ 4 ],
+            "i_b": [ 20 ],
+            "i_cin": [ 58 ],
+            "o_cout": [ 59 ],
+            "o_sum": [ 36 ]
+          }
+        },
+        "adder_bit[3].u_pc_full_adder": {
+          "hide_name": 0,
+          "type": "pc_unit_full_adder",
+          "parameters": {
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "reconf/pc_unit/rtl/pc_unit_adder_16bit.v:15.32-21.14"
+          },
+          "port_directions": {
+            "i_a": "input",
+            "i_b": "input",
+            "i_cin": "input",
+            "o_cout": "output",
+            "o_sum": "output"
+          },
+          "connections": {
+            "i_a": [ 5 ],
+            "i_b": [ 21 ],
+            "i_cin": [ 59 ],
+            "o_cout": [ 60 ],
+            "o_sum": [ 37 ]
+          }
+        },
+        "adder_bit[4].u_pc_full_adder": {
+          "hide_name": 0,
+          "type": "pc_unit_full_adder",
+          "parameters": {
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "reconf/pc_unit/rtl/pc_unit_adder_16bit.v:15.32-21.14"
+          },
+          "port_directions": {
+            "i_a": "input",
+            "i_b": "input",
+            "i_cin": "input",
+            "o_cout": "output",
+            "o_sum": "output"
+          },
+          "connections": {
+            "i_a": [ 6 ],
+            "i_b": [ 22 ],
+            "i_cin": [ 60 ],
+            "o_cout": [ 61 ],
+            "o_sum": [ 38 ]
+          }
+        },
+        "adder_bit[5].u_pc_full_adder": {
+          "hide_name": 0,
+          "type": "pc_unit_full_adder",
+          "parameters": {
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "reconf/pc_unit/rtl/pc_unit_adder_16bit.v:15.32-21.14"
+          },
+          "port_directions": {
+            "i_a": "input",
+            "i_b": "input",
+            "i_cin": "input",
+            "o_cout": "output",
+            "o_sum": "output"
+          },
+          "connections": {
+            "i_a": [ 7 ],
+            "i_b": [ 23 ],
+            "i_cin": [ 61 ],
+            "o_cout": [ 62 ],
+            "o_sum": [ 39 ]
+          }
+        },
+        "adder_bit[6].u_pc_full_adder": {
+          "hide_name": 0,
+          "type": "pc_unit_full_adder",
+          "parameters": {
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "reconf/pc_unit/rtl/pc_unit_adder_16bit.v:15.32-21.14"
+          },
+          "port_directions": {
+            "i_a": "input",
+            "i_b": "input",
+            "i_cin": "input",
+            "o_cout": "output",
+            "o_sum": "output"
+          },
+          "connections": {
+            "i_a": [ 8 ],
+            "i_b": [ 24 ],
+            "i_cin": [ 62 ],
+            "o_cout": [ 63 ],
+            "o_sum": [ 40 ]
+          }
+        },
+        "adder_bit[7].u_pc_full_adder": {
+          "hide_name": 0,
+          "type": "pc_unit_full_adder",
+          "parameters": {
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "reconf/pc_unit/rtl/pc_unit_adder_16bit.v:15.32-21.14"
+          },
+          "port_directions": {
+            "i_a": "input",
+            "i_b": "input",
+            "i_cin": "input",
+            "o_cout": "output",
+            "o_sum": "output"
+          },
+          "connections": {
+            "i_a": [ 9 ],
+            "i_b": [ 25 ],
+            "i_cin": [ 63 ],
+            "o_cout": [ 64 ],
+            "o_sum": [ 41 ]
+          }
+        },
+        "adder_bit[8].u_pc_full_adder": {
+          "hide_name": 0,
+          "type": "pc_unit_full_adder",
+          "parameters": {
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "reconf/pc_unit/rtl/pc_unit_adder_16bit.v:15.32-21.14"
+          },
+          "port_directions": {
+            "i_a": "input",
+            "i_b": "input",
+            "i_cin": "input",
+            "o_cout": "output",
+            "o_sum": "output"
+          },
+          "connections": {
+            "i_a": [ 10 ],
+            "i_b": [ 26 ],
+            "i_cin": [ 64 ],
+            "o_cout": [ 65 ],
+            "o_sum": [ 42 ]
+          }
+        },
+        "adder_bit[9].u_pc_full_adder": {
+          "hide_name": 0,
+          "type": "pc_unit_full_adder",
+          "parameters": {
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "reconf/pc_unit/rtl/pc_unit_adder_16bit.v:15.32-21.14"
+          },
+          "port_directions": {
+            "i_a": "input",
+            "i_b": "input",
+            "i_cin": "input",
+            "o_cout": "output",
+            "o_sum": "output"
+          },
+          "connections": {
+            "i_a": [ 11 ],
+            "i_b": [ 27 ],
+            "i_cin": [ 65 ],
+            "o_cout": [ 51 ],
+            "o_sum": [ 43 ]
+          }
+        }
+      },
+      "netnames": {
+        "i_a": {
+          "hide_name": 0,
+          "bits": [ 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17 ],
+          "attributes": {
+            "src": "reconf/pc_unit/rtl/pc_unit_adder_16bit.v:2.24-2.27"
+          }
+        },
+        "i_b": {
+          "hide_name": 0,
+          "bits": [ 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33 ],
+          "attributes": {
+            "src": "reconf/pc_unit/rtl/pc_unit_adder_16bit.v:3.24-3.27"
+          }
+        },
+        "o_sum": {
+          "hide_name": 0,
+          "bits": [ 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49 ],
+          "attributes": {
+            "src": "reconf/pc_unit/rtl/pc_unit_adder_16bit.v:4.24-4.29"
+          }
+        },
+        "w_carry": {
+          "hide_name": 0,
+          "bits": [ "0", 50, 58, 59, 60, 61, 62, 63, 64, 65, 51, 52, 53, 54, 55, 56, 57 ],
+          "attributes": {
+            "src": "reconf/pc_unit/rtl/pc_unit_adder_16bit.v:7.17-7.24",
+            "unused_bits": "16"
+          }
+        }
+      }
+    },
+    "pc_unit_full_adder": {
+      "attributes": {
+        "src": "reconf/pc_unit/rtl/pc_unit_full_adder.v:1.1-12.10"
+      },
+      "ports": {
+        "i_a": {
+          "direction": "input",
+          "bits": [ 2 ]
+        },
+        "i_b": {
+          "direction": "input",
+          "bits": [ 3 ]
+        },
+        "i_cin": {
+          "direction": "input",
+          "bits": [ 4 ]
+        },
+        "o_sum": {
+          "direction": "output",
+          "bits": [ 5 ]
+        },
+        "o_cout": {
+          "direction": "output",
+          "bits": [ 6 ]
+        }
+      },
+      "cells": {
+        "$auto$simplemap.cc:106:simplemap_bitop$90": {
+          "hide_name": 1,
+          "type": "$_XOR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/pc_unit/rtl/pc_unit_full_adder.v:9.21-9.30"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 2 ],
+            "B": [ 3 ],
+            "Y": [ 7 ]
+          }
+        },
+        "$auto$simplemap.cc:106:simplemap_bitop$91": {
+          "hide_name": 1,
+          "type": "$_XOR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/pc_unit/rtl/pc_unit_full_adder.v:9.21-9.38"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 7 ],
+            "B": [ 4 ],
+            "Y": [ 5 ]
+          }
+        },
+        "$auto$simplemap.cc:106:simplemap_bitop$92": {
+          "hide_name": 1,
+          "type": "$_AND_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/pc_unit/rtl/pc_unit_full_adder.v:10.22-10.31"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 2 ],
+            "B": [ 3 ],
+            "Y": [ 8 ]
+          }
+        },
+        "$auto$simplemap.cc:106:simplemap_bitop$93": {
+          "hide_name": 1,
+          "type": "$_XOR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/pc_unit/rtl/pc_unit_full_adder.v:10.45-10.54"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 2 ],
+            "B": [ 3 ],
+            "Y": [ 9 ]
+          }
+        },
+        "$auto$simplemap.cc:106:simplemap_bitop$94": {
+          "hide_name": 1,
+          "type": "$_AND_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/pc_unit/rtl/pc_unit_full_adder.v:10.36-10.55"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 4 ],
+            "B": [ 9 ],
+            "Y": [ 10 ]
+          }
+        },
+        "$auto$simplemap.cc:106:simplemap_bitop$95": {
+          "hide_name": 1,
+          "type": "$_OR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/pc_unit/rtl/pc_unit_full_adder.v:10.21-10.56"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 8 ],
+            "B": [ 10 ],
+            "Y": [ 6 ]
+          }
+        }
+      },
+      "netnames": {
+        "$and$reconf/pc_unit/rtl/pc_unit_full_adder.v:10$3_Y": {
+          "hide_name": 1,
+          "bits": [ 8 ],
+          "attributes": {
+            "src": "reconf/pc_unit/rtl/pc_unit_full_adder.v:10.22-10.31"
+          }
+        },
+        "$and$reconf/pc_unit/rtl/pc_unit_full_adder.v:10$5_Y": {
+          "hide_name": 1,
+          "bits": [ 10 ],
+          "attributes": {
+            "src": "reconf/pc_unit/rtl/pc_unit_full_adder.v:10.36-10.55"
+          }
+        },
+        "$xor$reconf/pc_unit/rtl/pc_unit_full_adder.v:10$4_Y": {
+          "hide_name": 1,
+          "bits": [ 9 ],
+          "attributes": {
+            "src": "reconf/pc_unit/rtl/pc_unit_full_adder.v:10.45-10.54"
+          }
+        },
+        "$xor$reconf/pc_unit/rtl/pc_unit_full_adder.v:9$1_Y": {
+          "hide_name": 1,
+          "bits": [ 7 ],
+          "attributes": {
+            "src": "reconf/pc_unit/rtl/pc_unit_full_adder.v:9.21-9.30"
+          }
+        },
+        "i_a": {
+          "hide_name": 0,
+          "bits": [ 2 ],
+          "attributes": {
+            "src": "reconf/pc_unit/rtl/pc_unit_full_adder.v:2.17-2.20"
+          }
+        },
+        "i_b": {
+          "hide_name": 0,
+          "bits": [ 3 ],
+          "attributes": {
+            "src": "reconf/pc_unit/rtl/pc_unit_full_adder.v:3.17-3.20"
+          }
+        },
+        "i_cin": {
+          "hide_name": 0,
+          "bits": [ 4 ],
+          "attributes": {
+            "src": "reconf/pc_unit/rtl/pc_unit_full_adder.v:4.17-4.22"
+          }
+        },
+        "o_cout": {
+          "hide_name": 0,
+          "bits": [ 6 ],
+          "attributes": {
+            "src": "reconf/pc_unit/rtl/pc_unit_full_adder.v:6.17-6.23"
+          }
+        },
+        "o_sum": {
+          "hide_name": 0,
+          "bits": [ 5 ],
+          "attributes": {
+            "src": "reconf/pc_unit/rtl/pc_unit_full_adder.v:5.17-5.22"
+          }
+        }
+      }
+    }
+  }
+}

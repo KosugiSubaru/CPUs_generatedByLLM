@@ -1,0 +1,349 @@
+{
+  "creator": "Yosys 0.61+112 (git sha1 ac427a79b, clang++ 18.1.8 -fPIC -O3)",
+  "modules": {
+    "flag_reg": {
+      "attributes": {
+        "top": "00000000000000000000000000000001",
+        "src": "reconf/flag_reg/rtl/flag_reg.v:1.1-39.10"
+      },
+      "ports": {
+        "i_clk": {
+          "direction": "input",
+          "bits": [ 2 ]
+        },
+        "i_rst_n": {
+          "direction": "input",
+          "bits": [ 3 ]
+        },
+        "i_en": {
+          "direction": "input",
+          "bits": [ 4 ]
+        },
+        "i_flag_z": {
+          "direction": "input",
+          "bits": [ 5 ]
+        },
+        "i_flag_n": {
+          "direction": "input",
+          "bits": [ 6 ]
+        },
+        "i_flag_v": {
+          "direction": "input",
+          "bits": [ 7 ]
+        },
+        "o_flag_z": {
+          "direction": "output",
+          "bits": [ 8 ]
+        },
+        "o_flag_n": {
+          "direction": "output",
+          "bits": [ 9 ]
+        },
+        "o_flag_v": {
+          "direction": "output",
+          "bits": [ 10 ]
+        }
+      },
+      "cells": {
+        "gen_flag_bits[0].u_flag_bit": {
+          "hide_name": 0,
+          "type": "flag_reg_bit",
+          "parameters": {
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "reconf/flag_reg/rtl/flag_reg.v:29.26-35.14"
+          },
+          "port_directions": {
+            "i_clk": "input",
+            "i_en": "input",
+            "i_flag_in": "input",
+            "i_rst_n": "input",
+            "o_flag_out": "output"
+          },
+          "connections": {
+            "i_clk": [ 2 ],
+            "i_en": [ 4 ],
+            "i_flag_in": [ 7 ],
+            "i_rst_n": [ 3 ],
+            "o_flag_out": [ 10 ]
+          }
+        },
+        "gen_flag_bits[1].u_flag_bit": {
+          "hide_name": 0,
+          "type": "flag_reg_bit",
+          "parameters": {
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "reconf/flag_reg/rtl/flag_reg.v:29.26-35.14"
+          },
+          "port_directions": {
+            "i_clk": "input",
+            "i_en": "input",
+            "i_flag_in": "input",
+            "i_rst_n": "input",
+            "o_flag_out": "output"
+          },
+          "connections": {
+            "i_clk": [ 2 ],
+            "i_en": [ 4 ],
+            "i_flag_in": [ 6 ],
+            "i_rst_n": [ 3 ],
+            "o_flag_out": [ 9 ]
+          }
+        },
+        "gen_flag_bits[2].u_flag_bit": {
+          "hide_name": 0,
+          "type": "flag_reg_bit",
+          "parameters": {
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "reconf/flag_reg/rtl/flag_reg.v:29.26-35.14"
+          },
+          "port_directions": {
+            "i_clk": "input",
+            "i_en": "input",
+            "i_flag_in": "input",
+            "i_rst_n": "input",
+            "o_flag_out": "output"
+          },
+          "connections": {
+            "i_clk": [ 2 ],
+            "i_en": [ 4 ],
+            "i_flag_in": [ 5 ],
+            "i_rst_n": [ 3 ],
+            "o_flag_out": [ 8 ]
+          }
+        }
+      },
+      "netnames": {
+        "i_clk": {
+          "hide_name": 0,
+          "bits": [ 2 ],
+          "attributes": {
+            "src": "reconf/flag_reg/rtl/flag_reg.v:2.17-2.22"
+          }
+        },
+        "i_en": {
+          "hide_name": 0,
+          "bits": [ 4 ],
+          "attributes": {
+            "src": "reconf/flag_reg/rtl/flag_reg.v:4.17-4.21"
+          }
+        },
+        "i_flag_n": {
+          "hide_name": 0,
+          "bits": [ 6 ],
+          "attributes": {
+            "src": "reconf/flag_reg/rtl/flag_reg.v:6.17-6.25"
+          }
+        },
+        "i_flag_v": {
+          "hide_name": 0,
+          "bits": [ 7 ],
+          "attributes": {
+            "src": "reconf/flag_reg/rtl/flag_reg.v:7.17-7.25"
+          }
+        },
+        "i_flag_z": {
+          "hide_name": 0,
+          "bits": [ 5 ],
+          "attributes": {
+            "src": "reconf/flag_reg/rtl/flag_reg.v:5.17-5.25"
+          }
+        },
+        "i_rst_n": {
+          "hide_name": 0,
+          "bits": [ 3 ],
+          "attributes": {
+            "src": "reconf/flag_reg/rtl/flag_reg.v:3.17-3.24"
+          }
+        },
+        "o_flag_n": {
+          "hide_name": 0,
+          "bits": [ 9 ],
+          "attributes": {
+            "src": "reconf/flag_reg/rtl/flag_reg.v:9.17-9.25"
+          }
+        },
+        "o_flag_v": {
+          "hide_name": 0,
+          "bits": [ 10 ],
+          "attributes": {
+            "src": "reconf/flag_reg/rtl/flag_reg.v:10.17-10.25"
+          }
+        },
+        "o_flag_z": {
+          "hide_name": 0,
+          "bits": [ 8 ],
+          "attributes": {
+            "src": "reconf/flag_reg/rtl/flag_reg.v:8.17-8.25"
+          }
+        },
+        "w_flags_in": {
+          "hide_name": 0,
+          "bits": [ 7, 6, 5 ],
+          "attributes": {
+            "src": "reconf/flag_reg/rtl/flag_reg.v:13.16-13.26"
+          }
+        },
+        "w_flags_out": {
+          "hide_name": 0,
+          "bits": [ 10, 9, 8 ],
+          "attributes": {
+            "src": "reconf/flag_reg/rtl/flag_reg.v:14.16-14.27"
+          }
+        }
+      }
+    },
+    "flag_reg_bit": {
+      "attributes": {
+        "src": "reconf/flag_reg/rtl/flag_reg_bit.v:1.1-21.10"
+      },
+      "ports": {
+        "i_clk": {
+          "direction": "input",
+          "bits": [ 2 ]
+        },
+        "i_rst_n": {
+          "direction": "input",
+          "bits": [ 3 ]
+        },
+        "i_en": {
+          "direction": "input",
+          "bits": [ 4 ]
+        },
+        "i_flag_in": {
+          "direction": "input",
+          "bits": [ 5 ]
+        },
+        "o_flag_out": {
+          "direction": "output",
+          "bits": [ 6 ]
+        }
+      },
+      "cells": {
+        "$auto$ff.cc:337:slice$86": {
+          "hide_name": 1,
+          "type": "$_DFF_P_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/flag_reg/rtl/flag_reg_bit.v:13.5-19.8"
+          },
+          "port_directions": {
+            "C": "input",
+            "D": "input",
+            "Q": "output"
+          },
+          "connections": {
+            "C": [ 2 ],
+            "D": [ 7 ],
+            "Q": [ 6 ]
+          }
+        },
+        "$auto$simplemap.cc:298:simplemap_mux$84": {
+          "hide_name": 1,
+          "type": "$_MUX_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/flag_reg/rtl/flag_reg_bit.v:16.22-16.26|reconf/flag_reg/rtl/flag_reg_bit.v:16.18-18.12"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 6 ],
+            "B": [ 5 ],
+            "S": [ 4 ],
+            "Y": [ 8 ]
+          }
+        },
+        "$auto$simplemap.cc:298:simplemap_mux$85": {
+          "hide_name": 1,
+          "type": "$_MUX_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/flag_reg/rtl/flag_reg_bit.v:14.13-14.21|reconf/flag_reg/rtl/flag_reg_bit.v:14.9-18.12"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ "0" ],
+            "B": [ 8 ],
+            "S": [ 3 ],
+            "Y": [ 7 ]
+          }
+        }
+      },
+      "netnames": {
+        "$0\\r_data[0:0]": {
+          "hide_name": 1,
+          "bits": [ 7 ],
+          "attributes": {
+            "src": "reconf/flag_reg/rtl/flag_reg_bit.v:13.5-19.8"
+          }
+        },
+        "$procmux$3_Y": {
+          "hide_name": 1,
+          "bits": [ 8 ],
+          "attributes": {
+          }
+        },
+        "i_clk": {
+          "hide_name": 0,
+          "bits": [ 2 ],
+          "attributes": {
+            "src": "reconf/flag_reg/rtl/flag_reg_bit.v:2.17-2.22"
+          }
+        },
+        "i_en": {
+          "hide_name": 0,
+          "bits": [ 4 ],
+          "attributes": {
+            "src": "reconf/flag_reg/rtl/flag_reg_bit.v:4.17-4.21"
+          }
+        },
+        "i_flag_in": {
+          "hide_name": 0,
+          "bits": [ 5 ],
+          "attributes": {
+            "src": "reconf/flag_reg/rtl/flag_reg_bit.v:5.17-5.26"
+          }
+        },
+        "i_rst_n": {
+          "hide_name": 0,
+          "bits": [ 3 ],
+          "attributes": {
+            "src": "reconf/flag_reg/rtl/flag_reg_bit.v:3.17-3.24"
+          }
+        },
+        "o_flag_out": {
+          "hide_name": 0,
+          "bits": [ 6 ],
+          "attributes": {
+            "src": "reconf/flag_reg/rtl/flag_reg_bit.v:6.17-6.27"
+          }
+        },
+        "r_data": {
+          "hide_name": 0,
+          "bits": [ 6 ],
+          "attributes": {
+            "src": "reconf/flag_reg/rtl/flag_reg_bit.v:9.9-9.15"
+          }
+        }
+      }
+    }
+  }
+}

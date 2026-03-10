@@ -1,0 +1,1420 @@
+{
+  "creator": "Yosys 0.61+112 (git sha1 ac427a79b, clang++ 18.1.8 -fPIC -O3)",
+  "modules": {
+    "ctrl_unit_mixer": {
+      "attributes": {
+        "top": "00000000000000000000000000000001",
+        "src": "reconf/ctrl_unit/rtl/ctrl_unit_mixer.v:1.1-42.10"
+      },
+      "ports": {
+        "i_active": {
+          "direction": "input",
+          "bits": [ 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17 ]
+        },
+        "o_reg_wen": {
+          "direction": "output",
+          "bits": [ 18 ]
+        },
+        "o_dmem_wen": {
+          "direction": "output",
+          "bits": [ 13 ]
+        },
+        "o_alu_src_sel": {
+          "direction": "output",
+          "bits": [ 19 ]
+        },
+        "o_reg_wd_sel": {
+          "direction": "output",
+          "bits": [ 12, 20 ]
+        },
+        "o_alu_op": {
+          "direction": "output",
+          "bits": [ 21, 22, 23, 24 ]
+        }
+      },
+      "cells": {
+        "$auto$simplemap.cc:106:simplemap_bitop$112": {
+          "hide_name": 1,
+          "type": "$_OR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/ctrl_unit/rtl/ctrl_unit_mixer.v:12.24-12.49"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 2 ],
+            "B": [ 3 ],
+            "Y": [ 25 ]
+          }
+        },
+        "$auto$simplemap.cc:106:simplemap_bitop$113": {
+          "hide_name": 1,
+          "type": "$_OR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/ctrl_unit/rtl/ctrl_unit_mixer.v:12.24-12.63"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 25 ],
+            "B": [ 4 ],
+            "Y": [ 26 ]
+          }
+        },
+        "$auto$simplemap.cc:106:simplemap_bitop$114": {
+          "hide_name": 1,
+          "type": "$_OR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/ctrl_unit/rtl/ctrl_unit_mixer.v:12.24-12.77"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 26 ],
+            "B": [ 5 ],
+            "Y": [ 27 ]
+          }
+        },
+        "$auto$simplemap.cc:106:simplemap_bitop$115": {
+          "hide_name": 1,
+          "type": "$_OR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/ctrl_unit/rtl/ctrl_unit_mixer.v:12.24-13.35"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 27 ],
+            "B": [ 6 ],
+            "Y": [ 28 ]
+          }
+        },
+        "$auto$simplemap.cc:106:simplemap_bitop$116": {
+          "hide_name": 1,
+          "type": "$_OR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/ctrl_unit/rtl/ctrl_unit_mixer.v:12.24-13.49"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 28 ],
+            "B": [ 7 ],
+            "Y": [ 29 ]
+          }
+        },
+        "$auto$simplemap.cc:106:simplemap_bitop$117": {
+          "hide_name": 1,
+          "type": "$_OR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/ctrl_unit/rtl/ctrl_unit_mixer.v:12.24-13.63"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 29 ],
+            "B": [ 8 ],
+            "Y": [ 30 ]
+          }
+        },
+        "$auto$simplemap.cc:106:simplemap_bitop$118": {
+          "hide_name": 1,
+          "type": "$_OR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/ctrl_unit/rtl/ctrl_unit_mixer.v:12.24-13.77"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 30 ],
+            "B": [ 9 ],
+            "Y": [ 31 ]
+          }
+        },
+        "$auto$simplemap.cc:106:simplemap_bitop$119": {
+          "hide_name": 1,
+          "type": "$_OR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/ctrl_unit/rtl/ctrl_unit_mixer.v:12.24-14.35"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 31 ],
+            "B": [ 10 ],
+            "Y": [ 32 ]
+          }
+        },
+        "$auto$simplemap.cc:106:simplemap_bitop$120": {
+          "hide_name": 1,
+          "type": "$_OR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/ctrl_unit/rtl/ctrl_unit_mixer.v:12.24-14.49"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 32 ],
+            "B": [ 11 ],
+            "Y": [ 33 ]
+          }
+        },
+        "$auto$simplemap.cc:106:simplemap_bitop$121": {
+          "hide_name": 1,
+          "type": "$_OR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/ctrl_unit/rtl/ctrl_unit_mixer.v:12.24-14.64"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 33 ],
+            "B": [ 12 ],
+            "Y": [ 34 ]
+          }
+        },
+        "$auto$simplemap.cc:106:simplemap_bitop$122": {
+          "hide_name": 1,
+          "type": "$_OR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/ctrl_unit/rtl/ctrl_unit_mixer.v:12.24-14.79"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 34 ],
+            "B": [ 16 ],
+            "Y": [ 35 ]
+          }
+        },
+        "$auto$simplemap.cc:106:simplemap_bitop$123": {
+          "hide_name": 1,
+          "type": "$_OR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/ctrl_unit/rtl/ctrl_unit_mixer.v:12.24-14.94"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 35 ],
+            "B": [ 17 ],
+            "Y": [ 18 ]
+          }
+        },
+        "$auto$simplemap.cc:106:simplemap_bitop$124": {
+          "hide_name": 1,
+          "type": "$_OR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/ctrl_unit/rtl/ctrl_unit_mixer.v:22.28-22.53"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 10 ],
+            "B": [ 11 ],
+            "Y": [ 36 ]
+          }
+        },
+        "$auto$simplemap.cc:106:simplemap_bitop$125": {
+          "hide_name": 1,
+          "type": "$_OR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/ctrl_unit/rtl/ctrl_unit_mixer.v:22.28-22.68"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 36 ],
+            "B": [ 12 ],
+            "Y": [ 37 ]
+          }
+        },
+        "$auto$simplemap.cc:106:simplemap_bitop$126": {
+          "hide_name": 1,
+          "type": "$_OR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/ctrl_unit/rtl/ctrl_unit_mixer.v:22.28-22.83"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 37 ],
+            "B": [ 13 ],
+            "Y": [ 38 ]
+          }
+        },
+        "$auto$simplemap.cc:106:simplemap_bitop$127": {
+          "hide_name": 1,
+          "type": "$_OR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/ctrl_unit/rtl/ctrl_unit_mixer.v:22.28-22.98"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 38 ],
+            "B": [ 17 ],
+            "Y": [ 19 ]
+          }
+        },
+        "$auto$simplemap.cc:106:simplemap_bitop$128": {
+          "hide_name": 1,
+          "type": "$_OR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/ctrl_unit/rtl/ctrl_unit_mixer.v:27.30-27.57"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 16 ],
+            "B": [ 17 ],
+            "Y": [ 20 ]
+          }
+        },
+        "$auto$simplemap.cc:106:simplemap_bitop$129": {
+          "hide_name": 1,
+          "type": "$_OR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/ctrl_unit/rtl/ctrl_unit_mixer.v:31.24-31.49"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 2 ],
+            "B": [ 10 ],
+            "Y": [ 39 ]
+          }
+        },
+        "$auto$simplemap.cc:106:simplemap_bitop$130": {
+          "hide_name": 1,
+          "type": "$_OR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/ctrl_unit/rtl/ctrl_unit_mixer.v:31.24-31.64"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 39 ],
+            "B": [ 12 ],
+            "Y": [ 40 ]
+          }
+        },
+        "$auto$simplemap.cc:106:simplemap_bitop$131": {
+          "hide_name": 1,
+          "type": "$_OR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/ctrl_unit/rtl/ctrl_unit_mixer.v:31.24-31.79"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 40 ],
+            "B": [ 13 ],
+            "Y": [ 41 ]
+          }
+        },
+        "$auto$simplemap.cc:106:simplemap_bitop$132": {
+          "hide_name": 1,
+          "type": "$_OR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/ctrl_unit/rtl/ctrl_unit_mixer.v:31.24-31.94"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 41 ],
+            "B": [ 17 ],
+            "Y": [ 42 ]
+          }
+        },
+        "$auto$simplemap.cc:298:simplemap_mux$133": {
+          "hide_name": 1,
+          "type": "$_MUX_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/ctrl_unit/rtl/ctrl_unit_mixer.v:39.23-40.30"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ "0" ],
+            "B": [ "1" ],
+            "S": [ 11 ],
+            "Y": [ 43 ]
+          }
+        },
+        "$auto$simplemap.cc:298:simplemap_mux$134": {
+          "hide_name": 1,
+          "type": "$_MUX_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/ctrl_unit/rtl/ctrl_unit_mixer.v:39.23-40.30"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ "0" ],
+            "B": [ "0" ],
+            "S": [ 11 ],
+            "Y": [ 44 ]
+          }
+        },
+        "$auto$simplemap.cc:298:simplemap_mux$135": {
+          "hide_name": 1,
+          "type": "$_MUX_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/ctrl_unit/rtl/ctrl_unit_mixer.v:39.23-40.30"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ "0" ],
+            "B": [ "0" ],
+            "S": [ 11 ],
+            "Y": [ 45 ]
+          }
+        },
+        "$auto$simplemap.cc:298:simplemap_mux$136": {
+          "hide_name": 1,
+          "type": "$_MUX_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/ctrl_unit/rtl/ctrl_unit_mixer.v:39.23-40.30"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ "0" ],
+            "B": [ "1" ],
+            "S": [ 11 ],
+            "Y": [ 46 ]
+          }
+        },
+        "$auto$simplemap.cc:298:simplemap_mux$137": {
+          "hide_name": 1,
+          "type": "$_MUX_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/ctrl_unit/rtl/ctrl_unit_mixer.v:38.23-40.30"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 43 ],
+            "B": [ "1" ],
+            "S": [ 9 ],
+            "Y": [ 47 ]
+          }
+        },
+        "$auto$simplemap.cc:298:simplemap_mux$138": {
+          "hide_name": 1,
+          "type": "$_MUX_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/ctrl_unit/rtl/ctrl_unit_mixer.v:38.23-40.30"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 44 ],
+            "B": [ "1" ],
+            "S": [ 9 ],
+            "Y": [ 48 ]
+          }
+        },
+        "$auto$simplemap.cc:298:simplemap_mux$139": {
+          "hide_name": 1,
+          "type": "$_MUX_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/ctrl_unit/rtl/ctrl_unit_mixer.v:38.23-40.30"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 45 ],
+            "B": [ "1" ],
+            "S": [ 9 ],
+            "Y": [ 49 ]
+          }
+        },
+        "$auto$simplemap.cc:298:simplemap_mux$140": {
+          "hide_name": 1,
+          "type": "$_MUX_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/ctrl_unit/rtl/ctrl_unit_mixer.v:38.23-40.30"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 46 ],
+            "B": [ "0" ],
+            "S": [ 9 ],
+            "Y": [ 50 ]
+          }
+        },
+        "$auto$simplemap.cc:298:simplemap_mux$141": {
+          "hide_name": 1,
+          "type": "$_MUX_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/ctrl_unit/rtl/ctrl_unit_mixer.v:37.23-40.30"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 47 ],
+            "B": [ "0" ],
+            "S": [ 8 ],
+            "Y": [ 51 ]
+          }
+        },
+        "$auto$simplemap.cc:298:simplemap_mux$142": {
+          "hide_name": 1,
+          "type": "$_MUX_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/ctrl_unit/rtl/ctrl_unit_mixer.v:37.23-40.30"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 48 ],
+            "B": [ "1" ],
+            "S": [ 8 ],
+            "Y": [ 52 ]
+          }
+        },
+        "$auto$simplemap.cc:298:simplemap_mux$143": {
+          "hide_name": 1,
+          "type": "$_MUX_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/ctrl_unit/rtl/ctrl_unit_mixer.v:37.23-40.30"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 49 ],
+            "B": [ "1" ],
+            "S": [ 8 ],
+            "Y": [ 53 ]
+          }
+        },
+        "$auto$simplemap.cc:298:simplemap_mux$144": {
+          "hide_name": 1,
+          "type": "$_MUX_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/ctrl_unit/rtl/ctrl_unit_mixer.v:37.23-40.30"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 50 ],
+            "B": [ "0" ],
+            "S": [ 8 ],
+            "Y": [ 54 ]
+          }
+        },
+        "$auto$simplemap.cc:298:simplemap_mux$145": {
+          "hide_name": 1,
+          "type": "$_MUX_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/ctrl_unit/rtl/ctrl_unit_mixer.v:36.23-40.30"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 51 ],
+            "B": [ "1" ],
+            "S": [ 7 ],
+            "Y": [ 55 ]
+          }
+        },
+        "$auto$simplemap.cc:298:simplemap_mux$146": {
+          "hide_name": 1,
+          "type": "$_MUX_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/ctrl_unit/rtl/ctrl_unit_mixer.v:36.23-40.30"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 52 ],
+            "B": [ "0" ],
+            "S": [ 7 ],
+            "Y": [ 56 ]
+          }
+        },
+        "$auto$simplemap.cc:298:simplemap_mux$147": {
+          "hide_name": 1,
+          "type": "$_MUX_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/ctrl_unit/rtl/ctrl_unit_mixer.v:36.23-40.30"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 53 ],
+            "B": [ "1" ],
+            "S": [ 7 ],
+            "Y": [ 57 ]
+          }
+        },
+        "$auto$simplemap.cc:298:simplemap_mux$148": {
+          "hide_name": 1,
+          "type": "$_MUX_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/ctrl_unit/rtl/ctrl_unit_mixer.v:36.23-40.30"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 54 ],
+            "B": [ "0" ],
+            "S": [ 7 ],
+            "Y": [ 58 ]
+          }
+        },
+        "$auto$simplemap.cc:298:simplemap_mux$149": {
+          "hide_name": 1,
+          "type": "$_MUX_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/ctrl_unit/rtl/ctrl_unit_mixer.v:35.23-40.30"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 55 ],
+            "B": [ "0" ],
+            "S": [ 6 ],
+            "Y": [ 59 ]
+          }
+        },
+        "$auto$simplemap.cc:298:simplemap_mux$150": {
+          "hide_name": 1,
+          "type": "$_MUX_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/ctrl_unit/rtl/ctrl_unit_mixer.v:35.23-40.30"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 56 ],
+            "B": [ "0" ],
+            "S": [ 6 ],
+            "Y": [ 60 ]
+          }
+        },
+        "$auto$simplemap.cc:298:simplemap_mux$151": {
+          "hide_name": 1,
+          "type": "$_MUX_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/ctrl_unit/rtl/ctrl_unit_mixer.v:35.23-40.30"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 57 ],
+            "B": [ "1" ],
+            "S": [ 6 ],
+            "Y": [ 61 ]
+          }
+        },
+        "$auto$simplemap.cc:298:simplemap_mux$152": {
+          "hide_name": 1,
+          "type": "$_MUX_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/ctrl_unit/rtl/ctrl_unit_mixer.v:35.23-40.30"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 58 ],
+            "B": [ "0" ],
+            "S": [ 6 ],
+            "Y": [ 62 ]
+          }
+        },
+        "$auto$simplemap.cc:298:simplemap_mux$153": {
+          "hide_name": 1,
+          "type": "$_MUX_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/ctrl_unit/rtl/ctrl_unit_mixer.v:34.23-40.30"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 59 ],
+            "B": [ "1" ],
+            "S": [ 5 ],
+            "Y": [ 63 ]
+          }
+        },
+        "$auto$simplemap.cc:298:simplemap_mux$154": {
+          "hide_name": 1,
+          "type": "$_MUX_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/ctrl_unit/rtl/ctrl_unit_mixer.v:34.23-40.30"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 60 ],
+            "B": [ "1" ],
+            "S": [ 5 ],
+            "Y": [ 64 ]
+          }
+        },
+        "$auto$simplemap.cc:298:simplemap_mux$155": {
+          "hide_name": 1,
+          "type": "$_MUX_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/ctrl_unit/rtl/ctrl_unit_mixer.v:34.23-40.30"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 61 ],
+            "B": [ "0" ],
+            "S": [ 5 ],
+            "Y": [ 65 ]
+          }
+        },
+        "$auto$simplemap.cc:298:simplemap_mux$156": {
+          "hide_name": 1,
+          "type": "$_MUX_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/ctrl_unit/rtl/ctrl_unit_mixer.v:34.23-40.30"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 62 ],
+            "B": [ "0" ],
+            "S": [ 5 ],
+            "Y": [ 66 ]
+          }
+        },
+        "$auto$simplemap.cc:298:simplemap_mux$157": {
+          "hide_name": 1,
+          "type": "$_MUX_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/ctrl_unit/rtl/ctrl_unit_mixer.v:33.23-40.30"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 63 ],
+            "B": [ "0" ],
+            "S": [ 4 ],
+            "Y": [ 67 ]
+          }
+        },
+        "$auto$simplemap.cc:298:simplemap_mux$158": {
+          "hide_name": 1,
+          "type": "$_MUX_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/ctrl_unit/rtl/ctrl_unit_mixer.v:33.23-40.30"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 64 ],
+            "B": [ "1" ],
+            "S": [ 4 ],
+            "Y": [ 68 ]
+          }
+        },
+        "$auto$simplemap.cc:298:simplemap_mux$159": {
+          "hide_name": 1,
+          "type": "$_MUX_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/ctrl_unit/rtl/ctrl_unit_mixer.v:33.23-40.30"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 65 ],
+            "B": [ "0" ],
+            "S": [ 4 ],
+            "Y": [ 69 ]
+          }
+        },
+        "$auto$simplemap.cc:298:simplemap_mux$160": {
+          "hide_name": 1,
+          "type": "$_MUX_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/ctrl_unit/rtl/ctrl_unit_mixer.v:33.23-40.30"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 66 ],
+            "B": [ "0" ],
+            "S": [ 4 ],
+            "Y": [ 70 ]
+          }
+        },
+        "$auto$simplemap.cc:298:simplemap_mux$161": {
+          "hide_name": 1,
+          "type": "$_MUX_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/ctrl_unit/rtl/ctrl_unit_mixer.v:32.23-40.30"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 67 ],
+            "B": [ "1" ],
+            "S": [ 3 ],
+            "Y": [ 71 ]
+          }
+        },
+        "$auto$simplemap.cc:298:simplemap_mux$162": {
+          "hide_name": 1,
+          "type": "$_MUX_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/ctrl_unit/rtl/ctrl_unit_mixer.v:32.23-40.30"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 68 ],
+            "B": [ "0" ],
+            "S": [ 3 ],
+            "Y": [ 72 ]
+          }
+        },
+        "$auto$simplemap.cc:298:simplemap_mux$163": {
+          "hide_name": 1,
+          "type": "$_MUX_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/ctrl_unit/rtl/ctrl_unit_mixer.v:32.23-40.30"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 69 ],
+            "B": [ "0" ],
+            "S": [ 3 ],
+            "Y": [ 73 ]
+          }
+        },
+        "$auto$simplemap.cc:298:simplemap_mux$164": {
+          "hide_name": 1,
+          "type": "$_MUX_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/ctrl_unit/rtl/ctrl_unit_mixer.v:32.23-40.30"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 70 ],
+            "B": [ "0" ],
+            "S": [ 3 ],
+            "Y": [ 74 ]
+          }
+        },
+        "$auto$simplemap.cc:298:simplemap_mux$165": {
+          "hide_name": 1,
+          "type": "$_MUX_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/ctrl_unit/rtl/ctrl_unit_mixer.v:31.23-40.30"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 71 ],
+            "B": [ "0" ],
+            "S": [ 42 ],
+            "Y": [ 21 ]
+          }
+        },
+        "$auto$simplemap.cc:298:simplemap_mux$166": {
+          "hide_name": 1,
+          "type": "$_MUX_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/ctrl_unit/rtl/ctrl_unit_mixer.v:31.23-40.30"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 72 ],
+            "B": [ "0" ],
+            "S": [ 42 ],
+            "Y": [ 22 ]
+          }
+        },
+        "$auto$simplemap.cc:298:simplemap_mux$167": {
+          "hide_name": 1,
+          "type": "$_MUX_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/ctrl_unit/rtl/ctrl_unit_mixer.v:31.23-40.30"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 73 ],
+            "B": [ "0" ],
+            "S": [ 42 ],
+            "Y": [ 23 ]
+          }
+        },
+        "$auto$simplemap.cc:298:simplemap_mux$168": {
+          "hide_name": 1,
+          "type": "$_MUX_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/ctrl_unit/rtl/ctrl_unit_mixer.v:31.23-40.30"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 74 ],
+            "B": [ "0" ],
+            "S": [ 42 ],
+            "Y": [ 24 ]
+          }
+        }
+      },
+      "netnames": {
+        "$or$reconf/ctrl_unit/rtl/ctrl_unit_mixer.v:12$10_Y": {
+          "hide_name": 1,
+          "bits": [ 28 ],
+          "attributes": {
+            "src": "reconf/ctrl_unit/rtl/ctrl_unit_mixer.v:12.24-13.35"
+          }
+        },
+        "$or$reconf/ctrl_unit/rtl/ctrl_unit_mixer.v:12$11_Y": {
+          "hide_name": 1,
+          "bits": [ 29 ],
+          "attributes": {
+            "src": "reconf/ctrl_unit/rtl/ctrl_unit_mixer.v:12.24-13.49"
+          }
+        },
+        "$or$reconf/ctrl_unit/rtl/ctrl_unit_mixer.v:12$12_Y": {
+          "hide_name": 1,
+          "bits": [ 30 ],
+          "attributes": {
+            "src": "reconf/ctrl_unit/rtl/ctrl_unit_mixer.v:12.24-13.63"
+          }
+        },
+        "$or$reconf/ctrl_unit/rtl/ctrl_unit_mixer.v:12$13_Y": {
+          "hide_name": 1,
+          "bits": [ 31 ],
+          "attributes": {
+            "src": "reconf/ctrl_unit/rtl/ctrl_unit_mixer.v:12.24-13.77"
+          }
+        },
+        "$or$reconf/ctrl_unit/rtl/ctrl_unit_mixer.v:12$14_Y": {
+          "hide_name": 1,
+          "bits": [ 32 ],
+          "attributes": {
+            "src": "reconf/ctrl_unit/rtl/ctrl_unit_mixer.v:12.24-14.35"
+          }
+        },
+        "$or$reconf/ctrl_unit/rtl/ctrl_unit_mixer.v:12$15_Y": {
+          "hide_name": 1,
+          "bits": [ 33 ],
+          "attributes": {
+            "src": "reconf/ctrl_unit/rtl/ctrl_unit_mixer.v:12.24-14.49"
+          }
+        },
+        "$or$reconf/ctrl_unit/rtl/ctrl_unit_mixer.v:12$16_Y": {
+          "hide_name": 1,
+          "bits": [ 34 ],
+          "attributes": {
+            "src": "reconf/ctrl_unit/rtl/ctrl_unit_mixer.v:12.24-14.64"
+          }
+        },
+        "$or$reconf/ctrl_unit/rtl/ctrl_unit_mixer.v:12$17_Y": {
+          "hide_name": 1,
+          "bits": [ 35 ],
+          "attributes": {
+            "src": "reconf/ctrl_unit/rtl/ctrl_unit_mixer.v:12.24-14.79"
+          }
+        },
+        "$or$reconf/ctrl_unit/rtl/ctrl_unit_mixer.v:12$7_Y": {
+          "hide_name": 1,
+          "bits": [ 25 ],
+          "attributes": {
+            "src": "reconf/ctrl_unit/rtl/ctrl_unit_mixer.v:12.24-12.49"
+          }
+        },
+        "$or$reconf/ctrl_unit/rtl/ctrl_unit_mixer.v:12$8_Y": {
+          "hide_name": 1,
+          "bits": [ 26 ],
+          "attributes": {
+            "src": "reconf/ctrl_unit/rtl/ctrl_unit_mixer.v:12.24-12.63"
+          }
+        },
+        "$or$reconf/ctrl_unit/rtl/ctrl_unit_mixer.v:12$9_Y": {
+          "hide_name": 1,
+          "bits": [ 27 ],
+          "attributes": {
+            "src": "reconf/ctrl_unit/rtl/ctrl_unit_mixer.v:12.24-12.77"
+          }
+        },
+        "$or$reconf/ctrl_unit/rtl/ctrl_unit_mixer.v:22$19_Y": {
+          "hide_name": 1,
+          "bits": [ 36 ],
+          "attributes": {
+            "src": "reconf/ctrl_unit/rtl/ctrl_unit_mixer.v:22.28-22.53"
+          }
+        },
+        "$or$reconf/ctrl_unit/rtl/ctrl_unit_mixer.v:22$20_Y": {
+          "hide_name": 1,
+          "bits": [ 37 ],
+          "attributes": {
+            "src": "reconf/ctrl_unit/rtl/ctrl_unit_mixer.v:22.28-22.68"
+          }
+        },
+        "$or$reconf/ctrl_unit/rtl/ctrl_unit_mixer.v:22$21_Y": {
+          "hide_name": 1,
+          "bits": [ 38 ],
+          "attributes": {
+            "src": "reconf/ctrl_unit/rtl/ctrl_unit_mixer.v:22.28-22.83"
+          }
+        },
+        "$or$reconf/ctrl_unit/rtl/ctrl_unit_mixer.v:31$24_Y": {
+          "hide_name": 1,
+          "bits": [ 39 ],
+          "attributes": {
+            "src": "reconf/ctrl_unit/rtl/ctrl_unit_mixer.v:31.24-31.49"
+          }
+        },
+        "$or$reconf/ctrl_unit/rtl/ctrl_unit_mixer.v:31$25_Y": {
+          "hide_name": 1,
+          "bits": [ 40 ],
+          "attributes": {
+            "src": "reconf/ctrl_unit/rtl/ctrl_unit_mixer.v:31.24-31.64"
+          }
+        },
+        "$or$reconf/ctrl_unit/rtl/ctrl_unit_mixer.v:31$26_Y": {
+          "hide_name": 1,
+          "bits": [ 41 ],
+          "attributes": {
+            "src": "reconf/ctrl_unit/rtl/ctrl_unit_mixer.v:31.24-31.79"
+          }
+        },
+        "$or$reconf/ctrl_unit/rtl/ctrl_unit_mixer.v:31$27_Y": {
+          "hide_name": 1,
+          "bits": [ 42 ],
+          "attributes": {
+            "src": "reconf/ctrl_unit/rtl/ctrl_unit_mixer.v:31.24-31.94"
+          }
+        },
+        "$ternary$reconf/ctrl_unit/rtl/ctrl_unit_mixer.v:32$35_Y": {
+          "hide_name": 1,
+          "bits": [ 71, 72, 73, 74 ],
+          "attributes": {
+            "src": "reconf/ctrl_unit/rtl/ctrl_unit_mixer.v:32.23-40.30"
+          }
+        },
+        "$ternary$reconf/ctrl_unit/rtl/ctrl_unit_mixer.v:33$34_Y": {
+          "hide_name": 1,
+          "bits": [ 67, 68, 69, 70 ],
+          "attributes": {
+            "src": "reconf/ctrl_unit/rtl/ctrl_unit_mixer.v:33.23-40.30"
+          }
+        },
+        "$ternary$reconf/ctrl_unit/rtl/ctrl_unit_mixer.v:34$33_Y": {
+          "hide_name": 1,
+          "bits": [ 63, 64, 65, 66 ],
+          "attributes": {
+            "src": "reconf/ctrl_unit/rtl/ctrl_unit_mixer.v:34.23-40.30"
+          }
+        },
+        "$ternary$reconf/ctrl_unit/rtl/ctrl_unit_mixer.v:35$32_Y": {
+          "hide_name": 1,
+          "bits": [ 59, 60, 61, 62 ],
+          "attributes": {
+            "src": "reconf/ctrl_unit/rtl/ctrl_unit_mixer.v:35.23-40.30"
+          }
+        },
+        "$ternary$reconf/ctrl_unit/rtl/ctrl_unit_mixer.v:36$31_Y": {
+          "hide_name": 1,
+          "bits": [ 55, 56, 57, 58 ],
+          "attributes": {
+            "src": "reconf/ctrl_unit/rtl/ctrl_unit_mixer.v:36.23-40.30"
+          }
+        },
+        "$ternary$reconf/ctrl_unit/rtl/ctrl_unit_mixer.v:37$30_Y": {
+          "hide_name": 1,
+          "bits": [ 51, 52, 53, 54 ],
+          "attributes": {
+            "src": "reconf/ctrl_unit/rtl/ctrl_unit_mixer.v:37.23-40.30"
+          }
+        },
+        "$ternary$reconf/ctrl_unit/rtl/ctrl_unit_mixer.v:38$29_Y": {
+          "hide_name": 1,
+          "bits": [ 47, 48, 49, 50 ],
+          "attributes": {
+            "src": "reconf/ctrl_unit/rtl/ctrl_unit_mixer.v:38.23-40.30"
+          }
+        },
+        "$ternary$reconf/ctrl_unit/rtl/ctrl_unit_mixer.v:39$28_Y": {
+          "hide_name": 1,
+          "bits": [ 43, 44, 45, 46 ],
+          "attributes": {
+            "src": "reconf/ctrl_unit/rtl/ctrl_unit_mixer.v:39.23-40.30"
+          }
+        },
+        "i_active": {
+          "hide_name": 0,
+          "bits": [ 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17 ],
+          "attributes": {
+            "src": "reconf/ctrl_unit/rtl/ctrl_unit_mixer.v:2.24-2.32"
+          }
+        },
+        "o_alu_op": {
+          "hide_name": 0,
+          "bits": [ 21, 22, 23, 24 ],
+          "attributes": {
+            "src": "reconf/ctrl_unit/rtl/ctrl_unit_mixer.v:7.23-7.31"
+          }
+        },
+        "o_alu_src_sel": {
+          "hide_name": 0,
+          "bits": [ 19 ],
+          "attributes": {
+            "src": "reconf/ctrl_unit/rtl/ctrl_unit_mixer.v:5.23-5.36"
+          }
+        },
+        "o_dmem_wen": {
+          "hide_name": 0,
+          "bits": [ 13 ],
+          "attributes": {
+            "src": "reconf/ctrl_unit/rtl/ctrl_unit_mixer.v:4.23-4.33"
+          }
+        },
+        "o_reg_wd_sel": {
+          "hide_name": 0,
+          "bits": [ 12, 20 ],
+          "attributes": {
+            "src": "reconf/ctrl_unit/rtl/ctrl_unit_mixer.v:6.23-6.35"
+          }
+        },
+        "o_reg_wen": {
+          "hide_name": 0,
+          "bits": [ 18 ],
+          "attributes": {
+            "src": "reconf/ctrl_unit/rtl/ctrl_unit_mixer.v:3.23-3.32"
+          }
+        }
+      }
+    }
+  }
+}

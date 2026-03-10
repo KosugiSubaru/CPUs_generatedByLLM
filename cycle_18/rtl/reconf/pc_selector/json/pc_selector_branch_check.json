@@ -1,0 +1,240 @@
+{
+  "creator": "Yosys 0.61+112 (git sha1 ac427a79b, clang++ 18.1.8 -fPIC -O3)",
+  "modules": {
+    "pc_selector_branch_check": {
+      "attributes": {
+        "top": "00000000000000000000000000000001",
+        "src": "reconf/pc_selector/rtl/pc_selector_branch_check.v:1.1-28.10"
+      },
+      "ports": {
+        "i_flag_z": {
+          "direction": "input",
+          "bits": [ 2 ]
+        },
+        "i_flag_n": {
+          "direction": "input",
+          "bits": [ 3 ]
+        },
+        "i_flag_v": {
+          "direction": "input",
+          "bits": [ 4 ]
+        },
+        "i_branch_en": {
+          "direction": "input",
+          "bits": [ 5 ]
+        },
+        "i_branch_type": {
+          "direction": "input",
+          "bits": [ 6 ]
+        },
+        "o_branch_taken": {
+          "direction": "output",
+          "bits": [ 7 ]
+        }
+      },
+      "cells": {
+        "$auto$simplemap.cc:106:simplemap_bitop$87": {
+          "hide_name": 1,
+          "type": "$_XOR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/pc_selector/rtl/pc_selector_branch_check.v:14.25-14.44"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 3 ],
+            "B": [ 4 ],
+            "Y": [ 8 ]
+          }
+        },
+        "$auto$simplemap.cc:106:simplemap_bitop$88": {
+          "hide_name": 1,
+          "type": "$_AND_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/pc_selector/rtl/pc_selector_branch_check.v:26.29-26.53"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 5 ],
+            "B": [ 9 ],
+            "Y": [ 7 ]
+          }
+        },
+        "u_mux_cond": {
+          "hide_name": 0,
+          "type": "pc_selector_mux2_1bit",
+          "parameters": {
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "reconf/pc_selector/rtl/pc_selector_branch_check.v:18.27-23.6"
+          },
+          "port_directions": {
+            "i_d0": "input",
+            "i_d1": "input",
+            "i_sel": "input",
+            "o_q": "output"
+          },
+          "connections": {
+            "i_d0": [ 8 ],
+            "i_d1": [ 2 ],
+            "i_sel": [ 6 ],
+            "o_q": [ 9 ]
+          }
+        }
+      },
+      "netnames": {
+        "i_branch_en": {
+          "hide_name": 0,
+          "bits": [ 5 ],
+          "attributes": {
+            "src": "reconf/pc_selector/rtl/pc_selector_branch_check.v:5.16-5.27"
+          }
+        },
+        "i_branch_type": {
+          "hide_name": 0,
+          "bits": [ 6 ],
+          "attributes": {
+            "src": "reconf/pc_selector/rtl/pc_selector_branch_check.v:6.16-6.29"
+          }
+        },
+        "i_flag_n": {
+          "hide_name": 0,
+          "bits": [ 3 ],
+          "attributes": {
+            "src": "reconf/pc_selector/rtl/pc_selector_branch_check.v:3.16-3.24"
+          }
+        },
+        "i_flag_v": {
+          "hide_name": 0,
+          "bits": [ 4 ],
+          "attributes": {
+            "src": "reconf/pc_selector/rtl/pc_selector_branch_check.v:4.16-4.24"
+          }
+        },
+        "i_flag_z": {
+          "hide_name": 0,
+          "bits": [ 2 ],
+          "attributes": {
+            "src": "reconf/pc_selector/rtl/pc_selector_branch_check.v:2.16-2.24"
+          }
+        },
+        "o_branch_taken": {
+          "hide_name": 0,
+          "bits": [ 7 ],
+          "attributes": {
+            "src": "reconf/pc_selector/rtl/pc_selector_branch_check.v:7.17-7.31"
+          }
+        },
+        "w_cond_blt": {
+          "hide_name": 0,
+          "bits": [ 8 ],
+          "attributes": {
+            "src": "reconf/pc_selector/rtl/pc_selector_branch_check.v:10.10-10.20"
+          }
+        },
+        "w_cond_bz": {
+          "hide_name": 0,
+          "bits": [ 2 ],
+          "attributes": {
+            "src": "reconf/pc_selector/rtl/pc_selector_branch_check.v:11.10-11.19"
+          }
+        },
+        "w_cond_met": {
+          "hide_name": 0,
+          "bits": [ 9 ],
+          "attributes": {
+            "src": "reconf/pc_selector/rtl/pc_selector_branch_check.v:12.10-12.20"
+          }
+        }
+      }
+    },
+    "pc_selector_mux2_1bit": {
+      "attributes": {
+        "src": "reconf/pc_selector/rtl/pc_selector_mux2_1bit.v:1.1-10.10"
+      },
+      "ports": {
+        "i_sel": {
+          "direction": "input",
+          "bits": [ 2 ]
+        },
+        "i_d0": {
+          "direction": "input",
+          "bits": [ 3 ]
+        },
+        "i_d1": {
+          "direction": "input",
+          "bits": [ 4 ]
+        },
+        "o_q": {
+          "direction": "output",
+          "bits": [ 5 ]
+        }
+      },
+      "cells": {
+        "$auto$simplemap.cc:298:simplemap_mux$86": {
+          "hide_name": 1,
+          "type": "$_MUX_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/pc_selector/rtl/pc_selector_mux2_1bit.v:8.18-8.47"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 3 ],
+            "B": [ 4 ],
+            "S": [ 2 ],
+            "Y": [ 5 ]
+          }
+        }
+      },
+      "netnames": {
+        "i_d0": {
+          "hide_name": 0,
+          "bits": [ 3 ],
+          "attributes": {
+            "src": "reconf/pc_selector/rtl/pc_selector_mux2_1bit.v:3.16-3.20"
+          }
+        },
+        "i_d1": {
+          "hide_name": 0,
+          "bits": [ 4 ],
+          "attributes": {
+            "src": "reconf/pc_selector/rtl/pc_selector_mux2_1bit.v:4.16-4.20"
+          }
+        },
+        "i_sel": {
+          "hide_name": 0,
+          "bits": [ 2 ],
+          "attributes": {
+            "src": "reconf/pc_selector/rtl/pc_selector_mux2_1bit.v:2.16-2.21"
+          }
+        },
+        "o_q": {
+          "hide_name": 0,
+          "bits": [ 5 ],
+          "attributes": {
+            "src": "reconf/pc_selector/rtl/pc_selector_mux2_1bit.v:5.17-5.20"
+          }
+        }
+      }
+    }
+  }
+}

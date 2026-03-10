@@ -1,0 +1,213 @@
+
+ /----------------------------------------------------------------------------\
+ |  yosys -- Yosys Open SYnthesis Suite                                       |
+ |  Copyright (C) 2012 - 2026  Claire Xenia Wolf <claire@yosyshq.com>         |
+ |  Distributed under an ISC-like license, type "license" to see terms        |
+ \----------------------------------------------------------------------------/
+ Yosys 0.61+112 (git sha1 ac427a79b, clang++ 18.1.8 -fPIC -O3)
+
+-- Executing script file `reconf/pc_reg/json/pc_reg.ys' --
+
+1. Executing Verilog-2005 frontend: reconf/pc_reg/rtl/pc_reg_dff.v
+Parsing Verilog input from `reconf/pc_reg/rtl/pc_reg_dff.v' to AST representation.
+Generating RTLIL representation for module `\pc_reg_dff'.
+Successfully finished Verilog frontend.
+
+2. Executing Verilog-2005 frontend: reconf/pc_reg/rtl/pc_reg.v
+Parsing Verilog input from `reconf/pc_reg/rtl/pc_reg.v' to AST representation.
+Generating RTLIL representation for module `\pc_reg'.
+Successfully finished Verilog frontend.
+
+3. Executing Verilog-2005 frontend: reconf/pc_reg/rtl/pc_reg_4bit.v
+Parsing Verilog input from `reconf/pc_reg/rtl/pc_reg_4bit.v' to AST representation.
+Generating RTLIL representation for module `\pc_reg_4bit'.
+Successfully finished Verilog frontend.
+
+4. Executing HIERARCHY pass (managing design hierarchy).
+
+4.1. Analyzing design hierarchy..
+Top module:  \pc_reg
+Used module:     \pc_reg_4bit
+Used module:         \pc_reg_dff
+
+4.2. Analyzing design hierarchy..
+Top module:  \pc_reg
+Used module:     \pc_reg_4bit
+Used module:         \pc_reg_dff
+Removed 0 unused modules.
+
+5. Executing PROC pass (convert processes to netlists).
+
+5.1. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Cleaned up 0 empty switches.
+
+5.2. Executing PROC_RMDEAD pass (remove dead branches from decision trees).
+Marked 1 switch rules as full_case in process $proc$reconf/pc_reg/rtl/pc_reg_dff.v:8$1 in module pc_reg_dff.
+Removed a total of 0 dead cases.
+
+5.3. Executing PROC_PRUNE pass (remove redundant assignments in processes).
+Removed 1 redundant assignment.
+Promoted 0 assignments to connections.
+
+5.4. Executing PROC_INIT pass (extract init attributes).
+
+5.5. Executing PROC_ARST pass (detect async resets in processes).
+Found async reset \i_rst_n in `\pc_reg_dff.$proc$reconf/pc_reg/rtl/pc_reg_dff.v:8$1'.
+
+5.6. Executing PROC_ROM pass (convert switches to ROMs).
+Converted 0 switches.
+
+5.7. Executing PROC_MUX pass (convert decision trees to multiplexers).
+Creating decoders for process `\pc_reg_dff.$proc$reconf/pc_reg/rtl/pc_reg_dff.v:8$1'.
+     1/1: $0\o_q[0:0]
+
+5.8. Executing PROC_DLATCH pass (convert process syncs to latches).
+
+5.9. Executing PROC_DFF pass (convert process syncs to FFs).
+Creating register for signal `\pc_reg_dff.\o_q' using process `\pc_reg_dff.$proc$reconf/pc_reg/rtl/pc_reg_dff.v:8$1'.
+  created $adff cell `$procdff$7' with positive edge clock and positive level reset.
+
+5.10. Executing PROC_MEMWR pass (convert process memory writes to cells).
+
+5.11. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Removing empty process `pc_reg_dff.$proc$reconf/pc_reg/rtl/pc_reg_dff.v:8$1'.
+Cleaned up 0 empty switches.
+
+5.12. Executing OPT_EXPR pass (perform const folding).
+Optimizing module pc_reg_4bit.
+Optimizing module pc_reg.
+Optimizing module pc_reg_dff.
+<suppressed ~2 debug messages>
+
+6. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \pc_reg_4bit..
+Finding unused cells or wires in module \pc_reg..
+Finding unused cells or wires in module \pc_reg_dff..
+Removed 2 unused cells and 4 unused wires.
+<suppressed ~3 debug messages>
+
+7. Executing TECHMAP pass (map to technology primitives).
+
+7.1. Executing Verilog-2005 frontend: /opt/oss-cad-suite/lib/../share/yosys/techmap.v
+Parsing Verilog input from `/opt/oss-cad-suite/lib/../share/yosys/techmap.v' to AST representation.
+Generating RTLIL representation for module `\_90_simplemap_bool_ops'.
+Generating RTLIL representation for module `\_90_simplemap_reduce_ops'.
+Generating RTLIL representation for module `\_90_simplemap_logic_ops'.
+Generating RTLIL representation for module `\_90_simplemap_compare_ops'.
+Generating RTLIL representation for module `\_90_simplemap_various'.
+Generating RTLIL representation for module `\_90_simplemap_registers'.
+Generating RTLIL representation for module `\_90_shift_ops_shr_shl_sshl_sshr'.
+Generating RTLIL representation for module `\_90_shift_shiftx'.
+Generating RTLIL representation for module `\_90_fa'.
+Generating RTLIL representation for module `\_90_lcu_brent_kung'.
+Generating RTLIL representation for module `\_90_alu'.
+Generating RTLIL representation for module `\_90_macc'.
+Generating RTLIL representation for module `\_90_alumacc'.
+Generating RTLIL representation for module `$__div_mod_u'.
+Generating RTLIL representation for module `$__div_mod_trunc'.
+Generating RTLIL representation for module `\_90_div'.
+Generating RTLIL representation for module `\_90_mod'.
+Generating RTLIL representation for module `$__div_mod_floor'.
+Generating RTLIL representation for module `\_90_divfloor'.
+Generating RTLIL representation for module `\_90_modfloor'.
+Generating RTLIL representation for module `\_90_pow'.
+Generating RTLIL representation for module `\_90_pmux'.
+Generating RTLIL representation for module `\_90_demux'.
+Generating RTLIL representation for module `\_90_lut'.
+Generating RTLIL representation for module `$connect'.
+Generating RTLIL representation for module `$input_port'.
+Successfully finished Verilog frontend.
+
+7.2. Continuing TECHMAP pass.
+Using extmapper simplemap for cells of type $adff.
+No more expansions possible.
+<suppressed ~78 debug messages>
+
+8. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \pc_reg..
+Finding unused cells or wires in module \pc_reg_4bit..
+Finding unused cells or wires in module \pc_reg_dff..
+
+9. Executing HIERARCHY pass (managing design hierarchy).
+Attribute `top' found on module `pc_reg'. Setting top module to pc_reg.
+
+9.1. Analyzing design hierarchy..
+Top module:  \pc_reg
+Used module:     \pc_reg_4bit
+Used module:         \pc_reg_dff
+
+9.2. Analyzing design hierarchy..
+Top module:  \pc_reg
+Used module:     \pc_reg_4bit
+Used module:         \pc_reg_dff
+Removed 0 unused modules.
+
+10. Printing statistics.
+
+=== pc_reg ===
+
+        +----------Local Count, excluding submodules.
+        | 
+        4 wires
+       34 wire bits
+        4 public wires
+       34 public wire bits
+        4 ports
+       34 port bits
+        4 submodules
+        4   pc_reg_4bit
+
+=== pc_reg_4bit ===
+
+        +----------Local Count, excluding submodules.
+        | 
+        4 wires
+       10 wire bits
+        4 public wires
+       10 public wire bits
+        4 ports
+       10 port bits
+        4 submodules
+        4   pc_reg_dff
+
+=== pc_reg_dff ===
+
+        +----------Local Count, excluding submodules.
+        | 
+        4 wires
+        4 wire bits
+        4 public wires
+        4 public wire bits
+        4 ports
+        4 port bits
+        1 cells
+        1   $_DFF_PN0_
+
+=== design hierarchy ===
+
+        +----------Count including submodules.
+        | 
+       16 pc_reg
+        1   pc_reg_dff
+
+        +----------Count including submodules.
+        | 
+       84 wires
+      138 wire bits
+       84 public wires
+      138 public wire bits
+       84 ports
+      138 port bits
+        - memories
+        - memory bits
+        - processes
+       16 cells
+       16   $_DFF_PN0_
+        4 submodules
+        4   pc_reg_4bit
+
+11. Executing JSON backend.
+
+End of script. Logfile hash: 2afe6e7f2d, CPU: user 0.01s system 0.01s, MEM: 14.84 MB peak
+Yosys 0.61+112 (git sha1 ac427a79b, clang++ 18.1.8 -fPIC -O3)
+Time spent: 72% 7x read_verilog (0 sec), 7% 2x opt_clean (0 sec), ...

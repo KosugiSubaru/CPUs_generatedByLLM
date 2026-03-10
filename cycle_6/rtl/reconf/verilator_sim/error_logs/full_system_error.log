@@ -1,0 +1,132 @@
+
+=== ログ 2026-02-23 15:09:44 ===
+make: Entering directory '/home/ko_kosugi/workspace/project_makeISA/ai_api/CPU/obj_dir'
+g++  -I.  -MMD -I/opt/oss-cad-suite/share/verilator/include -I/opt/oss-cad-suite/share/verilator/include/vltstd -DVERILATOR=1 -DVM_COVERAGE=0 -DVM_SC=0 -DVM_TIMING=0 -DVM_TRACE=1 -DVM_TRACE_FST=0 -DVM_TRACE_VCD=1 -DVM_TRACE_SAIF=0 -faligned-new -fcf-protection=none -Wno-bool-operation -Wno-int-in-bool-context -Wno-shadow -Wno-sign-compare -Wno-subobject-linkage -Wno-tautological-compare -Wno-uninitialized -Wno-unused-but-set-parameter -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable      -Os  -c -o tb_top_gen.o ../tb_top_gen.cpp
+g++ -Os  -I.  -MMD -I/opt/oss-cad-suite/share/verilator/include -I/opt/oss-cad-suite/share/verilator/include/vltstd -DVERILATOR=1 -DVM_COVERAGE=0 -DVM_SC=0 -DVM_TIMING=0 -DVM_TRACE=1 -DVM_TRACE_FST=0 -DVM_TRACE_VCD=1 -DVM_TRACE_SAIF=0 -faligned-new -fcf-protection=none -Wno-bool-operation -Wno-int-in-bool-context -Wno-shadow -Wno-sign-compare -Wno-subobject-linkage -Wno-tautological-compare -Wno-uninitialized -Wno-unused-but-set-parameter -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable      -c -o verilated.o /opt/oss-cad-suite/share/verilator/include/verilated.cpp
+g++ -Os  -I.  -MMD -I/opt/oss-cad-suite/share/verilator/include -I/opt/oss-cad-suite/share/verilator/include/vltstd -DVERILATOR=1 -DVM_COVERAGE=0 -DVM_SC=0 -DVM_TIMING=0 -DVM_TRACE=1 -DVM_TRACE_FST=0 -DVM_TRACE_VCD=1 -DVM_TRACE_SAIF=0 -faligned-new -fcf-protection=none -Wno-bool-operation -Wno-int-in-bool-context -Wno-shadow -Wno-sign-compare -Wno-subobject-linkage -Wno-tautological-compare -Wno-uninitialized -Wno-unused-but-set-parameter -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable      -c -o verilated_vcd_c.o /opt/oss-cad-suite/share/verilator/include/verilated_vcd_c.cpp
+g++ -Os  -I.  -MMD -I/opt/oss-cad-suite/share/verilator/include -I/opt/oss-cad-suite/share/verilator/include/vltstd -DVERILATOR=1 -DVM_COVERAGE=0 -DVM_SC=0 -DVM_TIMING=0 -DVM_TRACE=1 -DVM_TRACE_FST=0 -DVM_TRACE_VCD=1 -DVM_TRACE_SAIF=0 -faligned-new -fcf-protection=none -Wno-bool-operation -Wno-int-in-bool-context -Wno-shadow -Wno-sign-compare -Wno-subobject-linkage -Wno-tautological-compare -Wno-uninitialized -Wno-unused-but-set-parameter -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable      -c -o verilated_threads.o /opt/oss-cad-suite/share/verilator/include/verilated_threads.cpp
+python3 /opt/oss-cad-suite/share/verilator/bin/verilator_includer -DVL_INCLUDE_OPT=include Vtop.cpp Vtop___024root__0.cpp Vtop_register_file_reg_16bit__0.cpp Vtop__Trace__0.cpp Vtop___024root__Slow.cpp Vtop___024root__0__Slow.cpp Vtop_register_file_reg_16bit__Slow.cpp Vtop_register_file_reg_16bit__0__Slow.cpp Vtop__Syms__Slow.cpp Vtop__Trace__0__Slow.cpp Vtop__TraceDecls__0__Slow.cpp > Vtop__ALL.cpp
+g++ -Os  -I.  -MMD -I/opt/oss-cad-suite/share/verilator/include -I/opt/oss-cad-suite/share/verilator/include/vltstd -DVERILATOR=1 -DVM_COVERAGE=0 -DVM_SC=0 -DVM_TIMING=0 -DVM_TRACE=1 -DVM_TRACE_FST=0 -DVM_TRACE_VCD=1 -DVM_TRACE_SAIF=0 -faligned-new -fcf-protection=none -Wno-bool-operation -Wno-int-in-bool-context -Wno-shadow -Wno-sign-compare -Wno-subobject-linkage -Wno-tautological-compare -Wno-uninitialized -Wno-unused-but-set-parameter -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable      -c -o Vtop__ALL.o Vtop__ALL.cpp
+g++    tb_top_gen.o verilated.o verilated_vcd_c.o verilated_threads.o Vtop__ALL.a    -pthread -lpthread -latomic   -o Vtop
+rm Vtop__ALL.verilator_deplist.tmp
+make: Leaving directory '/home/ko_kosugi/workspace/project_makeISA/ai_api/CPU/obj_dir'
+- V e r i l a t i o n   R e p o r t: Verilator 5.045 devel rev v5.044-88-g1b9f38f78
+- Verilator: Built from 2.391 MB sources in 45 modules, into 1.364 MB in 11 C++ files needing 0.000 MB
+- Verilator: Walltime 9.430 s (elab=0.014, cvt=0.151, bld=9.230); cpu 0.168 s on 1 threads; allocated 32.391 MB
+[SVA OK] Time=35: LOADI R3 = 0x0005
+[SVA OK] Time=45: LOADI R3 = 0x0005
+[SVA OK] Time=55: STORE MEM[0x0000] = 0x0005
+[SVA OK] Time=65: LOADI R3 = 0xfffd
+[SVA OK] Time=75: STORE MEM[0x0001] = 0xfffd
+[SVA OK] Time=85: LOADI R3 = 0x0008
+[SVA OK] Time=95: STORE MEM[0x0002] = 0x0008
+[SVA OK] Time=105: LOADI R3 = 0x0002
+[SVA OK] Time=115: STORE MEM[0x0003] = 0x0002
+[SVA OK] Time=125: LOADI R3 = 0xffff
+[SVA OK] Time=135: STORE MEM[0x0004] = 0xffff
+[SVA OK] Time=145: LOADI R1 = 0x0005
+[SVA OK] Time=155: LOADI R2 = 0x0000
+[SVA OK] Time=165: LOAD R4 = MEM[0x0000] = 0x0005
+[SVA OK] Time=175: LOAD R5 = MEM[0x0000] = 0x0005
+[SVA OK] Time=185: LOADI R6 = 0x0000
+[SVA OK] Time=195: LOAD R3 = MEM[0x0000] = 0x0005
+[SVA OK] Time=205: SUB R7 = 0x0000
+[SVA OK] Time=215: BLT cond=0 target=0x004a notaken_pc=0x0026
+[SVA OK] Time=225: ADDI R0 = 0x0000
+[SVA OK] Time=235: SUB R7 = 0x0000
+[SVA OK] Time=245: BLT cond=0 target=0x0050 notaken_pc=0x002c
+[SVA OK] Time=255: ADDI R0 = 0x0000
+[SVA OK] Time=265: JAL link R15=0x0030 target=0x0056
+[275] %Error: sva_cpu_gen.sv:306: Assertion failed in TOP.top.u_sva_cpu_gen: [TIME=275] JAL failed: rd=0x0030(link_exp=0x0030) next_pc=0x0030(jump_exp=0x0056)
+%Error: sva_cpu_gen.sv:306: Verilog $stop
+Aborting...
+
+==================================================
+
+=== ログ 2026-02-23 15:09:57 ===
+エラーの要点と修正のアドバイスを以下にまとめます。
+
+### 1. エラーの要点
+JAL（Jump and Link）命令の実行において、**「次アドレス（PC）の更新」が正しく行われていないこと**が原因です。
+
+*   **期待される動作（Expectation）**: リンクレジスタ（rd）に `0x0030`（現在のPC+2）を書き込み、PC自体はジャンプ先アドレスである `0x0056` へ飛ぶ必要があります。
+*   **実際の動作（Actual）**: リンクレジスタへの書き込み（`rd=0x0030`）は成功していますが、次のPC（`next_pc`）も `0x0030` になっています。
+*   **結論**: CPUがジャンプ処理を無視し、通常の「PC+2」を次のアドレスとして選択してしまっています。
+
+### 2. 修正アドバイス
+
+以下の3つのポイントを重点的に確認してください。
+
+#### ① `control_unit` の `o_pc_sel` 信号
+`JAL` 命令（opcode: `1110`）がデコードされた際、`o_pc_sel` が正しくジャンプ側を選択する値（提案構成では `01`）になっているか確認してください。特に、`control_unit_signal_map.v` 内で `i_inst_onehot[14]`（JAL）が `o_pc_sel` の生成ロジックに正しく含まれているか、またはビットの割り当てがずれていないかを確認してください。
+
+#### ② `next_pc_logic` または `cpu.v` のセレクタ論理
+`next_pc_logic` 内（あるいは `cpu.v` での接続部）で、`o_pc_sel` が `JAL` の値を示しているときに、加算器で計算されたジャンプ先アドレス（`PC + imm`）ではなく、誤って `PC + 2` の出力側を選択する回路になっていないか確認してください。
+
+#### ③ 条件判定との干渉
+`cpu.v` 等の最上位付近で、「分岐が成立（taken）したときだけ `pc_sel` を有効にする」という論理が、**無条件ジャンプである `JAL` にまで適用されていないか**を確認してください。`JAL` はフラグの状態に関わらず常にジャンプ先を選択しなければなりませんが、誤って「分岐不成立」扱いとして `PC+2` にフォールバックしている可能性があります。
+
+#### ④ 即値（Immediate）の符号拡張と接続
+期待値 `0x0056` に対して、`imm_gen` が正しく即値を抽出できているか、また `next_pc_logic` の加算器に入力される `i_imm` が正しいビット位置から供給されているかを確認してください。
+==================================================
+
+=== ログ 2026-02-23 15:11:56 ===
+make: Entering directory '/home/ko_kosugi/workspace/project_makeISA/ai_api/CPU/obj_dir'
+g++  -I.  -MMD -I/opt/oss-cad-suite/share/verilator/include -I/opt/oss-cad-suite/share/verilator/include/vltstd -DVERILATOR=1 -DVM_COVERAGE=0 -DVM_SC=0 -DVM_TIMING=0 -DVM_TRACE=1 -DVM_TRACE_FST=0 -DVM_TRACE_VCD=1 -DVM_TRACE_SAIF=0 -faligned-new -fcf-protection=none -Wno-bool-operation -Wno-int-in-bool-context -Wno-shadow -Wno-sign-compare -Wno-subobject-linkage -Wno-tautological-compare -Wno-uninitialized -Wno-unused-but-set-parameter -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable      -Os  -c -o tb_top_gen.o ../tb_top_gen.cpp
+g++ -Os  -I.  -MMD -I/opt/oss-cad-suite/share/verilator/include -I/opt/oss-cad-suite/share/verilator/include/vltstd -DVERILATOR=1 -DVM_COVERAGE=0 -DVM_SC=0 -DVM_TIMING=0 -DVM_TRACE=1 -DVM_TRACE_FST=0 -DVM_TRACE_VCD=1 -DVM_TRACE_SAIF=0 -faligned-new -fcf-protection=none -Wno-bool-operation -Wno-int-in-bool-context -Wno-shadow -Wno-sign-compare -Wno-subobject-linkage -Wno-tautological-compare -Wno-uninitialized -Wno-unused-but-set-parameter -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable      -c -o verilated.o /opt/oss-cad-suite/share/verilator/include/verilated.cpp
+g++ -Os  -I.  -MMD -I/opt/oss-cad-suite/share/verilator/include -I/opt/oss-cad-suite/share/verilator/include/vltstd -DVERILATOR=1 -DVM_COVERAGE=0 -DVM_SC=0 -DVM_TIMING=0 -DVM_TRACE=1 -DVM_TRACE_FST=0 -DVM_TRACE_VCD=1 -DVM_TRACE_SAIF=0 -faligned-new -fcf-protection=none -Wno-bool-operation -Wno-int-in-bool-context -Wno-shadow -Wno-sign-compare -Wno-subobject-linkage -Wno-tautological-compare -Wno-uninitialized -Wno-unused-but-set-parameter -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable      -c -o verilated_vcd_c.o /opt/oss-cad-suite/share/verilator/include/verilated_vcd_c.cpp
+g++ -Os  -I.  -MMD -I/opt/oss-cad-suite/share/verilator/include -I/opt/oss-cad-suite/share/verilator/include/vltstd -DVERILATOR=1 -DVM_COVERAGE=0 -DVM_SC=0 -DVM_TIMING=0 -DVM_TRACE=1 -DVM_TRACE_FST=0 -DVM_TRACE_VCD=1 -DVM_TRACE_SAIF=0 -faligned-new -fcf-protection=none -Wno-bool-operation -Wno-int-in-bool-context -Wno-shadow -Wno-sign-compare -Wno-subobject-linkage -Wno-tautological-compare -Wno-uninitialized -Wno-unused-but-set-parameter -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable      -c -o verilated_threads.o /opt/oss-cad-suite/share/verilator/include/verilated_threads.cpp
+python3 /opt/oss-cad-suite/share/verilator/bin/verilator_includer -DVL_INCLUDE_OPT=include Vtop.cpp Vtop___024root__0.cpp Vtop_register_file_reg_16bit__0.cpp Vtop__Trace__0.cpp Vtop___024root__Slow.cpp Vtop___024root__0__Slow.cpp Vtop_register_file_reg_16bit__Slow.cpp Vtop_register_file_reg_16bit__0__Slow.cpp Vtop__Syms__Slow.cpp Vtop__Trace__0__Slow.cpp Vtop__TraceDecls__0__Slow.cpp > Vtop__ALL.cpp
+g++ -Os  -I.  -MMD -I/opt/oss-cad-suite/share/verilator/include -I/opt/oss-cad-suite/share/verilator/include/vltstd -DVERILATOR=1 -DVM_COVERAGE=0 -DVM_SC=0 -DVM_TIMING=0 -DVM_TRACE=1 -DVM_TRACE_FST=0 -DVM_TRACE_VCD=1 -DVM_TRACE_SAIF=0 -faligned-new -fcf-protection=none -Wno-bool-operation -Wno-int-in-bool-context -Wno-shadow -Wno-sign-compare -Wno-subobject-linkage -Wno-tautological-compare -Wno-uninitialized -Wno-unused-but-set-parameter -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable      -c -o Vtop__ALL.o Vtop__ALL.cpp
+g++    tb_top_gen.o verilated.o verilated_vcd_c.o verilated_threads.o Vtop__ALL.a    -pthread -lpthread -latomic   -o Vtop
+rm Vtop__ALL.verilator_deplist.tmp
+make: Leaving directory '/home/ko_kosugi/workspace/project_makeISA/ai_api/CPU/obj_dir'
+- V e r i l a t i o n   R e p o r t: Verilator 5.045 devel rev v5.044-88-g1b9f38f78
+- Verilator: Built from 2.386 MB sources in 45 modules, into 1.361 MB in 11 C++ files needing 0.000 MB
+- Verilator: Walltime 8.738 s (elab=0.006, cvt=0.108, bld=8.597); cpu 0.133 s on 1 threads; allocated 32.227 MB
+[SVA OK] Time=35: LOADI R3 = 0x0005
+[SVA OK] Time=45: LOADI R3 = 0x0005
+[SVA OK] Time=55: STORE MEM[0x0000] = 0x0005
+[SVA OK] Time=65: LOADI R3 = 0xfffd
+[SVA OK] Time=75: STORE MEM[0x0001] = 0xfffd
+[SVA OK] Time=85: LOADI R3 = 0x0008
+[SVA OK] Time=95: STORE MEM[0x0002] = 0x0008
+[SVA OK] Time=105: LOADI R3 = 0x0002
+[SVA OK] Time=115: STORE MEM[0x0003] = 0x0002
+[SVA OK] Time=125: LOADI R3 = 0xffff
+[SVA OK] Time=135: STORE MEM[0x0004] = 0xffff
+[SVA OK] Time=145: LOADI R1 = 0x0005
+[SVA OK] Time=155: LOADI R2 = 0x0000
+[SVA OK] Time=165: LOAD R4 = MEM[0x0000] = 0x0005
+[SVA OK] Time=175: LOAD R5 = MEM[0x0000] = 0x0005
+[SVA OK] Time=185: LOADI R6 = 0x0000
+[SVA OK] Time=195: LOAD R3 = MEM[0x0000] = 0x0005
+[SVA OK] Time=205: SUB R7 = 0x0000
+[SVA OK] Time=215: BLT cond=0 target=0x004a notaken_pc=0x0026
+[225] %Error: sva_cpu_gen.sv:156: Assertion failed in TOP.top.u_sva_cpu_gen: [TIME=225] BLT failed: cond=0 next_pc=0x004a(exp_taken=0x004a exp_notaken=0x0026)
+%Error: sva_cpu_gen.sv:156: Verilog $stop
+Aborting...
+
+==================================================
+
+=== ログ 2026-02-23 15:12:27 ===
+### 1. エラーの要点
+
+**条件不成立（Not Taken）のはずの分岐命令が、誤ってジャンプしてしまっています。**
+
+*   **詳細**: `BLT` 命令の実行において、条件判定の結果は `cond=0`（不成立）であるため、次の PC は `0x0026` (PC+2) であるべきです。しかし、実際の回路では `next_pc` が `0x004a`（ジャンプ先ターゲット）に更新されています。
+*   **原因**: 次の PC を選択するマルチプレクサ（MUX）が、制御ユニット（Control Unit）からの「これは分岐命令である」という情報だけを見てジャンプ先を選択しており、**「実際に条件が成立したかどうか」の結果（`taken` 信号）を無視してしまっている**ためです。
+
+### 2. 修正アドバイス
+
+以下の設計上の不整合を修正してください。
+
+1.  **PC選択論理の統合**:
+    `next_pc_logic` または `program_counter` 内の MUX 選択信号の生成部を確認してください。現在、オペコードが Branch（`01`）であれば無条件にターゲットアドレスを選択するようになっています。これを、「命令が Branch である」かつ「条件判定（Taken）が真である」場合のみターゲットを選択し、それ以外（条件偽の Branch）は PC+2 を選択するように論理を修正する必要があります。
+
+2.  **信号の引き回し**:
+    `next_pc_logic`（あるいは `program_counter`）に、フラグを判定した結果である `taken` 信号が正しく入力され、MUX の選択ロジックに組み込まれているかを確認してください。
+
+3.  **制御信号の優先順位**:
+    無条件ジャンプ（`JAL`, `JALR`）は常にターゲットを選択し、条件分岐（`BLT`, `BZ`）は `taken` 信号に依存する、という書き分けがセレクタの入力生成部で正しく行われているかを確認してください。
+==================================================

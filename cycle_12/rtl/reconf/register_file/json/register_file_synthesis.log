@@ -1,0 +1,434 @@
+
+ /----------------------------------------------------------------------------\
+ |  yosys -- Yosys Open SYnthesis Suite                                       |
+ |  Copyright (C) 2012 - 2026  Claire Xenia Wolf <claire@yosyshq.com>         |
+ |  Distributed under an ISC-like license, type "license" to see terms        |
+ \----------------------------------------------------------------------------/
+ Yosys 0.61+112 (git sha1 ac427a79b, clang++ 18.1.8 -fPIC -O3)
+
+-- Executing script file `reconf/register_file/json/register_file.ys' --
+
+1. Executing Verilog-2005 frontend: reconf/register_file/rtl/register_file.v
+Parsing Verilog input from `reconf/register_file/rtl/register_file.v' to AST representation.
+Generating RTLIL representation for module `\register_file'.
+Successfully finished Verilog frontend.
+
+2. Executing Verilog-2005 frontend: reconf/register_file/rtl/register_file_mux_16to1_16bit.v
+Parsing Verilog input from `reconf/register_file/rtl/register_file_mux_16to1_16bit.v' to AST representation.
+Generating RTLIL representation for module `\register_file_mux_16to1_16bit'.
+Successfully finished Verilog frontend.
+
+3. Executing Verilog-2005 frontend: reconf/register_file/rtl/register_file_mux_2to1_16bit.v
+Parsing Verilog input from `reconf/register_file/rtl/register_file_mux_2to1_16bit.v' to AST representation.
+Generating RTLIL representation for module `\register_file_mux_2to1_16bit'.
+Successfully finished Verilog frontend.
+
+4. Executing Verilog-2005 frontend: reconf/register_file/rtl/register_file_decoder_4to16.v
+Parsing Verilog input from `reconf/register_file/rtl/register_file_decoder_4to16.v' to AST representation.
+Generating RTLIL representation for module `\register_file_decoder_4to16'.
+Successfully finished Verilog frontend.
+
+5. Executing Verilog-2005 frontend: reconf/register_file/rtl/register_file_cell.v
+Parsing Verilog input from `reconf/register_file/rtl/register_file_cell.v' to AST representation.
+Generating RTLIL representation for module `\register_file_cell'.
+Successfully finished Verilog frontend.
+
+6. Executing HIERARCHY pass (managing design hierarchy).
+
+6.1. Analyzing design hierarchy..
+Top module:  \register_file
+Used module:     \register_file_cell
+Used module:     \register_file_mux_16to1_16bit
+Used module:         \register_file_mux_2to1_16bit
+Used module:     \register_file_decoder_4to16
+Reprocessing module register_file because instantiated module register_file_cell has become available.
+Generating RTLIL representation for module `\register_file'.
+Reprocessing module register_file_mux_16to1_16bit because instantiated module register_file_mux_2to1_16bit has become available.
+Generating RTLIL representation for module `\register_file_mux_16to1_16bit'.
+
+6.2. Analyzing design hierarchy..
+Top module:  \register_file
+Used module:     \register_file_cell
+Used module:     \register_file_mux_16to1_16bit
+Used module:         \register_file_mux_2to1_16bit
+Used module:     \register_file_decoder_4to16
+
+6.3. Analyzing design hierarchy..
+Top module:  \register_file
+Used module:     \register_file_cell
+Used module:     \register_file_mux_16to1_16bit
+Used module:         \register_file_mux_2to1_16bit
+Used module:     \register_file_decoder_4to16
+Removed 0 unused modules.
+
+7. Executing PROC pass (convert processes to netlists).
+
+7.1. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Cleaned up 0 empty switches.
+
+7.2. Executing PROC_RMDEAD pass (remove dead branches from decision trees).
+Marked 1 switch rules as full_case in process $proc$reconf/register_file/rtl/register_file_cell.v:13$82 in module register_file_cell.
+Removed a total of 0 dead cases.
+
+7.3. Executing PROC_PRUNE pass (remove redundant assignments in processes).
+Removed 0 redundant assignments.
+Promoted 46 assignments to connections.
+
+7.4. Executing PROC_INIT pass (extract init attributes).
+
+7.5. Executing PROC_ARST pass (detect async resets in processes).
+
+7.6. Executing PROC_ROM pass (convert switches to ROMs).
+Converted 0 switches.
+<suppressed ~2 debug messages>
+
+7.7. Executing PROC_MUX pass (convert decision trees to multiplexers).
+Creating decoders for process `\register_file_mux_16to1_16bit.$proc$reconf/register_file/rtl/register_file_mux_16to1_16bit.v:51$250'.
+Creating decoders for process `\register_file_mux_16to1_16bit.$proc$reconf/register_file/rtl/register_file_mux_16to1_16bit.v:51$249'.
+Creating decoders for process `\register_file_mux_16to1_16bit.$proc$reconf/register_file/rtl/register_file_mux_16to1_16bit.v:41$248'.
+Creating decoders for process `\register_file_mux_16to1_16bit.$proc$reconf/register_file/rtl/register_file_mux_16to1_16bit.v:41$247'.
+Creating decoders for process `\register_file_mux_16to1_16bit.$proc$reconf/register_file/rtl/register_file_mux_16to1_16bit.v:41$246'.
+Creating decoders for process `\register_file_mux_16to1_16bit.$proc$reconf/register_file/rtl/register_file_mux_16to1_16bit.v:41$245'.
+Creating decoders for process `\register_file_mux_16to1_16bit.$proc$reconf/register_file/rtl/register_file_mux_16to1_16bit.v:31$244'.
+Creating decoders for process `\register_file_mux_16to1_16bit.$proc$reconf/register_file/rtl/register_file_mux_16to1_16bit.v:31$243'.
+Creating decoders for process `\register_file_mux_16to1_16bit.$proc$reconf/register_file/rtl/register_file_mux_16to1_16bit.v:31$242'.
+Creating decoders for process `\register_file_mux_16to1_16bit.$proc$reconf/register_file/rtl/register_file_mux_16to1_16bit.v:31$241'.
+Creating decoders for process `\register_file_mux_16to1_16bit.$proc$reconf/register_file/rtl/register_file_mux_16to1_16bit.v:31$240'.
+Creating decoders for process `\register_file_mux_16to1_16bit.$proc$reconf/register_file/rtl/register_file_mux_16to1_16bit.v:31$239'.
+Creating decoders for process `\register_file_mux_16to1_16bit.$proc$reconf/register_file/rtl/register_file_mux_16to1_16bit.v:31$238'.
+Creating decoders for process `\register_file_mux_16to1_16bit.$proc$reconf/register_file/rtl/register_file_mux_16to1_16bit.v:31$237'.
+Creating decoders for process `\register_file_mux_16to1_16bit.$proc$reconf/register_file/rtl/register_file_mux_16to1_16bit.v:22$236'.
+Creating decoders for process `\register_file_mux_16to1_16bit.$proc$reconf/register_file/rtl/register_file_mux_16to1_16bit.v:22$235'.
+Creating decoders for process `\register_file_mux_16to1_16bit.$proc$reconf/register_file/rtl/register_file_mux_16to1_16bit.v:22$234'.
+Creating decoders for process `\register_file_mux_16to1_16bit.$proc$reconf/register_file/rtl/register_file_mux_16to1_16bit.v:22$233'.
+Creating decoders for process `\register_file_mux_16to1_16bit.$proc$reconf/register_file/rtl/register_file_mux_16to1_16bit.v:21$232'.
+Creating decoders for process `\register_file_mux_16to1_16bit.$proc$reconf/register_file/rtl/register_file_mux_16to1_16bit.v:21$231'.
+Creating decoders for process `\register_file_mux_16to1_16bit.$proc$reconf/register_file/rtl/register_file_mux_16to1_16bit.v:21$230'.
+Creating decoders for process `\register_file_mux_16to1_16bit.$proc$reconf/register_file/rtl/register_file_mux_16to1_16bit.v:21$229'.
+Creating decoders for process `\register_file_mux_16to1_16bit.$proc$reconf/register_file/rtl/register_file_mux_16to1_16bit.v:20$228'.
+Creating decoders for process `\register_file_mux_16to1_16bit.$proc$reconf/register_file/rtl/register_file_mux_16to1_16bit.v:20$227'.
+Creating decoders for process `\register_file_mux_16to1_16bit.$proc$reconf/register_file/rtl/register_file_mux_16to1_16bit.v:20$226'.
+Creating decoders for process `\register_file_mux_16to1_16bit.$proc$reconf/register_file/rtl/register_file_mux_16to1_16bit.v:20$225'.
+Creating decoders for process `\register_file_mux_16to1_16bit.$proc$reconf/register_file/rtl/register_file_mux_16to1_16bit.v:19$224'.
+Creating decoders for process `\register_file_mux_16to1_16bit.$proc$reconf/register_file/rtl/register_file_mux_16to1_16bit.v:19$223'.
+Creating decoders for process `\register_file_mux_16to1_16bit.$proc$reconf/register_file/rtl/register_file_mux_16to1_16bit.v:19$222'.
+Creating decoders for process `\register_file_mux_16to1_16bit.$proc$reconf/register_file/rtl/register_file_mux_16to1_16bit.v:19$221'.
+Creating decoders for process `\register_file.$proc$reconf/register_file/rtl/register_file.v:36$161'.
+Creating decoders for process `\register_file.$proc$reconf/register_file/rtl/register_file.v:36$160'.
+Creating decoders for process `\register_file.$proc$reconf/register_file/rtl/register_file.v:36$159'.
+Creating decoders for process `\register_file.$proc$reconf/register_file/rtl/register_file.v:36$158'.
+Creating decoders for process `\register_file.$proc$reconf/register_file/rtl/register_file.v:36$157'.
+Creating decoders for process `\register_file.$proc$reconf/register_file/rtl/register_file.v:36$156'.
+Creating decoders for process `\register_file.$proc$reconf/register_file/rtl/register_file.v:36$155'.
+Creating decoders for process `\register_file.$proc$reconf/register_file/rtl/register_file.v:36$154'.
+Creating decoders for process `\register_file.$proc$reconf/register_file/rtl/register_file.v:36$153'.
+Creating decoders for process `\register_file.$proc$reconf/register_file/rtl/register_file.v:36$152'.
+Creating decoders for process `\register_file.$proc$reconf/register_file/rtl/register_file.v:36$151'.
+Creating decoders for process `\register_file.$proc$reconf/register_file/rtl/register_file.v:36$150'.
+Creating decoders for process `\register_file.$proc$reconf/register_file/rtl/register_file.v:36$149'.
+Creating decoders for process `\register_file.$proc$reconf/register_file/rtl/register_file.v:36$148'.
+Creating decoders for process `\register_file.$proc$reconf/register_file/rtl/register_file.v:36$147'.
+Creating decoders for process `\register_file.$proc$reconf/register_file/rtl/register_file.v:26$146'.
+Creating decoders for process `\register_file_cell.$proc$reconf/register_file/rtl/register_file_cell.v:13$82'.
+     1/1: $0\r_data[15:0]
+
+7.8. Executing PROC_DLATCH pass (convert process syncs to latches).
+No latch inferred for signal `\register_file_mux_16to1_16bit.\w_stg3[1]' from process `\register_file_mux_16to1_16bit.$proc$reconf/register_file/rtl/register_file_mux_16to1_16bit.v:51$250'.
+No latch inferred for signal `\register_file_mux_16to1_16bit.\w_stg3[0]' from process `\register_file_mux_16to1_16bit.$proc$reconf/register_file/rtl/register_file_mux_16to1_16bit.v:51$249'.
+No latch inferred for signal `\register_file_mux_16to1_16bit.\w_stg2[3]' from process `\register_file_mux_16to1_16bit.$proc$reconf/register_file/rtl/register_file_mux_16to1_16bit.v:41$248'.
+No latch inferred for signal `\register_file_mux_16to1_16bit.\w_stg2[2]' from process `\register_file_mux_16to1_16bit.$proc$reconf/register_file/rtl/register_file_mux_16to1_16bit.v:41$247'.
+No latch inferred for signal `\register_file_mux_16to1_16bit.\w_stg2[1]' from process `\register_file_mux_16to1_16bit.$proc$reconf/register_file/rtl/register_file_mux_16to1_16bit.v:41$246'.
+No latch inferred for signal `\register_file_mux_16to1_16bit.\w_stg2[0]' from process `\register_file_mux_16to1_16bit.$proc$reconf/register_file/rtl/register_file_mux_16to1_16bit.v:41$245'.
+No latch inferred for signal `\register_file_mux_16to1_16bit.\w_stg1[7]' from process `\register_file_mux_16to1_16bit.$proc$reconf/register_file/rtl/register_file_mux_16to1_16bit.v:31$244'.
+No latch inferred for signal `\register_file_mux_16to1_16bit.\w_stg1[6]' from process `\register_file_mux_16to1_16bit.$proc$reconf/register_file/rtl/register_file_mux_16to1_16bit.v:31$243'.
+No latch inferred for signal `\register_file_mux_16to1_16bit.\w_stg1[5]' from process `\register_file_mux_16to1_16bit.$proc$reconf/register_file/rtl/register_file_mux_16to1_16bit.v:31$242'.
+No latch inferred for signal `\register_file_mux_16to1_16bit.\w_stg1[4]' from process `\register_file_mux_16to1_16bit.$proc$reconf/register_file/rtl/register_file_mux_16to1_16bit.v:31$241'.
+No latch inferred for signal `\register_file_mux_16to1_16bit.\w_stg1[3]' from process `\register_file_mux_16to1_16bit.$proc$reconf/register_file/rtl/register_file_mux_16to1_16bit.v:31$240'.
+No latch inferred for signal `\register_file_mux_16to1_16bit.\w_stg1[2]' from process `\register_file_mux_16to1_16bit.$proc$reconf/register_file/rtl/register_file_mux_16to1_16bit.v:31$239'.
+No latch inferred for signal `\register_file_mux_16to1_16bit.\w_stg1[1]' from process `\register_file_mux_16to1_16bit.$proc$reconf/register_file/rtl/register_file_mux_16to1_16bit.v:31$238'.
+No latch inferred for signal `\register_file_mux_16to1_16bit.\w_stg1[0]' from process `\register_file_mux_16to1_16bit.$proc$reconf/register_file/rtl/register_file_mux_16to1_16bit.v:31$237'.
+No latch inferred for signal `\register_file_mux_16to1_16bit.\w_in[15]' from process `\register_file_mux_16to1_16bit.$proc$reconf/register_file/rtl/register_file_mux_16to1_16bit.v:22$236'.
+No latch inferred for signal `\register_file_mux_16to1_16bit.\w_in[14]' from process `\register_file_mux_16to1_16bit.$proc$reconf/register_file/rtl/register_file_mux_16to1_16bit.v:22$235'.
+No latch inferred for signal `\register_file_mux_16to1_16bit.\w_in[13]' from process `\register_file_mux_16to1_16bit.$proc$reconf/register_file/rtl/register_file_mux_16to1_16bit.v:22$234'.
+No latch inferred for signal `\register_file_mux_16to1_16bit.\w_in[12]' from process `\register_file_mux_16to1_16bit.$proc$reconf/register_file/rtl/register_file_mux_16to1_16bit.v:22$233'.
+No latch inferred for signal `\register_file_mux_16to1_16bit.\w_in[11]' from process `\register_file_mux_16to1_16bit.$proc$reconf/register_file/rtl/register_file_mux_16to1_16bit.v:21$232'.
+No latch inferred for signal `\register_file_mux_16to1_16bit.\w_in[10]' from process `\register_file_mux_16to1_16bit.$proc$reconf/register_file/rtl/register_file_mux_16to1_16bit.v:21$231'.
+No latch inferred for signal `\register_file_mux_16to1_16bit.\w_in[9]' from process `\register_file_mux_16to1_16bit.$proc$reconf/register_file/rtl/register_file_mux_16to1_16bit.v:21$230'.
+No latch inferred for signal `\register_file_mux_16to1_16bit.\w_in[8]' from process `\register_file_mux_16to1_16bit.$proc$reconf/register_file/rtl/register_file_mux_16to1_16bit.v:21$229'.
+No latch inferred for signal `\register_file_mux_16to1_16bit.\w_in[7]' from process `\register_file_mux_16to1_16bit.$proc$reconf/register_file/rtl/register_file_mux_16to1_16bit.v:20$228'.
+No latch inferred for signal `\register_file_mux_16to1_16bit.\w_in[6]' from process `\register_file_mux_16to1_16bit.$proc$reconf/register_file/rtl/register_file_mux_16to1_16bit.v:20$227'.
+No latch inferred for signal `\register_file_mux_16to1_16bit.\w_in[5]' from process `\register_file_mux_16to1_16bit.$proc$reconf/register_file/rtl/register_file_mux_16to1_16bit.v:20$226'.
+No latch inferred for signal `\register_file_mux_16to1_16bit.\w_in[4]' from process `\register_file_mux_16to1_16bit.$proc$reconf/register_file/rtl/register_file_mux_16to1_16bit.v:20$225'.
+No latch inferred for signal `\register_file_mux_16to1_16bit.\w_in[3]' from process `\register_file_mux_16to1_16bit.$proc$reconf/register_file/rtl/register_file_mux_16to1_16bit.v:19$224'.
+No latch inferred for signal `\register_file_mux_16to1_16bit.\w_in[2]' from process `\register_file_mux_16to1_16bit.$proc$reconf/register_file/rtl/register_file_mux_16to1_16bit.v:19$223'.
+No latch inferred for signal `\register_file_mux_16to1_16bit.\w_in[1]' from process `\register_file_mux_16to1_16bit.$proc$reconf/register_file/rtl/register_file_mux_16to1_16bit.v:19$222'.
+No latch inferred for signal `\register_file_mux_16to1_16bit.\w_in[0]' from process `\register_file_mux_16to1_16bit.$proc$reconf/register_file/rtl/register_file_mux_16to1_16bit.v:19$221'.
+No latch inferred for signal `\register_file.\w_reg_data[15]' from process `\register_file.$proc$reconf/register_file/rtl/register_file.v:36$161'.
+No latch inferred for signal `\register_file.\w_reg_data[14]' from process `\register_file.$proc$reconf/register_file/rtl/register_file.v:36$160'.
+No latch inferred for signal `\register_file.\w_reg_data[13]' from process `\register_file.$proc$reconf/register_file/rtl/register_file.v:36$159'.
+No latch inferred for signal `\register_file.\w_reg_data[12]' from process `\register_file.$proc$reconf/register_file/rtl/register_file.v:36$158'.
+No latch inferred for signal `\register_file.\w_reg_data[11]' from process `\register_file.$proc$reconf/register_file/rtl/register_file.v:36$157'.
+No latch inferred for signal `\register_file.\w_reg_data[10]' from process `\register_file.$proc$reconf/register_file/rtl/register_file.v:36$156'.
+No latch inferred for signal `\register_file.\w_reg_data[9]' from process `\register_file.$proc$reconf/register_file/rtl/register_file.v:36$155'.
+No latch inferred for signal `\register_file.\w_reg_data[8]' from process `\register_file.$proc$reconf/register_file/rtl/register_file.v:36$154'.
+No latch inferred for signal `\register_file.\w_reg_data[7]' from process `\register_file.$proc$reconf/register_file/rtl/register_file.v:36$153'.
+No latch inferred for signal `\register_file.\w_reg_data[6]' from process `\register_file.$proc$reconf/register_file/rtl/register_file.v:36$152'.
+No latch inferred for signal `\register_file.\w_reg_data[5]' from process `\register_file.$proc$reconf/register_file/rtl/register_file.v:36$151'.
+No latch inferred for signal `\register_file.\w_reg_data[4]' from process `\register_file.$proc$reconf/register_file/rtl/register_file.v:36$150'.
+No latch inferred for signal `\register_file.\w_reg_data[3]' from process `\register_file.$proc$reconf/register_file/rtl/register_file.v:36$149'.
+No latch inferred for signal `\register_file.\w_reg_data[2]' from process `\register_file.$proc$reconf/register_file/rtl/register_file.v:36$148'.
+No latch inferred for signal `\register_file.\w_reg_data[1]' from process `\register_file.$proc$reconf/register_file/rtl/register_file.v:36$147'.
+No latch inferred for signal `\register_file.\w_reg_data[0]' from process `\register_file.$proc$reconf/register_file/rtl/register_file.v:26$146'.
+
+7.9. Executing PROC_DFF pass (convert process syncs to FFs).
+Creating register for signal `\register_file_cell.\r_data' using process `\register_file_cell.$proc$reconf/register_file/rtl/register_file_cell.v:13$82'.
+  created $dff cell `$procdff$256' with positive edge clock.
+
+7.10. Executing PROC_MEMWR pass (convert process memory writes to cells).
+
+7.11. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Removing empty process `register_file_mux_16to1_16bit.$proc$reconf/register_file/rtl/register_file_mux_16to1_16bit.v:51$250'.
+Removing empty process `register_file_mux_16to1_16bit.$proc$reconf/register_file/rtl/register_file_mux_16to1_16bit.v:51$249'.
+Removing empty process `register_file_mux_16to1_16bit.$proc$reconf/register_file/rtl/register_file_mux_16to1_16bit.v:41$248'.
+Removing empty process `register_file_mux_16to1_16bit.$proc$reconf/register_file/rtl/register_file_mux_16to1_16bit.v:41$247'.
+Removing empty process `register_file_mux_16to1_16bit.$proc$reconf/register_file/rtl/register_file_mux_16to1_16bit.v:41$246'.
+Removing empty process `register_file_mux_16to1_16bit.$proc$reconf/register_file/rtl/register_file_mux_16to1_16bit.v:41$245'.
+Removing empty process `register_file_mux_16to1_16bit.$proc$reconf/register_file/rtl/register_file_mux_16to1_16bit.v:31$244'.
+Removing empty process `register_file_mux_16to1_16bit.$proc$reconf/register_file/rtl/register_file_mux_16to1_16bit.v:31$243'.
+Removing empty process `register_file_mux_16to1_16bit.$proc$reconf/register_file/rtl/register_file_mux_16to1_16bit.v:31$242'.
+Removing empty process `register_file_mux_16to1_16bit.$proc$reconf/register_file/rtl/register_file_mux_16to1_16bit.v:31$241'.
+Removing empty process `register_file_mux_16to1_16bit.$proc$reconf/register_file/rtl/register_file_mux_16to1_16bit.v:31$240'.
+Removing empty process `register_file_mux_16to1_16bit.$proc$reconf/register_file/rtl/register_file_mux_16to1_16bit.v:31$239'.
+Removing empty process `register_file_mux_16to1_16bit.$proc$reconf/register_file/rtl/register_file_mux_16to1_16bit.v:31$238'.
+Removing empty process `register_file_mux_16to1_16bit.$proc$reconf/register_file/rtl/register_file_mux_16to1_16bit.v:31$237'.
+Removing empty process `register_file_mux_16to1_16bit.$proc$reconf/register_file/rtl/register_file_mux_16to1_16bit.v:22$236'.
+Removing empty process `register_file_mux_16to1_16bit.$proc$reconf/register_file/rtl/register_file_mux_16to1_16bit.v:22$235'.
+Removing empty process `register_file_mux_16to1_16bit.$proc$reconf/register_file/rtl/register_file_mux_16to1_16bit.v:22$234'.
+Removing empty process `register_file_mux_16to1_16bit.$proc$reconf/register_file/rtl/register_file_mux_16to1_16bit.v:22$233'.
+Removing empty process `register_file_mux_16to1_16bit.$proc$reconf/register_file/rtl/register_file_mux_16to1_16bit.v:21$232'.
+Removing empty process `register_file_mux_16to1_16bit.$proc$reconf/register_file/rtl/register_file_mux_16to1_16bit.v:21$231'.
+Removing empty process `register_file_mux_16to1_16bit.$proc$reconf/register_file/rtl/register_file_mux_16to1_16bit.v:21$230'.
+Removing empty process `register_file_mux_16to1_16bit.$proc$reconf/register_file/rtl/register_file_mux_16to1_16bit.v:21$229'.
+Removing empty process `register_file_mux_16to1_16bit.$proc$reconf/register_file/rtl/register_file_mux_16to1_16bit.v:20$228'.
+Removing empty process `register_file_mux_16to1_16bit.$proc$reconf/register_file/rtl/register_file_mux_16to1_16bit.v:20$227'.
+Removing empty process `register_file_mux_16to1_16bit.$proc$reconf/register_file/rtl/register_file_mux_16to1_16bit.v:20$226'.
+Removing empty process `register_file_mux_16to1_16bit.$proc$reconf/register_file/rtl/register_file_mux_16to1_16bit.v:20$225'.
+Removing empty process `register_file_mux_16to1_16bit.$proc$reconf/register_file/rtl/register_file_mux_16to1_16bit.v:19$224'.
+Removing empty process `register_file_mux_16to1_16bit.$proc$reconf/register_file/rtl/register_file_mux_16to1_16bit.v:19$223'.
+Removing empty process `register_file_mux_16to1_16bit.$proc$reconf/register_file/rtl/register_file_mux_16to1_16bit.v:19$222'.
+Removing empty process `register_file_mux_16to1_16bit.$proc$reconf/register_file/rtl/register_file_mux_16to1_16bit.v:19$221'.
+Removing empty process `register_file.$proc$reconf/register_file/rtl/register_file.v:36$161'.
+Removing empty process `register_file.$proc$reconf/register_file/rtl/register_file.v:36$160'.
+Removing empty process `register_file.$proc$reconf/register_file/rtl/register_file.v:36$159'.
+Removing empty process `register_file.$proc$reconf/register_file/rtl/register_file.v:36$158'.
+Removing empty process `register_file.$proc$reconf/register_file/rtl/register_file.v:36$157'.
+Removing empty process `register_file.$proc$reconf/register_file/rtl/register_file.v:36$156'.
+Removing empty process `register_file.$proc$reconf/register_file/rtl/register_file.v:36$155'.
+Removing empty process `register_file.$proc$reconf/register_file/rtl/register_file.v:36$154'.
+Removing empty process `register_file.$proc$reconf/register_file/rtl/register_file.v:36$153'.
+Removing empty process `register_file.$proc$reconf/register_file/rtl/register_file.v:36$152'.
+Removing empty process `register_file.$proc$reconf/register_file/rtl/register_file.v:36$151'.
+Removing empty process `register_file.$proc$reconf/register_file/rtl/register_file.v:36$150'.
+Removing empty process `register_file.$proc$reconf/register_file/rtl/register_file.v:36$149'.
+Removing empty process `register_file.$proc$reconf/register_file/rtl/register_file.v:36$148'.
+Removing empty process `register_file.$proc$reconf/register_file/rtl/register_file.v:36$147'.
+Removing empty process `register_file.$proc$reconf/register_file/rtl/register_file.v:26$146'.
+Found and cleaned up 2 empty switches in `\register_file_cell.$proc$reconf/register_file/rtl/register_file_cell.v:13$82'.
+Removing empty process `register_file_cell.$proc$reconf/register_file/rtl/register_file_cell.v:13$82'.
+Cleaned up 2 empty switches.
+
+7.12. Executing OPT_EXPR pass (perform const folding).
+Optimizing module register_file_mux_16to1_16bit.
+Optimizing module register_file_decoder_4to16.
+<suppressed ~1 debug messages>
+Optimizing module register_file_mux_2to1_16bit.
+<suppressed ~32 debug messages>
+Optimizing module register_file.
+Optimizing module register_file_cell.
+<suppressed ~1 debug messages>
+
+8. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \register_file_mux_16to1_16bit..
+Finding unused cells or wires in module \register_file_decoder_4to16..
+Finding unused cells or wires in module \register_file_mux_2to1_16bit..
+Finding unused cells or wires in module \register_file..
+Finding unused cells or wires in module \register_file_cell..
+Removed 17 unused cells and 219 unused wires.
+<suppressed ~22 debug messages>
+
+9. Executing TECHMAP pass (map to technology primitives).
+
+9.1. Executing Verilog-2005 frontend: /opt/oss-cad-suite/lib/../share/yosys/techmap.v
+Parsing Verilog input from `/opt/oss-cad-suite/lib/../share/yosys/techmap.v' to AST representation.
+Generating RTLIL representation for module `\_90_simplemap_bool_ops'.
+Generating RTLIL representation for module `\_90_simplemap_reduce_ops'.
+Generating RTLIL representation for module `\_90_simplemap_logic_ops'.
+Generating RTLIL representation for module `\_90_simplemap_compare_ops'.
+Generating RTLIL representation for module `\_90_simplemap_various'.
+Generating RTLIL representation for module `\_90_simplemap_registers'.
+Generating RTLIL representation for module `\_90_shift_ops_shr_shl_sshl_sshr'.
+Generating RTLIL representation for module `\_90_shift_shiftx'.
+Generating RTLIL representation for module `\_90_fa'.
+Generating RTLIL representation for module `\_90_lcu_brent_kung'.
+Generating RTLIL representation for module `\_90_alu'.
+Generating RTLIL representation for module `\_90_macc'.
+Generating RTLIL representation for module `\_90_alumacc'.
+Generating RTLIL representation for module `$__div_mod_u'.
+Generating RTLIL representation for module `$__div_mod_trunc'.
+Generating RTLIL representation for module `\_90_div'.
+Generating RTLIL representation for module `\_90_mod'.
+Generating RTLIL representation for module `$__div_mod_floor'.
+Generating RTLIL representation for module `\_90_divfloor'.
+Generating RTLIL representation for module `\_90_modfloor'.
+Generating RTLIL representation for module `\_90_pow'.
+Generating RTLIL representation for module `\_90_pmux'.
+Generating RTLIL representation for module `\_90_demux'.
+Generating RTLIL representation for module `\_90_lut'.
+Generating RTLIL representation for module `$connect'.
+Generating RTLIL representation for module `$input_port'.
+Successfully finished Verilog frontend.
+
+9.2. Continuing TECHMAP pass.
+Using extmapper simplemap for cells of type $mux.
+Using extmapper simplemap for cells of type $logic_not.
+Using extmapper simplemap for cells of type $eq.
+Using extmapper simplemap for cells of type $dff.
+No more expansions possible.
+<suppressed ~128 debug messages>
+
+10. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \register_file..
+Finding unused cells or wires in module \register_file_cell..
+Finding unused cells or wires in module \register_file_decoder_4to16..
+Finding unused cells or wires in module \register_file_mux_16to1_16bit..
+Finding unused cells or wires in module \register_file_mux_2to1_16bit..
+Removed 0 unused cells and 15 unused wires.
+<suppressed ~1 debug messages>
+
+11. Executing HIERARCHY pass (managing design hierarchy).
+Attribute `top' found on module `register_file'. Setting top module to register_file.
+
+11.1. Analyzing design hierarchy..
+Top module:  \register_file
+Used module:     \register_file_cell
+Used module:     \register_file_decoder_4to16
+Used module:     \register_file_mux_16to1_16bit
+Used module:         \register_file_mux_2to1_16bit
+
+11.2. Analyzing design hierarchy..
+Top module:  \register_file
+Used module:     \register_file_cell
+Used module:     \register_file_decoder_4to16
+Used module:     \register_file_mux_16to1_16bit
+Used module:         \register_file_mux_2to1_16bit
+Removed 0 unused modules.
+
+12. Printing statistics.
+
+=== register_file ===
+
+        +----------Local Count, excluding submodules.
+        | 
+       26 wires
+      335 wire bits
+       26 public wires
+      335 public wire bits
+        9 ports
+       63 port bits
+       18 submodules
+       15   register_file_cell
+        1   register_file_decoder_4to16
+        2   register_file_mux_16to1_16bit
+
+=== register_file_cell ===
+
+        +----------Local Count, excluding submodules.
+        | 
+        8 wires
+       83 wire bits
+        6 public wires
+       51 public wire bits
+        5 ports
+       35 port bits
+       48 cells
+       16   $_DFF_P_
+       32   $_MUX_
+
+=== register_file_decoder_4to16 ===
+
+        +----------Local Count, excluding submodules.
+        | 
+       66 wires
+      145 wire bits
+        3 public wires
+       21 public wire bits
+        3 ports
+       21 port bits
+      140 cells
+       16   $_MUX_
+       16   $_NOT_
+       48   $_OR_
+       60   $_XOR_
+
+=== register_file_mux_16to1_16bit ===
+
+        +----------Local Count, excluding submodules.
+        | 
+       48 wires
+      756 wire bits
+       48 public wires
+      756 public wire bits
+       18 ports
+      276 port bits
+       15 submodules
+       15   register_file_mux_2to1_16bit
+
+=== register_file_mux_2to1_16bit ===
+
+        +----------Local Count, excluding submodules.
+        | 
+        4 wires
+       49 wire bits
+        4 public wires
+       49 public wire bits
+        4 ports
+       49 port bits
+       16 cells
+       16   $_MUX_
+
+=== design hierarchy ===
+
+        +----------Count including submodules.
+        | 
+     1340 register_file
+       48 register_file_cell
+      140 register_file_decoder_4to16
+       16   register_file_mux_2to1_16bit
+
+        +----------Count including submodules.
+        | 
+      428 wires
+     4707 wire bits
+      335 public wires
+     4103 public wire bits
+      243 ports
+     2631 port bits
+        - memories
+        - memory bits
+        - processes
+     1340 cells
+      240   $_DFF_P_
+      976   $_MUX_
+       16   $_NOT_
+       48   $_OR_
+       60   $_XOR_
+       18 submodules
+       15   register_file_cell
+        1   register_file_decoder_4to16
+        2   register_file_mux_16to1_16bit
+
+13. Executing JSON backend.
+
+End of script. Logfile hash: d486f4cc5a, CPU: user 0.03s system 0.00s, MEM: 15.47 MB peak
+Yosys 0.61+112 (git sha1 ac427a79b, clang++ 18.1.8 -fPIC -O3)
+Time spent: 41% 11x read_verilog (0 sec), 22% 2x hierarchy (0 sec), ...

@@ -1,0 +1,1733 @@
+{
+  "creator": "Yosys 0.61+112 (git sha1 ac427a79b, clang++ 18.1.8 -fPIC -O3)",
+  "modules": {
+    "control_unit": {
+      "attributes": {
+        "top": "00000000000000000000000000000001",
+        "src": "reconf/control_unit/rtl/control_unit.v:1.1-49.10"
+      },
+      "ports": {
+        "i_instr": {
+          "direction": "input",
+          "bits": [ 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17 ]
+        },
+        "i_flag_z": {
+          "direction": "input",
+          "bits": [ 18 ]
+        },
+        "i_flag_n": {
+          "direction": "input",
+          "bits": [ 19 ]
+        },
+        "i_flag_v": {
+          "direction": "input",
+          "bits": [ 20 ]
+        },
+        "o_reg_rs1_addr": {
+          "direction": "output",
+          "bits": [ 10, 11, 12, 13 ]
+        },
+        "o_reg_rs2_addr": {
+          "direction": "output",
+          "bits": [ 6, 7, 8, 9 ]
+        },
+        "o_reg_rd_addr": {
+          "direction": "output",
+          "bits": [ 14, 15, 16, 17 ]
+        },
+        "o_reg_file_wen": {
+          "direction": "output",
+          "bits": [ 21 ]
+        },
+        "o_alu_op": {
+          "direction": "output",
+          "bits": [ 22, 23, 24, 25 ]
+        },
+        "o_alu_src_b_sel": {
+          "direction": "output",
+          "bits": [ 26 ]
+        },
+        "o_dmem_wen": {
+          "direction": "output",
+          "bits": [ 27 ]
+        },
+        "o_reg_wb_sel": {
+          "direction": "output",
+          "bits": [ 28, 29 ]
+        },
+        "o_pc_sel": {
+          "direction": "output",
+          "bits": [ 30, 31 ]
+        }
+      },
+      "cells": {
+        "u_inst_dec": {
+          "hide_name": 0,
+          "type": "control_unit_instruction_decoder",
+          "parameters": {
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "reconf/control_unit/rtl/control_unit.v:25.38-28.6"
+          },
+          "port_directions": {
+            "i_opcode": "input",
+            "o_inst_onehot": "output"
+          },
+          "connections": {
+            "i_opcode": [ 2, 3, 4, 5 ],
+            "o_inst_onehot": [ 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47 ]
+          }
+        },
+        "u_sig_logic": {
+          "hide_name": 0,
+          "type": "control_unit_signal_logic",
+          "parameters": {
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "reconf/control_unit/rtl/control_unit.v:31.31-42.6"
+          },
+          "port_directions": {
+            "i_flag_n": "input",
+            "i_flag_v": "input",
+            "i_flag_z": "input",
+            "i_inst_onehot": "input",
+            "o_alu_op": "output",
+            "o_alu_src_b_sel": "output",
+            "o_dmem_wen": "output",
+            "o_pc_sel": "output",
+            "o_reg_file_wen": "output",
+            "o_reg_wb_sel": "output"
+          },
+          "connections": {
+            "i_flag_n": [ 19 ],
+            "i_flag_v": [ 20 ],
+            "i_flag_z": [ 18 ],
+            "i_inst_onehot": [ 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47 ],
+            "o_alu_op": [ 22, 23, 24, 25 ],
+            "o_alu_src_b_sel": [ 26 ],
+            "o_dmem_wen": [ 27 ],
+            "o_pc_sel": [ 30, 31 ],
+            "o_reg_file_wen": [ 21 ],
+            "o_reg_wb_sel": [ 28, 29 ]
+          }
+        }
+      },
+      "netnames": {
+        "i_flag_n": {
+          "hide_name": 0,
+          "bits": [ 19 ],
+          "attributes": {
+            "src": "reconf/control_unit/rtl/control_unit.v:4.24-4.32"
+          }
+        },
+        "i_flag_v": {
+          "hide_name": 0,
+          "bits": [ 20 ],
+          "attributes": {
+            "src": "reconf/control_unit/rtl/control_unit.v:5.24-5.32"
+          }
+        },
+        "i_flag_z": {
+          "hide_name": 0,
+          "bits": [ 18 ],
+          "attributes": {
+            "src": "reconf/control_unit/rtl/control_unit.v:3.24-3.32"
+          }
+        },
+        "i_instr": {
+          "hide_name": 0,
+          "bits": [ 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17 ],
+          "attributes": {
+            "src": "reconf/control_unit/rtl/control_unit.v:2.24-2.31"
+          }
+        },
+        "o_alu_op": {
+          "hide_name": 0,
+          "bits": [ 22, 23, 24, 25 ],
+          "attributes": {
+            "src": "reconf/control_unit/rtl/control_unit.v:12.24-12.32"
+          }
+        },
+        "o_alu_src_b_sel": {
+          "hide_name": 0,
+          "bits": [ 26 ],
+          "attributes": {
+            "src": "reconf/control_unit/rtl/control_unit.v:13.24-13.39"
+          }
+        },
+        "o_dmem_wen": {
+          "hide_name": 0,
+          "bits": [ 27 ],
+          "attributes": {
+            "src": "reconf/control_unit/rtl/control_unit.v:15.24-15.34"
+          }
+        },
+        "o_pc_sel": {
+          "hide_name": 0,
+          "bits": [ 30, 31 ],
+          "attributes": {
+            "src": "reconf/control_unit/rtl/control_unit.v:19.24-19.32"
+          }
+        },
+        "o_reg_file_wen": {
+          "hide_name": 0,
+          "bits": [ 21 ],
+          "attributes": {
+            "src": "reconf/control_unit/rtl/control_unit.v:10.24-10.38"
+          }
+        },
+        "o_reg_rd_addr": {
+          "hide_name": 0,
+          "bits": [ 14, 15, 16, 17 ],
+          "attributes": {
+            "src": "reconf/control_unit/rtl/control_unit.v:9.24-9.37"
+          }
+        },
+        "o_reg_rs1_addr": {
+          "hide_name": 0,
+          "bits": [ 10, 11, 12, 13 ],
+          "attributes": {
+            "src": "reconf/control_unit/rtl/control_unit.v:7.24-7.38"
+          }
+        },
+        "o_reg_rs2_addr": {
+          "hide_name": 0,
+          "bits": [ 6, 7, 8, 9 ],
+          "attributes": {
+            "src": "reconf/control_unit/rtl/control_unit.v:8.24-8.38"
+          }
+        },
+        "o_reg_wb_sel": {
+          "hide_name": 0,
+          "bits": [ 28, 29 ],
+          "attributes": {
+            "src": "reconf/control_unit/rtl/control_unit.v:17.24-17.36"
+          }
+        },
+        "w_inst_onehot": {
+          "hide_name": 0,
+          "bits": [ 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47 ],
+          "attributes": {
+            "src": "reconf/control_unit/rtl/control_unit.v:22.17-22.30"
+          }
+        }
+      }
+    },
+    "control_unit_decoder_2to4": {
+      "attributes": {
+        "src": "reconf/control_unit/rtl/control_unit_decoder_2to4.v:1.1-14.10"
+      },
+      "ports": {
+        "i_sel": {
+          "direction": "input",
+          "bits": [ 2, 3 ]
+        },
+        "i_en": {
+          "direction": "input",
+          "bits": [ 4 ]
+        },
+        "o_out": {
+          "direction": "output",
+          "bits": [ 5, 6, 7, 8 ]
+        }
+      },
+      "cells": {
+        "$auto$simplemap.cc:106:simplemap_bitop$152": {
+          "hide_name": 1,
+          "type": "$_AND_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/control_unit/rtl/control_unit_decoder_2to4.v:9.31-9.52"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 9 ],
+            "B": [ 10 ],
+            "Y": [ 11 ]
+          }
+        },
+        "$auto$simplemap.cc:106:simplemap_bitop$153": {
+          "hide_name": 1,
+          "type": "$_AND_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/control_unit/rtl/control_unit_decoder_2to4.v:9.23-9.53"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 4 ],
+            "B": [ 11 ],
+            "Y": [ 5 ]
+          }
+        },
+        "$auto$simplemap.cc:106:simplemap_bitop$155": {
+          "hide_name": 1,
+          "type": "$_AND_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/control_unit/rtl/control_unit_decoder_2to4.v:10.31-10.52"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 12 ],
+            "B": [ 2 ],
+            "Y": [ 13 ]
+          }
+        },
+        "$auto$simplemap.cc:106:simplemap_bitop$156": {
+          "hide_name": 1,
+          "type": "$_AND_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/control_unit/rtl/control_unit_decoder_2to4.v:10.23-10.53"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 4 ],
+            "B": [ 13 ],
+            "Y": [ 6 ]
+          }
+        },
+        "$auto$simplemap.cc:106:simplemap_bitop$158": {
+          "hide_name": 1,
+          "type": "$_AND_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/control_unit/rtl/control_unit_decoder_2to4.v:11.32-11.52"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 3 ],
+            "B": [ 14 ],
+            "Y": [ 15 ]
+          }
+        },
+        "$auto$simplemap.cc:106:simplemap_bitop$159": {
+          "hide_name": 1,
+          "type": "$_AND_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/control_unit/rtl/control_unit_decoder_2to4.v:11.23-11.53"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 4 ],
+            "B": [ 15 ],
+            "Y": [ 7 ]
+          }
+        },
+        "$auto$simplemap.cc:106:simplemap_bitop$160": {
+          "hide_name": 1,
+          "type": "$_AND_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/control_unit/rtl/control_unit_decoder_2to4.v:12.32-12.52"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 3 ],
+            "B": [ 2 ],
+            "Y": [ 16 ]
+          }
+        },
+        "$auto$simplemap.cc:106:simplemap_bitop$161": {
+          "hide_name": 1,
+          "type": "$_AND_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/control_unit/rtl/control_unit_decoder_2to4.v:12.23-12.53"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 4 ],
+            "B": [ 16 ],
+            "Y": [ 8 ]
+          }
+        },
+        "$auto$simplemap.cc:46:simplemap_not$150": {
+          "hide_name": 1,
+          "type": "$_NOT_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/control_unit/rtl/control_unit_decoder_2to4.v:9.31-9.40"
+          },
+          "port_directions": {
+            "A": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 3 ],
+            "Y": [ 9 ]
+          }
+        },
+        "$auto$simplemap.cc:46:simplemap_not$151": {
+          "hide_name": 1,
+          "type": "$_NOT_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/control_unit/rtl/control_unit_decoder_2to4.v:9.43-9.52"
+          },
+          "port_directions": {
+            "A": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 2 ],
+            "Y": [ 10 ]
+          }
+        },
+        "$auto$simplemap.cc:46:simplemap_not$154": {
+          "hide_name": 1,
+          "type": "$_NOT_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/control_unit/rtl/control_unit_decoder_2to4.v:10.31-10.40"
+          },
+          "port_directions": {
+            "A": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 3 ],
+            "Y": [ 12 ]
+          }
+        },
+        "$auto$simplemap.cc:46:simplemap_not$157": {
+          "hide_name": 1,
+          "type": "$_NOT_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/control_unit/rtl/control_unit_decoder_2to4.v:11.43-11.52"
+          },
+          "port_directions": {
+            "A": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 2 ],
+            "Y": [ 14 ]
+          }
+        }
+      },
+      "netnames": {
+        "$and$reconf/control_unit/rtl/control_unit_decoder_2to4.v:10$37_Y": {
+          "hide_name": 1,
+          "bits": [ 13 ],
+          "attributes": {
+            "src": "reconf/control_unit/rtl/control_unit_decoder_2to4.v:10.31-10.52"
+          }
+        },
+        "$and$reconf/control_unit/rtl/control_unit_decoder_2to4.v:11$40_Y": {
+          "hide_name": 1,
+          "bits": [ 15 ],
+          "attributes": {
+            "src": "reconf/control_unit/rtl/control_unit_decoder_2to4.v:11.32-11.52"
+          }
+        },
+        "$and$reconf/control_unit/rtl/control_unit_decoder_2to4.v:12$42_Y": {
+          "hide_name": 1,
+          "bits": [ 16 ],
+          "attributes": {
+            "src": "reconf/control_unit/rtl/control_unit_decoder_2to4.v:12.32-12.52"
+          }
+        },
+        "$and$reconf/control_unit/rtl/control_unit_decoder_2to4.v:9$34_Y": {
+          "hide_name": 1,
+          "bits": [ 11 ],
+          "attributes": {
+            "src": "reconf/control_unit/rtl/control_unit_decoder_2to4.v:9.31-9.52"
+          }
+        },
+        "$not$reconf/control_unit/rtl/control_unit_decoder_2to4.v:10$36_Y": {
+          "hide_name": 1,
+          "bits": [ 12 ],
+          "attributes": {
+            "src": "reconf/control_unit/rtl/control_unit_decoder_2to4.v:10.31-10.40"
+          }
+        },
+        "$not$reconf/control_unit/rtl/control_unit_decoder_2to4.v:11$39_Y": {
+          "hide_name": 1,
+          "bits": [ 14 ],
+          "attributes": {
+            "src": "reconf/control_unit/rtl/control_unit_decoder_2to4.v:11.43-11.52"
+          }
+        },
+        "$not$reconf/control_unit/rtl/control_unit_decoder_2to4.v:9$32_Y": {
+          "hide_name": 1,
+          "bits": [ 9 ],
+          "attributes": {
+            "src": "reconf/control_unit/rtl/control_unit_decoder_2to4.v:9.31-9.40"
+          }
+        },
+        "$not$reconf/control_unit/rtl/control_unit_decoder_2to4.v:9$33_Y": {
+          "hide_name": 1,
+          "bits": [ 10 ],
+          "attributes": {
+            "src": "reconf/control_unit/rtl/control_unit_decoder_2to4.v:9.43-9.52"
+          }
+        },
+        "i_en": {
+          "hide_name": 0,
+          "bits": [ 4 ],
+          "attributes": {
+            "src": "reconf/control_unit/rtl/control_unit_decoder_2to4.v:3.23-3.27"
+          }
+        },
+        "i_sel": {
+          "hide_name": 0,
+          "bits": [ 2, 3 ],
+          "attributes": {
+            "src": "reconf/control_unit/rtl/control_unit_decoder_2to4.v:2.23-2.28"
+          }
+        },
+        "o_out": {
+          "hide_name": 0,
+          "bits": [ 5, 6, 7, 8 ],
+          "attributes": {
+            "src": "reconf/control_unit/rtl/control_unit_decoder_2to4.v:4.23-4.28"
+          }
+        }
+      }
+    },
+    "control_unit_decoder_4to16": {
+      "attributes": {
+        "src": "reconf/control_unit/rtl/control_unit_decoder_4to16.v:1.1-29.10"
+      },
+      "ports": {
+        "i_opcode": {
+          "direction": "input",
+          "bits": [ 2, 3, 4, 5 ]
+        },
+        "i_en": {
+          "direction": "input",
+          "bits": [ 6 ]
+        },
+        "o_out": {
+          "direction": "output",
+          "bits": [ 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22 ]
+        }
+      },
+      "cells": {
+        "gen_decoders[0].u_dec_lower": {
+          "hide_name": 0,
+          "type": "control_unit_decoder_2to4",
+          "parameters": {
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "reconf/control_unit/rtl/control_unit_decoder_4to16.v:21.39-25.14"
+          },
+          "port_directions": {
+            "i_en": "input",
+            "i_sel": "input",
+            "o_out": "output"
+          },
+          "connections": {
+            "i_en": [ 23 ],
+            "i_sel": [ 2, 3 ],
+            "o_out": [ 7, 8, 9, 10 ]
+          }
+        },
+        "gen_decoders[1].u_dec_lower": {
+          "hide_name": 0,
+          "type": "control_unit_decoder_2to4",
+          "parameters": {
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "reconf/control_unit/rtl/control_unit_decoder_4to16.v:21.39-25.14"
+          },
+          "port_directions": {
+            "i_en": "input",
+            "i_sel": "input",
+            "o_out": "output"
+          },
+          "connections": {
+            "i_en": [ 24 ],
+            "i_sel": [ 2, 3 ],
+            "o_out": [ 11, 12, 13, 14 ]
+          }
+        },
+        "gen_decoders[2].u_dec_lower": {
+          "hide_name": 0,
+          "type": "control_unit_decoder_2to4",
+          "parameters": {
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "reconf/control_unit/rtl/control_unit_decoder_4to16.v:21.39-25.14"
+          },
+          "port_directions": {
+            "i_en": "input",
+            "i_sel": "input",
+            "o_out": "output"
+          },
+          "connections": {
+            "i_en": [ 25 ],
+            "i_sel": [ 2, 3 ],
+            "o_out": [ 15, 16, 17, 18 ]
+          }
+        },
+        "gen_decoders[3].u_dec_lower": {
+          "hide_name": 0,
+          "type": "control_unit_decoder_2to4",
+          "parameters": {
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "reconf/control_unit/rtl/control_unit_decoder_4to16.v:21.39-25.14"
+          },
+          "port_directions": {
+            "i_en": "input",
+            "i_sel": "input",
+            "o_out": "output"
+          },
+          "connections": {
+            "i_en": [ 26 ],
+            "i_sel": [ 2, 3 ],
+            "o_out": [ 19, 20, 21, 22 ]
+          }
+        },
+        "u_dec_upper": {
+          "hide_name": 0,
+          "type": "control_unit_decoder_2to4",
+          "parameters": {
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "reconf/control_unit/rtl/control_unit_decoder_4to16.v:11.31-15.6"
+          },
+          "port_directions": {
+            "i_en": "input",
+            "i_sel": "input",
+            "o_out": "output"
+          },
+          "connections": {
+            "i_en": [ 6 ],
+            "i_sel": [ 4, 5 ],
+            "o_out": [ 23, 24, 25, 26 ]
+          }
+        }
+      },
+      "netnames": {
+        "i_en": {
+          "hide_name": 0,
+          "bits": [ 6 ],
+          "attributes": {
+            "src": "reconf/control_unit/rtl/control_unit_decoder_4to16.v:3.24-3.28"
+          }
+        },
+        "i_opcode": {
+          "hide_name": 0,
+          "bits": [ 2, 3, 4, 5 ],
+          "attributes": {
+            "src": "reconf/control_unit/rtl/control_unit_decoder_4to16.v:2.24-2.32"
+          }
+        },
+        "o_out": {
+          "hide_name": 0,
+          "bits": [ 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22 ],
+          "attributes": {
+            "src": "reconf/control_unit/rtl/control_unit_decoder_4to16.v:4.24-4.29"
+          }
+        },
+        "w_enable_lines": {
+          "hide_name": 0,
+          "bits": [ 23, 24, 25, 26 ],
+          "attributes": {
+            "src": "reconf/control_unit/rtl/control_unit_decoder_4to16.v:7.16-7.30"
+          }
+        }
+      }
+    },
+    "control_unit_instruction_decoder": {
+      "attributes": {
+        "src": "reconf/control_unit/rtl/control_unit_instruction_decoder.v:1.1-13.10"
+      },
+      "ports": {
+        "i_opcode": {
+          "direction": "input",
+          "bits": [ 2, 3, 4, 5 ]
+        },
+        "o_inst_onehot": {
+          "direction": "output",
+          "bits": [ 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21 ]
+        }
+      },
+      "cells": {
+        "u_decoder_logic": {
+          "hide_name": 0,
+          "type": "control_unit_decoder_4to16",
+          "parameters": {
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "reconf/control_unit/rtl/control_unit_instruction_decoder.v:7.32-11.6"
+          },
+          "port_directions": {
+            "i_en": "input",
+            "i_opcode": "input",
+            "o_out": "output"
+          },
+          "connections": {
+            "i_en": [ "1" ],
+            "i_opcode": [ 2, 3, 4, 5 ],
+            "o_out": [ 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21 ]
+          }
+        }
+      },
+      "netnames": {
+        "i_opcode": {
+          "hide_name": 0,
+          "bits": [ 2, 3, 4, 5 ],
+          "attributes": {
+            "src": "reconf/control_unit/rtl/control_unit_instruction_decoder.v:2.24-2.32"
+          }
+        },
+        "o_inst_onehot": {
+          "hide_name": 0,
+          "bits": [ 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21 ],
+          "attributes": {
+            "src": "reconf/control_unit/rtl/control_unit_instruction_decoder.v:3.24-3.37"
+          }
+        }
+      }
+    },
+    "control_unit_signal_logic": {
+      "attributes": {
+        "src": "reconf/control_unit/rtl/control_unit_signal_logic.v:1.1-69.10"
+      },
+      "ports": {
+        "i_inst_onehot": {
+          "direction": "input",
+          "bits": [ 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17 ]
+        },
+        "i_flag_z": {
+          "direction": "input",
+          "bits": [ 18 ]
+        },
+        "i_flag_n": {
+          "direction": "input",
+          "bits": [ 19 ]
+        },
+        "i_flag_v": {
+          "direction": "input",
+          "bits": [ 20 ]
+        },
+        "o_reg_file_wen": {
+          "direction": "output",
+          "bits": [ 21 ]
+        },
+        "o_alu_op": {
+          "direction": "output",
+          "bits": [ 22, 23, 24, "0" ]
+        },
+        "o_alu_src_b_sel": {
+          "direction": "output",
+          "bits": [ 25 ]
+        },
+        "o_dmem_wen": {
+          "direction": "output",
+          "bits": [ 13 ]
+        },
+        "o_reg_wb_sel": {
+          "direction": "output",
+          "bits": [ 12, 26 ]
+        },
+        "o_pc_sel": {
+          "direction": "output",
+          "bits": [ 27, 17 ]
+        }
+      },
+      "cells": {
+        "$auto$simplemap.cc:106:simplemap_bitop$119": {
+          "hide_name": 1,
+          "type": "$_OR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/control_unit/rtl/control_unit_signal_logic.v:35.29-35.52"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 2 ],
+            "B": [ 3 ],
+            "Y": [ 28 ]
+          }
+        },
+        "$auto$simplemap.cc:106:simplemap_bitop$120": {
+          "hide_name": 1,
+          "type": "$_OR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/control_unit/rtl/control_unit_signal_logic.v:35.29-35.65"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 28 ],
+            "B": [ 4 ],
+            "Y": [ 29 ]
+          }
+        },
+        "$auto$simplemap.cc:106:simplemap_bitop$121": {
+          "hide_name": 1,
+          "type": "$_OR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/control_unit/rtl/control_unit_signal_logic.v:35.29-35.77"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 29 ],
+            "B": [ 5 ],
+            "Y": [ 30 ]
+          }
+        },
+        "$auto$simplemap.cc:106:simplemap_bitop$122": {
+          "hide_name": 1,
+          "type": "$_OR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/control_unit/rtl/control_unit_signal_logic.v:35.29-36.39"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 30 ],
+            "B": [ 6 ],
+            "Y": [ 31 ]
+          }
+        },
+        "$auto$simplemap.cc:106:simplemap_bitop$123": {
+          "hide_name": 1,
+          "type": "$_OR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/control_unit/rtl/control_unit_signal_logic.v:35.29-36.52"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 31 ],
+            "B": [ 7 ],
+            "Y": [ 32 ]
+          }
+        },
+        "$auto$simplemap.cc:106:simplemap_bitop$124": {
+          "hide_name": 1,
+          "type": "$_OR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/control_unit/rtl/control_unit_signal_logic.v:35.29-36.65"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 32 ],
+            "B": [ 8 ],
+            "Y": [ 33 ]
+          }
+        },
+        "$auto$simplemap.cc:106:simplemap_bitop$125": {
+          "hide_name": 1,
+          "type": "$_OR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/control_unit/rtl/control_unit_signal_logic.v:35.29-36.78"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 33 ],
+            "B": [ 9 ],
+            "Y": [ 34 ]
+          }
+        },
+        "$auto$simplemap.cc:106:simplemap_bitop$126": {
+          "hide_name": 1,
+          "type": "$_OR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/control_unit/rtl/control_unit_signal_logic.v:35.29-37.40"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 34 ],
+            "B": [ 10 ],
+            "Y": [ 35 ]
+          }
+        },
+        "$auto$simplemap.cc:106:simplemap_bitop$127": {
+          "hide_name": 1,
+          "type": "$_OR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/control_unit/rtl/control_unit_signal_logic.v:35.29-37.55"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 35 ],
+            "B": [ 11 ],
+            "Y": [ 36 ]
+          }
+        },
+        "$auto$simplemap.cc:106:simplemap_bitop$128": {
+          "hide_name": 1,
+          "type": "$_OR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/control_unit/rtl/control_unit_signal_logic.v:35.29-37.69"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 36 ],
+            "B": [ 12 ],
+            "Y": [ 37 ]
+          }
+        },
+        "$auto$simplemap.cc:106:simplemap_bitop$129": {
+          "hide_name": 1,
+          "type": "$_OR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/control_unit/rtl/control_unit_signal_logic.v:35.29-38.39"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 37 ],
+            "B": [ 16 ],
+            "Y": [ 38 ]
+          }
+        },
+        "$auto$simplemap.cc:106:simplemap_bitop$130": {
+          "hide_name": 1,
+          "type": "$_OR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/control_unit/rtl/control_unit_signal_logic.v:35.29-38.53"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 38 ],
+            "B": [ 17 ],
+            "Y": [ 21 ]
+          }
+        },
+        "$auto$simplemap.cc:106:simplemap_bitop$131": {
+          "hide_name": 1,
+          "type": "$_OR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/control_unit/rtl/control_unit_signal_logic.v:43.26-43.48"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 3 ],
+            "B": [ 5 ],
+            "Y": [ 39 ]
+          }
+        },
+        "$auto$simplemap.cc:106:simplemap_bitop$132": {
+          "hide_name": 1,
+          "type": "$_OR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/control_unit/rtl/control_unit_signal_logic.v:43.26-43.61"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 39 ],
+            "B": [ 7 ],
+            "Y": [ 40 ]
+          }
+        },
+        "$auto$simplemap.cc:106:simplemap_bitop$133": {
+          "hide_name": 1,
+          "type": "$_OR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/control_unit/rtl/control_unit_signal_logic.v:43.26-43.74"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 40 ],
+            "B": [ 9 ],
+            "Y": [ 22 ]
+          }
+        },
+        "$auto$simplemap.cc:106:simplemap_bitop$134": {
+          "hide_name": 1,
+          "type": "$_OR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/control_unit/rtl/control_unit_signal_logic.v:44.26-44.48"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 4 ],
+            "B": [ 5 ],
+            "Y": [ 41 ]
+          }
+        },
+        "$auto$simplemap.cc:106:simplemap_bitop$135": {
+          "hide_name": 1,
+          "type": "$_OR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/control_unit/rtl/control_unit_signal_logic.v:44.26-44.61"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 41 ],
+            "B": [ 8 ],
+            "Y": [ 42 ]
+          }
+        },
+        "$auto$simplemap.cc:106:simplemap_bitop$136": {
+          "hide_name": 1,
+          "type": "$_OR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/control_unit/rtl/control_unit_signal_logic.v:44.26-44.74"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 42 ],
+            "B": [ 9 ],
+            "Y": [ 23 ]
+          }
+        },
+        "$auto$simplemap.cc:106:simplemap_bitop$137": {
+          "hide_name": 1,
+          "type": "$_OR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/control_unit/rtl/control_unit_signal_logic.v:45.26-45.49"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 6 ],
+            "B": [ 7 ],
+            "Y": [ 43 ]
+          }
+        },
+        "$auto$simplemap.cc:106:simplemap_bitop$138": {
+          "hide_name": 1,
+          "type": "$_OR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/control_unit/rtl/control_unit_signal_logic.v:45.26-45.62"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 43 ],
+            "B": [ 8 ],
+            "Y": [ 44 ]
+          }
+        },
+        "$auto$simplemap.cc:106:simplemap_bitop$139": {
+          "hide_name": 1,
+          "type": "$_OR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/control_unit/rtl/control_unit_signal_logic.v:45.26-45.75"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 44 ],
+            "B": [ 9 ],
+            "Y": [ 24 ]
+          }
+        },
+        "$auto$simplemap.cc:106:simplemap_bitop$140": {
+          "hide_name": 1,
+          "type": "$_OR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/control_unit/rtl/control_unit_signal_logic.v:50.30-50.56"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 10 ],
+            "B": [ 11 ],
+            "Y": [ 45 ]
+          }
+        },
+        "$auto$simplemap.cc:106:simplemap_bitop$141": {
+          "hide_name": 1,
+          "type": "$_OR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/control_unit/rtl/control_unit_signal_logic.v:50.30-50.70"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 45 ],
+            "B": [ 12 ],
+            "Y": [ 46 ]
+          }
+        },
+        "$auto$simplemap.cc:106:simplemap_bitop$142": {
+          "hide_name": 1,
+          "type": "$_OR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/control_unit/rtl/control_unit_signal_logic.v:50.30-50.85"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 46 ],
+            "B": [ 13 ],
+            "Y": [ 47 ]
+          }
+        },
+        "$auto$simplemap.cc:106:simplemap_bitop$143": {
+          "hide_name": 1,
+          "type": "$_OR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/control_unit/rtl/control_unit_signal_logic.v:50.30-50.99"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 47 ],
+            "B": [ 17 ],
+            "Y": [ 25 ]
+          }
+        },
+        "$auto$simplemap.cc:106:simplemap_bitop$144": {
+          "hide_name": 1,
+          "type": "$_OR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/control_unit/rtl/control_unit_signal_logic.v:58.30-58.54"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 16 ],
+            "B": [ 17 ],
+            "Y": [ 26 ]
+          }
+        },
+        "$auto$simplemap.cc:106:simplemap_bitop$145": {
+          "hide_name": 1,
+          "type": "$_AND_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/control_unit/rtl/control_unit_signal_logic.v:63.30-63.51"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 15 ],
+            "B": [ 18 ],
+            "Y": [ 48 ]
+          }
+        },
+        "$auto$simplemap.cc:106:simplemap_bitop$146": {
+          "hide_name": 1,
+          "type": "$_XOR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/control_unit/rtl/control_unit_signal_logic.v:64.44-64.63"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 19 ],
+            "B": [ 20 ],
+            "Y": [ 49 ]
+          }
+        },
+        "$auto$simplemap.cc:106:simplemap_bitop$147": {
+          "hide_name": 1,
+          "type": "$_AND_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/control_unit/rtl/control_unit_signal_logic.v:64.30-64.64"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 14 ],
+            "B": [ 49 ],
+            "Y": [ 50 ]
+          }
+        },
+        "$auto$simplemap.cc:106:simplemap_bitop$148": {
+          "hide_name": 1,
+          "type": "$_OR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/control_unit/rtl/control_unit_signal_logic.v:63.29-64.65"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 48 ],
+            "B": [ 50 ],
+            "Y": [ 51 ]
+          }
+        },
+        "$auto$simplemap.cc:106:simplemap_bitop$149": {
+          "hide_name": 1,
+          "type": "$_OR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/control_unit/rtl/control_unit_signal_logic.v:66.26-66.53"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 16 ],
+            "B": [ 51 ],
+            "Y": [ 27 ]
+          }
+        }
+      },
+      "netnames": {
+        "$and$reconf/control_unit/rtl/control_unit_signal_logic.v:63$27_Y": {
+          "hide_name": 1,
+          "bits": [ 48 ],
+          "attributes": {
+            "src": "reconf/control_unit/rtl/control_unit_signal_logic.v:63.30-63.51"
+          }
+        },
+        "$and$reconf/control_unit/rtl/control_unit_signal_logic.v:64$29_Y": {
+          "hide_name": 1,
+          "bits": [ 50 ],
+          "attributes": {
+            "src": "reconf/control_unit/rtl/control_unit_signal_logic.v:64.30-64.64"
+          }
+        },
+        "$or$reconf/control_unit/rtl/control_unit_signal_logic.v:35$10_Y": {
+          "hide_name": 1,
+          "bits": [ 37 ],
+          "attributes": {
+            "src": "reconf/control_unit/rtl/control_unit_signal_logic.v:35.29-37.69"
+          }
+        },
+        "$or$reconf/control_unit/rtl/control_unit_signal_logic.v:35$11_Y": {
+          "hide_name": 1,
+          "bits": [ 38 ],
+          "attributes": {
+            "src": "reconf/control_unit/rtl/control_unit_signal_logic.v:35.29-38.39"
+          }
+        },
+        "$or$reconf/control_unit/rtl/control_unit_signal_logic.v:35$1_Y": {
+          "hide_name": 1,
+          "bits": [ 28 ],
+          "attributes": {
+            "src": "reconf/control_unit/rtl/control_unit_signal_logic.v:35.29-35.52"
+          }
+        },
+        "$or$reconf/control_unit/rtl/control_unit_signal_logic.v:35$2_Y": {
+          "hide_name": 1,
+          "bits": [ 29 ],
+          "attributes": {
+            "src": "reconf/control_unit/rtl/control_unit_signal_logic.v:35.29-35.65"
+          }
+        },
+        "$or$reconf/control_unit/rtl/control_unit_signal_logic.v:35$3_Y": {
+          "hide_name": 1,
+          "bits": [ 30 ],
+          "attributes": {
+            "src": "reconf/control_unit/rtl/control_unit_signal_logic.v:35.29-35.77"
+          }
+        },
+        "$or$reconf/control_unit/rtl/control_unit_signal_logic.v:35$4_Y": {
+          "hide_name": 1,
+          "bits": [ 31 ],
+          "attributes": {
+            "src": "reconf/control_unit/rtl/control_unit_signal_logic.v:35.29-36.39"
+          }
+        },
+        "$or$reconf/control_unit/rtl/control_unit_signal_logic.v:35$5_Y": {
+          "hide_name": 1,
+          "bits": [ 32 ],
+          "attributes": {
+            "src": "reconf/control_unit/rtl/control_unit_signal_logic.v:35.29-36.52"
+          }
+        },
+        "$or$reconf/control_unit/rtl/control_unit_signal_logic.v:35$6_Y": {
+          "hide_name": 1,
+          "bits": [ 33 ],
+          "attributes": {
+            "src": "reconf/control_unit/rtl/control_unit_signal_logic.v:35.29-36.65"
+          }
+        },
+        "$or$reconf/control_unit/rtl/control_unit_signal_logic.v:35$7_Y": {
+          "hide_name": 1,
+          "bits": [ 34 ],
+          "attributes": {
+            "src": "reconf/control_unit/rtl/control_unit_signal_logic.v:35.29-36.78"
+          }
+        },
+        "$or$reconf/control_unit/rtl/control_unit_signal_logic.v:35$8_Y": {
+          "hide_name": 1,
+          "bits": [ 35 ],
+          "attributes": {
+            "src": "reconf/control_unit/rtl/control_unit_signal_logic.v:35.29-37.40"
+          }
+        },
+        "$or$reconf/control_unit/rtl/control_unit_signal_logic.v:35$9_Y": {
+          "hide_name": 1,
+          "bits": [ 36 ],
+          "attributes": {
+            "src": "reconf/control_unit/rtl/control_unit_signal_logic.v:35.29-37.55"
+          }
+        },
+        "$or$reconf/control_unit/rtl/control_unit_signal_logic.v:43$13_Y": {
+          "hide_name": 1,
+          "bits": [ 39 ],
+          "attributes": {
+            "src": "reconf/control_unit/rtl/control_unit_signal_logic.v:43.26-43.48"
+          }
+        },
+        "$or$reconf/control_unit/rtl/control_unit_signal_logic.v:43$14_Y": {
+          "hide_name": 1,
+          "bits": [ 40 ],
+          "attributes": {
+            "src": "reconf/control_unit/rtl/control_unit_signal_logic.v:43.26-43.61"
+          }
+        },
+        "$or$reconf/control_unit/rtl/control_unit_signal_logic.v:44$16_Y": {
+          "hide_name": 1,
+          "bits": [ 41 ],
+          "attributes": {
+            "src": "reconf/control_unit/rtl/control_unit_signal_logic.v:44.26-44.48"
+          }
+        },
+        "$or$reconf/control_unit/rtl/control_unit_signal_logic.v:44$17_Y": {
+          "hide_name": 1,
+          "bits": [ 42 ],
+          "attributes": {
+            "src": "reconf/control_unit/rtl/control_unit_signal_logic.v:44.26-44.61"
+          }
+        },
+        "$or$reconf/control_unit/rtl/control_unit_signal_logic.v:45$19_Y": {
+          "hide_name": 1,
+          "bits": [ 43 ],
+          "attributes": {
+            "src": "reconf/control_unit/rtl/control_unit_signal_logic.v:45.26-45.49"
+          }
+        },
+        "$or$reconf/control_unit/rtl/control_unit_signal_logic.v:45$20_Y": {
+          "hide_name": 1,
+          "bits": [ 44 ],
+          "attributes": {
+            "src": "reconf/control_unit/rtl/control_unit_signal_logic.v:45.26-45.62"
+          }
+        },
+        "$or$reconf/control_unit/rtl/control_unit_signal_logic.v:50$22_Y": {
+          "hide_name": 1,
+          "bits": [ 45 ],
+          "attributes": {
+            "src": "reconf/control_unit/rtl/control_unit_signal_logic.v:50.30-50.56"
+          }
+        },
+        "$or$reconf/control_unit/rtl/control_unit_signal_logic.v:50$23_Y": {
+          "hide_name": 1,
+          "bits": [ 46 ],
+          "attributes": {
+            "src": "reconf/control_unit/rtl/control_unit_signal_logic.v:50.30-50.70"
+          }
+        },
+        "$or$reconf/control_unit/rtl/control_unit_signal_logic.v:50$24_Y": {
+          "hide_name": 1,
+          "bits": [ 47 ],
+          "attributes": {
+            "src": "reconf/control_unit/rtl/control_unit_signal_logic.v:50.30-50.85"
+          }
+        },
+        "$xor$reconf/control_unit/rtl/control_unit_signal_logic.v:64$28_Y": {
+          "hide_name": 1,
+          "bits": [ 49 ],
+          "attributes": {
+            "src": "reconf/control_unit/rtl/control_unit_signal_logic.v:64.44-64.63"
+          }
+        },
+        "i_flag_n": {
+          "hide_name": 0,
+          "bits": [ 19 ],
+          "attributes": {
+            "src": "reconf/control_unit/rtl/control_unit_signal_logic.v:4.24-4.32"
+          }
+        },
+        "i_flag_v": {
+          "hide_name": 0,
+          "bits": [ 20 ],
+          "attributes": {
+            "src": "reconf/control_unit/rtl/control_unit_signal_logic.v:5.24-5.32"
+          }
+        },
+        "i_flag_z": {
+          "hide_name": 0,
+          "bits": [ 18 ],
+          "attributes": {
+            "src": "reconf/control_unit/rtl/control_unit_signal_logic.v:3.24-3.32"
+          }
+        },
+        "i_inst_onehot": {
+          "hide_name": 0,
+          "bits": [ 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17 ],
+          "attributes": {
+            "src": "reconf/control_unit/rtl/control_unit_signal_logic.v:2.24-2.37"
+          }
+        },
+        "o_alu_op": {
+          "hide_name": 0,
+          "bits": [ 22, 23, 24, "0" ],
+          "attributes": {
+            "src": "reconf/control_unit/rtl/control_unit_signal_logic.v:8.24-8.32"
+          }
+        },
+        "o_alu_src_b_sel": {
+          "hide_name": 0,
+          "bits": [ 25 ],
+          "attributes": {
+            "src": "reconf/control_unit/rtl/control_unit_signal_logic.v:9.24-9.39"
+          }
+        },
+        "o_dmem_wen": {
+          "hide_name": 0,
+          "bits": [ 13 ],
+          "attributes": {
+            "src": "reconf/control_unit/rtl/control_unit_signal_logic.v:10.24-10.34"
+          }
+        },
+        "o_pc_sel": {
+          "hide_name": 0,
+          "bits": [ 27, 17 ],
+          "attributes": {
+            "src": "reconf/control_unit/rtl/control_unit_signal_logic.v:12.24-12.32"
+          }
+        },
+        "o_reg_file_wen": {
+          "hide_name": 0,
+          "bits": [ 21 ],
+          "attributes": {
+            "src": "reconf/control_unit/rtl/control_unit_signal_logic.v:7.24-7.38"
+          }
+        },
+        "o_reg_wb_sel": {
+          "hide_name": 0,
+          "bits": [ 12, 26 ],
+          "attributes": {
+            "src": "reconf/control_unit/rtl/control_unit_signal_logic.v:11.24-11.36"
+          }
+        },
+        "w_branch_taken": {
+          "hide_name": 0,
+          "bits": [ 51 ],
+          "attributes": {
+            "src": "reconf/control_unit/rtl/control_unit_signal_logic.v:62.10-62.24"
+          }
+        },
+        "w_inst_add": {
+          "hide_name": 0,
+          "bits": [ 2 ],
+          "attributes": {
+            "src": "reconf/control_unit/rtl/control_unit_signal_logic.v:16.10-16.20"
+          }
+        },
+        "w_inst_addi": {
+          "hide_name": 0,
+          "bits": [ 10 ],
+          "attributes": {
+            "src": "reconf/control_unit/rtl/control_unit_signal_logic.v:24.10-24.21"
+          }
+        },
+        "w_inst_and": {
+          "hide_name": 0,
+          "bits": [ 4 ],
+          "attributes": {
+            "src": "reconf/control_unit/rtl/control_unit_signal_logic.v:18.10-18.20"
+          }
+        },
+        "w_inst_blt": {
+          "hide_name": 0,
+          "bits": [ 14 ],
+          "attributes": {
+            "src": "reconf/control_unit/rtl/control_unit_signal_logic.v:28.10-28.20"
+          }
+        },
+        "w_inst_bz": {
+          "hide_name": 0,
+          "bits": [ 15 ],
+          "attributes": {
+            "src": "reconf/control_unit/rtl/control_unit_signal_logic.v:29.10-29.19"
+          }
+        },
+        "w_inst_jal": {
+          "hide_name": 0,
+          "bits": [ 16 ],
+          "attributes": {
+            "src": "reconf/control_unit/rtl/control_unit_signal_logic.v:30.10-30.20"
+          }
+        },
+        "w_inst_jalr": {
+          "hide_name": 0,
+          "bits": [ 17 ],
+          "attributes": {
+            "src": "reconf/control_unit/rtl/control_unit_signal_logic.v:31.10-31.21"
+          }
+        },
+        "w_inst_load": {
+          "hide_name": 0,
+          "bits": [ 12 ],
+          "attributes": {
+            "src": "reconf/control_unit/rtl/control_unit_signal_logic.v:26.10-26.21"
+          }
+        },
+        "w_inst_loadi": {
+          "hide_name": 0,
+          "bits": [ 11 ],
+          "attributes": {
+            "src": "reconf/control_unit/rtl/control_unit_signal_logic.v:25.10-25.22"
+          }
+        },
+        "w_inst_not": {
+          "hide_name": 0,
+          "bits": [ 7 ],
+          "attributes": {
+            "src": "reconf/control_unit/rtl/control_unit_signal_logic.v:21.10-21.20"
+          }
+        },
+        "w_inst_or": {
+          "hide_name": 0,
+          "bits": [ 5 ],
+          "attributes": {
+            "src": "reconf/control_unit/rtl/control_unit_signal_logic.v:19.10-19.19"
+          }
+        },
+        "w_inst_sla": {
+          "hide_name": 0,
+          "bits": [ 9 ],
+          "attributes": {
+            "src": "reconf/control_unit/rtl/control_unit_signal_logic.v:23.10-23.20"
+          }
+        },
+        "w_inst_sra": {
+          "hide_name": 0,
+          "bits": [ 8 ],
+          "attributes": {
+            "src": "reconf/control_unit/rtl/control_unit_signal_logic.v:22.10-22.20"
+          }
+        },
+        "w_inst_store": {
+          "hide_name": 0,
+          "bits": [ 13 ],
+          "attributes": {
+            "src": "reconf/control_unit/rtl/control_unit_signal_logic.v:27.10-27.22"
+          }
+        },
+        "w_inst_sub": {
+          "hide_name": 0,
+          "bits": [ 3 ],
+          "attributes": {
+            "src": "reconf/control_unit/rtl/control_unit_signal_logic.v:17.10-17.20"
+          }
+        },
+        "w_inst_xor": {
+          "hide_name": 0,
+          "bits": [ 6 ],
+          "attributes": {
+            "src": "reconf/control_unit/rtl/control_unit_signal_logic.v:20.10-20.20"
+          }
+        }
+      }
+    }
+  }
+}

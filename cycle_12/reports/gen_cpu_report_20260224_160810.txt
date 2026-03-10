@@ -1,0 +1,63 @@
+
+============================================================
+CPU自動生成レポート
+============================================================
+生成日時: 2026-02-24 16:08:10
+
+生成成功モジュール (9個):
+
+  ✓ program_counter:
+    - program_counter_full_adder.v
+    - program_counter_mux_2to1.v
+    - program_counter_adder_16bit.v
+    - program_counter_mux_2to1_16bit.v
+    - program_counter_register.v
+    - program_counter_logic.v
+    - program_counter.v
+  ✓ instruction_decoder:
+    - instruction_decoder_field_slicer.v
+    - instruction_decoder_reg_selector.v
+    - instruction_decoder_imm_selector.v
+    - instruction_decoder.v
+  ✓ control_unit:
+    - control_unit_onehot_decoder.v
+    - control_unit_alu_selector.v
+    - control_unit_writeback_selector.v
+    - control_unit_branch_evaluator.v
+    - control_unit_enable_generator.v
+    - control_unit.v
+  ✓ register_file:
+    - register_file_cell.v
+    - register_file_mux_2to1_16bit.v
+    - register_file_decoder_4to16.v
+    - register_file_mux_16to1_16bit.v
+    - register_file.v
+  ✓ alu:
+    - alu_full_adder.v
+    - alu_adder_16bit.v
+    - alu_logical_unit_16bit.v
+    - alu_shifter_16bit.v
+    - alu_flag_generator.v
+    - alu.v
+  ✓ flag_reg:
+    - flag_reg_bit.v
+    - flag_reg.v
+  ✓ imm_gen:
+    - imm_gen_sign_ext4.v
+    - imm_gen_sign_ext8.v
+    - imm_gen_sign_ext12.v
+    - imm_gen.v
+  ✓ pc_control_unit:
+    - pc_control_unit_full_adder.v
+    - pc_control_unit_mux_2to1.v
+    - pc_control_unit_adder_16bit.v
+    - pc_control_unit_mux_2to1_16bit.v
+    - pc_control_unit.v
+  ✓ writeback_mux:
+    - writeback_mux_2to1.v
+    - writeback_mux_2to1_16bit.v
+    - writeback_mux.v
+
+すべてのモジュールが正常に生成されました。
+
+============================================================

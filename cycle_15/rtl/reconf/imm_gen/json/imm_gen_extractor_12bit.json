@@ -1,0 +1,39 @@
+{
+  "creator": "Yosys 0.61+112 (git sha1 ac427a79b, clang++ 18.1.8 -fPIC -O3)",
+  "modules": {
+    "imm_gen_extractor_12bit": {
+      "attributes": {
+        "top": "00000000000000000000000000000001",
+        "src": "reconf/imm_gen/rtl/imm_gen_extractor_12bit.v:1.1-10.10"
+      },
+      "ports": {
+        "i_instr_part": {
+          "direction": "input",
+          "bits": [ 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13 ]
+        },
+        "o_imm": {
+          "direction": "output",
+          "bits": [ 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 13, 13, 13, 13 ]
+        }
+      },
+      "cells": {
+      },
+      "netnames": {
+        "i_instr_part": {
+          "hide_name": 0,
+          "bits": [ 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13 ],
+          "attributes": {
+            "src": "reconf/imm_gen/rtl/imm_gen_extractor_12bit.v:2.24-2.36"
+          }
+        },
+        "o_imm": {
+          "hide_name": 0,
+          "bits": [ 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 13, 13, 13, 13 ],
+          "attributes": {
+            "src": "reconf/imm_gen/rtl/imm_gen_extractor_12bit.v:3.24-3.29"
+          }
+        }
+      }
+    }
+  }
+}

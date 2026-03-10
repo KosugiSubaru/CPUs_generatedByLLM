@@ -1,0 +1,1423 @@
+
+ /----------------------------------------------------------------------------\
+ |  yosys -- Yosys Open SYnthesis Suite                                       |
+ |  Copyright (C) 2012 - 2026  Claire Xenia Wolf <claire@yosyshq.com>         |
+ |  Distributed under an ISC-like license, type "license" to see terms        |
+ \----------------------------------------------------------------------------/
+ Yosys 0.61+112 (git sha1 ac427a79b, clang++ 18.1.8 -fPIC -O3)
+
+-- Executing script file `reconf/cpu/json/cpu.ys' --
+
+1. Executing Verilog-2005 frontend: reconf/program_counter/rtl/program_counter_logic.v
+Parsing Verilog input from `reconf/program_counter/rtl/program_counter_logic.v' to AST representation.
+Generating RTLIL representation for module `\program_counter_logic'.
+Successfully finished Verilog frontend.
+
+2. Executing Verilog-2005 frontend: reconf/program_counter/rtl/program_counter_full_adder.v
+Parsing Verilog input from `reconf/program_counter/rtl/program_counter_full_adder.v' to AST representation.
+Generating RTLIL representation for module `\program_counter_full_adder'.
+Successfully finished Verilog frontend.
+
+3. Executing Verilog-2005 frontend: reconf/program_counter/rtl/program_counter_mux_2to1.v
+Parsing Verilog input from `reconf/program_counter/rtl/program_counter_mux_2to1.v' to AST representation.
+Generating RTLIL representation for module `\program_counter_mux_2to1'.
+Successfully finished Verilog frontend.
+
+4. Executing Verilog-2005 frontend: reconf/program_counter/rtl/program_counter.v
+Parsing Verilog input from `reconf/program_counter/rtl/program_counter.v' to AST representation.
+Generating RTLIL representation for module `\program_counter'.
+Successfully finished Verilog frontend.
+
+5. Executing Verilog-2005 frontend: reconf/program_counter/rtl/program_counter_register.v
+Parsing Verilog input from `reconf/program_counter/rtl/program_counter_register.v' to AST representation.
+Generating RTLIL representation for module `\program_counter_register'.
+Successfully finished Verilog frontend.
+
+6. Executing Verilog-2005 frontend: reconf/program_counter/rtl/program_counter_adder_16bit.v
+Parsing Verilog input from `reconf/program_counter/rtl/program_counter_adder_16bit.v' to AST representation.
+Generating RTLIL representation for module `\program_counter_adder_16bit'.
+Successfully finished Verilog frontend.
+
+7. Executing Verilog-2005 frontend: reconf/program_counter/rtl/program_counter_mux_2to1_16bit.v
+Parsing Verilog input from `reconf/program_counter/rtl/program_counter_mux_2to1_16bit.v' to AST representation.
+Generating RTLIL representation for module `\program_counter_mux_2to1_16bit'.
+Successfully finished Verilog frontend.
+
+8. Executing Verilog-2005 frontend: reconf/alu/rtl/alu_flag_generator.v
+Parsing Verilog input from `reconf/alu/rtl/alu_flag_generator.v' to AST representation.
+Generating RTLIL representation for module `\alu_flag_generator'.
+Successfully finished Verilog frontend.
+
+9. Executing Verilog-2005 frontend: reconf/alu/rtl/alu.v
+Parsing Verilog input from `reconf/alu/rtl/alu.v' to AST representation.
+Generating RTLIL representation for module `\alu'.
+Successfully finished Verilog frontend.
+
+10. Executing Verilog-2005 frontend: reconf/alu/rtl/alu_shifter_16bit.v
+Parsing Verilog input from `reconf/alu/rtl/alu_shifter_16bit.v' to AST representation.
+Generating RTLIL representation for module `\alu_shifter_16bit'.
+Successfully finished Verilog frontend.
+
+11. Executing Verilog-2005 frontend: reconf/alu/rtl/alu_full_adder.v
+Parsing Verilog input from `reconf/alu/rtl/alu_full_adder.v' to AST representation.
+Generating RTLIL representation for module `\alu_full_adder'.
+Successfully finished Verilog frontend.
+
+12. Executing Verilog-2005 frontend: reconf/alu/rtl/alu_adder_16bit.v
+Parsing Verilog input from `reconf/alu/rtl/alu_adder_16bit.v' to AST representation.
+Generating RTLIL representation for module `\alu_adder_16bit'.
+Successfully finished Verilog frontend.
+
+13. Executing Verilog-2005 frontend: reconf/alu/rtl/alu_logical_unit_16bit.v
+Parsing Verilog input from `reconf/alu/rtl/alu_logical_unit_16bit.v' to AST representation.
+Generating RTLIL representation for module `\alu_logical_unit_16bit'.
+Successfully finished Verilog frontend.
+
+14. Executing Verilog-2005 frontend: reconf/pc_control_unit/rtl/pc_control_unit_full_adder.v
+Parsing Verilog input from `reconf/pc_control_unit/rtl/pc_control_unit_full_adder.v' to AST representation.
+Generating RTLIL representation for module `\pc_control_unit_full_adder'.
+Successfully finished Verilog frontend.
+
+15. Executing Verilog-2005 frontend: reconf/pc_control_unit/rtl/pc_control_unit.v
+Parsing Verilog input from `reconf/pc_control_unit/rtl/pc_control_unit.v' to AST representation.
+Generating RTLIL representation for module `\pc_control_unit'.
+Successfully finished Verilog frontend.
+
+16. Executing Verilog-2005 frontend: reconf/pc_control_unit/rtl/pc_control_unit_mux_2to1_16bit.v
+Parsing Verilog input from `reconf/pc_control_unit/rtl/pc_control_unit_mux_2to1_16bit.v' to AST representation.
+Generating RTLIL representation for module `\pc_control_unit_mux_2to1_16bit'.
+Successfully finished Verilog frontend.
+
+17. Executing Verilog-2005 frontend: reconf/pc_control_unit/rtl/pc_control_unit_mux_2to1.v
+Parsing Verilog input from `reconf/pc_control_unit/rtl/pc_control_unit_mux_2to1.v' to AST representation.
+Generating RTLIL representation for module `\pc_control_unit_mux_2to1'.
+Successfully finished Verilog frontend.
+
+18. Executing Verilog-2005 frontend: reconf/pc_control_unit/rtl/pc_control_unit_adder_16bit.v
+Parsing Verilog input from `reconf/pc_control_unit/rtl/pc_control_unit_adder_16bit.v' to AST representation.
+Generating RTLIL representation for module `\pc_control_unit_adder_16bit'.
+Successfully finished Verilog frontend.
+
+19. Executing Verilog-2005 frontend: reconf/imm_gen/rtl/imm_gen_sign_ext8.v
+Parsing Verilog input from `reconf/imm_gen/rtl/imm_gen_sign_ext8.v' to AST representation.
+Generating RTLIL representation for module `\imm_gen_sign_ext8'.
+Successfully finished Verilog frontend.
+
+20. Executing Verilog-2005 frontend: reconf/imm_gen/rtl/imm_gen.v
+Parsing Verilog input from `reconf/imm_gen/rtl/imm_gen.v' to AST representation.
+Generating RTLIL representation for module `\imm_gen'.
+Successfully finished Verilog frontend.
+
+21. Executing Verilog-2005 frontend: reconf/imm_gen/rtl/imm_gen_sign_ext12.v
+Parsing Verilog input from `reconf/imm_gen/rtl/imm_gen_sign_ext12.v' to AST representation.
+Generating RTLIL representation for module `\imm_gen_sign_ext12'.
+Successfully finished Verilog frontend.
+
+22. Executing Verilog-2005 frontend: reconf/imm_gen/rtl/imm_gen_sign_ext4.v
+Parsing Verilog input from `reconf/imm_gen/rtl/imm_gen_sign_ext4.v' to AST representation.
+Generating RTLIL representation for module `\imm_gen_sign_ext4'.
+Successfully finished Verilog frontend.
+
+23. Executing Verilog-2005 frontend: reconf/writeback_mux/rtl/writeback_mux.v
+Parsing Verilog input from `reconf/writeback_mux/rtl/writeback_mux.v' to AST representation.
+Generating RTLIL representation for module `\writeback_mux'.
+Successfully finished Verilog frontend.
+
+24. Executing Verilog-2005 frontend: reconf/writeback_mux/rtl/writeback_mux_2to1_16bit.v
+Parsing Verilog input from `reconf/writeback_mux/rtl/writeback_mux_2to1_16bit.v' to AST representation.
+Generating RTLIL representation for module `\writeback_mux_2to1_16bit'.
+Successfully finished Verilog frontend.
+
+25. Executing Verilog-2005 frontend: reconf/writeback_mux/rtl/writeback_mux_2to1.v
+Parsing Verilog input from `reconf/writeback_mux/rtl/writeback_mux_2to1.v' to AST representation.
+Generating RTLIL representation for module `\writeback_mux_2to1'.
+Successfully finished Verilog frontend.
+
+26. Executing Verilog-2005 frontend: reconf/control_unit/rtl/control_unit_branch_evaluator.v
+Parsing Verilog input from `reconf/control_unit/rtl/control_unit_branch_evaluator.v' to AST representation.
+Generating RTLIL representation for module `\control_unit_branch_evaluator'.
+Successfully finished Verilog frontend.
+
+27. Executing Verilog-2005 frontend: reconf/control_unit/rtl/control_unit_writeback_selector.v
+Parsing Verilog input from `reconf/control_unit/rtl/control_unit_writeback_selector.v' to AST representation.
+Generating RTLIL representation for module `\control_unit_writeback_selector'.
+Successfully finished Verilog frontend.
+
+28. Executing Verilog-2005 frontend: reconf/control_unit/rtl/control_unit_onehot_decoder.v
+Parsing Verilog input from `reconf/control_unit/rtl/control_unit_onehot_decoder.v' to AST representation.
+Generating RTLIL representation for module `\control_unit_onehot_decoder'.
+Successfully finished Verilog frontend.
+
+29. Executing Verilog-2005 frontend: reconf/control_unit/rtl/control_unit.v
+Parsing Verilog input from `reconf/control_unit/rtl/control_unit.v' to AST representation.
+Generating RTLIL representation for module `\control_unit'.
+Successfully finished Verilog frontend.
+
+30. Executing Verilog-2005 frontend: reconf/control_unit/rtl/control_unit_alu_selector.v
+Parsing Verilog input from `reconf/control_unit/rtl/control_unit_alu_selector.v' to AST representation.
+Generating RTLIL representation for module `\control_unit_alu_selector'.
+Successfully finished Verilog frontend.
+
+31. Executing Verilog-2005 frontend: reconf/control_unit/rtl/control_unit_enable_generator.v
+Parsing Verilog input from `reconf/control_unit/rtl/control_unit_enable_generator.v' to AST representation.
+Generating RTLIL representation for module `\control_unit_enable_generator'.
+Successfully finished Verilog frontend.
+
+32. Executing Verilog-2005 frontend: reconf/cpu/rtl/cpu.v
+Parsing Verilog input from `reconf/cpu/rtl/cpu.v' to AST representation.
+Generating RTLIL representation for module `\cpu'.
+Successfully finished Verilog frontend.
+
+33. Executing Verilog-2005 frontend: reconf/register_file/rtl/register_file.v
+Parsing Verilog input from `reconf/register_file/rtl/register_file.v' to AST representation.
+Generating RTLIL representation for module `\register_file'.
+Successfully finished Verilog frontend.
+
+34. Executing Verilog-2005 frontend: reconf/register_file/rtl/register_file_mux_16to1_16bit.v
+Parsing Verilog input from `reconf/register_file/rtl/register_file_mux_16to1_16bit.v' to AST representation.
+Generating RTLIL representation for module `\register_file_mux_16to1_16bit'.
+Successfully finished Verilog frontend.
+
+35. Executing Verilog-2005 frontend: reconf/register_file/rtl/register_file_mux_2to1_16bit.v
+Parsing Verilog input from `reconf/register_file/rtl/register_file_mux_2to1_16bit.v' to AST representation.
+Generating RTLIL representation for module `\register_file_mux_2to1_16bit'.
+Successfully finished Verilog frontend.
+
+36. Executing Verilog-2005 frontend: reconf/register_file/rtl/register_file_decoder_4to16.v
+Parsing Verilog input from `reconf/register_file/rtl/register_file_decoder_4to16.v' to AST representation.
+Generating RTLIL representation for module `\register_file_decoder_4to16'.
+Successfully finished Verilog frontend.
+
+37. Executing Verilog-2005 frontend: reconf/register_file/rtl/register_file_cell.v
+Parsing Verilog input from `reconf/register_file/rtl/register_file_cell.v' to AST representation.
+Generating RTLIL representation for module `\register_file_cell'.
+Successfully finished Verilog frontend.
+
+38. Executing Verilog-2005 frontend: reconf/instruction_decoder/rtl/instruction_decoder_reg_selector.v
+Parsing Verilog input from `reconf/instruction_decoder/rtl/instruction_decoder_reg_selector.v' to AST representation.
+Generating RTLIL representation for module `\instruction_decoder_reg_selector'.
+Successfully finished Verilog frontend.
+
+39. Executing Verilog-2005 frontend: reconf/instruction_decoder/rtl/instruction_decoder.v
+Parsing Verilog input from `reconf/instruction_decoder/rtl/instruction_decoder.v' to AST representation.
+Generating RTLIL representation for module `\instruction_decoder'.
+Successfully finished Verilog frontend.
+
+40. Executing Verilog-2005 frontend: reconf/instruction_decoder/rtl/instruction_decoder_imm_selector.v
+Parsing Verilog input from `reconf/instruction_decoder/rtl/instruction_decoder_imm_selector.v' to AST representation.
+Generating RTLIL representation for module `\instruction_decoder_imm_selector'.
+Successfully finished Verilog frontend.
+
+41. Executing Verilog-2005 frontend: reconf/instruction_decoder/rtl/instruction_decoder_field_slicer.v
+Parsing Verilog input from `reconf/instruction_decoder/rtl/instruction_decoder_field_slicer.v' to AST representation.
+Generating RTLIL representation for module `\instruction_decoder_field_slicer'.
+Successfully finished Verilog frontend.
+
+42. Executing Verilog-2005 frontend: reconf/flag_reg/rtl/flag_reg_bit.v
+Parsing Verilog input from `reconf/flag_reg/rtl/flag_reg_bit.v' to AST representation.
+Generating RTLIL representation for module `\flag_reg_bit'.
+Successfully finished Verilog frontend.
+
+43. Executing Verilog-2005 frontend: reconf/flag_reg/rtl/flag_reg.v
+Parsing Verilog input from `reconf/flag_reg/rtl/flag_reg.v' to AST representation.
+Generating RTLIL representation for module `\flag_reg'.
+Successfully finished Verilog frontend.
+
+44. Executing HIERARCHY pass (managing design hierarchy).
+
+44.1. Analyzing design hierarchy..
+Top module:  \cpu
+Used module:     \writeback_mux
+Used module:         \writeback_mux_2to1_16bit
+Used module:             \writeback_mux_2to1
+Used module:     \alu
+Used module:         \alu_flag_generator
+Used module:         \alu_shifter_16bit
+Used module:         \alu_logical_unit_16bit
+Used module:         \alu_adder_16bit
+Used module:             \alu_full_adder
+Used module:     \register_file
+Used module:         \register_file_cell
+Used module:         \register_file_mux_16to1_16bit
+Used module:             \register_file_mux_2to1_16bit
+Used module:         \register_file_decoder_4to16
+Used module:     \control_unit
+Used module:         \control_unit_enable_generator
+Used module:         \control_unit_branch_evaluator
+Used module:         \control_unit_writeback_selector
+Used module:         \control_unit_alu_selector
+Used module:         \control_unit_onehot_decoder
+Used module:     \flag_reg
+Used module:         \flag_reg_bit
+Used module:     \imm_gen
+Used module:         \imm_gen_sign_ext12
+Used module:         \imm_gen_sign_ext8
+Used module:         \imm_gen_sign_ext4
+Used module:     \instruction_decoder
+Used module:         \instruction_decoder_imm_selector
+Used module:         \instruction_decoder_reg_selector
+Used module:         \instruction_decoder_field_slicer
+Used module:     \program_counter
+Used module:         \program_counter_logic
+Used module:             \program_counter_mux_2to1_16bit
+Used module:                 \program_counter_mux_2to1
+Used module:             \program_counter_adder_16bit
+Used module:                 \program_counter_full_adder
+Used module:         \program_counter_register
+Reprocessing module register_file because instantiated module register_file_cell has become available.
+Generating RTLIL representation for module `\register_file'.
+Reprocessing module register_file_mux_16to1_16bit because instantiated module register_file_mux_2to1_16bit has become available.
+Generating RTLIL representation for module `\register_file_mux_16to1_16bit'.
+
+44.2. Analyzing design hierarchy..
+Top module:  \cpu
+Used module:     \writeback_mux
+Used module:         \writeback_mux_2to1_16bit
+Used module:             \writeback_mux_2to1
+Used module:     \alu
+Used module:         \alu_flag_generator
+Used module:         \alu_shifter_16bit
+Used module:         \alu_logical_unit_16bit
+Used module:         \alu_adder_16bit
+Used module:             \alu_full_adder
+Used module:     \register_file
+Used module:         \register_file_cell
+Used module:         \register_file_mux_16to1_16bit
+Used module:             \register_file_mux_2to1_16bit
+Used module:         \register_file_decoder_4to16
+Used module:     \control_unit
+Used module:         \control_unit_enable_generator
+Used module:         \control_unit_branch_evaluator
+Used module:         \control_unit_writeback_selector
+Used module:         \control_unit_alu_selector
+Used module:         \control_unit_onehot_decoder
+Used module:     \flag_reg
+Used module:         \flag_reg_bit
+Used module:     \imm_gen
+Used module:         \imm_gen_sign_ext12
+Used module:         \imm_gen_sign_ext8
+Used module:         \imm_gen_sign_ext4
+Used module:     \instruction_decoder
+Used module:         \instruction_decoder_imm_selector
+Used module:         \instruction_decoder_reg_selector
+Used module:         \instruction_decoder_field_slicer
+Used module:     \program_counter
+Used module:         \program_counter_logic
+Used module:             \program_counter_mux_2to1_16bit
+Used module:                 \program_counter_mux_2to1
+Used module:             \program_counter_adder_16bit
+Used module:                 \program_counter_full_adder
+Used module:         \program_counter_register
+
+44.3. Analyzing design hierarchy..
+Top module:  \cpu
+Used module:     \writeback_mux
+Used module:         \writeback_mux_2to1_16bit
+Used module:             \writeback_mux_2to1
+Used module:     \alu
+Used module:         \alu_flag_generator
+Used module:         \alu_shifter_16bit
+Used module:         \alu_logical_unit_16bit
+Used module:         \alu_adder_16bit
+Used module:             \alu_full_adder
+Used module:     \register_file
+Used module:         \register_file_cell
+Used module:         \register_file_mux_16to1_16bit
+Used module:             \register_file_mux_2to1_16bit
+Used module:         \register_file_decoder_4to16
+Used module:     \control_unit
+Used module:         \control_unit_enable_generator
+Used module:         \control_unit_branch_evaluator
+Used module:         \control_unit_writeback_selector
+Used module:         \control_unit_alu_selector
+Used module:         \control_unit_onehot_decoder
+Used module:     \flag_reg
+Used module:         \flag_reg_bit
+Used module:     \imm_gen
+Used module:         \imm_gen_sign_ext12
+Used module:         \imm_gen_sign_ext8
+Used module:         \imm_gen_sign_ext4
+Used module:     \instruction_decoder
+Used module:         \instruction_decoder_imm_selector
+Used module:         \instruction_decoder_reg_selector
+Used module:         \instruction_decoder_field_slicer
+Used module:     \program_counter
+Used module:         \program_counter_logic
+Used module:             \program_counter_mux_2to1_16bit
+Used module:                 \program_counter_mux_2to1
+Used module:             \program_counter_adder_16bit
+Used module:                 \program_counter_full_adder
+Used module:         \program_counter_register
+Removing unused module `\pc_control_unit_adder_16bit'.
+Removing unused module `\pc_control_unit_mux_2to1'.
+Removing unused module `\pc_control_unit_mux_2to1_16bit'.
+Removing unused module `\pc_control_unit'.
+Removing unused module `\pc_control_unit_full_adder'.
+Removed 5 unused modules.
+
+45. Executing PROC pass (convert processes to netlists).
+
+45.1. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Cleaned up 0 empty switches.
+
+45.2. Executing PROC_RMDEAD pass (remove dead branches from decision trees).
+Marked 1 switch rules as full_case in process $proc$reconf/register_file/rtl/register_file_cell.v:13$425 in module register_file_cell.
+Marked 1 switch rules as full_case in process $proc$reconf/flag_reg/rtl/flag_reg_bit.v:13$437 in module flag_reg_bit.
+Marked 1 switch rules as full_case in process $proc$reconf/program_counter/rtl/program_counter_register.v:12$10 in module program_counter_register.
+Removed a total of 0 dead cases.
+
+45.3. Executing PROC_PRUNE pass (remove redundant assignments in processes).
+Removed 1 redundant assignment.
+Promoted 46 assignments to connections.
+
+45.4. Executing PROC_INIT pass (extract init attributes).
+
+45.5. Executing PROC_ARST pass (detect async resets in processes).
+
+45.6. Executing PROC_ROM pass (convert switches to ROMs).
+Converted 0 switches.
+<suppressed ~5 debug messages>
+
+45.7. Executing PROC_MUX pass (convert decision trees to multiplexers).
+Creating decoders for process `\register_file_cell.$proc$reconf/register_file/rtl/register_file_cell.v:13$425'.
+     1/1: $0\r_data[15:0]
+Creating decoders for process `\register_file.$proc$reconf/register_file/rtl/register_file.v:36$516'.
+Creating decoders for process `\register_file.$proc$reconf/register_file/rtl/register_file.v:36$515'.
+Creating decoders for process `\register_file.$proc$reconf/register_file/rtl/register_file.v:36$514'.
+Creating decoders for process `\register_file.$proc$reconf/register_file/rtl/register_file.v:36$513'.
+Creating decoders for process `\register_file.$proc$reconf/register_file/rtl/register_file.v:36$512'.
+Creating decoders for process `\register_file.$proc$reconf/register_file/rtl/register_file.v:36$511'.
+Creating decoders for process `\register_file.$proc$reconf/register_file/rtl/register_file.v:36$510'.
+Creating decoders for process `\register_file.$proc$reconf/register_file/rtl/register_file.v:36$509'.
+Creating decoders for process `\register_file.$proc$reconf/register_file/rtl/register_file.v:36$508'.
+Creating decoders for process `\register_file.$proc$reconf/register_file/rtl/register_file.v:36$507'.
+Creating decoders for process `\register_file.$proc$reconf/register_file/rtl/register_file.v:36$506'.
+Creating decoders for process `\register_file.$proc$reconf/register_file/rtl/register_file.v:36$505'.
+Creating decoders for process `\register_file.$proc$reconf/register_file/rtl/register_file.v:36$504'.
+Creating decoders for process `\register_file.$proc$reconf/register_file/rtl/register_file.v:36$503'.
+Creating decoders for process `\register_file.$proc$reconf/register_file/rtl/register_file.v:36$502'.
+Creating decoders for process `\register_file.$proc$reconf/register_file/rtl/register_file.v:26$501'.
+Creating decoders for process `\register_file_mux_16to1_16bit.$proc$reconf/register_file/rtl/register_file_mux_16to1_16bit.v:51$605'.
+Creating decoders for process `\register_file_mux_16to1_16bit.$proc$reconf/register_file/rtl/register_file_mux_16to1_16bit.v:51$604'.
+Creating decoders for process `\register_file_mux_16to1_16bit.$proc$reconf/register_file/rtl/register_file_mux_16to1_16bit.v:41$603'.
+Creating decoders for process `\register_file_mux_16to1_16bit.$proc$reconf/register_file/rtl/register_file_mux_16to1_16bit.v:41$602'.
+Creating decoders for process `\register_file_mux_16to1_16bit.$proc$reconf/register_file/rtl/register_file_mux_16to1_16bit.v:41$601'.
+Creating decoders for process `\register_file_mux_16to1_16bit.$proc$reconf/register_file/rtl/register_file_mux_16to1_16bit.v:41$600'.
+Creating decoders for process `\register_file_mux_16to1_16bit.$proc$reconf/register_file/rtl/register_file_mux_16to1_16bit.v:31$599'.
+Creating decoders for process `\register_file_mux_16to1_16bit.$proc$reconf/register_file/rtl/register_file_mux_16to1_16bit.v:31$598'.
+Creating decoders for process `\register_file_mux_16to1_16bit.$proc$reconf/register_file/rtl/register_file_mux_16to1_16bit.v:31$597'.
+Creating decoders for process `\register_file_mux_16to1_16bit.$proc$reconf/register_file/rtl/register_file_mux_16to1_16bit.v:31$596'.
+Creating decoders for process `\register_file_mux_16to1_16bit.$proc$reconf/register_file/rtl/register_file_mux_16to1_16bit.v:31$595'.
+Creating decoders for process `\register_file_mux_16to1_16bit.$proc$reconf/register_file/rtl/register_file_mux_16to1_16bit.v:31$594'.
+Creating decoders for process `\register_file_mux_16to1_16bit.$proc$reconf/register_file/rtl/register_file_mux_16to1_16bit.v:31$593'.
+Creating decoders for process `\register_file_mux_16to1_16bit.$proc$reconf/register_file/rtl/register_file_mux_16to1_16bit.v:31$592'.
+Creating decoders for process `\register_file_mux_16to1_16bit.$proc$reconf/register_file/rtl/register_file_mux_16to1_16bit.v:22$591'.
+Creating decoders for process `\register_file_mux_16to1_16bit.$proc$reconf/register_file/rtl/register_file_mux_16to1_16bit.v:22$590'.
+Creating decoders for process `\register_file_mux_16to1_16bit.$proc$reconf/register_file/rtl/register_file_mux_16to1_16bit.v:22$589'.
+Creating decoders for process `\register_file_mux_16to1_16bit.$proc$reconf/register_file/rtl/register_file_mux_16to1_16bit.v:22$588'.
+Creating decoders for process `\register_file_mux_16to1_16bit.$proc$reconf/register_file/rtl/register_file_mux_16to1_16bit.v:21$587'.
+Creating decoders for process `\register_file_mux_16to1_16bit.$proc$reconf/register_file/rtl/register_file_mux_16to1_16bit.v:21$586'.
+Creating decoders for process `\register_file_mux_16to1_16bit.$proc$reconf/register_file/rtl/register_file_mux_16to1_16bit.v:21$585'.
+Creating decoders for process `\register_file_mux_16to1_16bit.$proc$reconf/register_file/rtl/register_file_mux_16to1_16bit.v:21$584'.
+Creating decoders for process `\register_file_mux_16to1_16bit.$proc$reconf/register_file/rtl/register_file_mux_16to1_16bit.v:20$583'.
+Creating decoders for process `\register_file_mux_16to1_16bit.$proc$reconf/register_file/rtl/register_file_mux_16to1_16bit.v:20$582'.
+Creating decoders for process `\register_file_mux_16to1_16bit.$proc$reconf/register_file/rtl/register_file_mux_16to1_16bit.v:20$581'.
+Creating decoders for process `\register_file_mux_16to1_16bit.$proc$reconf/register_file/rtl/register_file_mux_16to1_16bit.v:20$580'.
+Creating decoders for process `\register_file_mux_16to1_16bit.$proc$reconf/register_file/rtl/register_file_mux_16to1_16bit.v:19$579'.
+Creating decoders for process `\register_file_mux_16to1_16bit.$proc$reconf/register_file/rtl/register_file_mux_16to1_16bit.v:19$578'.
+Creating decoders for process `\register_file_mux_16to1_16bit.$proc$reconf/register_file/rtl/register_file_mux_16to1_16bit.v:19$577'.
+Creating decoders for process `\register_file_mux_16to1_16bit.$proc$reconf/register_file/rtl/register_file_mux_16to1_16bit.v:19$576'.
+Creating decoders for process `\flag_reg_bit.$proc$reconf/flag_reg/rtl/flag_reg_bit.v:13$437'.
+     1/1: $0\r_data[0:0]
+Creating decoders for process `\program_counter_register.$proc$reconf/program_counter/rtl/program_counter_register.v:12$10'.
+     1/1: $0\r_pc[15:0]
+
+45.8. Executing PROC_DLATCH pass (convert process syncs to latches).
+No latch inferred for signal `\register_file.\w_reg_data[15]' from process `\register_file.$proc$reconf/register_file/rtl/register_file.v:36$516'.
+No latch inferred for signal `\register_file.\w_reg_data[14]' from process `\register_file.$proc$reconf/register_file/rtl/register_file.v:36$515'.
+No latch inferred for signal `\register_file.\w_reg_data[13]' from process `\register_file.$proc$reconf/register_file/rtl/register_file.v:36$514'.
+No latch inferred for signal `\register_file.\w_reg_data[12]' from process `\register_file.$proc$reconf/register_file/rtl/register_file.v:36$513'.
+No latch inferred for signal `\register_file.\w_reg_data[11]' from process `\register_file.$proc$reconf/register_file/rtl/register_file.v:36$512'.
+No latch inferred for signal `\register_file.\w_reg_data[10]' from process `\register_file.$proc$reconf/register_file/rtl/register_file.v:36$511'.
+No latch inferred for signal `\register_file.\w_reg_data[9]' from process `\register_file.$proc$reconf/register_file/rtl/register_file.v:36$510'.
+No latch inferred for signal `\register_file.\w_reg_data[8]' from process `\register_file.$proc$reconf/register_file/rtl/register_file.v:36$509'.
+No latch inferred for signal `\register_file.\w_reg_data[7]' from process `\register_file.$proc$reconf/register_file/rtl/register_file.v:36$508'.
+No latch inferred for signal `\register_file.\w_reg_data[6]' from process `\register_file.$proc$reconf/register_file/rtl/register_file.v:36$507'.
+No latch inferred for signal `\register_file.\w_reg_data[5]' from process `\register_file.$proc$reconf/register_file/rtl/register_file.v:36$506'.
+No latch inferred for signal `\register_file.\w_reg_data[4]' from process `\register_file.$proc$reconf/register_file/rtl/register_file.v:36$505'.
+No latch inferred for signal `\register_file.\w_reg_data[3]' from process `\register_file.$proc$reconf/register_file/rtl/register_file.v:36$504'.
+No latch inferred for signal `\register_file.\w_reg_data[2]' from process `\register_file.$proc$reconf/register_file/rtl/register_file.v:36$503'.
+No latch inferred for signal `\register_file.\w_reg_data[1]' from process `\register_file.$proc$reconf/register_file/rtl/register_file.v:36$502'.
+No latch inferred for signal `\register_file.\w_reg_data[0]' from process `\register_file.$proc$reconf/register_file/rtl/register_file.v:26$501'.
+No latch inferred for signal `\register_file_mux_16to1_16bit.\w_stg3[1]' from process `\register_file_mux_16to1_16bit.$proc$reconf/register_file/rtl/register_file_mux_16to1_16bit.v:51$605'.
+No latch inferred for signal `\register_file_mux_16to1_16bit.\w_stg3[0]' from process `\register_file_mux_16to1_16bit.$proc$reconf/register_file/rtl/register_file_mux_16to1_16bit.v:51$604'.
+No latch inferred for signal `\register_file_mux_16to1_16bit.\w_stg2[3]' from process `\register_file_mux_16to1_16bit.$proc$reconf/register_file/rtl/register_file_mux_16to1_16bit.v:41$603'.
+No latch inferred for signal `\register_file_mux_16to1_16bit.\w_stg2[2]' from process `\register_file_mux_16to1_16bit.$proc$reconf/register_file/rtl/register_file_mux_16to1_16bit.v:41$602'.
+No latch inferred for signal `\register_file_mux_16to1_16bit.\w_stg2[1]' from process `\register_file_mux_16to1_16bit.$proc$reconf/register_file/rtl/register_file_mux_16to1_16bit.v:41$601'.
+No latch inferred for signal `\register_file_mux_16to1_16bit.\w_stg2[0]' from process `\register_file_mux_16to1_16bit.$proc$reconf/register_file/rtl/register_file_mux_16to1_16bit.v:41$600'.
+No latch inferred for signal `\register_file_mux_16to1_16bit.\w_stg1[7]' from process `\register_file_mux_16to1_16bit.$proc$reconf/register_file/rtl/register_file_mux_16to1_16bit.v:31$599'.
+No latch inferred for signal `\register_file_mux_16to1_16bit.\w_stg1[6]' from process `\register_file_mux_16to1_16bit.$proc$reconf/register_file/rtl/register_file_mux_16to1_16bit.v:31$598'.
+No latch inferred for signal `\register_file_mux_16to1_16bit.\w_stg1[5]' from process `\register_file_mux_16to1_16bit.$proc$reconf/register_file/rtl/register_file_mux_16to1_16bit.v:31$597'.
+No latch inferred for signal `\register_file_mux_16to1_16bit.\w_stg1[4]' from process `\register_file_mux_16to1_16bit.$proc$reconf/register_file/rtl/register_file_mux_16to1_16bit.v:31$596'.
+No latch inferred for signal `\register_file_mux_16to1_16bit.\w_stg1[3]' from process `\register_file_mux_16to1_16bit.$proc$reconf/register_file/rtl/register_file_mux_16to1_16bit.v:31$595'.
+No latch inferred for signal `\register_file_mux_16to1_16bit.\w_stg1[2]' from process `\register_file_mux_16to1_16bit.$proc$reconf/register_file/rtl/register_file_mux_16to1_16bit.v:31$594'.
+No latch inferred for signal `\register_file_mux_16to1_16bit.\w_stg1[1]' from process `\register_file_mux_16to1_16bit.$proc$reconf/register_file/rtl/register_file_mux_16to1_16bit.v:31$593'.
+No latch inferred for signal `\register_file_mux_16to1_16bit.\w_stg1[0]' from process `\register_file_mux_16to1_16bit.$proc$reconf/register_file/rtl/register_file_mux_16to1_16bit.v:31$592'.
+No latch inferred for signal `\register_file_mux_16to1_16bit.\w_in[15]' from process `\register_file_mux_16to1_16bit.$proc$reconf/register_file/rtl/register_file_mux_16to1_16bit.v:22$591'.
+No latch inferred for signal `\register_file_mux_16to1_16bit.\w_in[14]' from process `\register_file_mux_16to1_16bit.$proc$reconf/register_file/rtl/register_file_mux_16to1_16bit.v:22$590'.
+No latch inferred for signal `\register_file_mux_16to1_16bit.\w_in[13]' from process `\register_file_mux_16to1_16bit.$proc$reconf/register_file/rtl/register_file_mux_16to1_16bit.v:22$589'.
+No latch inferred for signal `\register_file_mux_16to1_16bit.\w_in[12]' from process `\register_file_mux_16to1_16bit.$proc$reconf/register_file/rtl/register_file_mux_16to1_16bit.v:22$588'.
+No latch inferred for signal `\register_file_mux_16to1_16bit.\w_in[11]' from process `\register_file_mux_16to1_16bit.$proc$reconf/register_file/rtl/register_file_mux_16to1_16bit.v:21$587'.
+No latch inferred for signal `\register_file_mux_16to1_16bit.\w_in[10]' from process `\register_file_mux_16to1_16bit.$proc$reconf/register_file/rtl/register_file_mux_16to1_16bit.v:21$586'.
+No latch inferred for signal `\register_file_mux_16to1_16bit.\w_in[9]' from process `\register_file_mux_16to1_16bit.$proc$reconf/register_file/rtl/register_file_mux_16to1_16bit.v:21$585'.
+No latch inferred for signal `\register_file_mux_16to1_16bit.\w_in[8]' from process `\register_file_mux_16to1_16bit.$proc$reconf/register_file/rtl/register_file_mux_16to1_16bit.v:21$584'.
+No latch inferred for signal `\register_file_mux_16to1_16bit.\w_in[7]' from process `\register_file_mux_16to1_16bit.$proc$reconf/register_file/rtl/register_file_mux_16to1_16bit.v:20$583'.
+No latch inferred for signal `\register_file_mux_16to1_16bit.\w_in[6]' from process `\register_file_mux_16to1_16bit.$proc$reconf/register_file/rtl/register_file_mux_16to1_16bit.v:20$582'.
+No latch inferred for signal `\register_file_mux_16to1_16bit.\w_in[5]' from process `\register_file_mux_16to1_16bit.$proc$reconf/register_file/rtl/register_file_mux_16to1_16bit.v:20$581'.
+No latch inferred for signal `\register_file_mux_16to1_16bit.\w_in[4]' from process `\register_file_mux_16to1_16bit.$proc$reconf/register_file/rtl/register_file_mux_16to1_16bit.v:20$580'.
+No latch inferred for signal `\register_file_mux_16to1_16bit.\w_in[3]' from process `\register_file_mux_16to1_16bit.$proc$reconf/register_file/rtl/register_file_mux_16to1_16bit.v:19$579'.
+No latch inferred for signal `\register_file_mux_16to1_16bit.\w_in[2]' from process `\register_file_mux_16to1_16bit.$proc$reconf/register_file/rtl/register_file_mux_16to1_16bit.v:19$578'.
+No latch inferred for signal `\register_file_mux_16to1_16bit.\w_in[1]' from process `\register_file_mux_16to1_16bit.$proc$reconf/register_file/rtl/register_file_mux_16to1_16bit.v:19$577'.
+No latch inferred for signal `\register_file_mux_16to1_16bit.\w_in[0]' from process `\register_file_mux_16to1_16bit.$proc$reconf/register_file/rtl/register_file_mux_16to1_16bit.v:19$576'.
+
+45.9. Executing PROC_DFF pass (convert process syncs to FFs).
+Creating register for signal `\register_file_cell.\r_data' using process `\register_file_cell.$proc$reconf/register_file/rtl/register_file_cell.v:13$425'.
+  created $dff cell `$procdff$619' with positive edge clock.
+Creating register for signal `\flag_reg_bit.\r_data' using process `\flag_reg_bit.$proc$reconf/flag_reg/rtl/flag_reg_bit.v:13$437'.
+  created $dff cell `$procdff$620' with positive edge clock.
+Creating register for signal `\program_counter_register.\r_pc' using process `\program_counter_register.$proc$reconf/program_counter/rtl/program_counter_register.v:12$10'.
+  created $dff cell `$procdff$621' with positive edge clock.
+
+45.10. Executing PROC_MEMWR pass (convert process memory writes to cells).
+
+45.11. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Found and cleaned up 2 empty switches in `\register_file_cell.$proc$reconf/register_file/rtl/register_file_cell.v:13$425'.
+Removing empty process `register_file_cell.$proc$reconf/register_file/rtl/register_file_cell.v:13$425'.
+Removing empty process `register_file.$proc$reconf/register_file/rtl/register_file.v:36$516'.
+Removing empty process `register_file.$proc$reconf/register_file/rtl/register_file.v:36$515'.
+Removing empty process `register_file.$proc$reconf/register_file/rtl/register_file.v:36$514'.
+Removing empty process `register_file.$proc$reconf/register_file/rtl/register_file.v:36$513'.
+Removing empty process `register_file.$proc$reconf/register_file/rtl/register_file.v:36$512'.
+Removing empty process `register_file.$proc$reconf/register_file/rtl/register_file.v:36$511'.
+Removing empty process `register_file.$proc$reconf/register_file/rtl/register_file.v:36$510'.
+Removing empty process `register_file.$proc$reconf/register_file/rtl/register_file.v:36$509'.
+Removing empty process `register_file.$proc$reconf/register_file/rtl/register_file.v:36$508'.
+Removing empty process `register_file.$proc$reconf/register_file/rtl/register_file.v:36$507'.
+Removing empty process `register_file.$proc$reconf/register_file/rtl/register_file.v:36$506'.
+Removing empty process `register_file.$proc$reconf/register_file/rtl/register_file.v:36$505'.
+Removing empty process `register_file.$proc$reconf/register_file/rtl/register_file.v:36$504'.
+Removing empty process `register_file.$proc$reconf/register_file/rtl/register_file.v:36$503'.
+Removing empty process `register_file.$proc$reconf/register_file/rtl/register_file.v:36$502'.
+Removing empty process `register_file.$proc$reconf/register_file/rtl/register_file.v:26$501'.
+Removing empty process `register_file_mux_16to1_16bit.$proc$reconf/register_file/rtl/register_file_mux_16to1_16bit.v:51$605'.
+Removing empty process `register_file_mux_16to1_16bit.$proc$reconf/register_file/rtl/register_file_mux_16to1_16bit.v:51$604'.
+Removing empty process `register_file_mux_16to1_16bit.$proc$reconf/register_file/rtl/register_file_mux_16to1_16bit.v:41$603'.
+Removing empty process `register_file_mux_16to1_16bit.$proc$reconf/register_file/rtl/register_file_mux_16to1_16bit.v:41$602'.
+Removing empty process `register_file_mux_16to1_16bit.$proc$reconf/register_file/rtl/register_file_mux_16to1_16bit.v:41$601'.
+Removing empty process `register_file_mux_16to1_16bit.$proc$reconf/register_file/rtl/register_file_mux_16to1_16bit.v:41$600'.
+Removing empty process `register_file_mux_16to1_16bit.$proc$reconf/register_file/rtl/register_file_mux_16to1_16bit.v:31$599'.
+Removing empty process `register_file_mux_16to1_16bit.$proc$reconf/register_file/rtl/register_file_mux_16to1_16bit.v:31$598'.
+Removing empty process `register_file_mux_16to1_16bit.$proc$reconf/register_file/rtl/register_file_mux_16to1_16bit.v:31$597'.
+Removing empty process `register_file_mux_16to1_16bit.$proc$reconf/register_file/rtl/register_file_mux_16to1_16bit.v:31$596'.
+Removing empty process `register_file_mux_16to1_16bit.$proc$reconf/register_file/rtl/register_file_mux_16to1_16bit.v:31$595'.
+Removing empty process `register_file_mux_16to1_16bit.$proc$reconf/register_file/rtl/register_file_mux_16to1_16bit.v:31$594'.
+Removing empty process `register_file_mux_16to1_16bit.$proc$reconf/register_file/rtl/register_file_mux_16to1_16bit.v:31$593'.
+Removing empty process `register_file_mux_16to1_16bit.$proc$reconf/register_file/rtl/register_file_mux_16to1_16bit.v:31$592'.
+Removing empty process `register_file_mux_16to1_16bit.$proc$reconf/register_file/rtl/register_file_mux_16to1_16bit.v:22$591'.
+Removing empty process `register_file_mux_16to1_16bit.$proc$reconf/register_file/rtl/register_file_mux_16to1_16bit.v:22$590'.
+Removing empty process `register_file_mux_16to1_16bit.$proc$reconf/register_file/rtl/register_file_mux_16to1_16bit.v:22$589'.
+Removing empty process `register_file_mux_16to1_16bit.$proc$reconf/register_file/rtl/register_file_mux_16to1_16bit.v:22$588'.
+Removing empty process `register_file_mux_16to1_16bit.$proc$reconf/register_file/rtl/register_file_mux_16to1_16bit.v:21$587'.
+Removing empty process `register_file_mux_16to1_16bit.$proc$reconf/register_file/rtl/register_file_mux_16to1_16bit.v:21$586'.
+Removing empty process `register_file_mux_16to1_16bit.$proc$reconf/register_file/rtl/register_file_mux_16to1_16bit.v:21$585'.
+Removing empty process `register_file_mux_16to1_16bit.$proc$reconf/register_file/rtl/register_file_mux_16to1_16bit.v:21$584'.
+Removing empty process `register_file_mux_16to1_16bit.$proc$reconf/register_file/rtl/register_file_mux_16to1_16bit.v:20$583'.
+Removing empty process `register_file_mux_16to1_16bit.$proc$reconf/register_file/rtl/register_file_mux_16to1_16bit.v:20$582'.
+Removing empty process `register_file_mux_16to1_16bit.$proc$reconf/register_file/rtl/register_file_mux_16to1_16bit.v:20$581'.
+Removing empty process `register_file_mux_16to1_16bit.$proc$reconf/register_file/rtl/register_file_mux_16to1_16bit.v:20$580'.
+Removing empty process `register_file_mux_16to1_16bit.$proc$reconf/register_file/rtl/register_file_mux_16to1_16bit.v:19$579'.
+Removing empty process `register_file_mux_16to1_16bit.$proc$reconf/register_file/rtl/register_file_mux_16to1_16bit.v:19$578'.
+Removing empty process `register_file_mux_16to1_16bit.$proc$reconf/register_file/rtl/register_file_mux_16to1_16bit.v:19$577'.
+Removing empty process `register_file_mux_16to1_16bit.$proc$reconf/register_file/rtl/register_file_mux_16to1_16bit.v:19$576'.
+Found and cleaned up 2 empty switches in `\flag_reg_bit.$proc$reconf/flag_reg/rtl/flag_reg_bit.v:13$437'.
+Removing empty process `flag_reg_bit.$proc$reconf/flag_reg/rtl/flag_reg_bit.v:13$437'.
+Found and cleaned up 1 empty switch in `\program_counter_register.$proc$reconf/program_counter/rtl/program_counter_register.v:12$10'.
+Removing empty process `program_counter_register.$proc$reconf/program_counter/rtl/program_counter_register.v:12$10'.
+Cleaned up 5 empty switches.
+
+45.12. Executing OPT_EXPR pass (perform const folding).
+Optimizing module instruction_decoder_reg_selector.
+Optimizing module register_file_cell.
+<suppressed ~1 debug messages>
+Optimizing module register_file_decoder_4to16.
+<suppressed ~1 debug messages>
+Optimizing module register_file_mux_2to1_16bit.
+<suppressed ~32 debug messages>
+Optimizing module register_file.
+Optimizing module flag_reg.
+Optimizing module cpu.
+Optimizing module control_unit_enable_generator.
+Optimizing module control_unit_alu_selector.
+Optimizing module control_unit.
+Optimizing module control_unit_onehot_decoder.
+<suppressed ~1 debug messages>
+Optimizing module control_unit_writeback_selector.
+Optimizing module control_unit_branch_evaluator.
+Optimizing module writeback_mux_2to1.
+<suppressed ~2 debug messages>
+Optimizing module writeback_mux_2to1_16bit.
+Optimizing module writeback_mux.
+Optimizing module imm_gen_sign_ext4.
+Optimizing module imm_gen_sign_ext12.
+Optimizing module imm_gen.
+Optimizing module imm_gen_sign_ext8.
+Optimizing module register_file_mux_16to1_16bit.
+Optimizing module flag_reg_bit.
+<suppressed ~1 debug messages>
+Optimizing module instruction_decoder_field_slicer.
+Optimizing module instruction_decoder_imm_selector.
+Optimizing module instruction_decoder.
+Optimizing module alu_logical_unit_16bit.
+Optimizing module alu_adder_16bit.
+Optimizing module alu_full_adder.
+Optimizing module alu_shifter_16bit.
+Optimizing module alu.
+<suppressed ~1 debug messages>
+Optimizing module alu_flag_generator.
+<suppressed ~13 debug messages>
+Optimizing module program_counter_mux_2to1_16bit.
+Optimizing module program_counter_adder_16bit.
+Optimizing module program_counter_register.
+<suppressed ~1 debug messages>
+Optimizing module program_counter.
+Optimizing module program_counter_mux_2to1.
+<suppressed ~2 debug messages>
+Optimizing module program_counter_full_adder.
+Optimizing module program_counter_logic.
+
+46. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \instruction_decoder_reg_selector..
+Finding unused cells or wires in module \register_file_cell..
+Finding unused cells or wires in module \register_file_decoder_4to16..
+Finding unused cells or wires in module \register_file_mux_2to1_16bit..
+Finding unused cells or wires in module \register_file..
+Finding unused cells or wires in module \flag_reg..
+Finding unused cells or wires in module \cpu..
+Finding unused cells or wires in module \control_unit_enable_generator..
+Finding unused cells or wires in module \control_unit_alu_selector..
+Finding unused cells or wires in module \control_unit..
+Finding unused cells or wires in module \control_unit_onehot_decoder..
+Finding unused cells or wires in module \control_unit_writeback_selector..
+Finding unused cells or wires in module \control_unit_branch_evaluator..
+Finding unused cells or wires in module \writeback_mux_2to1..
+Finding unused cells or wires in module \writeback_mux_2to1_16bit..
+Finding unused cells or wires in module \writeback_mux..
+Finding unused cells or wires in module \imm_gen_sign_ext4..
+Finding unused cells or wires in module \imm_gen_sign_ext12..
+Finding unused cells or wires in module \imm_gen..
+Finding unused cells or wires in module \imm_gen_sign_ext8..
+Finding unused cells or wires in module \register_file_mux_16to1_16bit..
+Finding unused cells or wires in module \flag_reg_bit..
+Finding unused cells or wires in module \instruction_decoder_field_slicer..
+Finding unused cells or wires in module \instruction_decoder_imm_selector..
+Finding unused cells or wires in module \instruction_decoder..
+Finding unused cells or wires in module \alu_logical_unit_16bit..
+Finding unused cells or wires in module \alu_adder_16bit..
+Finding unused cells or wires in module \alu_full_adder..
+Finding unused cells or wires in module \alu_shifter_16bit..
+Finding unused cells or wires in module \alu..
+Finding unused cells or wires in module \alu_flag_generator..
+Finding unused cells or wires in module \program_counter_mux_2to1_16bit..
+Finding unused cells or wires in module \program_counter_adder_16bit..
+Finding unused cells or wires in module \program_counter_register..
+Finding unused cells or wires in module \program_counter..
+Finding unused cells or wires in module \program_counter_mux_2to1..
+Finding unused cells or wires in module \program_counter_full_adder..
+Finding unused cells or wires in module \program_counter_logic..
+Removed 21 unused cells and 319 unused wires.
+<suppressed ~45 debug messages>
+
+47. Executing TECHMAP pass (map to technology primitives).
+
+47.1. Executing Verilog-2005 frontend: /opt/oss-cad-suite/lib/../share/yosys/techmap.v
+Parsing Verilog input from `/opt/oss-cad-suite/lib/../share/yosys/techmap.v' to AST representation.
+Generating RTLIL representation for module `\_90_simplemap_bool_ops'.
+Generating RTLIL representation for module `\_90_simplemap_reduce_ops'.
+Generating RTLIL representation for module `\_90_simplemap_logic_ops'.
+Generating RTLIL representation for module `\_90_simplemap_compare_ops'.
+Generating RTLIL representation for module `\_90_simplemap_various'.
+Generating RTLIL representation for module `\_90_simplemap_registers'.
+Generating RTLIL representation for module `\_90_shift_ops_shr_shl_sshl_sshr'.
+Generating RTLIL representation for module `\_90_shift_shiftx'.
+Generating RTLIL representation for module `\_90_fa'.
+Generating RTLIL representation for module `\_90_lcu_brent_kung'.
+Generating RTLIL representation for module `\_90_alu'.
+Generating RTLIL representation for module `\_90_macc'.
+Generating RTLIL representation for module `\_90_alumacc'.
+Generating RTLIL representation for module `$__div_mod_u'.
+Generating RTLIL representation for module `$__div_mod_trunc'.
+Generating RTLIL representation for module `\_90_div'.
+Generating RTLIL representation for module `\_90_mod'.
+Generating RTLIL representation for module `$__div_mod_floor'.
+Generating RTLIL representation for module `\_90_divfloor'.
+Generating RTLIL representation for module `\_90_modfloor'.
+Generating RTLIL representation for module `\_90_pow'.
+Generating RTLIL representation for module `\_90_pmux'.
+Generating RTLIL representation for module `\_90_demux'.
+Generating RTLIL representation for module `\_90_lut'.
+Generating RTLIL representation for module `$connect'.
+Generating RTLIL representation for module `$input_port'.
+Successfully finished Verilog frontend.
+
+47.2. Continuing TECHMAP pass.
+Using extmapper simplemap for cells of type $mux.
+Using extmapper simplemap for cells of type $logic_not.
+Using extmapper simplemap for cells of type $eq.
+Using extmapper simplemap for cells of type $dff.
+Using extmapper simplemap for cells of type $xor.
+Using extmapper simplemap for cells of type $and.
+Using extmapper simplemap for cells of type $or.
+Using extmapper simplemap for cells of type $logic_or.
+Using extmapper simplemap for cells of type $reduce_or.
+Using extmapper simplemap for cells of type $not.
+Using extmapper simplemap for cells of type $logic_and.
+No more expansions possible.
+<suppressed ~467 debug messages>
+
+48. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \alu..
+Finding unused cells or wires in module \alu_adder_16bit..
+Finding unused cells or wires in module \alu_flag_generator..
+Finding unused cells or wires in module \alu_full_adder..
+Finding unused cells or wires in module \alu_logical_unit_16bit..
+Finding unused cells or wires in module \alu_shifter_16bit..
+Finding unused cells or wires in module \control_unit..
+Finding unused cells or wires in module \control_unit_alu_selector..
+Finding unused cells or wires in module \control_unit_branch_evaluator..
+Finding unused cells or wires in module \control_unit_enable_generator..
+Finding unused cells or wires in module \control_unit_onehot_decoder..
+Finding unused cells or wires in module \control_unit_writeback_selector..
+Finding unused cells or wires in module \cpu..
+Finding unused cells or wires in module \flag_reg..
+Finding unused cells or wires in module \flag_reg_bit..
+Finding unused cells or wires in module \imm_gen..
+Finding unused cells or wires in module \imm_gen_sign_ext12..
+Finding unused cells or wires in module \imm_gen_sign_ext4..
+Finding unused cells or wires in module \imm_gen_sign_ext8..
+Finding unused cells or wires in module \instruction_decoder..
+Finding unused cells or wires in module \instruction_decoder_field_slicer..
+Finding unused cells or wires in module \instruction_decoder_imm_selector..
+Finding unused cells or wires in module \instruction_decoder_reg_selector..
+Finding unused cells or wires in module \program_counter..
+Finding unused cells or wires in module \program_counter_adder_16bit..
+Finding unused cells or wires in module \program_counter_full_adder..
+Finding unused cells or wires in module \program_counter_logic..
+Finding unused cells or wires in module \program_counter_mux_2to1..
+Finding unused cells or wires in module \program_counter_mux_2to1_16bit..
+Finding unused cells or wires in module \program_counter_register..
+Finding unused cells or wires in module \register_file..
+Finding unused cells or wires in module \register_file_cell..
+Finding unused cells or wires in module \register_file_decoder_4to16..
+Finding unused cells or wires in module \register_file_mux_16to1_16bit..
+Finding unused cells or wires in module \register_file_mux_2to1_16bit..
+Finding unused cells or wires in module \writeback_mux..
+Finding unused cells or wires in module \writeback_mux_2to1..
+Finding unused cells or wires in module \writeback_mux_2to1_16bit..
+Removed 0 unused cells and 114 unused wires.
+<suppressed ~9 debug messages>
+
+49. Executing HIERARCHY pass (managing design hierarchy).
+Attribute `top' found on module `cpu'. Setting top module to cpu.
+
+49.1. Analyzing design hierarchy..
+Top module:  \cpu
+Used module:     \alu
+Used module:         \alu_adder_16bit
+Used module:             \alu_full_adder
+Used module:         \alu_flag_generator
+Used module:         \alu_logical_unit_16bit
+Used module:         \alu_shifter_16bit
+Used module:     \control_unit
+Used module:         \control_unit_alu_selector
+Used module:         \control_unit_branch_evaluator
+Used module:         \control_unit_enable_generator
+Used module:         \control_unit_onehot_decoder
+Used module:         \control_unit_writeback_selector
+Used module:     \instruction_decoder
+Used module:         \instruction_decoder_imm_selector
+Used module:         \instruction_decoder_reg_selector
+Used module:         \instruction_decoder_field_slicer
+Used module:     \flag_reg
+Used module:         \flag_reg_bit
+Used module:     \imm_gen
+Used module:         \imm_gen_sign_ext12
+Used module:         \imm_gen_sign_ext4
+Used module:         \imm_gen_sign_ext8
+Used module:     \program_counter
+Used module:         \program_counter_logic
+Used module:             \program_counter_adder_16bit
+Used module:                 \program_counter_full_adder
+Used module:             \program_counter_mux_2to1_16bit
+Used module:                 \program_counter_mux_2to1
+Used module:         \program_counter_register
+Used module:     \register_file
+Used module:         \register_file_cell
+Used module:         \register_file_decoder_4to16
+Used module:         \register_file_mux_16to1_16bit
+Used module:             \register_file_mux_2to1_16bit
+Used module:     \writeback_mux
+Used module:         \writeback_mux_2to1_16bit
+Used module:             \writeback_mux_2to1
+
+49.2. Analyzing design hierarchy..
+Top module:  \cpu
+Used module:     \alu
+Used module:         \alu_adder_16bit
+Used module:             \alu_full_adder
+Used module:         \alu_flag_generator
+Used module:         \alu_logical_unit_16bit
+Used module:         \alu_shifter_16bit
+Used module:     \control_unit
+Used module:         \control_unit_alu_selector
+Used module:         \control_unit_branch_evaluator
+Used module:         \control_unit_enable_generator
+Used module:         \control_unit_onehot_decoder
+Used module:         \control_unit_writeback_selector
+Used module:     \instruction_decoder
+Used module:         \instruction_decoder_imm_selector
+Used module:         \instruction_decoder_reg_selector
+Used module:         \instruction_decoder_field_slicer
+Used module:     \flag_reg
+Used module:         \flag_reg_bit
+Used module:     \imm_gen
+Used module:         \imm_gen_sign_ext12
+Used module:         \imm_gen_sign_ext4
+Used module:         \imm_gen_sign_ext8
+Used module:     \program_counter
+Used module:         \program_counter_logic
+Used module:             \program_counter_adder_16bit
+Used module:                 \program_counter_full_adder
+Used module:             \program_counter_mux_2to1_16bit
+Used module:                 \program_counter_mux_2to1
+Used module:         \program_counter_register
+Used module:     \register_file
+Used module:         \register_file_cell
+Used module:         \register_file_decoder_4to16
+Used module:         \register_file_mux_16to1_16bit
+Used module:             \register_file_mux_2to1_16bit
+Used module:     \writeback_mux
+Used module:         \writeback_mux_2to1_16bit
+Used module:             \writeback_mux_2to1
+Removed 0 unused modules.
+
+50. Printing statistics.
+
+=== alu ===
+
+        +----------Local Count, excluding submodules.
+        | 
+       53 wires
+      209 wire bits
+       12 public wires
+      105 public wire bits
+        7 ports
+       55 port bits
+      121 cells
+       48   $_MUX_
+        9   $_NOT_
+       32   $_OR_
+       32   $_XOR_
+        4 submodules
+        1   alu_adder_16bit
+        1   alu_flag_generator
+        1   alu_logical_unit_16bit
+        1   alu_shifter_16bit
+
+=== alu_adder_16bit ===
+
+        +----------Local Count, excluding submodules.
+        | 
+        7 wires
+       83 wire bits
+        7 public wires
+       83 public wire bits
+        5 ports
+       50 port bits
+       16 cells
+       16   $_XOR_
+       16 submodules
+       16   alu_full_adder
+
+=== alu_flag_generator ===
+
+        +----------Local Count, excluding submodules.
+        | 
+       31 wires
+       94 wire bits
+       10 public wires
+       58 public wire bits
+        7 ports
+       55 port bits
+       41 cells
+        8   $_AND_
+        1   $_MUX_
+        8   $_NOT_
+       20   $_OR_
+        4   $_XOR_
+
+=== alu_full_adder ===
+
+        +----------Local Count, excluding submodules.
+        | 
+       10 wires
+       10 wire bits
+        5 public wires
+        5 public wire bits
+        5 ports
+        5 port bits
+        7 cells
+        3   $_AND_
+        2   $_OR_
+        2   $_XOR_
+
+=== alu_logical_unit_16bit ===
+
+        +----------Local Count, excluding submodules.
+        | 
+      372 wires
+      676 wire bits
+        4 public wires
+       52 public wire bits
+        4 ports
+       52 port bits
+      640 cells
+       16   $_AND_
+       64   $_MUX_
+       80   $_NOT_
+      208   $_OR_
+      272   $_XOR_
+
+=== alu_shifter_16bit ===
+
+        +----------Local Count, excluding submodules.
+        | 
+       17 wires
+      189 wire bits
+       13 public wires
+      181 public wire bits
+        4 ports
+       52 port bits
+      152 cells
+      144   $_MUX_
+        1   $_NOT_
+        3   $_OR_
+        4   $_XOR_
+
+=== control_unit ===
+
+        +----------Local Count, excluding submodules.
+        | 
+       13 wires
+       35 wire bits
+       13 public wires
+       35 public wire bits
+       12 ports
+       19 port bits
+        5 submodules
+        1   control_unit_alu_selector
+        1   control_unit_branch_evaluator
+        1   control_unit_enable_generator
+        1   control_unit_onehot_decoder
+        1   control_unit_writeback_selector
+
+=== control_unit_alu_selector ===
+
+        +----------Local Count, excluding submodules.
+        | 
+       17 wires
+       59 wire bits
+        5 public wires
+       23 public wire bits
+        3 ports
+       21 port bits
+       42 cells
+       36   $_MUX_
+        6   $_OR_
+
+=== control_unit_branch_evaluator ===
+
+        +----------Local Count, excluding submodules.
+        | 
+       12 wires
+       27 wire bits
+       11 public wires
+       26 public wire bits
+        6 ports
+       21 port bits
+        6 cells
+        2   $_AND_
+        3   $_OR_
+        1   $_XOR_
+
+=== control_unit_enable_generator ===
+
+        +----------Local Count, excluding submodules.
+        | 
+       12 wires
+       38 wire bits
+        6 public wires
+       28 public wire bits
+        4 ports
+       19 port bits
+       13 cells
+       13   $_OR_
+
+=== control_unit_onehot_decoder ===
+
+        +----------Local Count, excluding submodules.
+        | 
+       49 wires
+      128 wire bits
+        2 public wires
+       20 public wire bits
+        2 ports
+       20 port bits
+      124 cells
+       16   $_NOT_
+       48   $_OR_
+       60   $_XOR_
+
+=== control_unit_writeback_selector ===
+
+        +----------Local Count, excluding submodules.
+        | 
+        4 wires
+       20 wire bits
+        4 public wires
+       20 public wire bits
+        2 ports
+       18 port bits
+        1 cells
+        1   $_OR_
+
+=== cpu ===
+
+        +----------Local Count, excluding submodules.
+        | 
+       50 wires
+      401 wire bits
+       50 public wires
+      401 public wire bits
+       24 ports
+      228 port bits
+       16 cells
+       16   $_MUX_
+        8 submodules
+        1   alu
+        1   control_unit
+        1   flag_reg
+        1   imm_gen
+        1   instruction_decoder
+        1   program_counter
+        1   register_file
+        1   writeback_mux
+
+=== flag_reg ===
+
+        +----------Local Count, excluding submodules.
+        | 
+       11 wires
+       15 wire bits
+       11 public wires
+       15 public wire bits
+        9 ports
+        9 port bits
+        3 submodules
+        3   flag_reg_bit
+
+=== flag_reg_bit ===
+
+        +----------Local Count, excluding submodules.
+        | 
+        8 wires
+        8 wire bits
+        6 public wires
+        6 public wire bits
+        5 ports
+        5 port bits
+        3 cells
+        1   $_DFF_P_
+        2   $_MUX_
+
+=== imm_gen ===
+
+        +----------Local Count, excluding submodules.
+        | 
+       25 wires
+      130 wire bits
+        6 public wires
+       80 public wire bits
+        3 ports
+       32 port bits
+       66 cells
+       32   $_MUX_
+        4   $_NOT_
+       14   $_OR_
+       16   $_XOR_
+        3 submodules
+        1   imm_gen_sign_ext12
+        1   imm_gen_sign_ext4
+        1   imm_gen_sign_ext8
+
+=== imm_gen_sign_ext12 ===
+
+        +----------Local Count, excluding submodules.
+        | 
+        2 wires
+       28 wire bits
+        2 public wires
+       28 public wire bits
+        2 ports
+       28 port bits
+
+=== imm_gen_sign_ext4 ===
+
+        +----------Local Count, excluding submodules.
+        | 
+        2 wires
+       20 wire bits
+        2 public wires
+       20 public wire bits
+        2 ports
+       20 port bits
+
+=== imm_gen_sign_ext8 ===
+
+        +----------Local Count, excluding submodules.
+        | 
+        2 wires
+       24 wire bits
+        2 public wires
+       24 public wire bits
+        2 ports
+       24 port bits
+
+=== instruction_decoder ===
+
+        +----------Local Count, excluding submodules.
+        | 
+       10 wires
+       60 wire bits
+       10 public wires
+       60 public wire bits
+        6 ports
+       44 port bits
+        3 submodules
+        1   instruction_decoder_field_slicer
+        1   instruction_decoder_imm_selector
+        1   instruction_decoder_reg_selector
+
+=== instruction_decoder_field_slicer ===
+
+        +----------Local Count, excluding submodules.
+        | 
+        5 wires
+       32 wire bits
+        5 public wires
+       32 public wire bits
+        5 ports
+       32 port bits
+
+=== instruction_decoder_imm_selector ===
+
+        +----------Local Count, excluding submodules.
+        | 
+       33 wires
+      142 wire bits
+        9 public wires
+       76 public wire bits
+        5 ports
+       28 port bits
+       78 cells
+       36   $_MUX_
+        5   $_NOT_
+       17   $_OR_
+       20   $_XOR_
+
+=== instruction_decoder_reg_selector ===
+
+        +----------Local Count, excluding submodules.
+        | 
+        6 wires
+       24 wire bits
+        6 public wires
+       24 public wire bits
+        6 ports
+       24 port bits
+
+=== program_counter ===
+
+        +----------Local Count, excluding submodules.
+        | 
+        9 wires
+       84 wire bits
+        9 public wires
+       84 public wire bits
+        8 ports
+       68 port bits
+        2 submodules
+        1   program_counter_logic
+        1   program_counter_register
+
+=== program_counter_adder_16bit ===
+
+        +----------Local Count, excluding submodules.
+        | 
+        6 wires
+       67 wire bits
+        6 public wires
+       67 public wire bits
+        5 ports
+       50 port bits
+       16 submodules
+       16   program_counter_full_adder
+
+=== program_counter_full_adder ===
+
+        +----------Local Count, excluding submodules.
+        | 
+       10 wires
+       10 wire bits
+        5 public wires
+        5 public wire bits
+        5 ports
+        5 port bits
+        7 cells
+        3   $_AND_
+        2   $_OR_
+        2   $_XOR_
+
+=== program_counter_logic ===
+
+        +----------Local Count, excluding submodules.
+        | 
+       13 wires
+      133 wire bits
+       13 public wires
+      133 public wire bits
+        7 ports
+       82 port bits
+        5 submodules
+        3   program_counter_adder_16bit
+        2   program_counter_mux_2to1_16bit
+
+=== program_counter_mux_2to1 ===
+
+        +----------Local Count, excluding submodules.
+        | 
+        4 wires
+        4 wire bits
+        4 public wires
+        4 public wire bits
+        4 ports
+        4 port bits
+        1 cells
+        1   $_MUX_
+
+=== program_counter_mux_2to1_16bit ===
+
+        +----------Local Count, excluding submodules.
+        | 
+        4 wires
+       49 wire bits
+        4 public wires
+       49 public wire bits
+        4 ports
+       49 port bits
+       16 submodules
+       16   program_counter_mux_2to1
+
+=== program_counter_register ===
+
+        +----------Local Count, excluding submodules.
+        | 
+        6 wires
+       66 wire bits
+        5 public wires
+       50 public wire bits
+        4 ports
+       34 port bits
+       32 cells
+       16   $_DFF_P_
+       16   $_MUX_
+
+=== register_file ===
+
+        +----------Local Count, excluding submodules.
+        | 
+       26 wires
+      335 wire bits
+       26 public wires
+      335 public wire bits
+        9 ports
+       63 port bits
+       18 submodules
+       15   register_file_cell
+        1   register_file_decoder_4to16
+        2   register_file_mux_16to1_16bit
+
+=== register_file_cell ===
+
+        +----------Local Count, excluding submodules.
+        | 
+        8 wires
+       83 wire bits
+        6 public wires
+       51 public wire bits
+        5 ports
+       35 port bits
+       48 cells
+       16   $_DFF_P_
+       32   $_MUX_
+
+=== register_file_decoder_4to16 ===
+
+        +----------Local Count, excluding submodules.
+        | 
+       66 wires
+      145 wire bits
+        3 public wires
+       21 public wire bits
+        3 ports
+       21 port bits
+      140 cells
+       16   $_MUX_
+       16   $_NOT_
+       48   $_OR_
+       60   $_XOR_
+
+=== register_file_mux_16to1_16bit ===
+
+        +----------Local Count, excluding submodules.
+        | 
+       48 wires
+      756 wire bits
+       48 public wires
+      756 public wire bits
+       18 ports
+      276 port bits
+       15 submodules
+       15   register_file_mux_2to1_16bit
+
+=== register_file_mux_2to1_16bit ===
+
+        +----------Local Count, excluding submodules.
+        | 
+        4 wires
+       49 wire bits
+        4 public wires
+       49 public wire bits
+        4 ports
+       49 port bits
+       16 cells
+       16   $_MUX_
+
+=== writeback_mux ===
+
+        +----------Local Count, excluding submodules.
+        | 
+        6 wires
+       82 wire bits
+        6 public wires
+       82 public wire bits
+        5 ports
+       66 port bits
+        2 submodules
+        2   writeback_mux_2to1_16bit
+
+=== writeback_mux_2to1 ===
+
+        +----------Local Count, excluding submodules.
+        | 
+        4 wires
+        4 wire bits
+        4 public wires
+        4 public wire bits
+        4 ports
+        4 port bits
+        1 cells
+        1   $_MUX_
+
+=== writeback_mux_2to1_16bit ===
+
+        +----------Local Count, excluding submodules.
+        | 
+        4 wires
+       49 wire bits
+        4 public wires
+       49 public wire bits
+        4 ports
+       49 port bits
+       16 submodules
+       16   writeback_mux_2to1
+
+=== design hierarchy ===
+
+        +----------Count including submodules.
+        | 
+     3209 cpu
+      121 alu
+       16   alu_adder_16bit
+        7     alu_full_adder
+       41   alu_flag_generator
+      640   alu_logical_unit_16bit
+      152   alu_shifter_16bit
+       42   control_unit_alu_selector
+        6   control_unit_branch_evaluator
+       13   control_unit_enable_generator
+      124   control_unit_onehot_decoder
+        1   control_unit_writeback_selector
+        3   flag_reg_bit
+       66 imm_gen
+       78   instruction_decoder_imm_selector
+        7       program_counter_full_adder
+        1       program_counter_mux_2to1
+       32   program_counter_register
+       48   register_file_cell
+      140   register_file_decoder_4to16
+       16     register_file_mux_2to1_16bit
+        1     writeback_mux_2to1
+
+        +----------Count including submodules.
+        | 
+     2149 wires
+     8823 wire bits
+     1186 public wires
+     6834 public wire bits
+     1009 ports
+     4669 port bits
+        - memories
+        - memory bits
+        - processes
+     3209 cells
+      218   $_AND_
+      259   $_DFF_P_
+     1439   $_MUX_
+      139   $_NOT_
+      541   $_OR_
+      613   $_XOR_
+        8 submodules
+        1   alu
+        1   control_unit
+        1   flag_reg
+        1   imm_gen
+        1   instruction_decoder
+        1   program_counter
+        1   register_file
+        1   writeback_mux
+
+51. Executing JSON backend.
+
+End of script. Logfile hash: bf9f908428, CPU: user 0.07s system 0.01s, MEM: 17.50 MB peak
+Yosys 0.61+112 (git sha1 ac427a79b, clang++ 18.1.8 -fPIC -O3)
+Time spent: 39% 87x read_verilog (0 sec), 16% 2x opt_clean (0 sec), ...

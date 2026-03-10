@@ -1,0 +1,64 @@
+
+============================================================
+CPU自動生成レポート
+============================================================
+生成日時: 2026-02-23 16:05:30
+
+生成成功モジュール (8個):
+
+  ✓ pc_reg:
+    - pc_reg.v
+    - pc_reg_nbit_dff.v
+    - pc_reg_nbit_adder.v
+    - pc_reg_nbit_mux_4to1.v
+    - pc_reg_1bit_dff.v
+    - pc_reg_1bit_full_adder.v
+    - pc_reg_1bit_mux_4to1.v
+  ✓ instruction_decoder:
+    - instruction_decoder.v
+    - instruction_decoder_field_splitter.v
+    - instruction_decoder_opcode_4to16.v
+    - instruction_decoder_signal_merger.v
+    - instruction_decoder_2to4_dec.v
+  ✓ register_file:
+    - register_file.v
+    - register_file_bank.v
+    - register_file_read_mux.v
+    - register_file_4to16_dec.v
+    - register_file_16bit_reg.v
+    - register_file_1bit_mux_16to1.v
+  ✓ imm_generator:
+    - imm_generator.v
+    - imm_generator_ext_4to16.v
+    - imm_generator_ext_8to16.v
+    - imm_generator_ext_12to16.v
+    - imm_generator_mux_4to1.v
+    - imm_generator_bit_ext.v
+  ✓ alu_core:
+    - alu_core.v
+    - alu_core_nbit_adder_subtractor.v
+    - alu_core_nbit_logic.v
+    - alu_core_nbit_shifter.v
+    - alu_core_nbit_result_mux.v
+    - alu_core_1bit_full_adder.v
+    - alu_core_1bit_logic.v
+    - alu_core_1bit_result_mux.v
+  ✓ flag_register:
+    - flag_register.v
+    - flag_register_nbit_bank.v
+    - flag_register_1bit_dff.v
+  ✓ pc_control_logic:
+    - pc_control_logic.v
+    - pc_control_logic_branch_array.v
+    - pc_control_logic_source_dec.v
+    - pc_control_logic_condition_checker.v
+  ✓ data_path_mux:
+    - data_path_mux.v
+    - data_path_mux_nbit_alu_src.v
+    - data_path_mux_nbit_reg_wdata.v
+    - data_path_mux_1bit_2to1.v
+    - data_path_mux_1bit_4to1.v
+
+すべてのモジュールが正常に生成されました。
+
+============================================================

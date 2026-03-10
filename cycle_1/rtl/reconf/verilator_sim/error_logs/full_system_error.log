@@ -1,0 +1,166 @@
+
+=== ログ 2026-02-23 14:01:06 ===
+%Warning-SELRANGE: reconf/immediate_generator/rtl/immediate_generator_i_extender.v:12:50: Selection index out of range: 12:12 outside 11:0
+                                                                                        : ... note: In instance 'top.u_cpu.u_imm_gen.u_i_ext'
+   12 |                 .i_raw_bit  ((i < 4) ? i_imm_bits[i] : 1'b0),
+      |                                                  ^
+                   ... For warning description see https://verilator.org/warn/SELRANGE?v=5.045
+                   ... Use "/* verilator lint_off SELRANGE */" and lint_on around source to disable this message.
+%Warning-SELRANGE: reconf/immediate_generator/rtl/immediate_generator_i_extender.v:12:50: Selection index out of range: 13:13 outside 11:0
+                                                                                        : ... note: In instance 'top.u_cpu.u_imm_gen.u_i_ext'
+   12 |                 .i_raw_bit  ((i < 4) ? i_imm_bits[i] : 1'b0),
+      |                                                  ^
+%Warning-SELRANGE: reconf/immediate_generator/rtl/immediate_generator_i_extender.v:12:50: Selection index out of range: 14:14 outside 11:0
+                                                                                        : ... note: In instance 'top.u_cpu.u_imm_gen.u_i_ext'
+   12 |                 .i_raw_bit  ((i < 4) ? i_imm_bits[i] : 1'b0),
+      |                                                  ^
+%Warning-SELRANGE: reconf/immediate_generator/rtl/immediate_generator_i_extender.v:12:50: Selection index out of range: 15:15 outside 11:0
+                                                                                        : ... note: In instance 'top.u_cpu.u_imm_gen.u_i_ext'
+   12 |                 .i_raw_bit  ((i < 4) ? i_imm_bits[i] : 1'b0),
+      |                                                  ^
+%Warning-SELRANGE: reconf/immediate_generator/rtl/immediate_generator_b_extender.v:12:51: Selection index out of range: 12:12 outside 11:0
+                                                                                        : ... note: In instance 'top.u_cpu.u_imm_gen.u_b_ext'
+   12 |                 .i_raw_bit  ((i < 12) ? i_imm_bits[i] : 1'b0),
+      |                                                   ^
+%Warning-SELRANGE: reconf/immediate_generator/rtl/immediate_generator_b_extender.v:12:51: Selection index out of range: 13:13 outside 11:0
+                                                                                        : ... note: In instance 'top.u_cpu.u_imm_gen.u_b_ext'
+   12 |                 .i_raw_bit  ((i < 12) ? i_imm_bits[i] : 1'b0),
+      |                                                   ^
+%Warning-SELRANGE: reconf/immediate_generator/rtl/immediate_generator_b_extender.v:12:51: Selection index out of range: 14:14 outside 11:0
+                                                                                        : ... note: In instance 'top.u_cpu.u_imm_gen.u_b_ext'
+   12 |                 .i_raw_bit  ((i < 12) ? i_imm_bits[i] : 1'b0),
+      |                                                   ^
+%Warning-SELRANGE: reconf/immediate_generator/rtl/immediate_generator_b_extender.v:12:51: Selection index out of range: 15:15 outside 11:0
+                                                                                        : ... note: In instance 'top.u_cpu.u_imm_gen.u_b_ext'
+   12 |                 .i_raw_bit  ((i < 12) ? i_imm_bits[i] : 1'b0),
+      |                                                   ^
+%Warning-SELRANGE: reconf/immediate_generator/rtl/immediate_generator_l_extender.v:12:50: Selection index out of range: 12:12 outside 11:0
+                                                                                        : ... note: In instance 'top.u_cpu.u_imm_gen.u_l_ext'
+   12 |                 .i_raw_bit  ((i < 8) ? i_imm_bits[i] : 1'b0),
+      |                                                  ^
+%Warning-SELRANGE: reconf/immediate_generator/rtl/immediate_generator_l_extender.v:12:50: Selection index out of range: 13:13 outside 11:0
+                                                                                        : ... note: In instance 'top.u_cpu.u_imm_gen.u_l_ext'
+   12 |                 .i_raw_bit  ((i < 8) ? i_imm_bits[i] : 1'b0),
+      |                                                  ^
+%Warning-SELRANGE: reconf/immediate_generator/rtl/immediate_generator_l_extender.v:12:50: Selection index out of range: 14:14 outside 11:0
+                                                                                        : ... note: In instance 'top.u_cpu.u_imm_gen.u_l_ext'
+   12 |                 .i_raw_bit  ((i < 8) ? i_imm_bits[i] : 1'b0),
+      |                                                  ^
+%Warning-SELRANGE: reconf/immediate_generator/rtl/immediate_generator_l_extender.v:12:50: Selection index out of range: 15:15 outside 11:0
+                                                                                        : ... note: In instance 'top.u_cpu.u_imm_gen.u_l_ext'
+   12 |                 .i_raw_bit  ((i < 8) ? i_imm_bits[i] : 1'b0),
+      |                                                  ^
+%Error: Exiting due to 12 warning(s)
+
+==================================================
+
+=== ログ 2026-02-23 14:01:17 ===
+### エラーの原因：
+Verilog（特にVerilatorなど）のコンパイラは、`generate` 文のループ内で三項演算子を使用している場合、**たとえ条件式（`i < 4` など）によって実行時にアクセスされないことが保証されていても、構文的にインデックスが範囲内にあるかどうかをすべての `i` についてチェックします。**
+
+今回のケースでは、`i_imm_bits` が `[11:0]`（12ビット幅）であるのに対し、ループ変数 `i` が最大 `15` まで動くため、`i_imm_bits[12]` 以降へのアクセスが発生する可能性があると見なされ、「Selection index out of range（範囲外選択）」のエラーが発生しています。
+
+### 修正方法の提案：
+
+このエラーを解消するには、**インデックス参照の対象となるワイヤを、ループの最大値（16ビット）まで拡張（パディング）してから参照する**のが最も確実でクリーンな方法です。
+
+具体的には以下の手順で修正を行ってください。
+
+1.  **作業用ワイヤの作成**: 各エクステンダー・モジュール（`i_extender`, `b_extender`, `l_extender`）の内部で、16ビット幅のローカルな `wire` 変数を宣言します。
+2.  **ゼロパディング**: その新しい16ビットワイヤの下位ビットに、入力である `i_imm_bits`（12ビット）を接続し、残りの上位ビット（12ビット目から15ビット目）には常に `1'b0` を接続して埋めます。
+3.  **参照先の変更**: `generate` 文の中にある `.i_raw_bit` の接続先を、元の `i_imm_bits[i]` から、新しく作成した「16ビット幅の作業用ワイヤ」の `[i]` を参照するように書き換えます。
+
+この修正により、ループ変数 `i` が 0 から 15 のどの値をとっても、参照先のワイヤの範囲内に収まるようになるため、コンパイルエラーが解消されます。
+==================================================
+
+=== ログ 2026-02-23 14:01:57 ===
+make: Entering directory '/home/ko_kosugi/workspace/project_makeISA/ai_api/CPU/obj_dir'
+g++  -I.  -MMD -I/opt/oss-cad-suite/share/verilator/include -I/opt/oss-cad-suite/share/verilator/include/vltstd -DVERILATOR=1 -DVM_COVERAGE=0 -DVM_SC=0 -DVM_TIMING=0 -DVM_TRACE=1 -DVM_TRACE_FST=0 -DVM_TRACE_VCD=1 -DVM_TRACE_SAIF=0 -faligned-new -fcf-protection=none -Wno-bool-operation -Wno-int-in-bool-context -Wno-shadow -Wno-sign-compare -Wno-subobject-linkage -Wno-tautological-compare -Wno-uninitialized -Wno-unused-but-set-parameter -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable      -Os  -c -o tb_top_gen.o ../tb_top_gen.cpp
+g++ -Os  -I.  -MMD -I/opt/oss-cad-suite/share/verilator/include -I/opt/oss-cad-suite/share/verilator/include/vltstd -DVERILATOR=1 -DVM_COVERAGE=0 -DVM_SC=0 -DVM_TIMING=0 -DVM_TRACE=1 -DVM_TRACE_FST=0 -DVM_TRACE_VCD=1 -DVM_TRACE_SAIF=0 -faligned-new -fcf-protection=none -Wno-bool-operation -Wno-int-in-bool-context -Wno-shadow -Wno-sign-compare -Wno-subobject-linkage -Wno-tautological-compare -Wno-uninitialized -Wno-unused-but-set-parameter -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable      -c -o verilated.o /opt/oss-cad-suite/share/verilator/include/verilated.cpp
+g++ -Os  -I.  -MMD -I/opt/oss-cad-suite/share/verilator/include -I/opt/oss-cad-suite/share/verilator/include/vltstd -DVERILATOR=1 -DVM_COVERAGE=0 -DVM_SC=0 -DVM_TIMING=0 -DVM_TRACE=1 -DVM_TRACE_FST=0 -DVM_TRACE_VCD=1 -DVM_TRACE_SAIF=0 -faligned-new -fcf-protection=none -Wno-bool-operation -Wno-int-in-bool-context -Wno-shadow -Wno-sign-compare -Wno-subobject-linkage -Wno-tautological-compare -Wno-uninitialized -Wno-unused-but-set-parameter -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable      -c -o verilated_vcd_c.o /opt/oss-cad-suite/share/verilator/include/verilated_vcd_c.cpp
+g++ -Os  -I.  -MMD -I/opt/oss-cad-suite/share/verilator/include -I/opt/oss-cad-suite/share/verilator/include/vltstd -DVERILATOR=1 -DVM_COVERAGE=0 -DVM_SC=0 -DVM_TIMING=0 -DVM_TRACE=1 -DVM_TRACE_FST=0 -DVM_TRACE_VCD=1 -DVM_TRACE_SAIF=0 -faligned-new -fcf-protection=none -Wno-bool-operation -Wno-int-in-bool-context -Wno-shadow -Wno-sign-compare -Wno-subobject-linkage -Wno-tautological-compare -Wno-uninitialized -Wno-unused-but-set-parameter -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable      -c -o verilated_threads.o /opt/oss-cad-suite/share/verilator/include/verilated_threads.cpp
+python3 /opt/oss-cad-suite/share/verilator/bin/verilator_includer -DVL_INCLUDE_OPT=include Vtop.cpp Vtop___024root__0.cpp Vtop_program_counter_adder_16bit__0.cpp Vtop_register_file_word_unit__0.cpp Vtop_register_file_mux_16bit_16to1__0.cpp Vtop__Trace__0.cpp Vtop__ConstPool__0__Slow.cpp Vtop___024root__Slow.cpp Vtop___024root__0__Slow.cpp Vtop_program_counter_adder_16bit__Slow.cpp Vtop_program_counter_adder_16bit__0__Slow.cpp Vtop_register_file_word_unit__Slow.cpp Vtop_register_file_word_unit__0__Slow.cpp Vtop_register_file_mux_16bit_16to1__Slow.cpp Vtop_register_file_mux_16bit_16to1__0__Slow.cpp Vtop__Syms__Slow.cpp Vtop__Trace__0__Slow.cpp Vtop__TraceDecls__0__Slow.cpp > Vtop__ALL.cpp
+g++ -Os  -I.  -MMD -I/opt/oss-cad-suite/share/verilator/include -I/opt/oss-cad-suite/share/verilator/include/vltstd -DVERILATOR=1 -DVM_COVERAGE=0 -DVM_SC=0 -DVM_TIMING=0 -DVM_TRACE=1 -DVM_TRACE_FST=0 -DVM_TRACE_VCD=1 -DVM_TRACE_SAIF=0 -faligned-new -fcf-protection=none -Wno-bool-operation -Wno-int-in-bool-context -Wno-shadow -Wno-sign-compare -Wno-subobject-linkage -Wno-tautological-compare -Wno-uninitialized -Wno-unused-but-set-parameter -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable      -c -o Vtop__ALL.o Vtop__ALL.cpp
+g++    tb_top_gen.o verilated.o verilated_vcd_c.o verilated_threads.o Vtop__ALL.a    -pthread -lpthread -latomic   -o Vtop
+rm Vtop__ALL.verilator_deplist.tmp
+make: Leaving directory '/home/ko_kosugi/workspace/project_makeISA/ai_api/CPU/obj_dir'
+- V e r i l a t i o n   R e p o r t: Verilator 5.045 devel rev v5.044-88-g1b9f38f78
+- Verilator: Built from 2.809 MB sources in 49 modules, into 2.646 MB in 18 C++ files needing 0.000 MB
+- Verilator: Walltime 11.441 s (elab=0.014, cvt=0.248, bld=11.145); cpu 0.281 s on 1 threads; allocated 42.328 MB
+[SVA OK] Time=35: LOADI R3 = 0x0005
+[SVA OK] Time=45: LOADI R3 = 0x0005
+[SVA OK] Time=55: STORE MEM[0x0000] = 0x0005
+[SVA OK] Time=65: LOADI R3 = 0xfffd
+[SVA OK] Time=75: STORE MEM[0x0001] = 0xfffd
+[SVA OK] Time=85: LOADI R3 = 0x0008
+[SVA OK] Time=95: STORE MEM[0x0002] = 0x0008
+[SVA OK] Time=105: LOADI R3 = 0x0002
+[SVA OK] Time=115: STORE MEM[0x0003] = 0x0002
+[SVA OK] Time=125: LOADI R3 = 0xffff
+[SVA OK] Time=135: STORE MEM[0x0004] = 0xffff
+[SVA OK] Time=145: LOADI R1 = 0x0005
+[SVA OK] Time=155: LOADI R2 = 0x0000
+[SVA OK] Time=165: LOAD R4 = MEM[0x0000] = 0x0005
+[SVA OK] Time=175: LOAD R5 = MEM[0x0000] = 0x0005
+[SVA OK] Time=185: LOADI R6 = 0x0000
+[SVA OK] Time=195: LOAD R3 = MEM[0x0000] = 0x0005
+[SVA OK] Time=205: SUB R7 = 0x0000
+[SVA OK] Time=215: BLT cond=0 target=0x004a notaken_pc=0x0026
+[SVA OK] Time=225: ADDI R0 = 0x0000
+[SVA OK] Time=235: SUB R7 = 0x0000
+[SVA OK] Time=245: BLT cond=0 target=0x0050 notaken_pc=0x002c
+[SVA OK] Time=255: ADDI R0 = 0x0000
+[SVA OK] Time=265: JAL link R15=0x0030 target=0x0056
+[SVA OK] Time=275: ADDI R0 = 0x0000
+[SVA OK] Time=285: LOADI R7 = 0x000f
+[SVA OK] Time=295: AND R8 = 0x0005
+[SVA OK] Time=305: OR R9 = 0x000f
+[SVA OK] Time=315: XOR R10 = 0x000a
+[SVA OK] Time=325: NOT R11 = 0xfffa
+[SVA OK] Time=335: LOADI R7 = 0x0002
+[SVA OK] Time=345: SLA R8 = 0x0014
+[SVA OK] Time=355: SRA R8 = 0x0005
+[SVA OK] Time=365: ADDI R8 = 0x0006
+[SVA OK] Time=375: JALR link R0=0x006c target=0x0030
+[SVA OK] Time=385: ADDI R0 = 0x0000
+[SVA OK] Time=395: XOR R6 = 0x0005
+[SVA OK] Time=405: ADDI R2 = 0x0001
+[SVA OK] Time=415: ADDI R1 = 0x0004
+[SVA OK] Time=425: BZ cond=0 target=0x0040 notaken_pc=0x003a
+[SVA OK] Time=435: ADDI R0 = 0x0000
+[SVA OK] Time=445: SUB R7 = 0xfffc
+[SVA OK] Time=455: BLT cond=1 target=0x001e notaken_pc=0x0040
+[SVA OK] Time=465: ADDI R0 = 0x0000
+[475] %Error: sva_cpu_gen.sv:274: Assertion failed in TOP.top.u_sva_cpu_gen: [TIME=475] LOAD failed: addr=0x0000(exp=0x0001) R3=0x0005(mem=0x0005)
+%Error: sva_cpu_gen.sv:274: Verilog $stop
+Aborting...
+
+==================================================
+
+=== ログ 2026-02-23 14:02:16 ===
+### エラーの概要
+このエラーは、**`LOAD` 命令実行時のメモリアドレス計算が正しく行われていない**ために発生しています。
+ログを見ると、本来 `0x0001` というアドレスにアクセスすべきところで、CPUが `0x0000` を出力してしまい、テストベンチ（SVA）の期待値と食い違っています。
+
+### 原因の詳細
+原因は、`alu_core.v` 内にある **演算結果を選択するマルチプレクサ（MUX）の切り替えロジック** にあります。
+
+1.  **オペコードの解釈ミス**: `alu_core` モジュールは、命令のオペコード（4ビット）のうち **下位3ビットのみ** を使って、どの演算結果（加算、論理演算、シフトなど）を出力するか決めています。
+2.  **不適切な選択**:
+    *   `LOAD` 命令のオペコードは `1010` です。
+    *   しかし、下位3ビットの `010` だけを見ると、これは `AND` 命令の番号（`0010` の下位3ビット）と同じです。
+    *   その結果、`LOAD` 命令を実行しているにもかかわらず、ALUはアドレス計算用の「加算結果」ではなく、「AND演算の結果」をメモリアドレスとして出力してしまっています。
+3.  **アドレスの不一致**: `rs1`（ベースレジスタ）が `0x0001`、`imm`（即値）が `0x0001` の場合、本来は足し算して `0x0002` になるべきですが、AND演算が行われると `0x0001 AND 0x0001 = 0x0001` になったり、値によっては `0x0000` になったりしてしまいます。
+
+※同様に `STORE` 命令（`1011`）も、下位3ビットが `011` であるため、加算ではなく `OR` 演算の結果を出力してしまう潜在的なバグがあります。
+
+### 修正方法の提案
+`alu_core.v` における結果選択（`u_res_mux` への入力信号など）のロジックを以下のように修正してください。
+
+*   **選択ロジックの優先順位を変更する**:
+    オペコードの下位3ビットをそのまま MUX の選択信号にするのではなく、**「オペコードの最上位ビットが `1` の場合（I型命令やメモリアクセス命令の場合）」は、強制的に加算（ADD）の結果を選択する** ように条件を追加します。
+*   **具体的には**:
+    MUXへの選択信号（`i_sel`）を生成する際に、オペコードが `1000` (ADDI), `1010` (LOAD), `1011` (STORE) などの時は、結果として `000`（ADD用のインデックス）が選択されるような論理（または `if` 文などの条件分岐）を `alu_core.v` または `cpu.v` に実装してください。
+
+これにより、メモリアクセス命令時に正しく `rs1 + imm` の計算結果が `o_addr_to_dmem` へ出力されるようになります。
+==================================================

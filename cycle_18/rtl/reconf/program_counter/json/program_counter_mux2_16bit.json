@@ -1,0 +1,489 @@
+{
+  "creator": "Yosys 0.61+112 (git sha1 ac427a79b, clang++ 18.1.8 -fPIC -O3)",
+  "modules": {
+    "program_counter_mux2_16bit": {
+      "attributes": {
+        "top": "00000000000000000000000000000001",
+        "src": "reconf/program_counter/rtl/program_counter_mux2_16bit.v:1.1-21.10"
+      },
+      "ports": {
+        "i_sel": {
+          "direction": "input",
+          "bits": [ 2 ]
+        },
+        "i_d0": {
+          "direction": "input",
+          "bits": [ 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18 ]
+        },
+        "i_d1": {
+          "direction": "input",
+          "bits": [ 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34 ]
+        },
+        "o_q": {
+          "direction": "output",
+          "bits": [ 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50 ]
+        }
+      },
+      "cells": {
+        "gen_pc_mux[0].u_mux_1bit": {
+          "hide_name": 0,
+          "type": "program_counter_mux2_1bit",
+          "parameters": {
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "reconf/program_counter/rtl/program_counter_mux2_16bit.v:12.39-17.14"
+          },
+          "port_directions": {
+            "i_d0": "input",
+            "i_d1": "input",
+            "i_sel": "input",
+            "o_q": "output"
+          },
+          "connections": {
+            "i_d0": [ 3 ],
+            "i_d1": [ 19 ],
+            "i_sel": [ 2 ],
+            "o_q": [ 35 ]
+          }
+        },
+        "gen_pc_mux[10].u_mux_1bit": {
+          "hide_name": 0,
+          "type": "program_counter_mux2_1bit",
+          "parameters": {
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "reconf/program_counter/rtl/program_counter_mux2_16bit.v:12.39-17.14"
+          },
+          "port_directions": {
+            "i_d0": "input",
+            "i_d1": "input",
+            "i_sel": "input",
+            "o_q": "output"
+          },
+          "connections": {
+            "i_d0": [ 13 ],
+            "i_d1": [ 29 ],
+            "i_sel": [ 2 ],
+            "o_q": [ 45 ]
+          }
+        },
+        "gen_pc_mux[11].u_mux_1bit": {
+          "hide_name": 0,
+          "type": "program_counter_mux2_1bit",
+          "parameters": {
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "reconf/program_counter/rtl/program_counter_mux2_16bit.v:12.39-17.14"
+          },
+          "port_directions": {
+            "i_d0": "input",
+            "i_d1": "input",
+            "i_sel": "input",
+            "o_q": "output"
+          },
+          "connections": {
+            "i_d0": [ 14 ],
+            "i_d1": [ 30 ],
+            "i_sel": [ 2 ],
+            "o_q": [ 46 ]
+          }
+        },
+        "gen_pc_mux[12].u_mux_1bit": {
+          "hide_name": 0,
+          "type": "program_counter_mux2_1bit",
+          "parameters": {
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "reconf/program_counter/rtl/program_counter_mux2_16bit.v:12.39-17.14"
+          },
+          "port_directions": {
+            "i_d0": "input",
+            "i_d1": "input",
+            "i_sel": "input",
+            "o_q": "output"
+          },
+          "connections": {
+            "i_d0": [ 15 ],
+            "i_d1": [ 31 ],
+            "i_sel": [ 2 ],
+            "o_q": [ 47 ]
+          }
+        },
+        "gen_pc_mux[13].u_mux_1bit": {
+          "hide_name": 0,
+          "type": "program_counter_mux2_1bit",
+          "parameters": {
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "reconf/program_counter/rtl/program_counter_mux2_16bit.v:12.39-17.14"
+          },
+          "port_directions": {
+            "i_d0": "input",
+            "i_d1": "input",
+            "i_sel": "input",
+            "o_q": "output"
+          },
+          "connections": {
+            "i_d0": [ 16 ],
+            "i_d1": [ 32 ],
+            "i_sel": [ 2 ],
+            "o_q": [ 48 ]
+          }
+        },
+        "gen_pc_mux[14].u_mux_1bit": {
+          "hide_name": 0,
+          "type": "program_counter_mux2_1bit",
+          "parameters": {
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "reconf/program_counter/rtl/program_counter_mux2_16bit.v:12.39-17.14"
+          },
+          "port_directions": {
+            "i_d0": "input",
+            "i_d1": "input",
+            "i_sel": "input",
+            "o_q": "output"
+          },
+          "connections": {
+            "i_d0": [ 17 ],
+            "i_d1": [ 33 ],
+            "i_sel": [ 2 ],
+            "o_q": [ 49 ]
+          }
+        },
+        "gen_pc_mux[15].u_mux_1bit": {
+          "hide_name": 0,
+          "type": "program_counter_mux2_1bit",
+          "parameters": {
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "reconf/program_counter/rtl/program_counter_mux2_16bit.v:12.39-17.14"
+          },
+          "port_directions": {
+            "i_d0": "input",
+            "i_d1": "input",
+            "i_sel": "input",
+            "o_q": "output"
+          },
+          "connections": {
+            "i_d0": [ 18 ],
+            "i_d1": [ 34 ],
+            "i_sel": [ 2 ],
+            "o_q": [ 50 ]
+          }
+        },
+        "gen_pc_mux[1].u_mux_1bit": {
+          "hide_name": 0,
+          "type": "program_counter_mux2_1bit",
+          "parameters": {
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "reconf/program_counter/rtl/program_counter_mux2_16bit.v:12.39-17.14"
+          },
+          "port_directions": {
+            "i_d0": "input",
+            "i_d1": "input",
+            "i_sel": "input",
+            "o_q": "output"
+          },
+          "connections": {
+            "i_d0": [ 4 ],
+            "i_d1": [ 20 ],
+            "i_sel": [ 2 ],
+            "o_q": [ 36 ]
+          }
+        },
+        "gen_pc_mux[2].u_mux_1bit": {
+          "hide_name": 0,
+          "type": "program_counter_mux2_1bit",
+          "parameters": {
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "reconf/program_counter/rtl/program_counter_mux2_16bit.v:12.39-17.14"
+          },
+          "port_directions": {
+            "i_d0": "input",
+            "i_d1": "input",
+            "i_sel": "input",
+            "o_q": "output"
+          },
+          "connections": {
+            "i_d0": [ 5 ],
+            "i_d1": [ 21 ],
+            "i_sel": [ 2 ],
+            "o_q": [ 37 ]
+          }
+        },
+        "gen_pc_mux[3].u_mux_1bit": {
+          "hide_name": 0,
+          "type": "program_counter_mux2_1bit",
+          "parameters": {
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "reconf/program_counter/rtl/program_counter_mux2_16bit.v:12.39-17.14"
+          },
+          "port_directions": {
+            "i_d0": "input",
+            "i_d1": "input",
+            "i_sel": "input",
+            "o_q": "output"
+          },
+          "connections": {
+            "i_d0": [ 6 ],
+            "i_d1": [ 22 ],
+            "i_sel": [ 2 ],
+            "o_q": [ 38 ]
+          }
+        },
+        "gen_pc_mux[4].u_mux_1bit": {
+          "hide_name": 0,
+          "type": "program_counter_mux2_1bit",
+          "parameters": {
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "reconf/program_counter/rtl/program_counter_mux2_16bit.v:12.39-17.14"
+          },
+          "port_directions": {
+            "i_d0": "input",
+            "i_d1": "input",
+            "i_sel": "input",
+            "o_q": "output"
+          },
+          "connections": {
+            "i_d0": [ 7 ],
+            "i_d1": [ 23 ],
+            "i_sel": [ 2 ],
+            "o_q": [ 39 ]
+          }
+        },
+        "gen_pc_mux[5].u_mux_1bit": {
+          "hide_name": 0,
+          "type": "program_counter_mux2_1bit",
+          "parameters": {
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "reconf/program_counter/rtl/program_counter_mux2_16bit.v:12.39-17.14"
+          },
+          "port_directions": {
+            "i_d0": "input",
+            "i_d1": "input",
+            "i_sel": "input",
+            "o_q": "output"
+          },
+          "connections": {
+            "i_d0": [ 8 ],
+            "i_d1": [ 24 ],
+            "i_sel": [ 2 ],
+            "o_q": [ 40 ]
+          }
+        },
+        "gen_pc_mux[6].u_mux_1bit": {
+          "hide_name": 0,
+          "type": "program_counter_mux2_1bit",
+          "parameters": {
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "reconf/program_counter/rtl/program_counter_mux2_16bit.v:12.39-17.14"
+          },
+          "port_directions": {
+            "i_d0": "input",
+            "i_d1": "input",
+            "i_sel": "input",
+            "o_q": "output"
+          },
+          "connections": {
+            "i_d0": [ 9 ],
+            "i_d1": [ 25 ],
+            "i_sel": [ 2 ],
+            "o_q": [ 41 ]
+          }
+        },
+        "gen_pc_mux[7].u_mux_1bit": {
+          "hide_name": 0,
+          "type": "program_counter_mux2_1bit",
+          "parameters": {
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "reconf/program_counter/rtl/program_counter_mux2_16bit.v:12.39-17.14"
+          },
+          "port_directions": {
+            "i_d0": "input",
+            "i_d1": "input",
+            "i_sel": "input",
+            "o_q": "output"
+          },
+          "connections": {
+            "i_d0": [ 10 ],
+            "i_d1": [ 26 ],
+            "i_sel": [ 2 ],
+            "o_q": [ 42 ]
+          }
+        },
+        "gen_pc_mux[8].u_mux_1bit": {
+          "hide_name": 0,
+          "type": "program_counter_mux2_1bit",
+          "parameters": {
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "reconf/program_counter/rtl/program_counter_mux2_16bit.v:12.39-17.14"
+          },
+          "port_directions": {
+            "i_d0": "input",
+            "i_d1": "input",
+            "i_sel": "input",
+            "o_q": "output"
+          },
+          "connections": {
+            "i_d0": [ 11 ],
+            "i_d1": [ 27 ],
+            "i_sel": [ 2 ],
+            "o_q": [ 43 ]
+          }
+        },
+        "gen_pc_mux[9].u_mux_1bit": {
+          "hide_name": 0,
+          "type": "program_counter_mux2_1bit",
+          "parameters": {
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "reconf/program_counter/rtl/program_counter_mux2_16bit.v:12.39-17.14"
+          },
+          "port_directions": {
+            "i_d0": "input",
+            "i_d1": "input",
+            "i_sel": "input",
+            "o_q": "output"
+          },
+          "connections": {
+            "i_d0": [ 12 ],
+            "i_d1": [ 28 ],
+            "i_sel": [ 2 ],
+            "o_q": [ 44 ]
+          }
+        }
+      },
+      "netnames": {
+        "i_d0": {
+          "hide_name": 0,
+          "bits": [ 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18 ],
+          "attributes": {
+            "src": "reconf/program_counter/rtl/program_counter_mux2_16bit.v:3.23-3.27"
+          }
+        },
+        "i_d1": {
+          "hide_name": 0,
+          "bits": [ 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34 ],
+          "attributes": {
+            "src": "reconf/program_counter/rtl/program_counter_mux2_16bit.v:4.23-4.27"
+          }
+        },
+        "i_sel": {
+          "hide_name": 0,
+          "bits": [ 2 ],
+          "attributes": {
+            "src": "reconf/program_counter/rtl/program_counter_mux2_16bit.v:2.23-2.28"
+          }
+        },
+        "o_q": {
+          "hide_name": 0,
+          "bits": [ 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50 ],
+          "attributes": {
+            "src": "reconf/program_counter/rtl/program_counter_mux2_16bit.v:5.24-5.27"
+          }
+        }
+      }
+    },
+    "program_counter_mux2_1bit": {
+      "attributes": {
+        "src": "reconf/program_counter/rtl/program_counter_mux2_1bit.v:1.1-10.10"
+      },
+      "ports": {
+        "i_sel": {
+          "direction": "input",
+          "bits": [ 2 ]
+        },
+        "i_d0": {
+          "direction": "input",
+          "bits": [ 3 ]
+        },
+        "i_d1": {
+          "direction": "input",
+          "bits": [ 4 ]
+        },
+        "o_q": {
+          "direction": "output",
+          "bits": [ 5 ]
+        }
+      },
+      "cells": {
+        "$auto$simplemap.cc:298:simplemap_mux$85": {
+          "hide_name": 1,
+          "type": "$_MUX_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "reconf/program_counter/rtl/program_counter_mux2_1bit.v:8.18-8.39"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 3 ],
+            "B": [ 4 ],
+            "S": [ 2 ],
+            "Y": [ 5 ]
+          }
+        }
+      },
+      "netnames": {
+        "i_d0": {
+          "hide_name": 0,
+          "bits": [ 3 ],
+          "attributes": {
+            "src": "reconf/program_counter/rtl/program_counter_mux2_1bit.v:3.16-3.20"
+          }
+        },
+        "i_d1": {
+          "hide_name": 0,
+          "bits": [ 4 ],
+          "attributes": {
+            "src": "reconf/program_counter/rtl/program_counter_mux2_1bit.v:4.16-4.20"
+          }
+        },
+        "i_sel": {
+          "hide_name": 0,
+          "bits": [ 2 ],
+          "attributes": {
+            "src": "reconf/program_counter/rtl/program_counter_mux2_1bit.v:2.16-2.21"
+          }
+        },
+        "o_q": {
+          "hide_name": 0,
+          "bits": [ 5 ],
+          "attributes": {
+            "src": "reconf/program_counter/rtl/program_counter_mux2_1bit.v:5.17-5.20"
+          }
+        }
+      }
+    }
+  }
+}

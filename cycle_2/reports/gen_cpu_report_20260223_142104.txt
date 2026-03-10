@@ -1,0 +1,62 @@
+
+============================================================
+CPU自動生成レポート
+============================================================
+生成日時: 2026-02-23 14:21:04
+
+生成成功モジュール (7個):
+
+  ✓ program_counter:
+    - program_counter.v
+    - program_counter_register_16bit.v
+    - program_counter_adder_16bit.v
+    - program_counter_mux4_16bit.v
+    - program_counter_dff.v
+    - program_counter_full_adder.v
+    - program_counter_mux2.v
+  ✓ control_unit:
+    - control_unit.v
+    - control_unit_decoder_4to16.v
+    - control_unit_decode_line.v
+    - control_unit_branch_cond.v
+    - control_unit_signal_map.v
+  ✓ register_file:
+    - register_file.v
+    - register_file_cell_bank.v
+    - register_file_decode_4to16.v
+    - register_file_mux16_16bit.v
+    - register_file_reg_16bit.v
+    - register_file_mux4_16bit.v
+    - register_file_dff.v
+  ✓ imm_gen:
+    - imm_gen.v
+    - imm_gen_ext_4to16.v
+    - imm_gen_ext_8to16.v
+    - imm_gen_ext_12to16.v
+    - imm_gen_mux4_16bit.v
+    - imm_gen_mux2.v
+  ✓ alu_core:
+    - alu_core.v
+    - alu_core_arithmetic_16bit.v
+    - alu_core_logic_16bit.v
+    - alu_core_shifter_16bit.v
+    - alu_core_mux8_16bit.v
+    - alu_core_flag_calc.v
+    - alu_core_full_adder.v
+    - alu_core_bit_logic.v
+  ✓ flag_reg:
+    - flag_reg.v
+    - flag_reg_bank.v
+    - flag_reg_bit.v
+  ✓ next_pc_logic:
+    - next_pc_logic.v
+    - next_pc_logic_adder_16bit.v
+    - next_pc_logic_cond_eval.v
+    - next_pc_logic_mux4_16bit.v
+    - next_pc_logic_full_adder.v
+    - next_pc_logic_mux2_1bit.v
+
+生成失敗モジュール (1個):
+  ✗ cpu
+
+============================================================
